@@ -1,0 +1,5 @@
+2016/11/28 09:55:08 [alert] 22644#0: lua_code_cache is off; this will hurt performance in /home/damody/dota2nobu/nginx.conf.compiled:16
+2016/11/28 09:59:08 [alert] 22880#0: lua_code_cache is off; this will hurt performance in /home/damody/dota2nobu/nginx.conf.compiled:16
+2016/11/28 09:59:39 [alert] 22908#0: lua_code_cache is off; this will hurt performance in /home/damody/dota2nobu/nginx.conf.compiled:16
+2016/11/28 10:11:52 [alert] 23406#0: lua_code_cache is off; this will hurt performance in /home/damody/dota2nobu/nginx.conf.compiled:16
+2016/11/28 10:20:18 [alert] 24255#0: lua_code_cache is off; this will hurt performance in /home/damody/dota2nobu/nginx.conf.compiled:16
