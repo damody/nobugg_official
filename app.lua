@@ -3,7 +3,28 @@ do
   local _class_0
   local _parent_0 = lapis.Application
   local _base_0 = {
-    ["/"] = function(self)
+    ["/zhcn/hero/:hero"] = function(self)
+      self.params.language = "zhcn"
+      return {
+        layout = false,
+        render = "hero"
+      }
+    end,
+    ["/zhtw/hero/:hero"] = function(self)
+      self.params.language = "zhtw"
+      return {
+        layout = false,
+        render = "hero"
+      }
+    end,
+    ["/en/hero/:hero"] = function(self)
+      self.params.language = "zhtw"
+      return {
+        layout = false,
+        render = "hero"
+      }
+    end,
+    ["/*"] = function(self)
       return {
         layout = false,
         render = "index"
