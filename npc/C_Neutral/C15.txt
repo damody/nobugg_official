@@ -1,0 +1,403 @@
+//玉子 
+"DOTAAbilities"
+{
+
+	// Rewrite of the Mirana Sacred Arrow ability
+	// Author: Pizzalol
+	// Date: 26.09.2015.
+	 //玉子 亂射
+	"C15W"
+	{
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"mirana_starfall"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
+		"FightRecapLevel"	"1"
+		// Casting
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"	"0"
+		// Time
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"8"
+		// Cost
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"	"120"
+		"AbilityCastRange"	"700.00"
+		"AOERadius"	"%radius"
+		// Precache
+		// -------------------------------------------------------------------------------------------------------------
+		"precache"
+		{
+			"particle"	"particles/c15w3/c15w3.vpcf"
+			"particle"	"particles/units/heroes/hero_mirana/mirana_starfall_attack.vpcf"
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_mirana.vsndevts"
+			"particle"	"particles/units/heroes/hero_mirana/mirana_starfall_circle.vpcf"
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_mirana.vsndevts"
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_mirana.vsndevts"
+			"particle"	"particles/units/heroes/hero_mirana/mirana_starfall_circle.vpcf"
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_mirana.vsndevts"
+		}
+		"OnSpellStart"
+		{
+			"FireSound"
+			{
+				"EffectName"	"Ability.Starfall"
+				"Target"	"CASTER"
+			}
+			"FireEffect"
+			{
+				"EffectName"	"particles/units/heroes/hero_mirana/mirana_starfall_circle.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"Target"	"CASTER"
+			}
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C15.lua"
+				"Function"	"new_C15W"
+			}
+			"DelayedAction"
+			{
+				"Action"
+				{
+					"ActOnTargets"
+					{
+						"Target"
+						{
+							"Center"	"POINT"
+							"Radius"	"%radius"
+							"Teams"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+							"Types"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+						}
+						"Action"
+						{
+							"Stun"
+							{
+								"Target"	"TARGET"
+								"Duration"	"%stun_duration"
+							}
+							"Damage"
+							{
+								"Target"	"TARGET"
+								"Damage"	"%dmg"
+								"Type"	"DAMAGE_TYPE_MAGICAL"
+							}
+						}
+					}
+					"FireSound"
+					{
+						"Target"	"POINT"
+						"EffectName"	"Ability.StarfallImpact"
+					}
+				}
+				"Delay"	"0.3"
+			}
+			"AbilityDuration"	"10.0 10.0 10.0 10.0"
+			// Damage.
+			// -------------------------------------------------------------------------------------------------------------
+			"AbilityDamage"	"75 150 225 300"
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"spell_duration"	"0.6"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"0.5"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"275.00"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"stun_duration"	"0.6 1.2 1.8 2.4"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"dmg"	"50 100 150 200"
+			}
+		}
+	}
+	//	玉子 爆裂箭
+	"C15E"
+	{
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"clinkz_searing_arrows"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
+		"FightRecapLevel"	"1"
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_2"
+		// Time
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"22 20 18 16"
+		// Cost
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"	"110"
+		// Casting
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"	"1350"
+		// Precache
+		// -------------------------------------------------------------------------------------------------------------
+		"precache"
+		{
+			"particle"	"particles/c15t/c15t.vpcf"
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_mirana.vsndevts"
+			"particle"	"particles/c15t/c15t.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"FireSound"
+			{
+				"EffectName"	"Hero_Mirana.ArrowCast"
+				"Target"	"CASTER"
+			}
+			"LinearProjectile"
+			{
+				"Target"	"POINT"
+				"EffectName"	"particles/c15t/c15t.vpcf"
+				"MoveSpeed"	"%arrow_speed"
+				"StartRadius"	"0"
+				"StartPosition"	"attach_origin"
+				"EndRadius"	"0"
+				"FixedDistance"	"%arrow_range"
+				"TargetTeams"	"DOTA_UNIT_TARGET_TEAM_NONE"
+				"TargetTypes"	"DOTA_UNIT_TARGET_TREE"
+				"HasFrontalCone"	"0"
+				"ProvidesVision"	"0"
+			}
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C15.lua"
+				"Function"	"new_C15E"
+			}
+		}
+		// Special
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"spell_duration"	"0.6"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"arrow_speed"	"1666"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"arrow_width"	"200"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"arrow_range"	"3000"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"dmg"	"90 120 150 180"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"12"
+			}
+		}
+	}
+
+	// Rewrite of the Mirana Leap ability
+	// Author: Pizzalol
+	// Date: 26.09.2015.
+	//玉子 精準之光
+	"C15R"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"mirana_invis"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Modifiers"
+		{
+			"modifier_C15R"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"%per_atk"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%agi"
+				}
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"per_atk"	"10 18 26 34"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"agi"	"5 10 15 20"
+			}
+		}
+	}
+	// 玉子 百箭齊發
+	"C15T"
+	{
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"drow_ranger_marksmanship"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityType"	"DOTA_ABILITY_TYPE_ULTIMATE"
+		"RequiredLevel"	"6"
+		"LevelsBetweenUpgrades"	"6"
+		"AbilityCastPoint"	"0.3"
+		// Time
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"140 115 90"
+		// Cost
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"	"150"
+		// Casting
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"	"700.00"
+		// Precache
+		// -------------------------------------------------------------------------------------------------------------
+		"precache"
+		{
+			"particle"	"particles/base_attacks/ranged_tower_good_explosion.vpcf"
+			"soundfile"	"sounds/weapons/hero/sven/attack02.vsnd"
+			"soundfile"	"sounds/weapons/hero/necrolyte/attack1.vsnd"
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_disruptor.vsndevts"
+			"particle"	"particles/c15t7/c15t7.vpcf"
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_legion_commander.vsndevts"
+			"particle"	"particles/generic_gameplay/generic_stunned.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"FireSound"
+			{
+				"EffectName"	"Hero_Disruptor.PreAttack"
+				"Target"	"CASTER"
+			}
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C15.lua"
+				"Function"	"new_C15T"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_C15T"
+			{
+				"EffectName"	"particles/c15t7/c15t7.vpcf"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE"	"%attack_dmg"
+				}
+				"States"	{}
+				"Duration"	"%life_duration"
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C15.lua"
+						"Function"	"new_C15T_end"
+					}
+				}
+				"OnAttack"
+				{
+					"RunScript"
+					{
+						"Function"	"new_C15T_attack"
+						"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C15.lua"
+					}
+					"FireSound"
+					{
+						"Target"	"TARGET"
+						"EffectName"	"Hero_LegionCommander.Attack"
+					}
+				}
+			}
+			"modifier_C15T_2"
+			{
+				"States"
+				{
+					"MODIFIER_STATE_STUNNED"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
+				"IsPurgable"	"1"
+				"IsDebuff"		"1"
+				"EffectName"	"particles/generic_gameplay/generic_stunned.vpcf"
+				"EffectAttachType"	"follow_overhead"
+				"Duration"	"%stun_duration"
+				"OnCreated"
+				{
+					"Damage"
+					{
+						"Target"	"TARGET"
+						"Type"	"DAMAGE_TYPE_MAGICAL"
+						"Damage"	"5"
+					}
+				}
+			}
+		}
+		// Special
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"spell_duration"	"0.6"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"stun_duration"	"2.2"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"life_duration"	"15"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"attack_dmg"	"50 100 150"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"attack_speed"	"1"
+			}
+		}
+	}
+
+	// Rewrite of the Mirana Starfall ability
+	// Author: Pizzalol
+	// Date: 04.01.2015.
+	
+	
+}

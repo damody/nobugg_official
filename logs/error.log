@@ -1,5 +1,11 @@
-2016/11/28 09:55:08 [alert] 22644#0: lua_code_cache is off; this will hurt performance in /home/damody/dota2nobu/nginx.conf.compiled:16
-2016/11/28 09:59:08 [alert] 22880#0: lua_code_cache is off; this will hurt performance in /home/damody/dota2nobu/nginx.conf.compiled:16
-2016/11/28 09:59:39 [alert] 22908#0: lua_code_cache is off; this will hurt performance in /home/damody/dota2nobu/nginx.conf.compiled:16
-2016/11/28 10:11:52 [alert] 23406#0: lua_code_cache is off; this will hurt performance in /home/damody/dota2nobu/nginx.conf.compiled:16
-2016/11/28 10:20:18 [alert] 24255#0: lua_code_cache is off; this will hurt performance in /home/damody/dota2nobu/nginx.conf.compiled:16
+2016/12/08 15:16:34 [alert] 871#0: lua_code_cache is off; this will hurt performance in /home/damody/nobu/nginx.conf.compiled:16
+2016/12/08 15:16:41 [alert] 899#0: lua_code_cache is off; this will hurt performance in /home/damody/nobu/nginx.conf.compiled:16
+2016/12/08 16:28:53 [alert] 1995#0: lua_code_cache is off; this will hurt performance in /home/damody/dota2nobu_official/nginx.conf.compiled:16
+2016/12/08 16:30:01 [alert] 2060#0: lua_code_cache is off; this will hurt performance in /home/damody/dota2nobu_official/nginx.conf.compiled:16
+2016/12/08 16:38:11 [warn] 2564#0: duplicate MIME type "text/html" in /home/damody/dota2nobu_official/nginx.conf.compiled:16
+2016/12/08 16:38:11 [emerg] 2564#0: unknown directive "" in /home/damody/dota2nobu_official/nginx.conf.compiled:19
+2016/12/08 16:39:22 [emerg] 2700#0: unknown directive "" in /home/damody/dota2nobu_official/nginx.conf.compiled:19
+2016/12/08 16:39:45 [alert] 2726#0: lua_code_cache is off; this will hurt performance in /home/damody/dota2nobu_official/nginx.conf.compiled:17
+2016/12/08 16:40:31 [emerg] 2760#0: unknown directive "" in /home/damody/dota2nobu_official/nginx.conf.compiled:20
+2016/12/08 16:40:57 [alert] 2784#0: lua_code_cache is off; this will hurt performance in /home/damody/dota2nobu_official/nginx.conf.compiled:16
+2016/12/08 16:40:57 [emerg] 2784#0: unknown directive "" in /home/damody/dota2nobu_official/nginx.conf.compiled:23
