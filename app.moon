@@ -9,7 +9,7 @@ class extends lapis.Application
     @params.language = "zhtw"
     layout: false, render: "list_hero"
    "/en/list_hero": =>
-      @params.language = "zhtw"
+      @params.language = "en"
       layout: false, render: "list_hero"
    "/zhcn/hero/:hero": =>
     @params.language = "zhcn"
@@ -18,7 +18,7 @@ class extends lapis.Application
     @params.language = "zhtw"
     layout: false, render: "hero"
    "/en/hero/:hero": =>
-      @params.language = "zhtw"
+      @params.language = "en"
       layout: false, render: "hero"
    "/*": =>
       layout: false, render: "index"

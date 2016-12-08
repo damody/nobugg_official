@@ -18,7 +18,7 @@ do
       }
     end,
     ["/en/list_hero"] = function(self)
-      self.params.language = "zhtw"
+      self.params.language = "en"
       return {
         layout = false,
         render = "list_hero"
@@ -39,7 +39,7 @@ do
       }
     end,
     ["/en/hero/:hero"] = function(self)
-      self.params.language = "zhtw"
+      self.params.language = "en"
       return {
         layout = false,
         render = "hero"
