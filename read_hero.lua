@@ -2,6 +2,97 @@ local rex = require("rex_pcre")
 local lfs = require("lfs")
 local inspect = require("inspect")
 
+langtext = {}
+langtext["oda_army"] = {}
+langtext["oda_army"]["zhtw"] = "織田軍"
+langtext["oda_army"]["zhcn"] = "织田军"
+langtext["oda_army"]["en"] = "Oda Army"
+
+langtext["unite_army"] = {}
+langtext["unite_army"]["zhtw"] = "聯合軍"
+langtext["unite_army"]["zhcn"] = "联合军"
+langtext["unite_army"]["en"] = "Unite Army"
+
+langtext["neutral_army"] = {}
+langtext["neutral_army"]["zhtw"] = "中立軍"
+langtext["neutral_army"]["zhcn"] = "中立军"
+langtext["neutral_army"]["en"] = "Neutral Army"
+
+langtext["herolist"] = {}
+langtext["herolist"]["zhtw"] = "英雄列表"
+langtext["herolist"]["zhcn"] = "英雄列表"
+langtext["herolist"]["en"] = "Hero List"
+
+langtext["mana"] = {}
+langtext["mana"]["zhtw"] = "耗魔"
+langtext["mana"]["zhcn"] = "耗魔"
+langtext["mana"]["en"] = "mana"
+
+langtext["cd"] = {}
+langtext["cd"]["zhtw"] = "冷卻時間"
+langtext["cd"]["zhcn"] = "冷却时间"
+langtext["cd"]["en"] = "Cooldown"
+
+langtext["radius"] = {}
+langtext["radius"]["zhtw"] = "施法範圍"
+langtext["radius"]["zhcn"] = "施法范围"
+langtext["radius"]["en"] = "AOERadius"
+
+langtext["version"] = {}
+langtext["version"]["zhtw"] = "版本"
+langtext["version"]["zhcn"] = "版本"
+langtext["version"]["en"] = "Version"
+
+langtext["all"] = {}
+langtext["all"]["zhtw"] = "總遊戲場數"
+langtext["all"]["zhcn"] = "总游戏场数"
+langtext["all"]["en"] = "Total games"
+
+langtext["win"] = {}
+langtext["win"]["zhtw"] = "總勝場數"
+langtext["win"]["zhcn"] = "总胜场数"
+langtext["win"]["en"] = "Win games"
+
+langtext["takedamage"] = {}
+langtext["takedamage"]["zhtw"] = "輸出傷害"
+langtext["takedamage"]["zhcn"] = "输出伤害"
+langtext["takedamage"]["en"] = "Take damage"
+langtext["damage"] = {}
+langtext["damage"]["zhtw"] = "承受傷害"
+langtext["damage"]["zhcn"] = "承受伤害"
+langtext["damage"]["en"] = "Get damage"
+langtext["herodamage"] = {}
+langtext["herodamage"]["zhtw"] = "對英雄傷害"
+langtext["herodamage"]["zhcn"] = "对英雄伤害"
+langtext["herodamage"]["en"] = "Take hero damage"
+
+langtext["win_takedamage"] = {}
+langtext["win_takedamage"]["zhtw"] = "勝場時輸出傷害"
+langtext["win_takedamage"]["zhcn"] = "胜场时输出伤害"
+langtext["win_takedamage"]["en"] = "Take damage when won"
+langtext["win_damage"] = {}
+langtext["win_damage"]["zhtw"] = "勝場時承受傷害"
+langtext["win_damage"]["zhcn"] = "胜场时承受伤害"
+langtext["win_damage"]["en"] = "Get damage when won"
+langtext["win_herodamage"] = {}
+langtext["win_herodamage"]["zhtw"] = "勝場時對英雄傷害"
+langtext["win_herodamage"]["zhcn"] = "胜场时对英雄伤害"
+langtext["win_herodamage"]["en"] = "Take hero damage when won"
+
+langtext["lose_takedamage"] = {}
+langtext["lose_takedamage"]["zhtw"] = "敗場時輸出傷害"
+langtext["lose_takedamage"]["zhcn"] = "败场时输出伤害"
+langtext["lose_takedamage"]["en"] = "Take damage when lost"
+langtext["lose_damage"] = {}
+langtext["lose_damage"]["zhtw"] = "敗場時承受傷害"
+langtext["lose_damage"]["zhcn"] = "败场时承受伤害"
+langtext["lose_damage"]["en"] = "Get damage when lost"
+langtext["lose_herodamage"] = {}
+langtext["lose_herodamage"]["zhtw"] = "敗場時對英雄傷害"
+langtext["lose_herodamage"]["zhcn"] = "败场时对英雄伤害"
+langtext["lose_herodamage"]["en"] = "Take hero damage when lost"
+
+
 en_heroname = {
 A04 = "Takenaka Shigeharu",
 A06 = "Ii Naomasa",

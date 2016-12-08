@@ -3,6 +3,27 @@ do
   local _class_0
   local _parent_0 = lapis.Application
   local _base_0 = {
+    ["/zhcn/list_hero"] = function(self)
+      self.params.language = "zhcn"
+      return {
+        layout = false,
+        render = "list_hero"
+      }
+    end,
+    ["/zhtw/list_hero"] = function(self)
+      self.params.language = "zhtw"
+      return {
+        layout = false,
+        render = "list_hero"
+      }
+    end,
+    ["/en/list_hero"] = function(self)
+      self.params.language = "zhtw"
+      return {
+        layout = false,
+        render = "list_hero"
+      }
+    end,
     ["/zhcn/hero/:hero"] = function(self)
       self.params.language = "zhcn"
       return {
