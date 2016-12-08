@@ -18,6 +18,11 @@ langtext["neutral_army"]["zhtw"] = "中立軍"
 langtext["neutral_army"]["zhcn"] = "中立军"
 langtext["neutral_army"]["en"] = "Neutral Army"
 
+langtext["winning"] = {}
+langtext["winning"]["zhtw"] = "角色勝率"
+langtext["winning"]["zhcn"] = "角色胜率"
+langtext["winning"]["en"] = "Winning"
+
 langtext["herolist"] = {}
 langtext["herolist"]["zhtw"] = "英雄列表"
 langtext["herolist"]["zhcn"] = "英雄列表"
