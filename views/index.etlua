@@ -7,6 +7,28 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="英雄列表 織田軍 柴田勝家 本多忠勝 大谷吉繼 織田信長 阿松 井伊直政 佐佐成政 羽柴秀吉 森蘭丸 服部半藏 石田三成 鳥居元忠 竹中重治 聯合軍 大熊朝秀 最上義姬 本願寺顯如 風魔小太郎 真田幸村 雜賀孫市 毛利元就 秋山信友 今川義元 上杉謙信 武田勝賴 淺井長政 中立軍 松姬 佐佐木小次郎" />
+<meta name='image' content='http://www.dota2nobu.com/static/pic/nobu.png' />
+<link rel="image_src" href='http://www.dota2nobu.com/static/pic/nobu.png' />
+<meta property="og:image" content="http://www.dota2nobu.com/static/pic/nobu.png" />
+<meta property="og:title" content="dota2信長英雄列表" />
+<meta property="og:description" content="英雄列表 織田軍 柴田勝家 本多忠勝 大谷吉繼 織田信長 阿松 井伊直政 佐佐成政 羽柴秀吉 森蘭丸 服部半藏 石田三成 鳥居元忠 竹中重治 聯合軍 大熊朝秀 最上義姬 本願寺顯如 風魔小太郎 真田幸村 雜賀孫市 毛利元就 秋山信友 今川義元 上杉謙信 武田勝賴 淺井長政 中立軍 松姬 佐佐木小次郎" />
+<meta property="og:url" content="http://www.dota2nobu.com" />
+<meta name="twitter:image:src" content="http://www.dota2nobu.com/static/pic/nobu.png">
+<meta name="author" content="dota2nobu.com" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="dota2nobu.com">
+<meta name="twitter:title" content="dota2信長英雄列表">
+<meta name="twitter:description" content="英雄列表 織田軍 柴田勝家 本多忠勝 大谷吉繼 織田信長 阿松 井伊直政 佐佐成政 羽柴秀吉 森蘭丸 服部半藏 石田三成 鳥居元忠 竹中重治 聯合軍 大熊朝秀 最上義姬 本願寺顯如 風魔小太郎 真田幸村 雜賀孫市 毛利元就 秋山信友 今川義元 上杉謙信 武田勝賴 淺井長政 中立軍 松姬 佐佐木小次郎">
+<meta name="twitter:domain" content="dota2nobu.com">
+
+<meta itemprop="name" content="dota2信長英雄列表">
+<meta itemprop="image" content="http://www.dota2nobu.com/static/pic/nobu.png">
+<meta itemprop="description" content="英雄列表 織田軍 柴田勝家 本多忠勝 大谷吉繼 織田信長 阿松 井伊直政 佐佐成政 羽柴秀吉 森蘭丸 服部半藏 石田三成 鳥居元忠 竹中重治 聯合軍 大熊朝秀 最上義姬 本願寺顯如 風魔小太郎 真田幸村 雜賀孫市 毛利元就 秋山信友 今川義元 上杉謙信 武田勝賴 淺井長政 中立軍 松姬 佐佐木小次郎">
+
 <style>
 div:hover {
     background-color: black;
@@ -16,10 +38,20 @@ a {
 }
 </style>
 </head>
-<body style="background-color: black;">
+<body style="background-color: black;" data-mobile-mode="yep" data-showing-advertisement="none">
+<div id="box" style="color:#FFF;">
+  <h1><a href="http://dota2nobu.com/">dota2信長英雄列表</a></h1>
+  <p>
+      <img title="dota2信長英雄列表" src="http://www.dota2nobu.com/static/pic/nobu.png" alt="dota2信長英雄列表" border=0 >
+      英雄列表 織田軍 柴田勝家 本多忠勝 大谷吉繼 織田信長 阿松 井伊直政 佐佐成政 羽柴秀吉 森蘭丸 服部半藏 石田三成 鳥居元忠 竹中重治 聯合軍 大熊朝秀 最上義姬 本願寺顯如 風魔小太郎 真田幸村 雜賀孫市 毛利元就 秋山信友 今川義元 上杉謙信 武田勝賴 淺井長政 中立軍 松姬 佐佐木小次郎
+  </p>
+</div>
+<script type="text/javascript">
+  document.getElementById("box").style.display = "none";
+</script>
 
 <div class="container-fluid">
-  <table style="background-image:url(http://dota2nobu.com/static/pic/nobu.png);background-size: 100%;background-position: 50% 50%; width:100%;height:800px;">
+  <table style="background-image:url(http://www.dota2nobu.com/static/pic/nobu.png);background-size: 100%;background-position: 50% 50%; width:100%;height:800px;">
   <tr>
   <td>
       <h2 style="text-align: center;">語言選擇</h2>
