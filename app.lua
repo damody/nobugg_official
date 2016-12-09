@@ -46,10 +46,9 @@ do
       }
     end,
     ["/"] = function(self)
-      self.params.language = "zhtw"
       return {
         layout = false,
-        render = "list_hero"
+        render = "index"
       }
     end,
     ["/*"] = function(self)
