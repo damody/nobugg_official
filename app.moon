@@ -23,5 +23,8 @@ class extends lapis.Application
   "/": =>
     @params.language = "zhtw"
     layout: false, render: "list_hero"
+  "/hero/:hero": =>
+    @params.language = "zhtw"
+    layout: false, render: "hero"
   "/*": =>
     layout: false, render: "index"
