@@ -51,6 +51,13 @@ do
         render = "index"
       }
     end,
+    ["/hero/:hero"] = function(self)
+      self.params.language = "zhtw"
+      return {
+        layout = false,
+        render = "hero"
+      }
+    end,
     ["/*"] = function(self)
       return {
         layout = false,
