@@ -396,17 +396,10 @@
 		"AbilityTextureName"			"lion_finger_of_death"
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
 		
-		// Precache
-		//-------------------------------------------------------------------------------------------------------------
-		"precache"
-		{
-			"soundfile"			"soundevents/game_sounds_heroes/game_sounds_lion.vsndevts"
-			"particle"			"particles/units/heroes/hero_lion/lion_spell_finger_of_death.vpcf"
-		}
 		
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"20000"
+		"AbilityCastRange"				"99999"
 		"AbilityCastPoint"				"0.1 0.1 0.1 0.1"
 
 		// Time		
@@ -421,8 +414,11 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityModifierSupportValue"	"0.0"	// Modifier just delays damage
 
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
+		"precache"
+		{
+			"soundfile"			"soundevents/game_sounds_heroes/game_sounds_lion.vsndevts"
+			"particle"			"particles/units/heroes/hero_lion/lion_spell_finger_of_death.vpcf"
+		}
 		"AbilitySpecial"
 		{
 			"01"
@@ -544,6 +540,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"1500"
 		"AbilityCastPoint"				"0.1 0.1 0.1 0.1"
+		"AOERadius"	"1000 1100 1200"
 		
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
@@ -564,7 +561,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"radius"				"800 1000 1200"
+				"radius"				"1000 1100 1200"
 			}
 			"02"
 			{
@@ -653,6 +650,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"1500"
 		"AbilityCastPoint"				"0.1 0.1 0.1 0.1"
+		"AOERadius"	"1000 1100 1200"
 		
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
@@ -673,7 +671,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"radius"				"800 1000 1200"
+				"radius"				"1000 1100 1200"
 			}
 			"02"
 			{

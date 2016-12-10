@@ -289,7 +289,7 @@
 		"AbilityCastPoint"	"0.3"
 		// Time
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"	"12.0 10.0 8.0 6.0"
+		"AbilityCooldown"	"12 10 8 6"
 		// Cost
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityManaCost"	"75"
@@ -626,7 +626,7 @@
 		"AbilityCastRange"	"1200"
 		"AOERadius"	"%radius"
 		"AbilityManaCost"	"200"
-		"AbilityCooldown"	"150 140 130"
+		"AbilityCooldown"	"130 120 110"
 		"RequiredLevel"	"6"
 		"LevelsBetweenUpgrades"	"6"
 		"Modifiers"

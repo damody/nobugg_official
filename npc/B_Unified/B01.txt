@@ -41,7 +41,7 @@
 				{
 					"MODIFIER_PROPERTY_ATTACK_RANGE_BONUS"	"%bonus_atk_rng"
 					"MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE"	"%bonus_atk"
-					//"MODIFIER_PROPERTY_BONUS_NIGHT_VISION"	"%bonus_atk_rng"
+					"MODIFIER_PROPERTY_BONUS_NIGHT_VISION"	"%bonus_sight_rng"
 				}
 				"Duration"	"%duration"
 				"OnDestroy"
@@ -69,7 +69,7 @@
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"bonus_sight_rng"	"250 500 750 1000"
+				"bonus_sight_rng"	"1000"
 			}
 			"04"
 			{
