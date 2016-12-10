@@ -1586,7 +1586,7 @@
 		"DOTA_Tooltip_Ability_B32E_old" "神閃"
 		"DOTA_Tooltip_Ability_B32E_old_Description" "化為一道冰徑橫貫到指定地點，可以對一路上的所有敵人造成<font color=\"#5cb85c\">(100/200/300/400)</font>的傷害並且使他們冰凍<font color=\"#5cb85c\">(1.4/1.6/1.8/2)</font>秒。"
 		"DOTA_Tooltip_Ability_B32R_old" "神烈"
-		"DOTA_Tooltip_Ability_B32R_old_Description" "令指定敵人陷入神烈的包圍，每秒造成<font color=\"#5cb85c\">(10/20/30/40]點傷害並無法施法，而且減少<font color=\"#5cb85c\">(10/20/30/40)%</font>攻擊力、攻擊及移動速度。持續<font color=\"#5cb85c\">(5/6/7/8)</font>秒。"
+		"DOTA_Tooltip_Ability_B32R_old_Description" "令指定敵人陷入神烈的包圍，每秒造成<font color=\"#5cb85c\">(10/20/30/40)</font>點傷害並無法施法，而且減少<font color=\"#5cb85c\">(10/20/30/40)%</font>攻擊力、攻擊及移動速度。持續<font color=\"#5cb85c\">(5/6/7/8)</font>秒。"
 		"DOTA_Tooltip_Ability_B32T_old" "毘沙門天"
 		"DOTA_Tooltip_Ability_B32T_old_Description" "得到威力強大的毘沙門天之力量，增加<font color=\"#5cb85c\">(55/110/170)</font>攻擊傷害、基礎攻速從1.8變為1.4，20% 混沌擴散攻擊，<font color=\"#5cb85c\">(20/30/40)</font>點每秒生命再生，持續40秒。 "
 
