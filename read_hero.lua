@@ -29,6 +29,7 @@ function ProcessText(file, text)
       local mana = rex.match(content, [["AbilityManaCost".+"(.+)"]], 0, "U")
       local radius = rex.match(content, [["AOERadius".+"(.+)"]], 0, "U")
       local pic = rex.match(content, [["AbilityTextureName".+"(.+)"]], 0, "U")
+      local range = rex.match(content, [["AbilityCastRange".+"(.+)"]], 0, "U")
       if radius~=nil and string.match(radius, "%%") then
         radius = string.gsub(radius, "%%", "")
         radius = rex.match(content, [["]]..radius..[[".+"(.+)"]], 0, "U")
@@ -39,6 +40,7 @@ function ProcessText(file, text)
       hero[name][ability]["mana"] = mana
       hero[name][ability]["radius"] = radius
       hero[name][ability]["pic"] = pic
+      hero[name][ability]["range"] = range
       --print(ability, content)
     end
   end

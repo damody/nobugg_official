@@ -46,6 +46,9 @@ skill = {"D", "W", "E", "R", "T"}
 			<% if item["radius"] ~= nil then %>
 				<li><%-langtext["radius"][lang]%>: <%= item["radius"] %></li>
 			<% end %>
+      <% if item["range"] ~= nil then %>
+        <li><%-langtext["range"][lang]%>: <%= item["range"] %></li>
+      <% end %>
 			<li><%- item["Description"][lang] %></li>
 		<% end %>
 		</ul>

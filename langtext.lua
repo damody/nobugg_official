@@ -25,6 +25,11 @@ langtext["herolist"]["zhtw"] = "英雄列表"
 langtext["herolist"]["zhcn"] = "英雄列表"
 langtext["herolist"]["en"] = "Hero List"
 
+langtext["range"] = {}
+langtext["range"]["zhtw"] = "施法距離"
+langtext["range"]["zhcn"] = "施法距离"
+langtext["range"]["en"] = "Cast Range"
+
 langtext["mana"] = {}
 langtext["mana"]["zhtw"] = "耗魔"
 langtext["mana"]["zhcn"] = "耗魔"
