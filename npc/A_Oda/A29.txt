@@ -19,8 +19,11 @@
 		"AbilityCastAnimation"			"ACT_DOTA_ATTACK"
 		"AOERadius"						"300"
 		"HotKeyOverride"				"W"
-		// Precache
-		//-------------------------------------------------------------------------------------------------------------
+		
+		"AbilityCastRange"				"600"
+		"AbilityCastPoint"				"0.3 0.3 0.3 0.3"
+		"AbilityCooldown"				"9 8 7 6"
+		"AbilityManaCost"				"120 145 170 195"
 		"precache"
 		{
 			"particle"		"particles/units/heroes/hero_viper/viper_viper_strike.vpcf" // Wonky projectile
@@ -29,22 +32,6 @@
 			"particle"		"particles/status_fx/status_effect_poison_viper.vpcf"
 			"soundfile"		"soundevents/game_sounds_heroes/game_sounds_viper.vsndevts"
 		}
-
-		// Casting
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"600"
-		"AbilityCastPoint"				"0.3 0.3 0.3 0.3"
-		
-		// Time		
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"9 8 7 6"
-
-		// Cost
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"120 145 170 195"
-		
-		// Special	
-		//-------------------------------------------------------------------------------------------------------------
 		"AbilitySpecial"
 		{
 			"01"

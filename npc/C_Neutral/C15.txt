@@ -394,10 +394,4 @@
 			}
 		}
 	}
-
-	// Rewrite of the Mirana Starfall ability
-	// Author: Pizzalol
-	// Date: 04.01.2015.
-	
-	
 }
