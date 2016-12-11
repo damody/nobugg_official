@@ -1127,6 +1127,8 @@
 		"DOTA_Tooltip_Ability_A06E_Description"	"对距离<font color=\"#5cb85c\">(500/650/800/950)</font>的目标敌人打出一道赤流星，可以将之晕击1.85秒，并造成<font color=\"#5cb85c\">(100/190/280/370)</font>伤害。 "
 		"DOTA_Tooltip_Ability_A06R"	 "赤焰流"
 		"DOTA_Tooltip_Ability_A06R_Description" "增加自身及周围友军<font color=\"#5cb85c\">(5/9/13/17)% </font>移动速度 ，并且每攻击5次便可以获得1次“释放怒焰”的能力，对指定方向喷出扇状火焰，使敌人受到<font color=\"#5cb85c\">(235/315/395/475)</font>伤害。 "
+		"DOTA_Tooltip_Ability_A06T"  "赤炎之怒"
+        "DOTA_Tooltip_Ability_A06T_Description" "获得赤炎之怒的能力，在接下来20秒增加<font color=\"#5cb85c\">(100/150/180) </font>攻击伤害 ，并且在持续时间内前7次攻击可以获得扩散效果，在击中目标时连带的对四周的其他敌人造成等同攻击伤害100%的伤害。 "
 		"DOTA_Tooltip_Ability_A06W_old"  "赤鬼之力"
 		"DOTA_Tooltip_Ability_A06W_old_Description" "解放自我来暂时获得强大的赤鬼之力，增加<font color=\"#5cb85c\">(200/300/400/500)% </font>攻击速度和<font color=\"#5cb85c\">(5/10/15/20)% </font>移动速度 但会受到50%额外真实伤害。 "
 		"DOTA_Tooltip_Ability_A06E_old"	 "赤炎斩"
@@ -1430,6 +1432,8 @@
 		
 		"DOTA_Tooltip_Ability_B01W_old"	"狙击模式"
 		"DOTA_Tooltip_Ability_B01W_old_Description"	"转换为狙击状态，增加攻击距离<font color=\"#5cb85c\">(250/450/650/850)</font>但牺牲70% 跑速。"
+		"DOTA_Tooltip_Ability_B01E_old"	"杂贺众"
+		"DOTA_Tooltip_Ability_B01E_old_Description"	"召唤杂贺众的同伴<font color=\"#5cb85c\">(2/3/4/5)</font>个来加入战斗。"
 		"DOTA_Tooltip_Ability_B01R_old"	"雨铁炮"
 		"DOTA_Tooltip_Ability_B01R_old_Description"	"45% 机率对建筑物造成额外<font color=\"#5cb85c\">(20/30/40/55)% </font>真实伤害、英雄造成额外<font color=\"#5cb85c\">(20/30/40/55)% </font>真实伤害、部队造成额外<font color=\"#5cb85c\">(60/90/120/150)% </font>真实伤害。<br /><font color=\"#5cb85c\">法球效果</font>"
 		"DOTA_Tooltip_Ability_B01T_old"	"三段"
