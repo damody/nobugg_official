@@ -60,6 +60,18 @@ end
 	});
 </script>
 
+<style type="text/css">
+<%if lang == "jp" then%>
+.st-title {
+font-size: 16px;
+}
+<%elseif lang == "en" then%>
+.st-title {
+font-size: 11px;
+}
+<% end %>
+</style>
+
 </head>
 
 <body class="page">
@@ -85,7 +97,10 @@ end
                 <h3 class="ver">版本：16</h3><% 
                 for i, it in ipairs(skill) do
                   item = hero[params.hero..it]
-                  if item ~=nil and item["name"] ~= nil then %>
+                  if item ~=nil and item["name"] ~= nil then 
+                    if item["name"][lang] == nil then
+                        item["name"][lang] = ""
+                    end%>
                 <div class="ability-list">
                     <h4 class="ability-name"><%=it.." "..item["name"][lang]%></h4>
                     <div class="ability-box">
@@ -128,7 +143,10 @@ end
                 <h3 class="ver">版本：11</h3><% 
                 for i, it in ipairs(skill) do
                   item = hero[params.hero..it.."_old"]
-                  if item ~=nil and item["name"] ~= nil then %>
+                  if item ~=nil and item["name"] ~= nil then 
+                    if item["name"][lang] == nil then
+                        item["name"][lang] = ""
+                    end%>
                 <div class="ability-list">
                     <h4 class="ability-name"><%=it.." "..item["name"][lang]%></h4>
                     <div class="ability-box">
