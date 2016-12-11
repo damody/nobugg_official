@@ -1520,7 +1520,7 @@
 		"DOTA_Tooltip_Ability_B05R_old" "三矢之訓"
 		"DOTA_Tooltip_Ability_B05R_old_Description" "讓全戰場友軍的裝甲提升<font color=\"#5cb85c\">(5/10/15/20)</font>護甲，持續20秒。"
 		"DOTA_Tooltip_Ability_B05T_old" "聖光彈"
-		"DOTA_Tooltip_Ability_B05T_old_Description" "出現一道光，讓範圍<font color=\"#5cb85c\">(800/900/100)</font>內的敵人造成<font color=\"#5cb85c\">(700/900/1100)</font>傷害，並造成<font color=\"#5cb85c\">(1.5/2/2.5)</font>秒暈眩。"
+		"DOTA_Tooltip_Ability_B05T_old_Description" "出現一道光，讓範圍<font color=\"#5cb85c\">(800/900/1000)</font>內的敵人造成<font color=\"#5cb85c\">(700/900/1100)</font>傷害，並造成<font color=\"#5cb85c\">(1.5/2/2.5)</font>秒暈眩。"
 
 		"npc_dota_hero_slardar"    "真田幸村"
 		"npc_dota_hero_slardar_bio"    "昌幸的次男，被稱為「日本第一武士」的幸村，在大阪冬之陣中大勝德川軍，是日本最有名氣的武將。當父親昌幸與德川對立時，以寡敵眾擊退大軍而一舉成名。關原合戰時，與兄長信之對壘，跟隨了父親和西軍，成功的在上田城拌住德川秀忠的大軍，後來西軍戰敗，幸村雖然被流放到九度山，但志氣未減，蟄伏14年後應豐臣秀賴之邀進入大阪城。在冬之陣中佈「真田丸」，發揮智略和武勇大敗來犯的大軍，並且嚴拒家康企圖用信濃一國來拉攏的誘惑，而在夏之陣，更於茶臼山之戰時三度殺到家康眼前，嚇得家康丟棄帥旗而逃。"
