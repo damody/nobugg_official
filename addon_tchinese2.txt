@@ -221,7 +221,7 @@
 		"DOTA_Tooltip_Ability_item_speed_clothes_Description" "攻速+25%"
 
 		"DOTA_Tooltip_Ability_item_insight_gem" "洞察寶石"
-		"DOTA_Tooltip_Ability_item_insight_gem_Description" "攜帶時可被動偵測到範圍600內隱形單位。<br />【使用】偵測1200內隱形部隊，並在使其現形10秒。<br /><font color=\"#cc0000\">死亡時掉落，不得售回</font>"
+		"DOTA_Tooltip_Ability_item_insight_gem_Description" "攜帶時可被動偵測到範圍600內隱形單位。<br />【使用】偵測1200內隱形部隊，並在使其現形10秒。"
 
 		"DOTA_Tooltip_Ability_item_healing_totem" "療癒圖騰"
 		"DOTA_Tooltip_Ability_item_healing_totem_Description" "【使用】形成一個醫療區域治好附近的友方部隊，每秒恢復2%最大生命值，持續15秒。<br /><font color=\"#cc0000\">醫療效果不得疊加</font>"
@@ -804,7 +804,7 @@
 		"DOTA_Tooltip_Ability_C21T"	"秘奧義‧飛翔烈震斬"
 		"DOTA_Tooltip_Ability_C21T_Description"	"在戰場上迅速的來回斬擊，每次斬擊可以造成110的真實傷害與基礎攻擊力的物理傷害，並且每次的斬擊宮本武藏將更加的迅速，能夠同一時間揮出更多攻擊，總共可以進行<font color=\"#5cb85c\">(11/16/23)</font>次斬擊。"
 		"DOTA_Tooltip_Ability_B08W"	"一刀．牙"
-		"DOTA_Tooltip_Ability_B08W_Description"	"對指定的方向斬出一刀．牙，使距離1100路徑上的敵人受到傷害。"
+		"DOTA_Tooltip_Ability_B08W_Description"	"對指定的方向斬出一刀．牙，使距離1100路徑上的敵人受到<font color=\"#5cb85c\">(150/300/450/600)</font>傷害。"
 		"DOTA_Tooltip_Ability_B08E"	"一刀．閃瞬"
 		"DOTA_Tooltip_Ability_B08E_Description"	"瞬移到指定目標身旁，進行快速的一次斬擊造成<font color=\"#5cb85c\">(100/200/300/400)</font>魔法傷害並且暈眩1.1秒，並且使之損失<font color=\"#5bc0de\">(100/160/220/280)</font>點法力點數。"
 		"DOTA_Tooltip_Ability_B08R"	"活心．魂"
@@ -815,7 +815,7 @@
 		"DOTA_Tooltip_Ability_B08D_old"	"一刀．連牙斷空"
 		"DOTA_Tooltip_Ability_B08D_old_Description"	"對指定的敵人連斬出十八刀牙，每刀造成100魔法傷害總共暈眩2.2秒。"
 		"DOTA_Tooltip_Ability_B08W_old"	"一刀．牙"
-		"DOTA_Tooltip_Ability_B08W_old_Description"	"對指定的方向斬出一刀．牙，使距離1100路徑上的敵人受到傷害<font color=\"#5cb85c\">(200/300/400/500)</font>。"
+		"DOTA_Tooltip_Ability_B08W_old_Description"	"對指定的方向斬出一刀．牙，使距離1100路徑上的敵人受到<font color=\"#5cb85c\">(200/300/400/500)</font>傷害。"
 		"DOTA_Tooltip_Ability_B08E_old"	"一刀．閃瞬"
 		"DOTA_Tooltip_Ability_B08E_old_Description"	"瞬移到指定目標身旁，進行快速的一次斬擊造成<font color=\"#5cb85c\">(300/400/500/600)</font>魔法傷害並且暈眩0.5秒。"
 		"DOTA_Tooltip_Ability_B08R_old"	"活心．魂"
@@ -1146,7 +1146,7 @@
         "DOTA_Tooltip_Ability_A07R"  "碎擊槍"
 		"DOTA_Tooltip_Ability_A07R_Description" "每當擊中敵人時，可以連帶的對範圍<font color=\"#5cb85c\">(245/285/325/365)</font>的其他敵人造成等同攻擊傷害40%的傷害。 "
 		"DOTA_Tooltip_Ability_A07T"  "戰國最強．啟動"
-		"DOTA_Tooltip_Ability_A07T_Description" "擁有戰國最強的力量，基礎攻速由1.6變為0.9，增加60攻擊傷害以及115移動速度，\"奮起\"的效果變為雙倍。可持續<font color=\"#5cb85c\">(20/23/26)</font>秒。 "
+		"DOTA_Tooltip_Ability_A07T_Description" "擁有戰國最強的力量，增加2倍基礎攻速，增加60攻擊傷害以及115移動速度，\"奮起\"的效果變為雙倍。可持續<font color=\"#5cb85c\">(20/23/26)</font>秒。 "
 
 		"DOTA_Tooltip_Ability_A07W_old"  "毫髮無傷"
 		"DOTA_Tooltip_Ability_A07W_old_Description" "施展後能無視所有物理傷害但是必須犧牲移動速度40% ，並且可以吸收法術傷害轉化為自身的生命值。持續<font color=\"#5cb85c\">(3/4/5/6)</font>秒。 "
@@ -1155,7 +1155,7 @@
         "DOTA_Tooltip_Ability_A07R_old"  "碎擊槍"
 		"DOTA_Tooltip_Ability_A07R_old_Description" "每當擊中敵人時，有36%造成等同攻擊傷害<font color=\"#5cb85c\">(1.4/1.6/1.8/2)</font>倍傷害。 "
 		"DOTA_Tooltip_Ability_A07T_old"  "戰國最強．啟動"
-		"DOTA_Tooltip_Ability_A07T_old_Description" "擁有戰國最強的力量，基礎攻速由1.6變為0.8，增加60攻擊傷害並魔法免疫，普攻造成範圍600混沌擴散，最近100% 最遠40% 傷害，可持續<font color=\"#5cb85c\">(15/20/25)</font>秒。 "
+		"DOTA_Tooltip_Ability_A07T_old_Description" "擁有戰國最強的力量，增加2.25倍基礎攻速，增加60攻擊傷害並魔法免疫，普攻造成範圍600混沌擴散，最近100% 最遠40% 傷害，可持續<font color=\"#5cb85c\">(15/20/25)</font>秒。 "
 		
 
 		"DOTA_Tooltip_Ability_A08W"  "碎顱打擊"
