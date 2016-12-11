@@ -1,0 +1,284 @@
+<%
+local inspect = require("inspect")
+require("read_hero")
+require("langtext")
+lang = params.language
+local redis = require 'redis'
+local client = redis.connect('127.0.0.1', 6379)
+local cjson = require("cjson")
+
+if lang == "zhtw" then
+  heroname = zhtw_heroname
+elseif  lang == "zhcn" then
+  heroname = zhcn_heroname
+elseif lang == "jp" then
+  heroname = jp_heroname
+elseif lang == "en" then
+  heroname = en_heroname
+end
+
+%>
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title><%-langtext["dota2nobu"][lang]%></title>
+<!--css list-->
+<link rel="stylesheet" href="../static/css/reset.css">
+<link rel="stylesheet" href="../static/css/style2.css">
+
+<!--google font-->
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
+
+<!--jquery-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!--fancyBox-->
+<script type="text/javascript" src="../../static/fancyBox/jquery.fancybox.js?v=2.1.5"></script>
+<link rel="stylesheet" type="text/css" href="../../static/fancyBox/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+<!-- Add Button helper (this is optional) -->
+<link rel="stylesheet" type="text/css" href="../../static/fancyBox/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+<script type="text/javascript" src="../../static/fancyBox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+
+<!-- Add Thumbnail helper (this is optional) -->
+<link rel="stylesheet" type="text/css" href="../../static/fancyBox/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+<script type="text/javascript" src="../../static/fancyBox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+<!-- Add Media helper (this is optional) -->
+<script type="text/javascript" src="../../static/fancyBox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<!--scrolling nav fixed-->
+<script type="text/javascript">
+  function openbox(path) {
+    var top = $(window).scrollTop();
+    $.fancybox.open({
+            href : path,
+            type : 'iframe',
+            padding : 5
+          });
+    $(this).scrollTop(top);
+  }
+  </script>
+<script>
+	jQuery("document").ready(function($){
+		$(window).keydown(function( event ) {
+			if ( event.which == 34 || event.which == 32 ) {
+				if ($(this).scrollTop() < $(this).height()*0.9) {
+					$(this).scrollTop($(this).height()*0.12);
+				} else if ($(this).scrollTop() < $(this).height()*1.8) {
+					$(this).scrollTop($(this).height()*1.1);
+				}
+			}
+			if ( event.which == 33 ) {
+				if ($(this).scrollTop() > $(this).height()*2) {
+					$(this).scrollTop($(this).height()*1.87);
+				} else if ($(this).scrollTop() > $(this).height()*1.8) {
+					$(this).scrollTop($(this).height()*1.87);
+				} else if ($(this).scrollTop() > $(this).height()*0.9) {
+					$(this).scrollTop($(this).height()*0);
+				}
+			}
+		});
+		var nav = $('header');
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 50) {
+				nav.addClass("nav-sticky");
+			} else {
+				nav.removeClass("nav-sticky");
+			}
+		});
+	 
+	});
+</script>
+
+</head>
+
+<body>
+	<header>
+    	<nav>
+        	<!--<a class="menu-list">選單A</a>
+            <a class="menu-list">選單B</a>
+            <a class="menu-list">選單C</a>-->
+        	<img src="../static/image/logo-dota2.png">
+            <!--<a class="menu-list">選單D</a>
+            <a class="menu-list">選單E</a>
+            <a class="menu-list">選單F</a>-->
+        </nav>
+    </header>
+    <div class="container full-height faction1">
+        <div class="wrapper">
+            <div class="placeholder"></div>
+            <div class="column-2">
+            	<h2 class="faction-title">
+                	<span>織</span>
+                    <span>田</span>
+                    <span>Champion List</span>
+                </h2>
+            </div>
+            
+            <div class="column-8 champion-list cl1"><% 
+            i1 = -1
+            for n=1,40 do 
+              key = tostring(n)
+              if n < 10 then
+                key = "0"..key
+              end
+              key = "A"..key
+              if heroname[key] ~= nil then
+                i1 = i1 + 1
+                i = key
+                it = heroname[key]
+                if i1 > 1 and math.fmod(i1,3) == 0 then %>
+                </div><% 
+                end 
+                if math.fmod(i1,3) == 0 then %>
+                <div class="champion-box"><% 
+                end %>
+                    <a href="hero/<%-i%>">
+                        <img src="../static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name"><%-it%></div>
+                    </a><% 
+              end 
+            end%>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container full-height faction2">
+        <div class="wrapper">
+            <div class="column-8 champion-list cl2"><% 
+            i1 = -1
+            for n=1,40 do 
+              key = tostring(n)
+              if n < 10 then
+                key = "0"..key
+              end
+              key = "B"..key
+              if heroname[key] ~= nil then
+                i1 = i1 + 1
+                i = key
+                it = heroname[key]
+                if i1 > 1 and math.fmod(i1,3) == 0 then %>
+                </div><% 
+                end 
+                if math.fmod(i1,3) == 0 then %>
+                <div class="champion-box"><% 
+                end  %>
+                    <a href="hero/<%-i%>">
+                        <img src="../static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name"><%-it%></div>
+                    </a><% 
+              end 
+            end%>
+                </div>
+            </div>
+            <div class="column-2">
+            	<h2 class="faction-title">
+                	<span>聯</span>
+                    <span>合</span>
+                    <span>Champion List</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container full-height faction3">
+        <div class="wrapper">
+            <div class="placeholder"></div>
+            <div class="column-2">
+            	<h2 class="faction-title">
+                	<span>中</span>
+                    <span>立</span>
+                    <span>Champion List</span>
+                </h2>
+            </div>
+            <div class="column-8 champion-list cl1 cl3"><% 
+            i1 = -1
+            for n=1,40 do 
+              key = tostring(n)
+              if n < 10 then
+                key = "0"..key
+              end
+              key = "C"..key
+              if heroname[key] ~= nil then
+                i1 = i1 + 1
+                i = key
+                it = heroname[key]
+                if i1 > 1 and math.fmod(i1,3) == 0 then %>
+                </div><% 
+                end 
+                if math.fmod(i1,3) == 0 then %>
+                <div class="champion-box"><% 
+                end %>
+                    <a href="hero/<%-i%>">
+                        <img src="../static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name"><%-it%></div>
+                    </a><% 
+              end 
+            end%>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+    	<div class="quick-link">
+        	<div class="ql-1">
+            	<h3 class="ql-title"><%-langtext["oda_army"][lang]%>／</h3><% 
+            i1 = -1
+            for n=1,40 do 
+              key = tostring(n)
+              if n < 10 then
+                key = "0"..key
+              end
+              key = "A"..key
+              if heroname[key] ~= nil then
+                i1 = i1 + 1
+                i = key
+                it = heroname[key]
+                 %>
+            	<a href="hero/<%-i%>"><%-it%></a><%
+              end 
+            end%>
+            </div>
+            <div class="ql-2">
+            <h3 class="ql-title"><%-langtext["unite_army"][lang]%>／</h3><% 
+            i1 = -1
+            for n=1,40 do 
+              key = tostring(n)
+              if n < 10 then
+                key = "0"..key
+              end
+              key = "B"..key
+              if heroname[key] ~= nil then
+                i1 = i1 + 1
+                i = key
+                it = heroname[key]
+                 %>
+                <a href="hero/<%-i%>"><%-it%></a><%
+              end 
+            end%>
+            </div>
+            <div class="ql-3">
+            <h3 class="ql-title"><%-langtext["neutral_army"][lang]%>／</h3><% 
+            i1 = -1
+            for n=1,40 do 
+              key = tostring(n)
+              if n < 10 then
+                key = "0"..key
+              end
+              key = "C"..key
+              if heroname[key] ~= nil then
+                i1 = i1 + 1
+                i = key
+                it = heroname[key]
+                 %>
+                <a href="hero/<%-i%>"><%-it%></a><%
+              end 
+            end%>
+            </div>
+        </div>
+    	<div class="copyright">©2016 WL保留所有權利。</div>
+    </footer>
+</body>
+</html>

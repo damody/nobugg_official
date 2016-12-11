@@ -61,8 +61,7 @@ skill = {"D", "W", "E", "R", "T"}
       hasold = true
     end
   end
-  %>
-  <% if item then %>
+  if hasold then %>
   <h4><%-langtext["version"][lang]%>: 11</h4>
   <% end %>
   <% for i, it in ipairs(skill) do

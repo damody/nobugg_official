@@ -34,6 +34,18 @@ function ProcessText(file, text)
         radius = string.gsub(radius, "%%", "")
         radius = rex.match(content, [["]]..radius..[[".+"(.+)"]], 0, "U")
       end
+      if cooldown ~= nil then
+        cooldown = string.gsub(cooldown, " ", "/")
+      end
+      if mana ~= nil then
+        mana = string.gsub(mana, " ", "/")
+      end
+      if radius ~= nil then
+        radius = string.gsub(radius, " ", "/")
+      end
+      if range ~= nil then
+        range = string.gsub(range, " ", "/")
+      end
       
       hero[name][ability] = {}
       hero[name][ability]["cooldown"] = cooldown

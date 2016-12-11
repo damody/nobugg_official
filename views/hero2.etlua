@@ -1,0 +1,336 @@
+<%
+local inspect = require("inspect")
+require("read_hero")
+lang = params.language
+hero = read_hero()[params.hero]
+data = inspect(hero)
+local redis = require 'redis'
+local client = redis.connect('127.0.0.1', 6379)
+local cjson = require("cjson")
+record16 = cjson.decode(client:get(string.lower(params.hero).."_16"))
+record11 = cjson.decode(client:get(string.lower(params.hero).."_11"))
+
+
+if lang == "zhtw" then
+  heroname = zhtw_heroname
+elseif  lang == "zhcn" then
+  heroname = zhcn_heroname
+elseif lang == "jp" then
+  heroname = jp_heroname
+elseif lang == "en" then
+  heroname = en_heroname
+end
+
+skill = {"D", "W", "E", "R", "T"}
+
+function round(num, idp)
+  local mult = 10^(idp or 0)
+  return math.floor(num * mult + 0.5) / mult
+end
+%>
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title><%-langtext["dota2nobu"][lang]%></title>
+<!--css list-->
+<link rel="stylesheet" href="../../static/css/reset.css">
+<link rel="stylesheet" href="../../static/css/style2.css">
+
+<!--google font-->
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
+
+<!--jquery-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+
+<!--scrolling nav fixed-->
+<script>
+	jQuery("document").ready(function($){
+		
+		var nav = $('header');
+		
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 50) {
+				nav.addClass("nav-sticky");
+			} else {
+				nav.removeClass("nav-sticky");
+			}
+		});
+	 
+	});
+</script>
+
+</head>
+
+<body class="page">
+	<header>
+    	<nav>
+        	<!--<a class="menu-list">選單A</a>
+            <a class="menu-list">選單B</a>
+            <a class="menu-list">選單C</a>-->
+        	<img src="../../static/image/logo-dota2.png">
+            <!--<a class="menu-list">選單D</a>
+            <a class="menu-list">選單E</a>
+            <a class="menu-list">選單F</a>-->
+        </nav>
+    </header>
+    <div class="container">
+    	<div class="champion-banner first-layout">
+          	<h1 class="cp-fc1"><%-hero["name"][lang]%></h1>
+        </div>
+        <div class="wrapper">
+            <!--技能資訊 16-->
+        	<div class="champion-info">
+            	<h2 class="champion-title"><%-langtext["abilityinfo"][lang]%><span>Ability Info</span></h2>
+                <h3 class="ver">版本：16</h3><% 
+                for i, it in ipairs(skill) do
+                  item = hero[params.hero..it]
+                  if item ~=nil and item["name"] ~= nil then %>
+                <div class="ability-list">
+                    <h4 class="ability-name"><%=it.." "..item["name"][lang]%></h4>
+                    <div class="ability-box">
+                        <img src="../../static/pic/spellicons/<%-item["pic"]%>.png" alt="<%=item["name"][lang]%> icon" width="100" height="100">
+                        <div class="ability-info">
+                            <ul>
+                            <% if item["cooldown"] ~= nil then %>
+                                <li><%-langtext["cd"][lang]%>: <%= item["cooldown"] %></li>
+                            <% end %>
+                            <% if item["mana"] ~= nil then %>
+                                <li><%-langtext["mana"][lang]%>: <%= item["mana"] %></li>
+                            <% end %>
+                            <% if item["radius"] ~= nil then %>
+                                <li><%-langtext["radius"][lang]%>: <%= item["radius"] %></li>
+                            <% end %>
+                            <% if item["range"] ~= nil then %>
+                                <li><%-langtext["range"][lang]%>: <%= item["range"] %></li>
+                            <% end %>
+                                <li><%- item["Description"][lang] %></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><% 
+                    end 
+                end %>
+            </div>
+        	<!--技能資訊 16-->
+            <!--技能資訊 11-->
+            <%
+            hasold = false
+            for i, it in ipairs(skill) do
+                item = hero[params.hero..it.."_old"]
+                if item ~=nil and item["name"] ~= nil then
+                  hasold = true
+                end
+            end
+            if hasold then %>
+            <div class="champion-info">
+                <h2 class="champion-title"><%-langtext["abilityinfo"][lang]%><span>Ability Info</span></h2>
+                <h3 class="ver">版本：11</h3><% 
+                for i, it in ipairs(skill) do
+                  item = hero[params.hero..it.."_old"]
+                  if item ~=nil and item["name"] ~= nil then %>
+                <div class="ability-list">
+                    <h4 class="ability-name"><%=it.." "..item["name"][lang]%></h4>
+                    <div class="ability-box">
+                        <img src="../../static/pic/spellicons/<%-item["pic"]%>.png" alt="<%=item["name"][lang]%> icon" width="100" height="100">
+                        <div class="ability-info">
+                            <ul>
+                            <% if item["cooldown"] ~= nil then %>
+                                <li><%-langtext["cd"][lang]%>: <%= item["cooldown"] %></li>
+                            <% end %>
+                            <% if item["mana"] ~= nil then %>
+                                <li><%-langtext["mana"][lang]%>: <%= item["mana"] %></li>
+                            <% end %>
+                            <% if item["radius"] ~= nil then %>
+                                <li><%-langtext["radius"][lang]%>: <%= item["radius"] %></li>
+                            <% end %>
+                            <% if item["range"] ~= nil then %>
+                                <li><%-langtext["range"][lang]%>: <%= item["range"] %></li>
+                            <% end %>
+                                <li><%- item["Description"][lang] %></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><% 
+                    end 
+                end %>
+            </div>
+            <% end %>
+            <!--技能資訊 11-->
+            <!--統計資訊 16-->
+            <% if record16["all"] ~= nil then %>
+        	<div class="champion-info">
+            	<h2 class="champion-title"><%-langtext["statistical"][lang]%><span>Statistics Info</span></h2>
+                <h3 class="ver"><%-langtext["version"][lang]%>：16</h3>
+                <div class="st-box">
+                	<h4 class="st-title"><%-langtext["all"][lang]%></h4>
+                    <div class="st-number"><%-record16["all"]%></div>
+                </div>
+                <div class="st-box">
+                	<h4 class="st-title"><%-langtext["wincount"][lang]%></h4>
+                    <div class="st-number"><%-record16["win"]%></div>
+                </div>
+                <div class="st-box">
+                    <h4 class="st-title"><%-langtext["winning"][lang]%></h4>
+                    <div class="st-number"><%-round(record16["winning"]*100, 2).."%"%></div>
+                </div>
+                <div class="st-box">
+                    <h4 class="st-title"><%-langtext["damage"][lang]%></h4>
+                    <div class="st-number"><%-record16["damage"]%></div>
+                </div>
+                <div class="st-box">
+                    <h4 class="st-title"><%-langtext["takedamage"][lang]%></h4>
+                    <div class="st-number"><%-record16["takedamage"]%></div>
+                </div>
+                <div class="st-box">
+                    <h4 class="st-title"><%-langtext["herodamage"][lang]%></h4>
+                    <div class="st-number"><%-record16["herodamage"]%></div>
+                </div>
+                <div class="st-box">
+                	<h4 class="st-title"><%-langtext["damage"][lang]%><div class="st-win"><%-langtext["win"][lang]%></div></h4>                    
+                    <div class="st-number"><%-record16["win_damage"]%></div>
+                </div>
+                <div class="st-box">
+                    <h4 class="st-title"><%-langtext["takedamage"][lang]%><div class="st-win"><%-langtext["win"][lang]%></div></h4>                    
+                    <div class="st-number"><%-record16["win_takedamage"]%></div>
+                </div>
+                <div class="st-box">
+                    <h4 class="st-title"><%-langtext["herodamage"][lang]%><div class="st-win"><%-langtext["win"][lang]%></div></h4>                    
+                    <div class="st-number"><%-record16["win_herodamage"]%></div>
+                </div>
+                <div class="st-box">
+                    <h4 class="st-title"><%-langtext["damage"][lang]%><div class="st-lose"><%-langtext["lose"][lang]%></div></h4>                    
+                    <div class="st-number"><%-record16["lose_damage"]%></div>
+                </div>
+                <div class="st-box">
+                    <h4 class="st-title"><%-langtext["takedamage"][lang]%><div class="st-lose"><%-langtext["lose"][lang]%></div></h4>                    
+                    <div class="st-number"><%-record16["lose_takedamage"]%></div>
+                </div>
+                <div class="st-box">
+                    <h4 class="st-title"><%-langtext["herodamage"][lang]%><div class="st-lose"><%-langtext["lose"][lang]%></div></h4>                    
+                    <div class="st-number"><%-record16["lose_herodamage"]%></div>
+                </div>
+            </div>
+            <% end %>
+            <!--統計資訊 16-->
+            <!--統計資訊 11-->
+            <% if record11["all"] ~= nil then %>
+            <div class="champion-info">
+                <h2 class="champion-title"><%-langtext["statistical"][lang]%><span>Statistics Info</span></h2>
+                <h3 class="ver"><%-langtext["version"][lang]%>：11</h3>
+                <div class="st-box">
+                    <h4 class="st-title"><%-langtext["all"][lang]%></h4>
+                    <div class="st-number"><%-record11["all"]%></div>
+                </div>
+                <div class="st-box">
+                    <h4 class="st-title"><%-langtext["wincount"][lang]%></h4>
+                    <div class="st-number"><%-record11["win"]%></div>
+                </div>
+                <div class="st-box">
+                    <h4 class="st-title"><%-langtext["winning"][lang]%></h4>
+                    <div class="st-number"><%-round(record11["winning"]*100, 2).."%"%></div>
+                </div>
+                <div class="st-box">
+                    <h4 class="st-title"><%-langtext["damage"][lang]%></h4>
+                    <div class="st-number"><%-record11["damage"]%></div>
+                </div>
+                <div class="st-box">
+                    <h4 class="st-title"><%-langtext["takedamage"][lang]%></h4>
+                    <div class="st-number"><%-record11["takedamage"]%></div>
+                </div>
+                <div class="st-box">
+                    <h4 class="st-title"><%-langtext["herodamage"][lang]%></h4>
+                    <div class="st-number"><%-record11["herodamage"]%></div>
+                </div>
+                <div class="st-box">
+                    <h4 class="st-title"><%-langtext["damage"][lang]%><div class="st-win"><%-langtext["win"][lang]%></div></h4>                    
+                    <div class="st-number"><%-record11["win_damage"]%></div>
+                </div>
+                <div class="st-box">
+                    <h4 class="st-title"><%-langtext["takedamage"][lang]%><div class="st-win"><%-langtext["win"][lang]%></div></h4>                    
+                    <div class="st-number"><%-record11["win_takedamage"]%></div>
+                </div>
+                <div class="st-box">
+                    <h4 class="st-title"><%-langtext["herodamage"][lang]%><div class="st-win"><%-langtext["win"][lang]%></div></h4>                    
+                    <div class="st-number"><%-record11["win_herodamage"]%></div>
+                </div>
+                <div class="st-box">
+                    <h4 class="st-title"><%-langtext["damage"][lang]%><div class="st-lose"><%-langtext["lose"][lang]%></div></h4>                    
+                    <div class="st-number"><%-record11["lose_damage"]%></div>
+                </div>
+                <div class="st-box">
+                    <h4 class="st-title"><%-langtext["takedamage"][lang]%><div class="st-lose"><%-langtext["lose"][lang]%></div></h4>                    
+                    <div class="st-number"><%-record11["lose_takedamage"]%></div>
+                </div>
+                <div class="st-box">
+                    <h4 class="st-title"><%-langtext["herodamage"][lang]%><div class="st-lose"><%-langtext["lose"][lang]%></div></h4>                    
+                    <div class="st-number"><%-record11["lose_herodamage"]%></div>
+                </div>
+            </div>
+            <% end %>
+            <!--統計資訊 11-->
+        </div>
+    </div>
+
+
+    <footer>
+    	<div class="quick-link">
+        	<div class="ql-1">
+                <h3 class="ql-title"><%-langtext["oda_army"][lang]%>／</h3><% 
+            i1 = -1
+            for n=1,40 do 
+              key = tostring(n)
+              if n < 10 then
+                key = "0"..key
+              end
+              key = "A"..key
+              if heroname[key] ~= nil then
+                i1 = i1 + 1
+                i = key
+                it = heroname[key]
+                 %>
+                <a href="hero/<%-i%>"><%-it%></a><%
+              end 
+            end%>
+            </div>
+            <div class="ql-2">
+            <h3 class="ql-title"><%-langtext["unite_army"][lang]%>／</h3><% 
+            i1 = -1
+            for n=1,40 do 
+              key = tostring(n)
+              if n < 10 then
+                key = "0"..key
+              end
+              key = "B"..key
+              if heroname[key] ~= nil then
+                i1 = i1 + 1
+                i = key
+                it = heroname[key]
+                 %>
+                <a href="hero/<%-i%>"><%-it%></a><%
+              end 
+            end%>
+            </div>
+            <div class="ql-3">
+            <h3 class="ql-title"><%-langtext["neutral_army"][lang]%>／</h3><% 
+            i1 = -1
+            for n=1,40 do 
+              key = tostring(n)
+              if n < 10 then
+                key = "0"..key
+              end
+              key = "C"..key
+              if heroname[key] ~= nil then
+                i1 = i1 + 1
+                i = key
+                it = heroname[key]
+                 %>
+                <a href="hero/<%-i%>"><%-it%></a><%
+              end 
+            end%>
+            </div>
+        </div>
+    	<div class="copyright">©2016 WL保留所有權利。</div>
+    </footer>
+</body>
+</html>

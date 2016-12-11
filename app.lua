@@ -7,42 +7,56 @@ do
       self.params.language = "zhcn"
       return {
         layout = false,
-        render = "list_hero"
+        render = "list_hero2"
       }
     end,
     ["/zhtw/list_hero"] = function(self)
       self.params.language = "zhtw"
       return {
         layout = false,
-        render = "list_hero"
+        render = "list_hero2"
       }
     end,
     ["/en/list_hero"] = function(self)
       self.params.language = "en"
       return {
         layout = false,
-        render = "list_hero"
+        render = "list_hero2"
+      }
+    end,
+    ["/jp/list_hero"] = function(self)
+      self.params.language = "jp"
+      return {
+        layout = false,
+        render = "list_hero2"
       }
     end,
     ["/zhcn/hero/:hero"] = function(self)
       self.params.language = "zhcn"
       return {
         layout = false,
-        render = "hero"
+        render = "hero2"
       }
     end,
     ["/zhtw/hero/:hero"] = function(self)
       self.params.language = "zhtw"
       return {
         layout = false,
-        render = "hero"
+        render = "hero2"
       }
     end,
     ["/en/hero/:hero"] = function(self)
       self.params.language = "en"
       return {
         layout = false,
-        render = "hero"
+        render = "hero2"
+      }
+    end,
+    ["/jp/hero/:hero"] = function(self)
+      self.params.language = "jp"
+      return {
+        layout = false,
+        render = "hero2"
       }
     end,
     ["/"] = function(self)
