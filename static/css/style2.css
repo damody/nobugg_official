@@ -159,16 +159,14 @@ h2.faction-title span:nth-child(3) {
 .champion-list.cl2 > .champion-box:nth-child(5) {
     margin-left: 14%;
 }
+.champion-list > ul > li:nth-child(3n){
+	margin-right:0;
+	}
 .champion-list a{
 	float:left;
 	width:30%;
 	margin-bottom:25px;
 	margin-right:1%;
-	}
-.champion-list > ul > li:nth-child(3n){
-	margin-right:0;
-	}
-.champion-list a{
 	background-color:rgba(255,255,255,0.3);
 	background-image:url(../image/icon-seemore.png);
 	background-repeat:no-repeat;
@@ -179,20 +177,23 @@ h2.faction-title span:nth-child(3) {
 	display:block;
 	height:64px;
 	transition:0.5s;
+	position:relative;
 	}
 .champion-list a img{
 	width:64px;
 	height:inherit;
 	}
 .champion-name{
-	display:ruby-text;
+	display:inline;
 	margin-left:15px;
+	margin-top:-15px;
+	line-height: 30px;
 	text-decoration:none;
 	font-size:16px;
 	color:#444;
 	letter-spacing:1px;
-	position:relative;
-	top:-3px;
+	position:absolute;
+	top:50%;
 	}
 .champion-list a:hover{
 	background-color:#fff;
@@ -295,9 +296,9 @@ h4.ability-name {
 	font-weight:200;
 	padding-left:130px;
 	}
-.ability-info li span{
-	color:#c44536;
-	font-weight:700;
+.ability-info li font, .ability-info li span {
+    color: #c44536;
+    font-weight: 700;
 	}
 .st-box {
     float: left;
@@ -326,35 +327,23 @@ h4.ability-name {
     letter-spacing: 1px;
     margin-top: 15px;
 	}
-.st-win {
-    border-left: 1px solid #c44536;
-    border-radius: 50%;
-    border-right: 1px solid #c44536;
-    bottom: 5px;
-    color: #c44536;
-    font-size: 12px;
-    font-weight: 400;
-    left: 45px;
-    letter-spacing: 0;
-    line-height: 40px;
-    position: absolute;
-    width: 40px;
-}
-.st-lose {
-    border-left: 1px solid #5858fa;
-    border-radius: 50%;
-    border-right: 1px solid #5858fa;
-    bottom: 5px;
-    color: #5858fa;
-    font-size: 12px;
-    font-weight: 400;
-    left: 45px;
-    letter-spacing: 0;
-    line-height: 40px;
-    position: absolute;
-    width: 40px;
-}
 
+.st-win, .st-lose {
+    background-color: #c44536;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 40px;
+    position: absolute;
+    top: 5px;
+    width: 40px;
+	}
+.st-lose{
+	background-color:#888;
+	}
+	
 /*footer*/
 footer{
 	background:#283d3b;
@@ -363,10 +352,11 @@ footer{
 .quick-link{
 	width:1070px;
 	margin:0 auto;
+	overflow:hidden;
 	}
 .ql-1, .ql-2, .ql-3{
 	width:33%;
-	display:inline-block;
+	float:left;
 	}
 .ql-title{
 	color:#c44536;

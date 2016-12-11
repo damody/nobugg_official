@@ -14,17 +14,17 @@ hero = {}
 
 function ProcessText(file, text)
   if not string.match(file, "_2.txt") and #file > 4 then
-    
     local name = rex.match(file, "[ABC][0-9][0-9]")
     --print(name)
-    
     hero[name] = {}
     hero[name]["name"] = {}
     hero[name]["name"]["zhtw"] = zhtw_heroname[name]
     hero[name]["name"]["zhcn"] = zhcn_heroname[name]
     hero[name]["name"]["en"] = en_heroname[name]
     for ability, _, _, content in rex.gmatch(text, [["([ABC][0-9][0-9](W|E|R|T|D)(_old|))"...{(.+)}]], "Usm", 0) do
-      --print(ability, content)
+      if string.match(ability, "A06") then
+        print(ability, content)
+      end
       local cooldown = rex.match(content, [["AbilityCooldown".+"(.+)"]], 0, "U")
       local mana = rex.match(content, [["AbilityManaCost".+"(.+)"]], 0, "U")
       local radius = rex.match(content, [["AOERadius".+"(.+)"]], 0, "U")
@@ -46,7 +46,6 @@ function ProcessText(file, text)
       if range ~= nil then
         range = string.gsub(range, " ", "/")
       end
-      
       hero[name][ability] = {}
       hero[name][ability]["cooldown"] = cooldown
       hero[name][ability]["mana"] = mana
@@ -87,6 +86,7 @@ for ability, name, _, old, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(
     hero[name][ability]["name"]["zhtw"] = content
   end
 end
+
 for ability, name, _, _, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(([ABC][0-9][0-9])(W|E|R|T|D)(_old|))_Description"[ \t]+"(.+)"]], "", 0) do
   if (hero[name] ~= nil) then
     if (hero[name][ability]) == nil then
@@ -126,3 +126,4 @@ end
 --print(inspect(hero))
 return hero
 end
+read_hero()
