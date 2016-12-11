@@ -307,7 +307,7 @@ font-size: 11px;
                 i = key
                 it = heroname[key]
                  %>
-                <a href="hero/<%-i%>"><%-it%></a><%
+                <a href="<%-i%>"><%-it%></a><%
               end 
             end%>
             </div>
@@ -325,7 +325,7 @@ font-size: 11px;
                 i = key
                 it = heroname[key]
                  %>
-                <a href="hero/<%-i%>"><%-it%></a><%
+                <a href="<%-i%>"><%-it%></a><%
               end 
             end%>
             </div>
@@ -343,7 +343,7 @@ font-size: 11px;
                 i = key
                 it = heroname[key]
                  %>
-                <a href="hero/<%-i%>"><%-it%></a><%
+                <a href="<%-i%>"><%-it%></a><%
               end 
             end%>
             </div>
