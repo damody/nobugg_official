@@ -6,6 +6,12 @@ langtext["dota2nobu"]["zhcn"] = "刀塔二 信长之野望"
 langtext["dota2nobu"]["en"] = "Dota2 Ambition Of Nobunaga"
 langtext["dota2nobu"]["jp"] = "ドータ・ツー 信長の野望"
 
+langtext["heroappearances"] = {}
+langtext["heroappearances"]["zhtw"] = "出場英雄"
+langtext["heroappearances"]["zhcn"] = "出场英雄"
+langtext["heroappearances"]["en"] = "Hero Appearances"
+langtext["heroappearances"]["jp"] = "参加英雄"
+
 langtext["heropreview"] = {}
 langtext["heropreview"]["zhtw"] = "英雄預覽"
 langtext["heropreview"]["zhcn"] = "英雄预览"
