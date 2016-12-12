@@ -103,7 +103,7 @@ end
             </div>
             <div class="menu-list menu-light">
                 <div class="menu-line"></div>
-                <a>出場英雄</a>
+                <a><%-langtext["heroappearances"][lang]%></a>
             </div>
             <div class="menu-list menu-light hide">
                 <div class="menu-line"></div>
