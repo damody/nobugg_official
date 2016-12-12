@@ -21,6 +21,16 @@ function ProcessText(file, text)
     hero[name]["name"]["zhtw"] = zhtw_heroname[name]
     hero[name]["name"]["zhcn"] = zhcn_heroname[name]
     hero[name]["name"]["en"] = en_heroname[name]
+    hero[name]["name"]["jp"] = jp_heroname[name]
+    if video[name] == nil then
+      video[name] = {}
+    end
+    if video[name]["16"] == nil then
+      video[name]["16"] = {}
+    end
+    if video[name]["11"] == nil then
+      video[name]["11"] = {}
+    end
     for ability, _, _, content in rex.gmatch(text, [["([ABC][0-9][0-9](W|E|R|T|D)(_old|))"...{(.+)}]], "Usm", 0) do
       local cooldown = rex.match(content, [["AbilityCooldown".+"(.+)"]], 0, "U")
       local mana = rex.match(content, [["AbilityManaCost".+"(.+)"]], 0, "U")

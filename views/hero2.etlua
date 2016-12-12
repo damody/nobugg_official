@@ -80,19 +80,55 @@ font-size: 11px;
 }
 <% end %>
 </style>
-
+<!--language switcher-->
+<script>
+    $(document).ready(function() {     
+        $('.lng').hover(function(){     
+            $('.lng-switcher').addClass('show');    
+        },     
+        function(){    
+            $('.lng-switcher').removeClass('show');     
+        });
+    });  
+</script>
 </head>
 
 <body class="page">
 	<header>
     	<nav>
-        	<!--<a class="menu-list">選單A</a>
-            <a class="menu-list">選單B</a>
-            <a class="menu-list">選單C</a>-->
-        	<img src="../../static/image/logo-dota2.png">
-            <!--<a class="menu-list">選單D</a>
-            <a class="menu-list">選單E</a>
-            <a class="menu-list">選單F</a>-->
+        	<div class="menu-list lng menu-light">
+                <div class="menu-line"></div>
+                <a><%-langtext["changelanguage"][lang]%></a>
+                <ul class="lng-switcher">
+                    <li><a href="../../zhtw/hero/<%-params.hero%>" class="zh-tw">繁體中文</a></li>                 
+                    <li><a href="../../zhcn/hero/<%-params.hero%>" class="zh-cn">簡体中文</a></li>
+                    <li><a href="../../en/hero/<%-params.hero%>" class="en">English</a></li>
+                    <li><a href="../../jp/hero/<%-params.hero%>" class="jp">日本語</a></li>
+                </ul>
+            </div>
+            <div class="menu-list menu-light">
+                <div class="menu-line"></div>
+                <a>出場英雄</a>
+            </div>
+            <div class="menu-list menu-light hide">
+                <div class="menu-line"></div>
+                <a>選單A</a>
+            </div>
+            <div class="menu-list logo">
+                <a href="./"><img src="../../static/image/logo-dota2.png"></a>
+            </div>
+            <div class="menu-list menu-dark hide">
+                <div class="menu-line"></div>
+                <a>選單A</a>
+            </div>
+            <div class="menu-list menu-dark hide">
+                <div class="menu-line"></div>
+                <a>選單A</a>
+            </div>
+            <div class="menu-list menu-dark flyingv">
+                <div class="menu-line"></div>
+                <a><img src="../../static/image/logo-flyingV.png"></a>
+            </div>
         </nav>
     </header>
     <div class="container">
@@ -100,10 +136,21 @@ font-size: 11px;
           	<h1 class="cp-fc1"><%-hero["name"][lang]%></h1>
         </div>
         <div class="wrapper">
+            <!--英雄預覽 16-->
+            <% if video[params.hero]["16"][lang] ~= nil then %>   
+            <div class="champion-info">
+                <h2 class="champion-title"><%-langtext["heropreview"][lang]%><span>Champion Spotlight</span></h2>
+                <h3 class="ver"><%-langtext["version"][lang]%>：16</h3>
+                <div class="youtube-iframe">
+                    <iframe class="embed-responsive-item" src="<%-video[params.hero]["16"][lang]%>"></iframe>
+                </div>
+            </div>
+            <% end %>
+            <!--英雄預覽 16-->
             <!--技能資訊 16-->
         	<div class="champion-info">
             	<h2 class="champion-title"><%-langtext["abilityinfo"][lang]%><span>Ability Info</span></h2>
-                <h3 class="ver">版本：16</h3><% 
+                <h3 class="ver"><%-langtext["version"][lang]%>：16</h3><% 
                 for i, it in ipairs(skill) do
                   item = hero[params.hero..it]
                   if item ~=nil and item["name"] ~= nil then 
@@ -137,6 +184,17 @@ font-size: 11px;
                 end %>
             </div>
         	<!--技能資訊 16-->
+            <!--英雄預覽 11-->
+            <% if video[params.hero]["11"][lang] ~= nil then %>   
+            <div class="champion-info">
+                <h2 class="champion-title"><%-langtext["heropreview"][lang]%><span>Champion Spotlight</span></h2>
+                <h3 class="ver"><%-langtext["version"][lang]%>：11</h3>
+                <div class="youtube-iframe">
+                    <iframe class="embed-responsive-item" src="<%-video[params.hero]["11"][lang]%>"></iframe>
+                </div>
+            </div>
+            <% end %>
+            <!--英雄預覽 11-->
             <!--技能資訊 11-->
             <%
             hasold = false
@@ -149,7 +207,7 @@ font-size: 11px;
             if hasold then %>
             <div class="champion-info">
                 <h2 class="champion-title"><%-langtext["abilityinfo"][lang]%><span>Ability Info</span></h2>
-                <h3 class="ver">版本：11</h3><% 
+                <h3 class="ver"><%-langtext["version"][lang]%>：11</h3><% 
                 for i, it in ipairs(skill) do
                   item = hero[params.hero..it.."_old"]
                   if item ~=nil and item["name"] ~= nil then 

@@ -33,7 +33,7 @@ end
 <!--jquery-->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
+<!--Google Analytics-->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -43,6 +43,17 @@ end
   ga('create', 'UA-88765291-1', 'auto');
   ga('send', 'pageview');
 
+</script>
+<!--language switcher-->
+<script>
+    $(document).ready(function() {     
+        $('.lng').hover(function(){     
+            $('.lng-switcher').addClass('show');    
+        },     
+        function(){    
+            $('.lng-switcher').removeClass('show');     
+        });
+    });  
 </script>
 <script>
 	jQuery("document").ready(function($){
@@ -80,13 +91,39 @@ end
 <body>
 	<header>
     	<nav>
-        	<!--<a class="menu-list">選單A</a>
-            <a class="menu-list">選單B</a>
-            <a class="menu-list">選單C</a>-->
-        	<img src="../static/image/logo-dota2.png">
-            <!--<a class="menu-list">選單D</a>
-            <a class="menu-list">選單E</a>
-            <a class="menu-list">選單F</a>-->
+        	<div class="menu-list lng menu-light">
+                <div class="menu-line"></div>
+                <a><%-langtext["changelanguage"][lang]%></a>
+                <ul class="lng-switcher">
+                    <li><a href="../zhtw/list_hero" class="zh-tw">繁體中文</a></li>                 
+                    <li><a href="../zhcn/list_hero" class="zh-cn">簡体中文</a></li>
+                    <li><a href="../en/list_hero" class="en">English</a></li>
+                    <li><a href="../jp/list_hero" class="jp">日本語</a></li>
+                </ul>
+            </div>
+            <div class="menu-list menu-light">
+                <div class="menu-line"></div>
+                <a>出場英雄</a>
+            </div>
+            <div class="menu-list menu-light hide">
+                <div class="menu-line"></div>
+                <a>選單A</a>
+            </div>
+            <div class="menu-list logo">
+                <a href="./"><img src="../static/image/logo-dota2.png"></a>
+            </div>
+            <div class="menu-list menu-dark hide">
+                <div class="menu-line"></div>
+                <a>選單A</a>
+            </div>
+            <div class="menu-list menu-dark hide">
+                <div class="menu-line"></div>
+                <a>選單A</a>
+            </div>
+            <div class="menu-list menu-dark flyingv">
+                <div class="menu-line"></div>
+                <a><img src="../static/image/logo-flyingV.png"></a>
+            </div>
         </nav>
     </header>
     <div class="container full-height faction1">
@@ -157,7 +194,7 @@ end
             </div>
             <div class="column-2">
             	<h2 class="faction-title">
-                	<span>聯</span>
+                	<span><%if lang == "jp" then%>連<%else%>聯<%end%></span>
                     <span>合</span>
                     <span>Champion List</span>
                 </h2>

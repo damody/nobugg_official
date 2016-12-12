@@ -6,6 +6,12 @@ langtext["dota2nobu"]["zhcn"] = "刀塔二 信长之野望"
 langtext["dota2nobu"]["en"] = "Dota2 Ambition Of Nobunaga"
 langtext["dota2nobu"]["jp"] = "ドータ・ツー 信長の野望"
 
+langtext["heropreview"] = {}
+langtext["heropreview"]["zhtw"] = "英雄預覽"
+langtext["heropreview"]["zhcn"] = "英雄预览"
+langtext["heropreview"]["en"] = "Hero Preview"
+langtext["heropreview"]["jp"] = "英雄プレビュー"
+
 langtext["abilityinfo"] = {}
 langtext["abilityinfo"]["zhtw"] = "技能說明"
 langtext["abilityinfo"]["zhcn"] = "技能说明"
@@ -29,6 +35,12 @@ langtext["neutral_army"]["zhtw"] = "中立軍"
 langtext["neutral_army"]["zhcn"] = "中立军"
 langtext["neutral_army"]["en"] = "Neutral Army"
 langtext["neutral_army"]["jp"] = "中立軍"
+
+langtext["changelanguage"] = {}
+langtext["changelanguage"]["zhtw"] = "選擇語言"
+langtext["changelanguage"]["zhcn"] = "选择语言"
+langtext["changelanguage"]["en"] = "Choose language"
+langtext["changelanguage"]["jp"] = "選択言語"
 
 langtext["winning"] = {}
 langtext["winning"]["zhtw"] = "角色勝率"
@@ -298,4 +310,12 @@ C17 = "お市の方",
 C19 = "松姫",
 C21 = "宮本武蔵",
 C22 = "佐々木小次郎",
+}
+
+video = {
+  C17 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/zjEbBfJ3AYY",
+    },
+  },
 }
