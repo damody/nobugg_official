@@ -19,7 +19,7 @@ end
 
 %>
 <!doctype html>
-<html>
+<html lang="<%-langtext["html_lang"][lang]%>">
 <head>
 <meta charset="UTF-8">
 <title><%-langtext["dota2nobu"][lang]%></title>
