@@ -12,6 +12,12 @@ langtext["heroappearances"]["zhcn"] = "出场英雄"
 langtext["heroappearances"]["en"] = "Hero Appearances"
 langtext["heroappearances"]["jp"] = "参加英雄"
 
+langtext["donate"] = {}
+langtext["donate"]["zhtw"] = "支持贊助"
+langtext["donate"]["zhcn"] = "支持赞助"
+langtext["donate"]["en"] = "Donate"
+langtext["donate"]["jp"] = "資金援助"
+
 langtext["heropreview"] = {}
 langtext["heropreview"]["zhtw"] = "英雄預覽"
 langtext["heropreview"]["zhcn"] = "英雄预览"

@@ -8,26 +8,45 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--favicon-->
+<link rel="apple-touch-icon" sizes="57x57" href="./static/image/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./static/image/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./static/image/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./static/image/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./static/image/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./static/image/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./static/image/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./static/image/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./static/image/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="./static/image/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./static/image/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./static/image/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./static/image/favicon-16x16.png">
+<link rel="manifest" href="./static/js/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="./static/image/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="英雄列表 織田軍 柴田勝家 本多忠勝 大谷吉繼 織田信長 阿松 井伊直政 佐佐成政 羽柴秀吉 森蘭丸 服部半藏 石田三成 鳥居元忠 竹中重治 聯合軍 大熊朝秀 最上義姬 本願寺顯如 風魔小太郎 真田幸村 雜賀孫市 毛利元就 秋山信友 今川義元 上杉謙信 武田勝賴 淺井長政 中立軍 松姬 佐佐木小次郎" />
+<meta name="description" content="dota2信長之野望重製了！" />
 <meta name='image' content='http://www.dota2nobu.com/static/pic/nobu.png' />
 <link rel="image_src" href='http://www.dota2nobu.com/static/pic/nobu.png' />
 <meta property="og:image" content="http://www.dota2nobu.com/static/pic/nobu.png" />
-<meta property="og:title" content="dota2信長英雄列表" />
-<meta property="og:description" content="英雄列表 織田軍 柴田勝家 本多忠勝 大谷吉繼 織田信長 阿松 井伊直政 佐佐成政 羽柴秀吉 森蘭丸 服部半藏 石田三成 鳥居元忠 竹中重治 聯合軍 大熊朝秀 最上義姬 本願寺顯如 風魔小太郎 真田幸村 雜賀孫市 毛利元就 秋山信友 今川義元 上杉謙信 武田勝賴 淺井長政 中立軍 松姬 佐佐木小次郎" />
+<meta property="og:title" content="dota2信長之野望" />
+<meta property="og:description" content="dota2信長之野望重製了！" />
 <meta property="og:url" content="http://www.dota2nobu.com" />
 <meta name="twitter:image:src" content="http://www.dota2nobu.com/static/pic/nobu.png">
 <meta name="author" content="dota2nobu.com" />
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="dota2nobu.com">
-<meta name="twitter:title" content="dota2信長英雄列表">
-<meta name="twitter:description" content="英雄列表 織田軍 柴田勝家 本多忠勝 大谷吉繼 織田信長 阿松 井伊直政 佐佐成政 羽柴秀吉 森蘭丸 服部半藏 石田三成 鳥居元忠 竹中重治 聯合軍 大熊朝秀 最上義姬 本願寺顯如 風魔小太郎 真田幸村 雜賀孫市 毛利元就 秋山信友 今川義元 上杉謙信 武田勝賴 淺井長政 中立軍 松姬 佐佐木小次郎">
+<meta name="twitter:title" content="dota2信長之野望">
+<meta name="twitter:description" content="dota2信長之野望重製了！">
 <meta name="twitter:domain" content="dota2nobu.com">
 
-<meta itemprop="name" content="dota2信長英雄列表">
+<meta itemprop="name" content="dota2信長之野望">
 <meta itemprop="image" content="http://www.dota2nobu.com/static/pic/nobu.png">
-<meta itemprop="description" content="英雄列表 織田軍 柴田勝家 本多忠勝 大谷吉繼 織田信長 阿松 井伊直政 佐佐成政 羽柴秀吉 森蘭丸 服部半藏 石田三成 鳥居元忠 竹中重治 聯合軍 大熊朝秀 最上義姬 本願寺顯如 風魔小太郎 真田幸村 雜賀孫市 毛利元就 秋山信友 今川義元 上杉謙信 武田勝賴 淺井長政 中立軍 松姬 佐佐木小次郎">
+<meta itemprop="description" content="dota2信長之野望重製了！">
 
 <style>
 div:hover {
@@ -52,8 +71,8 @@ a {
 <div id="box" style="color:#FFF;">
   <h1><a href="http://dota2nobu.com/">dota2信長英雄列表</a></h1>
   <p>
-      <img title="dota2信長英雄列表" src="http://www.dota2nobu.com/static/pic/nobu.png" alt="dota2信長英雄列表" border=0 >
-      英雄列表 織田軍 柴田勝家 本多忠勝 大谷吉繼 織田信長 阿松 井伊直政 佐佐成政 羽柴秀吉 森蘭丸 服部半藏 石田三成 鳥居元忠 竹中重治 聯合軍 大熊朝秀 最上義姬 本願寺顯如 風魔小太郎 真田幸村 雜賀孫市 毛利元就 秋山信友 今川義元 上杉謙信 武田勝賴 淺井長政 中立軍 松姬 佐佐木小次郎
+      <img title="dota2信長之野望" src="http://www.dota2nobu.com/static/pic/nobu.png" alt="dota2信長英雄列表" border=0 >
+      dota2信長之野望重製了！
   </p>
 </div>
 <script type="text/javascript">
