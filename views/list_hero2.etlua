@@ -44,7 +44,7 @@ end
 
 <!--css list-->
 <link rel="stylesheet" href="../static/css/reset.css">
-<link rel="stylesheet" href="../static/css/style2.css">
+<link rel="stylesheet" href="../static/css/style.css">
 
 <!--google font-->
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
