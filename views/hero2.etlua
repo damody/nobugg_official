@@ -127,7 +127,7 @@ font-size: 11px;
             </div>
             <div class="menu-list menu-light">
                 <div class="menu-line"></div>
-                <a><%-langtext["heroappearances"][lang]%></a>
+                <a href="../list_hero"><%-langtext["heroappearances"][lang]%></a>
             </div>
             <div class="menu-list menu-light hide">
                 <div class="menu-line"></div>
