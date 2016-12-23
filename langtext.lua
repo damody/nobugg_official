@@ -331,6 +331,194 @@ C22 = "佐々木小次郎",
 }
 
 video = {
+  A06 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/opMZWBlla1s",
+    },
+	["11"] = {
+      zhtw = "https://www.youtube.com/embed/24VlWcXbzIA",
+    },
+  },
+  A31 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/TEO9wdh_XOc",
+    },
+  },
+  C21 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/MAJ-cjcSY-k",
+    },
+  },
+  A13 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/2NQpRYaJkmo",
+    },
+  },
+  B08 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/163AueG-OI8",
+    },
+  },
+  A07 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/nTlcEyDaCKI",
+    },
+  },
+  A04 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/IKM0E7kUJ18",
+    },
+  },
+  B06 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/WQjYyXbUQHE",
+    },
+  },
+  C22 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/ke87ayEuNqY",
+    },
+  },
+  B05 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/TKaC1EFMoLs",
+    },
+  },
+  A25 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/mgBj38QgXoE",
+    },
+  },
+  C19 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/ViLrIuW3uTc",
+    },
+	["11"] = {
+      zhtw = "https://www.youtube.com/embed/_--ehAXgUaU",
+    },
+  },
+  B15 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/ueo9JGuqSpg",
+    },
+	["11"] = {
+      zhtw = "https://www.youtube.com/embed/lfVClCzUuZE",
+    },
+  },
+  A12 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/a6ubz2wpxHU",
+    },
+  },
+  B33 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/_34YUFJljn8",
+    },
+  },
+  B24 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/9R29cbT7cA8",
+    },
+  },
+  A16 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/dWUUKk1LNeU",
+    },
+  },
+  B34 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/spymMksezh4",
+    },
+	["11"] = {
+      zhtw = "https://www.youtube.com/embed/h9YwghHZH-A",
+    },
+  },
+  C10 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/xhRDW-SzirE",
+    },
+  },
+  B25 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/5NEm4xvtX_s",
+    },
+	["11"] = {
+      zhtw = "https://www.youtube.com/embed/T2fVPmWVmTk",
+    },
+  },
+  C07 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/g8P0k0nzVoY",
+    },
+  },
+  A17 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/IqKXecgBw4w",
+    },
+  },
+  B26 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/uIrY-pZlwY0",
+    },
+  },
+  A34 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/ho-FUTBsVOU",
+    },
+  },
+  C15 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/TUFEw795Qe4",
+    },
+  },
+  B02 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/QeUoUh54KLg",
+    },
+  },
+  B01 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/NVMLcR9W1hM",
+    },
+  },
+  A28 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/PfTPY7yZ7bI",
+    },
+  },
+  A27 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/ZLzXtIvA6kc",
+    },
+  },
+  B32 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/x0iZKAMGdYQ",
+    },
+	["11"] = {
+      zhtw = "https://www.youtube.com/embed/gsrXyv8uFDA",
+    },
+  },
+  A25 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/mgBj38QgXoE",
+    },
+  },
+  A25 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/mgBj38QgXoE",
+    },
+  },
+  A25 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/mgBj38QgXoE",
+    },
+  },
+  C01 = {
+    ["16"] = {
+      zhtw = "https://www.youtube.com/embed/wXBi3BAa_p0",
+    },
+  },
   C17 = {
     ["16"] = {
       zhtw = "https://www.youtube.com/embed/zjEbBfJ3AYY",
