@@ -5,6 +5,7 @@ do
   local _base_0 = {
     ["/zhcn/list_hero"] = function(self)
       self.params.language = "zhcn"
+      self.params.webpath = "list_hero"
       return {
         layout = false,
         render = "list_hero2"
@@ -12,6 +13,7 @@ do
     end,
     ["/zhtw/list_hero"] = function(self)
       self.params.language = "zhtw"
+      self.params.webpath = "list_hero"
       return {
         layout = false,
         render = "list_hero2"
@@ -19,6 +21,7 @@ do
     end,
     ["/en/list_hero"] = function(self)
       self.params.language = "en"
+      self.params.webpath = "list_hero"
       return {
         layout = false,
         render = "list_hero2"
@@ -26,6 +29,7 @@ do
     end,
     ["/jp/list_hero"] = function(self)
       self.params.language = "jp"
+      self.params.webpath = "list_hero"
       return {
         layout = false,
         render = "list_hero2"
@@ -33,6 +37,7 @@ do
     end,
     ["/zhcn/hero/:hero"] = function(self)
       self.params.language = "zhcn"
+      self.params.webpath = "hero/" .. self.params.hero
       return {
         layout = false,
         render = "hero2"
@@ -40,6 +45,7 @@ do
     end,
     ["/zhtw/hero/:hero"] = function(self)
       self.params.language = "zhtw"
+      self.params.webpath = "hero/" .. self.params.hero
       return {
         layout = false,
         render = "hero2"
@@ -47,6 +53,7 @@ do
     end,
     ["/en/hero/:hero"] = function(self)
       self.params.language = "en"
+      self.params.webpath = "hero/" .. self.params.hero
       return {
         layout = false,
         render = "hero2"
@@ -54,6 +61,7 @@ do
     end,
     ["/jp/hero/:hero"] = function(self)
       self.params.language = "jp"
+      self.params.webpath = "hero/" .. self.params.hero
       return {
         layout = false,
         render = "hero2"
@@ -69,6 +77,38 @@ do
       return {
         layout = false,
         render = "index"
+      }
+    end,
+    ["/zhcn/thanx"] = function(self)
+      self.params.language = "zhcn"
+      self.params.webpath = "thanx"
+      return {
+        layout = false,
+        render = "thanx"
+      }
+    end,
+    ["/zhtw/thanx"] = function(self)
+      self.params.language = "zhtw"
+      self.params.webpath = "thanx"
+      return {
+        layout = false,
+        render = "thanx"
+      }
+    end,
+    ["/en/thanx"] = function(self)
+      self.params.language = "en"
+      self.params.webpath = "thanx"
+      return {
+        layout = false,
+        render = "thanx"
+      }
+    end,
+    ["/jp/thanx"] = function(self)
+      self.params.language = "jp"
+      self.params.webpath = "thanx"
+      return {
+        layout = false,
+        render = "thanx"
       }
     end
   }

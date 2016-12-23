@@ -1,0 +1,110 @@
+<%
+local inspect = require("inspect")
+require("read_hero")
+require("langtext")
+lang = params.language
+local redis = require 'redis'
+local client = redis.connect('127.0.0.1', 6379)
+local cjson = require("cjson")
+
+if lang == "zhtw" then
+  heroname = zhtw_heroname
+elseif  lang == "zhcn" then
+  heroname = zhcn_heroname
+elseif lang == "jp" then
+  heroname = jp_heroname
+elseif lang == "en" then
+  heroname = en_heroname
+end
+
+%>
+<% render("views.head", { lang = lang, langtext = langtext }) %>
+<body class="page">
+	<header>
+    	<nav>
+        	<% render("views.nav", { lang = lang, langtext = langtext, webpath = params.webpath }) %>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="wrapper">
+            
+            <!--感謝名單-->            
+            <div class="thanx-box">
+                <h2 class="champion-title thanx-title">感謝名單<span>Thank You All</span></h2>
+                <h3 class="ver thanx-cata">遊戲製作</h3>
+                <div class="thanx-list">
+                    黃亮軒(damody)<br>信長老人(螺絲/16版反開圖信長作者)<br>David Hung<br>羽楓(LoLiCon/16版反開圖信長作者)<br>曾揚智
+                </div>
+                <h3 class="ver thanx-cata">遊戲模型</h3>
+                <div class="thanx-list">
+                    吳亭翰<br>郭建利
+                </div>
+                <h3 class="ver thanx-cata">遊戲Icon</h3>
+                <div class="thanx-list">
+                    邱柏瑜
+                </div>
+                <h3 class="ver thanx-cata">VPS伺服器支援</h3>
+                <div class="thanx-list">
+                    矽塔資訊 Lorex L. Yang
+                </div>
+                <h3 class="ver thanx-cata">網頁設計</h3>
+                <div class="thanx-list">
+                    WL
+                </div>
+                <h3 class="ver thanx-cata">網站後台</h3>
+                <div class="thanx-list">
+                    黃亮軒(damody)
+                </div>
+                <h3 class="ver thanx-cata">影片製作</h3>
+                <div class="thanx-list">
+                    鄭崇文<br>Kekr
+                </div>
+                <h3 class="ver thanx-cata">影片音樂製作</h3>
+                <div class="thanx-list">
+                    Plastic Anne
+                </div>
+                <h3 class="ver thanx-cata">日文配音總召集</h3>
+                <div class="thanx-list">
+                    郭又華
+                </div>
+                <h3 class="ver thanx-cata">中文配音合作</h3>
+                <div class="thanx-list">
+                    王羽棠
+                </div>
+                <h3 class="ver thanx-cata">英文招式技能翻譯</h3>
+                <div class="thanx-list">
+                    David(燒肉)<br>劉朝尹(A.Takeshi)
+                </div>
+                <h3 class="ver thanx-cata">日文招式翻譯</h3>
+                <div class="thanx-list">
+                    Siyaoran
+                </div>
+                <h3 class="ver thanx-cata">遊戲測試：台灣</h3>
+                <div class="thanx-list">
+                    十劍山河蕩狼煙<br>劉轅<br>洪士軒<br>精靈球<br>小塔(S.T)<br>LHC<br>李哲瑋<br>Stanley_Hsu<br>Blues<br>洪典澤<br>SingleForce<br>Hexter<br>林繼揚<br>minori11
+                </div>
+                <h3 class="ver thanx-cata">遊戲測試：中國</h3>
+                <div class="thanx-list">
+                    SaiAikos<br>服部大王<br>又白又胖的草泥马<br>何处望神洲
+                </div>
+                <h3 class="ver thanx-cata">特別感謝</h3>
+                <div class="thanx-list">
+                    詩人FN(16版信長作者)、龍獅．佛烈克斯(淺井長政大作戰作者)、Rex暴君(CN版信長作者)、等作者在地圖製作與玩家習性的觀點上給予建議<br>
+                    Wang Yung Wei(ROXAS_K) 提供很多有關dota2的知識<br>
+                    tsaijohn 提供discord的群、與dota2的智識<br>
+                    Max Wu(hackmd.io作者)解答很多網頁與資料庫的問題<br>
+                    梁力中 幫忙整理角色招式文字<br>
+                    KyubeyQB 幫忙管理過FB專頁<br>
+                    鄭偉敏、陳翊翔 提供信長地圖版本<br>
+                    翔Ban 提供信長地圖截圖
+                </div>
+                <div class="more-thanx">
+                    還有其它還有很多有幫助過我們的人跟不想被知道的人<span>謝謝</span>
+                </div>
+            </div>
+            <!--感謝名單-->
+                    
+        </div>
+    </div>
+
+<% render("views.footer", { lang = lang, langtext = langtext, heroname = heroname}) %>

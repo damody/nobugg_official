@@ -50,12 +50,15 @@ nav{
 	}
 .menu-list{
 	display:inline-block;
-	padding:0 40px;
+	padding:0 30px;
 	top:-20px;
 	height:50px;
 	line-height:50px;
 	position:relative;
 	cursor: pointer;
+	}
+.menu-list.lng{
+	padding:0px;
 	}
 .menu-line{
 	height:1px;
@@ -70,15 +73,14 @@ nav{
 .menu-light .menu-line{
 	background:#fff;
 	}
-.menu-dark .menu-line, .nav-sticky .menu-light .menu-line{
+.menu-dark .menu-line, .nav-sticky .menu-light .menu-line, .page .menu-light .menu-line{
 	background:#772e25;
-	}
-.menu-list.lng{
-	background:url(../image/icon-lng-light.svg) no-repeat 10% 50% / 15px auto, url(../image/icon-dropdown-light.svg) no-repeat 85% 50% / 10px auto;
 	}
 .menu-list a{
 	font-size:16px;
 	display:block;
+	line-height:50px;
+	text-decoration:none;
 	}
 .menu-light a{
 	color:#fff;
@@ -94,15 +96,15 @@ header.nav-sticky{
     top: 0;
     width: 100%;
 	transition:0.3s;
-	height:30px;
-	padding:10px 0;
+	height:50px;
+	padding:0;
 	background:#fff;
 	box-shadow:0 0 5px rgba(0,0,0,0.2);
 	}
 .nav-sticky .logo img{
 	width:inherit;
 	height:30px;
-	padding:0 10px;
+	padding:10px 10px;
 	transition:0.3s;
 	}
 .nav-sticky .flyingv img{
@@ -111,16 +113,17 @@ header.nav-sticky{
 .nav-sticky .menu-list{
 	height:30px;
 	line-height:30px;
-	top:-10px;
-	}
-header.nav-sticky div.menu-list.lng, .page .menu-list.lng{
-	background:url(../image/icon-lng-dark.svg) no-repeat 8% 50% / 15px auto, url(../image/icon-dropdown-dark.svg) no-repeat 90% 50% / 10px auto;
+	padding-top:10px;
+	padding-bottom:10px;
 	}
 .menu-list.logo, header.nav-sticky .menu-list.logo{
 	top:0;
 	width:275px;
 	text-align:center;
 	padding: 0 15px;
+	}
+.menu-list.flyingv{
+	width:180px;
 	}
 .first-layout{
 	margin-top:110px;
@@ -137,14 +140,22 @@ header.nav-sticky div.menu-list.lng, .page .menu-list.lng{
 	}
 
 /*language-switcher*/
+.lng-choose{
+	background:url(/static/image/icon-lng-light.svg) no-repeat 10% 40% / 15px auto, url(/static/image/icon-dropdown-light.svg) no-repeat 85% 40% / 10px auto;
+	padding:0 35px;
+	}
+header.nav-sticky .lng-choose, .page .lng-choose{
+	background:url(/static/image/icon-lng-dark.svg) no-repeat 8% 40% / 15px auto, url(/static/image/icon-dropdown-dark.svg) no-repeat 90% 40% / 10px auto;
+	}
 .lng-switcher {
     opacity: 0;
     position: absolute;
 	background:#fff;
-	margin-left:-25px;
 	transition:0.3s;
 	border: 1px solid #ccc;
 	margin-top:10px;
+	margin-left:10px;
+	pointer-events: none;
 	}
 .lng-switcher a{
 	color:#444 !important;
@@ -160,21 +171,22 @@ header.nav-sticky div.menu-list.lng, .page .menu-list.lng{
 	background-color:#edddd4;
 	}
 a.zh-tw{
-	background:url("../image/flag-zhtw.gif") no-repeat scroll 10% 50% / 15px auto;
+	background:url("/static/image/flag-zhtw.gif") no-repeat scroll 10% 50% / 15px auto;
 	}
 a.zh-cn{
-	background:url("../image/flag-zhcn.gif") no-repeat scroll 10% 50% / 15px auto;
+	background:url("/static/image/flag-zhcn.gif") no-repeat scroll 10% 50% / 15px auto;
 	}
 a.en{
-	background:url("../image/flag-enus.gif") no-repeat scroll 10% 50% / 15px auto;
+	background:url("/static/image/flag-enus.gif") no-repeat scroll 10% 50% / 15px auto;
 	}
 a.ja{
-	background:url("../image/flag-jajp.gif") no-repeat scroll 10% 50% / 15px auto;
+	background:url("/static/image/flag-jajp.gif") no-repeat scroll 10% 50% / 15px auto;
 	}
 .lng-switcher.show{
 	opacity: 1;
 	transition:0.3s;
-	margin-top:0;
+	margin-top:-5px;
+	pointer-events:auto;
 	}
 	
 /*box-model*/
@@ -203,13 +215,13 @@ a.ja{
 
 /*champion list*/
 .faction1{
-	background:url(../image/bg-oda.png) center center fixed, url(../image/bg-oda2.jpg) center center / cover;
+	background:url(/static/image/bg-oda.png) center center fixed, url(/static/image/bg-oda2.jpg) center center / cover;
 	}
 .faction2{
-	background:url(../image/bg-unite.png) center center fixed, url(../image/bg-unite2.jpg) center center / cover;
+	background:url(/static/image/bg-unite.png) center center fixed, url(/static/image/bg-unite2.jpg) center center / cover;
 	}
 .faction3{
-	background:url(../image/bg-neutral.png) center center fixed, url(../image/bg-neutral2.jpg) center center / cover;
+	background:url(/static/image/bg-neutral.png) center center fixed, url(/static/image/bg-neutral2.jpg) center center / cover;
 	}		
 h2.faction-title span {
     color: #fff;
@@ -220,7 +232,7 @@ h2.faction-title span:nth-child(2) {
     display: inline-block;
     line-height: 110px;
     margin-left: 1em;
-    padding: 5px 0 7px;
+    padding: 15px 0 0;
     text-align: center;
     width: 120px;
 }
@@ -277,7 +289,7 @@ h2.faction-title span:nth-child(3) {
 	margin-bottom:25px;
 	margin-right:1%;
 	background-color:rgba(255,255,255,0.3);
-	background-image:url(../image/icon-seemore.png);
+	background-image:url(/static/image/icon-seemore.png);
 	background-repeat:no-repeat;
 	background-position:90% 50%;
 	background-size:25px auto;
@@ -321,14 +333,14 @@ h2.faction-title span:nth-child(3) {
 	}
 .hr{
 	height:15px;
-	background:url(../image/hr.png) no-repeat center center / auto 100%;
+	background:url(/static/image/hr.png) no-repeat center center / auto 100%;
 	margin:50px 0 70px;
 	}
 	
 /*champion info*/
 .champion-banner{
 	height:450px;
-	background:url(../image/bg-champion1-1.jpg) no-repeat center center / cover;
+	background:url(/static/image/bg-champion1-1.jpg) no-repeat center center / cover;
 	}
 h1.cp-fc1 {
     color: #fff;
@@ -419,11 +431,19 @@ h4.ability-name {
     color: #c44536;
     font-weight: 700;
 	}
+.kda {
+	overflow: hidden;
+	text-align:center;
+	}
 .st-box {
     float: left;
     margin: 30px 0 10px;
     text-align: center;
     width: 16.6667%;
+	}
+.kda .st-box {
+    display: inline-block;
+    float: none;
 	}
 .st-title {
     border-color: #ccc #197278;
@@ -447,7 +467,7 @@ h4.ability-name {
     margin-top: 15px;
 	}
 
-.st-win, .st-lose {
+.st-win, .st-lose, .st-avg{
     background-color: #c44536;
     border-radius: 50%;
     color: #fff;
@@ -462,7 +482,35 @@ h4.ability-name {
 .st-lose{
 	background-color:#888;
 	}
+.st-avg{
+	background-color:#197278;
+	}
 	
+/*thanx*/
+.thanx-box{
+	margin-top:180px;
+	}
+.thanx-list{
+	text-align:center;
+	line-height:2.2em;
+	color:#197278;
+	margin:10px 0 30px;
+	font-size: 14px;
+	}
+h3.ver.thanx-cata{
+	margin-top:30px;
+	}
+.more-thanx{
+	font-size: 16px;
+	color:#772e25;
+	margin:100px 0;
+	text-align: center;
+	}
+.more-thanx span{
+	display:block;
+	line-height:2em;
+	font-size:48px;
+	}	
 /*footer*/
 footer{
 	background:#283d3b;
@@ -493,6 +541,9 @@ footer{
     text-decoration: none;
 	padding-bottom: 5px;
     border-bottom: 1px dashed #c44536;
+	}
+.quick-link a:hover{
+	color: #c44536;
 	}
 
 /*copyright*/

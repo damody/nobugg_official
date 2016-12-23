@@ -1,0 +1,31 @@
+        <nav>
+        	<div class="menu-list lng menu-light">
+                <div class="menu-line"></div>
+                <a class="lng-choose"><%-langtext["changelanguage"][lang]%></a>
+                <ul class="lng-switcher">
+                    <li><a href="/zhtw/<%-webpath%>" class="zh-tw">繁體中文</a></li>                 
+                    <li><a href="/zhcn/<%-webpath%>" class="zh-cn">簡体中文</a></li>
+                    <li><a href="/en/<%-webpath%>" class="en">English</a></li>
+                    <li><a href="/jp/<%-webpath%>" class="ja">日本語</a></li>
+                </ul>
+            </div>
+            <div class="menu-list menu-light">
+                <div class="menu-line"></div>
+                <a href="/<%-lang%>/list_hero"><%-langtext["heroappearances"][lang]%></a>
+            </div>
+            <div class="menu-list menu-light">
+                <div class="menu-line"></div>
+                <a>裝備道具</a>
+            </div>
+            <div class="menu-list logo">
+                <a href="./"><img src="/static/image/logo-dota2.png"></a>
+            </div>
+            <div class="menu-list menu-dark">
+                <div class="menu-line"></div>
+                <a href="/<%-lang%>/thanx">感謝名單</a>
+            </div>
+            <div class="menu-list menu-dark flyingv">
+                <div class="menu-line"></div>
+                <a><img src="/static/image/logo-flyingV.png"><span class="donate">| <%-langtext["donate"][lang]%> |</span></a>
+            </div>
+        </nav>

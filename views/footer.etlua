@@ -1,0 +1,62 @@
+
+    <footer>
+    	<div class="quick-link">
+        	<div class="ql-1">
+            <h3 class="ql-title"><%-langtext["oda_army"][lang]%>／</h3><% 
+            i1 = -1
+            for n=1,40 do 
+              key = tostring(n)
+              if n < 10 then
+                key = "0"..key
+              end
+              key = "A"..key
+              if heroname[key] ~= nil then
+                i1 = i1 + 1
+                i = key
+                it = heroname[key]
+                 %>
+                <a href="/<%-lang%>/hero/<%-i%>"><%-it%></a><%
+              end 
+            end%>
+            </div>
+            <div class="ql-2">
+            <h3 class="ql-title"><%-langtext["unite_army"][lang]%>／</h3><% 
+            i1 = -1
+            for n=1,40 do 
+              key = tostring(n)
+              if n < 10 then
+                key = "0"..key
+              end
+              key = "B"..key
+              if heroname[key] ~= nil then
+                i1 = i1 + 1
+                i = key
+                it = heroname[key]
+                 %>
+                <a href="/<%-lang%>/hero/<%-i%>"><%-it%></a><%
+              end 
+            end%>
+            </div>
+            <div class="ql-3">
+            <h3 class="ql-title"><%-langtext["neutral_army"][lang]%>／</h3><% 
+            i1 = -1
+            for n=1,40 do 
+              key = tostring(n)
+              if n < 10 then
+                key = "0"..key
+              end
+              key = "C"..key
+              if heroname[key] ~= nil then
+                i1 = i1 + 1
+                i = key
+                it = heroname[key]
+                 %>
+                <a href="/<%-lang%>/hero/<%-i%>"><%-it%></a><%
+              end 
+            end%>
+            </div>
+        </div>
+    	<div class="copyright">©2016 WL、damody保留所有權利。</div>
+    </footer>
+</body>
+</html>
