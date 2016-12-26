@@ -150,6 +150,48 @@ end
         	<div class="champion-info">
             	<h2 class="champion-title"><%-langtext["statistical"][lang]%><span>Statistics Info</span></h2>
                 <h3 class="ver"><%-langtext["version"][lang]%>：16</h3>
+                <div class="kda">
+                    <div class="st-box">
+                        <h4 class="st-title">K<div class="st-avg"><%-langtext["avg"][lang]%></h4>
+                        <div class="st-number"><%-record16["k"]%></div>
+                    </div>
+                    <div class="st-box">
+                        <h4 class="st-title">D<div class="st-avg"><%-langtext["avg"][lang]%></h4>
+                        <div class="st-number"><%-record16["d"]%></div>
+                    </div>
+                    <div class="st-box">
+                        <h4 class="st-title">A<div class="st-avg"><%-langtext["avg"][lang]%></h4>
+                        <div class="st-number"><%-record16["a"]%></div>
+                    </div>
+                </div>
+                <div class="kda">
+                    <div class="st-box">
+                        <h4 class="st-title">K<div class="st-win"><%-langtext["win"][lang]%></h4>
+                        <div class="st-number"><%-record16["win_k"]%></div>
+                    </div>
+                    <div class="st-box">
+                        <h4 class="st-title">D<div class="st-win"><%-langtext["win"][lang]%></h4>
+                        <div class="st-number"><%-record16["win_d"]%></div>
+                    </div>
+                    <div class="st-box">
+                        <h4 class="st-title">A<div class="st-win"><%-langtext["win"][lang]%></h4>
+                        <div class="st-number"><%-record16["win_a"]%></div>
+                    </div>
+                </div>
+                <div class="kda">
+                    <div class="st-box">
+                        <h4 class="st-title">K<div class="st-lose"><%-langtext["lose"][lang]%></h4>
+                        <div class="st-number"><%-record16["lose_k"]%></div>
+                    </div>
+                    <div class="st-box">
+                        <h4 class="st-title">D<div class="st-lose"><%-langtext["lose"][lang]%></h4>
+                        <div class="st-number"><%-record16["lose_d"]%></div>
+                    </div>
+                    <div class="st-box">
+                        <h4 class="st-title">A<div class="st-lose"><%-langtext["lose"][lang]%></h4>
+                        <div class="st-number"><%-record16["lose_a"]%></div>
+                    </div>
+                </div>
                 <div class="st-box">
                 	<h4 class="st-title"><%-langtext["all"][lang]%></h4>
                     <div class="st-number"><%-record16["all"]%></div>
@@ -159,19 +201,19 @@ end
                     <div class="st-number"><%-record16["win"]%></div>
                 </div>
                 <div class="st-box">
-                    <h4 class="st-title"><%-langtext["winning"][lang]%></h4>
+                    <h4 class="st-title"><%-langtext["winning"][lang]%><div class="st-avg"><%-langtext["avg"][lang]%></div></h4>
                     <div class="st-number"><%-round(record16["winning"]*100, 2).."%"%></div>
                 </div>
                 <div class="st-box">
-                    <h4 class="st-title"><%-langtext["damage"][lang]%></h4>
+                    <h4 class="st-title"><%-langtext["damage"][lang]%><div class="st-avg"><%-langtext["avg"][lang]%></div></h4>
                     <div class="st-number"><%-record16["damage"]%></div>
                 </div>
                 <div class="st-box">
-                    <h4 class="st-title"><%-langtext["takedamage"][lang]%></h4>
+                    <h4 class="st-title"><%-langtext["takedamage"][lang]%><div class="st-avg"><%-langtext["avg"][lang]%></div></h4>
                     <div class="st-number"><%-record16["takedamage"]%></div>
                 </div>
                 <div class="st-box">
-                    <h4 class="st-title"><%-langtext["herodamage"][lang]%></h4>
+                    <h4 class="st-title"><%-langtext["herodamage"][lang]%><div class="st-avg"><%-langtext["avg"][lang]%></div></h4>
                     <div class="st-number"><%-record16["herodamage"]%></div>
                 </div>
                 <div class="st-box">
@@ -206,6 +248,48 @@ end
             <div class="champion-info">
                 <h2 class="champion-title"><%-langtext["statistical"][lang]%><span>Statistics Info</span></h2>
                 <h3 class="ver"><%-langtext["version"][lang]%>：11</h3>
+                <div class="kda">
+                    <div class="st-box">
+                        <h4 class="st-title">K<div class="st-avg"><%-langtext["avg"][lang]%></h4>
+                        <div class="st-number"><%-record11["k"]%></div>
+                    </div>
+                    <div class="st-box">
+                        <h4 class="st-title">D<div class="st-avg"><%-langtext["avg"][lang]%></h4>
+                        <div class="st-number"><%-record11["d"]%></div>
+                    </div>
+                    <div class="st-box">
+                        <h4 class="st-title">A<div class="st-avg"><%-langtext["avg"][lang]%></h4>
+                        <div class="st-number"><%-record11["a"]%></div>
+                    </div>
+                </div>
+                <div class="kda">
+                    <div class="st-box">
+                        <h4 class="st-title">K<div class="st-win"><%-langtext["win"][lang]%></h4>
+                        <div class="st-number"><%-record11["win_k"]%></div>
+                    </div>
+                    <div class="st-box">
+                        <h4 class="st-title">D<div class="st-win"><%-langtext["win"][lang]%></h4>
+                        <div class="st-number"><%-record11["win_d"]%></div>
+                    </div>
+                    <div class="st-box">
+                        <h4 class="st-title">A<div class="st-win"><%-langtext["win"][lang]%></h4>
+                        <div class="st-number"><%-record11["win_a"]%></div>
+                    </div>
+                </div>
+                <div class="kda">
+                    <div class="st-box">
+                        <h4 class="st-title">K<div class="st-lose"><%-langtext["lose"][lang]%></h4>
+                        <div class="st-number"><%-record11["lose_k"]%></div>
+                    </div>
+                    <div class="st-box">
+                        <h4 class="st-title">D<div class="st-lose"><%-langtext["lose"][lang]%></h4>
+                        <div class="st-number"><%-record11["lose_d"]%></div>
+                    </div>
+                    <div class="st-box">
+                        <h4 class="st-title">A<div class="st-lose"><%-langtext["lose"][lang]%></h4>
+                        <div class="st-number"><%-record11["lose_a"]%></div>
+                    </div>
+                </div>
                 <div class="st-box">
                     <h4 class="st-title"><%-langtext["all"][lang]%></h4>
                     <div class="st-number"><%-record11["all"]%></div>
@@ -215,19 +299,19 @@ end
                     <div class="st-number"><%-record11["win"]%></div>
                 </div>
                 <div class="st-box">
-                    <h4 class="st-title"><%-langtext["winning"][lang]%></h4>
+                    <h4 class="st-title"><%-langtext["winning"][lang]%><div class="st-avg"><%-langtext["avg"][lang]%></div></h4>
                     <div class="st-number"><%-round(record11["winning"]*100, 2).."%"%></div>
                 </div>
                 <div class="st-box">
-                    <h4 class="st-title"><%-langtext["damage"][lang]%></h4>
+                    <h4 class="st-title"><%-langtext["damage"][lang]%><div class="st-avg"><%-langtext["avg"][lang]%></div></h4>
                     <div class="st-number"><%-record11["damage"]%></div>
                 </div>
                 <div class="st-box">
-                    <h4 class="st-title"><%-langtext["takedamage"][lang]%></h4>
+                    <h4 class="st-title"><%-langtext["takedamage"][lang]%><div class="st-avg"><%-langtext["avg"][lang]%></div></h4>
                     <div class="st-number"><%-record11["takedamage"]%></div>
                 </div>
                 <div class="st-box">
-                    <h4 class="st-title"><%-langtext["herodamage"][lang]%></h4>
+                    <h4 class="st-title"><%-langtext["herodamage"][lang]%><div class="st-avg"><%-langtext["avg"][lang]%></div></h4>
                     <div class="st-number"><%-record11["herodamage"]%></div>
                 </div>
                 <div class="st-box">

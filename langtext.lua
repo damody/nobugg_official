@@ -18,6 +18,24 @@ langtext["html_lang"]["zhcn"] = "zh-Hans"
 langtext["html_lang"]["en"] = "en"
 langtext["html_lang"]["jp"] = "ja"
 
+langtext["avg"] = {}
+langtext["avg"]["zhtw"] = "平均"
+langtext["avg"]["zhcn"] = "平均"
+langtext["avg"]["en"] = "Thanks list"
+langtext["avg"]["jp"] = "平均"
+
+langtext["thanks_list"] = {}
+langtext["thanks_list"]["zhtw"] = "感謝名單"
+langtext["thanks_list"]["zhcn"] = "感谢名单"
+langtext["thanks_list"]["en"] = "Thanks list"
+langtext["thanks_list"]["jp"] = "感謝名單"
+
+langtext["equipment"] = {}
+langtext["equipment"]["zhtw"] = "裝備道具"
+langtext["equipment"]["zhcn"] = "装备道具"
+langtext["equipment"]["en"] = "Equipment"
+langtext["equipment"]["jp"] = "裝備道具"
+
 langtext["donate"] = {}
 langtext["donate"]["zhtw"] = "支持贊助"
 langtext["donate"]["zhcn"] = "支持赞助"
