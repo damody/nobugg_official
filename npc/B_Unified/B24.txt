@@ -318,7 +318,7 @@
 		"BaseClass"	"ability_datadriven"
 		"AbilityTextureName"	"earthshaker_fissure"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC  | DOTA_UNIT_TARGET_CREEP"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_CREEP"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"FightRecapLevel"	"1"
