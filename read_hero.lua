@@ -81,6 +81,7 @@ for file in lfs.dir("npc/C_Neutral") do
 end
 
 text = readAll("addon_tchinese2.txt")
+text = string.gsub(text, [[\"]], [["]])
 
 for ability, name, _, old, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(([ABC][0-9][0-9])(W|E|R|T|D)(_old|))".+"(.+)"]], "U", 0) do
   if (hero[name] ~= nil) then
@@ -90,6 +91,7 @@ for ability, name, _, old, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(
     if (hero[name][ability]["name"]) == nil then
       hero[name][ability]["name"] = {}
     end
+    
     hero[name][ability]["name"]["zhtw"] = content
   end
 end
@@ -107,7 +109,7 @@ for ability, name, _, _, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(([
 end
 
 text = readAll("addon_schinese2.txt")
-
+text = string.gsub(text, [[\"]], [["]])
 for ability, name, _, old, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(([ABC][0-9][0-9])(W|E|R|T|D)(_old|))".+"(.+)"]], "U", 0) do
   if (hero[name] ~= nil) then
     if (hero[name][ability]) == nil then
