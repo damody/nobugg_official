@@ -454,13 +454,13 @@
 		"DOTA_Tooltip_Ability_item_commander_of_fan_Description" "攻擊傷害+28，全能力+20。<br />【使用】使指定範圍內的敵人無法施展法術以及攻擊持續3秒，非英雄單位10秒。<br /><font color=\"#cc0000\">對魔法免疫單位效果0.5秒</font>"
 
 		"DOTA_Tooltip_Ability_item_the_spear_of_saddle" "鞍切"
-		"DOTA_Tooltip_Ability_item_the_spear_of_saddle_Description" "攻擊傷害+42，全能力+5。擊中時使敵人護甲減少7<br /><font color=\"#cc0000\">法球效果，不可與其他法球並存，對魔免無效。</font>。
+		"DOTA_Tooltip_Ability_item_the_spear_of_saddle_Description" "攻擊傷害+42，全能力+5。擊中時使敵人護甲減少7<br /><font color=\"#cc0000\">法球效果，不可與其他法球並存，對魔免無效。</font>。"
 
 		"DOTA_Tooltip_Ability_item_the_spear_of_saddle_1" "鞍切．二階"
-		"DOTA_Tooltip_Ability_item_the_spear_of_saddle_1_Description" "攻擊傷害+56，全能力+5。擊中時使敵人護甲減少13<br /><font color=\"#cc0000\">法球效果，不可與其他法球並存，對魔免無效。</font>。
+		"DOTA_Tooltip_Ability_item_the_spear_of_saddle_1_Description" "攻擊傷害+56，全能力+5。擊中時使敵人護甲減少13<br /><font color=\"#cc0000\">法球效果，不可與其他法球並存，對魔免無效。</font>。"
 
 		"DOTA_Tooltip_Ability_item_the_spear_of_saddle_2" "鞍切．三階"
-		"DOTA_Tooltip_Ability_item_the_spear_of_saddle_2_Description" "攻擊傷害+70，全能力+5。擊中時使敵人護甲減少18<br /><font color=\"#cc0000\">法球效果，不可與其他法球並存，對魔免無效。</font>。
+		"DOTA_Tooltip_Ability_item_the_spear_of_saddle_2_Description" "攻擊傷害+70，全能力+5。擊中時使敵人護甲減少18<br /><font color=\"#cc0000\">法球效果，不可與其他法球並存，對魔免無效。</font>。"
 
 		"DOTA_Tooltip_Ability_item_the_spear_of_ghost" "鬼切"
 		"DOTA_Tooltip_Ability_item_the_spear_of_ghost_Description" "攻擊傷害+28，全能力+5，靈活+10。攻擊敵人時有19% 機率切割對方的真靈，使該敵人失去他<font color=\"#f0ad4e\">14% </font>的現有生命值，最低可以使敵人失去115生命值。<br /><font color=\"#cc0000\">法球效果，不可與其他法球並存，對魔免無效。</font>"
