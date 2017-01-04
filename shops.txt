@@ -1,8 +1,7 @@
 "dota_shops"
 {
-//Home Shop Start
-//--------------------------
 
+//消耗品
 "consumables"
 {
 	"item"      "item_perceive_wine"		//般若湯
@@ -13,6 +12,7 @@
 	"item"      ""
 }
 
+//武器
 "attributes"
 {
 	"item"      "item_katana"			//打刀
@@ -31,7 +31,7 @@
 	"item"      ""			//
 }
 
-
+//基礎物品
 "weapons_armor"
 {
 	"item"      "item_magic_ring"	//法術戒指
@@ -49,6 +49,7 @@
 	"item"      "item_wolverine"			//精鋼爪
 }
 
+//法書
 "misc"
 {
 	"item"		"item_the_club_of_nebula"			//星杵
@@ -68,7 +69,7 @@
 
 }   
 
-
+//合成武器
 "basics"
 {
 	"item"      "item_lightning_katana"			//舞雷刀
@@ -87,7 +88,7 @@
 	"item"      "item_the_dark_yellow_teeth_and_zimbabwe"			//闇牙黃泉津
 }
 
-
+//合成道具
 "support"
 {
 	"item"      "item_dark_boots"			//暗部長靴
@@ -106,7 +107,7 @@
 	"item"      ""			//
 }
 
-
+//合成法書
 "magics"
 {
 
@@ -126,7 +127,7 @@
 	"item"      "item_great_dragon"			//巨龍
 }
 
-
+//合成防具
 "defense"
 {
 	"item"      "item_the_hooate_of_ghost"			//鬼頰當
@@ -147,7 +148,7 @@
 	"item"      ""			//
 }
 
-
+//合成武器
 "weapons"
 {
 	"item"      "item_izuminokami_kanesada"			//和泉守兼定
@@ -196,7 +197,7 @@
 }
 
 
-"sideshop2" 
+"sideshop2"
 {
 	"item"      "item_the_great_sword_of_new_moon"			//三日月宗近．銘刀
 	"item"      "item_the_great_sword_of_toxic"			//梅鶯毒．妖刀
@@ -209,7 +210,7 @@
 	"item"      "item_the_great_sword_of_disease"			//池田鬼神丸國重．銘刀
 }
 
-
+//名刀
 "secretshop"
 {
 	"item"      "item_the_great_sword_of_soul"			//菊一文字則．太刀
