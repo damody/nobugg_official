@@ -15,7 +15,7 @@
             </div>
             <div class="menu-list menu-light">
                 <div class="menu-line"></div>
-                <a>裝備道具</a>
+                <a href="/<%-lang%>/equipment">裝備道具</a>
             </div>
             <div class="menu-list logo">
                 <a href="./"><img src="/static/image/logo-dota2.png"></a>

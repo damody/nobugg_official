@@ -110,6 +110,38 @@ do
         layout = false,
         render = "thanx"
       }
+    end,
+    ["/zhcn/equipment"] = function(self)
+      self.params.language = "zhcn"
+      self.params.webpath = "equipment"
+      return {
+        layout = false,
+        render = "equipment"
+      }
+    end,
+    ["/zhtw/equipment"] = function(self)
+      self.params.language = "zhtw"
+      self.params.webpath = "equipment"
+      return {
+        layout = false,
+        render = "equipment"
+      }
+    end,
+    ["/en/equipment"] = function(self)
+      self.params.language = "en"
+      self.params.webpath = "equipment"
+      return {
+        layout = false,
+        render = "equipment"
+      }
+    end,
+    ["/jp/equipment"] = function(self)
+      self.params.language = "jp"
+      self.params.webpath = "equipment"
+      return {
+        layout = false,
+        render = "equipment"
+      }
     end
   }
   _base_0.__index = _base_0

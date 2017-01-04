@@ -1,0 +1,74 @@
+<%
+local inspect = require("inspect")
+require("langtext")
+require("read_item")
+items = read_item()
+lang = params.language
+data = inspect(hero)
+local redis = require 'redis'
+local client = redis.connect('127.0.0.1', 6379)
+local cjson = require("cjson")
+
+if lang == "zhtw" then
+  heroname = zhtw_heroname
+elseif  lang == "zhcn" then
+  heroname = zhcn_heroname
+elseif lang == "jp" then
+  heroname = jp_heroname
+elseif lang == "en" then
+  heroname = en_heroname
+end
+%>
+<% render("views.head", { lang = lang, langtext = langtext }) %>
+
+<body class="page">
+	<header>
+        <% render("views.nav", { lang = lang, langtext = langtext, webpath = params.webpath }) %>
+    </header>
+    <div class="container">
+    	<div class="champion-banner first-layout">
+          	<h1 class="cp-fc1"></h1>
+        </div>
+        <div class="wrapper">
+            
+            <!--技能資訊 16-->
+        	<div class="champion-info">
+            	<h2 class="champion-title">Item<span>Ability Info</span></h2>
+                <% for i, item in pairs(items) do
+                  if item["name"] ~= nil then 
+                    if item["name"][lang] == nil then
+                        item["name"][lang] = ""
+                    end%>
+                <div class="ability-list">
+                    <h4 class="ability-name"><%=item["name"][lang]%></h4>
+                    <div class="ability-box">
+                        <img src="../../static/pic/items/<%-item["pic"]%>.png" alt="<%=item["name"][lang]%> icon" width="100" height="100">
+                        <div class="ability-info">
+                            <ul>
+                            <% if item["cooldown"] ~= nil then %>
+                                <li><%-langtext["cd"][lang]%>: <%= item["cooldown"] %></li>
+                            <% end %>
+                            <% if item["mana"] ~= nil then %>
+                                <li><%-langtext["mana"][lang]%>: <%= item["mana"] %></li>
+                            <% end %>
+                            <% if item["radius"] ~= nil then %>
+                                <li><%-langtext["radius"][lang]%>: <%= item["radius"] %></li>
+                            <% end %>
+                            <% if item["range"] ~= nil then %>
+                                <li><%-langtext["range"][lang]%>: <%= item["range"] %></li>
+                            <% end %>
+                                <li><%- item["Description"][lang] %></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><% 
+                    end 
+                end %>
+            </div>
+        	<!--技能資訊 16-->
+           
+
+        </div>
+    </div>
+
+<% render("views.footer", { lang = lang, langtext = langtext, heroname = heroname}) %>

@@ -54,3 +54,20 @@ class extends lapis.Application
     @params.language = "jp"
     @params.webpath = "thanx"
     layout: false, render: "thanx"
+  "/zhcn/equipment": =>
+    @params.language = "zhcn"
+    @params.webpath = "equipment"
+    layout: false, render: "equipment"
+  "/zhtw/equipment": =>
+    @params.language = "zhtw"
+    @params.webpath = "equipment"
+    layout: false, render: "equipment"
+  "/en/equipment": =>
+    @params.language = "en"
+    @params.webpath = "equipment"
+    layout: false, render: "equipment"
+  "/jp/equipment": =>
+    @params.language = "jp"
+    @params.webpath = "equipment"
+    layout: false, render: "equipment"
+  
