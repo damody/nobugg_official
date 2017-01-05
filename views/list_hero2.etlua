@@ -24,6 +24,38 @@ end
     	<nav>
         	<% render("views.nav", { lang = lang, langtext = langtext, webpath = params.webpath }) %>
         </nav>
+        <script>
+            jQuery("document").ready(function($){
+                $(window).keydown(function( event ) {
+                    if ( event.which == 34 || event.which == 32 ) {
+                        if ($(this).scrollTop() < $(this).height()*0.9) {
+                            $(this).scrollTop($(this).height()*0.12);
+                        } else if ($(this).scrollTop() < $(this).height()*1.8) {
+                            $(this).scrollTop($(this).height()*1.1);
+                        }
+                    }
+                    if ( event.which == 33 ) {
+                        if ($(this).scrollTop() > $(this).height()*2) {
+                            $(this).scrollTop($(this).height()*1.87);
+                        } else if ($(this).scrollTop() > $(this).height()*1.8) {
+                            $(this).scrollTop($(this).height()*1.87);
+                        } else if ($(this).scrollTop() > $(this).height()*0.9) {
+                            $(this).scrollTop($(this).height()*0);
+                        }
+                    }
+                });
+                var nav = $('header');
+                
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 50) {
+                        nav.addClass("nav-sticky");
+                    } else {
+                        nav.removeClass("nav-sticky");
+                    }
+                });
+             
+            });
+        </script>
     </header>
     <div class="container full-height faction1">
         <div class="wrapper">

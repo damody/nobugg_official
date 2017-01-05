@@ -1,3 +1,94 @@
+newequiment = {}
+newequiment["consumables"] = {}
+newequiment["consumables"]["name"] = {}
+newequiment["consumables"]["name"]["zhtw"] = "消耗品"
+newequiment["consumables"]["name"]["zhcn"] = "消耗品"
+newequiment["consumables"]["name"]["en"] = "Consumables"
+newequiment["consumables"]["name"]["jp"] = "消耗品"
+
+newequiment["attributes"] = {}
+newequiment["attributes"]["name"] = {}
+newequiment["attributes"]["name"]["zhtw"] = "武器"
+newequiment["attributes"]["name"]["zhcn"] = "武器"
+newequiment["attributes"]["name"]["en"] = "weapon"
+newequiment["attributes"]["name"]["jp"] = "武器"
+
+newequiment["weapons_armor"] = {}
+newequiment["weapons_armor"]["name"] = {}
+newequiment["weapons_armor"]["name"]["zhtw"] = "基礎物品"
+newequiment["weapons_armor"]["name"]["zhcn"] = "基礎物品"
+newequiment["weapons_armor"]["name"]["en"] = "Basic"
+newequiment["weapons_armor"]["name"]["jp"] = "基礎アイテム"
+
+newequiment["misc"] = {}
+newequiment["misc"]["name"] = {}
+newequiment["misc"]["name"]["zhtw"] = "法術書籍"
+newequiment["misc"]["name"]["zhcn"] = "法術書籍"
+newequiment["misc"]["name"]["en"] = "Magic Book"
+newequiment["misc"]["name"]["jp"] = "法術書籍"
+
+newequiment["basics"] = {}
+newequiment["basics"]["name"] = {}
+newequiment["basics"]["name"]["zhtw"] = "高階武器"
+newequiment["basics"]["name"]["zhcn"] = "高階武器"
+newequiment["basics"]["name"]["en"] = "Enchantment Weapon"
+newequiment["basics"]["name"]["jp"] = "高階武器"
+
+newequiment["support"] = {}
+newequiment["support"]["name"] = {}
+newequiment["support"]["name"]["zhtw"] = "高階道具"
+newequiment["support"]["name"]["zhcn"] = "高階道具"
+newequiment["support"]["name"]["en"] = "Enchantment Item"
+newequiment["support"]["name"]["jp"] = "高級アイテム"
+
+newequiment["magics"] = {}
+newequiment["magics"]["name"] = {}
+newequiment["magics"]["name"]["zhtw"] = "高階法書"
+newequiment["magics"]["name"]["zhcn"] = "高階法書"
+newequiment["magics"]["name"]["en"] = "Enchantment Magic Book"
+newequiment["magics"]["name"]["jp"] = "高階法書"
+
+newequiment["defense"] = {}
+newequiment["defense"]["name"] = {}
+newequiment["defense"]["name"]["zhtw"] = "高階防具"
+newequiment["defense"]["name"]["zhcn"] = "高階防具"
+newequiment["defense"]["name"]["en"] = "Enchantment Defense"
+newequiment["defense"]["name"]["jp"] = "高階防具"
+
+newequiment["weapons"] = {}
+newequiment["weapons"]["name"] = {}
+newequiment["weapons"]["name"]["zhtw"] = "高階武器2"
+newequiment["weapons"]["name"]["zhcn"] = "高階武器2"
+newequiment["weapons"]["name"]["en"] = "Enchantment Weapon 2"
+newequiment["weapons"]["name"]["jp"] = "高階武器2"
+
+newequiment["artifacts"] = {}
+newequiment["artifacts"]["name"] = {}
+newequiment["artifacts"]["name"]["zhtw"] = "升級類裝備"
+newequiment["artifacts"]["name"]["zhcn"] = "升級類裝備"
+newequiment["artifacts"]["name"]["en"] = "level equiment"
+newequiment["artifacts"]["name"]["jp"] = "進化可の装備品"
+
+newequiment["sideshop1"] = {}
+newequiment["sideshop1"]["name"] = {}
+newequiment["sideshop1"]["name"]["zhtw"] = "路邊商店"
+newequiment["sideshop1"]["name"]["zhcn"] = "路邊商店"
+newequiment["sideshop1"]["name"]["en"] = "Side Shop"
+newequiment["sideshop1"]["name"]["jp"] = "沿道の店"
+
+newequiment["sideshop2"] = {}
+newequiment["sideshop2"]["name"] = {}
+newequiment["sideshop2"]["name"]["zhtw"] = "路邊名刀舖"
+newequiment["sideshop2"]["name"]["zhcn"] = "路邊名刀舖"
+newequiment["sideshop2"]["name"]["en"] = "Side Great Katana Shop"
+newequiment["sideshop2"]["name"]["jp"] = "沿道の名刀屋"
+
+newequiment["secretshop"] = {}
+newequiment["secretshop"]["name"] = {}
+newequiment["secretshop"]["name"]["zhtw"] = "名刀舖"
+newequiment["secretshop"]["name"]["zhcn"] = "名刀舖"
+newequiment["secretshop"]["name"]["en"] = "Great Katana Shop"
+newequiment["secretshop"]["name"]["jp"] = "名刀屋"
 
 langtext = {}
 langtext["dota2nobu"] = {}
