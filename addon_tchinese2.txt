@@ -120,7 +120,7 @@
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_soul_hyper" "真‧菊一文字則宗．太刀"
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_soul_hyper_Description" "攻擊+30， 敏捷+20， 所有能力+10 【使用】施展攝魂令目標無法行動2.5秒<br /><font color=\"#cc0000\">會被魔法免疫解除效果</font>"
 		"DOTA_Tooltip_Ability_item_liquor" "燒酒"
-		"DOTA_Tooltip_Ability_item_liquor_Description" "【使用】喝下去之後可以使自身的攻擊速度提升70%，持續17秒，可使用2次。<br /><font color=\"#cc0000\">魔法免疫可以使用</font>"
+		"DOTA_Tooltip_Ability_item_liquor_Description" "【使用】喝下去之後可以使自身的攻擊速度提升70%，持續17秒，可使用2次。"
 
 		"DOTA_Tooltip_Ability_item_perceive_wine" "般若湯"
 		"DOTA_Tooltip_Ability_item_perceive_wine_Description" "【使用】在3.5秒內獲得魔法免疫。可使用3次。"
@@ -365,7 +365,7 @@
 
 
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_disarmament" "童子切安鋼．銘刀"
-		"DOTA_Tooltip_Ability_item_the_great_sword_of_disarmament_Description" "攻擊傷害+50，靈活+20，使周圍敵軍的護甲降低10。<br />【使用】使增加靈活的效果提升為+50，並使降低周圍敵軍護甲的效果提升為20，持續20秒。<br /><font color=\"#cc0000\">負面效果對魔免無效</font>"
+		"DOTA_Tooltip_Ability_item_the_great_sword_of_disarmament_Description" "攻擊傷害+50，靈活+20，使周圍敵軍的護甲降低6。<br />【使用】使增加靈活的效果提升為+50，並使降低周圍敵軍護甲的效果提升為12，持續20秒。"
 
 		"DOTA_Tooltip_Ability_item_napalm_bomb" "爆烈彈"
 		"DOTA_Tooltip_Ability_item_napalm_bomb_Description" "對指定地點投擲爆裂彈，對範圍內敵人造成600傷害。"
@@ -377,7 +377,7 @@
 		"DOTA_Tooltip_Ability_item_blowgun_Description" "使500距離的目標敵人暈眩1.5秒並造成50魔法傷害。"
 
 		"DOTA_Tooltip_Ability_item_sake" "清酒"
-		"DOTA_Tooltip_Ability_item_sake_Description" "喝下去之後可以使自身的移動速度提升30% ，持續10秒，可使用2次。<br /><font color=\"#cc0000\">血量低於50%時效果減半，滿血量時無法使用。</font>"
+		"DOTA_Tooltip_Ability_item_sake_Description" "喝下去之後可以使自身的移動速度提升30% ，持續10秒，可使用2次。"
 
 		"DOTA_Tooltip_Ability_item_wolverine" "精鋼爪"
 		"DOTA_Tooltip_Ability_item_wolverine_Description" "攻擊傷害+50"
@@ -484,7 +484,7 @@
 		"DOTA_Tooltip_Ability_item_samurai_cloth_2_Description" "全能力+10，每秒回復30生命值。攻速+90%。"
 
 		"DOTA_Tooltip_Ability_item_nannbann_armor" "南蠻胴具足"
-		"DOTA_Tooltip_Ability_item_nannbann_armor_Description" "護甲+6，生命+780，每秒回復20生命值。自動抵擋一次魔法技能，並且在10秒內獲得可以吸收1000法術傷害的魔盾。30秒內不得重複發動。<br /><font color=\"#cc0000\">與「御守」、「御魔護符」一起冷卻</font>"
+		"DOTA_Tooltip_Ability_item_nannbann_armor_Description" "護甲+6，生命+780，每秒回復20生命值。自動抵擋一次魔法技能，並且在10秒內獲得可以吸收1000法術傷害的魔盾。30秒內不得重複發動。"
 
 		"DOTA_Tooltip_Ability_item_foxfire_armor" "狐火大鎧"
 		"DOTA_Tooltip_Ability_item_foxfire_armor_Description" "護甲+5。每秒回復10生命值。每秒讓附近350內的敵人造成80傷害"
@@ -1047,7 +1047,7 @@
 		"DOTA_Tooltip_Ability_A04R"	 "霜之庇護"
 		"DOTA_Tooltip_Ability_A04R_Description"	"在受傷的友軍英雄或自身施放霜之庇護，霜之庇護將可以治療150生命並給予一個可吸收<font color=\"#5cb85c\">(250/375/500/625)</font>傷害的冰盾，冰盾在吸滿傷害後將會釋放霜之力，使周圍的敵人凍結<font color=\"#5cb85c\">(0.5/0.7/0.9/1.1)</font>秒。霜之庇護存在10秒。 "
         "DOTA_Tooltip_Ability_A04T"	 "吹雪"
-        "DOTA_Tooltip_Ability_A04T_Description"	"呼叫從天而降的冰雨，每波可對範圍內所有敵人造成<font color=\"#5cb85c\">(180/240/300)</font>的初始傷害，並且附加每秒(30/45/60)的持續傷害，持續8秒。最多可持續11波，對建築物造成55% 傷害，使擊中的敵人減慢30%移動速度。/font>持續傷害，持續2秒。 "
+        "DOTA_Tooltip_Ability_A04T_Description"	"呼叫從天而降的冰雨，每波可對範圍內所有敵人造成<font color=\"#5cb85c\">(180/240/300)</font>的初始傷害，並且附加每秒<font color=\"#5cb85c\">(30/45/60)</font>的持續傷害，持續8秒。最多可持續11波，對建築物造成55% 傷害，使擊中的敵人減慢30% 移動速度持續2秒。 "
         "DOTA_Tooltip_Ability_A05D"	 "忠之極意"
   		"DOTA_Tooltip_Ability_A05D_Description" "在戰鬥中死亡，酒井忠次將會於原地重生。 "
         "DOTA_Tooltip_Ability_A05W"  "強悍之力"
@@ -1333,6 +1333,7 @@
         "DOTA_Tooltip_Ability_A33R_Description" "使附近敵軍的護甲降低<font color=\"#5cb85c\">(3/5/7/9)</font>。"
 	    "DOTA_Tooltip_Ability_A33T"  "傷害加深"
         "DOTA_Tooltip_Ability_A33T_Description" "降低指定敵軍<font color=\"#5cb85c\">(9/12/15)</font>的防禦，並且在持續時間內將可以觀察該敵軍，持續30秒，非英雄單位的持續時間為2倍。"
+		// 阿松
 	    "DOTA_Tooltip_Ability_A34W"  "寒霜彈"
         "DOTA_Tooltip_Ability_A34W_Description" "對著敵人或建築物投出寒霜彈，造成<font color=\"#5cb85c\">(100/200/300/400)</font>傷害並將對方結凍<font color=\"#5cb85c\">(1.0/1.5/2.0/2.5)</font>秒，非英雄單位的持續時間多1.5秒。"
 	    "DOTA_Tooltip_Ability_A34E"  "冰山之襲"
@@ -1341,6 +1342,16 @@
         "DOTA_Tooltip_Ability_A34R_Description" "對著前方灑出一陣的冰霜，可以造成<font color=\"#5cb85c\">(100/200/300/400)</font>傷害，以及每秒<font color=\"#5cb85c\">(30/40/50/60)</font>傷害，持續6秒。"
 	    "DOTA_Tooltip_Ability_A34T"  "急速冷卻"
         "DOTA_Tooltip_Ability_A34T_Description" "使自身的所有技能的冷却時間馬上结束，需要0.5秒的施法時間。"
+		// 阿松 舊版 11.2B
+        "DOTA_Tooltip_Ability_A34W_old"  "寒霜彈"
+        "DOTA_Tooltip_Ability_A34W_old_Description" "結凍目標<font color=\"#5cb85c\">(1/2/3/4)</font>秒並造成<font color=\"#5cb85c\">(100/140/180/220)</font>傷害。對建築物有效。"
+	    "DOTA_Tooltip_Ability_A34E_old"  "冰山之襲"
+        "DOTA_Tooltip_Ability_A34E_old_Description" "以冰山轟擊敵方部隊，造成指定敵軍<font color=\"#5cb85c\">(200/300/400/500)</font>傷害，以及分散開<font color=\"#5cb85c\">(100/200/300/400)</font>冰爆傷害。冰冷傷害可以降低部隊的移動與攻擊速度。持續5秒。"
+	    "DOTA_Tooltip_Ability_A34R_old"  "冰霜之息"
+        "DOTA_Tooltip_Ability_A34R_old_Description" "對著前方灑出一陣的冰霜，可以造成<font color=\"#5cb85c\">(100/200/300/400)</font>傷害，以及每秒<font color=\"#5cb85c\">(30/40/50/60)</font>傷害，持續6秒。"
+	    "DOTA_Tooltip_Ability_A34T_old"  "雪女的祝福"
+        "DOTA_Tooltip_Ability_A34T_old_Description" "對著自身或者友軍釋放強大的冰之能量，能夠增加<font color=\"#5cb85c\">(40/60/80)</font>點生命恢復以及<font color=\"#5cb85c\">(20/30/40)% </font>攻擊力與<font color=\"#5cb85c\">(10/15/20)</font>點防禦力，減少<font color=\"#5cb85c\">(30/40/50)% </font>魔法傷害，持續<font color=\"#5cb85c\">(30/40/50)</font>秒。"
+		
 	    "DOTA_Tooltip_Ability_A35W"  "焰襲"
         "DOTA_Tooltip_Ability_A35W_Description" "化身為爆裂的怒焰朝著指定地點衝鋒而去，可以對路徑上的所有敵人造成<font color=\"#5cb85c\">(200/300/400/500)</font>傷害。"
 	    "DOTA_Tooltip_Ability_A35E"  "熾焰封魔"
@@ -1357,8 +1368,7 @@
         "DOTA_Tooltip_Ability_A36R_Description" "飲用它，在接下來4.5秒增加<font color=\"#5cb85c\">(25/40/55/70)% </font>攻速，並且當你受到傷害時，酒精帶來的卓越耐力讓你的生命值不會低於總生命值的<font color=\"#5cb85c\">(6/12/18/24)%</font>。"
 	    "DOTA_Tooltip_Ability_A36T"  "奪命攻擊"
         "DOTA_Tooltip_Ability_A36T_Description" "每次攻擊將有15%的機率進行奪命攻擊，在擊中敵人時造成<font color=\"#5cb85c\">(150/200/250)</font>額外傷害並使之暈眩<font color=\"#5cb85c\">(0.8/1.0/1.2)</font>秒。"
-	
-		
+			
 		"npc_dota_hero_nevermore_bio"	"雜賀党的首領歷代都稱孫市，戰國中後期名將，雜賀孫市是擅使鐵炮的高手。紀伊的雜賀眾出身。當信長攻打一揆眾的本據地‧伊勢長島時，雜賀眾力挺一揆眾，組織鐵砲隊痛擊織田軍促使敗退。歷史上孫市的真實身份不詳，一說為鈴木重秀，另一說為重朝。重秀曾在石山合戰，僅僅以100人規模的鐵砲隊重創織田軍，又介於本願寺之間，在山崎之戰大為活躍，後來也參加秀吉的紀州攻略戰；重朝在關原西軍中於成功攻下伏見城，曾投靠政宗，爾後則成為家康、賴房的臣下。"
 		"DOTA_Tooltip_Ability_B01W"	"狙擊模式"
 		"DOTA_Tooltip_Ability_B01W_Description"	"轉換為狙擊狀態，增加攻擊傷害<font color=\"#5cb85c\">(20/30/40/50)</font>、攻擊距離<font color=\"#5cb85c\">(200/350/500/650)</font>和夜晚視野1000，持續8秒。"
@@ -1576,22 +1586,44 @@
 		"DOTA_Tooltip_Ability_C19T_old"  "不容侵犯"
 		"DOTA_Tooltip_Ability_C19T_old_Description" "有<font color=\"#5cb85c\">(35/45/55)% </font>機會閃避攻擊"	
 		
-		"DOTA_Tooltip_Ability_B16W_old"  "忍法．飛襲令"
-		"DOTA_Tooltip_Ability_B16W_old_Description"	"命令忍犬撲向指定的敵人，將可以造成<font color=\"#5cb85c\">(100/200/300/400)</font>的傷害，並且在接下來10秒，望月千代女以及忍犬將可以增加<font color=\"#5cb85c\">(30/40/50/60)</font>的攻擊力。"
-		"DOTA_Tooltip_Ability_B16E_old"	 "忍法．落葉散華"
-        "DOTA_Tooltip_Ability_B16E_old_Description"	"使出旋轉鋒利竹葉的風忍法，對周圍的敵人造成<font color=\"#5cb85c\">(100/150/200/250)</font>的傷害並且暈眩<font color=\"#5cb85c\">(0.5/1.0/1.5/2.0)</font>秒。 "
-		"DOTA_Tooltip_Ability_B16R_old"  "忍法．迅雷"
-		"DOTA_Tooltip_Ability_B16R_old_Description"	"增加自身以及忍犬<font color=\"#5cb85c\">(9/17/25/33)% </font>移動速度與<font color=\"#5cb85c\">(10/15/20/25)% </font>攻擊速度。"
-		"DOTA_Tooltip_Ability_B16D_old"  "召喚忍法．召喚忍犬"
-		"DOTA_Tooltip_Ability_B16D_old_Description"	"召喚一隻忠心的忍犬，忍犬具有相當快的攻擊速度以及具有渾沌攻擊，並且在高等級時，忍犬將可以擁有掃擊、相移、永久隱形的能力。"
-		"DOTA_Tooltip_Ability_B16MMT_old"  "掃擊"
-		"DOTA_Tooltip_Ability_B16MMT_old_Description"	"有15%機會在攻擊時將敵人暈擊0.65秒，並且造成額外60傷害。"
-		"DOTA_Tooltip_Ability_B16MMF_old"  "隱形"
-		"DOTA_Tooltip_Ability_B16MMF_old_Description"	"兩秒內不攻擊敵人會隱形。"
-		"DOTA_Tooltip_Ability_B16MMD_old"  "相移"
-		"DOTA_Tooltip_Ability_B16MMD_old_Description"	"施展之後，忍犬將可以與望月千代女互換位置，兩者距離必須不可大於1000。"
-		"DOTA_Tooltip_Ability_B16T_old"  "忍法密傳．獸靈同化"
-		"DOTA_Tooltip_Ability_B16T_old_Description" "有<font color=\"#5cb85c\">(35/45/55)% </font>機會閃避攻擊"	
+		// 望月千代女
+		"DOTA_Tooltip_Ability_B16W"  "忍法．飛襲令"
+		"DOTA_Tooltip_Ability_B16W_Description"	"命令忍犬撲向指定的敵人，造成<font color=\"#5cb85c\">(100/200/300/400)</font>的傷害，並且在接下來10秒提升自身以及忍犬<font color=\"#5cb85c\">(30/40/50/60)</font>的攻擊力。"
+		"DOTA_Tooltip_Ability_B16E"	 "忍法．落葉散華"
+        "DOTA_Tooltip_Ability_B16E_Description"	"使出旋轉鋒利竹葉的風忍法，對周圍的敵人造成<font color=\"#5cb85c\">(100/150/200/250)</font>的傷害並且暈眩<font color=\"#5cb85c\">(0.5/1.0/1.5/2.0)</font>秒。"
+		"DOTA_Tooltip_Ability_B16R"  "忍法．迅雷"
+		"DOTA_Tooltip_Ability_B16R_Description"	"增加自身以及忍犬<font color=\"#5cb85c\">(9/17/25/33)%%</font>移動速度與<font color=\"#5cb85c\">(10/15/20/25)%%</font>攻擊速度。"
+		"DOTA_Tooltip_Ability_B16D"  "召喚忍法．召喚忍犬"
+		"DOTA_Tooltip_Ability_B16D_Description"	"召喚一隻忠心的忍犬，忍犬具有相當快的攻擊速度，並且隨著「忍法．飛襲令」等級的提升，忍犬將逐漸領悟掃擊、相移與隱形的能力。"
+
 		"B16D_SUMMEND_UNIT"	"忍犬．月月"
+		"DOTA_Tooltip_Ability_B16MMT"  "掃擊"
+		"DOTA_Tooltip_Ability_B16MMT_Description"	"有15% 機會在攻擊時將敵人暈擊0.65秒，並且造成額外60傷害，當技能「忍法．飛襲令」等級2時自動領悟。"
+		"DOTA_Tooltip_Ability_B16MMF"  "隱形"
+		"DOTA_Tooltip_Ability_B16MMF_Description"	"兩秒內不攻擊或發動技能將進入隱形狀態，當技能「忍法．飛襲令」等級4時自動領悟。"
+		"DOTA_Tooltip_Ability_B16MMD"  "相移"
+		"DOTA_Tooltip_Ability_B16MMD_Description"	"望月千代女與忍犬互換位置，兩者距離必須小於2000，當技能「忍法．飛襲令」等級3時自動領悟。"
+		"DOTA_Tooltip_Ability_B16T"  "忍法密傳．獸靈同化"
+		"DOTA_Tooltip_Ability_B16T_Description" "施展可以與忍犬達到完全契合的密傳忍術，使自身以及忍犬增加50% 總攻擊傷害並且所受到的魔法傷害減少90% ，持續<font color=\"#5cb85c\">(15/22/29)</font>秒。"	
+
+		// 望月千代女 舊版 11.2B
+		"DOTA_Tooltip_Ability_B16W_old"  "忍法．召喚忍犬"
+		"DOTA_Tooltip_Ability_B16W_old_Description" "召喚出一隻具有混沌攻擊的忍犬，忍犬隨著技能等級與望月千代女的等級提升屬性，持續60秒。"
+		"DOTA_Tooltip_Ability_B16E_old"  "忍法．落葉散華"
+		"DOTA_Tooltip_Ability_B16E_old_Description" "使出旋轉鋒利竹葉的風忍法，對周圍的敵人造成<font color=\"#5cb85c\">(100/200/300/400)</font>的傷害並且暈眩<font color=\"#5cb85c\">(0.5/1.0/1.5/2.0)</font>秒。"
+		"DOTA_Tooltip_Ability_B16R_old"  "忍法．迅雷"
+		"DOTA_Tooltip_Ability_B16R_old_Description" "增加自身<font color=\"#5cb85c\">(10/20/30/40)% </font>移動速度與<font color=\"#5cb85c\">(10/15/20/25)% </font>攻擊速度。"
+		"DOTA_Tooltip_Ability_B16T_old"  "忍法．煙霧彈"
+		"DOTA_Tooltip_Ability_B16T_old_Description" "丟出一枚煙霧彈，瞬間回到本陣。"
+
+		"B16D_old_SUMMEND_UNIT"	"忍犬．月月"
+		"DOTA_Tooltip_Ability_B16MMW_old"  "一擊斬"
+		"DOTA_Tooltip_Ability_B16MMW_old_Description" "攻擊時有25%機率造成兩倍傷害。"
+		"DOTA_Tooltip_Ability_B16MME_old"  "撕裂攻擊"
+		"DOTA_Tooltip_Ability_B16MME_old_Description" "攻擊時有15% 機率擊暈敵人0.65秒，並且造成額外60點傷害。"
+		"DOTA_Tooltip_Ability_B16MMR_old"  "忍法．迅雷"
+		"DOTA_Tooltip_Ability_B16MMR_old_Description"	"沒用到._."
+		"DOTA_Tooltip_Ability_B16MMT_old"  "永久隱形"
+		"DOTA_Tooltip_Ability_B16MMT_old_Description" "兩秒內不攻擊或發動技能將進入隱形狀態。\n當技能「忍法．召喚忍犬」等級4時自動領悟。"
 	}
 }
