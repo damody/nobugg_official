@@ -100,7 +100,7 @@ for name, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_item_(.+)"[ \t]+"(
   end
 end
 
-for name, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_item_(.+)_Description"[ \t]+"(.+)"\n]], "", 0) do
+for name, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_item_(.+)_Description".+"(.+)"]], "", 0) do
   if (equiment[name] ~= nil) then
     if (equiment[name]) == nil then
       equiment[name] = {}
@@ -117,8 +117,18 @@ for i, item in pairs(equiment) do
     equiment[i] = nil
   end
 end
+text = readAll("shops.txt")
+--print(text)
 
+for name, content in rex.gmatch(text, [[\n"(.+)"\n{(.+)\n}]], "Usm", 0) do
+  --print(name, content)
+  local count = 1
+  for item in rex.gmatch(content, [["item"[ \t]+"item_(.+)"]], "U", 0) do
+    newequiment[name][count] = equiment[item]
+    count = count + 1
+  end
+end
 
---print(inspect(equiment))
-return equiment
+--print(inspect(newequiment))
+return newequiment
 end
