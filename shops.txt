@@ -69,7 +69,7 @@
 
 }   
 
-//合成武器
+//高階武器
 "basics"
 {
 	"item"      "item_lightning_katana"			//舞雷刀
@@ -88,7 +88,7 @@
 	"item"      "item_the_dark_yellow_teeth_and_zimbabwe"			//闇牙黃泉津
 }
 
-//合成道具
+//高階道具
 "support"
 {
 	"item"      "item_dark_boots"			//暗部長靴
@@ -107,7 +107,7 @@
 	"item"      ""			//
 }
 
-//合成法書
+//高階法書
 "magics"
 {
 
@@ -127,7 +127,7 @@
 	"item"      "item_great_dragon"			//巨龍
 }
 
-//合成防具
+//高階防具
 "defense"
 {
 	"item"      "item_the_hooate_of_ghost"			//鬼頰當
@@ -148,7 +148,7 @@
 	"item"      ""			//
 }
 
-//合成武器
+//高階武器
 "weapons"
 {
 	"item"      "item_izuminokami_kanesada"			//和泉守兼定
