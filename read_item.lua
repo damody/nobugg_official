@@ -24,6 +24,7 @@ function ProcessText(text)
         local radius = rex.match(content, [["AOERadius".+"(.+)"]], 0, "U")
         local pic = rex.match(content, [["AbilityTextureName".+"(.+)"]], 0, "U")
         local range = rex.match(content, [["AbilityCastRange".+"(.+)"]], 0, "U")
+        local cost = rex.match(content, [["ItemCost".+"(.+)"]], 0, "U")
         if radius~=nil and string.match(radius, "%%") then
           radius = string.gsub(radius, "%%", "")
           radius = rex.match(content, [["]]..radius..[[".+"(.+)"]], 0, "U")
@@ -46,6 +47,7 @@ function ProcessText(text)
         equiment[name]["radius"] = radius
         equiment[name]["pic"] = pic
         equiment[name]["range"] = range
+        equiment[name]["cost"] = cost
         --print(ability, content)
      
     end

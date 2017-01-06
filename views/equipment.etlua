@@ -46,6 +46,9 @@ end
                             <img src="../../static/pic/items/<%-item["pic"]%>.png" alt="<%=item["name"][lang]%> icon" width="100" height="100">
                             <div class="ability-info">
                                 <ul>
+                                <% if item["cost"] ~= nil then %>
+                                    <li><%-langtext["cost"][lang]%>: <%= item["cost"] %></li>
+                                <% end %>
                                 <% if item["cooldown"] ~= nil then %>
                                     <li><%-langtext["cd"][lang]%>: <%= item["cooldown"] %></li>
                                 <% end %>

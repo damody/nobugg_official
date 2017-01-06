@@ -115,6 +115,12 @@ langtext["avg"]["zhcn"] = "平均"
 langtext["avg"]["en"] = "Thanks list"
 langtext["avg"]["jp"] = "平均"
 
+langtext["cost"] = {}
+langtext["cost"]["zhtw"] = "價格"
+langtext["cost"]["zhcn"] = "價格"
+langtext["cost"]["en"] = "Cost"
+langtext["cost"]["jp"] = "値段"
+
 langtext["thanks_list"] = {}
 langtext["thanks_list"]["zhtw"] = "感謝名單"
 langtext["thanks_list"]["zhcn"] = "感谢名单"
