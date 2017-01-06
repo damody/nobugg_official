@@ -1601,9 +1601,9 @@
 		"DOTA_Tooltip_Ability_B16E"	 "忍法．落叶散华"
         "DOTA_Tooltip_Ability_B16E_Description"	"使出旋转锋利竹叶的风忍法，对周围的敌人造成<font color=\"#5cb85c\">(100/150/200/250)</font>的伤害并且晕眩<font color=\"#5cb85c\">(0.5/1.0/1.5/2.0)</font>秒。"
 		"DOTA_Tooltip_Ability_B16R"  "忍法．迅雷"
-		"DOTA_Tooltip_Ability_B16R_Description"	"增加自身以及忍犬<font color=\"#5cb85c\">(9/17/25/33)% % </font>移动速度与<font color=\"#5cb85c\">(10/15/20/25)% % </font>攻击速度。"
+		"DOTA_Tooltip_Ability_B16R_Description"	"增加自身以及忍犬<font color=\"#5cb85c\">(9/17/25/33)% </font>移动速度与<font color=\"#5cb85c\">(10/15/20/25)% </font>攻击速度。"
 		"DOTA_Tooltip_Ability_B16D"  "召唤忍法．召唤忍犬"
-		"DOTA_Tooltip_Ability_B16D_Description"	"召唤一只忠心的忍犬，忍犬具有相当快的攻击速度，并且随着“忍法．飞袭令”等级的提升，忍犬将逐渐领悟扫击、相移与隐形的能力。"
+		"DOTA_Tooltip_Ability_B16D_Description"	"召唤一只忠心的忍犬，随着望月千代女的等级提升各项属性，忍犬具有相当快的攻击速度，最多召唤一只，并且随着“忍法．飞袭令”等级的提升，忍犬将逐渐领悟扫击、相移与隐形的能力。"
 
 		"B16D_SUMMEND_UNIT"	"忍犬．月月"
 		"DOTA_Tooltip_Ability_B16MMT"  "扫击"
@@ -1617,7 +1617,7 @@
 
 		// 望月千代女 旧版 11.2B
 		"DOTA_Tooltip_Ability_B16W_old"  "忍法．召唤忍犬"
-		"DOTA_Tooltip_Ability_B16W_old_Description" "召唤出一只具有混沌攻击的忍犬，忍犬随着技能等级与望月千代女的等级提升属性，持续60秒。"
+		"DOTA_Tooltip_Ability_B16W_old_Description" "召唤出一只具有混沌攻击的忍犬，忍犬随着技能等级与望月千代女的等级提升各项属性，最多召唤一只，持续60秒。"
 		"DOTA_Tooltip_Ability_B16E_old"  "忍法．落叶散华"
 		"DOTA_Tooltip_Ability_B16E_old_Description" "使出旋转锋利竹叶的风忍法，对周围的敌人造成<font color=\"#5cb85c\">(100/200/300/400)</font>的伤害并且晕眩<font color=\"#5cb85c\">(0.5/1.0/1.5/2.0)</font>秒。"
 		"DOTA_Tooltip_Ability_B16R_old"  "忍法．迅雷"
