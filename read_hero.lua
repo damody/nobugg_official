@@ -12,6 +12,7 @@ end
 
 hero = {}
 
+
 function ProcessText(file, text)
   if not string.match(file, "_2.txt") and #file > 4 then
     local name = rex.match(file, "[ABC][0-9][0-9]")
@@ -31,7 +32,7 @@ function ProcessText(file, text)
     if video[name]["11"] == nil then
       video[name]["11"] = {}
     end
-    for ability, _, _, content in rex.gmatch(text, [["([ABC][0-9][0-9](W|E|R|T|D)(_old|))"...{(.+)}]], "Usm", 0) do
+    for ability, _, _, _, content in rex.gmatch(text, [["([ABC][0-9][0-9](W|E|R|T|D)(_old|))"(\r|)\n\t{(.+)}]], "Usm", 0) do
       local cooldown = rex.match(content, [["AbilityCooldown".+"(.+)"]], 0, "U")
       local mana = rex.match(content, [["AbilityManaCost".+"(.+)"]], 0, "U")
       local radius = rex.match(content, [["AOERadius".+"(.+)"]], 0, "U")
@@ -72,6 +73,7 @@ end
 
 for file in lfs.dir("npc/B_Unified") do
 	text = readAll("npc/B_Unified/"..file)
+  print(file)
   ProcessText(file, text)
 end
 
@@ -135,3 +137,4 @@ end
 --print(inspect(hero))
 return hero
 end
+read_hero()
