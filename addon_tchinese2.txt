@@ -505,10 +505,10 @@
 		"DOTA_Tooltip_Ability_item_devil_supressor_armor" "制魔腹卷"
 		"DOTA_Tooltip_Ability_item_devil_supressor_armor_Description" "護甲+5。每秒回復20生命值。降低所受的法術傷害20% 。<br />【使用】使周圍的友軍獲得制魔護盾，制魔護盾可以吸收900法術傷害，持續25秒。"
 
-		"DOTA_Tooltip_Ability_item_fubuki_shoulders" "吹雪護肩"
+		"DOTA_Tooltip_Ability_item_fubuki_shoulders" "吹雪護肩．一階"
 		"DOTA_Tooltip_Ability_item_fubuki_shoulders_Description" "護甲+5，智慧+20。<br />【使用】啟動寒冰護盾，當受到傷害時將其中的45% 轉為以法力抵銷，每1法力抵銷2.5傷害，寒冰護盾持續7秒。"
 		
-		"DOTA_Tooltip_Ability_item_fubuki_shoulders_1" "吹雪護肩+1"
+		"DOTA_Tooltip_Ability_item_fubuki_shoulders_1" "吹雪護肩．二階"
 		"DOTA_Tooltip_Ability_item_fubuki_shoulders_1_Description" "護甲+5，智慧+30。<br />【使用】啟動寒冰護盾，當受到傷害時將其中的45% 轉為以法力抵銷，每1法力抵銷2.5傷害，寒冰護盾持續14秒。"
 
 		"DOTA_Tooltip_Ability_item_dark_boots" "暗部長靴"
