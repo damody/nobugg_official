@@ -969,6 +969,16 @@
 		"DOTA_Tooltip_modifier_C17E"	"祈勝光輝"
 		"DOTA_Tooltip_modifier_C17E_Description"	"祈勝光輝"
 		
+		"DOTA_Tooltip_Ability_C17W_old"	"光之精華"
+		"DOTA_Tooltip_Ability_C17W_old_Description" "回復身旁700範圍內友方部隊<font color=\"#f0ad4e\"> (200/270/350/430) </font>生命點數。"
+		"DOTA_Tooltip_Ability_C17E_old"	"魂之精華"
+		"DOTA_Tooltip_Ability_C17E_old_Description" "回復身旁700範圍內友方部隊<font color=\"#f0ad4e\"> (140/160/180/200) </font>法力點數。"
+		"DOTA_Tooltip_Ability_C17R_old"	"靜滯陷阱"
+		"DOTA_Tooltip_Ability_C17R_old_Description" "放置一個將於2.5秒後隱形的靜滯陷阱。隱形後，敵人靠近275範圍時自動啟動，造成425範圍敵人<font color=\"#f0ad4e\"> (3.5/4.5/5.5/6.5) </font>秒暈眩並毀掉範圍內其他靜滯陷阱。"
+		"DOTA_Tooltip_Ability_C17T_old"	"極光守護"
+		"DOTA_Tooltip_Ability_C17T_old_Description" "延遲<font color=\"#f0ad4e\"> (1.5/1/0.5) </font>秒後釋放出極光守護，對敵人造成<font color=\"#f0ad4e\"> (650/750/850) </font>傷害，友方部隊會恢復所有生命。"
+		"C17R_old_SUMMEND_UNIT" "靜滯陷阱"
+		
 		"npc_dota_hero_magnataur"	"淺井長政"
 		"com_ashigaru_spearmen_B"	"聯合軍-足輕"
 		"com_ashigaru_spearmen_B_bio"	"聯合軍-足輕"
@@ -1613,9 +1623,9 @@
 		"DOTA_Tooltip_Ability_B16R_old"  "忍法．迅雷"
 		"DOTA_Tooltip_Ability_B16R_old_Description" "增加自身<font color=\"#5cb85c\">(10/20/30/40)% </font>移動速度與<font color=\"#5cb85c\">(10/15/20/25)% </font>攻擊速度。"
 		"DOTA_Tooltip_Ability_B16T_old"  "忍法．煙霧彈"
-		"DOTA_Tooltip_Ability_B16T_old_Description" "丟出一枚煙霧彈，瞬間回到本陣。"
+		"DOTA_Tooltip_Ability_B16T_old_Description" "丟出一枚煙霧彈，瞬間回到本陣，增加跑速50% 持續10秒。"
 
-		"B16D_old_SUMMEND_UNIT"	"忍犬．月月"
+		"B16W_old_SUMMEND_UNIT"	"忍犬．月月"
 		"DOTA_Tooltip_Ability_B16MMW_old"  "一擊斬"
 		"DOTA_Tooltip_Ability_B16MMW_old_Description" "攻擊時有25% 機率造成兩倍傷害。"
 		"DOTA_Tooltip_Ability_B16MME_old"  "撕裂攻擊"
@@ -1623,6 +1633,6 @@
 		"DOTA_Tooltip_Ability_B16MMR_old"  "忍法．迅雷"
 		"DOTA_Tooltip_Ability_B16MMR_old_Description"	"沒用到._."
 		"DOTA_Tooltip_Ability_B16MMT_old"  "永久隱形"
-		"DOTA_Tooltip_Ability_B16MMT_old_Description" "兩秒內不攻擊或發動技能將進入隱形狀態。\n當技能「忍法．召喚忍犬」等級4時自動領悟。"
+		"DOTA_Tooltip_Ability_B16MMT_old_Description" "兩秒內不攻擊或發動技能將進入隱形狀態。<br />當技能「忍法．召喚忍犬」等級4時自動領悟。"
 	}
 }
