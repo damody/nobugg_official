@@ -73,7 +73,6 @@ end
 
 for file in lfs.dir("npc/B_Unified") do
 	text = readAll("npc/B_Unified/"..file)
-  print(file)
   ProcessText(file, text)
 end
 
@@ -132,6 +131,31 @@ for ability, name, _, old, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(
       hero[name][ability]["Description"] = {}
     end
     hero[name][ability]["Description"]["zhcn"] = content
+  end
+end
+
+text = readAll("addon_japanese2.txt")
+text = string.gsub(text, [[\"]], [["]])
+for ability, name, _, old, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(([ABC][0-9][0-9])(W|E|R|T|D)(_old|))".+"(.+)"]], "U", 0) do
+  if (hero[name] ~= nil) then
+    if (hero[name][ability]) == nil then
+      hero[name][ability] = {}
+    end
+    if (hero[name][ability]["name"]) == nil then
+      hero[name][ability]["name"] = {}
+    end
+    hero[name][ability]["name"]["jp"] = content
+  end
+end
+for ability, name, _, old, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(([ABC][0-9][0-9])(W|E|R|T|D)(_old|))_Description"[ \t]+"(.+)"]], "", 0) do
+  if (hero[name] ~= nil) then
+    if (hero[name][ability]) == nil then
+      hero[name][ability] = {}
+    end
+    if (hero[name][ability]["Description"]) == nil then
+      hero[name][ability]["Description"] = {}
+    end
+    hero[name][ability]["Description"]["jp"] = content
   end
 end
 --print(inspect(hero))

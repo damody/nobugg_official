@@ -452,13 +452,13 @@
 		"DOTA_Tooltip_Ability_item_commander_of_fan_Description" "【パッシブ】攻撃力+28，全能力+20。<br />【アクション】指定した範囲内の敵に3秒間に法術と攻撃を封じる。非英雄ユニットには10秒。<br /><font color=\"#cc0000\">魔法免疫ユニットには0.5秒</font>"
 
 		"DOTA_Tooltip_Ability_item_the_spear_of_saddle" "鞍切．一階"
-		"DOTA_Tooltip_Ability_item_the_spear_of_saddle_Description" "【パッシブ】攻撃力+42，全能力+5。敵に攻撃を当てるとアーマーが7下がる。<br /><font color=\"#cc0000\">付与効果で他の付与とは並存不可。魔法免疫には無効。</font>。
+		"DOTA_Tooltip_Ability_item_the_spear_of_saddle_Description" "【パッシブ】攻撃力+42，全能力+5。敵に攻撃を当てるとアーマーが7下がる。<br /><font color=\"#cc0000\">付与効果で他の付与とは並存不可。魔法免疫には無効。</font>。"
 
 		"DOTA_Tooltip_Ability_item_the_spear_of_saddle_1" "鞍切．二階"
-		"DOTA_Tooltip_Ability_item_the_spear_of_saddle_1_Description" "【パッシブ】攻撃力+56，全能力+5。敵に攻撃を当てるとアーマーが13下がる。<br /><font color=\"#cc0000\">付与効果で他の付与とは並存不可。魔法免疫には無効。</font>。
+		"DOTA_Tooltip_Ability_item_the_spear_of_saddle_1_Description" "【パッシブ】攻撃力+56，全能力+5。敵に攻撃を当てるとアーマーが13下がる。<br /><font color=\"#cc0000\">付与効果で他の付与とは並存不可。魔法免疫には無効。</font>。"
 
 		"DOTA_Tooltip_Ability_item_the_spear_of_saddle_2" "鞍切．三階"
-		"DOTA_Tooltip_Ability_item_the_spear_of_saddle_2_Description" "【パッシブ】攻撃力+70，全能力+5。敵に攻撃を当てるとアーマーが18下がる。<br /><font color=\"#cc0000\">付与効果で他の付与とは並存不可。魔法免疫には無効。</font>。
+		"DOTA_Tooltip_Ability_item_the_spear_of_saddle_2_Description" "【パッシブ】攻撃力+70，全能力+5。敵に攻撃を当てるとアーマーが18下がる。<br /><font color=\"#cc0000\">付与効果で他の付与とは並存不可。魔法免疫には無効。</font>。"
 
 		"DOTA_Tooltip_Ability_item_the_spear_of_ghost" "鬼切"
 		"DOTA_Tooltip_Ability_item_the_spear_of_ghost_Description" "【パッシブ】攻撃力+28，全能力+5，器用さ+10。敵を攻撃時に19％の確率で対象の真霊を斬る。敵に<font color=\"#f0ad4e\">14% </font>の生命値を失くさせる。最小115点。<br /><font color=\"#cc0000\">付与効果で他の付与とは並存不可。魔法免疫には無効。</font>"
@@ -608,7 +608,7 @@
 
 
 		"DOTA_Tooltip_Ability_item_the_overflame_art_of_war" "大炎上ノ書"
-		"DOTA_Tooltip_Ability_item_the_overflame_art_of_war_Description" "【パッシブ】知力+40。<br />【アクション】指定したエリアに5つの炎雨を降り注ぎ,炎雨のひとつにつき400点のダメージを与えて撃った敵を燃やす。毎秒60点のダメージを継続的に与える。持続時間5秒。<br /><font color=\"#cc0000\">建物に対してダメージの30％を与える。</font>"
+		"DOTA_Tooltip_Ability_item_the_overflame_art_of_war_Description" "【パッシブ】知力+40。<br />【アクション】指定したエリアに5つの炎雨を降り注ぎ,炎雨のひとつにつき400点のダメージを与えて撃った敵を燃やす。毎秒60点のダメージを継続的に与える。持続時間5秒。<br /><font color=\"#cc0000\"> 建物に対してダメージの30％を与える。</font>"
 
 		"DOTA_Tooltip_Ability_item_the_overflame_art_of_war_hyper" "真．大炎上ノ書"
 		"DOTA_Tooltip_Ability_item_the_overflame_art_of_war_hyper_Description" "【パッシブ】知力+70。<br />【アクション】指定したエリアに地震、落石、大炎を起こす。地震はエリア中の敵ユニットに80％の移動速度を減少させ、落石は1つ毎に600点を与え、大炎は120点のダメージを5秒間に継続的に与える。<br /><font color=\"#cc0000\">建物に対してダメージの30％を与える。</font>"

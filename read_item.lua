@@ -102,7 +102,7 @@ for name, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_item_(.+)"[ \t]+"(
   end
 end
 
-for name, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_item_(.+)_Description".+"(.+)"]], "", 0) do
+for name, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_item_(.+)_Description"[ \t]+"(.+)"]], "", 0) do
   if (equiment[name] ~= nil) then
     if (equiment[name]) == nil then
       equiment[name] = {}
@@ -111,6 +111,34 @@ for name, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_item_(.+)_Descript
       equiment[name]["Description"] = {}
     end
     equiment[name]["Description"]["zhcn"] = content
+  end
+end
+
+text = readAll("addon_japanese2.txt")
+text = string.gsub(text, [[\"]], [["]])
+
+for name, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_item_(.+)"[ \t]+"(.+)"]], "U", 0) do
+  if (equiment[name] ~= nil) then
+    if (equiment[name]) == nil then
+      equiment[name] = {}
+    end
+    if (equiment[name]["name"]) == nil then
+      equiment[name]["name"] = {}
+    end
+    
+    equiment[name]["name"]["jp"] = content
+  end
+end
+
+for name, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_item_(.+)_Description"[ \t]+"(.+)"]], "", 0) do
+  if (equiment[name] ~= nil) then
+    if (equiment[name]) == nil then
+      equiment[name] = {}
+    end
+    if (equiment[name]["Description"]) == nil then
+      equiment[name]["Description"] = {}
+    end
+    equiment[name]["Description"]["jp"] = content
   end
 end
 
