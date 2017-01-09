@@ -34,10 +34,6 @@ class extends lapis.Application
     @params.language = "jp"
     @params.webpath = "hero/"..@params.hero
     layout: false, render: "hero2"
-  "/": =>
-    layout: false, render: "index"
-  "/*": =>
-    layout: false, render: "index"
   "/zhcn/thanx": =>
     @params.language = "zhcn"
     @params.webpath = "thanx"
@@ -70,4 +66,24 @@ class extends lapis.Application
     @params.language = "jp"
     @params.webpath = "equipment"
     layout: false, render: "equipment"
-  
+
+  "/zhcn/equipment/:shopname": =>
+    @params.language = "zhcn"
+    @params.webpath = "equipment/"..@params.shopname
+    layout: false, render: "shop"
+  "/zhtw/equipment/:shopname": =>
+    @params.language = "zhtw"
+    @params.webpath = "equipment/"..@params.shopname
+    layout: false, render: "shop"
+  "/en/equipment/:shopname": =>
+    @params.language = "en"
+    @params.webpath = "equipment/"..@params.shopname
+    layout: false, render: "shop"
+  "/jp/equipment/:shopname": =>
+    @params.language = "jp"
+    @params.webpath = "equipment/"..@params.shopname
+    layout: false, render: "shop"
+  "/": =>
+    layout: false, render: "index"
+  "/*": =>
+    layout: false, render: "index"

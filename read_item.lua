@@ -144,7 +144,8 @@ end
 
 for i, item in pairs(equiment) do
   if item["Description"] == nil then
-    equiment[i] = nil
+    --equiment[i] = nil
+    print(inspect(item))
   end
 end
 text = readAll("shops.txt")
@@ -162,3 +163,4 @@ end
 --print(inspect(newequiment))
 return newequiment
 end
+read_item()

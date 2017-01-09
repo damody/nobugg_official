@@ -13,9 +13,24 @@
                 <div class="menu-line"></div>
                 <a href="/<%-lang%>/list_hero"><%-langtext["heroappearances"][lang]%></a>
             </div>
-            <div class="menu-list menu-light">
+            <div class="menu-list item menu-light">
                 <div class="menu-line"></div>
                 <a href="/<%-lang%>/equipment">裝備道具</a>
+                <ul class="item-menu">
+                    <li><a href="/<%-lang%>/equipment/consumables">消耗品</a></li>              
+                    <li><a href="/<%-lang%>/equipment/attributes">武器</a></li>
+                    <li><a href="/<%-lang%>/equipment/weapons_armor">基礎物品</a></li>
+                    <li><a href="/<%-lang%>/equipment/misc">法書</a></li>
+                    <li><a href="/<%-lang%>/equipment/basics">高階武器</a></li>
+                    <li><a href="/<%-lang%>/equipment/support">高階道具</a></li>
+                    <li><a href="/<%-lang%>/equipment/magics">高階法書</a></li>
+                    <li><a href="/<%-lang%>/equipment/defense">高階防具</a></li>
+                    <li><a href="/<%-lang%>/equipment/weapons">高階武器2</a></li>
+                    <li><a href="/<%-lang%>/equipment/artifacts">升級類裝備</a></li>
+                    <li><a href="/<%-lang%>/equipment/sideshop1">路邊商店</a></li>
+                    <li><a href="/<%-lang%>/equipment/sideshop2">路邊名刀鋪</a></li>
+                    <li><a href="/<%-lang%>/equipment/secretshop">名刀鋪</a></li>
+                </ul>
             </div>
             <div class="menu-list logo">
                 <a href="./"><img src="/static/image/logo-dota2.png"></a>

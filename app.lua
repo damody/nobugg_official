@@ -67,18 +67,6 @@ do
         render = "hero2"
       }
     end,
-    ["/"] = function(self)
-      return {
-        layout = false,
-        render = "index"
-      }
-    end,
-    ["/*"] = function(self)
-      return {
-        layout = false,
-        render = "index"
-      }
-    end,
     ["/zhcn/thanx"] = function(self)
       self.params.language = "zhcn"
       self.params.webpath = "thanx"
@@ -141,6 +129,50 @@ do
       return {
         layout = false,
         render = "equipment"
+      }
+    end,
+    ["/zhcn/equipment/:shopname"] = function(self)
+      self.params.language = "zhcn"
+      self.params.webpath = "equipment/" .. self.params.shopname
+      return {
+        layout = false,
+        render = "shop"
+      }
+    end,
+    ["/zhtw/equipment/:shopname"] = function(self)
+      self.params.language = "zhtw"
+      self.params.webpath = "equipment/" .. self.params.shopname
+      return {
+        layout = false,
+        render = "shop"
+      }
+    end,
+    ["/en/equipment/:shopname"] = function(self)
+      self.params.language = "en"
+      self.params.webpath = "equipment/" .. self.params.shopname
+      return {
+        layout = false,
+        render = "shop"
+      }
+    end,
+    ["/jp/equipment/:shopname"] = function(self)
+      self.params.language = "jp"
+      self.params.webpath = "equipment/" .. self.params.shopname
+      return {
+        layout = false,
+        render = "shop"
+      }
+    end,
+    ["/"] = function(self)
+      return {
+        layout = false,
+        render = "index"
+      }
+    end,
+    ["/*"] = function(self)
+      return {
+        layout = false,
+        render = "index"
       }
     end
   }
