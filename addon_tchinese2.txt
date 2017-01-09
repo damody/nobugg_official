@@ -1607,11 +1607,11 @@
 	    
 	    // 明智光秀 11.2B
 		"DOTA_Tooltip_Ability_C01W_old" "血刃亂舞"
-		"DOTA_Tooltip_Ability_C01W_old_Description" "增加<font color=\"#5cb85c\">(25/35/45/55)% </font>攻擊速度與移動速度<font color=\"#5cb85c\">(5/8/11/14)% </font>，並且攻擊時造成240範圍240點傷害，持續3秒。"
+		"DOTA_Tooltip_Ability_C01W_old_Description" "增加<font color=\"#5cb85c\">(25/35/45/125)% </font>攻擊速度與移動速度<font color=\"#5cb85c\">(10/15/20/25)% </font>，並且攻擊時造成340範圍240點傷害，持續3秒。"
 		"DOTA_Tooltip_Ability_C01E_old" "火雨術"
 		"DOTA_Tooltip_Ability_C01E_old_Description" "呼喚6發火焰來傷害範圍350內的敵人，每波火雨會造成<font color=\"#5cb85c\">(85/105/125/145)</font>點損傷，並且在4秒內造成每秒<font color=\"#5cb85c\">(12/17/22/27)</font>點傷害，對建築物的傷害減半。"
 		"DOTA_Tooltip_Ability_C01R_old" "劍術"
-		"DOTA_Tooltip_Ability_C01R_old_Description" "有<font color=\"#5cb85c\">(4/8/12/16)% </font>機會閃避攻擊，而且攻擊時有12% 機會造成的<font color=\"#5cb85c\">(2/2.5/3/3.5)</font>倍傷害。"
+		"DOTA_Tooltip_Ability_C01R_old_Description" "有<font color=\"#5cb85c\">(4/8/12/16)% </font>機會閃避攻擊，而且攻擊時有16% 機會造成的<font color=\"#5cb85c\">(2/2.5/3/3.5)</font>倍傷害。"
 		"DOTA_Tooltip_Ability_C01D_old" "灌頂斬擊"
 		"DOTA_Tooltip_Ability_C01D_old_Description" "使用刀背打擊目標的頭顱，造成100傷害且暈眩1.7秒。"
 		"DOTA_Tooltip_Ability_C01T_old" "本能寺燄上"
