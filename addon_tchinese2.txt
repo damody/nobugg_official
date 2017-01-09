@@ -178,7 +178,7 @@
 		"DOTA_Tooltip_Ability_item_the_over_lightning_art_of_war" "無上雷暴之書"
 		
 		"DOTA_Tooltip_Ability_item_tea_bowl" "茶碗"
-		"DOTA_Tooltip_Ability_item_pleated_skirt_Description" "每秒回復10點生命並增加150%回魔速度"
+		"DOTA_Tooltip_Ability_item_tea_bowl_Description" "每秒回復10點生命並增加150%回魔速度"
 		
 		"DOTA_Tooltip_Ability_item_pleated_skirt" "褶裙"
 		"DOTA_Tooltip_Ability_item_pleated_skirt_Description" "移動速度+80<br /><font color=\"#cc0000\">移動速度不得累計。</font>"
