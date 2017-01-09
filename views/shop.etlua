@@ -18,24 +18,24 @@ elseif lang == "jp" then
 elseif lang == "en" then
   heroname = en_heroname
 end
+shop = items[params.shopname]
 %>
 <% render("views.head", { lang = lang, langtext = langtext }) %>
 
 <body class="page">
-	<header>
+    <header>
         <% render("views.nav", { lang = lang, langtext = langtext, webpath = params.webpath }) %>
     </header>
     <div class="container">
-    	<div class="champion-banner item-banner first-layout">
-            <h1 class="page-title-item">Equipments</h1>
+        <div class="champion-banner item-banner first-layout">
+            <h1 class="page-title-item"><%-shop["name"][lang]%></h1>
         </div>
         <div class="wrapper">
             
             <!--技能資訊 16-->
-            <% for i, shop in pairs(items) do %>
-        	<div class="champion-info">
+            <div class="champion-info">
                 
-            	<h2 class="champion-title"><%-shop["name"][lang]%><span>Shop Info</span></h2>
+                <h2 class="champion-title"><%-shop["name"][lang]%><span>Shop Info</span></h2>
                     <% for i, item in ipairs(shop) do 
                       if item["name"] ~= nil then 
                         if item["name"][lang] == nil then
@@ -75,8 +75,7 @@ end
                     end 
                 end%>
             </div>
-            <% end %>
-        	<!--技能資訊 16-->
+            <!--技能資訊 16-->
            
 
         </div>

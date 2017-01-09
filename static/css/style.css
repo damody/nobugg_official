@@ -107,9 +107,6 @@ header.nav-sticky{
 	padding:10px 10px;
 	transition:0.3s;
 	}
-.nav-sticky .flyingv img{
-	height:25px;
-	}
 .nav-sticky .menu-list{
 	height:30px;
 	line-height:30px;
@@ -139,7 +136,7 @@ header.nav-sticky{
 	visibility:hidden;
 	}
 
-/*language-switcher*/
+/*language-switcher, item menu*/
 .lng-choose{
 	background:url(/static/image/icon-lng-light.svg) no-repeat 10% 40% / 15px auto, url(/static/image/icon-dropdown-light.svg) no-repeat 85% 40% / 10px auto;
 	padding:0 35px;
@@ -147,7 +144,7 @@ header.nav-sticky{
 header.nav-sticky .lng-choose, .page .lng-choose{
 	background:url(/static/image/icon-lng-dark.svg) no-repeat 8% 40% / 15px auto, url(/static/image/icon-dropdown-dark.svg) no-repeat 90% 40% / 10px auto;
 	}
-.lng-switcher {
+.lng-switcher, .item-menu {
     opacity: 0;
     position: absolute;
 	background:#fff;
@@ -156,6 +153,10 @@ header.nav-sticky .lng-choose, .page .lng-choose{
 	margin-top:10px;
 	margin-left:10px;
 	pointer-events: none;
+	}
+.item-menu{
+	width:125px;
+	margin-left:-10px;
 	}
 .lng-switcher a{
 	color:#444 !important;
@@ -167,7 +168,17 @@ header.nav-sticky .lng-choose, .page .lng-choose{
 	text-decoration:none;
 	top:0;
 	}
-.lng-switcher a:hover{
+.item-menu a{
+	color:#444 !important;
+	font-size:14px;
+	line-height:25px;
+	height:25px;
+	padding: 8px 20px 8px 20px;
+	text-align:left;
+	text-decoration:none;
+	top:0;
+	}
+.lng-switcher a:hover, .item-menu a:hover{
 	background-color:#edddd4;
 	}
 a.zh-tw{
@@ -182,7 +193,7 @@ a.en{
 a.ja{
 	background:url("/static/image/flag-jajp.gif") no-repeat scroll 10% 50% / 15px auto;
 	}
-.lng-switcher.show{
+.lng-switcher.show, .item-menu.show{
 	opacity: 1;
 	transition:0.3s;
 	margin-top:-5px;
@@ -342,18 +353,27 @@ h2.faction-title span:nth-child(3) {
 	height:450px;
 	background:url(/static/image/bg-champion1-1.jpg) no-repeat center center / cover;
 	}
-h1.cp-fc1 {
+h1.cp-fc1, h1.page-title-item {
     color: #fff;
     font-size: 120px;
 	letter-spacing:10px;
     left: 10%;
-    position: relative;
+    position: absolute;
     text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.8);
-    top: 100px;
+    top: 200px;
 	font-family:'新細明體';
 	}
 h1.cp-fc1::after {
     content: "+ 織田軍 ";
+	letter-spacing:3px;
+    display: block;
+    font-family: "Noto Sans",sans-serif;
+    font-size: 24px;
+    margin-left: 5px;
+    margin-top: 10px;
+	}
+h1.page-title-item::after {
+    content: "+ 裝備道具 ";
 	letter-spacing:3px;
     display: block;
     font-family: "Noto Sans",sans-serif;
@@ -485,7 +505,50 @@ h4.ability-name {
 .st-avg{
 	background-color:#197278;
 	}
-	
+
+/*item into*/
+.item-banner{
+	background:url(../image/bg-item1.jpg) no-repeat center center / cover;
+	}
+.item-info-list ul{
+	width:100%;
+	overflow: hidden;
+	margin-bottom:8px;
+	}
+.item-info-list li{
+	padding-left: 0;
+	float: left;
+	margin-right: 50px;
+	}
+.item-info-list .item-info-list-title {
+    background: #c44536;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 12px;
+	position:relative;
+	z-index:100;
+	}
+.item-info-list .item-info-list-value {
+    background: #efefef none repeat scroll 0 0;
+    border-radius: 30px;
+    color: #772e25;
+    font-size: 14px;
+    margin-left: -20px;
+    padding: 5px 12px 5px 30px;
+    position: relative;
+    z-index: 99;
+	}
+.item-note {
+    background: #f7f7f7 none repeat scroll 0 0;
+    border-left: 2px solid #c44536;
+    display: inline-block;
+    font-size: 14px !important;
+    margin-left: 130px;
+    margin-top: 5px;
+    padding: 5px 12px !important;
+	}
+
 /*thanx*/
 .thanx-box{
 	margin-top:180px;
