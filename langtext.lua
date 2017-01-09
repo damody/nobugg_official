@@ -640,7 +640,7 @@ video = {
   },
   C17 = {
     ["16"] = {
-      zhtw = "https://www.youtube.com/embed/zjEbBfJ3AYY",
+      zhtw = "https://www.youtube.com/embed/eqww4beALGI",
     },
   },
 }
