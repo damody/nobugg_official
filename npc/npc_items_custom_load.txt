@@ -2904,8 +2904,7 @@
 		"SideShop"	"1"
 		"ItemShopTags"		"damage"
 		"ItemRequirements"	{}
-		"AbilityCooldown"	"0"
-		"AbilityManaCost"	"0"
+		"AbilityCooldown"	"30"
 		"precache"
 		{
 			"particle"	"particles/a07w5/a07w5.vpcf"
@@ -5410,7 +5409,7 @@
 		"Effect"	"particles/generic_gameplay/dropped_item.vpcf"
 		// Item Info
 		
-		"ItemCost"	"200"
+		"ItemCost"	"250"
 		"ItemShopTags"					"consumable"
 		"ItemQuality"					"consumable"
 		"ItemStackable"					"1"
@@ -5473,7 +5472,7 @@
 		"Effect"	"particles/generic_gameplay/dropped_item.vpcf"
 		// Item Info
 		
-		"ItemCost"	"200"
+		"ItemCost"	"250"
 		"ItemShopTags"					"consumable"
 		"ItemQuality"					"consumable"
 		"ItemStackable"					"1"
