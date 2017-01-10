@@ -1573,7 +1573,7 @@
 		"DOTA_Tooltip_Ability_B25T_Description" "使指定<font color=\"#5cb85c\">(1000/1100/1200)</font>的范围化成阿修罗地狱，每秒造成<font color=\"#5cb85c\">(400/600/1000)</font>伤害，持续<font color=\"#5cb85c\">(4/5/6)</font>秒。"
 		
 		"DOTA_Tooltip_Ability_B25W_old" "退魔击"
-		"DOTA_Tooltip_Ability_B25W_Description" "打出一个负力场的能源弹，可以烧掉目标敌军<font color=\"#5cb85c\">(250/450/650/1000)</font>的法力，并且造成等量的伤害。"
+		"DOTA_Tooltip_Ability_B25W_old_Description" "打出一个负力场的能源弹，可以烧掉目标敌军<font color=\"#5cb85c\">(250/450/650/1000)</font>的法力，并且造成等量的伤害。"
 		"DOTA_Tooltip_Ability_B25E_old" "除魔经"
 		"DOTA_Tooltip_Ability_B25E_old_Description" "咏唱除魔经文打击范围<font color=\"#5cb85c\">(800)</font>的敌军，每段经文造成<font color=\"#5cb85c\">(75/150/225/300)</font>真实伤害，持续2.5秒。 "
 		"DOTA_Tooltip_Ability_B25R_old" "死之手指"
