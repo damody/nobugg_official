@@ -483,7 +483,11 @@ video = {
       zhtw = "https://www.youtube.com/embed/nTlcEyDaCKI",
     },
   },
+  
   A04 = {
+	["11"] = {
+      zhtw = "https://www.youtube.com/embed/yoyuHL4BBzk",
+    },
     ["16"] = {
       zhtw = "https://www.youtube.com/embed/IKM0E7kUJ18",
     },
@@ -530,6 +534,9 @@ video = {
     },
   },
   B33 = {
+	["11"] = {
+      zhtw = "https://www.youtube.com/embed/4VMT56c_X1w",
+    },
     ["16"] = {
       zhtw = "https://www.youtube.com/embed/_34YUFJljn8",
     },
@@ -601,6 +608,9 @@ video = {
     },
   },
   A28 = {
+	["11"] = {
+      zhtw = "https://www.youtube.com/embed/WU6HGM3IfMQ",
+    },
     ["16"] = {
       zhtw = "https://www.youtube.com/embed/PfTPY7yZ7bI",
     },
@@ -619,6 +629,9 @@ video = {
     },
   },
   A25 = {
+	["11"] = {
+      zhtw = "https://www.youtube.com/embed/mNX3CpxkWAc",
+    },
     ["16"] = {
       zhtw = "https://www.youtube.com/embed/mgBj38QgXoE",
     },
@@ -634,11 +647,17 @@ video = {
     },
   },
   C01 = {
+    ["11"] = {
+      zhtw = "https://www.youtube.com/embed/Hc_yrOjiYoY",
+    },
     ["16"] = {
       zhtw = "https://www.youtube.com/embed/wXBi3BAa_p0",
     },
   },
   C17 = {
+	["11"] = {
+      zhtw = "https://www.youtube.com/embed/prp7ug_kbXw",
+    },
     ["16"] = {
       zhtw = "https://www.youtube.com/embed/eqww4beALGI",
     },
