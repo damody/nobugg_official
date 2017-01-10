@@ -66,18 +66,21 @@ end
                         <img src="../../static/pic/spellicons/<%-item["pic"]%>.png" alt="<%=item["name"][lang]%> icon" width="100" height="100">
                         <div class="ability-info">
                             <ul>
-                            <% if item["cooldown"] ~= nil then %>
-                                <li><%-langtext["cd"][lang]%>: <%= item["cooldown"] %></li>
-                            <% end %>
-                            <% if item["mana"] ~= nil then %>
-                                <li><%-langtext["mana"][lang]%>: <%= item["mana"] %></li>
-                            <% end %>
-                            <% if item["radius"] ~= nil then %>
-                                <li><%-langtext["radius"][lang]%>: <%= item["radius"] %></li>
-                            <% end %>
-                            <% if item["range"] ~= nil then %>
-                                <li><%-langtext["range"][lang]%>: <%= item["range"] %></li>
-                            <% end %>
+                            <li class="item-info-list">
+                                <ul>
+                                <% if item["cooldown"] ~= nil then %>
+                                    <li><span class="item-info-list-title"><%-langtext["cd"][lang]%></span><span class="item-info-list-value"><%= item["cooldown"] %></span></li>
+                                <% end %>
+                                <% if item["mana"] ~= nil then %>
+                                    <li><span class="item-info-list-title"><%-langtext["mana"][lang]%></span><span class="item-info-list-value"><%= item["mana"] %></span></li>
+                                <% end %>
+                                <% if item["radius"] ~= nil then %>
+                                    <li><span class="item-info-list-title"><%-langtext["radius"][lang]%></span><span class="item-info-list-value"><%= item["radius"] %></span></li>
+                                <% end %>
+                                <% if item["range"] ~= nil then %>
+                                    <li><span class="item-info-list-title"><%-langtext["range"][lang]%></span><span class="item-info-list-value"><%= item["range"] %></span></li>
+                                <% end %>
+                                </ul>
                                 <li><%- item["Description"][lang] %></li>
                             </ul>
                         </div>
@@ -123,19 +126,23 @@ end
                         <img src="../../static/pic/spellicons/<%-item["pic"]%>.png" alt="<%=item["name"][lang]%> icon" width="100" height="100">
                         <div class="ability-info">
                             <ul>
-                            <% if item["cooldown"] ~= nil then %>
-                                <li><%-langtext["cd"][lang]%>: <%= item["cooldown"] %></li>
-                            <% end %>
-                            <% if item["mana"] ~= nil then %>
-                                <li><%-langtext["mana"][lang]%>: <%= item["mana"] %></li>
-                            <% end %>
-                            <% if item["radius"] ~= nil then %>
-                                <li><%-langtext["radius"][lang]%>: <%= item["radius"] %></li>
-                            <% end %>
-                            <% if item["range"] ~= nil then %>
-                                <li><%-langtext["range"][lang]%>: <%= item["range"] %></li>
-                            <% end %>
+                                <li class="item-info-list">
+                                <ul>
+                                <% if item["cooldown"] ~= nil then %>
+                                    <li><span class="item-info-list-title"><%-langtext["cd"][lang]%></span><span class="item-info-list-value"><%= item["cooldown"] %></span></li>
+                                <% end %>
+                                <% if item["mana"] ~= nil then %>
+                                    <li><span class="item-info-list-title"><%-langtext["mana"][lang]%></span><span class="item-info-list-value"><%= item["mana"] %></span></li>
+                                <% end %>
+                                <% if item["radius"] ~= nil then %>
+                                    <li><span class="item-info-list-title"><%-langtext["radius"][lang]%></span><span class="item-info-list-value"><%= item["radius"] %></span></li>
+                                <% end %>
+                                <% if item["range"] ~= nil then %>
+                                    <li><span class="item-info-list-title"><%-langtext["range"][lang]%></span><span class="item-info-list-value"><%= item["range"] %></span></li>
+                                <% end %>
+                                </ul>
                                 <li><%- item["Description"][lang] %></li>
+                                </ul>
                             </ul>
                         </div>
                     </div>
