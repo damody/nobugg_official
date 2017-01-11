@@ -21,7 +21,7 @@ elseif lang == "en" then
   heroname = en_heroname
 end
 
-skill = {"D", "W", "E", "R", "T"}
+skill = {"D", "F", "W", "E", "R", "T"}
 
 function round(num, idp)
   local mult = 10^(idp or 0)
