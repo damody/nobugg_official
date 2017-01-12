@@ -19,12 +19,17 @@
 		"DOTA_Starting_Team_Dire"	"联合军营"
 		"DOTA_GoodGuysCaps"	"织田军营"
 		"DOTA_BadGuysCaps"	"联合军营"
-		"com_soldiercamp_2"	""
+		"com_soldiercamp_2"	"军营"
 		"com_soldiercamp_2_bio"	""
 		"com_ashigaru_spearmen_clone"	""
 		"com_ashigaru_spearmen_clone_bio"	""
 		"com_soldiercamp_3"	""
 		"com_soldiercamp_3_bio"	""
+		"com_towera" "箭塔"
+		"com_soldiercamp" "帐棚"
+		"com_soldiercamp_oda" "大本营"
+		"com_soldiercamp_unified" "大本营"
+		"to_sell_ninja_unit" "暗部"
 		// 战法
 		
 		"DOTA_Tooltip_Ability_attribute_bonusx" "强化全能力"
@@ -642,6 +647,9 @@
 		"DOTA_Tooltip_Ability_item_the_over_lightning_art_of_war" "无上雷暴之书"
 		"DOTA_Tooltip_Ability_item_the_over_lightning_art_of_war_Description" "智慧+60。<br />【使用】以自身为中心范围500内召唤闪电雷暴，每秒对身处风暴中的敌人造成等同他们生命最大值11% 的伤害，持续11秒。<br /><font color=\"#cc0000\">魔免伤害减半</font>"
 		
+		"DOTA_Tooltip_Ability_item_thunderstorms" "天变之书"
+		"DOTA_Tooltip_Ability_item_thunderstorms_Description" "智慧+20。<br />【使用】再指定1200区域施展大雷雨，在区域中的每个敌人每1秒会受到1道落雷，每1道落雷可造成180点伤害，持续10秒需要持续施法。"
+
 		// ======================================================
 		// 以下是NPC
 		// ======================================================
@@ -898,13 +906,13 @@
 		
 		
 		"DOTA_Tooltip_Ability_C07D"	"御魔之盾"
-		"DOTA_Tooltip_Ability_C07D_Description"	"举起御魔之盾，将可以获得魔法免疫，但是会因为做出防御的姿势而无法移动，并得到45% 物理伤害减免。"
+		"DOTA_Tooltip_Ability_C07D_Description"	"举起御魔之盾，将可以获得魔法免疫，但是会因为做出防御的姿势而无法移动，并得到35% 物理伤害减免。"
 		"DOTA_Tooltip_Ability_C07W"	"天雷降"
 		"DOTA_Tooltip_Ability_C07W_Description"	"召唤天降闪电打击指定的区域，每秒造成<font color=\"#5cb85c\">(40/80/120/160)</font>伤害，持续10秒。 "
 		"DOTA_Tooltip_Ability_C07E"	"雷电桎梏"
 		"DOTA_Tooltip_Ability_C07E_Description"	"以雷电困住目标敌军，使他无法动弹<font color=\"#5cb85c\">(1/2/3/4)</font>秒，每秒造成175伤害。"
 		"DOTA_Tooltip_Ability_C07R"	"雷霆闪电"
-		"DOTA_Tooltip_Ability_C07R_Description"	"召唤出扇形的闪电，击中3个敌人，每个敌人会受到<font color=\"#5cb85c\">(180/320/460/600)</font>伤害，并对自己造成10% 生命魔法伤害。"
+		"DOTA_Tooltip_Ability_C07R_Description"	"召唤出扇形的闪电，击中3个敌人，每个敌人会受到<font color=\"#5cb85c\">(180/320/460/600)</font>伤害，若没有举盾将对自己造成25% 最大生命伤害。"
 		"DOTA_Tooltip_Ability_C07T"	"雷神之怒"
 		"DOTA_Tooltip_Ability_C07T_Description"	"在原地上空召唤出雷云，雷云每秒会自动对范围1400内的敌人打出<font color=\"#5cb85c\">(225/310/400)</font>真实伤害的扩散闪电，并且在雷云范围内的所有敌人都会受到静电影响，减少35% 的移动速度，无法回复生命。雷云持续<font color=\"#5cb85c\">(15/17/19)</font>秒。 "
 		
@@ -920,6 +928,15 @@
 		"DOTA_Tooltip_modifier_C07D"	"御魔之盾"
 		"DOTA_Tooltip_modifier_C07D_Description"	"任何法术都伤不了我"
 	
+		// 立花道雪 11.2B
+		"DOTA_Tooltip_Ability_C07W_old" "御魔之盾"
+		"DOTA_Tooltip_Ability_C07W_old_Description" "将御魔之盾高举而获得魔法免疫，并减少<font color=\"#5cb85c\">(25/35/45/55)% </font>物理伤害且不能移动。"
+		"DOTA_Tooltip_Ability_C07E_old" "雷电桎梏"
+		"DOTA_Tooltip_Ability_C07E_old_Description" "绑住指定目标，让它无法进行任何动作并每秒造成150点伤害。需持续施法，最多可持续<font color=\"#5cb85c\">(1/2/3/4)</font>秒。"
+		"DOTA_Tooltip_Ability_C07R_old" "雷霆闪电"
+		"DOTA_Tooltip_Ability_C07R_old_Description" "击出扇状的闪电，最多击中8个敌人，每个敌人会受到<font color=\"#5cb85c\">(150/250/350/450)</font>伤害。"
+		"DOTA_Tooltip_Ability_C07T_old" "雷神之怒"
+		"DOTA_Tooltip_Ability_C07T_old_Description" "在原地上空召唤出雷云，雷云每秒对范围1000内的敌人打出一道<font color=\"#5cb85c\">(225/295/365)</font>点浑沌扩散伤害的闪电，并且在雷云范围内的所有敌人都会受到静电影响而减少35% 的移动速度。持续<font color=\"#5cb85c\">(15/20/25)</font>秒。"
 		
 		"npc_dota_hero_brewmaster_bio"	"永正十四年（1517年）出生，为越后守护上杉氏的重臣、大熊政秀之子。 父亲一代，已开始负责为上杉氏收纳段钱，而朝秀亦担当上杉家段钱方等要职。越后守护者上杉氏灭亡前后，开始出仕守护代长尾氏，其后在拥立长尾景虎一事上尽力，由是成为其重臣。朝秀有武勇，据说在奉信玄之命攻打上野国的长野业盛之际，单挑知名剑豪上泉信纲，未有受伤，不分胜负。"
 		"DOTA_Tooltip_Ability_B26W"	"蓄力波"
@@ -963,7 +980,17 @@
 		"DOTA_Tooltip_modifier_C15E_Description"	"燃烧"
 		"DOTA_Tooltip_modifier_C15R"	"精准之光"
 		"DOTA_Tooltip_modifier_C15R_Description"	"精准之光"
-				
+		
+		// 玉子 11.2B
+		"DOTA_Tooltip_Ability_C15W_old" "三连矢"
+		"DOTA_Tooltip_Ability_C15W_old_Description" "对着目标射出三支箭矢，每支箭矢可以造成<font color=\"#5cb85c\">(50/100/150/200)</font>伤害并且击晕对手<font color=\"#5cb85c\">(0.5)</font>秒。"
+		"DOTA_Tooltip_Ability_C15E_old" "烈焰箭"
+		"DOTA_Tooltip_Ability_C15E_old_Description" "攻击时增加<font color=\"#5cb85c\">(15/30/45/60)</font>点火焰伤害。"
+		"DOTA_Tooltip_Ability_C15R_old" "精准之光"
+		"DOTA_Tooltip_Ability_C15R_old_Description" "增加<font color=\"#5cb85c\">(8/16/24/32)% </font>攻击力。"
+		"DOTA_Tooltip_Ability_C15T_old" "百箭齐发"
+		"DOTA_Tooltip_Ability_C15T_old_Description" "震晕对手2.5秒，同时射出10发致命的箭矢攻击目标，若是指定的目标死亡，所有箭矢将随机找寻附近敌人进行攻击，每只箭矢都拥有<font color=\"#5cb85c\">(40/65/85)</font>点攻击力伤害，持续10秒。"
+
 		"npc_dota_hero_windrunner"	"阿市"
 		"npc_dota_hero_windrunner_bio"	"织田信长的异母妹妹，是著名的悲剧女性，史书记载她是一位身高非常高的女性，也号称是战国第一美女。她先后被作为政治工具嫁给浅井长政和柴田胜家，但两任丈夫都没得好死，自己最终也和胜家一起在北之庄自焚而亡。"
 		"DOTA_Tooltip_Ability_C17R"	"神助一击"
@@ -1304,7 +1331,7 @@
 	    "DOTA_Tooltip_Ability_A25W"  "远雷遥"
 	    "DOTA_Tooltip_Ability_A25W_Description" "对指定的方向开出一枪，让路径上穿过的敌人受到<font color=\"#5cb85c\">(200/300/400/500)</font>的伤害。"
 	    "DOTA_Tooltip_Ability_A25E"  "厄灾之棘"
-		"DOTA_Tooltip_Ability_A25E_Description" "让指定范围的地面穿出无数的厄灾之棘；总共可以对范围内的敌人造成<font color=\"#5cb85c\">(100/150/200/250)</font>伤害两波并封锁行动(1.1/1.4/1.7/2.0)秒，并且自身可以增加<font color=\"#5cb85c\">(30/50/70/90)</font>攻击力，持续8秒。"
+		"DOTA_Tooltip_Ability_A25E_Description" "让指定范围的地面穿出无数的厄灾之棘；总共可以对范围内的敌人造成<font color=\"#5cb85c\">(100/150/200/250)</font>伤害并封锁行动(1.1/1.4/1.7/2.0)秒，并且自身可以增加<font color=\"#5cb85c\">(30/50/70/90)</font>攻击力，持续8秒。"
 	    "DOTA_Tooltip_Ability_A25R"  "压切"
 	    "DOTA_Tooltip_Ability_A25R_Description" "让手上的名刀．压切更具杀伤力，增加<font color=\"#5cb85c\">(12/23/34/45)</font>攻击伤害，有20% 机会在攻击时造成<font color=\"#5cb85c\">(2.0/2.5/3.0/3.5)</font>倍的伤害。"
 	    "DOTA_Tooltip_Ability_A25T"  "障壁深红"
@@ -1315,7 +1342,7 @@
 	    "DOTA_Tooltip_Ability_A25W_old" "远雷遥"
 	    "DOTA_Tooltip_Ability_A25W_old_Description" "对指定的方向使用火绳铳攻击，让距离1500内所有敌人受到<font color=\"#5cb85c\">(200/300/400/500)</font>的伤害。区域范围100。"
 	    "DOTA_Tooltip_Ability_A25E_old" "厄灾之棘"
-	    "DOTA_Tooltip_Ability_A25E_old_Description" "让范围530内地面穿出厄灾之棘；造成敌人<font color=\"#5cb85c\">(90/140/210/270)</font>点伤害并晕眩<font color=\"#5cb85c\">(1/1.2/1.4/1.6)</font>秒。自身获得额外<font color=\"#5cb85c\">(80/100/120/140)</font>点攻击力，持续2.5秒。"
+	    "DOTA_Tooltip_Ability_A25E_old_Description" "让范围530内地面穿出厄灾之棘；造成敌人两波伤害，每波<font color=\"#5cb85c\">(90/140/210/270)</font>点伤害并晕眩<font color=\"#5cb85c\">(1/1.2/1.4/1.6)</font>秒。自身获得额外<font color=\"#5cb85c\">(80/110/140/170)</font>点攻击力，持续3秒。"
 	    "DOTA_Tooltip_Ability_A25R_old" "压切"
 	    "DOTA_Tooltip_Ability_A25R_old_Description" "让手上的名刀．压切更具杀伤力。增加<font color=\"#5cb85c\">(12/24/36/48)% </font>攻击速度以及在攻击时有20% 的机会，造成<font color=\"#5cb85c\">(2/2.5/3/3.5)</font>倍的伤害。"
 	    "DOTA_Tooltip_Ability_A25T_old" "障壁深红"
@@ -1383,13 +1410,23 @@
 	    "DOTA_Tooltip_Ability_A30T"  "红富士"
 	    "DOTA_Tooltip_Ability_A30T_Description" "让地面隆起一座巨大的火山，每0.49秒会有最多8颗熔岩石从火山投掷至附近的部队身上，对每个目标造成<font color=\"#5cb85c\">(175/220/265)</font>伤害，附加晕击0.46秒的效果。持续<font color=\"#5cb85c\">(18/23/25)</font>波。"
 	    "DOTA_Tooltip_Ability_A31W"  "响雨"
-        "DOTA_Tooltip_Ability_A31W_Description" "从森兰丸手中向天射出一支箭矢，将会分散成无数箭矢落下，对区域内的敌人造成最高<font color=\"#5cb85c\">(200/350/500/650)</font>伤害。 并在接下来10秒获得攻击伤害增加<font color=\"#5cb85c\">(6/12/18/24)% </font>以及降低35% 受到的魔法伤害。"
+        "DOTA_Tooltip_Ability_A31W_Description" "从森兰丸手中向天射出一支箭矢，将会分散成无数箭矢落下持续10秒，对区域内的敌人造成最高<font color=\"#5cb85c\">(200/350/500/650)</font>伤害。 并在接下来10秒获得攻击伤害增加<font color=\"#5cb85c\">(6/12/18/24)% </font>以及降低35% 受到的魔法伤害。"
 	    "DOTA_Tooltip_Ability_A31E"  "瞬步"
-        "DOTA_Tooltip_Ability_A31E_Description" "以传送的方式移动，最远可以到达<font color=\"#5cb85c\">(550/650/750/850)</font>范围。"
+        "DOTA_Tooltip_Ability_A31E_Description" "以传送的方式移动，最远可以到达<font color=\"#5cb85c\">(450/550/650/750)</font>范围。"
 	    "DOTA_Tooltip_Ability_A31R"  "岚矢"
         "DOTA_Tooltip_Ability_A31R_Description" "对着敌方部队射出岚矢，可以造成对着敌方部队射出岚矢，可以造成<font color=\"#5cb85c\">(100/200/300/400)</font>伤害并且晕眩<font color=\"#5cb85c\">(0.7/1.0/1.3/1.6)</font>秒。"
 	    "DOTA_Tooltip_Ability_A31T"  "五月雨"
         "DOTA_Tooltip_Ability_A31T_Description" "(被动)<br />增加<font color=\"#5cb85c\">(10/20/30)</font>敏捷。<br />(启动)<br />启动之后，可以获得五月雨箭术，对周围的额外<font color=\"#5cb85c\">(4/6/8)</font>名敌人射出箭矢，但是会降低<font color=\"#5cb85c\">(25/20/15)% </font>总攻击伤害。"
+        // 森兰丸 11.2B
+        "DOTA_Tooltip_Ability_A31W_old" "豪雷"
+        "DOTA_Tooltip_Ability_A31W_old_Description" "从森兰丸手中往天空射出一支箭矢，箭矢会分散成多数个雷矢攻击指定区域持续4秒，最多每个目标造成<font color=\"#5cb85c\">(180/300/420/540)</font>伤害。"
+        "DOTA_Tooltip_Ability_A31E_old" "瞬步"
+        "DOTA_Tooltip_Ability_A31E_old_Description" "以肉眼看不见的速度瞬间移动到<font color=\"#5cb85c\">(500/600/700/800)</font>范围内的地点。"
+        "DOTA_Tooltip_Ability_A31R_old" "岚矢"
+        "DOTA_Tooltip_Ability_A31R_old_Description" "对着600范围内的目标射出岚矢，造成<font color=\"#5cb85c\">(100/200/300/400)</font>点伤害并昏迷<font color=\"#5cb85c\">(0.5/1/1.5/2)</font>秒。"
+        "DOTA_Tooltip_Ability_A31T_old" "五月雨"
+        "DOTA_Tooltip_Ability_A31T_old_Description" "能在攻击时额外射出<font color=\"#5cb85c\">(3/4/6)</font>支箭。"
+
 	    "DOTA_Tooltip_Ability_A32D"  "忍术．幽魄刀"
         "DOTA_Tooltip_Ability_A32D_Description" "攻击时有20% 机率造成<font color=\"#5cb85c\">(2.0/2.3/2.6/2.9)</font>倍的伤害。"
 	    "DOTA_Tooltip_Ability_A32W"  "忍法．怨灵飞翔斩"
