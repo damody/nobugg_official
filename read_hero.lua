@@ -32,7 +32,7 @@ function ProcessText(file, text)
     if video[name]["11"] == nil then
       video[name]["11"] = {}
     end
-    for ability, _, _, _, content in rex.gmatch(text, [["([ABC][0-9][0-9](W|E|R|T|D)(_old|))"(\r|)\n\t{(.+)}]], "Usm", 0) do
+    for ability, _, _, _, content in rex.gmatch(text, [["([ABC][0-9][0-9](W|E|R|T|D|F)(_old|))"(\r|)\n\t{(.+)}]], "Usm", 0) do
       local cooldown = rex.match(content, [["AbilityCooldown".+"(.+)"]], 0, "U")
       local mana = rex.match(content, [["AbilityManaCost".+"(.+)"]], 0, "U")
       local radius = rex.match(content, [["AOERadius".+"(.+)"]], 0, "U")
@@ -84,7 +84,7 @@ end
 text = readAll("addon_tchinese2.txt")
 text = string.gsub(text, [[\"]], [["]])
 
-for ability, name, _, old, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(([ABC][0-9][0-9])(W|E|R|T|D)(_old|))".+"(.+)"]], "U", 0) do
+for ability, name, _, old, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(([ABC][0-9][0-9])(W|E|R|T|D|F)(_old|))".+"(.+)"]], "U", 0) do
   if (hero[name] ~= nil) then
     if (hero[name][ability]) == nil then
       hero[name][ability] = {}
@@ -97,7 +97,7 @@ for ability, name, _, old, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(
   end
 end
 
-for ability, name, _, _, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(([ABC][0-9][0-9])(W|E|R|T|D)(_old|))_Description"[ \t]+"(.+)"]], "", 0) do
+for ability, name, _, _, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(([ABC][0-9][0-9])(W|E|R|T|D|F)(_old|))_Description"[ \t]+"(.+)"]], "", 0) do
   if (hero[name] ~= nil) then
     if (hero[name][ability]) == nil then
       hero[name][ability] = {}
@@ -111,7 +111,7 @@ end
 
 text = readAll("addon_schinese2.txt")
 text = string.gsub(text, [[\"]], [["]])
-for ability, name, _, old, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(([ABC][0-9][0-9])(W|E|R|T|D)(_old|))".+"(.+)"]], "U", 0) do
+for ability, name, _, old, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(([ABC][0-9][0-9])(W|E|R|T|D|F)(_old|))".+"(.+)"]], "U", 0) do
   if (hero[name] ~= nil) then
     if (hero[name][ability]) == nil then
       hero[name][ability] = {}
@@ -122,7 +122,7 @@ for ability, name, _, old, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(
     hero[name][ability]["name"]["zhcn"] = content
   end
 end
-for ability, name, _, old, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(([ABC][0-9][0-9])(W|E|R|T|D)(_old|))_Description"[ \t]+"(.+)"]], "", 0) do
+for ability, name, _, old, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(([ABC][0-9][0-9])(W|E|R|T|D|F)(_old|))_Description"[ \t]+"(.+)"]], "", 0) do
   if (hero[name] ~= nil) then
     if (hero[name][ability]) == nil then
       hero[name][ability] = {}
@@ -136,7 +136,7 @@ end
 
 text = readAll("addon_japanese2.txt")
 text = string.gsub(text, [[\"]], [["]])
-for ability, name, _, old, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(([ABC][0-9][0-9])(W|E|R|T|D)(_old|))".+"(.+)"]], "U", 0) do
+for ability, name, _, old, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(([ABC][0-9][0-9])(W|E|R|T|D|F)(_old|))".+"(.+)"]], "U", 0) do
   if (hero[name] ~= nil) then
     if (hero[name][ability]) == nil then
       hero[name][ability] = {}
@@ -147,7 +147,7 @@ for ability, name, _, old, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(
     hero[name][ability]["name"]["jp"] = content
   end
 end
-for ability, name, _, old, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(([ABC][0-9][0-9])(W|E|R|T|D)(_old|))_Description"[ \t]+"(.+)"]], "", 0) do
+for ability, name, _, old, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(([ABC][0-9][0-9])(W|E|R|T|D|F)(_old|))_Description"[ \t]+"(.+)"]], "", 0) do
   if (hero[name] ~= nil) then
     if (hero[name][ability]) == nil then
       hero[name][ability] = {}
@@ -161,4 +161,3 @@ end
 --print(inspect(hero))
 return hero
 end
-read_hero()
