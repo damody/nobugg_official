@@ -883,6 +883,16 @@
 		"DOTA_Tooltip_modifier_C10W"	"青龍波衝擊"
 		"DOTA_Tooltip_modifier_C10W_Description"	"移動速度降低"
 		
+		// 香宗我部親泰 11.2B
+		"DOTA_Tooltip_Ability_C10W_old" "黑龍波"
+		"DOTA_Tooltip_Ability_C10W_old_Description" "向目標放出黑龍之炎，然後襲擊目標800範圍內每個敵人。對每個目標造成<font color=\"#5cb85c\">(150/250/350/450)</font>傷害。"
+		"DOTA_Tooltip_Ability_C10E_old" "能量奪取"
+		"DOTA_Tooltip_Ability_C10E_old_Description" "瞬間奪取指定目標的生命點數<font color=\"#5cb85c\">(100/200/300/400)</font>點，並且造成目標1秒暈眩。"
+		"DOTA_Tooltip_Ability_C10R_old" "無想轉生"
+		"DOTA_Tooltip_Ability_C10R_old_Description" "<font color=\"#5cb85c\">(8/16/24/32)% </font>的機會閃避攻擊"
+		"DOTA_Tooltip_Ability_C10T_old" "昇龍亂舞"
+		"DOTA_Tooltip_Ability_C10T_old_Description" "增加攻擊<font color=\"#5cb85c\">(25/45/65)</font>點，攻擊時有50% 機率打出昇龍亂舞，對一直線上的敵人造成<font color=\"#5cb85c\">(160/235/310)</font>傷害。"
+
 		"npc_dota_hero_silencer"	"立花道雪"
 		"npc_dota_hero_silencer_bio"	"傳說中的\"雷神的化身\"立花道雪，當他的父親臥病在床時，立花道雪代父出征，這是他的初陣。據說立花道雪率領為數僅僅三千的軍隊連夜趕到敵人城下，翌晨發動猛攻，不出一天便把城池攻下。立花道雪的初陣，一場石破天驚的初陣，名震天下。"
 		
@@ -963,9 +973,9 @@
 		"DOTA_Tooltip_Ability_C17E"	"祈勝光輝"
 		"DOTA_Tooltip_Ability_C17E_Description"	"對著自身或者全區域的一名友軍許下祈勝光輝，可增加護甲5點、攻擊傷害<font color=\"#5cb85c\">(20/40/60/80)% </font>以及每秒恢復生命值<font color=\"#5cb85c\">(5/10/15/20)</font>。"
 		"DOTA_Tooltip_Ability_C17W"	"光鍊罰則"
-		"DOTA_Tooltip_Ability_C17W_Description"	"在自身以及目標英雄之間創造一條光鍊，光鍊將會在一段時間之後斷開，並使目標英雄受到<font color=\"#f0ad4e\">光鍊長度×傷害係數</font>的傷害，若<font color=\"#f0ad4e\">光鍊長度超過1000視同1000</font>，此外並使該目標英雄定身，光鍊長度越短則定身持續時間越久。"
+		"DOTA_Tooltip_Ability_C17W_Description"	"在自身以及目標英雄之間創造一條光鍊，光鍊將會在一段時間之後斷開，並使目標英雄受到<font color=\"#f0ad4e\">光鍊長度×傷害係數</font>的傷害，傷害係數為<font color=\"#5cb85c\">(0.35/0.52/0.69/0.86)</font>，若<font color=\"#f0ad4e\">光鍊長度超過1000視同1000</font>，此外並使該目標英雄定身，光鍊長度越短則定身持續時間越久。"
 		"DOTA_Tooltip_Ability_C17T"	"極光守護"
-		"DOTA_Tooltip_Ability_C17T_Description"	"延遲1秒後釋放出極光守護，讓範圍內的敵人造成傷害或是等同該敵人生命上限<font color=\"#f0ad4e\">(20/25/30)% </font>的傷害，兩者取其高，並且醫療範圍內所有友軍，回復等同該友軍<font color=\"#f0ad4e\">(40/45/50)% </font>的生命值。"
+		"DOTA_Tooltip_Ability_C17T_Description"	"延遲1秒後釋放出極光守護，讓範圍內的敵人造成<font color=\"#5cb85c\">(650/700/750)</font>傷害或是等同該敵人生命上限<font color=\"#f0ad4e\">(20/25/30)% </font>的傷害，兩者取其高，並且醫療範圍內所有友軍，回復等同該友軍<font color=\"#f0ad4e\">(40/45/50)% </font>的生命值。"
 		
 		"DOTA_Tooltip_modifier_C17D"	"自我奉獻"
 		"DOTA_Tooltip_modifier_C17D_Description"	"自我奉獻"
@@ -1221,7 +1231,16 @@
 	    "DOTA_Tooltip_Ability_A17R"  "要害射擊"
 		"DOTA_Tooltip_Ability_A17R_Description" "攻擊的時候，有30% 機率對敵人造成致命傷，額外造成<font color=\"#5cb85c\">(65/95/125/155)</font>的傷害，並且暈眩<font color=\"#5cb85c\">(0.05/0.1/0.15/0.2)</font>秒。"
 	    "DOTA_Tooltip_Ability_A17T"  "大筒"
-	    "DOTA_Tooltip_Ability_A17T_Description" "將武器變更為大筒。使視野如同白天，具有<font color=\"#5cb85c\">(1000/1150/1300)</font>的攻擊距離，攻擊力將提升<font color=\"#5cb85c\">(200/300/400)</font>點並且對範圍<font color=\"#5cb85c\">(350/400/450)</font>擴散80% 傷害，但降低<font color=\"#5cb85c\">(100/175/250)% </font>攻速以及大幅失去移動能力。"
+	    "DOTA_Tooltip_Ability_A17T_Description" "將武器變更為大筒，並且<font color=\"#5cb85c\">(4/6/8)</font>秒內無法取消。增加500夜晚視野，具有<font color=\"#5cb85c\">(1000/1150/1300)</font>的攻擊距離，攻擊力將提升<font color=\"#5cb85c\">(200/300/400)</font>點並且對範圍<font color=\"#5cb85c\">(350/400/450)</font>擴散80% 傷害，但降低<font color=\"#5cb85c\">(100/175/250)% </font>攻速以及大幅失去移動能力。"
+	    // 佐佐成政 11.2B
+	    "DOTA_Tooltip_Ability_A17W_old" "硫磺砲"
+	    "DOTA_Tooltip_Ability_A17W_old_Description" "射出一枚硫磺砲，降低敵人的裝甲<font color=\"#5cb85c\">(3/6/9/12)</font>點，並且每秒讓敵人受到<font color=\"#5cb85c\">(60/70/80/90)</font>傷害，持續6秒。"
+	    "DOTA_Tooltip_Ability_A17E_old" "連擊砲"
+	    "DOTA_Tooltip_Ability_A17E_old_Description" "增加<font color=\"#5cb85c\">(10/20/30/40)% </font>攻擊速度，攻擊時有50% 的機會造成<font color=\"#5cb85c\">(80/100/120/140)</font>點額外傷害，持續10秒。"
+	    "DOTA_Tooltip_Ability_A17R_old" "雨鐵砲"
+	    "DOTA_Tooltip_Ability_A17R_old_Description" "攻擊時有45% 機率對建築物/英雄/部隊額外造成<font color=\"#5cb85c\">(20/30/40/50)/(5/10/15/20)/(25/35/45/55)% </font>傷害。"
+	    "DOTA_Tooltip_Ability_A17T_old" "大筒"
+	    "DOTA_Tooltip_Ability_A17T_old_Description" "將武器變更為大筒，並且<font color=\"#5cb85c\">(4/6/8)</font>秒內無法取消。增加500夜間視野，獲得<font color=\"#5cb85c\">(1000/1300/1400)</font>距離擴散攻擊，增加基礎攻擊力<font color=\"#5cb85c\">(200/300/400)</font>，基礎攻擊間隔上升至2.5秒(原先1.8秒)，大幅度失去移動能力。"
 	    "DOTA_Tooltip_Ability_A18W"  "執念壓迫"
 		"DOTA_Tooltip_Ability_A18W_Description" "對指定範圍內的所有敵人造成<font color=\"#5cb85c\">(100/200/300/400)</font>的傷害，並且每傷害一個敵人，便可以幫稻葉一鐵回復<font color=\"#5cb85c\">(40/53/66/79)</font>生命。"
 	    "DOTA_Tooltip_Ability_A18E"  "打壓"	
@@ -1427,7 +1446,7 @@
 			
 		"npc_dota_hero_nevermore_bio"	"雜賀党的首領歷代都稱孫市，戰國中後期名將，雜賀孫市是擅使鐵炮的高手。紀伊的雜賀眾出身。當信長攻打一揆眾的本據地‧伊勢長島時，雜賀眾力挺一揆眾，組織鐵砲隊痛擊織田軍促使敗退。歷史上孫市的真實身份不詳，一說為鈴木重秀，另一說為重朝。重秀曾在石山合戰，僅僅以100人規模的鐵砲隊重創織田軍，又介於本願寺之間，在山崎之戰大為活躍，後來也參加秀吉的紀州攻略戰；重朝在關原西軍中於成功攻下伏見城，曾投靠政宗，爾後則成為家康、賴房的臣下。"
 		"DOTA_Tooltip_Ability_B01W"	"狙擊模式"
-		"DOTA_Tooltip_Ability_B01W_Description"	"轉換為狙擊狀態，增加攻擊傷害<font color=\"#5cb85c\">(20/30/40/50)</font>、攻擊距離<font color=\"#5cb85c\">(200/350/500/650)</font>和夜晚視野1000，持續8秒。"
+		"DOTA_Tooltip_Ability_B01W_Description"	"轉換為狙擊狀態，增加攻擊傷害<font color=\"#5cb85c\">(20/30/40/50)</font>、攻擊距離提升至<font color=\"#5cb85c\">(900/1050/1200/1350)</font>和夜晚視野1000，持續8秒。"
 		"DOTA_Tooltip_Ability_B01E"	"雜賀眾"
 		"DOTA_Tooltip_Ability_B01E_Description"	"召喚雜賀眾的同伴<font color=\"#5cb85c\">(2/4/6/8)</font>個來加入戰鬥。"
 		"DOTA_Tooltip_Ability_B01R"	"雨鐵炮"
@@ -1436,7 +1455,7 @@
 		"DOTA_Tooltip_Ability_B01T_Description"	"能讓攻擊力獲得傷害加成200% 的三段技法，持續<font color=\"#5cb85c\">(7/11/13)</font>秒。"
 		
 		"DOTA_Tooltip_Ability_B01W_old"	"狙擊模式"
-		"DOTA_Tooltip_Ability_B01W_old_Description"	"轉換為狙擊狀態，增加攻擊距離<font color=\"#5cb85c\">(250/450/650/850)</font>但犧牲70% 跑速。"
+		"DOTA_Tooltip_Ability_B01W_old_Description"	"轉換為狙擊狀態，並且<font color=\"#5cb85c\">(2/3/4/5)</font>秒內無法取消。增加攻擊距離至<font color=\"#5cb85c\">(950/1150/1350/1550)</font>但犧牲70% 跑速。"
 		"DOTA_Tooltip_Ability_B01E_old"	"雜賀眾"
 		"DOTA_Tooltip_Ability_B01E_old_Description"	"召喚雜賀眾的同伴<font color=\"#5cb85c\">(2/3/4/5)</font>個來加入戰鬥。"
 		"DOTA_Tooltip_Ability_B01R_old"	"雨鐵炮"
