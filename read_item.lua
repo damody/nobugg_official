@@ -142,6 +142,35 @@ for name, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_item_(.+)_Descript
   end
 end
 
+
+text = readAll("addon_english2.txt")
+text = string.gsub(text, [[\"]], [["]])
+
+for name, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_item_(.+)"[ \t]+"(.+)"]], "U", 0) do
+  if (equiment[name] ~= nil) then
+    if (equiment[name]) == nil then
+      equiment[name] = {}
+    end
+    if (equiment[name]["name"]) == nil then
+      equiment[name]["name"] = {}
+    end
+    
+    equiment[name]["name"]["en"] = content
+  end
+end
+
+for name, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_item_(.+)_Description"[ \t]+"(.+)"]], "", 0) do
+  if (equiment[name] ~= nil) then
+    if (equiment[name]) == nil then
+      equiment[name] = {}
+    end
+    if (equiment[name]["Description"]) == nil then
+      equiment[name]["Description"] = {}
+    end
+    equiment[name]["Description"]["en"] = content
+  end
+end
+
 for i, item in pairs(equiment) do
   if item["Description"] == nil then
     --equiment[i] = nil
