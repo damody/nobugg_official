@@ -757,7 +757,7 @@
 		"DOTA_Tooltip_Ability_B08R"	"活心．魂"
 		"DOTA_Tooltip_Ability_B08R_Description"	"增加自身<font color=\"#5cb85c\">(20/35/50/65)% </font>攻击速度。<br />当使用技能或是物品时，将可以在接下来8秒内增加15攻击伤害和减免5% 所受到伤害，若是在持续时间内重复发动，则增加攻击伤害的效果将可以叠加，最多叠加<font color=\"#5cb85c\">(4/5/6/7)</font>次。 "
 		"DOTA_Tooltip_Ability_B08T"	"一刀．空牙"
-		"DOTA_Tooltip_Ability_B08T_Description"	"对指定的方向斩出巨大的一刀．空牙，使距离3000路径上的敌人受到<font color=\"#5cb85c\">(800/1200/1600)</font>的伤害。"
+		"DOTA_Tooltip_Ability_B08T_Description"	"对指定的方向斩出巨大的一刀．空牙，使路径上的敌人受到<font color=\"#5cb85c\">(800/1200/1600)</font>的伤害。"
 		
 		"DOTA_Tooltip_Ability_B08D_old"	"一刀．连牙断空"
 		"DOTA_Tooltip_Ability_B08D_old_Description"	"对指定的敌人连斩出十八刀牙，每刀造成100魔法伤害总共晕眩2.2秒。"
@@ -768,7 +768,7 @@
 		"DOTA_Tooltip_Ability_B08R_old"	"活心．魂"
 		"DOTA_Tooltip_Ability_B08R_old_Description"	"增加自身<font color=\"#5cb85c\">(15/30/45/60)% </font>攻击速度与<font color=\"#5cb85c\">(4/6/8/10)% </font>移动速度。<br />当使用技能或是物品时，将可以在接下来8秒内增加25% 攻速和5% 基础攻击伤害，若是在持续时间内重复发动，则增加攻击伤害的效果将可以叠加，最多叠加<font color=\"#5cb85c\">(4/5/6/7)</font>次。 "
 		"DOTA_Tooltip_Ability_B08T_old"	"一刀．空牙"
-		"DOTA_Tooltip_Ability_B08T_old_Description"	"对指定的方向斩出巨大的一刀．空牙，使距离3000路径上的敌人受到<font color=\"#5cb85c\">(900/1300/1800)</font>的伤害。"
+		"DOTA_Tooltip_Ability_B08T_old_Description"	"对指定的方向斩出巨大的一刀．空牙，使路径上的敌人受到<font color=\"#5cb85c\">(900/1300/1800)</font>的伤害。"
 
 		"npc_dota_hero_drow_ranger"	"最上义姬"
 		"DOTA_Tooltip_Ability_B33W"	"腐蚀之箭"
@@ -983,13 +983,13 @@
 		
 		// 玉子 11.2B
 		"DOTA_Tooltip_Ability_C15W_old" "三连矢"
-		"DOTA_Tooltip_Ability_C15W_old_Description" "对着目标射出三支箭矢，每支箭矢可以造成<font color=\"#5cb85c\">(50/100/150/200)</font>伤害并且击晕对手<font color=\"#5cb85c\">(0.5)</font>秒。"
+		"DOTA_Tooltip_Ability_C15W_old_Description" "对着目标射出三支箭矢，每支箭矢可以造成<font color=\"#5cb85c\">(50/100/150/200)</font>伤害并且击晕对手<font color=\"#5cb85c\">(0.5/1.0/1.5/2.0)</font>秒。"
 		"DOTA_Tooltip_Ability_C15E_old" "烈焰箭"
-		"DOTA_Tooltip_Ability_C15E_old_Description" "攻击时增加<font color=\"#5cb85c\">(15/30/45/60)</font>点火焰伤害。"
+		"DOTA_Tooltip_Ability_C15E_old_Description" "攻击时增加<font color=\"#5cb85c\">(60/100/140/180)</font>点火焰伤害。"
 		"DOTA_Tooltip_Ability_C15R_old" "精准之光"
-		"DOTA_Tooltip_Ability_C15R_old_Description" "增加<font color=\"#5cb85c\">(8/16/24/32)% </font>攻击力。"
+		"DOTA_Tooltip_Ability_C15R_old_Description" "增加<font color=\"#5cb85c\">(20/30/40/50)% </font>攻击力。"
 		"DOTA_Tooltip_Ability_C15T_old" "百箭齐发"
-		"DOTA_Tooltip_Ability_C15T_old_Description" "震晕对手2.5秒，同时射出10发致命的箭矢攻击目标，若是指定的目标死亡，所有箭矢将随机找寻附近敌人进行攻击，每只箭矢都拥有<font color=\"#5cb85c\">(40/65/85)</font>点攻击力伤害，持续10秒。"
+		"DOTA_Tooltip_Ability_C15T_old_Description" "震晕对手2.5秒，同时射出10发致命的箭矢攻击目标，若是指定的目标死亡，所有箭矢将随机找寻附近敌人进行攻击，每只箭矢都拥有<font color=\"#5cb85c\">(60/90/120)</font>点攻击力伤害，持续10秒。"
 
 		"npc_dota_hero_windrunner"	"阿市"
 		"npc_dota_hero_windrunner_bio"	"织田信长的异母妹妹，是著名的悲剧女性，史书记载她是一位身高非常高的女性，也号称是战国第一美女。她先后被作为政治工具嫁给浅井长政和柴田胜家，但两任丈夫都没得好死，自己最终也和胜家一起在北之庄自焚而亡。"
@@ -1541,7 +1541,15 @@
 		"DOTA_Tooltip_modifier_B02E_3"	"忍法．炽烈之径"
 		"DOTA_Tooltip_modifier_B02E_3_Description"	"忍法．炽烈之径"
 		
-		
+		// 风魔小太郎 11.2B
+		"DOTA_Tooltip_Ability_B02W_old" "忍法．迷踪步"
+		"DOTA_Tooltip_Ability_B02W_old_Description" "能够隐形，并让移动速度提升<font color=\"#5cb85c\">(10/15/20/25)% </font>并持续<font color=\"#5cb85c\">(10/15/20/25)</font>秒。如果攻击的话，隐形术即告失效，第一击会造成<font color=\"#5cb85c\">(100/160/220/280)</font>的额外伤害。"
+		"DOTA_Tooltip_Ability_B02E_old" "忍法．炽烈之径"
+		"DOTA_Tooltip_Ability_B02E_old_Description" "施展后在10秒内经过的地方都产生火焰，经过火焰的敌人每秒会受到<font color=\"#5cb85c\">(90/120/150/180)</font>点炽炎焚身式伤害。持续10秒。"
+		"DOTA_Tooltip_Ability_B02R_old" "忍法．十八方手里剑"
+		"DOTA_Tooltip_Ability_B02R_old_Description" "囚禁目标，强制使其<font color=\"#5cb85c\">(1.8/2.3/2.8/3.3)</font>秒内无法移动，每0.25秒向目标发射一发手里剑，造成<font color=\"#5cb85c\">(5/10/15/20)</font>点伤害并中断动作。共18发。"
+		"DOTA_Tooltip_Ability_B02T_old" "忍法密传．四方导雷"
+		"DOTA_Tooltip_Ability_B02T_old_Description" "放出四个雷球追踪目标5秒，能看见目标直到雷球消失，雷球于2.5秒后0.6秒同时对目标放出连锁红雷造成800点伤害，然后扩散至附近700范围最多4名敌人造成200点伤害，弹跳最多10次，每次弹跳伤害会提升5% ，最后会弹回一开始选择的目标。"
 		
 		"DOTA_Tooltip_Ability_B03W" "钟馗一击"
 		"DOTA_Tooltip_Ability_B03W_Description" "【W】对前方100的敌军造成<font color=\"#5cb85c\">(150/250/350/450)</font>伤害以及晕眩1.1秒。【E】对前方400的敌军造成<font color=\"#5cb85c\">(150/250/350/450)</font>伤害以及晕眩1.1秒。【R】对前方700的敌军造成<font color=\"#5cb85c\">(150/250/350/450)</font>伤害以及晕眩1.1秒。<br /><font color=\"#cc0000\">本技能学习后分为3个攻击技能，耗魔与冷却时间相同，但不互相影响</font>"
