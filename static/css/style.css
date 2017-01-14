@@ -7,6 +7,34 @@ body{
 	background-color:rgba(0,0,0,0.05);
 	}
 
+/*element hide*/
+#mobile-navbar, .mobile-show{display: none;}
+#mobile-nav{
+	background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+    display: block;
+    height: 100%;
+    opacity: 0;
+    position: fixed;
+    top: -80px;
+    visibility: hidden;
+    width: 100%;
+    z-index: 100;
+	transition: 0.3s;
+}
+#mobile-nav-lng {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    opacity: 0;
+    position: absolute;
+    right: 15px;
+    top: 30px;
+    transition: all 0.3s ease 0s;
+    visibility: hidden;
+    width: 100px;
+	transition: 0.3s;
+}
+
+
 /*font list*/
 body,p,h1,h2,h3,h4,a,span,li{
 	font-family: 'Noto Sans', sans-serif;
@@ -14,9 +42,9 @@ body,p,h1,h2,h3,h4,a,span,li{
 h2.faction-title span:nth-child(3), .st-number{
 	font-family: 'Playfair Display SC', serif;
 	}
-h1.cp-fc1, h2.champion-title, h2.champion-title span {
+/*h1.cp-fc1, h2.champion-title, h2.champion-title span {
 	font-family:'Playfair Display SC', 新細明體;
-	}
+	}*/
 	
 /*header*/
 header{
@@ -250,7 +278,7 @@ h2.faction-title span:nth-child(2) {
 h2.faction-title span:nth-child(3) {
     font-size: 14px;
     letter-spacing: 2px;
-    margin-left: -115px;
+    margin-left: -120px;
     margin-top: -19px;
     position: absolute;
 	}
@@ -299,11 +327,7 @@ h2.faction-title span:nth-child(3) {
 	width:30%;
 	margin-bottom:25px;
 	margin-right:1%;
-	background-color:rgba(255,255,255,0.3);
-	background-image:url(/static/image/icon-seemore.png);
-	background-repeat:no-repeat;
-	background-position:90% 50%;
-	background-size:25px auto;
+	background:rgba(255,255,255,0.3) url(/static/image/icon-seemore.png) no-repeat 90% 50% / 25px auto;
 	border:1px solid #fff;
 	box-shadow:1px 1px 3px rgba(0,0,0,0.2);
 	display:block;
@@ -361,7 +385,7 @@ h1.cp-fc1, h1.page-title-item {
     position: absolute;
     text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.8);
     top: 200px;
-	font-family:'新細明體';
+	/*font-family:'chekiangshukesung';*/
 	}
 h1.cp-fc1::after {
     content: "+ 織田軍 ";
@@ -377,8 +401,8 @@ h1.page-title-item::after {
 	letter-spacing:3px;
     display: block;
     font-family: "Noto Sans",sans-serif;
-    font-size: 24px;
-    margin-left: 5px;
+    font-size: 20px;
+    margin-left: 10px;
     margin-top: 10px;
 	}
 .champion-info {
@@ -426,8 +450,7 @@ h4.ability-name {
     font-size: 20px;
     letter-spacing: 2px;
     margin-bottom: 15px;
-    padding-bottom: 10px;
-    padding-left: 15px;
+    padding: 10px 0 10px 15px;
 	}
 .ability-list {
     margin: 20px auto 40px;
@@ -475,10 +498,11 @@ h4.ability-name {
     font-size: 18px;
     font-weight: 200;
     letter-spacing: 2px;
-    line-height: 130px;
+    line-height: 100px;
     margin: 5px auto;
     width: 130px;
 	position:relative;
+	padding: 17px 0 13px;
 	}	
 .st-number {
     color: #197278;
@@ -518,7 +542,9 @@ h4.ability-name {
 .item-info-list li{
 	padding-left: 0;
 	float: left;
-	margin-right: 50px;
+	}
+.item-info-list > ul:first-child > li{
+	width: 20%;
 	}
 .item-info-list .item-info-list-title {
     background: #c44536;
@@ -595,6 +621,7 @@ footer{
 	width:95%;
 	padding-bottom:15px;
 	margin-bottom:20px;
+	line-height: 1.5em;
 	}
 .quick-link a {
     color: #edddd4;
