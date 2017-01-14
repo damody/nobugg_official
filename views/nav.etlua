@@ -44,3 +44,55 @@
                 <a href="https://www.flyingv.cc/projects/14171?preview=5e8ac337-6f15-4920-a906-b813322696bc"><img src="/static/image/logo-flyingV.png"><span class="donate">| <%-langtext["donate"][lang]%> |</span></a>
             </div>
         </nav>
+
+        <div id="mobile-navbar">
+            <div class="mb-nav-toogle">
+                <span></span>
+            </div>
+            <div class="mb-logo">
+                <a href="./"><img src="image/logo-dota2.png"></a>
+            </div>
+            <div class="mb-lng-switch"></div>
+            <div class="mb-lng">
+                <div><img src="image/icon-lng-gray.svg"></div>
+            </div>
+        </div>
+        <div id="mobile-nav">
+            <div class="mb-main-menu">
+                <ul class="">
+                    <li class="mb-nav-logo"><img src="image/logo-dota2-light.png"</li>
+                    <li><a href="./">出場英雄</a></li>
+                    <li><a id="go-sub-menu1" href="#">裝備道具</a></li>
+                    <li><a href="thanx.php">感謝名單</a></li>
+                    <li><a href="#">贊助支持</a></li>
+                </ul>
+            </div>
+            <div class="mb-sub-menu mb-sub-menu1">
+                <ul class="">
+                    <li class="go-back-mb-menu"><a id="go-back-mb-menu" href="#">回上頁</a></li>
+                    <li><a href="./item-demo.php">消耗品</a></li>
+                    <li><a href="#">武器</a></li>
+                    <li><a href="#">基礎物品</a></li>
+                    <li><a href="#">法書</a></li>
+                    <li><a href="#">高階武器I</a></li>
+                    <li><a href="#">高階武器II</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">高階道具</a></li>
+                    <li><a href="#">高階法書</a></li>
+                    <li><a href="#">高階防具</a></li>
+                    <li><a href="#">升級類道具</a></li>
+                    <li><a href="#">路邊商店</a></li>
+                    <li><a href="#">路邊名刀舖</a></li>
+                    <li><a href="#">名刀舖</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="mobile-nav-lng">
+            <ul>
+                <li><a class="current-lng">繁體中文</a></li>
+                <li><a href="#">簡体中文</a></li>
+                <li><a href="#">English</a></li>
+                <li><a href="#">日本語</a></li>
+            </ul>
+        </div>
