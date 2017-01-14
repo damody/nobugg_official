@@ -154,7 +154,7 @@ end
             <!--技能資訊 11-->
             <!--統計資訊 16-->
             <% if record16["all"] ~= nil then %>
-        	<div class="champion-info">
+        	<div class="champion-info champion-st">
             	<h2 class="champion-title"><%-langtext["statistical"][lang]%><span>Statistics Info</span></h2>
                 <h3 class="ver"><%-langtext["version"][lang]%>：16</h3>
                 <div class="kda">
@@ -252,7 +252,7 @@ end
             <!--統計資訊 16-->
             <!--統計資訊 11-->
             <% if record11["all"] ~= nil then %>
-            <div class="champion-info">
+            <div class="champion-info champion-st">
                 <h2 class="champion-title"><%-langtext["statistical"][lang]%><span>Statistics Info</span></h2>
                 <h3 class="ver"><%-langtext["version"][lang]%>：11</h3>
                 <div class="kda">

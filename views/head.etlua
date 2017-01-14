@@ -3,14 +3,14 @@
 <html lang="<%-langtext["html_lang"][lang]%>">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><%-langtext["dota2nobu"][lang]%></title>
 <!--css list-->
 <link rel="stylesheet" href="/static/css/reset.css">
 <link rel="stylesheet" href="/static/css/style.css">
 
-<!--cloud font-->
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
-<link href='//fonts.googleapis.com/css?family=Lora:400|IM+Fell French Canon:400' rel='stylesheet' type='text/css'><script src="//s3-ap-northeast-1.amazonaws.com/justfont-user-script/jf-47712.js"></script>
+<link rel="stylesheet" media="screen and (max-width: 1180px)" href="css/style-pad.css" />
+<link rel="stylesheet" media="screen and (max-width: 960px)" href="css/style-mobile.css" />
 
 <!--favicon-->
 <link rel="apple-touch-icon" sizes="57x57" href="/static/image/apple-icon-57x57.png">
@@ -93,4 +93,27 @@ font-size: 11px;
     });
   });  
 </script>
+
+<!--mobile nav-->
+<script>
+  $(document).ready(function() {     
+    $('.mb-nav-toogle').click(function(){     
+      $('.mb-nav-toogle').toggleClass('open'); $('#mobile-nav').toggleClass('open');
+      $('html').toggleClass('scrnone'); $('body').toggleClass('scrnone');
+    });
+    $('#go-sub-menu1').click(function(){
+      $('.mb-sub-menu1').addClass('open'); $('.mb-main-menu').addClass('close');
+    });
+    $('.go-back-mb-menu').click(function(){
+      $('.mb-sub-menu').removeClass('open'); $('.mb-main-menu').removeClass('close');
+    });
+    $('.mb-lng').click(function(){
+      $('#mobile-nav-lng').toggleClass('open');
+    });
+  });
+</script>
+
+<!--cloud font-->
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
+<link href='//fonts.googleapis.com/css?family=Lora:400|IM+Fell French Canon:400' rel='stylesheet' type='text/css'><script src="//s3-ap-northeast-1.amazonaws.com/justfont-user-script/jf-47770.js"></script>
 </head>
