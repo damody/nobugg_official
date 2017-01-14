@@ -1,0 +1,234 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*elements hide show*/
+nav{display: none;}
+#mobile-navbar{display: block;}
+
+/*header*/
+header {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 1px solid #ccc;
+    height: 30px;
+    padding: 15px 0;
+}
+header.nav-sticky {
+    height: 30px;
+    padding: 15px 0;
+}
+.mb-logo img{height: 30px;}
+
+/*nav menu*/
+.mb-nav-toogle {
+    cursor: pointer;
+    height: 45px;
+    left: 20px;
+    position: absolute;
+    top: 9px;
+    width: 45px;
+    z-index: 105;
+}
+.mb-nav-toogle > span {
+    background: #888 none repeat scroll 0 0;
+    height: 2px;
+    left: 0;
+    margin: 20px 0 0;
+    position: absolute;
+    width: 100%;
+	transition: 0.3s;
+}
+.mb-nav-toogle > span::after, .mb-nav-toogle > span::before {
+    background: #888 none repeat scroll 0 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+	transition: 0.3s;
+}
+.mb-nav-toogle > span::after {
+    margin: 12px 0 0;
+}
+.mb-nav-toogle > span::before {
+    margin: -12px 0 0;
+}
+.mb-nav-toogle.open > span {
+    background-color: transparent;
+}
+.mb-nav-toogle.open > span::after, .mb-nav-toogle.open > span::before {
+    margin: 0;
+}
+.mb-nav-toogle.open > span::after {
+    transform: rotate(135deg);
+	height: 2.3px;
+	background: #fff;
+}
+.mb-nav-toogle.open > span::before {
+    transform: rotate(-135deg);
+	height: 2.3px;
+	background: #fff;
+}
+
+/*nav menu toogle*/
+html.scrnone, body.scrnone{
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+#mobile-nav.open {
+	opacity: 1;
+    top: 0;
+    visibility: visible;
+	pointer-events: auto;
+}
+#mobile-nav > div{
+	display: table;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transition: all 0.5s ease 0s;
+}
+#mobile-nav > div > ul{
+    display: table-cell;
+    vertical-align: middle;
+}
+#mobile-nav li a {
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+    line-height: 3em;
+    text-decoration: none;
+}
+#mobile-nav li a:hover, #mobile-nav li a:active {
+    background-color: #c44536;
+}
+#go-sub-menu1::after, #go-back-mb-menu::before {
+    background: rgba(0, 0, 0, 0) url("/static/image/right-arrow.svg") no-repeat scroll center center/ 20px auto;
+    content: "";
+    height: 20px;
+    margin-left: 5px;
+    margin-top: 16px;
+    position: absolute;
+    width: 20px;
+}
+#go-back-mb-menu::before{
+	background: rgba(0, 0, 0, 0) url("/static/image/left-arrow.svg") no-repeat scroll center center / 20px auto;
+	margin-left:-30px;
+}
+
+#mobile-nav > div.mb-sub-menu {
+    opacity: 0;
+	visibility: hidden;
+	transform: scale(0.7);
+}
+#mobile-nav > div.mb-main-menu.close {
+    opacity: 0;
+	visibility: hidden;
+	transition: all 0.5s ease 0s;
+	transform: scale(0.7);
+}
+#mobile-nav.open > div.mb-sub-menu.mb-sub-menu1.open {
+    opacity: 1;
+	visibility: visible;
+	transform: scale(1);
+}
+.mb-nav-logo{
+	margin:0px 0 30px;
+	width: 100%;
+}
+.mb-nav-logo > img {
+    max-width: 150px;
+}
+
+
+/*nav-mobile-lng*/
+.mb-lng {
+    height: 25px;
+	width: 25px;
+    position: absolute;
+    right: 15px;
+    top: 17px;
+	cursor: pointer;
+}
+.mb-lng img {
+    max-height: 100%;
+}
+#mobile-nav-lng.open{
+	visibility: visible;
+	opacity: 1;
+	top: 50px;
+}
+#mobile-nav-lng a {
+    color: #404040;
+    line-height: 2.5em;
+    text-decoration: none;
+	display: block;
+}
+#mobile-nav-lng a:hover, #mobile-nav-lng a:active{
+	background: #edddd4;
+}
+#mobile-nav-lng a.current-lng{
+	color: #c44536;
+}
+
+/*layout*/
+.first-layout {
+    margin-top: 60px;
+}
+.wrapper{
+	width: 100%;
+}
+.quick-link {
+    width: 90%;
+}
+
+/*hero list*/
+.container.full-height.faction1 {
+    margin-top: 60px;
+}
+.container.full-height{
+    display: block;
+    height: auto;
+    padding: 80px 0 60px;
+}
+.faction-title {
+    padding: 0 50px;
+}
+h2.faction-title span{
+	line-height: 1.2em;
+}
+h2.faction-title span:nth-child(2) {
+    border: medium none;
+    display: inline;
+    margin: 0;
+}
+h2.faction-title span:nth-child(3) {
+    display: none;
+}
+.champion-box {
+    width: 90%;
+}
+.champion-list.cl1 > .champion-box{
+    margin-left: 5% !important;
+}
+.champion-list.cl2 > .champion-box {
+    margin-left: 10% !important;
+}
+.placeholder{
+	height:0;
+}
+.champion-name {
+    display: flex;
+    font-size: 14px;
+    left: 75px;
+    line-height: 1.2em;
+    margin: 0;
+    position: absolute;
+    transform: translateY(-40%);
+}
+
+/*thanx*/
+.thanx-box {
+    margin-top: 120px;
+}
