@@ -21,9 +21,7 @@ end
 <% render("views.head", { lang = lang, langtext = langtext }) %>
 <body>
 	<header>
-    	<nav>
-        	<% render("views.nav", { lang = lang, langtext = langtext, webpath = params.webpath }) %>
-        </nav>
+        <% render("views.nav", { lang = lang, langtext = langtext, webpath = params.webpath }) %>
         <script>
             jQuery("document").ready(function($){
                 $(window).keydown(function( event ) {
@@ -87,7 +85,7 @@ end
                 <div class="champion-box"><% 
                 end %>
                     <a href="hero/<%-i%>">
-                        <img src="../static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name"><%-it%></div>
+                        <img src="/static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name"><%-it%></div>
                     </a><% 
               end 
             end%>
@@ -124,7 +122,7 @@ end
                 <div class="champion-box"><% 
                 end  %>
                     <a href="hero/<%-i%>">
-                        <img src="../static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name"><%-it%></div>
+                        <img src="/static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name"><%-it%></div>
                     </a><% 
               end 
             end%>
@@ -169,7 +167,7 @@ end
                 <div class="champion-box"><% 
                 end %>
                     <a href="hero/<%-i%>">
-                        <img src="../static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name"><%-it%></div>
+                        <img src="/static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name"><%-it%></div>
                     </a><% 
               end 
             end%>
