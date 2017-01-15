@@ -90,7 +90,6 @@
         </div>
         <div id="mobile-nav-lng">
             <ul>
-                <li><a <%if lang == "zhtw" then%>class="current-lng"<%end%> >繁體中文</a></li>
                 <li><a href="/zhtw/<%-webpath%>" <%if lang == "zhtw" then%>class="current-lng"<%end%> >繁體中文</a></li>                 
 				<li><a href="/zhcn/<%-webpath%>" <%if lang == "zhcn" then%>class="current-lng"<%end%> >簡体中文</a></li>
 				<li><a href="/en/<%-webpath%>" <%if lang == "en" then%>class="current-lng"<%end%> >English</a></li>

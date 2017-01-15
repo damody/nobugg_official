@@ -21,9 +21,7 @@ end
 <% render("views.head", { lang = lang, langtext = langtext }) %>
 <body class="page">
 	<header>
-    	<nav>
-        	<% render("views.nav", { lang = lang, langtext = langtext, webpath = params.webpath }) %>
-        </nav>
+       	<% render("views.nav", { lang = lang, langtext = langtext, webpath = params.webpath }) %>
     </header>
     <div class="container">
         <div class="wrapper">
