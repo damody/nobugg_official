@@ -9,8 +9,8 @@
 <link rel="stylesheet" href="/static/css/reset.css">
 <link rel="stylesheet" href="/static/css/style.css">
 
-<link rel="stylesheet" media="screen and (max-width: 1180px)" href="css/style-pad.css" />
-<link rel="stylesheet" media="screen and (max-width: 960px)" href="css/style-mobile.css" />
+<link rel="stylesheet" media="screen and (max-width: 1180px)" href="/static/css/style-pad.css" />
+<link rel="stylesheet" media="screen and (max-width: 960px)" href="/static/css/style-mobile.css" />
 
 <!--favicon-->
 <link rel="apple-touch-icon" sizes="57x57" href="/static/image/apple-icon-57x57.png">
