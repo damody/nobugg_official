@@ -21,11 +21,11 @@
                     <li><a href="/<%-lang%>/equipment/attributes">武器</a></li>
                     <li><a href="/<%-lang%>/equipment/weapons_armor">基礎物品</a></li>
                     <li><a href="/<%-lang%>/equipment/misc">法書</a></li>
-                    <li><a href="/<%-lang%>/equipment/basics">高階武器</a></li>
                     <li><a href="/<%-lang%>/equipment/support">高階道具</a></li>
                     <li><a href="/<%-lang%>/equipment/magics">高階法書</a></li>
                     <li><a href="/<%-lang%>/equipment/defense">高階防具</a></li>
-                    <li><a href="/<%-lang%>/equipment/weapons">高階武器2</a></li>
+					<li><a href="/<%-lang%>/equipment/basics">高階武器I</a></li>
+                    <li><a href="/<%-lang%>/equipment/weapons">高階武器II</a></li>
                     <li><a href="/<%-lang%>/equipment/artifacts">升級類裝備</a></li>
                     <li><a href="/<%-lang%>/equipment/sideshop1">路邊商店</a></li>
                     <li><a href="/<%-lang%>/equipment/sideshop2">路邊名刀鋪</a></li>
@@ -61,38 +61,39 @@
             <div class="mb-main-menu">
                 <ul class="">
                     <li class="mb-nav-logo"><img src="/static/image/logo-dota2-light.png"</li>
-                    <li><a href="./">出場英雄</a></li>
+                    <li><a href="/<%-lang%>/list_hero">出場英雄</a></li>
                     <li><a id="go-sub-menu1" href="#">裝備道具</a></li>
-                    <li><a href="thanx.php">感謝名單</a></li>
-                    <li><a href="#">贊助支持</a></li>
+                    <li><a href="/<%-lang%>/thanx">感謝名單</a></li>
+                    <li><a href="https://www.flyingv.cc/projects/14171?preview=5e8ac337-6f15-4920-a906-b813322696bc">贊助支持</a></li>
                 </ul>
             </div>
             <div class="mb-sub-menu mb-sub-menu1">
                 <ul class="">
                     <li class="go-back-mb-menu"><a id="go-back-mb-menu" href="#">回上頁</a></li>
-                    <li><a href="./item-demo.php">消耗品</a></li>
-                    <li><a href="#">武器</a></li>
-                    <li><a href="#">基礎物品</a></li>
-                    <li><a href="#">法書</a></li>
-                    <li><a href="#">高階武器I</a></li>
-                    <li><a href="#">高階武器II</a></li>
+                    <li><a href="/<%-lang%>/equipment/consumables">消耗品</a></li>              
+                    <li><a href="/<%-lang%>/equipment/attributes">武器</a></li>
+                    <li><a href="/<%-lang%>/equipment/weapons_armor">基礎物品</a></li>
+                    <li><a href="/<%-lang%>/equipment/misc">法書</a></li>
+                    <li><a href="/<%-lang%>/equipment/support">高階道具</a></li>
+                    <li><a href="/<%-lang%>/equipment/magics">高階法書</a></li>
                 </ul>
                 <ul>
-                    <li><a href="#">高階道具</a></li>
-                    <li><a href="#">高階法書</a></li>
-                    <li><a href="#">高階防具</a></li>
-                    <li><a href="#">升級類道具</a></li>
-                    <li><a href="#">路邊商店</a></li>
-                    <li><a href="#">路邊名刀舖</a></li>
-                    <li><a href="#">名刀舖</a></li>
+                    <li><a href="/<%-lang%>/equipment/defense">高階防具</a></li>
+					<li><a href="/<%-lang%>/equipment/basics">高階武器I</a></li>
+                    <li><a href="/<%-lang%>/equipment/weapons">高階武器II</a></li>
+                    <li><a href="/<%-lang%>/equipment/artifacts">升級類裝備</a></li>
+                    <li><a href="/<%-lang%>/equipment/sideshop1">路邊商店</a></li>
+                    <li><a href="/<%-lang%>/equipment/sideshop2">路邊名刀鋪</a></li>
+                    <li><a href="/<%-lang%>/equipment/secretshop">名刀鋪</a></li>
                 </ul>
             </div>
         </div>
         <div id="mobile-nav-lng">
             <ul>
-                <li><a class="current-lng">繁體中文</a></li>
-                <li><a href="#">簡体中文</a></li>
-                <li><a href="#">English</a></li>
-                <li><a href="#">日本語</a></li>
+                <li><a <%if lang == "zhtw" then%>class="current-lng"<%end%> >繁體中文</a></li>
+                <li><a href="/zhtw/<%-webpath%>" <%if lang == "zhtw" then%>class="current-lng"<%end%> >繁體中文</a></li>                 
+				<li><a href="/zhcn/<%-webpath%>" <%if lang == "zhcn" then%>class="current-lng"<%end%> >簡体中文</a></li>
+				<li><a href="/en/<%-webpath%>" <%if lang == "en" then%>class="current-lng"<%end%> >English</a></li>
+				<li><a href="/jp/<%-webpath%>" <%if lang == "jp" then%>class="current-lng"<%end%> >日本語</a></li>
             </ul>
         </div>
