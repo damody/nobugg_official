@@ -98,6 +98,13 @@ end
 
     <div class="container full-height faction2">
         <div class="wrapper">
+            <div class="column-2 mobile-show">
+                <h2 class="faction-title">
+                    <span><%if lang == "jp" then%>連<%else%>聯<%end%></span>
+                    <span>合</span>
+                    <span>Champion List</span>
+                </h2>
+            </div>
             <div class="column-8 champion-list cl2"><% 
             i1 = -1
             for n=1,40 do 
@@ -123,7 +130,7 @@ end
             end%>
                 </div>
             </div>
-            <div class="column-2">
+            <div class="column-2 mobile-hide">
             	<h2 class="faction-title">
                 	<span><%if lang == "jp" then%>連<%else%>聯<%end%></span>
                     <span>合</span>
