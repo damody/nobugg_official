@@ -50,17 +50,17 @@
                 <span></span>
             </div>
             <div class="mb-logo">
-                <a href="./"><img src="image/logo-dota2.png"></a>
+                <a href="./"><img src="/static/image/logo-dota2.png"></a>
             </div>
             <div class="mb-lng-switch"></div>
             <div class="mb-lng">
-                <div><img src="image/icon-lng-gray.svg"></div>
+                <div><img src="/static/image/icon-lng-gray.svg"></div>
             </div>
         </div>
         <div id="mobile-nav">
             <div class="mb-main-menu">
                 <ul class="">
-                    <li class="mb-nav-logo"><img src="image/logo-dota2-light.png"</li>
+                    <li class="mb-nav-logo"><img src="/static/image/logo-dota2-light.png"</li>
                     <li><a href="./">出場英雄</a></li>
                     <li><a id="go-sub-menu1" href="#">裝備道具</a></li>
                     <li><a href="thanx.php">感謝名單</a></li>
