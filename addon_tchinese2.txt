@@ -1361,6 +1361,17 @@
 	    "DOTA_Tooltip_Ability_A27R_Description" "在戰鬥中有<font color=\"#5cb85c\">(5/10/15/20)% </font>的機率造成2.5倍的傷害，並且使基礎跑速永久提升<font color=\"#5cb85c\">(25/31/37/43)</font>。"
 	    "DOTA_Tooltip_Ability_A27T"  "鬼柴田"
 	    "DOTA_Tooltip_Ability_A27T_Description" "變身成為可怕的鬼柴田，將可以擁有遠程攻擊，<font color=\"#5cb85c\">(400/600/800)</font>生命加成，基礎攻速提升為1.55，並且擁有\"暴虐之鎚\"能力，鬼柴田持續最多<font color=\"#5cb85c\">(20/24/28)</font>秒。"
+	    
+	    // 柴田勝家 11.2B
+	    "DOTA_Tooltip_Ability_A27W_old" "鬼柴田"
+	    "DOTA_Tooltip_Ability_A27W_old_Description" "讓範圍650內的友軍增加<font color=\"#5cb85c\">(30/45/60/75)</font>點攻擊力及<font color=\"#5cb85c\">(2/4/6/8)</font>點裝甲。持續18秒。"
+	    "DOTA_Tooltip_Ability_A27E_old" "動地鎚"
+	    "DOTA_Tooltip_Ability_A27E_old_Description" "猛擊地面，對附近450區域的敵方地面部隊造成<font color=\"#5cb85c\">(150/250/350/450)</font>點傷害，並將他們震昏<font color=\"#5cb85c\">(1/1.4/1.8/2.2)</font>秒。"
+	    "DOTA_Tooltip_Ability_A27R_old" "武者之道"
+	    "DOTA_Tooltip_Ability_A27R_old_Description" "攻擊時有20%的機會造成<font color=\"#5cb85c\">(1.8/2.2/2.6/3.0)</font>倍傷害，並有<font color=\"#5cb85c\">(4/8/12/16)% </font>的機會閃避攻擊。"
+	    "DOTA_Tooltip_Ability_A27T_old" "破竹之勢"
+	    "DOTA_Tooltip_Ability_A27T_old_Description" "創造出<font color=\"#5cb85c\">(2/3/4)</font>個100% 攻擊力的分身，並除掉身上的所有法術效果。分身須承受2倍的傷害，持續28秒。"
+
 	    "DOTA_Tooltip_Ability_A28W"  "邪法"
 	    "DOTA_Tooltip_Ability_A28W_Description" "將目標敵人以及周圍其他敵人轉化為亂數決定的生物，終止他們的能力以及動作，持續<font color=\"#5cb85c\">(1.0/1.5/2.0/2.5)</font>秒。"
 	    "DOTA_Tooltip_Ability_A28E"  "創念"
@@ -1395,6 +1406,15 @@
 	    "DOTA_Tooltip_Ability_A29R_Description" "讓範圍1000的敵人每秒失去<font color=\"#5cb85c\">(8/11/14/17)</font>的法力，使用技能時減緩25%移動速度並損失<font color=\"#5cb85c\">(20/40/60/80)</font>點法力。"
 	    "DOTA_Tooltip_Ability_A29T"  "邪靈大陣"
 	    "DOTA_Tooltip_Ability_A29T_Description" "回復<font color=\"#5cb85c\">(350/550/750)</font>生命，並且召喚40個攻擊力為<font color=\"#5cb85c\">(60/90/120)</font>飛舞的邪靈對著周圍的敵人發動攻擊，攻擊傷害的<font color=\"#5cb85c\">(40/60/80)% </font>將會補充英雄的生命，持續<font color=\"#5cb85c\">(30/35/40)</font>秒。"
+	    // 石田三成 11.2B
+	    "DOTA_Tooltip_Ability_A29W_old" "袖毒矢"
+	    "DOTA_Tooltip_Ability_A29W_old_Description" "將一枚淬毒的匕首射向敵方目標，造成<font color=\"#5cb85c\">(150/250/350/450)</font>點的啟始傷害，然後每1秒造成<font color=\"#5cb85c\">(15/20/25/30)</font>點的傷害，持續8秒。毒性會讓目標的攻擊速度和移動速減緩<font color=\"#5cb85c\">(10/15/20/25)% </font>。"
+	    "DOTA_Tooltip_Ability_A29E_old" "老樹盤根"
+	    "DOTA_Tooltip_Ability_A29E_old_Description" "讓樹根從地面竄出抓住目標，每秒造成<font color=\"#5cb85c\">(50/55/60/65)</font>點傷害並無法攻擊及移動，持續<font color=\"#5cb85c\">(3/4/5/6)</font>秒。"
+	    "DOTA_Tooltip_Ability_A29R_old" "機智消磨"
+	    "DOTA_Tooltip_Ability_A29R_old_Description" "逐漸消減範圍<font color=\"#5cb85c\">(800/1000/1200/1400)</font>內敵方部隊的法力<font color=\"#5cb85c\">(7/10/12/16)</font>點。"
+	    "DOTA_Tooltip_Ability_A29T_old" "兀鷹群"
+	    "DOTA_Tooltip_Ability_A29T_old_Description" "招喚來<font color=\"#5cb85c\">(28/34/40)</font>隻兀鷹，兀鷹會跟著施法者移動並主動攻擊範圍1100內的敵人。持續<font color=\"#5cb85c\">(42/45/48)</font>秒。"
 	    "DOTA_Tooltip_Ability_A30W"  "狼狩之印"
 	    "DOTA_Tooltip_Ability_A30W_Description" "召喚3隻無法控制的狼魂攻擊目標敵人，狼魂將會持續攻擊最多8秒並在時間內可以使你持續觀察目標。狼魂每次擊中都將削減目標12的法力 並且造成所削減的法力外加等同丹羽長秀智慧x0.5的額外傷害。隨技能等級提升狼魂將變的更強。"
 	    "DOTA_Tooltip_Ability_A30E"  "地之牙"
