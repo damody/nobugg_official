@@ -110,11 +110,9 @@
 		"DOTA_Tooltip_Ability_cavalry_Unified_top" "联合骑兵上"
 		"DOTA_Tooltip_Ability_cavalry_Unified_mid" "联合骑兵中"
 		"DOTA_Tooltip_Ability_cavalry_Unified_bottom" "联合骑兵下"
+		"DOTA_Tooltip_Ability_reward6300"  "犒赏"
+		"DOTA_Tooltip_Ability_reward6300_Description"  "提升全军士气，增加小兵20防御、每秒4% 回血、30% 攻速、30点攻击，增加英雄10点防御、每秒2% 回血，持续60秒"
 		"DOTA_Tooltip_Ability_" ""
-		"DOTA_Tooltip_Ability_" ""
-		"DOTA_Tooltip_Ability_" ""
-		
-		
 		
 		// ======================================================
 		// 以下是道具
@@ -133,54 +131,9 @@
 		"DOTA_Tooltip_Ability_item_perceive_wine_hyper_Description" "【使用】在10秒内获得魔法免疫。可使用2次。"
 
 		"DOTA_Tooltip_Ability_item_S01" "肉"
-		"DOTA_Tooltip_Ability_item_magic_ring" "法术戒指"
-		"DOTA_Tooltip_Ability_item_magic_ring_Description"	"增加200魔力。【使用】闪现到425范围内的指定地点。"
-		"DOTA_Tooltip_Ability_item_flash_ring" "闪光轮"
-		"DOTA_Tooltip_Ability_item_flash_ring_Description"	"增加200魔力。【使用】闪现到850范围内的指定地点。"
-		"DOTA_Tooltip_Ability_item_strength_ingot" "蛮力钢"
-		"DOTA_Tooltip_Ability_item_agility_ingot" "迅捷钢"
-		"DOTA_Tooltip_Ability_item_intelligence_ingot" "技巧钢"
-		"DOTA_Tooltip_Ability_item_power_ingot" "强化钢"
-		"DOTA_Tooltip_Ability_item_regeneration_ingot" "再生钢"
-		"DOTA_Tooltip_Ability_item_spirit_ingot" "回魔钢"
-		"DOTA_Tooltip_Ability_item_health_ingot" "生命钢"
-		"DOTA_Tooltip_Ability_item_mana_ingot" "法力钢"
-		"DOTA_Tooltip_Ability_item_energy_ingot" "能量钢"
-		"DOTA_Tooltip_Ability_item_the_red_lightning_chapter" "赤雷卷"
-		"DOTA_Tooltip_Ability_item_the_red_lightning_chapter_hyper" "真．赤雷卷"
-		"DOTA_Tooltip_Ability_item_the_overflame_art_of_war" "大炎上之书"
-		"DOTA_Tooltip_Ability_item_the_overflame_art_of_war_hyper" "真．大炎上之书"
-		"DOTA_Tooltip_Ability_item_the_art_of_war_tornado_chapter" "孙子兵法．风之章"
-		"DOTA_Tooltip_Ability_item_the_art_of_war_forest_chapter" "孙子兵法．林之章"
-		"DOTA_Tooltip_Ability_item_the_art_of_war_flame_chapter" "孙子兵法．火之章"
-		"DOTA_Tooltip_Ability_item_the_art_of_war_mountain_chapter" "孙子兵法．山之章"
-		"DOTA_Tooltip_Ability_item_katana" "打刀"
-		"DOTA_Tooltip_Ability_item_tachi" "太刀"
-		"DOTA_Tooltip_Ability_item_naginata" "薙刀"
-		"DOTA_Tooltip_Ability_item_staff" "杵杖"
-		"DOTA_Tooltip_Ability_item_cursed_katana" "妖刀"
-		"DOTA_Tooltip_Ability_item_spear" "长枪"
-		"DOTA_Tooltip_Ability_item_insight_gem" "洞察宝石"
-		"DOTA_Tooltip_Ability_item_healing_totem" "疗愈图腾"
-		"DOTA_Tooltip_Ability_item_rations" "军粮丸"
-		"DOTA_Tooltip_Ability_item_perceive_wine" "般若汤"
-		"DOTA_Tooltip_Ability_item_frozen_ring" "冻牙轮"
-		"DOTA_Tooltip_Ability_item_ancient_doll" "久弃邪物"
-		"DOTA_Tooltip_Ability_item_lightning_scroll" "雷之卷"
-		"DOTA_Tooltip_Ability_item_wind_scroll" "风之卷"
-		"DOTA_Tooltip_Ability_item_forest_scroll" "林之卷"
-		"DOTA_Tooltip_Ability_item_fire_scroll" "火之卷"
-		"DOTA_Tooltip_Ability_item_mountain_scroll" "山之卷"
-		"DOTA_Tooltip_Ability_item_thunderbolt_book" "怒雷之书"
-		"DOTA_Tooltip_Ability_item_rockfall_book" "落石之书"
-		"DOTA_Tooltip_Ability_item_flood_book" "水计之书"
-		"DOTA_Tooltip_Ability_item_ignite_book" "火计之书"
-		"DOTA_Tooltip_Ability_item_storm_book" "狂风之书"
-		"DOTA_Tooltip_Ability_item_spell_book" "法术书"
-		"DOTA_Tooltip_Ability_item_the_lost_art_of_war_1" "孙子兵法残册"
-		"DOTA_Tooltip_Ability_item_the_lost_art_of_war_2" "孙子兵法断简"
-		"DOTA_Tooltip_Ability_item_the_art_of_war" "孙子兵法全本"
-		"DOTA_Tooltip_Ability_item_the_over_lightning_art_of_war" "无上雷暴之书"
+		
+		"DOTA_Tooltip_Ability_item_the_great_silver_armor" "银伊予札白糸威胴丸具足"
+		"DOTA_Tooltip_Ability_item_the_great_silver_armor_Description" "装甲+10，移动速度+150可叠加，攻击速度+120% 有20% 机率闪躲攻击。【使用】在10秒内获得魔法免疫。"
 		
 		"DOTA_Tooltip_Ability_item_tea_bowl" "茶碗"
 		"DOTA_Tooltip_Ability_item_tea_bowl_Description" "每秒回复10点生命并增加150%回魔速度"
@@ -238,7 +191,11 @@
 
 		"DOTA_Tooltip_Ability_item_ancient_doll" "久弃邪物"
 		"DOTA_Tooltip_Ability_item_ancient_doll_Description" "攻击伤害+7。每当英雄施展技能或是使用物品，便可以在久弃邪物上增加1充能次数，上限6次。<br /><font color=\"#5bc0de\">【使用】消耗全部的充能次数，每消耗1次，便可以对目标敌人造成50伤害，并且自身回复造成伤害一半的生命值。</font></font>"
-				
+		
+		"DOTA_Tooltip_Ability_item_earth_wall_book" "忍法．土遁之书"
+		"DOTA_Tooltip_Ability_item_earth_wall_book_Description" "智慧+20。每13秒增加1充能次数，上限4次。<br />【使用】消耗1充能次数，
+对指定区域召唤巨大岩石，将对周围的敌人造成150伤害，且阻碍通行6秒。"
+
 		"DOTA_Tooltip_Ability_item_lightning_scroll"	"雷之卷"
 		"DOTA_Tooltip_Ability_item_lightning_scroll_Description"	"【使用】施展分叉闪电，可对多个敌人造成350伤害。"
 
@@ -750,6 +707,17 @@
 		"DOTA_Tooltip_modifier_critical_strike_crit"	"二天一流"
 		"DOTA_Tooltip_Ability_C21T"	"秘奥义．飞翔烈震斩"
 		"DOTA_Tooltip_Ability_C21T_Description"	"在战场上迅速的来回斩击，每次斩击可以造成110的真实伤害与基础攻击力的物理伤害，并且每次的斩击宫本武藏将更加的迅速，能够同一时间挥出更多攻击，总共可以进行<font color=\"#5cb85c\">(11/16/23)</font>次斩击。"
+
+		// 宫本武藏 11.2B
+		"DOTA_Tooltip_Ability_C21W_old" "奥义．弧月斩"
+		"DOTA_Tooltip_Ability_C21W_old_Description" "获得魔法免疫，每0.2秒造成范围250内所有敌人<font color=\"#5cb85c\">(100/150/200/250)</font>点伤害，持续0.5秒。"
+		"DOTA_Tooltip_Ability_C21E_old" "奥义．连环钢破"
+		"DOTA_Tooltip_Ability_C21E_old_Description" "突击目标，造成<font color=\"#5cb85c\">(100/200/300/400)</font>点伤害并晕眩2秒。然后每0.6秒追斩一次，共三次。"
+		"DOTA_Tooltip_Ability_C21R_old" "二天一流"
+		"DOTA_Tooltip_Ability_C21R_old_Description" "攻击时有<font color=\"#5cb85c\">(40/45/50/55)% </font>的机会造成绝不失误的<font color=\"#5cb85c\">(1.3/1.6/1.9/2.2)</font>倍伤害。"
+		"DOTA_Tooltip_Ability_C21T_old" "秘奥义．飞翔震烈斩"
+		"DOTA_Tooltip_Ability_C21T_old_Description" "自身飞翔至空中汇集全身的力量降落地面时，把全身的灵气释放造成周围<font color=\"#5cb85c\">(1200/1600/2000)</font>伤害。"
+
 		"DOTA_Tooltip_Ability_B08W"	"一刀．牙"
 		"DOTA_Tooltip_Ability_B08W_Description"	"对指定的方向斩出一刀．牙，使距离1100路径上的敌人受到<font color=\"#5cb85c\">(150/300/450/600)</font>伤害。"
 		"DOTA_Tooltip_Ability_B08E"	"一刀．闪瞬"
@@ -775,7 +743,6 @@
 		"DOTA_Tooltip_Ability_B33W_Description"	"射出含有剧毒的腐蚀之箭，每秒造成<font color=\"#5cb85c\">(50/80/110/170)</font>伤害，并减缓<font color=\"#5cb85c\">(10/20/30/40)% </font>攻击速度与移动速度，持续<font color=\"#5cb85c\">(5/6/7/8)</font>秒。 "
 		"DOTA_Tooltip_Ability_B33E"	"蛛网缠身"
 		"DOTA_Tooltip_Ability_B33E_Description"	"使目标敌军被充满剧毒的蛛网所缠，它将无法移动和攻击，并且每秒受到150伤害，持续<font color=\"#5cb85c\">(1/2/3/4)</font>秒。 "
-		"DOTA_Tooltip_Ability_B33R_Description"	"(被动)<br />增加灵活。<br />(启动)<br />使自身进入雾毒幻化，并且增加攻击距离，额外获得\"雾毒矢\"能力，每次攻击可以造成范围伤害。 <br /><br />."
 		"DOTA_Tooltip_Ability_B33R"	"雾毒幻化"
 		"DOTA_Tooltip_Ability_B33R_Description"	"(被动)<br />增加(5/10/15/20)灵活。<br />(启动)<br />使自身进入雾毒幻化，攻击型态转变为立即，并且增加200攻击距离，额外获得\"雾毒矢\"能力，每次攻击可以造成<font color=\"#5cb85c\">(40/60/80/120)</font>范围伤害，持续6秒。 "
 		"DOTA_Tooltip_Ability_B33T"	"蜘蛛缠身"

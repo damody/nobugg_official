@@ -318,6 +318,7 @@
 		"RequiredLevel"	"6"
 		"LevelsBetweenUpgrades"	"6"
 		"AbilityManaCost"	"100 175 250"
+		"AbilityCastRange"	"1000 1150 1300"
 		"precache"
 		{
 			"particle"	"particles/units/heroes/hero_tinker/tinker_missile.vpcf"
@@ -374,7 +375,7 @@
 				"Orb"
 				{
 					"Priority"	"DOTA_ORB_PRIORITY_ABILITY"
-					"ProjectileName"	"particles/econ/items/sniper/sniper_charlie/sniper_assassinate_charlie.vpcf"
+					"ProjectileName"	"particles/a17/a17tecon/items/sniper/sniper_charlie/sniper_assassinate_charlie.vpcf"
 				}
 				"Properties"
 				{
@@ -717,6 +718,7 @@
 		"RequiredLevel"	"6"
 		"LevelsBetweenUpgrades"	"6"
 		"AbilityManaCost"	"110 160 210"
+		"AbilityCastRange"	"1000 1300 1400"
 		"precache"
 		{
 			"particle"	"particles/units/heroes/hero_tinker/tinker_missile.vpcf"
@@ -773,7 +775,7 @@
 				"Orb"
 				{
 					"Priority"	"DOTA_ORB_PRIORITY_ABILITY"
-					"ProjectileName"	"particles/econ/items/sniper/sniper_charlie/sniper_assassinate_charlie.vpcf"
+					"ProjectileName"	"particles/a17/a17tecon/items/sniper/sniper_charlie/sniper_assassinate_charlie.vpcf"
 				}
 				"EffectName" "particles/a17/a17t_old_buff_portrait.vpcf"
 				"EffectAttachType" "follow_origin"
