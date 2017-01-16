@@ -66,7 +66,7 @@ end
                         <img src="../../static/pic/spellicons/<%-item["pic"]%>.png" alt="<%=item["name"][lang]%> icon" width="100" height="100">
                         <div class="ability-info">
                             <ul>
-                            <li class="item-info-list">
+                            <li class="ability-info-list item-info-list">
                                 <ul>
                                 <% if item["cooldown"] ~= nil then %>
                                     <li><span class="item-info-list-title"><%-langtext["cd"][lang]%></span><span class="item-info-list-value"><%= item["cooldown"] %></span></li>
@@ -126,7 +126,7 @@ end
                         <img src="../../static/pic/spellicons/<%-item["pic"]%>.png" alt="<%=item["name"][lang]%> icon" width="100" height="100">
                         <div class="ability-info">
                             <ul>
-                                <li class="item-info-list">
+                                <li class="ability-info-list item-info-list">
                                 <ul>
                                 <% if item["cooldown"] ~= nil then %>
                                     <li><span class="item-info-list-title"><%-langtext["cd"][lang]%></span><span class="item-info-list-value"><%= item["cooldown"] %></span></li>

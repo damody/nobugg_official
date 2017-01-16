@@ -230,6 +230,12 @@
 		line-height: 1.8em;
 		padding: 5px 10px;
 	}
+	.ability-info-list.item-info-list {
+ 	   padding: 5px 0;
+	}
+	.ability-info-list > ul:first-child > li, .item-info-list > ul:first-child > li {
+    	margin-bottom: 0;
+	}
 	.st-box {
 		margin: 15px 0 10px;
 		width: 50%;

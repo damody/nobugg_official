@@ -544,8 +544,12 @@ h4.ability-name {
 	float: left;
 	}
 .item-info-list > ul:first-child > li{
-	width: 30%;
+	width: 20%;
 	}
+.ability-info-list > ul:first-child > li {
+    margin-right: 30px;
+    width: auto;
+}
 .item-info-list .item-info-list-title {
     background: #c44536;
     border-radius: 30px;
