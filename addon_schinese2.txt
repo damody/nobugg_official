@@ -117,6 +117,13 @@
 		// ======================================================
 		// 以下是道具
 		// ======================================================
+		
+		"DOTA_Tooltip_Ability_item_magic_ring" "法术戒指"
+		"DOTA_Tooltip_Ability_item_magic_ring_Description"	"增加200魔力。【使用】闪现到425范围内的指定地点。"
+		
+		"DOTA_Tooltip_Ability_item_flash_ring" "闪光轮"
+		"DOTA_Tooltip_Ability_item_flash_ring_Description"	"增加200魔力。【使用】闪现到850范围内的指定地点。"
+		
 		"DOTA_Tooltip_Ability_item_the_soul_of_power" "分灵之诺"
 		"DOTA_Tooltip_Ability_item_the_soul_of_power_Description" "全能力+20，死亡后可以原地复活一次但物品会消失，复活后无敌3秒。"
 		
@@ -219,6 +226,9 @@
 
 		"DOTA_Tooltip_Ability_item_flood_book" "水计之书"
 		"DOTA_Tooltip_Ability_item_flood_book_Description" "智慧+20<br />【使用】在指定地点召唤涌泉，冲击范围内的敌人造成300伤害，并且将之击退。<br /><font color=\"#cc0000\">无视魔法免疫</font>"
+
+		"DOTA_Tooltip_Ability_item_ice_book" "冰计之书"
+		"DOTA_Tooltip_Ability_item_ice_book_Description" "智慧+20<br />【使用】往指定的方向射出一个冰风球，每0.8秒冰风球周围会喷射出22个冰锥，持续5波，每一发冰锥都能造成范围300的敌人55点伤害。"
 
 		"DOTA_Tooltip_Ability_item_ignite_book" "火计之书"
 		"DOTA_Tooltip_Ability_item_ignite_book_Description" "智慧+20<br />【使用】对指定区域造出一场大火，造成560伤害，接下来每秒造成100伤害，持续5秒。<br /><font color=\"#cc0000\">可对建筑物造成25% 伤害。</font>"
@@ -438,6 +448,9 @@
 
 		"DOTA_Tooltip_Ability_item_samurai_cloth" "武士服"
 		"DOTA_Tooltip_Ability_item_samurai_cloth_Description" "全能力+5，每秒回复10生命值。攻速+50% 。"
+		
+		"DOTA_Tooltip_Ability_item_samurai_cloth_x" "武士服．改"
+		"DOTA_Tooltip_Ability_item_samurai_cloth_x_Description" "全能力+5，每秒回复10生命值。攻速+50% ，加10% 基础攻击，降低所受的法术伤害10% 。"
 
 		"DOTA_Tooltip_Ability_item_samurai_cloth_1" "武士服．二阶"
 		"DOTA_Tooltip_Ability_item_samurai_cloth_1_Description" "全能力+5，每秒回复20生命值。攻速+70% 。"
@@ -756,7 +769,7 @@
 		"DOTA_Tooltip_Ability_B33R_old" "毒气之箭"
 		"DOTA_Tooltip_Ability_B33R_old_Description" "攻击时造成一种200范围而每秒造成<font color=\"#5cb85c\">(20/40/60/80)</font>伤害的毒雾，持续2秒。"
 		"DOTA_Tooltip_Ability_B33T_old" "蜘蛛缠身"
-		"DOTA_Tooltip_Ability_B33T_old_Description" "放出剧毒蜘蛛缠绕着目标，降低目标50% 移动速度及攻击速度，每0.5秒受到<font color=\"#5cb85c\">(66/110/125)</font>点伤害，持续6秒。"
+		"DOTA_Tooltip_Ability_B33T_old_Description" "放出剧毒蜘蛛缠绕着目标，降低目标50% 移动速度及攻击速度，每0.5秒受到<font color=\"#5cb85c\">(66/105/135)</font>点伤害，持续10秒。"
 
 		"npc_dota_hero_earthshaker"	"秋山信友"
 		"npc_dota_hero_earthshaker_bio"	"与武田氏同族的甲婓源氏支流之一的秋山信任息子，是武田信义之弟加贺美远满的支流。1542年对已近习众的身分诹访赖重攻略成为他初次上阵的战争。1547年近攻伊奈福与城时，将敌将藤泽赖亲捕获后，取得重要的战功，成为了50骑马部队的侍大将。之后的进攻木曾福岛城后，被伊奈郡代提拔为率领250骑的大将。1572年信玄开始西上，信友以别动队的大将率领3000兵向织田氏领地东美浓入侵，攻陷了岩村城。以后为岩村城城主，在东美浓方面作最前线防备。武田军在1575年长篠之战大败，导致岩村城被孤立，11月织田信长亲征包围岩村城。信友确定没有救援下向信长提议开城。但信友开城后，信长立即逮捕他，并在长良川与夫人以极刑处死，享年49岁。<br />信友为智勇兼备的名将，其勇名称为“武田的猛牛”。"
@@ -1531,7 +1544,7 @@
 		"DOTA_Tooltip_Ability_B02R_old" "忍法．十八方手里剑"
 		"DOTA_Tooltip_Ability_B02R_old_Description" "囚禁目标，强制使其<font color=\"#5cb85c\">(1.8/2.3/2.8/3.3)</font>秒内无法移动，每0.25秒向目标发射一发手里剑，造成<font color=\"#5cb85c\">(5/10/15/20)</font>点伤害并中断动作。共18发。"
 		"DOTA_Tooltip_Ability_B02T_old" "忍法密传．四方导雷"
-		"DOTA_Tooltip_Ability_B02T_old_Description" "放出四个雷球追踪目标5秒，能看见目标直到雷球消失，雷球于2.5秒后0.6秒同时对目标放出连锁红雷造成800点伤害，然后扩散至附近700范围最多4名敌人造成200点伤害，弹跳最多10次，每次弹跳伤害会提升5% ，最后会弹回一开始选择的目标。"
+		"DOTA_Tooltip_Ability_B02T_old_Description" "放出多个雷球追踪目标5秒，能看见目标直到雷球消失，雷球于2.5秒后晕眩0.6秒并同时对目标放出连锁红雷，每个球造成200点伤害，然后扩散至附近700范围最多4名敌人造成200点伤害，每次弹跳伤害会提升5% ，最后会弹回一开始选择的目标。"
 		
 		"DOTA_Tooltip_Ability_B03W" "钟馗一击"
 		"DOTA_Tooltip_Ability_B03W_Description" "【W】对前方100的敌军造成<font color=\"#5cb85c\">(150/250/350/450)</font>伤害以及晕眩1.1秒。【E】对前方400的敌军造成<font color=\"#5cb85c\">(150/250/350/450)</font>伤害以及晕眩1.1秒。【R】对前方700的敌军造成<font color=\"#5cb85c\">(150/250/350/450)</font>伤害以及晕眩1.1秒。<br /><font color=\"#cc0000\">本技能学习后分为3个攻击技能，耗魔与冷却时间相同，但不互相影响</font>"

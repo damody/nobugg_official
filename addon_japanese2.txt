@@ -110,11 +110,9 @@
 		"DOTA_Tooltip_Ability_cavalry_Unified_top" "連合騎兵上"
 		"DOTA_Tooltip_Ability_cavalry_Unified_mid" "連合騎兵中"
 		"DOTA_Tooltip_Ability_cavalry_Unified_bottom" "連合騎兵下"
+		"DOTA_Tooltip_Ability_reward6300"  "報酬"
+		"DOTA_Tooltip_Ability_reward6300_Description"  "全軍の士気を高める。兵士は防御力が20点と攻撃力が30点上がり、毎秒4%の生命値を回復し、攻撃速度が30%上昇する。英雄は防御力が10点上がり、毎秒2%の生命値を回復する。持続時間60秒。"
 		"DOTA_Tooltip_Ability_" ""
-		"DOTA_Tooltip_Ability_" ""
-		"DOTA_Tooltip_Ability_" ""
-		
-		
 		
 		// ======================================================
 		// 以下是道具
@@ -132,55 +130,10 @@
 		"DOTA_Tooltip_Ability_item_perceive_wine_hyper" "抗魔"
 		"DOTA_Tooltip_Ability_item_perceive_wine_hyper_Description" "【アクション】10秒間、魔法免疫状態になる。2回使用できる。"
 
-		"DOTA_Tooltip_Ability_item_magic_ring" "術の指輪"
-		"DOTA_Tooltip_Ability_item_magic_ring_Description"	"【パッシブ】法力+200。【アクション】範囲425内のどこかに指定し、テレポートする。"
-		"DOTA_Tooltip_Ability_item_flash_ring" "瞬きの指輪"
-		"DOTA_Tooltip_Ability_item_flash_ring_Description"	"【パッシブ】法力+200。【アクション】範囲850内のどこかに指定し、テレポートする，"
-		"DOTA_Tooltip_Ability_item_strength_ingot" "馬鹿力鋼"
-		"DOTA_Tooltip_Ability_item_agility_ingot" "疾駆鋼"
-		"DOTA_Tooltip_Ability_item_intelligence_ingot" "智恵鋼"
-		"DOTA_Tooltip_Ability_item_power_ingot" "強化鋼"
-		"DOTA_Tooltip_Ability_item_regeneration_ingot" "再生鋼"
-		"DOTA_Tooltip_Ability_item_spirit_ingot" "回法鋼"
-		"DOTA_Tooltip_Ability_item_health_ingot" "生命鋼"
-		"DOTA_Tooltip_Ability_item_mana_ingot" "法力鋼"
-		"DOTA_Tooltip_Ability_item_energy_ingot" "活力鋼"
-		"DOTA_Tooltip_Ability_item_the_red_lightning_chapter" "赤雷巻"
-		"DOTA_Tooltip_Ability_item_the_red_lightning_chapter_hyper" "真．赤雷巻"
-		"DOTA_Tooltip_Ability_item_the_overflame_art_of_war" "大炎上ノ書"
-		"DOTA_Tooltip_Ability_item_the_overflame_art_of_war_hyper" "真．大炎上ノ書"
-		"DOTA_Tooltip_Ability_item_the_art_of_war_tornado_chapter" "孫子兵法．風ノ章"
-		"DOTA_Tooltip_Ability_item_the_art_of_war_forest_chapter" "孫子兵法．林ノ章"
-		"DOTA_Tooltip_Ability_item_the_art_of_war_flame_chapter" "孫子兵法．火ノ章"
-		"DOTA_Tooltip_Ability_item_the_art_of_war_mountain_chapter" "孫子兵法．山ノ章"
-		"DOTA_Tooltip_Ability_item_katana" "打刀"
-		"DOTA_Tooltip_Ability_item_tachi" "太刀"
-		"DOTA_Tooltip_Ability_item_naginata" "薙刀"
-		"DOTA_Tooltip_Ability_item_staff" "杵杖"
-		"DOTA_Tooltip_Ability_item_cursed_katana" "妖刀"
-		"DOTA_Tooltip_Ability_item_spear" "長槍"
-		"DOTA_Tooltip_Ability_item_insight_gem" "洞察宝石"
-		"DOTA_Tooltip_Ability_item_healing_totem" "癒しトーテム"
-		"DOTA_Tooltip_Ability_item_rations" "軍糧丸"
-		"DOTA_Tooltip_Ability_item_perceive_wine" "般若湯"
-		"DOTA_Tooltip_Ability_item_frozen_ring" "凍る牙ノ輪"
-		"DOTA_Tooltip_Ability_item_ancient_doll" "古き邪悪な物"
-		"DOTA_Tooltip_Ability_item_tea_bowl" "茶碗"
-		"DOTA_Tooltip_Ability_item_lightning_scroll" "雷ノ巻"
-		"DOTA_Tooltip_Ability_item_wind_scroll" "風ノ巻"
-		"DOTA_Tooltip_Ability_item_forest_scroll" "林ノ巻"
-		"DOTA_Tooltip_Ability_item_fire_scroll" "火ノ巻"
-		"DOTA_Tooltip_Ability_item_mountain_scroll" "山ノ巻"
-		"DOTA_Tooltip_Ability_item_thunderbolt_book" "怒り稲妻ノ書"
-		"DOTA_Tooltip_Ability_item_rockfall_book" "落石ノ書"
-		"DOTA_Tooltip_Ability_item_flood_book" "水攻ノ書"
-		"DOTA_Tooltip_Ability_item_ignite_book" "火攻ノ書"
-		"DOTA_Tooltip_Ability_item_storm_book" "狂い風ノ書"
-		"DOTA_Tooltip_Ability_item_spell_book" "法術書"
-		"DOTA_Tooltip_Ability_item_the_lost_art_of_war_1" "孫子兵法残巻"
-		"DOTA_Tooltip_Ability_item_the_lost_art_of_war_2" "孫子兵法断簡"
-		"DOTA_Tooltip_Ability_item_the_art_of_war" "孫子兵法全本"
-		"DOTA_Tooltip_Ability_item_the_over_lightning_art_of_war" "無上雷暴ノ書"
+		"DOTA_Tooltip_Ability_item_S01" "肉"
+		
+		"DOTA_Tooltip_Ability_item_the_great_silver_armor" "銀伊予札白糸威胴丸具足"
+		"DOTA_Tooltip_Ability_item_the_great_silver_armor_Description" "【パッシブ】防御力+10、移動速度+150,重ねがけができる。攻撃速度+120%、20%の確率で攻撃をかわす。【アクション】10秒間に魔本免疫を得る。"
 		
 		"DOTA_Tooltip_Ability_item_tea_bowl" "茶碗"
 		"DOTA_Tooltip_Ability_item_tea_bowl_Description" "【パッシブ】毎秒10点の生命値を回復し、法力回復が150%増加する。"
@@ -238,7 +191,10 @@
 
 		"DOTA_Tooltip_Ability_item_ancient_doll" "古き邪悪な物"
 		"DOTA_Tooltip_Ability_item_ancient_doll_Description" "【パッシブ】攻撃力+7。英雄がスキルやアイテムを使う度に、古き邪悪な物に1回の充能を増やす。最大6回。<br /><font color=\"#5bc0de\">【アクション】すべての充能を消費し,充能が1回減らすごとに指定した敵に50点のダメージを与えて,与えた総ダメージの半分で自身の生命値を回復する。</font></font>"
-				
+			
+		"DOTA_Tooltip_Ability_item_earth_wall_book" "忍法．土遁の書"
+		"DOTA_Tooltip_Ability_item_earth_wall_book_Description" "【パッシブ】知力+20。13秒おきに1回の充能が増える,最大4回。<br />【アクション】1回の充能を消耗して指定したエリアに巨大な隕石を召喚して落ちる。周囲に150点のダメージを与えてさらに6秒間に通行を妨げる。"
+	
 		"DOTA_Tooltip_Ability_item_lightning_scroll"	"雷ノ巻"
 		"DOTA_Tooltip_Ability_item_lightning_scroll_Description"	"【アクション】分かれ稲妻を施行し、複数の敵に350点のダメージを与える。"
 
@@ -255,16 +211,19 @@
 		"DOTA_Tooltip_Ability_item_forest_scroll_Description" "【アクション】1名の下級伏兵先鋒と1名の下級伏兵軍師を召喚して戦わせる。効果時間30秒。"
 
 		"DOTA_Tooltip_Ability_item_thunderbolt_book" "怒り稲妻ノ書"
-		"DOTA_Tooltip_Ability_item_thunderbolt_book_Description" "知力+20<br />【アクション】強き雷を産み出して自分自身の身に纏う。英雄がスキルやアイテムを使う際、追加の75点の法力を消費して周りの敵に190点の雷ダメージを与える。もう一度使うと、普通状態に戻る。<br /><font color=\"#cc0000\">使うと、怒り稲妻ノ書を起動状態に変える。</font>"
+		"DOTA_Tooltip_Ability_item_thunderbolt_book_Description" "【パッシブ】知力+20<br />【アクション】強き雷を産み出して自分自身の身に纏う。英雄がスキルやアイテムを使う際、追加の75点の法力を消費して周りの敵に190点の雷ダメージを与える。もう一度使うと、普通状態に戻る。<br /><font color=\"#cc0000\">使うと、怒り稲妻ノ書を起動状態に変える。</font>"
 
 		"DOTA_Tooltip_Ability_item_rockfall_book" "落石ノ書"
-		"DOTA_Tooltip_Ability_item_rockfall_book_Description" "知力+20<br />【アクション】天上から落石を召喚して、指定したエリアにいる敵に560点のダメージを与える。<br /><font color=\"#cc0000\">魔法免疫による中断行為を無視する</font>。"
+		"DOTA_Tooltip_Ability_item_rockfall_book_Description" "【パッシブ】知力+20<br />【アクション】天上から落石を召喚して、指定したエリアにいる敵に560点のダメージを与える。<br /><font color=\"#cc0000\">魔法免疫による中断行為を無視する</font>。"
 
 		"DOTA_Tooltip_Ability_item_flood_book" "水攻ノ書"
-		"DOTA_Tooltip_Ability_item_flood_book_Description" "知力+20<br />【アクション】指定したエリアに湧き水を呼び出して、エリアにいる敵に衝撃を与える。300点のダメージを与えて、さらに敵を撃退する。<br /><font color=\"#cc0000\">魔法免疫を無視する</font>"
+		"DOTA_Tooltip_Ability_item_flood_book_Description" "【パッシブ】知力+20<br />【アクション】指定したエリアに湧き水を呼び出して、エリアにいる敵に衝撃を与える。300点のダメージを与えて、さらに敵を撃退する。<br /><font color=\"#cc0000\">魔法免疫を無視する</font>"
+
+		"DOTA_Tooltip_Ability_item_ice_book" "氷攻ノ書"
+		"DOTA_Tooltip_Ability_item_ice_book_Description" "【パッシブ】知力+20<br />【アクション】指定した方向へ氷風球を撃って0.8秒おきに氷風球の周囲に22つの氷柱が射出する、合計5回。1つの氷柱は範囲300にいる敵に55点のダメージを与える。"
 
 		"DOTA_Tooltip_Ability_item_ignite_book" "火攻ノ書"
-		"DOTA_Tooltip_Ability_item_ignite_book_Description" "知力+20<br />【アクション】指定したエリアに放火して560点のダメージを与える。5秒間、1秒ごとに100点のダメージを与える。<br /><font color=\"#cc0000\">建物に対して25％のダメージを与える。</font>"
+		"DOTA_Tooltip_Ability_item_ignite_book_Description" "【パッシブ】知力+20<br />【アクション】指定したエリアに放火して560点のダメージを与える。5秒間、1秒ごとに100点のダメージを与える。<br /><font color=\"#cc0000\">建物に対して25％のダメージを与える。</font>"
 
 		"DOTA_Tooltip_Ability_item_spell_book" "法術書"
 		"DOTA_Tooltip_Ability_item_spell_book_Description" "【アクション】敵ユニットに使うと、7秒間に30％の移動速度を下げる。<br />友軍ユニットに使うと、そのユニットは26秒かけて780点の生命を回復する。"
@@ -306,7 +265,7 @@
 		"DOTA_Tooltip_Ability_item_brave_ring" "武尊輪"
 		"DOTA_Tooltip_Ability_item_brave_ring_Description" "【パッシブ】攻撃時に15％の確率で2倍のダメージを与える。"
 
-		"DOTA_Tooltip_Ability_item_samurai's_badge" "侍的徽章"
+		"DOTA_Tooltip_Ability_item_samurai's_badge" "侍のメダル"
 		"DOTA_Tooltip_Ability_item_samurai's_badge_Description" "【パッシブ】全能力+5"
 
 
@@ -750,6 +709,17 @@
 		"DOTA_Tooltip_modifier_critical_strike_crit"	"二天一流"
 		"DOTA_Tooltip_Ability_C21T"	"秘奥義‧飛翔烈震斬"
 		"DOTA_Tooltip_Ability_C21T_Description"	"戦場に迅速に乱れ斬撃を放つ。斬撃の1つは110点のダメージを与え,さらに放った斬撃が多くするほど宮本武蔵は速くなり,同時に放てる斬撃が多くなる。最大<font color=\"#5cb85c\">(11/16/23)</font>回の斬撃が撃てる。"
+		
+		// 宮本武藏 11.2B
+		"DOTA_Tooltip_Ability_C21W_old" "奥義．三日月斬"
+		"DOTA_Tooltip_Ability_C21W_old_Description" "魔法免疫を得る。0.2秒毎に範囲250にいるすべての敵に<font color=\"#5cb85c\">(100/150/200/250)</font>点のダメージを与える。持続時間0.5秒。"
+		"DOTA_Tooltip_Ability_C21E_old" "奥義．連環鋼破"
+		"DOTA_Tooltip_Ability_C21E_old_Description" "目標を突撃する。<font color=\"#5cb85c\">(100/200/300/400)</font>点のダメージを与えて2秒間にスタンさせる。0.6秒ごとに追加の斬撃を放つ、合計3回。"
+		"DOTA_Tooltip_Ability_C21R_old" "二天一流"
+		"DOTA_Tooltip_Ability_C21R_old_Description" "攻撃時に<font color=\"#5cb85c\">(40/45/50/55)% </font>の確率でミスしない<font color=\"#5cb85c\">(1.3/1.6/1.9/2.2)</font>倍のダメージを与える。"
+		"DOTA_Tooltip_Ability_C21T_old" "秘奥義‧飛翔烈震斬"
+		"DOTA_Tooltip_Ability_C21T_old_Description" "自身は空に飛んで力を溜めてから地面に落ちると同時にオーラを解放して周囲<font color=\"#5cb85c\">(1200/1600/2000)</font>点のダメージを与える。"
+
 		"DOTA_Tooltip_Ability_B08W"	"一刀．牙"
 		"DOTA_Tooltip_Ability_B08W_Description"	"指定した方向へ一刀．牙を放ち,射程距離1000に入る敵にダメージを与える。"
 		"DOTA_Tooltip_Ability_B08E"	"一刀．閃瞬"
@@ -775,7 +745,6 @@
 		"DOTA_Tooltip_Ability_B33W_Description"	"猛毒付きの腐敗ノ矢を放ち,毎秒<font color=\"#5cb85c\">(50/80/110/170)</font>点のダメージを与え,さらに攻撃速度と移動速度が<font color=\"#5cb85c\">(10/20/30/40)%</font>下がり,持続時間<font color=\"#5cb85c\">(5/6/7/8)</font>秒。 "
 		"DOTA_Tooltip_Ability_B33E"	"身纏う網"
 		"DOTA_Tooltip_Ability_B33E_Description"	"指定した敵ユニットに猛毒付きの網を纏わせ,攻撃も移動もできなくする。さらに毎秒150点のダメージを継続的に与えて,持続時間<font color=\"#5cb85c\">(1/2/3/4)</font>秒。 "
-	　//"DOTA_Tooltip_Ability_B33R_Description"	"【パッシブ】<br />器用さ増加。<br />【アクション】<br />自身を霧毒幻化。攻撃射程が延び，追加スキル\"霧毒矢\"，毎回攻撃時に周囲を薙ぎ払う。<br /><br />."
 		"DOTA_Tooltip_Ability_B33R"	"霧毒幻化"
 		"DOTA_Tooltip_Ability_B33R_Description"	"【パッシブ】<br />器用さが(5/10/15/20)増加。<br />【アクション】<br />自身を霧毒幻化。攻撃形式が即時になり、攻撃射程が200延び,追加スキル\"霧毒矢\",毎回攻撃時に周囲に<font color=\"#5cb85c\">(40/60/80/120)</font>点のダメージを与える。持続時間6秒。 "
 		"DOTA_Tooltip_Ability_B33T"	"身纏う蜘蛛"
