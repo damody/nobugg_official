@@ -241,7 +241,7 @@
 			"05"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"aoe_damage"	"100"
+				"aoe_damage"	"200"
 			}
 		}
 		"AbilityDuration"	"5.0 5.0 5.0 5.0"
@@ -353,7 +353,7 @@
 					{
 						"Target"	"TARGET"
 						"Type"	"DAMAGE_TYPE_MAGICAL"
-						"Damage"	"%debuff_damage * %damage_interval"
+						"Damage"	"%debuff_damage"
 					}
 				}
 				"EffectName"	"particles/econ/courier/courier_wyvern_hatchling/courier_wyvern_hatchling_ice.vpcf"
@@ -685,7 +685,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"duration"	"10"
+				"duration"	"6"
 			}
 			"03"
 			{
@@ -700,10 +700,10 @@
 			"05"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"aoe_damage"	"100"
+				"aoe_damage"	"200"
 			}
 		}
-		"AbilityDuration"	"5.0 5.0 5.0 5.0"
+		"AbilityDuration"	"6"
 		// Damage.
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityDamage"	"100 200 300 400"
