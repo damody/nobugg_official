@@ -1393,7 +1393,7 @@
 	    "DOTA_Tooltip_Ability_A29E_old" "老树盘根"
 	    "DOTA_Tooltip_Ability_A29E_old_Description" "让树根从地面窜出抓住目标，每秒造成<font color=\"#5cb85c\">(50/55/60/65)</font>点伤害并无法攻击及移动，持续<font color=\"#5cb85c\">(3/4/5/6)</font>秒。"
 	    "DOTA_Tooltip_Ability_A29R_old" "机智消磨"
-	    "DOTA_Tooltip_Ability_A29R_old_Description" "逐渐消减范围<font color=\"#5cb85c\">(800/1000/1200/1400)</font>内敌方部队的法力<font color=\"#5cb85c\">(8/16/24/32)</font>点。"
+	    "DOTA_Tooltip_Ability_A29R_old_Description" "逐渐消减范围<font color=\"#5cb85c\">(800/1000/1200/1400)</font>内敌方部队的法力<font color=\"#5cb85c\">(16/32/48/64)</font>点。"
 	    "DOTA_Tooltip_Ability_A29T_old" "兀鹰群"
 	    "DOTA_Tooltip_Ability_A29T_old_Description" "招唤来攻击力为<font color=\"#5cb85c\">(100/150/200)</font>的<font color=\"#5cb85c\">(14/17/20)</font>只兀鹰，攻击伤害的<font color=\"#5cb85c\">(40/60/80)% </font>将会补充英雄的生命，兀鹰会跟着施法者移动并主动攻击范围1100内的敌人。持续<font color=\"#5cb85c\">(42/45/48)</font>秒。"
 		
@@ -1479,7 +1479,7 @@
 			
 		"npc_dota_hero_nevermore_bio"	"杂贺党的首领历代都称孙市，战国中后期名将，杂贺孙市是擅使铁炮的高手。纪伊的杂贺众出身。当信长攻打一揆众的本据地．伊势长岛时，杂贺众力挺一揆众，组织铁炮队痛击织田军促使败退。历史上孙市的真实身份不详，一说为铃木重秀，另一说为重朝。重秀曾在石山合战，仅仅以100人规模的铁炮队重创织田军，又介于本愿寺之间，在山崎之战大为活跃，后来也参加秀吉的纪州攻略战；重朝在关原西军中于成功攻下伏见城，曾投靠政宗，尔后则成为家康、赖房的臣下。"
 		"DOTA_Tooltip_Ability_B01W"	"狙击模式"
-		"DOTA_Tooltip_Ability_B01W_Description"	"转换为狙击状态，增加攻击伤害<font color=\"#5cb85c\">(20/30/40/50)</font>、攻击距离提升至<font color=\"#5cb85c\">(900/1050/1200/1350)</font>和夜晚视野1000，持续8秒。"
+		"DOTA_Tooltip_Ability_B01W_Description"	"转换为狙击状态，增加攻击伤害<font color=\"#5cb85c\">(20/30/40/50)</font>、攻击距离提升至<font color=\"#5cb85c\">(900/1050/1200/1400)</font>和夜晚视野1000，持续8秒。"
 		"DOTA_Tooltip_Ability_B01E"	"杂贺众"
 		"DOTA_Tooltip_Ability_B01E_Description"	"召唤杂贺众的同伴<font color=\"#5cb85c\">(2/4/6/8)</font>个来加入战斗。"
 		"DOTA_Tooltip_Ability_B01R"	"雨铁炮"
@@ -1488,7 +1488,7 @@
 		"DOTA_Tooltip_Ability_B01T_Description"	"能让攻击力获得伤害加成200% 的三段技法，持续<font color=\"#5cb85c\">(7/11/13)</font>秒。"
 		
 		"DOTA_Tooltip_Ability_B01W_old"	"狙击模式"
-		"DOTA_Tooltip_Ability_B01W_old_Description"	"转换为狙击状态，并且<font color=\"#5cb85c\">(2/3/4/5)</font>秒内无法取消。增加攻击距离至<font color=\"#5cb85c\">(950/1150/1350/1550)</font>但牺牲70% 跑速。"
+		"DOTA_Tooltip_Ability_B01W_old_Description"	"转换为狙击状态，并且<font color=\"#5cb85c\">(2/3/4/5)</font>秒内无法取消。增加攻击距离至<font color=\"#5cb85c\">(950/1150/1350/1700)</font>但牺牲70% 跑速。"
 		"DOTA_Tooltip_Ability_B01E_old"	"杂贺众"
 		"DOTA_Tooltip_Ability_B01E_old_Description"	"召唤杂贺众的同伴<font color=\"#5cb85c\">(2/3/4/5)</font>个来加入战斗。"
 		"DOTA_Tooltip_Ability_B01R_old"	"雨铁炮"
