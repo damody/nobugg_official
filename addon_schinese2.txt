@@ -710,6 +710,7 @@
 		"npc_dota_hero_medusa"	"森兰丸"
 		"npc_dota_hero_alchemist"	"宫本武藏"
 		"npc_dota_hero_naga_siren"	"望月千代女"
+		"npc_dota_hero_sniper"  "佐佐成政"
 		"DOTA_Tooltip_Ability_C21R"	"二天一流"
 		"DOTA_Tooltip_Ability_C21R_Description"	"在战斗中有<font color=\"#5cb85c\">(15/19/23/27)% </font>的机会闪避攻击，而且有40% 机会造成<font color=\"#5cb85c\">(1.3/1.5/1.7/1.9)</font>倍的伤害。 "
 		"DOTA_Tooltip_Ability_C21E"	"奥义．连环钢破"
@@ -769,7 +770,7 @@
 		"DOTA_Tooltip_Ability_B33R_old" "毒气之箭"
 		"DOTA_Tooltip_Ability_B33R_old_Description" "攻击时造成一种200范围而每秒造成<font color=\"#5cb85c\">(20/40/60/80)</font>伤害的毒雾，持续2秒。"
 		"DOTA_Tooltip_Ability_B33T_old" "蜘蛛缠身"
-		"DOTA_Tooltip_Ability_B33T_old_Description" "放出剧毒蜘蛛缠绕着目标，降低目标50% 移动速度及攻击速度，每0.5秒受到<font color=\"#5cb85c\">(66/105/135)</font>点伤害，持续10秒。"
+		"DOTA_Tooltip_Ability_B33T_old_Description" "放出剧毒蜘蛛缠绕着目标，降低目标50% 移动速度及<font color=\"#5cb85c\">(50/75/100)% </font>攻击速度，每0.5秒受到<font color=\"#5cb85c\">(66/105/135)</font>点伤害，持续10秒。"
 
 		"npc_dota_hero_earthshaker"	"秋山信友"
 		"npc_dota_hero_earthshaker_bio"	"与武田氏同族的甲婓源氏支流之一的秋山信任息子，是武田信义之弟加贺美远满的支流。1542年对已近习众的身分诹访赖重攻略成为他初次上阵的战争。1547年近攻伊奈福与城时，将敌将藤泽赖亲捕获后，取得重要的战功，成为了50骑马部队的侍大将。之后的进攻木曾福岛城后，被伊奈郡代提拔为率领250骑的大将。1572年信玄开始西上，信友以别动队的大将率领3000兵向织田氏领地东美浓入侵，攻陷了岩村城。以后为岩村城城主，在东美浓方面作最前线防备。武田军在1575年长篠之战大败，导致岩村城被孤立，11月织田信长亲征包围岩村城。信友确定没有救援下向信长提议开城。但信友开城后，信长立即逮捕他，并在长良川与夫人以极刑处死，享年49岁。<br />信友为智勇兼备的名将，其勇名称为“武田的猛牛”。"
