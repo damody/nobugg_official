@@ -294,8 +294,8 @@
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityType"	"DOTA_ABILITY_TYPE_ULTIMATE"
-		"AbilityCooldown"	"145 135 125"
-		"AbilityManaCost"	"150"
+		"AbilityCooldown"	"140"
+		"AbilityManaCost"	"300 450 600"
 		"RequiredLevel"	"6"
 		"LevelsBetweenUpgrades"	"6"
 		"precache"
@@ -365,12 +365,12 @@
 			"01"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"tick"	"1 0.9 0.8"
+				"tick"	"1 1 1"
 			}
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"radius"	"1000"
+				"radius"	"1400"
 			}
 			"03"
 			{
@@ -399,6 +399,7 @@
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"MaxLevel"	"1"
+		"AbilityCooldown"	"0.4"
 		"OnToggleOn"
 		{
 			"ApplyModifier"
@@ -472,6 +473,7 @@
 		"BaseClass"	"ability_datadriven"
 		"AbilityTextureName"	"silencer_global_silence"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_CHANNEL"
+		"AbilityCooldown"	"0.4"
 		"OnToggleOn"
 		{
 			"ApplyModifier"
@@ -682,7 +684,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"AbilityCastPoint"	"0.1"
-		"AbilityCooldown"	"10 9 8 7"
+		"AbilityCooldown"	"7"
 		"AbilityManaCost"	"140 160 180 200"
 		"AbilityCastRange"	"1200"
 		"AoERadius"	"500"
@@ -704,7 +706,7 @@
 			"RunScript"
 			{
 				"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C07.lua"
-				"Function"	"C07R"
+				"Function"	"C07R_old"
 			}
 			"FireSound"
 			{
@@ -751,7 +753,7 @@
 				"target_count"	"8"
 			}
 		}
-		"AbilityDamage"	"150 250 350 450"
+		"AbilityDamage"	"300 400 500 600"
 	}
 	// 立花道雪 [雷神之怒]
 	"C07T_old"
@@ -763,7 +765,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityType"	"DOTA_ABILITY_TYPE_ULTIMATE"
-		"AbilityCooldown"	"160"
+		"AbilityCooldown"	"140"
 		"AbilityManaCost"	"300 400 500"
 		"RequiredLevel"	"6"
 		"LevelsBetweenUpgrades"	"6"

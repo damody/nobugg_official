@@ -17,15 +17,13 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"20"
-		// Cost
 		
 		"AbilityManaCost"	"200"
-		// Casting
 		
 		"AbilityCastRange"	"700"
+		"AbilityCastPoint"	"0.2"
 		"ID"	"2620"
 		"ItemQuality"	"component"
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
@@ -116,15 +114,13 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"15"
-		// Cost
 		
 		"AbilityManaCost"	"200"
-		// Casting
 		
 		"AbilityCastRange"	"700"
+		"AbilityCastPoint"	"0.2"
 		"ID"	"2516"
 		"ItemQuality"	"component"
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
@@ -215,10 +211,8 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"80"
-		// Cost
 		
 		"AbilityManaCost"	"500"
 
@@ -276,13 +270,11 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"65"
-		// Cost
 		
 		"AbilityManaCost"	"600"
-		// Casting
+		"AbilityCastPoint"	"0.2"
 		
 		"AOERadius"	"650"
 		"AbilityCastRange"	"700"
@@ -374,13 +366,11 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"65"
-		// Cost
+		"AbilityCastPoint"	"0.2"
 		
 		"AbilityManaCost"	"400"
-		// Casting
 		
 		"AOERadius"	"650"
 		"AbilityCastRange"	"700"
@@ -468,11 +458,10 @@
 		"AbilityChannelTime" "10"
 		"AbilityDamage"		"1800" //打滿的傷害
 		"AbilityCooldown"	"40"
-		// Cost
 		"AbilityManaCost"	"380"
-		// Casting
 		"AoERadius"	"1200"
 		"AbilityCastRange"	"1400"
+		"AbilityCastPoint"	"0.2"
 		"ID"	"2825"
 		"ItemQuality"	"component"
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
@@ -549,14 +538,11 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"20"
-		// Cost
 		
 		"AbilityManaCost"	"120"
-		// Casting
-		
+		"AbilityCastPoint"	"0.2"
 		"AOERadius"	"300"
 		"AbilityCastRange"	"900"
 		"ID"	"2511"
@@ -637,13 +623,11 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"21"
-		// Cost
 		
 		"AbilityManaCost"	"225"
-		// Casting
+		"AbilityCastPoint"	"0.2"
 		
 		"AOERadius"	"350"
 		"AbilityCastRange"	"700"
@@ -915,14 +899,14 @@
 		"AbilityTextureName"	"item_custom/perceive_wine"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
 		"FightRecapLevel"	"1"
-		"AbilityCooldown"	"30"
+		"AbilityCooldown"	"20"
 		// Valve's version of this item uses the ID "1".
 		"ID"	"2600"
 		"ItemQuality"	"component"
 		"Model"							"models/props_gameplay/salve_blue.vmdl"
 		"Effect"	"particles/generic_gameplay/dropped_item.vpcf"
 		// Item Info
-		
+		"AbilitySharedCooldown" "share_perceive_wine_hyper"
 		"ItemCost"	"200"
 		"ItemShopTags"					"consumable"
 		"ItemQuality"					"consumable"
@@ -989,6 +973,7 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
 		"FightRecapLevel"	"1"
 		"AbilityCooldown"	"30"
+		"AbilitySharedCooldown" "share_perceive_wine_hyper"
 		// Valve's version of this item uses the ID "1".
 		"ID"	"2621"
 		"ItemQuality"	"component"
@@ -1550,14 +1535,11 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"10"
-		// Cost
 		
 		"AbilityManaCost"	"120"
-		// Casting
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityCastRange"	"700"
 		"ID"	"2502"
 		"ItemQuality"	"component"
@@ -1631,14 +1613,11 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"20"
-		// Cost
 		
 		"AbilityManaCost"	"120"
-		// Casting
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityCastRange"	"700"
 		"ID"	"2515"
 		"ItemQuality"	"component"
@@ -2688,6 +2667,8 @@
 		"ItemDeclarations"	"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 		"ItemShopTags"		"damage"
+
+		"AoERadius" "%aure_radius"
 		"OnEquip"
 		{
 			"RemoveModifier"
@@ -2703,8 +2684,8 @@
 		}
 		"precache"
 		{
-			"particle"	"particles/item/d01/d01.vpcf"
-			"particle"	"particles/item/d02_4/d02_4_f.vpcf"
+			"particle"  "particles/econ/items/axe/axe_cinder/axe_cinder_battle_hunger_flames_b.vpcf"
+			"particle"  "particles/item/item_flame_armor/flame_aura.vpcf"
 		}
 		"Modifiers"
 		{
@@ -2725,10 +2706,13 @@
 				"IsDebuff"			"0"
 			
 				"Aura"        "modifier_flame_armor_debuff"
-        		"Aura_Radius" "350"
+        		"Aura_Radius" "%aure_radius"
         		"Aura_Teams"  "DOTA_UNIT_TARGET_TEAM_ENEMY"
         		"Aura_Types"  "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
         		"Aura_ApplyToCaster" "0"   // Not Apply to Self, default is 1
+
+        		"EffectName" "particles/item/item_flame_armor/flame_aura.vpcf"
+        		"EffectAttachType" "follow_origin"
 			}
 			"modifier_flame_armor_debuff"
 			{
@@ -2750,6 +2734,14 @@
 						"Target"	"TARGET"
 					}
 				}
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"aure_radius"			"350"
 			}
 		}
 	}
@@ -3079,13 +3071,10 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"15"
-		// Cost
 		
 		"AbilityManaCost"	"120"
-		// Casting
 		
 		"AbilityCastRange"	"700"
 		"ID"	"2570"
@@ -3170,17 +3159,15 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"55"
-		// Cost
 		
 		"AbilityManaCost"	"175"
-		// Casting
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityCastRange"	"500"
 		"ID"	"2571"
 		"ItemQuality"	"component"
@@ -3284,13 +3271,10 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"55"
-		// Cost
 		
 		"AbilityManaCost"	"175"
-		// Casting
 		
 		"AOERadius"		"900"
 		"ID"	"2572"
@@ -3409,7 +3393,6 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"30"
 		
@@ -3592,7 +3575,6 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"36"
 
@@ -3669,14 +3651,11 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"20"
-		// Cost
 		
 		"AbilityManaCost"	"150"
-		// Casting
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityCastRange"	"700"
 		"ID"	"2576"
 		"ItemQuality"	"component"
@@ -3769,13 +3748,10 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"15"
-		// Cost
 		
 		"AbilityManaCost"	"100"
-		// Casting
 		"ID"	"2577"
 		"ItemQuality"	"component"
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
@@ -3911,13 +3887,10 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"55"
-		// Cost
 		
 		"AbilityManaCost"	"175"
-		// Casting
 		"ID"	"2581"
 		"ItemQuality"	"component"
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
@@ -3984,13 +3957,10 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"30"
-		// Cost
 		
 		"AbilityManaCost"	"120"
-		// Casting
 		
 		"AbilityCastRange"	"700"
 		"ID"	"2585"
@@ -4047,10 +4017,8 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"30"
-		// Casting
 		"ID"	"2563"
 		"ItemQuality"	"component"
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
@@ -4143,13 +4111,10 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"110"
-		// Cost
 		
 		"AbilityManaCost"	"300"
-		// Casting
 		"ID"	"2700"
 		"ItemQuality"	"component"
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
@@ -4248,14 +4213,11 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"75"
-		// Cost
 		
 		"AbilityManaCost"	"225"
-		// Casting
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityCastRange"	"700"
 		"ID"	"2701"
 		"ItemQuality"	"component"
@@ -4271,6 +4233,12 @@
 			{
 				"ScriptFile"	"items/Addon_Items/item_the_great_sword_of_soul.lua"
 				"Function"		"Shock"
+			}
+			"Damage"
+			{
+				"Target"	"TARGET"
+				"Type"	"DAMAGE_TYPE_MAGICAL"
+				"Damage"	"1"
 			}
 		}
 		"Modifiers"
@@ -4325,14 +4293,11 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"40"
-		// Cost
 		
 		"AbilityManaCost"	"300"
-		// Casting
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityCastRange"	"800"
 		"AOERadius"		"350"
 		"ID"	"2703"
@@ -4472,10 +4437,8 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"100"
-		// Cost
 		
 		"AbilityManaCost"	"175"
 		"ID"	"2706"
@@ -4641,6 +4604,13 @@
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SecretShop" "1"
+		"precache"
+		{
+			"particle"  "particles/generic_gameplay/generic_slowed_cold.vpcf"
+			"particle"  "particles/item/item_the_great_sword_of_hurricane.vpcf"
+			"particle"  "particles/item/item_the_great_sword_of_hurricane/tornado.vpcf"
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_medusa.vsndevts"
+		}
 		"OnSpellStart"
 		{
 			"RunScript"
@@ -4667,7 +4637,22 @@
 		}
 		"Modifiers"
 		{
-			"modifier_great_sword_of_hurricane"
+			"modifier_great_sword_of_hurricane_aura"
+			{
+				"Passive"			"0"
+				"IsHidden"			"0"
+				"IsDebuff"			"0"
+
+				"EffectName" "particles/item/item_the_great_sword_of_hurricane.vpcf"
+				"EffectAttachType"	"follow_origin"
+
+				"Aura"        "modifier_great_sword_of_hurricane_debuff"
+        		"Aura_Radius" "800"
+        		"Aura_Teams"  "DOTA_UNIT_TARGET_TEAM_ENEMY"
+        		"Aura_Types"  "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+        		"Aura_ApplyToCaster" "0"   // Not Apply to Self, default is 1
+			}
+			"modifier_great_sword_of_hurricane_debuff"
 			{
 				"IsHidden"			"0"
 				"IsDebuff"			"1"
@@ -4701,6 +4686,61 @@
 					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "10"	//防禦
 				}
 			}
+			// 在特定範圍持續打出風之傷
+			"modifier_great_sword_of_hurricane_auto_attack"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"IsDebuff"	"0"
+
+				"ThinkInterval"	"1"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"items/Addon_Items/item_the_great_sword_of_hurricane.lua"
+						"Function"	"SplitShotLaunch"
+					}
+				}
+			}
+		}
+		// 當風之傷命中目標
+		"OnProjectileHitUnit"
+		{
+			"DeleteOnHit"	"1"
+			"FireSound"
+			{
+				"EffectName"	"Hero_Medusa.AttackSplit"
+				"Target"	"TARGET"
+			}
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_the_great_sword_of_hurricane.lua"
+				"Function"	"SplitShotDamage"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01" // 風之傷鎖敵範圍
+			{
+				"var_type"	"FIELD_INTEGER"
+				"tornado_range"	"1000"
+			}
+			"02" // 風之傷飛行速度
+			{
+				"var_type"	"FIELD_INTEGER"
+				"tornado_speed"	"1200"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"tornado_damage"	"400"
+			}
+			"04" // 主動技能持續時間
+			{
+				"var_type"	"FIELD_INTEGER"
+				"aura_duration"	"20"
+			}
 		}
 	}
 
@@ -4717,11 +4757,9 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"60"
-		// Cost
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityManaCost"	"285"
 		"ID"	"2710"
 		"ItemQuality"	"component"
@@ -4755,6 +4793,7 @@
 			{
 				"IsPurgable"	"1"
 				"IsDebuff" "1"
+
 				"States"
 				{
 					"MODIFIER_STATE_STUNNED"	"MODIFIER_STATE_VALUE_ENABLED"
@@ -4799,14 +4838,11 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"40"
-		// Cost
 		
 		"AbilityManaCost"	"200"
-		// Casting
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityCastRange"	"1000"
 		"ID"	"2711"
 		"ItemQuality"	"component"
@@ -4865,14 +4901,11 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"26"
-		// Cost
 		
 		"AbilityManaCost"	"185"
-		// Casting
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityCastRange"	"1000"
 		"ID"	"2712"
 		"ItemQuality"	"component"
@@ -4945,6 +4978,7 @@
 				{
 					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE" "-25" 	//跑速
 				}
+				"EffectName"	"particles/b33/b33r_old_poison.vpcf"
 				"IsPurgable"	"1"
 				"IsDebuff"		"1"
 				"Passive"	"0"
@@ -4967,13 +5001,10 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"60"
-		// Cost
 		
 		"AbilityManaCost"	"125"
-		// Casting
 		
 		"ID"	"2713"
 		"ItemQuality"	"component"
@@ -5090,14 +5121,11 @@
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"45"
-		// Cost
 		
 		"AbilityManaCost"	"285"
-		// Casting
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityCastRange"	"700"
 		"ID"	"2714"
 		"ItemQuality"	"component"
@@ -5203,14 +5231,11 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"70"
-		// Cost
 		
 		"AbilityManaCost"	"285"
-		// Casting
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityCastRange"	"700"
 		"ID"	"2715"
 		"ItemQuality"	"component"
@@ -5268,14 +5293,11 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"70"
-		// Cost
 		
 		"AbilityManaCost"	"300"
-		// Casting
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityCastRange"	"700"
 		"ID"	"2716"
 		"ItemQuality"	"component"
@@ -5353,10 +5375,8 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"30"
-		// Cost
 		
 		"AbilityManaCost"	"100"
 
@@ -5444,10 +5464,8 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"70"
-		// Cost
 		
 		"AbilityManaCost"	"275"
 
@@ -5605,13 +5623,10 @@
 		"ItemPermanent"					"0"
 		"ItemInitialCharges"			"2"
 		"SideShop"						"1"
-		// Time
 		
 
-		// Cost
 		
 
-		// Casting
 		
 		"ItemRequirements"	{}
 		"OnSpellStart"
@@ -5668,13 +5683,10 @@
 		"ItemPermanent"					"0"
 		"ItemInitialCharges"			"2"
 		"SideShop"						"1"
-		// Time
 		
 
-		// Cost
 		
 
-		// Casting
 		
 		"ItemRequirements"	{}
 		"OnSpellStart"
@@ -5718,14 +5730,11 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"25"
-		// Cost
 		
 		"AbilityManaCost"	"200"
-		// Casting
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityCastRange"	"700"
 		"ID"	"2578"
 		"ItemQuality"	"component"
@@ -5826,14 +5835,11 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"25"
-		// Cost
 		
 		"AbilityManaCost"	"200"
-		// Casting
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityCastRange"	"800"
 		"ID"	"25781"
 		"ItemQuality"	"component"
@@ -5934,14 +5940,11 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"50"
-		// Cost
 		
 		"AbilityManaCost"	"450"
-		// Casting
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityCastRange"	"500"
 		"ID"	"2580"
 		"ItemQuality"	"component"
@@ -6000,14 +6003,11 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"50"
-		// Cost
 		
 		"AbilityManaCost"	"450"
-		// Casting
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityCastRange"	"500"
 		"ID"	"25801"
 		"ItemQuality"	"component"
@@ -6066,14 +6066,11 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"50"
-		// Cost
 		
 		"AbilityManaCost"	"450"
-		// Casting
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityCastRange"	"500"
 		"ID"	"25802"
 		"ItemQuality"	"component"
@@ -6132,14 +6129,11 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"15"
-		// Cost
 		
 		"AbilityManaCost"	"225"
-		// Casting
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityCastRange"	"800"
 		"ID"	"2582"
 		"ItemQuality"	"component"
@@ -6200,13 +6194,10 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"4"
-		// Cost
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityManaCost"	"0"
-		// Casting
 		
 		"AbilityCastRange"	"1000"
 		"ID"	"2583"
@@ -6300,14 +6291,11 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"21"
-		// Cost
 		
 		"AbilityManaCost"	"150"
-		// Casting
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityCastRange"	"700"
 		"ID"	"2584"
 		"ItemQuality"	"component"
@@ -6409,10 +6397,8 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"25"
-		// Cost
 		
 		"AbilityManaCost"	"155"
 
@@ -6513,14 +6499,11 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"25"
-		// Cost
 		
 		"AbilityManaCost"	"190"
-		// Casting
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityCastRange"	"800"
 		"ID"	"2587"
 		"ItemQuality"	"component"
@@ -6600,14 +6583,11 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"60"
-		// Cost
 		
 		"AbilityManaCost"	"185"
-		// Casting
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityCastRange"	"500"
 		"AOERadius"		"250"
 		"ID"	"2588"
@@ -6656,7 +6636,7 @@
 				"IsHidden"			"0"
 				"IsPurgable"	"1"
 				"IsDebuff"		"1"
-				"Duration"			"0.5"
+				"Duration"			"1"
 				"EffectName"	"particles/generic_gameplay/generic_silenced_old.vpcf"
 				"EffectAttachType"	"follow_hitloc"
 				"States"
@@ -7038,7 +7018,7 @@
 		
 		"BaseClass"	"item_datadriven"
 		"AbilityTextureName"	"item_custom/the_spear_of_spiders"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
@@ -8265,15 +8245,10 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"15"
-		// Cost
 		
 		"AbilityManaCost"	"100"
-		// Casting
-		
-		
 		"ID"	"2519"
 		"ItemQuality"	"component"
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
@@ -8371,14 +8346,11 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"36"
-		// Cost
 		
 		"AbilityManaCost"	"220"
-		// Casting
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityCastRange"	"700"
 		"ID"	"2520"
 		"ItemQuality"	"component"
@@ -8490,10 +8462,8 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"40"
-		// Cost
 		
 		"AbilityManaCost"	"75"
 
@@ -8568,13 +8538,10 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"30"
-		// Cost
 		
 		"AbilityManaCost"	"120"
-		// Casting
 		
 		"AbilityCastRange"	"1000"
 		"ID"	"2522"
@@ -8792,10 +8759,8 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"0"
-		// Cost
 		
 		"AbilityManaCost"	"0"
 		"ID"	"2525"
@@ -8888,13 +8853,10 @@
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"65"
-		// Cost
 		
 		"AbilityManaCost"	"125"
-		// Casting
 		
 		"AbilityCastRange"	"900"
 		"ID"	"2526"
@@ -9052,16 +9014,14 @@
 		
 		"BaseClass"	"item_datadriven"
 		"AbilityTextureName"	"item_custom/ninja_cloth"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"0"
-		// Cost
 		
 		"AbilityManaCost"	"0"
 		"ID"	"2528"
@@ -9121,10 +9081,8 @@
 		"AbilityUnitTargetFlags" "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityCastRange"				"700"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"20"
-		// Cost
 		
 		"AbilityManaCost"	"100"
 
@@ -9229,10 +9187,8 @@
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"25"
-		// Cost
 		
 		"AbilityManaCost"	"200"
 		"AbilityCastRange"	"1200"
@@ -9407,10 +9363,8 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"11"
-		// Cost
 		
 		"AbilityManaCost"	"60"
 		"ID"	"2594"
@@ -9687,7 +9641,6 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"30"
 		"ID"	"2596"
@@ -9760,7 +9713,7 @@
 		"ItemCost"	"3150"
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
-		
+		"AoERadius" "%aura_radius"
 		"OnEquip"
 		{
 			"RemoveModifier"
@@ -9773,6 +9726,11 @@
                 "Target" "CASTER"
                 "ModifierName" "modifier_flame_armor_aura"
             }
+		}
+		"precache"
+		{
+			"particle"  "particles/econ/items/axe/axe_cinder/axe_cinder_battle_hunger_flames_b.vpcf"
+			"particle"  "particles/item/item_foxfire_armor/foxfire_aura.vpcf"
 		}
 		"Modifiers"
 		{
@@ -9789,10 +9747,13 @@
 				"IsDebuff"			"0"
 			
 				"Aura"        "modifier_flame_armor_debuff"
-        		"Aura_Radius" "400"
+        		"Aura_Radius" "%aura_radius"
         		"Aura_Teams"  "DOTA_UNIT_TARGET_TEAM_ENEMY"
         		"Aura_Types"  "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
         		"Aura_ApplyToCaster" "0"   // Not Apply to Self, default is 1
+
+        		"EffectName" "particles/item/item_foxfire_armor/foxfire_aura.vpcf"
+        		"EffectAttachType" "follow_origin"
 			}
 			"modifier_flame_armor_debuff"
 			{
@@ -9837,6 +9798,14 @@
 				}
 			}
 		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"aura_radius"	"400"
+			}
+		}
 	}
 
 	// 當世具足
@@ -9852,10 +9821,8 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"22"
-		// Cost
 		
 		"AbilityManaCost"	"0"
 		"ID"	"2598"
@@ -9920,14 +9887,11 @@
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES | DOTA_UNIT_TARGET_FLAG_NOT_ILLUSIONS"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"45"
-		// Cost
 		
 		"AbilityManaCost"	"100"
-		// Casting
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityCastRange"	"500"
 		"ID"	"2599"
 		"ItemQuality"	"component"
@@ -10090,7 +10054,6 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"20"
 		"ID"	"2805"
@@ -10236,10 +10199,8 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"45"
-		// Cost
 		
 		"AbilityManaCost"	"210"
 		"ID"	"2806"
@@ -10298,10 +10259,8 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"19"
-		// Cost
 		
 		"AbilityManaCost"	"100"
 
@@ -10359,10 +10318,8 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"24"
-		// Cost
 		
 		"AbilityManaCost"	"200"
 
@@ -10421,11 +10378,9 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"45"
-		// Cost
-		
+		"AbilitySharedCooldown" "share_perceive_wine_hyper"
 		"AbilityManaCost"	"200"
 		"ID"	"2808"
 		"ItemQuality"	"component"
@@ -10512,11 +10467,9 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"45"
-		// Cost
-		
+		"AbilitySharedCooldown" "share_perceive_wine_hyper"
 		"AbilityManaCost"	"200"
 		"ID"	"2809"
 		"ItemQuality"	"component"
@@ -10603,11 +10556,9 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"45"
-		// Cost
-		
+		"AbilitySharedCooldown" "share_perceive_wine_hyper"
 		"AbilityManaCost"	"200"
 		"ID"	"2810"
 		"ItemQuality"	"component"
@@ -10695,11 +10646,9 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"45"
-		// Cost
-		
+		"AbilitySharedCooldown" "share_perceive_wine_hyper"
 		"AbilityManaCost"	"200"
 		"ID"	"2811"
 		"ItemQuality"	"component"
@@ -10895,10 +10844,8 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"22"
-		// Cost
 		
 		"AbilityManaCost"	"90"
 		"ID"	"2813"
@@ -10958,11 +10905,9 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"48"
-		// Cost
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityManaCost"	"200"
 		"AbilityCastRange"	"800"
 		"ID"	"2814"
@@ -11089,13 +11034,10 @@
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"25"
-		// Cost
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityManaCost"	"160"
-		// Casting
 		
 		"AbilityCastRange"	"700"
 		"ID"	"2816"
@@ -11214,8 +11156,6 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
-		
 		
 		"ID"	"2817"
 		"ItemQuality"	"component"
@@ -11267,13 +11207,10 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"40"
-		// Cost
 		
 		"AbilityManaCost"	"125"
-		// Casting
 		
 		"ID"	"2818"
 		"ItemQuality"	"component"
@@ -11354,14 +11291,11 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"55"
-		// Cost
 		
 		"AbilityManaCost"	"100"
-		// Casting
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityCastRange"	"750"
 		"ID"	"2819"
 		"ItemQuality"	"component"
@@ -11451,13 +11385,10 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"26"
-		// Cost
 		
 		"AbilityManaCost"	"100"
-		// Casting
 		
 		
 		"ID"	"2533"
@@ -11568,10 +11499,8 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"29"
-		// Cost
 		
 		"AbilityManaCost"	"200"
 
@@ -11698,13 +11627,10 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"35"
-		// Cost
 		
 		"AbilityManaCost"	"120"
-		// Casting
 		
 		
 		"ID"	"2535"
@@ -11823,13 +11749,10 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"35"
-		// Cost
 		
 		"AbilityManaCost"	"120"
-		// Casting
 		
 		
 		"ID"	"2536"
@@ -12011,7 +11934,7 @@
 		
 		"BaseClass"	"item_datadriven"
 		"AbilityTextureName"	"item_custom/tea_bowl"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
@@ -12043,9 +11966,9 @@
 					"MODIFIER_PROPERTY_HEALTH_BONUS" "0" 			//血
 					"MODIFIER_PROPERTY_MANA_BONUS" "0"				//魔
 					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT" "10"	//回血
-					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE" "1.5" //回血%
+					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE" "0" //回血%
 					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT" "10" 	//回魔
-					"MODIFIER_PROPERTY_MANA_REGEN_PERCENTAGE" "1.5" 	//回魔%
+					"MODIFIER_PROPERTY_MANA_REGEN_PERCENTAGE" "0" 	//回魔%
 					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "0" //攻速
 					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "0"	//防禦
 					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT" "0"	//跑速
@@ -12067,13 +11990,10 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"4"
-		// Cost
 		
 		"AbilityManaCost"	"75"
-		// Casting
 		
 		
 		"ID"	"2510"
@@ -12184,11 +12104,9 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"28"
-		// Cost
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityManaCost"	"280"
 		"AbilityCastRange"	"700"
 		"AOERadius"		"400"
@@ -12260,11 +12178,9 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"70"
-		// Cost
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityManaCost"	"600"
 		"ID"	"4000"
 		"ItemQuality"	"component"
@@ -12388,15 +12304,12 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"30"
-		// Cost
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityManaCost"	"300"
 		"AbilityCastRange"	"2000"
 		"AOERadius"		"800"
-		// Casting
 		
 		"AbilityCastRange"	"2000"
 		"ID"	"2513"
@@ -12475,14 +12388,11 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"40"
-		// Cost
 		
 		"AbilityManaCost"	"400"
-		// Casting
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityCastRange"	"500"
 
 		"ID"	"2514"
@@ -12591,13 +12501,10 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"35"
-		// Cost
 		
 		"AbilityManaCost"	"75"
-		// Casting
 		"ID"	"2503"
 		"ItemQuality"	"component"
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
@@ -12667,7 +12574,6 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"60"
 		"AbilityCastRange"	"500"
@@ -12704,13 +12610,10 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"15"
-		// Cost
 		
 		"AbilityManaCost"	"110"
-		// Casting
 		
 		"ID"	"2801"
 		"ItemQuality"	"component"
@@ -12788,10 +12691,9 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"4"
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityCastRange"	"700"
 		"ID"	"2802"
 		"ItemQuality"	"component"
@@ -12996,10 +12898,9 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"10"
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityCastRange"	"600"
 		"AOERadius"		"300"
 		"ID"	"2565"
@@ -13043,10 +12944,9 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"2"
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityCastRange"	"700"
 		"ID"	"2566"
 		"ItemQuality"	"component"
@@ -13142,14 +13042,11 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"55"
-		// Cost
 		
 		"AbilityManaCost"	"100"
-		// Casting
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityCastRange"	"500"
 		"ID"	"2567"
 		"ItemQuality"	"component"
@@ -13254,14 +13151,11 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"55"
-		// Cost
 		
 		"AbilityManaCost"	"150"
-		// Casting
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityCastRange"	"700"
 		"ID"	"2719"
 		"ItemQuality"	"component"
@@ -13277,6 +13171,12 @@
 			{
 				"ScriptFile"	"items/Addon_Items/item_the_great_sword_of_soul.lua"
 				"Function"		"Shock2"
+			}
+			"Damage"
+			{
+				"Target"	"TARGET"
+				"Type"	"DAMAGE_TYPE_MAGICAL"
+				"Damage"	"1"
 			}
 		}
 		"Modifiers"
@@ -13430,13 +13330,10 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"60"
-		// Cost
-		
+		"AbilitySharedCooldown" "share_perceive_wine_hyper"
 		"AbilityManaCost"	"500"
-		// Casting
 		
 		"ID"	"2821"
 		"ItemQuality"	"component"
@@ -13523,13 +13420,10 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"60"
-		// Cost
-		
+		"AbilitySharedCooldown" "share_perceive_wine_hyper"
 		"AbilityManaCost"	"500"
-		// Casting
 		
 		"ID"	"2822"
 		"ItemQuality"	"component"
@@ -13616,13 +13510,10 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"60"
-		// Cost
-		
+		"AbilitySharedCooldown" "share_perceive_wine_hyper"
 		"AbilityManaCost"	"500"
-		// Casting
 		
 		"ID"	"2823"
 		"ItemQuality"	"component"
@@ -13710,13 +13601,10 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"60"
-		// Cost
-		
+		"AbilitySharedCooldown" "share_perceive_wine_hyper"
 		"AbilityManaCost"	"500"
-		// Casting
 		
 		"ID"	"2824"
 		"ItemQuality"	"component"
@@ -13848,14 +13736,11 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"40"
-		// Cost
 		
 		"AbilityManaCost"	"250"
-		// Casting
-		
+		"AbilityCastPoint"	"0.2"
 		"AbilityCastRange"	"800"
 		"ID"	"3085"
 		"ItemQuality"	"component"
@@ -13953,13 +13838,10 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"20"
-		// Cost
 		
 		"AbilityManaCost"	"250"
-		// Casting
 		
 		"AbilityCastRange"	"800"
 		"ID"	"3087"
@@ -14026,13 +13908,10 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"20"
-		// Cost
 		
 		"AbilityManaCost"	"250"
-		// Casting
 		
 		"AbilityCastRange"	"800"
 		"ID"	"3088"
@@ -14098,14 +13977,15 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		"AbilityCooldown"	"60"
+		"AbilityManaCost"	"500"
+		"AbilitySharedCooldown" "share_perceive_wine_hyper"
 		"SecretShop" "1"
 		"ID"	"2827"
 		"ItemQuality"	"component"
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
-		"ItemCost"	"7000"
+		"ItemCost"	"10000"
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
@@ -14157,31 +14037,9 @@
 				{
 					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "10"	//防禦
 					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"20"	//閃避
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "120" //攻速
-					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"   "150" //跑速
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "90" //攻速
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"   "90" //跑速
 				}
-			}
-			"Passive_insight_gem"
-			{
-				"Passive"          "1"  
-	            "IsHidden"      "1"
-	            "ThinkInterval"     "0.25"
-	            "OnIntervalThink"
-	            {
-	                "ApplyModifier"
-	                {
-	                    "Target"
-	                    {
-	                        "Center"    "CASTER"
-	                        "Radius"    "600"
-	                        "Teams" "DOTA_UNIT_TARGET_TEAM_ENEMY"
-	                        "Types" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_BASIC"
-	                        "Flags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
-	                    }
-	                    "ModifierName"      "modifier_truesight"
-	                    "Duration"      "0.50"
-	                }
-	            }
 			}
 		}
 	}
@@ -14199,7 +14057,6 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		// Time
 		
 		"AbilityCooldown"	"30"
 		

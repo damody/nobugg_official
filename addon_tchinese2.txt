@@ -140,7 +140,7 @@
 		"DOTA_Tooltip_Ability_item_S01" "肉"
 		
 		"DOTA_Tooltip_Ability_item_the_great_silver_armor" "銀伊予札白糸威胴丸具足"
-		"DOTA_Tooltip_Ability_item_the_great_silver_armor_Description" "裝甲+10，移動速度+150可疊加，攻擊速度+120% 有20% 機率閃躲攻擊。【使用】在10秒內獲得魔法免疫。"
+		"DOTA_Tooltip_Ability_item_the_great_silver_armor_Description" "裝甲+10，移動速度+90可疊加，攻擊速度+90% 有20% 機率閃躲攻擊。【使用】在10秒內獲得魔法免疫。"
 		
 		"DOTA_Tooltip_Ability_item_tea_bowl" "茶碗"
 		"DOTA_Tooltip_Ability_item_tea_bowl_Description" "每秒回復10點生命並增加150%回魔速度"
@@ -186,6 +186,9 @@
 
 		"DOTA_Tooltip_Ability_item_speed_clothes" "疾風衣"
 		"DOTA_Tooltip_Ability_item_speed_clothes_Description" "攻速+25% "
+		
+		"DOTA_Tooltip_Ability_item_insight_gem_s" "寶石碎片"
+		"DOTA_Tooltip_Ability_item_insight_gem_s_Description" "攜帶時可被動偵測到範圍600內隱形單位。<br />【使用】偵測1200內隱形部隊，並在使其現形10秒，死亡會消失。"
 
 		"DOTA_Tooltip_Ability_item_insight_gem" "洞察寶石"
 		"DOTA_Tooltip_Ability_item_insight_gem_Description" "攜帶時可被動偵測到範圍600內隱形單位。<br />【使用】偵測1200內隱形部隊，並在使其現形10秒。"
@@ -758,7 +761,7 @@
 		"DOTA_Tooltip_Ability_B33E"	"蛛網纏身"
 		"DOTA_Tooltip_Ability_B33E_Description"	"使目標敵軍被充滿劇毒的蛛網所纏，它將無法移動和攻擊，並且每秒受到150傷害，持續<font color=\"#5cb85c\">(1/2/3/4)</font>秒。 "
 		"DOTA_Tooltip_Ability_B33R"	"霧毒幻化"
-		"DOTA_Tooltip_Ability_B33R_Description"	"(被動)<br />增加(5/10/15/20)靈活。<br />(啟動)<br />使自身進入霧毒幻化，攻擊型態轉變為立即，並且增加200攻擊距離，額外獲得\"霧毒矢\"能力，每次攻擊可以造成<font color=\"#5cb85c\">(40/60/80/120)</font>範圍傷害，持續6秒。 "
+		"DOTA_Tooltip_Ability_B33R_Description"	"(被動)<br />增加(5/10/15/20)靈活。<br />(啟動)<br />使自身進入霧毒幻化，攻擊型態轉變為立即，並且增加200攻擊距離，額外獲得\"霧毒矢\"能力，每次攻擊可以造成<font color=\"#5cb85c\">(40/60/80/120)</font>範圍傷害，持續8秒。 "
 		"DOTA_Tooltip_Ability_B33T"	"蜘蛛纏身"
 		"DOTA_Tooltip_Ability_B33T_Description"	"對著目標敵軍釋放出劇毒蜘蛛纏繞敵人，使目標降低<font color=\"#5cb85c\">(50/60/70)% </font>移動速度與<font color=\"#5cb85c\">(100/150/200)% </font>攻擊速度，每0.5秒受到<font color=\"#5cb85c\">(75/100/125)</font>傷害，持續10秒。 "
 
@@ -796,7 +799,7 @@
 		"DOTA_Tooltip_Ability_A16E"	"血魄連結"
 		"DOTA_Tooltip_Ability_A16E_Description"	"使自身跟他建立一道連結，當敵軍受到傷害時，自身將回復等同該次傷害<font color=\"#5cb85c\">(20/35/50/65)% </font>的生命，並且在連結狀態下自身所受到的所有傷害減少<font color=\"#5cb85c\">(5/10/15/20)% </font>，持續8秒。"
 		"DOTA_Tooltip_Ability_A16R"	"血殤靈光"
-		"DOTA_Tooltip_Ability_A16R_Description"	"增加自身8% 移動速度以及<font color=\"#5cb85c\">(20/30/40/50)% </font>攻擊速度，並且當受到傷害時，可以使周圍的敵人失去等同於當次傷害<font color=\"#5cb85c\">(15/25/35/45)% </font>的生命。 "
+		"DOTA_Tooltip_Ability_A16R_Description"	"增加自身8% 移動速度以及<font color=\"#5cb85c\">(20/30/40/50)% </font>攻擊速度，並且當受到傷害時，可以使周圍500的敵人失去等同於當次傷害<font color=\"#5cb85c\">(25/45/65/85)% </font>的生命。 "
 		"DOTA_Tooltip_Ability_A16T"	"闇血敕令"
 		"DOTA_Tooltip_Ability_A16T_Description"	"對指定方向施展，召喚不斷爆發的血魂力量往前而去，每次爆發都可以對範圍內的敵人造成傷害並暈眩<font color=\"#f0ad4e\">(1.5/2.1/2.7)</font>秒。"
 		
@@ -915,7 +918,7 @@
 		"DOTA_Tooltip_Ability_C07E_old" "雷電桎梏"
 		"DOTA_Tooltip_Ability_C07E_old_Description" "綁住指定目標，讓它無法進行任何動作並每秒造成150點傷害。需持續施法，最多可持續<font color=\"#5cb85c\">(1/2/3/4)</font>秒。"
 		"DOTA_Tooltip_Ability_C07R_old" "雷霆閃電"
-		"DOTA_Tooltip_Ability_C07R_old_Description" "擊出扇狀的閃電，最多擊中8個敵人，每個敵人會受到<font color=\"#5cb85c\">(150/250/350/450)</font>傷害。"
+		"DOTA_Tooltip_Ability_C07R_old_Description" "擊出扇狀的閃電，最多擊中8個敵人，每個敵人會受到<font color=\"#5cb85c\">(300/400/500/600)</font>傷害。"
 		"DOTA_Tooltip_Ability_C07T_old" "雷神之怒"
 		"DOTA_Tooltip_Ability_C07T_old_Description" "在原地上空召喚出雷雲，雷雲每秒對範圍1000內的敵人打出一道<font color=\"#5cb85c\">(225/295/365)</font>點渾沌擴散傷害的閃電，並且在雷雲範圍內的所有敵人都會受到靜電影響而減少35% 的移動速度。持續<font color=\"#5cb85c\">(15/20/25)</font>秒。"
 		
@@ -1114,7 +1117,7 @@
 		"DOTA_Tooltip_Ability_A06T"  "赤炎之怒"
         "DOTA_Tooltip_Ability_A06T_Description" "獲得赤炎之怒的能力，在接下來20秒增加<font color=\"#5cb85c\">(100/150/180) </font>攻擊傷害 ，並且在持續時間內前7次攻擊可以獲得擴散效果，在擊中目標時連帶的對範圍550的其他敵人造成等同攻擊傷害100% 的傷害。 "
 		"DOTA_Tooltip_Ability_A06W_old"  "赤鬼之力"
-		"DOTA_Tooltip_Ability_A06W_old_Description" "解放自我來暫時獲得強大的赤鬼之力，增加<font color=\"#5cb85c\">(200/300/400/500)% </font>攻擊速度和<font color=\"#5cb85c\">(5/10/15/20)% </font>移動速度，但會受到50% 額外真實傷害，持續14秒。 "
+		"DOTA_Tooltip_Ability_A06W_old_Description" "解放自我來暫時獲得強大的赤鬼之力，增加<font color=\"#5cb85c\">(200/300/400/500)% </font>攻擊速度和<font color=\"#5cb85c\">(5/10/15/20)% </font>移動速度，但會受到70% 額外真實傷害，持續14秒。 "
 		"DOTA_Tooltip_Ability_A06E_old"	 "赤炎斬"
 		"DOTA_Tooltip_Ability_A06E_old_Description"	"將敵人擊退並暈擊<font color=\"#5cb85c\">(1.25/1.75/2.25/3)</font>秒，並造成<font color=\"#5cb85c\">(100/190/280/370)</font>傷害。 "
 		"DOTA_Tooltip_Ability_A06R_old"	 "炎驅戰魂"
@@ -1637,7 +1640,7 @@
 		"DOTA_Tooltip_Ability_B25E_old" "除魔經"
 		"DOTA_Tooltip_Ability_B25E_old_Description" "詠唱除魔經文打擊範圍<font color=\"#5cb85c\">(800)</font>的敵軍，每段經文造成<font color=\"#5cb85c\">(75/150/225/300)</font>真實傷害，持續2.5秒。 "
 		"DOTA_Tooltip_Ability_B25R_old" "死之手指"
-		"DOTA_Tooltip_Ability_B25R_old_Description" "以惡力將地圖上任一目標敵軍內外翻轉，給予嚴重的撕裂，造成<font color=\"#5cb85c\">(500/600/700/800)</font>的傷害並且暈眩1秒。 "
+		"DOTA_Tooltip_Ability_B25R_old_Description" "以惡力將地圖上任一目標敵軍內外翻轉，給予嚴重的撕裂，造成<font color=\"#5cb85c\">(500/600/700/800)</font>的傷害並且暈眩0.5秒。 "
 		"DOTA_Tooltip_Ability_B25T_old" "阿修羅地獄"
 		"DOTA_Tooltip_Ability_B25T_old_Description" "使指定<font color=\"#5cb85c\">(1000/1100/1200)</font>的範圍化成阿修羅地獄，每秒造成<font color=\"#5cb85c\">(400/600/1000)</font>傷害，持續<font color=\"#5cb85c\">(7/8/9)</font>秒。"
 
@@ -1671,9 +1674,9 @@
 		"DOTA_Tooltip_Ability_C22D" "嚴流"
 		"DOTA_Tooltip_Ability_C22D_Description" "讓自身的攻擊速度提升175% ，持續4秒。 "
 		"DOTA_Tooltip_Ability_C22W" "祕劍．燕巢"
-		"DOTA_Tooltip_Ability_C22W_Description" "暫時消失形體<font color=\"#5cb85c\">(1.0/1.7/2.4/3.1)</font>秒並對周圍敵人造成<font color=\"#5cb85c\">(150/300/450/600)</font>傷害，形體消失期間將不會受到任何傷害影響。 若啟動時武將處於嚴流的狀態，則造成的傷害無視魔法免疫。  "
+		"DOTA_Tooltip_Ability_C22W_Description" "暫時消失形體<font color=\"#5cb85c\">(2/3/4/5)</font>秒並對周圍敵人造成<font color=\"#5cb85c\">(150/300/450/600)</font>傷害，形體消失期間將不會受到任何傷害影響。 若啟動時武將處於嚴流的狀態，則造成的傷害無視魔法免疫。  "
 		"DOTA_Tooltip_Ability_C22E" "祕劍．飛燕"
-		"DOTA_Tooltip_Ability_C22E_Description" "對著<font color=\"#5cb85c\">(400/525/650/775)</font>距離的目標敵人斬出飛燕，造成<font color=\"#5cb85c\">(100/200/300/400)</font>傷害並使其暈眩1.5秒。若在單位暈眩時施展嚴流會將目標燕返回武將身邊，距離不能超過3000。 "
+		"DOTA_Tooltip_Ability_C22E_Description" "對著<font color=\"#5cb85c\">(500/625/750/875)</font>距離的目標敵人斬出飛燕，造成<font color=\"#5cb85c\">(100/200/300/400)</font>傷害並使其暈眩1.5秒。若在單位暈眩時施展嚴流會將目標燕返回武將身邊，距離不能超過3000。 "
 		"DOTA_Tooltip_Ability_C22R" "祕劍．燕閃"
 		"DOTA_Tooltip_Ability_C22R_Description" "增加攻擊距離<font color=\"#5cb85c\">(100/150/200/250)</font>，並有18% 機率閃躲攻擊。使用嚴流時有25% 機率造成<font color=\"#5cb85c\">(150/200/250/300)% </font>傷害。  "
 		"DOTA_Tooltip_Ability_C22T" "奧義．滅剎夢霞"
@@ -1728,7 +1731,7 @@
 		"DOTA_Tooltip_Ability_C19R_old"  "奇襲"
 		"DOTA_Tooltip_Ability_C19R_old_Description"	"傳送地圖上任意位置，需要5秒的施展時間，若被中斷則失效。"
 		"DOTA_Tooltip_Ability_C19T_old"  "不容侵犯"
-		"DOTA_Tooltip_Ability_C19T_old_Description" "有<font color=\"#5cb85c\">(35/45/55)% </font>機會閃避攻擊"	
+		"DOTA_Tooltip_Ability_C19T_old_Description" "有<font color=\"#5cb85c\">(30/40/50)% </font>機會閃避攻擊"	
 		
 		// 望月千代女
 		"DOTA_Tooltip_Ability_B16W"  "忍法．飛襲令"
