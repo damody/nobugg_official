@@ -1452,7 +1452,7 @@
 	    "DOTA_Tooltip_Ability_A34E"  "冰山之袭"
         "DOTA_Tooltip_Ability_A34E_Description" "以冰山轰击敌方部队，造成指定敌军<font color=\"#5cb85c\">(300/400/500/600)</font>伤害，以及分散开<font color=\"#5cb85c\">(100/200/300/400)</font>冰爆伤害。冰冷伤害可以降低部队的移动与攻击速度。持续5秒。"
 	    "DOTA_Tooltip_Ability_A34R"  "冰霜之息"
-        "DOTA_Tooltip_Ability_A34R_Description" "对着前方洒出一阵的冰霜，可以造成<font color=\"#5cb85c\">(100/200/300/400)</font>伤害，以及每秒<font color=\"#5cb85c\">(30/40/50/60)</font>伤害，持续6秒。"
+        "DOTA_Tooltip_Ability_A34R_Description" "对着前方洒出一阵的冰霜，可以造成<font color=\"#5cb85c\">(150/300/450/600)</font>伤害，以及每秒<font color=\"#5cb85c\">(30/40/50/60)</font>伤害，持续6秒。"
 	    "DOTA_Tooltip_Ability_A34T"  "急速冷却"
         "DOTA_Tooltip_Ability_A34T_Description" "使自身的所有技能的冷却时间马上结束，需要0.5秒的施法时间。"
 		// 阿松 旧版 11.2B
@@ -1461,7 +1461,7 @@
 	    "DOTA_Tooltip_Ability_A34E_old"  "冰山之袭"
         "DOTA_Tooltip_Ability_A34E_old_Description" "以冰山轰击敌方部队，造成指定敌军<font color=\"#5cb85c\">(300/400/500/600)</font>伤害，以及分散开<font color=\"#5cb85c\">(100/200/300/400)</font>冰爆伤害。冰冷伤害可以降低部队的移动与攻击速度。持续5秒。"
 	    "DOTA_Tooltip_Ability_A34R_old"  "冰霜之息"
-        "DOTA_Tooltip_Ability_A34R_old_Description" "对着前方洒出一阵的冰霜，可以造成<font color=\"#5cb85c\">(100/200/300/400)</font>伤害，以及每秒<font color=\"#5cb85c\">(30/40/50/60)</font>伤害，持续6秒。"
+        "DOTA_Tooltip_Ability_A34R_old_Description" "对着前方洒出一阵的冰霜，可以造成<font color=\"#5cb85c\">(300/400/500/600)</font>伤害，以及每秒<font color=\"#5cb85c\">(30/40/50/60)</font>伤害，持续6秒。"
 	    "DOTA_Tooltip_Ability_A34T_old"  "雪女的祝福"
         "DOTA_Tooltip_Ability_A34T_old_Description" "对着自身或者友军释放强大的冰之能量，能够增加<font color=\"#5cb85c\">(40/60/80)</font>点生命恢复以及<font color=\"#5cb85c\">(20/30/40)% </font>攻击力与<font color=\"#5cb85c\">(10/15/20)</font>点防御力，减少<font color=\"#5cb85c\">(30/40/50)% </font>魔法伤害，持续<font color=\"#5cb85c\">(30/40/50)</font>秒。"
 		
@@ -1493,7 +1493,7 @@
 		"DOTA_Tooltip_Ability_B01T_Description"	"能让攻击力获得伤害加成200% 的三段技法，持续<font color=\"#5cb85c\">(7/11/13)</font>秒。"
 		
 		"DOTA_Tooltip_Ability_B01W_old"	"狙击模式"
-		"DOTA_Tooltip_Ability_B01W_old_Description"	"转换为狙击状态，并且<font color=\"#5cb85c\">(2/3/4/5)</font>秒内无法取消。增加攻击距离至<font color=\"#5cb85c\">(950/1150/1350/1700)</font>但牺牲70% 跑速。"
+		"DOTA_Tooltip_Ability_B01W_old_Description"	"转换为狙击状态，并且<font color=\"#5cb85c\">(2/3/4/5)</font>秒内无法取消。增加攻击距离至<font color=\"#5cb85c\">(950/1150/1350/1600)</font>但牺牲70% 跑速。"
 		"DOTA_Tooltip_Ability_B01E_old"	"杂贺众"
 		"DOTA_Tooltip_Ability_B01E_old_Description"	"召唤杂贺众的同伴<font color=\"#5cb85c\">(2/3/4/5)</font>个来加入战斗。"
 		"DOTA_Tooltip_Ability_B01R_old"	"雨铁炮"
@@ -1776,3 +1776,4 @@
 		"DOTA_Tooltip_Ability_B16MMT_old_Description" "两秒内不攻击或发动技能将进入隐形状态。<br />当技能“忍法．召唤忍犬”等级4时自动领悟。"
 	}
 }
+

@@ -96,6 +96,7 @@
 		"BaseClass"	"ability_datadriven"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE"
 		"AbilityTextureName"	"custom/icon_128x128_29"
+		"AbilityCooldown"	"0.4"
 		// Precache
 		// -------------------------------------------------------------------------------------------------------------
 		"precache"
@@ -472,13 +473,21 @@
 		"LevelsBetweenUpgrades"	"6"
 		"Modifiers"
 		{
-			"modifier_blur_datadriven"
+			"modifier_C19T"
 			{
 				"Passive"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"%bonus_evasion"
 					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"%bonus_magic_def"
+				}
+			}
+			"modifier_ninja_cloth"
+			{
+				"IsHidden"	"1"
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"%bonus_evasion"	//閃避
 				}
 			}
 		}
@@ -509,14 +518,18 @@
 		"AbilityType"	"DOTA_ABILITY_TYPE_ULTIMATE"
 		"RequiredLevel"	"6"
 		"LevelsBetweenUpgrades"	"6"
+		"OnUpgrade"
+		{
+			
+		}
 		"Modifiers"
 		{
-			"modifier_blur_datadriven"
+			"modifier_ninja_cloth"
 			{
 				"Passive"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"%bonus_evasion"
+					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"%bonus_evasion"	//閃避
 				}
 			}
 		}

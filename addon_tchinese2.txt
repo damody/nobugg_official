@@ -1452,7 +1452,7 @@
 	    "DOTA_Tooltip_Ability_A34E"  "冰山之襲"
         "DOTA_Tooltip_Ability_A34E_Description" "以冰山轟擊敵方部隊，造成指定敵軍<font color=\"#5cb85c\">(300/400/500/600)</font>傷害，以及分散開<font color=\"#5cb85c\">(100/200/300/400)</font>冰爆傷害。冰冷傷害可以降低部隊的移動與攻擊速度。持續5秒。"
 	    "DOTA_Tooltip_Ability_A34R"  "冰霜之息"
-        "DOTA_Tooltip_Ability_A34R_Description" "對著前方灑出一陣的冰霜，可以造成<font color=\"#5cb85c\">(100/200/300/400)</font>傷害，以及每秒<font color=\"#5cb85c\">(30/40/50/60)</font>傷害，持續6秒。"
+        "DOTA_Tooltip_Ability_A34R_Description" "對著前方灑出一陣的冰霜，可以造成<font color=\"#5cb85c\">(150/300/450/600)</font>傷害，以及每秒<font color=\"#5cb85c\">(30/40/50/60)</font>傷害，持續6秒。"
 	    "DOTA_Tooltip_Ability_A34T"  "急速冷卻"
         "DOTA_Tooltip_Ability_A34T_Description" "使自身的所有技能的冷却時間馬上结束，需要0.5秒的施法時間。"
 		// 阿松 舊版 11.2B
@@ -1461,7 +1461,7 @@
 	    "DOTA_Tooltip_Ability_A34E_old"  "冰山之襲"
         "DOTA_Tooltip_Ability_A34E_old_Description" "以冰山轟擊敵方部隊，造成指定敵軍<font color=\"#5cb85c\">(300/400/500/600)</font>傷害，以及分散開<font color=\"#5cb85c\">(100/200/300/400)</font>冰爆傷害。冰冷傷害可以降低部隊的移動與攻擊速度。持續5秒。"
 	    "DOTA_Tooltip_Ability_A34R_old"  "冰霜之息"
-        "DOTA_Tooltip_Ability_A34R_old_Description" "對著前方灑出一陣的冰霜，可以造成<font color=\"#5cb85c\">(100/200/300/400)</font>傷害，以及每秒<font color=\"#5cb85c\">(30/40/50/60)</font>傷害，持續6秒。"
+        "DOTA_Tooltip_Ability_A34R_old_Description" "對著前方灑出一陣的冰霜，可以造成<font color=\"#5cb85c\">(300/400/500/600)</font>傷害，以及每秒<font color=\"#5cb85c\">(30/40/50/60)</font>傷害，持續6秒。"
 	    "DOTA_Tooltip_Ability_A34T_old"  "雪女的祝福"
         "DOTA_Tooltip_Ability_A34T_old_Description" "對著自身或者友軍釋放強大的冰之能量，能夠增加<font color=\"#5cb85c\">(40/60/80)</font>點生命恢復以及<font color=\"#5cb85c\">(20/30/40)% </font>攻擊力與<font color=\"#5cb85c\">(10/15/20)</font>點防禦力，減少<font color=\"#5cb85c\">(30/40/50)% </font>魔法傷害，持續<font color=\"#5cb85c\">(30/40/50)</font>秒。"
 		
@@ -1493,7 +1493,7 @@
 		"DOTA_Tooltip_Ability_B01T_Description"	"能讓攻擊力獲得傷害加成200% 的三段技法，持續<font color=\"#5cb85c\">(7/11/13)</font>秒。"
 		
 		"DOTA_Tooltip_Ability_B01W_old"	"狙擊模式"
-		"DOTA_Tooltip_Ability_B01W_old_Description"	"轉換為狙擊狀態，並且<font color=\"#5cb85c\">(2/3/4/5)</font>秒內無法取消。增加攻擊距離至<font color=\"#5cb85c\">(950/1150/1350/1700)</font>但犧牲70% 跑速。"
+		"DOTA_Tooltip_Ability_B01W_old_Description"	"轉換為狙擊狀態，並且<font color=\"#5cb85c\">(2/3/4/5)</font>秒內無法取消。增加攻擊距離至<font color=\"#5cb85c\">(950/1150/1350/1600)</font>但犧牲70% 跑速。"
 		"DOTA_Tooltip_Ability_B01E_old"	"雜賀眾"
 		"DOTA_Tooltip_Ability_B01E_old_Description"	"召喚雜賀眾的同伴<font color=\"#5cb85c\">(2/3/4/5)</font>個來加入戰鬥。"
 		"DOTA_Tooltip_Ability_B01R_old"	"雨鐵炮"

@@ -331,6 +331,7 @@
 		"MaxLevel"	"3"
 		"RequiredLevel"	"6"
 		"LevelsBetweenUpgrades"	"6"
+		"AbilityCooldown"	"1"
 		// Casting
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityCastPoint"	"0.4 0.4 0.4 0.4"
@@ -339,15 +340,15 @@
 		"precache"
 		{
 			"particle"	"particles/units/heroes/hero_medusa/medusa_base_attack.vpcf"
-			"particle"	"particles/c09/necronomicon_archer_projectile.vpcf"
-			"particle"	"particles/c09/necronomicon_archer_projectile.vpcf"
+			"particle"	"particles/units/heroes/hero_lina/lina_spell_laguna_blade_startpoint.vpcf"
+			"particle"	"particles/units/heroes/hero_lina/lina_spell_laguna_blade_startpoint.vpcf"
 			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_medusa.vsndevts"
 		}
 		"OnToggleOn"
 		{
 			"FireEffect"
 			{
-				"EffectName"	"particles/c09/necronomicon_archer_projectile.vpcf"
+				"EffectName"	"particles/units/heroes/hero_lina/lina_spell_laguna_blade_startpoint.vpcf"
 				"EffectAttachType"	"follow_origin"
 				"Target"	"CASTER"
 			}
@@ -361,7 +362,7 @@
 		{
 			"FireEffect"
 			{
-				"EffectName"	"particles/c09/necronomicon_archer_projectile.vpcf"
+				"EffectName"	"particles/units/heroes/hero_lina/lina_spell_laguna_blade_startpoint.vpcf"
 				"EffectAttachType"	"follow_origin"
 				"Target"	"CASTER"
 			}
@@ -763,8 +764,8 @@
 		"precache"
 		{
 			"particle"	"particles/units/heroes/hero_medusa/medusa_base_attack.vpcf"
-			"particle"	"particles/c09/necronomicon_archer_projectile.vpcf"
-			"particle"	"particles/c09/necronomicon_archer_projectile.vpcf"
+			"particle"	"particles/units/heroes/hero_lina/lina_spell_laguna_blade_startpoint.vpcf"
+			"particle"	"particles/units/heroes/hero_lina/lina_spell_laguna_blade_startpoint.vpcf"
 			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_medusa.vsndevts"
 		}
 		"OnProjectileHitUnit"
@@ -815,7 +816,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"arrow_count"	"3 4 6"
+				"arrow_count"	"3 5 7"
 			}
 			"02"
 			{
