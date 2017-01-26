@@ -483,12 +483,12 @@
 			"08"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"heal_percent"			"40 60 80"
+				"heal_percent"			"60 70 80"
 			}
 			"09"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"average_damage"		"60 90 120"
+				"average_damage"		"60 90 150"
 			}
 			// Extra
 			"10"
@@ -1086,7 +1086,7 @@
 			"08"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"heal_percent"			"40 60 80"
+				"heal_percent"			"60 70 80"
 			}
 			"09"
 			{

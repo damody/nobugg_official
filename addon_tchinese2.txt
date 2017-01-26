@@ -1391,7 +1391,7 @@
 	    "DOTA_Tooltip_Ability_A29R"  "衰心靈光"
 	    "DOTA_Tooltip_Ability_A29R_Description" "讓範圍800的敵人每秒失去<font color=\"#5cb85c\">(8/11/14/17)</font>的法力，使用技能時減緩25%移動速度並損失<font color=\"#5cb85c\">(20/40/60/80)</font>點法力。"
 	    "DOTA_Tooltip_Ability_A29T"  "兀鷹群"
-	    "DOTA_Tooltip_Ability_A29T_Description" "回復<font color=\"#5cb85c\">(350/550/750)</font>生命，並且召喚20個攻擊力為<font color=\"#5cb85c\">(60/90/120)</font>飛舞的兀鷹對著周圍的敵人發動攻擊，攻擊傷害的<font color=\"#5cb85c\">(40/60/80)% </font>將會補充英雄的生命，持續<font color=\"#5cb85c\">(30/35/40)</font>秒。"
+	    "DOTA_Tooltip_Ability_A29T_Description" "回復<font color=\"#5cb85c\">(350/550/750)</font>生命，並且召喚20個攻擊力為<font color=\"#5cb85c\">(60/90/150)</font>飛舞的兀鷹對著周圍的敵人發動攻擊，攻擊傷害的<font color=\"#5cb85c\">(60/70/80)% </font>將會補充英雄的生命，持續<font color=\"#5cb85c\">(30/35/40)</font>秒。"
 	    // 石田三成 11.2B
 	    "DOTA_Tooltip_Ability_A29W_old" "袖毒矢"
 	    "DOTA_Tooltip_Ability_A29W_old_Description" "將一枚淬毒的匕首射向敵方目標，造成<font color=\"#5cb85c\">(150/250/350/450)</font>點的啟始傷害，然後每1秒造成<font color=\"#5cb85c\">(15/20/25/30)</font>點的傷害，持續8秒。毒性會讓目標的攻擊速度和移動速減緩<font color=\"#5cb85c\">(10/15/20/25)% </font>。"
@@ -1400,7 +1400,7 @@
 	    "DOTA_Tooltip_Ability_A29R_old" "機智消磨"
 	    "DOTA_Tooltip_Ability_A29R_old_Description" "逐漸消減範圍<font color=\"#5cb85c\">(800/1000/1200/1400)</font>內敵方部隊的法力<font color=\"#5cb85c\">(16/32/48/64)</font>點。"
 	    "DOTA_Tooltip_Ability_A29T_old" "兀鷹群"
-	    "DOTA_Tooltip_Ability_A29T_old_Description" "招喚來攻擊力為<font color=\"#5cb85c\">(100/150/200)</font>的<font color=\"#5cb85c\">(14/17/20)</font>隻兀鷹，攻擊傷害的<font color=\"#5cb85c\">(40/60/80)% </font>將會補充英雄的生命，兀鷹會跟著施法者移動並主動攻擊範圍1100內的敵人。持續<font color=\"#5cb85c\">(42/45/48)</font>秒。"
+	    "DOTA_Tooltip_Ability_A29T_old_Description" "招喚來攻擊力為<font color=\"#5cb85c\">(100/150/200)</font>的<font color=\"#5cb85c\">(14/17/20)</font>隻兀鷹，攻擊傷害的<font color=\"#5cb85c\">(60/70/80)% </font>將會補充英雄的生命，兀鷹會跟著施法者移動並主動攻擊範圍1100內的敵人。持續<font color=\"#5cb85c\">(42/45/48)</font>秒。"
 		
 	    "DOTA_Tooltip_Ability_A30W"  "狼狩之印"
 	    "DOTA_Tooltip_Ability_A30W_Description" "召喚3隻無法控制的狼魂攻擊目標敵人，狼魂將會持續攻擊最多8秒並在時間內可以使你持續觀察目標。狼魂每次擊中都將削減目標12的法力 並且造成所削減的法力外加等同丹羽長秀智慧x0.5的額外傷害。隨技能等級提升狼魂將變的更強。"
@@ -1426,7 +1426,7 @@
         "DOTA_Tooltip_Ability_A31R_old" "嵐矢"
         "DOTA_Tooltip_Ability_A31R_old_Description" "對著600範圍內的目標射出嵐矢，造成<font color=\"#5cb85c\">(100/200/300/400)</font>點傷害並昏迷<font color=\"#5cb85c\">(0.5/1/1.5/2)</font>秒。"
         "DOTA_Tooltip_Ability_A31T_old" "五月雨"
-        "DOTA_Tooltip_Ability_A31T_old_Description" "能在攻擊時額外射出<font color=\"#5cb85c\">(3/4/6)</font>支箭。"
+        "DOTA_Tooltip_Ability_A31T_old_Description" "能在攻擊時額外射出<font color=\"#5cb85c\">(3/5/7)</font>支箭。"
 
 	    "DOTA_Tooltip_Ability_A32D"  "忍術．幽魄刀"
         "DOTA_Tooltip_Ability_A32D_Description" "攻擊時有20% 機率造成<font color=\"#5cb85c\">(2.0/2.3/2.6/2.9)</font>倍的傷害。"
@@ -1544,7 +1544,7 @@
 		
 		// 風魔小太郎 11.2B
 		"DOTA_Tooltip_Ability_B02W_old" "忍法．迷蹤步"
-		"DOTA_Tooltip_Ability_B02W_old_Description" "能夠隱形，並讓移動速度提昇<font color=\"#5cb85c\">(10/15/20/25)% </font>並持續<font color=\"#5cb85c\">(10/15/20/25)</font>秒。如果攻擊的話，隱形術即告失效，第一擊會造成<font color=\"#5cb85c\">(100/160/220/280)</font>的額外傷害。"
+		"DOTA_Tooltip_Ability_B02W_old_Description" "能夠隱形，並讓移動速度提昇<font color=\"#5cb85c\">(10/15/20/25)% </font>並持續<font color=\"#5cb85c\">(25/30/35/40)</font>秒。如果攻擊的話，隱形術即告失效，第一擊會造成<font color=\"#5cb85c\">(100/160/220/280)</font>的額外傷害。"
 		"DOTA_Tooltip_Ability_B02E_old" "忍法．熾烈之徑"
 		"DOTA_Tooltip_Ability_B02E_old_Description" "施展後在10秒內經過的地方都產生火焰，經過火焰的敵人每秒會受到<font color=\"#5cb85c\">(180/240/300/360)</font>點熾炎焚身式傷害。持續10秒。"
 		"DOTA_Tooltip_Ability_B02R_old" "忍法．十八方手裏劍"
