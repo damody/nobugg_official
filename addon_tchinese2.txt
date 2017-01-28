@@ -827,7 +827,7 @@
 		"DOTA_Tooltip_Ability_B34E_Description"	"向著指定方向造出一道平行的刺針之牆，所有踩過刺針之牆的敵人將會每秒受到<font color=\"#5cb85c\">(50/70/90/110)</font>的傷害並減慢<font color=\"#5cb85c\">(20/30/40/50)% </font>的移動速度，刺針之牆存在16秒，無視魔法免疫牽制。"
 		"DOTA_Tooltip_Ability_B34R"	"狂斬"
 		"DOTA_Tooltip_Ability_B34R_Description"	"施展之後將會增加<font color=\"#5cb85c\">(10/15/20/25)% </font>移動速度，並且攻擊時將有100% 的機率造成<font color=\"#5cb85c\">(1.6/2.0/2.4/2.8)</font>倍的傷害。持續15秒或是攻擊5次。 "
-		"DOTA_Tooltip_Ability_B34T_Description"	"每當使用技能或是物品時，將可以以自身為中心釋放一道震波，對周圍500的敵人造成<font color=\"#5cb85c\">(85/130/170)</font>傷害，並且減慢30% 的攻速與移動速度，持續<font color=\"#5cb85c\">(4.0/4.5/5.0)</font>秒。"
+		"DOTA_Tooltip_Ability_B34T_Description"	"每當使用技能或是物品時，將可以以自身為中心釋放一道震波，對周圍500的敵人造成<font color=\"#5cb85c\">(130/190/270)</font>傷害，並且減慢25% 的攻速與移動速度，持續<font color=\"#5cb85c\">(4.0/4.5/5.0)</font>秒。"
 		"DOTA_Tooltip_Ability_B34T"	"天目長嚎"		
 		
 		"DOTA_Tooltip_Ability_B34W_old"	"怒擊斧"
@@ -872,7 +872,7 @@
 		"DOTA_Tooltip_Ability_C10R"	"迴響劍"
 		"DOTA_Tooltip_Ability_C10R_Description"	"增加<font color=\"#5cb85c\">(15/25/35/45)</font>攻擊傷害， 每當擊中敵人時，可以連帶的對範圍485的敵人造成等同攻擊傷害<font color=\"#5cb85c\">(15/25/35/45)% </font>的傷害。 "
 		"DOTA_Tooltip_Ability_C10T"	"無相天圓"
-		"DOTA_Tooltip_Ability_C10T_Description"	"施展無相天圓，以自身為中心使大範圍的敵人減緩45% 移動速度，並在3秒後將所有緩速的敵人聚集到身旁，減緩移動速度的效果持續<font color=\"#5cb85c\">(6.0/7.5/9.0)</font>秒，並增加攻速100% 持續6秒，吸引的敵人距離不能超過3500。"
+		"DOTA_Tooltip_Ability_C10T_Description"	"施展無相天圓，以自身為中心使大範圍的敵人減緩45% 移動速度，並在3秒後將所有緩速的敵人聚集到身旁，減緩移動速度的效果持續<font color=\"#5cb85c\">(6.0/7.5/9.0)</font>秒，並增加攻速100% 持續6秒，吸引的敵人距離不能超過5500。"
 			
 		"DOTA_Tooltip_modifier_C10W"	"青龍波衝擊"
 		"DOTA_Tooltip_modifier_C10W_Description"	"移動速度降低"
@@ -900,7 +900,7 @@
 		"DOTA_Tooltip_Ability_C07R"	"雷霆閃電"
 		"DOTA_Tooltip_Ability_C07R_Description"	"召喚出扇形的閃電，擊中3個敵人，每個敵人會受到<font color=\"#5cb85c\">(180/320/460/600)</font>傷害，若沒有舉盾將對自己造成25% 最大生命傷害。"
 		"DOTA_Tooltip_Ability_C07T"	"雷神之怒"
-		"DOTA_Tooltip_Ability_C07T_Description"	"在原地上空召喚出雷雲，雷雲每秒會自動對範圍1400內的敵人打出<font color=\"#5cb85c\">(225/310/400)</font>真實傷害的擴散閃電，並且在雷雲範圍內的所有敵人都會受到靜電影響，減少35% 的移動速度，無法回復生命。雷雲持續<font color=\"#5cb85c\">(15/17/19)</font>秒。 "
+		"DOTA_Tooltip_Ability_C07T_Description"	"在原地上空召喚出雷雲，雷雲每秒會自動對範圍1400內的敵人打出<font color=\"#5cb85c\">(225/295/365)</font>真實傷害的擴散閃電，並且在雷雲範圍內的所有敵人都會受到靜電影響，減少35% 的移動速度，無法回復生命。雷雲持續<font color=\"#5cb85c\">(15/17/19)</font>秒。 "
 		
 		
 		"DOTA_Tooltip_modifier_C07E"	"雷電桎梏"
@@ -1144,7 +1144,7 @@
         "DOTA_Tooltip_Ability_A07R_old"  "碎擊槍"
 		"DOTA_Tooltip_Ability_A07R_old_Description" "每當擊中敵人時，有36% 造成等同攻擊傷害<font color=\"#5cb85c\">(1.4/1.6/1.8/2)</font>倍傷害。 "
 		"DOTA_Tooltip_Ability_A07T_old"  "戰國最強．啟動"
-		"DOTA_Tooltip_Ability_A07T_old_Description" "擁有戰國最強的力量，增加2.25倍基礎攻速，增加60攻擊傷害並魔法免疫，普攻造成範圍400的100% 混沌擴散，可持續<font color=\"#5cb85c\">(15/20/25)</font>秒。 "
+		"DOTA_Tooltip_Ability_A07T_old_Description" "擁有戰國最強的力量，增加2.25倍基礎攻速並魔法免疫，普攻造成範圍400的100% 混沌擴散，可持續<font color=\"#5cb85c\">(15/20/25)</font>秒。 "
 		
 
 		"DOTA_Tooltip_Ability_A08W"  "碎顱打擊"
@@ -1389,7 +1389,7 @@
 	    "DOTA_Tooltip_Ability_A29E"  "深淵之握"
 		"DOTA_Tooltip_Ability_A29E_Description" "來自深淵的鬼手從地面竄出，使目標敵軍在<font color=\"#5cb85c\">(1/1.4/1.8/2)</font>秒的時間內無法移動和攻擊，而且每秒受到<font color=\"#5cb85c\">(75/150/225/300)</font>點傷害。"
 	    "DOTA_Tooltip_Ability_A29R"  "衰心靈光"
-	    "DOTA_Tooltip_Ability_A29R_Description" "讓範圍800的敵人每秒失去<font color=\"#5cb85c\">(8/11/14/17)</font>的法力，使用技能時減緩25%移動速度並損失<font color=\"#5cb85c\">(20/40/60/80)</font>點法力。"
+	    "DOTA_Tooltip_Ability_A29R_Description" "讓範圍<font color=\"#5cb85c\">(1400)</font>的敵人每秒失去<font color=\"#5cb85c\">(8/11/14/17)</font>的法力，使用技能時減緩25%移動速度並損失<font color=\"#5cb85c\">(60/80/100/120)</font>點法力。"
 	    "DOTA_Tooltip_Ability_A29T"  "兀鷹群"
 	    "DOTA_Tooltip_Ability_A29T_Description" "回復<font color=\"#5cb85c\">(350/550/750)</font>生命，並且召喚20個攻擊力為<font color=\"#5cb85c\">(60/90/150)</font>飛舞的兀鷹對著周圍的敵人發動攻擊，攻擊傷害的<font color=\"#5cb85c\">(60/70/80)% </font>將會補充英雄的生命，持續<font color=\"#5cb85c\">(30/35/40)</font>秒。"
 	    // 石田三成 11.2B
@@ -1398,7 +1398,7 @@
 	    "DOTA_Tooltip_Ability_A29E_old" "老樹盤根"
 	    "DOTA_Tooltip_Ability_A29E_old_Description" "讓樹根從地面竄出抓住目標，每秒造成<font color=\"#5cb85c\">(50/55/60/65)</font>點傷害並無法攻擊及移動，持續<font color=\"#5cb85c\">(3/4/5/6)</font>秒。"
 	    "DOTA_Tooltip_Ability_A29R_old" "機智消磨"
-	    "DOTA_Tooltip_Ability_A29R_old_Description" "逐漸消減範圍<font color=\"#5cb85c\">(800/1000/1200/1400)</font>內敵方部隊的法力<font color=\"#5cb85c\">(16/32/48/64)</font>點。"
+	    "DOTA_Tooltip_Ability_A29R_old_Description" "逐漸消減範圍<font color=\"#5cb85c\">(1400)</font>內敵方部隊的法力<font color=\"#5cb85c\">(16/32/48/64)</font>點。"
 	    "DOTA_Tooltip_Ability_A29T_old" "兀鷹群"
 	    "DOTA_Tooltip_Ability_A29T_old_Description" "招喚來攻擊力為<font color=\"#5cb85c\">(100/150/200)</font>的<font color=\"#5cb85c\">(14/17/20)</font>隻兀鷹，攻擊傷害的<font color=\"#5cb85c\">(60/70/80)% </font>將會補充英雄的生命，兀鷹會跟著施法者移動並主動攻擊範圍1100內的敵人。持續<font color=\"#5cb85c\">(42/45/48)</font>秒。"
 		
@@ -1463,7 +1463,7 @@
 	    "DOTA_Tooltip_Ability_A34R_old"  "冰霜之息"
         "DOTA_Tooltip_Ability_A34R_old_Description" "對著前方灑出一陣的冰霜，可以造成<font color=\"#5cb85c\">(300/400/500/600)</font>傷害，以及每秒<font color=\"#5cb85c\">(30/40/50/60)</font>傷害，持續6秒。"
 	    "DOTA_Tooltip_Ability_A34T_old"  "雪女的祝福"
-        "DOTA_Tooltip_Ability_A34T_old_Description" "對著自身或者友軍釋放強大的冰之能量，能夠增加<font color=\"#5cb85c\">(40/60/80)</font>點生命恢復以及<font color=\"#5cb85c\">(20/30/40)% </font>攻擊力與<font color=\"#5cb85c\">(10/15/20)</font>點防禦力，減少<font color=\"#5cb85c\">(30/40/50)% </font>魔法傷害，持續<font color=\"#5cb85c\">(30/40/50)</font>秒。"
+        "DOTA_Tooltip_Ability_A34T_old_Description" "對著自身或者友軍釋放強大的冰之能量，能夠增加<font color=\"#5cb85c\">(40/60/80)</font>點生命恢復以及<font color=\"#5cb85c\">(20/30/40)% </font>攻擊力與<font color=\"#5cb85c\">(20/25/30)</font>點防禦力，每秒回復<font color=\"#5cb85c\">(30/40/50) </font>魔力，減少<font color=\"#5cb85c\">(30/40/50)% </font>魔法傷害，持續50秒。"
 		
 	    "DOTA_Tooltip_Ability_A35W"  "焰襲"
         "DOTA_Tooltip_Ability_A35W_Description" "化身為爆裂的怒焰朝著指定地點衝鋒而去，可以對路徑上的所有敵人造成<font color=\"#5cb85c\">(200/300/400/500)</font>傷害。"
@@ -1584,7 +1584,7 @@
 		"DOTA_Tooltip_Ability_B05R" "三矢之訓"
 		"DOTA_Tooltip_Ability_B05R_Description" "【被動】讓全戰場友軍的裝甲提升<font color=\"#5cb85c\">(1/2/3/4)</font>護甲。<br />【啟動】以雷電術衝擊目標敵人，中斷動作並造成<font color=\"#5cb85c\">(100/200/300/400)</font>+自身智慧×2的傷害。"
 		"DOTA_Tooltip_Ability_B05T" "氣霸西國"
-		"DOTA_Tooltip_Ability_B05T_Description" "釋放出霸氣，讓範圍600內的敵人造成<font color=\"#5cb85c\">(700/900/1100)</font>傷害，並造成<font color=\"#5cb85c\">(1.5/2/2.5)</font>秒暈眩。"
+		"DOTA_Tooltip_Ability_B05T_Description" "釋放出霸氣，讓範圍600內的敵人造成<font color=\"#5cb85c\">(900/1200/1500)</font>傷害，並造成<font color=\"#5cb85c\">(1.5/2/2.5)</font>秒暈眩。"
 		
 		"DOTA_Tooltip_Ability_B05W_old" "鏈鎖閃電"
 		"DOTA_Tooltip_Ability_B05W_old_Description" "丟出一道閃電束在<font color=\"#5cb85c\">(9/11/13/15)</font>個敵人之間彈跳，造成<font color=\"#5cb85c\">(250/350/450/550)</font>傷害。"
@@ -1614,7 +1614,7 @@
 		"DOTA_Tooltip_Ability_B06R_old" "心眼"
 		"DOTA_Tooltip_Ability_B06R_old_Description" "有<font color=\"#5cb85c\">(8/16/24/32)% </font>機會在戰鬥中閃避攻擊"
 		"DOTA_Tooltip_Ability_B06T_old" "日本第一兵"
-		"DOTA_Tooltip_Ability_B06T_old_Description" "轉化為速度過人的日本第一兵，基礎攻速從1.8變成0.9秒，增加<font color=\"#5cb85c\">(20/30/40)</font>攻擊力，增加<font color=\"#5cb85c\">(10/15/20)</font>護甲，獲得<font color=\"#5cb85c\">(500/750/1000)</font>額外生命值，使自身移動速度加快100% 。持續<font color=\"#5cb85c\">(40/45/50)</font>秒。"
+		"DOTA_Tooltip_Ability_B06T_old_Description" "轉化為速度過人的日本第一兵，基礎攻速從1.8變成0.9秒，增加<font color=\"#5cb85c\">(10/15/20)</font>護甲，獲得<font color=\"#5cb85c\">(500/750/1000)</font>額外生命值，使自身移動速度加快100% 。持續<font color=\"#5cb85c\">(40/45/50)</font>秒。"
 
 		"DOTA_Tooltip_Ability_B07W" "星瀑"
 		"DOTA_Tooltip_Ability_B07W_Description" "呼叫無數流星降落在指定區域，每波流星造成40傷害。總共可降下10波。<br /><font color=\"#cc0000\">需維持施法</font>"
@@ -1655,7 +1655,7 @@
 		"DOTA_Tooltip_Ability_B32E" "神閃"
 		"DOTA_Tooltip_Ability_B32E_Description" "化為一道冰徑橫貫到指定地點，可以對一路上的所有敵人造成<font color=\"#5cb85c\">(100/200/300/400)</font>的傷害並且使他們冰凍<font color=\"#5cb85c\">(0.5/1.0/1.5/2.0)</font>秒。"
 		"DOTA_Tooltip_Ability_B32R" "神陣"
-		"DOTA_Tooltip_Ability_B32R_Description" "永久提升<font color=\"#5cb85c\">(4/8/12/16)</font>的力量，並且當被攻擊時，可以以自身為中心召喚一場冰風暴擊打周圍的敵人，對他們造成120傷害並回復自身40法力，此效果每<font color=\"#5cb85c\">(10/8/6/4)</font>秒最多發動一次。 "
+		"DOTA_Tooltip_Ability_B32R_Description" "永久提升<font color=\"#5cb85c\">(4/8/12/16)</font>的力量，並且當被攻擊時，可以以自身為中心召喚一場冰風暴擊打周圍的敵人，對他們造成480魔法傷害並回復自身40法力，此效果每<font color=\"#5cb85c\">(10/8/6/4)</font>秒最多發動一次。 "
 		"DOTA_Tooltip_Ability_B32T" "毘沙門天"
 		"DOTA_Tooltip_Ability_B32T_Description" "得到威力強大的毘沙門天之力量，具有20% 額外真實傷害以及增加<font color=\"#5cb85c\">(50/90/130)</font>攻擊傷害 、基礎攻速從1.8變為1.4，並且獲得可以施放神烈的能力。可持續30秒。 "
 
