@@ -69,6 +69,7 @@
 		"DOTA_Tooltip_Ability_war_magic_treecut" "砍树战法"
 		"DOTA_Tooltip_Ability_war_magic_treecut_Description"	"砍掉范围500的树"
 		"DOTA_Tooltip_Ability_forest_soldier_W" "绑人"
+		"DOTA_Tooltip_Ability_forest_soldier_W_Description" "绑人1秒，对魔免单位0.5秒"
 		"DOTA_Tooltip_Ability_forest_soldier_E" "隐形"
 		"DOTA_Tooltip_Ability_forest_soldier_R" "爆击"
 		"DOTA_Tooltip_Ability_forest_caster_W" "退魔击"
@@ -78,6 +79,7 @@
 		"DOTA_Tooltip_Ability_great_sword_of_disease_E" "吸魔"
 		"DOTA_Tooltip_Ability_great_sword_of_disease_R" "疫病云"
 		"DOTA_Tooltip_Ability_great_sword_of_disease_D" "绑人"
+		"DOTA_Tooltip_Ability_great_sword_of_disease_D_Description" "绑人2秒"
 		"DOTA_Tooltip_Ability_great_sword_of_disease_T" "坏灭箭"
 		"DOTA_Tooltip_Ability_attribute_bonus" "属性附加"
 		"DOTA_Tooltip_Ability_healing_totem" "回复结界"
@@ -801,7 +803,7 @@
 		"DOTA_Tooltip_Ability_A16E"	"血魄连结"
 		"DOTA_Tooltip_Ability_A16E_Description"	"使自身跟他建立一道连结，当敌军受到伤害时，自身将回复等同该次伤害<font color=\"#5cb85c\">(20/35/50/65)% </font>的生命，并且在连结状态下自身所受到的所有伤害减少<font color=\"#5cb85c\">(5/10/15/20)% </font>，持续8秒。"
 		"DOTA_Tooltip_Ability_A16R"	"血殇灵光"
-		"DOTA_Tooltip_Ability_A16R_Description"	"增加自身8% 移动速度以及<font color=\"#5cb85c\">(20/30/40/50)% </font>攻击速度，并且当受到伤害时，可以使周围500的敌人失去等同于当次伤害<font color=\"#5cb85c\">(25/45/65/85)% </font>的生命。 "
+		"DOTA_Tooltip_Ability_A16R_Description"	"增加自身8% 移动速度以及<font color=\"#5cb85c\">(20/30/40/50)% </font>攻击速度，并且当受到伤害时，可以使周围500的敌人失去等同于当次伤害<font color=\"#5cb85c\">(35/45/55/65)% </font>的生命。 "
 		"DOTA_Tooltip_Ability_A16T"	"闇血敕令"
 		"DOTA_Tooltip_Ability_A16T_Description"	"对指定方向施展，召唤不断爆发的血魂力量往前而去，每次爆发都可以对范围内的敌人造成伤害并晕眩<font color=\"#f0ad4e\">(1.5/2.1/2.7)</font>秒。"
 		
@@ -1036,7 +1038,7 @@
 		"DOTA_Tooltip_Ability_B15E_old"	"烈焰箭"
 		"DOTA_Tooltip_Ability_B15E_old_Description"	"启动之后弓箭附加<font color=\"#5cb85c\">(40/80/120/160)</font>魔法伤害，对建筑物造成50% 伤害，可附加于多重箭，每次攻击消耗8点魔力。"
 		"DOTA_Tooltip_Ability_B15R_old"	"巨人之外皮"
-		"DOTA_Tooltip_Ability_B15R_old_Description"	"减少<font color=\"#5cb85c\">(50/100/150/200)</font>点物理伤害。"
+		"DOTA_Tooltip_Ability_B15R_old_Description"	"减少<font color=\"#5cb85c\">(40/80/120/160)</font>点物理伤害。"
 		"DOTA_Tooltip_Ability_B15T_old"	"多重箭"
 		"DOTA_Tooltip_Ability_B15T_old_Description"	"额外增加<font color=\"#5cb85c\">(3/4/5)</font>只箭。"
 		
@@ -1200,7 +1202,7 @@
 		"DOTA_Tooltip_Ability_A13R"  "伊贺忍术流"
 		"DOTA_Tooltip_Ability_A13R_Description"	"有11% 的机会闪避攻击与<font color=\"#5cb85c\">(10/14/18/22)% </font>机率造成三倍的伤害。 "
 		"DOTA_Tooltip_Ability_A13T"  "忍法密传．隐斩"
-		"DOTA_Tooltip_Ability_A13T_Description"	"以高速在指定地点移动，将会伤害身处其中的敌人，每秒可以发动32道隐斩，每道隐斩造成<font color=\"#5cb85c\">(75/100/125)</font>伤害，使用时隐形可继续动作，持续4秒。 "
+		"DOTA_Tooltip_Ability_A13T_Description"	"以高速在指定地点移动，将会伤害身处其中的敌人，每秒可以发动32道隐斩，每道隐斩造成<font color=\"#5cb85c\">(65/90/115)</font>伤害，使用时隐形可继续动作，持续4秒。 "
 		
 		"DOTA_Tooltip_Ability_A13W_old"	"忍法．迷踪步"
 		"DOTA_Tooltip_Ability_A13W_old_Description"	"进入隐形状态，提升<font color=\"#5cb85c\">(10/15/20/25)% </font>的移动速度或是使用技能即会现身，现身的第一击可以额外造成<font color=\"#5cb85c\">(100/200/300/400)</font>伤害，隐形最多维持20秒。"
@@ -1209,7 +1211,7 @@
 		"DOTA_Tooltip_Ability_A13R_old"	"忍法．分身之术"
 		"DOTA_Tooltip_Ability_A13R_old_Description"	"去除掉身上所有的法术效果，创造出<font color=\"#5cb85c\">(1/2/3/4)</font>个20秒的分身来攻击敌人，分身有10% 攻击力。 "
 		"DOTA_Tooltip_Ability_A13T_old"	"忍法密传．隐斩"
-		"DOTA_Tooltip_Ability_A13T_old_Description"	"以高速在指定地点移动，将会伤害身处其中的敌人，每秒可以发动32道隐斩，每道隐斩造成<font color=\"#5cb85c\">(75/100/125)</font>伤害，使用时无敌但无法动作，持续4秒。 "
+		"DOTA_Tooltip_Ability_A13T_old_Description"	"以高速在指定地点移动，将会伤害身处其中的敌人，每秒可以发动32道隐斩，每道隐斩造成<font color=\"#5cb85c\">(65/90/115)</font>伤害，使用时无敌但无法动作，持续4秒。 "
 		
 	    "DOTA_Tooltip_Ability_A14D"  "纯灵"
 	    "DOTA_Tooltip_Ability_A14D_Description" "移动的时候将不会被阻挡，并且有80% 的机率闪避攻击。"

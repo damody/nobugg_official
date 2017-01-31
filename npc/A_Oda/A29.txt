@@ -359,7 +359,15 @@
 				"Aura_Teams"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 				"Aura_Types"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_CUSTOM"
 				"Flags" "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
-				"Priority" "MODIFIER_PRIORITY_ULTRA"
+				"ThinkInterval"	"1.0"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+					  	"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A29_Ishida_Mitsunari.lua"
+						"Function"		"A29R_debuff"
+					}
+				}
 				// for testing using:
 				// "Aura_ApplyToCaster"	"1" 
 				"Aura_ApplyToCaster"	"0"
@@ -371,11 +379,11 @@
 			"modifier_A29R_2"
 			{
 				"Duration"	"1.00"
-				"IsBuff"	"1"
+				"IsDebuff"	"1"
 				"EffectName"		"particles/units/heroes/hero_bane/bane_enfeeble.vpcf"
 				"EffectAttachType"	"follow_origin"
 				"Priority" "MODIFIER_PRIORITY_ULTRA"
-
+				"Flags" "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 				"Properties"
 				{
 					//"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE"	"3"
@@ -401,6 +409,7 @@
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"StatusEffectName"		"particles/status_fx/status_effect_frost_lich.vpcf"
 				"StatusEffectPriority"	"10"
+				"Flags" "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 				"Priority" "MODIFIER_PRIORITY_ULTRA"
 				"Properties"
 				{
@@ -986,7 +995,15 @@
 				"Aura_Radius"	"%radius"
 				"Aura_Teams"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 				"Aura_Types"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-				
+				"ThinkInterval"	"1.0"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+					  	"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A29_Ishida_Mitsunari.lua"
+						"Function"		"A29R_old_debuff"
+					}
+				}
 				"Aura_ApplyToCaster"	"0"
 			}
 
