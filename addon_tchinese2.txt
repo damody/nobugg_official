@@ -407,7 +407,7 @@
 		"DOTA_Tooltip_Ability_item_ronin_jitte_2_Description" "攻擊傷害+14，力量+20，法力+600。<br />【使用】對目標造成500+自身法力上限17% 的傷害。"
 
 		"DOTA_Tooltip_Ability_item_sakabatou" "逆刃刀"
-		"DOTA_Tooltip_Ability_item_sakabatou_Description" "攻擊傷害+35，攻速+30% 。攻擊時11% 機率擊暈0.8秒。<br /><font color=\"#cc0000\">機率擊暈不疊加</font>"
+		"DOTA_Tooltip_Ability_item_sakabatou_Description" "攻擊傷害+35，攻速+30% 。攻擊時11% 機率擊暈0.8秒。<br /><font color=\"#cc0000\">機率擊暈不疊加，對魔免單位擊暈0.2秒</font>"
 
 		"DOTA_Tooltip_Ability_item_glass_mitsutomo" "琉璃光姬"
 		"DOTA_Tooltip_Ability_item_glass_mitsutomo_Description" "智慧+10， 法力+400。每秒回復1% 生命。增加7% 移動速度。<br /><font color=\"#5bc0de\">【使用】創造一個療癒結界，每秒回復結界當中友軍2% 生命值，持續15秒。</font>"
@@ -569,7 +569,7 @@
 		"DOTA_Tooltip_Ability_item_the_sword_of_kaminaobi_Description" "攻擊傷害+50，力量+15，全能力+10。<br />【使用】指定700距離內的目標，瞬間移動到目前身旁。"
 
 		"DOTA_Tooltip_Ability_item_raikiri" "雷切"
-		"DOTA_Tooltip_Ability_item_raikiri_Description" "攻擊傷害+80，攻速+30% 。<font color=\"#5bc0de\">攻擊時16% 機率打出分岔閃電</font>，對最多8個敵人造成400傷害。<br /><font color=\"#cc0000\">法球效果，不可與其他法球並存，對魔免無效。</font>"
+		"DOTA_Tooltip_Ability_item_raikiri_Description" "攻擊傷害+80，攻速+30% 。<font color=\"#5bc0de\">攻擊時16% 機率打出分岔閃電</font>，對最多8個敵人造成400傷害。 <font color=\"#ff0000\">法球效果，不可與其他法球並存，對魔免無效。</font>"
 
 		"DOTA_Tooltip_Ability_item_ninja_cloth" "忍者裝束"
 		"DOTA_Tooltip_Ability_item_ninja_cloth_Description" "護甲+6，全能力+10，攻速+25% ，<font color=\"#5bc0de\">25% 機率閃避攻擊。</font>"
@@ -1119,7 +1119,7 @@
 		"DOTA_Tooltip_Ability_A06R"	 "赤焰流"
 		"DOTA_Tooltip_Ability_A06R_Description" "增加自身及周圍友軍<font color=\"#5cb85c\">(5/9/13/17)% </font>移動速度 ，並且每攻擊5次便可以獲得1次「釋放怒焰」的能力，對指定方向噴出扇狀火焰，使敵人受到<font color=\"#5cb85c\">(235/315/395/475)</font>傷害。 "
 		"DOTA_Tooltip_Ability_A06T"  "赤炎之怒"
-        "DOTA_Tooltip_Ability_A06T_Description" "獲得赤炎之怒的能力，在接下來20秒增加<font color=\"#5cb85c\">(100/150/180) </font>攻擊傷害 ，並且在持續時間內前7次攻擊可以獲得擴散效果，在擊中目標時連帶的對範圍550的其他敵人造成等同攻擊傷害100% 的傷害。 "
+        "DOTA_Tooltip_Ability_A06T_Description" "獲得赤炎之怒的能力，在接下來20秒增加<font color=\"#5cb85c\">(100/150/180) </font>攻擊傷害 ，並且在持續時間內前7次攻擊可以獲得擴散效果，在擊中目標時連帶的對範圍550的其他敵人造成等同攻擊傷害50% 的真實傷害。 "
 		"DOTA_Tooltip_Ability_A06W_old"  "赤鬼之力"
 		"DOTA_Tooltip_Ability_A06W_old_Description" "解放自我來暫時獲得強大的赤鬼之力，增加<font color=\"#5cb85c\">(200/300/400/500)% </font>攻擊速度和<font color=\"#5cb85c\">(5/10/15/20)% </font>移動速度，但會受到70% 額外真實傷害，持續14秒。 "
 		"DOTA_Tooltip_Ability_A06E_old"	 "赤炎斬"
@@ -1131,7 +1131,7 @@
 		"DOTA_Tooltip_Ability_A07D"  "奮起"
 		"DOTA_Tooltip_Ability_A07D_Description" "使自身回復 4% 生命值並且提升攻速<font color=\"#5cb85c\">(60/70/80/90/100)% </font>，持續3秒。 "
 		"DOTA_Tooltip_Ability_A07W"  "毫髮無傷"
-		"DOTA_Tooltip_Ability_A07W_Description" "施展後能無視所有物理傷害，並且可以吸收法術傷害轉化為自身的生命值。持續<font color=\"#5cb85c\">(1/2/3/4)</font>秒。 "
+		"DOTA_Tooltip_Ability_A07W_Description" "施展後能無視所有物理傷害，並且可以吸收其它屬性傷害轉化為自身的生命值。持續<font color=\"#5cb85c\">(1/2/3/4)</font>秒。 "
 		"DOTA_Tooltip_Ability_A07E"  "赤雷擊"
 		"DOTA_Tooltip_Ability_A07E_Description" "使用手上的巨槍猛力槍擊地面，對周圍的敵人造成<font color=\"#5cb85c\">(150/250/350/450)</font>傷害，並且使他們減緩75% 移動速度，持續<font color=\"#5cb85c\">(1.0/1.7/2.4/3.1)</font>秒。 "
         "DOTA_Tooltip_Ability_A07R"  "碎擊槍"
@@ -1140,7 +1140,7 @@
 		"DOTA_Tooltip_Ability_A07T_Description" "擁有戰國最強的力量，增加2倍基礎攻速，增加60攻擊傷害以及115移動速度，減少60% 魔法傷害，\"奮起\"的效果變為雙倍。可持續<font color=\"#5cb85c\">(20/23/26)</font>秒。 "
 
 		"DOTA_Tooltip_Ability_A07W_old"  "毫髮無傷"
-		"DOTA_Tooltip_Ability_A07W_old_Description" "施展後能無視所有物理傷害但是必須犧牲移動速度40% ，並且可以吸收法術傷害轉化為自身的生命值。持續<font color=\"#5cb85c\">(3/4/5/6)</font>秒。 "
+		"DOTA_Tooltip_Ability_A07W_old_Description" "施展後能無視所有物理傷害但是必須犧牲移動速度40% ，並且可以吸收其它屬性傷害轉化為自身的生命值。持續<font color=\"#5cb85c\">(3/4/5/6)</font>秒。 "
 		"DOTA_Tooltip_Ability_A07E_old"  "赤雷擊"
 		"DOTA_Tooltip_Ability_A07E_old_Description" "使用手上的巨槍猛力槍擊敵人，對敵人造成<font color=\"#5cb85c\">(150/250/350/450)</font>傷害，並暈眩<font color=\"#5cb85c\">(0.5/1/1.5/2)</font>秒。 "
         "DOTA_Tooltip_Ability_A07R_old"  "碎擊槍"
@@ -1358,7 +1358,7 @@
 	    "DOTA_Tooltip_Ability_A27R_old" "武者之道"
 	    "DOTA_Tooltip_Ability_A27R_old_Description" "攻擊時有20%的機會造成<font color=\"#5cb85c\">(1.8/2.2/2.6/3.0)</font>倍傷害，並有<font color=\"#5cb85c\">(4/8/12/16)% </font>的機會閃避攻擊。"
 	    "DOTA_Tooltip_Ability_A27T_old" "破竹之勢"
-	    "DOTA_Tooltip_Ability_A27T_old_Description" "創造出<font color=\"#5cb85c\">(2/3/4)</font>個100% 攻擊力的分身，並除掉身上的所有法術效果。分身須承受2倍的傷害，持續28秒。"
+	    "DOTA_Tooltip_Ability_A27T_old_Description" "創造出<font color=\"#5cb85c\">(3/4/5)</font>個100% 攻擊力的分身，並除掉身上的所有法術效果。持續28秒。"
 
 	    "DOTA_Tooltip_Ability_A28W"  "邪法"
 	    "DOTA_Tooltip_Ability_A28W_Description" "將目標敵人以及周圍其他敵人轉化為亂數決定的生物，終止他們的能力以及動作，持續<font color=\"#5cb85c\">(1.0/1.5/2.0/2.5)</font>秒。"
