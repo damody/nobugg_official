@@ -607,7 +607,7 @@
 
 
 		"DOTA_Tooltip_Ability_item_the_art_of_war_mountain_chapter" "孙子兵法．山之章"
-		"DOTA_Tooltip_Ability_item_the_art_of_war_mountain_chapter_Description" "力量+10。【被动】周围友军护甲+6。【使用】增加50护甲，持续5秒。"
+		"DOTA_Tooltip_Ability_item_the_art_of_war_mountain_chapter_Description" "力量+10。【被动】周围友军护甲+6。【使用】增加周围500友军50护甲，持续5秒。"
 
 
 		"DOTA_Tooltip_Ability_item_the_lost_art_of_war_1" "孙子兵法残册"
@@ -835,7 +835,7 @@
 		"DOTA_Tooltip_Ability_B34W_old"	"怒击斧"
 		"DOTA_Tooltip_Ability_B34W_old_Description"	"对着敌方的部队丢出狂怒的飞斧，造成<font color=\"#5cb85c\">(100/200/300/400)</font>伤害并且击晕<font color=\"#5cb85c\">(1.0/1.5/2.0/2.5)</font>秒。 "
 		"DOTA_Tooltip_Ability_B34E_old"	"狂战"
-		"DOTA_Tooltip_Ability_B34E_old_Description"	"被动增加<font color=\"#5cb85c\">(40/60/80/100)% </font>攻速，主动使用攻速加成加倍。"
+		"DOTA_Tooltip_Ability_B34E_old_Description"	"被动增加<font color=\"#5cb85c\">(40/60/80/100)% </font>攻速，主动使用攻速加成加倍持续16秒。"
 		"DOTA_Tooltip_Ability_B34R_old"	"撕裂伤口"
 		"DOTA_Tooltip_Ability_B34R_old_Description"	"每下普攻额外造成<font color=\"#5cb85c\">(60/90/120/150)</font>真实伤害。"
 		"DOTA_Tooltip_Ability_B34T_old"	"大地震憾"
@@ -1246,9 +1246,9 @@
 	    "DOTA_Tooltip_Ability_A17E_old" "连击炮"
 	    "DOTA_Tooltip_Ability_A17E_old_Description" "增加<font color=\"#5cb85c\">(10/20/30/40)% </font>攻击速度，攻击时有50% 的机会造成<font color=\"#5cb85c\">(80/100/120/140)</font>点额外伤害，持续10秒。"
 	    "DOTA_Tooltip_Ability_A17R_old" "雨铁炮"
-	    "DOTA_Tooltip_Ability_A17R_old_Description" "攻击时有45% 机率对建筑物/英雄/部队额外造成<font color=\"#5cb85c\">(20/30/40/50)/(5/10/15/20)/(25/35/45/55)% </font>伤害。"
+	    "DOTA_Tooltip_Ability_A17R_old_Description" "攻击时对建筑物/英雄/部队额外造成<font color=\"#5cb85c\">(20/30/40/50)/(5/10/15/20)/(25/35/45/55)% </font>伤害。"
 	    "DOTA_Tooltip_Ability_A17T_old" "大筒"
-	    "DOTA_Tooltip_Ability_A17T_old_Description" "将武器变更为大筒，并且<font color=\"#5cb85c\">(4/6/8)</font>秒内无法取消。增加500夜间视野，获得<font color=\"#5cb85c\">(1000/1300/1400)</font>距离对范围<font color=\"#5cb85c\">(350/375/400)</font>扩散60% 攻击，增加基础攻击力<font color=\"#5cb85c\">(200/300/400)</font>，基础攻击间隔上升至2.8秒(原先1.8秒)，大幅度失去移动能力。"
+	    "DOTA_Tooltip_Ability_A17T_old_Description" "将武器变更为大筒，并且<font color=\"#5cb85c\">(4/6/8)</font>秒内无法取消。增加500夜间视野，获得<font color=\"#5cb85c\">(1000/1300/1400)</font>距离对范围<font color=\"#5cb85c\">(350/375/400)</font>扩散60% 攻击，增加基础攻击力<font color=\"#5cb85c\">(200/300/400)</font>，基础攻击间隔上升至2.5秒(原先1.8秒)，大幅度失去移动能力。"
 		
 	    "DOTA_Tooltip_Ability_A18W"  "执念压迫"
 		"DOTA_Tooltip_Ability_A18W_Description" "对指定范围内的所有敌人造成<font color=\"#5cb85c\">(100/200/300/400)</font>的伤害，并且每伤害一个敌人，便可以帮稻叶一铁回复<font color=\"#5cb85c\">(40/53/66/79)</font>生命。"
@@ -1607,7 +1607,7 @@
 		"DOTA_Tooltip_Ability_B06R" "心眼"
 		"DOTA_Tooltip_Ability_B06R_Description" "有<font color=\"#5cb85c\">(9/14/19/24)% </font>机会在战斗中闪避攻击 ，另外当真田幸村被敌方指定技能时，可以获得\"真田心眼术\"的保护效果，使真田幸村在接下来3秒内受到的法术伤害减少75% ，此效果每<font color=\"#5cb85c\">(23/17/12/7)</font>秒最多发动一次。 "
 		"DOTA_Tooltip_Ability_B06T" "日本第一武士"
-		"DOTA_Tooltip_Ability_B06T_Description" "转化为速度过人的日本第一武士，基础攻速从1.8变成0.9秒，增加<font color=\"#5cb85c\">(40/50/60)</font>攻击力，获得<font color=\"#5cb85c\">(500/750/1000)</font>额外生命值，使全军移动速度加快30% 。持续<font color=\"#5cb85c\">(30/40/50)</font>秒。 "
+		"DOTA_Tooltip_Ability_B06T_Description" "转化为速度过人的日本第一武士，提升至2倍基础攻速，增加<font color=\"#5cb85c\">(40/50/60)</font>攻击力，获得<font color=\"#5cb85c\">(500/750/1000)</font>额外生命值，使全军移动速度加快30% 。持续<font color=\"#5cb85c\">(30/40/50)</font>秒。 "
 		
 		"DOTA_Tooltip_Ability_B06W_old" "真田勇士"
 		"DOTA_Tooltip_Ability_B06W_old_Description" "振奋周围的友军，使他们增加<font color=\"#5cb85c\">(40/50/60/70)</font>攻击伤害，并且每秒回复<font color=\"#5cb85c\">(10/20/30/40)</font>生命，可叠加并持续20秒。"
@@ -1616,12 +1616,12 @@
 		"DOTA_Tooltip_Ability_B06R_old" "心眼"
 		"DOTA_Tooltip_Ability_B06R_old_Description" "有<font color=\"#5cb85c\">(8/16/24/32)% </font>机会在战斗中闪避攻击"
 		"DOTA_Tooltip_Ability_B06T_old" "日本第一兵"
-		"DOTA_Tooltip_Ability_B06T_old_Description" "转化为速度过人的日本第一兵，基础攻速从1.8变成0.9秒，增加<font color=\"#5cb85c\">(10/15/20)</font>护甲，获得<font color=\"#5cb85c\">(500/750/1000)</font>额外生命值，使自身移动速度加快100% 。持续<font color=\"#5cb85c\">(40/45/50)</font>秒。"
+		"DOTA_Tooltip_Ability_B06T_old_Description" "转化为速度过人的日本第一兵，提升至2倍基础攻速，增加<font color=\"#5cb85c\">(3/6/9)</font>护甲，获得<font color=\"#5cb85c\">(500/750/1000)</font>额外生命值，使自身移动速度加快100% 。持续<font color=\"#5cb85c\">(30/40/50)</font>秒。"
 
 		"DOTA_Tooltip_Ability_B07W" "星瀑"
 		"DOTA_Tooltip_Ability_B07W_Description" "呼叫无数流星降落在指定区域，每波流星造成40伤害。总共可降下10波。<font color=\"#cc0000\">需维持施法</font>"
 		"DOTA_Tooltip_Ability_B07E" "战线国崩队"
-		"DOTA_Tooltip_Ability_B07E_Description" "在指定地点建立国崩队，国崩队可以提供炮击攻击支援，并且每秒治疗周围友军<font color=\"#5cb85c\">(1.0/1.5/2.0/2.5)% </font>生命， 国崩队将可以继承足利义昭相对应栏位的装备。国崩队上限2队，将随着英雄等级提升而强化。<font color=\"#cc0000\">耗魔随技能等级提升降低，国崩队具有魔力，可使用对应栏位物品，但无法继承且不得使用“当世具足”。具50% 法术抗性。</font>"
+		"DOTA_Tooltip_Ability_B07E_Description" "在指定地点建立国崩队，国崩队可以提供炮击攻击支援，并且每秒治疗周围友军<font color=\"#5cb85c\">(1.0/1.5/2.0/2.5)% </font>生命， 国崩队将可以继承足利义昭相对应栏位的装备。国崩队上限2队，将随着英雄等级提升而强化。<font color=\"#cc0000\">耗魔随技能等级提升降低，国崩队具有魔力，可使用对应栏位物品。具50% 法术抗性。</font>"
 		"DOTA_Tooltip_Ability_B07R" "辉煌之势"
 		"DOTA_Tooltip_Ability_B07R_Description" "使全战场友军的法力回复增快<font color=\"#5cb85c\">(0.7/1.4/2.1/2.8)</font>。技能等级3时，战线国崩队获得"真知"能力。 "
 		"DOTA_Tooltip_Ability_B07T" "君临天下"
@@ -1776,6 +1776,49 @@
 		"DOTA_Tooltip_Ability_B16MMR_old_Description"	"没用到._."
 		"DOTA_Tooltip_Ability_B16MMT_old"  "永久隐形"
 		"DOTA_Tooltip_Ability_B16MMT_old_Description" "两秒内不攻击或发动技能将进入隐形状态。当技能“忍法．召唤忍犬”等级4时自动领悟。"
+
+		// 立花宗茂
+		"npc_dota_hero_juggernaut" "立花宗茂"
+
+		"DOTA_Tooltip_Ability_C11W" "雷切"
+		"DOTA_Tooltip_Ability_C11W_Description" "指定目标敌人，使自身化作贯穿敌人的雷电，在敌人之间传导最多5次，每次造成<font color=\"#5cb85c\">(100/150/200/250)</font>伤害以及消去敌人<font color=\"#5cb85c\">(5/7/9/11)% </font>法力，在传导结束之后，立花宗茂将会重新出现。"
+
+		"DOTA_Tooltip_Ability_C11E" "雷之疾"
+		"DOTA_Tooltip_Ability_C11E_Description" "使自身增加<font color=\"#5cb85c\">(20/40/60/80)% </font>攻击速度和<font color=\"#5cb85c\">(7/9/11/13)% </font>移动速度。持续20秒。"
+
+		"DOTA_Tooltip_Ability_C11R" "雷之眼"
+		"DOTA_Tooltip_Ability_C11R_Description" "在一个区域降下落雷，对身处其中的敌人造成<font color=\"#5cb85c\">(150/250/350/450)</font>伤害，并且使他们晕眩<font color=\"#5cb85c\">(0.5/0.8/1.1/1.4)</font>秒。"
+
+		"DOTA_Tooltip_Ability_C11T" "西国无双"
+		"DOTA_Tooltip_Ability_C11T_Description" "永久提升<font color=\"#5cb85c\">(6/9/12)</font>全属性。每次攻击击中敌军时，将会消去敌军10%的现有法力，并且额外造成<font color=\"#5cb85c\">(75/95/115)</font><br />真实伤害，这个额外伤害在敌人的法力越低时伤害越大。在敌人法力低于70% 时，将会加成1.2倍，在法力低于40% 时，加成1.5倍，低于15% 时，加成2倍。"
+
+		"DOTA_Tooltip_modifier_C11W" "雷切"
+		"DOTA_Tooltip_modifier_C11W_Description" "造成伤害的同时还能消去敌方法力，技能结束之前无法操作。"
+
+		"DOTA_Tooltip_modifier_C11E" "雷之疾"
+		"DOTA_Tooltip_modifier_C11E_Description" "提升攻击与移动速度。"
+
+		"DOTA_Tooltip_modifier_C11R_stun" "雷之眼"
+		"DOTA_Tooltip_modifier_C11R_stun_Description" "电晕。"
+
+		"DOTA_Tooltip_modifier_C11T_passive" "西国无双"
+		"DOTA_Tooltip_modifier_C11T_passive_Description" "提升全属性，普通攻击能消去敌方法力与造成额外伤害。"
+
+		// 立花宗茂 11.2B
+		"DOTA_Tooltip_Ability_C11W_old" "雷切"
+		"DOTA_Tooltip_Ability_C11W_old_Description" "攻击时有20% 机率打出<font color=\"#5cb85c\">(2/2.5/3/3.5)</font>倍伤害增加<font color=\"#5cb85c\">(30/40/50/60)</font>攻击力。"
+
+		"DOTA_Tooltip_Ability_C11E_old" "雷之疾"
+		"DOTA_Tooltip_Ability_C11E_old_Description" "增加<font color=\"#5cb85c\">(20/40/60/80)% </font>攻击速度和<font color=\"#5cb85c\">(7/9/11/13)% </font>移动速度。持续20秒。"
+
+		"DOTA_Tooltip_Ability_C11R_old" "雷之眼"
+		"DOTA_Tooltip_Ability_C11R_old_Description" "在范围450内召唤出落雷攻击敌人造成<font color=\"#5cb85c\">(150/250/350/450)</font>点伤害并晕眩<font color=\"#5cb85c\">(0.4/0.8/1.1/1.6)</font>秒。"
+
+		"DOTA_Tooltip_Ability_C11T_old" "西国无双"
+		"DOTA_Tooltip_Ability_C11T_old_Description" "攻击能消去目标<font color=\"#5cb85c\">(80/100/120)</font>法力并造成消去的法力的伤害：英雄<font color=\"#5cb85c\">(135/145/155)% </font>、部队<font color=\"#5cb85c\">(180/200/220)% 。"
+
+		"DOTA_Tooltip_modifier_C11W_old" "雷切"
+		"DOTA_Tooltip_modifier_C11W_old_Description" "提升攻击力，普攻有机会造成额外伤害。"
 
 		// -------------------------------------------------------------------------------------
 		// 道具-修改器

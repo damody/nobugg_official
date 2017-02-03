@@ -607,7 +607,7 @@
 
 
 		"DOTA_Tooltip_Ability_item_the_art_of_war_mountain_chapter" "孫子兵法．山之章"
-		"DOTA_Tooltip_Ability_item_the_art_of_war_mountain_chapter_Description" "力量+10。【被動】周圍友軍護甲+6。【使用】增加50護甲，持續5秒。"
+		"DOTA_Tooltip_Ability_item_the_art_of_war_mountain_chapter_Description" "力量+10。【被動】周圍友軍護甲+6。【使用】增加週圍500友軍50護甲，持續5秒。"
 
 
 		"DOTA_Tooltip_Ability_item_the_lost_art_of_war_1" "孫子兵法殘冊"
@@ -1776,6 +1776,49 @@
 		"DOTA_Tooltip_Ability_B16MMR_old_Description"	"沒用到._."
 		"DOTA_Tooltip_Ability_B16MMT_old"  "永久隱形"
 		"DOTA_Tooltip_Ability_B16MMT_old_Description" "兩秒內不攻擊或發動技能將進入隱形狀態。當技能「忍法．召喚忍犬」等級4時自動領悟。"
+
+		// 立花宗茂
+		"npc_dota_hero_juggernaut" "立花宗茂"
+
+		"DOTA_Tooltip_Ability_C11W" "雷切"
+		"DOTA_Tooltip_Ability_C11W_Description" "指定目標敵人，使自身化作貫穿敵人的雷電，在敵人之間傳導最多5次，每次造成<font color=\"#5cb85c\">(100/150/200/250)</font>傷害以及消去敵人<font color=\"#5cb85c\">(5/7/9/11)% </font>法力，在傳導結束之後，立花宗茂將會重新出現。"
+
+		"DOTA_Tooltip_Ability_C11E" "雷之疾"
+		"DOTA_Tooltip_Ability_C11E_Description" "使自身增加<font color=\"#5cb85c\">(20/40/60/80)% </font>攻擊速度和<font color=\"#5cb85c\">(7/9/11/13)% </font>移動速度。持續20秒。"
+
+		"DOTA_Tooltip_Ability_C11R" "雷之眼"
+		"DOTA_Tooltip_Ability_C11R_Description" "在一個區域降下落雷，對身處其中的敵人造成<font color=\"#5cb85c\">(150/250/350/450)</font>傷害，並且使他們暈眩<font color=\"#5cb85c\">(0.5/0.8/1.1/1.4)</font>秒。"
+
+		"DOTA_Tooltip_Ability_C11T" "西國無雙"
+		"DOTA_Tooltip_Ability_C11T_Description" "永久提升<font color=\"#5cb85c\">(6/9/12)</font>全屬性。每次攻擊擊中敵軍時，將會消去敵軍10%的現有法力，並且額外造成<font color=\"#5cb85c\">(75/95/115)</font><br />真實傷害，這個額外傷害在敵人的法力越低時傷害越大。在敵人法力低於70% 時，將會加成1.2倍，在法力低於40% 時，加成1.5倍，低於15% 時，加成2倍。"
+
+		"DOTA_Tooltip_modifier_C11W" "雷切"
+		"DOTA_Tooltip_modifier_C11W_Description" "造成傷害的同時還能消去敵方法力，技能結束之前無法操作。"
+
+		"DOTA_Tooltip_modifier_C11E" "雷之疾"
+		"DOTA_Tooltip_modifier_C11E_Description" "提升攻擊與移動速度。"
+
+		"DOTA_Tooltip_modifier_C11R_stun" "雷之眼"
+		"DOTA_Tooltip_modifier_C11R_stun_Description" "電暈。"
+
+		"DOTA_Tooltip_modifier_C11T_passive" "西國無雙"
+		"DOTA_Tooltip_modifier_C11T_passive_Description" "提升全屬性，普通攻擊能消去敵方法力與造成額外傷害。"
+
+		// 立花宗茂 11.2B
+		"DOTA_Tooltip_Ability_C11W_old" "雷切"
+		"DOTA_Tooltip_Ability_C11W_old_Description" "攻擊時有20% 機率打出<font color=\"#5cb85c\">(2/2.5/3/3.5)</font>倍傷害增加<font color=\"#5cb85c\">(30/40/50/60)</font>攻擊力。"
+
+		"DOTA_Tooltip_Ability_C11E_old" "雷之疾"
+		"DOTA_Tooltip_Ability_C11E_old_Description" "增加<font color=\"#5cb85c\">(20/40/60/80)% </font>攻擊速度和<font color=\"#5cb85c\">(7/9/11/13)% </font>移動速度。持續20秒。"
+
+		"DOTA_Tooltip_Ability_C11R_old" "雷之眼"
+		"DOTA_Tooltip_Ability_C11R_old_Description" "在範圍450內召喚出落雷攻擊敵人造成<font color=\"#5cb85c\">(150/250/350/450)</font>點傷害並暈眩<font color=\"#5cb85c\">(0.4/0.8/1.1/1.6)</font>秒。"
+
+		"DOTA_Tooltip_Ability_C11T_old" "西國無雙"
+		"DOTA_Tooltip_Ability_C11T_old_Description" "攻擊能消去目標<font color=\"#5cb85c\">(80/100/120)</font>法力並造成消去的法力的傷害：英雄<font color=\"#5cb85c\">(135/145/155)% </font>、部隊<font color=\"#5cb85c\">(180/200/220)% 。"
+
+		"DOTA_Tooltip_modifier_C11W_old" "雷切"
+		"DOTA_Tooltip_modifier_C11W_old_Description" "提升攻擊力，普攻有機會造成額外傷害。"
 
 		// -------------------------------------------------------------------------------------
 		// 道具-修改器
