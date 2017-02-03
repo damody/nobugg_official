@@ -30,6 +30,37 @@
 		"com_soldiercamp_oda" "大本营"
 		"com_soldiercamp_unified" "大本营"
 		"to_sell_ninja_unit" "暗部"
+		
+		// 英雄文
+		"npc_dota_hero_crystal_maiden"	"阿松"
+		"npc_dota_hero_brewmaster"	"大熊朝秀"
+		"npc_dota_hero_viper"	"明智光秀"
+		"npc_dota_hero_venomancer"	"九鬼嘉隆"
+		"npc_dota_hero_treant"	"织田信长"
+		"npc_dota_hero_troll_warlord"	"井伊直政"
+		"npc_dota_hero_night_stalker"	"龙造寺隆信"
+		"npc_dota_hero_undying"	"服部半藏"
+		"npc_dota_hero_queenofpain"	"湖衣姬"
+		"npc_dota_hero_keeper_of_the_light"	"毛利元就"
+		"npc_dota_hero_invoker"	"羽柴秀吉"
+		"npc_dota_hero_jakiro" "佐佐木小次郎"
+		"npc_dota_hero_dragon_knight" "上杉谦信"
+		"npc_dota_hero_ancient_apparition" "竹中重治"
+		"npc_dota_hero_omniknight" "柴田胜家"
+		"npc_dota_hero_pugna" "本愿寺显如"
+		"npc_dota_hero_oracle" "石田三成"
+		"npc_dota_hero_centaur"	"本多忠胜"
+		"npc_dota_hero_templar_assassin"	"松姬"
+		"npc_dota_hero_storm_spirit"	"大谷吉继"
+		"npc_dota_hero_naga_siren"	"森兰丸"
+		"npc_dota_hero_medusa"	"森兰丸"
+		"npc_dota_hero_alchemist"	"宫本武藏"
+		"npc_dota_hero_naga_siren"	"望月千代女"
+		"npc_dota_hero_sniper"  "佐佐成政"
+		"npc_dota_hero_drow_ranger"	"最上义姬"
+		"npc_dota_hero_magnataur"	"浅井长政"
+		"npc_dota_hero_legion_commander"	"明智秀满"
+		"npc_dota_hero_juggernaut" "立花宗茂"
 		// 战法
 		
 		"DOTA_Tooltip_Ability_attribute_bonusx" "强化全能力"
@@ -688,34 +719,6 @@
 		// ======================================================
 		// 以下是英雄
 		// ======================================================
-		"npc_dota_hero_crystal_maiden"	"阿松"
-		"npc_dota_hero_brewmaster"	"大熊朝秀"
-		"npc_dota_hero_viper"	"明智光秀"
-		"npc_dota_hero_venomancer"	"九鬼嘉隆"
-		"npc_dota_hero_treant"	"织田信长"
-		"npc_dota_hero_troll_warlord"	"井伊直政"
-		"npc_dota_hero_night_stalker"	"龙造寺隆信"
-		"npc_dota_hero_undying"	"服部半藏"
-		"npc_dota_hero_queenofpain"	"湖衣姬"
-		"npc_dota_hero_keeper_of_the_light"	"毛利元就"
-		"npc_dota_hero_bristleback"	"今川义元"
-		"npc_dota_hero_invoker"	"羽柴秀吉"
-		"npc_dota_hero_jakiro" "佐佐木小次郎"
-		"npc_dota_hero_dragon_knight" "上杉谦信"
-		"npc_dota_hero_ancient_apparition" "竹中重治"
-		"npc_dota_hero_omniknight" "柴田胜家"
-		"npc_dota_hero_pugna" "本愿寺显如"
-		"npc_dota_hero_oracle" "石田三成"
-		"npc_dota_hero_nevermore"	"杂贺孙市"
-		"npc_dota_hero_faceless_void"	"风魔小太郎"
-		"npc_dota_hero_centaur"	"本多忠胜"
-		"npc_dota_hero_templar_assassin"	"松姬"
-		"npc_dota_hero_storm_spirit"	"大谷吉继"
-		"npc_dota_hero_naga_siren"	"森兰丸"
-		"npc_dota_hero_medusa"	"森兰丸"
-		"npc_dota_hero_alchemist"	"宫本武藏"
-		"npc_dota_hero_naga_siren"	"望月千代女"
-		"npc_dota_hero_sniper"  "佐佐成政"
 		"DOTA_Tooltip_Ability_C21R"	"二天一流"
 		"DOTA_Tooltip_Ability_C21R_Description"	"在战斗中有<font color=\"#5cb85c\">(15/19/23/27)% </font>的机会闪避攻击，而且有40% 机会造成<font color=\"#5cb85c\">(1.3/1.5/1.7/1.9)</font>倍的伤害。 "
 		"DOTA_Tooltip_Ability_C21E"	"奥义．连环钢破"
@@ -757,7 +760,6 @@
 		"DOTA_Tooltip_Ability_B08T_old"	"一刀．空牙"
 		"DOTA_Tooltip_Ability_B08T_old_Description"	"对指定的方向斩出巨大的一刀．空牙，使路径上的敌人受到<font color=\"#5cb85c\">(900/1300/1800)</font>的伤害。"
 
-		"npc_dota_hero_drow_ranger"	"最上义姬"
 		"DOTA_Tooltip_Ability_B33W"	"腐蚀之箭"
 		"DOTA_Tooltip_Ability_B33W_Description"	"射出含有剧毒的腐蚀之箭，每秒造成<font color=\"#5cb85c\">(50/80/110/170)</font>伤害，并减缓<font color=\"#5cb85c\">(10/20/30/40)% </font>攻击速度与移动速度，持续<font color=\"#5cb85c\">(5/6/7/8)</font>秒。 "
 		"DOTA_Tooltip_Ability_B33E"	"蛛网缠身"
@@ -777,8 +779,6 @@
 		"DOTA_Tooltip_Ability_B33T_old" "蜘蛛缠身"
 		"DOTA_Tooltip_Ability_B33T_old_Description" "放出剧毒蜘蛛缠绕着目标，降低目标50% 移动速度及<font color=\"#5cb85c\">(50/75/100)% </font>攻击速度，每0.5秒受到<font color=\"#5cb85c\">(66/105/135)</font>点伤害，持续10秒。"
 
-		"npc_dota_hero_earthshaker"	"秋山信友"
-		"npc_dota_hero_earthshaker_bio"	"与武田氏同族的甲婓源氏支流之一的秋山信任息子，是武田信义之弟加贺美远满的支流。1542年对已近习众的身分诹访赖重攻略成为他初次上阵的战争。1547年近攻伊奈福与城时，将敌将藤泽赖亲捕获后，取得重要的战功，成为了50骑马部队的侍大将。之后的进攻木曾福岛城后，被伊奈郡代提拔为率领250骑的大将。1572年信玄开始西上，信友以别动队的大将率领3000兵向织田氏领地东美浓入侵，攻陷了岩村城。以后为岩村城城主，在东美浓方面作最前线防备。武田军在1575年长篠之战大败，导致岩村城被孤立，11月织田信长亲征包围岩村城。信友确定没有救援下向信长提议开城。但信友开城后，信长立即逮捕他，并在长良川与夫人以极刑处死，享年49岁。信友为智勇兼备的名将，其勇名称为“武田的猛牛”。"
 		"DOTA_Tooltip_Ability_B24T"	"大地禁锢"
 		"DOTA_Tooltip_Ability_B24T_Description"	"以自身为中心创造出巨大的石环将所有单位禁锢在里头并使敌方受到伤害<font color=\"#5cb85c\">(400/700/1000)</font>，受禁锢的敌方英雄无法施展技能以及使用物品持续<font color=\"#5cb85c\">(2.5/3/3.5)</font>秒。"
 		"DOTA_Tooltip_Ability_B24W"	"地灵石碑"
@@ -794,9 +794,6 @@
 		"DOTA_Tooltip_modifier_B24W_Description"	"哼，别想靠近我。"
 		"DOTA_Tooltip_modifier_B24R"	"石之共鸣"
 		"DOTA_Tooltip_modifier_B24R_Description"	"敢打我试试看看!"
-		
-		"npc_dota_hero_huskar"	"鸟居元忠"
-		"npc_dota_hero_huskar_bio"	"元忠出身于三河国渡村，他在家康成为今川义元人质的时代是家康其中一名侧近。1600年在当家康准备讨伐上杉景胜，元忠和他的部下把守以800兵山城国伏见城，关 原之战前一个月，即7月下旬，石田三成派遣大军包围伏见城，终守了十多天的时间，元忠与三百多名将士死守，最终切腹自尽。当时因为自尽人数很多，血水渗入地板，血渍无论如何都清洗不掉，当时的血渍地板在伏见城拆构后，作为京都洛东养源院的建材。今日养源院仍有当年的血渍地板改建的天井，人形血渍历历在目，人称血天井。"
 			
 		"DOTA_Tooltip_Ability_A16W"	"血腥之攫"
 		"DOTA_Tooltip_Ability_A16W_Description"	"指定目标敌人，减缓他<font color=\"#5cb85c\">(20/28/36/44)% </font>移动速度以及<font color=\"#5cb85c\">(20/30/40/50)</font>攻击伤害，并且转移到自身上，持续6秒。"
@@ -819,9 +816,6 @@
 		"DOTA_Tooltip_modifier_A16E_2_Description"	"你的伤害，是我的补药"
 		"DOTA_Tooltip_modifier_A16T"	"晕眩"
 		"DOTA_Tooltip_modifier_A16T_Description"	"头晕了"
-		
-		"npc_dota_hero_beastmaster"	"武田胜赖"
-		"npc_dota_hero_beastmaster_bio"	"武田家臣武田信玄的四子，武田信玄去世后，胜赖成为家督(大名)，后来胜赖率领号称天下无敌的武田骑兵进攻德川家，但却在长篠合战时败给织田、德川联军，从此一蹶不振。"
 		
 		"DOTA_Tooltip_Ability_B34W"	"怒击斧"
 		"DOTA_Tooltip_Ability_B34W_Description"	"对着敌方的部队丢出狂怒的飞斧，造成<font color=\"#5cb85c\">(100/200/300/400)</font>伤害并且击晕<font color=\"#5cb85c\">(0.5/1.0/1.5/2.0)</font>秒。 "
@@ -864,8 +858,6 @@
 		
 		"DOTA_Tooltip_modifier_C10T"	"无相天圆(负面)"
 		"DOTA_Tooltip_modifier_C10T_Description"	"减缓速度"
-		"npc_dota_hero_antimage"	"香宗我部亲泰"
-		"npc_dota_hero_antimage_bio"	"出生于天文3年（1543年），卒于文禄2年（1593年）），是日本战国时代的武将，四国战国大名长宗我部元亲的弟弟。其子为香宗我部亲氏和贞亲。他是长宗我部国亲的三 子、1558年奉其父命成为香宗我部亲秀的养子。1569年成为安艺城主。之后协助其兄转战各地，他在1582年的中富川之战成功讨伐了十河存保、 1583年夺下木津城，协助其兄长完成四国岛的统一。"
 		
 		"DOTA_Tooltip_Ability_C10W"	"黑龙波"
 		"DOTA_Tooltip_Ability_C10W_Description"	" 对着直线上丢出一道黑龙波，使被扫过的每个敌人受到<font color=\"#5cb85c\">(150/250/350/450)</font>伤害，并且减慢<font color=\"#5cb85c\">(15/25/35/45)% </font>移动速度，持续3.5秒。"
@@ -888,10 +880,6 @@
 		"DOTA_Tooltip_Ability_C10R_old_Description" "<font color=\"#5cb85c\">(8/16/24/32)% </font>的机会闪避攻击"
 		"DOTA_Tooltip_Ability_C10T_old" "升龙乱舞"
 		"DOTA_Tooltip_Ability_C10T_old_Description" "增加攻击<font color=\"#5cb85c\">(25/45/65)</font>点，攻击时有50% 机率打出升龙乱舞，对一直线上的敌人造成<font color=\"#5cb85c\">(160/235/310)</font>伤害。"
-
-		"npc_dota_hero_silencer"	"立花道雪"
-		"npc_dota_hero_silencer_bio"	"传说中的\"雷神的化身\"立花道雪，当他的父亲卧病在床时，立花道雪代父出征，这是他的初阵。据说立花道雪率领为数仅仅三千的军队连夜赶到敌人城下，翌晨发动猛攻，不出一天便把城池攻下。立花道雪的初阵，一场石破天惊的初阵，名震天下。"
-		
 		
 		"DOTA_Tooltip_Ability_C07D"	"御魔之盾"
 		"DOTA_Tooltip_Ability_C07D_Description"	"举起御魔之盾，将可以获得魔法免疫，但是会因为做出防御的姿势而无法移动，并得到35% 物理伤害减免。"
@@ -926,7 +914,6 @@
 		"DOTA_Tooltip_Ability_C07T_old" "雷神之怒"
 		"DOTA_Tooltip_Ability_C07T_old_Description" "在原地上空召唤出雷云，雷云每秒对范围1000内的敌人打出一道<font color=\"#5cb85c\">(225/295/365)</font>点浑沌扩散伤害的闪电，并且在雷云范围内的所有敌人都会受到静电影响而减少35% 的移动速度。持续<font color=\"#5cb85c\">(15/20/25)</font>秒。"
 		
-		"npc_dota_hero_brewmaster_bio"	"永正十四年（1517年）出生，为越后守护上杉氏的重臣、大熊政秀之子。 父亲一代，已开始负责为上杉氏收纳段钱，而朝秀亦担当上杉家段钱方等要职。越后守护者上杉氏灭亡前后，开始出仕守护代长尾氏，其后在拥立长尾景虎一事上尽力，由是成为其重臣。朝秀有武勇，据说在奉信玄之命攻打上野国的长野业盛之际，单挑知名剑豪上泉信纲，未有受伤，不分胜负。"
 		"DOTA_Tooltip_Ability_B26W"	"蓄力波"
 		"DOTA_Tooltip_Ability_B26W_Description"	"发动蓄力波，将在接下来12秒，每秒对周围敌人造成<font color=\"#5cb85c\">(40/60/80/120)</font>的伤害， 在持续时间内，可以随时选择中止蓄力波，当蓄力波中止时，将以自身为中心产生震荡，使周围的敌人减慢40% 的移动速度，持续<font color=\"#5cb85c\">(2/3/4/5)</font>秒。 "
 		"DOTA_Tooltip_Ability_B26E"	"血性狂怒"
@@ -949,8 +936,6 @@
 		"DOTA_Tooltip_modifier_B26W_3"	"蓄力波(负面)"
 		"DOTA_Tooltip_modifier_B26W_3_Description"	"蓄力波(负面)"
 		
-		"npc_dota_hero_mirana"	"玉子"
-		"npc_dota_hero_mirana_bio"	"广受同情的悲剧女性，是明智光秀之女，细川忠兴之妻。光秀灭亡后，她背负着叛贼之女的名声悲惨地活了下来，皈依基督教，教名为格拉西亚，后来在石田三成囚禁诸将家眷为人质时，主动求死，让家臣取了自己性命。"
 		"DOTA_Tooltip_Ability_C15W"	"乱射"
 		"DOTA_Tooltip_Ability_C15W_Description"	"对着范围内的每个目标射箭，每只箭矢可以造成<font color=\"#5cb85c\">(75/150/225/300)</font>伤害并击晕<font color=\"#5cb85c\">(0.6/1.2/1.8/2.4)</font>秒。 "
 		"DOTA_Tooltip_Ability_C15E"	"爆裂箭"
@@ -979,8 +964,6 @@
 		"DOTA_Tooltip_Ability_C15T_old" "百箭齐发"
 		"DOTA_Tooltip_Ability_C15T_old_Description" "震晕对手2.5秒，同时射出10发致命的箭矢攻击目标，若是指定的目标死亡，所有箭矢将随机找寻附近敌人进行攻击，每只箭矢都拥有<font color=\"#5cb85c\">(60/90/120)</font>点攻击力伤害，持续10秒。"
 
-		"npc_dota_hero_windrunner"	"阿市"
-		"npc_dota_hero_windrunner_bio"	"织田信长的异母妹妹，是著名的悲剧女性，史书记载她是一位身高非常高的女性，也号称是战国第一美女。她先后被作为政治工具嫁给浅井长政和柴田胜家，但两任丈夫都没得好死，自己最终也和胜家一起在北之庄自焚而亡。"
 		"DOTA_Tooltip_Ability_C17R"	"神助一击"
 		"DOTA_Tooltip_Ability_C17R_Description"	"以眩光打击小范围内的敌人，造成等同于基本伤害<font color=\"#5cb85c\">(100/160/220/280)</font>加上自身智慧×4的伤害。"
 		"DOTA_Tooltip_Ability_C17D"	"自我奉献"
@@ -1009,7 +992,6 @@
 		"DOTA_Tooltip_Ability_C17T_old_Description" "延迟<font color=\"#f0ad4e\"> (1.5/1/0.5) </font>秒后释放出极光守护，对敌人造成<font color=\"#f0ad4e\">(900/1300/1800)</font>伤害，恢复友方部队所有生命。"
 		"C17R_old_SUMMEND_UNIT" "静滞陷阱"
 		
-		"npc_dota_hero_magnataur"	"浅井长政"
 		"com_ashigaru_spearmen_B"	"联合军-足轻"
 		"com_ashigaru_spearmen_B_bio"	"联合军-足轻"
 		"com_ashigaru_spearmen_bio"	"织田军-足轻"
@@ -1483,8 +1465,7 @@
         "DOTA_Tooltip_Ability_A36R_Description" "饮用它，在接下来4.5秒增加<font color=\"#5cb85c\">(25/40/55/70)% </font>攻速，并且当你受到伤害时，酒精带来的卓越耐力让你的生命值不会低于总生命值的<font color=\"#5cb85c\">(6/12/18/24)% </font>。"
 	    "DOTA_Tooltip_Ability_A36T"  "夺命攻击"
         "DOTA_Tooltip_Ability_A36T_Description" "每次攻击将有15% 的机率进行夺命攻击，在击中敌人时造成<font color=\"#5cb85c\">(150/200/250)</font>额外伤害并使之晕眩<font color=\"#5cb85c\">(0.8/1.0/1.2)</font>秒。"
-			
-		"npc_dota_hero_nevermore_bio"	"杂贺党的首领历代都称孙市，战国中后期名将，杂贺孙市是擅使铁炮的高手。纪伊的杂贺众出身。当信长攻打一揆众的本据地．伊势长岛时，杂贺众力挺一揆众，组织铁炮队痛击织田军促使败退。历史上孙市的真实身份不详，一说为铃木重秀，另一说为重朝。重秀曾在石山合战，仅仅以100人规模的铁炮队重创织田军，又介于本愿寺之间，在山崎之战大为活跃，后来也参加秀吉的纪州攻略战；重朝在关原西军中于成功攻下伏见城，曾投靠政宗，尔后则成为家康、赖房的臣下。"
+
 		"DOTA_Tooltip_Ability_B01W"	"狙击模式"
 		"DOTA_Tooltip_Ability_B01W_Description"	"转换为狙击状态，增加攻击伤害<font color=\"#5cb85c\">(20/30/40/50)</font>、攻击距离提升至<font color=\"#5cb85c\">(900/1050/1200/1400)</font>和夜晚视野1000，持续8秒。"
 		"DOTA_Tooltip_Ability_B01E"	"杂贺众"
@@ -1521,7 +1502,6 @@
 		"B01W_UNIT"	"杂贺众"
 		"B01W_UNIT_bio"	"杂贺众"
 	
-		"npc_dota_hero_faceless_void_bio"	"风魔家的首领历代都称小太郎，但他们比杂贺、服部都要神秘，没有留下相关人物姓名，甚至没有留下统一的相貌描述，一直侍奉北条家。"
 		"DOTA_Tooltip_Ability_B02D"	"忍法．迷踪步"
 		"DOTA_Tooltip_Ability_B02D_Description"	"进入隐形状态，提升移动速度<font color=\"#5cb85c\">(0/5/10/15/20)% </font>，使用技能即会现身，现身的第一击可以额外造成伤害<font color=\"#5cb85c\">(0/90/175/260/345)</font>。<font color=\"#d9534f\">天生主动技能，提升“忍法．胧”技能等级可强化此技能</font>"
 		"DOTA_Tooltip_Ability_B02W"	"忍法．胧"
@@ -1576,9 +1556,6 @@
 		"DOTA_Tooltip_Ability_B04T" "种子岛"
 		"DOTA_Tooltip_Ability_B04T_Description" "使用威力强大的种子岛铁炮，具有800远距离攻击，增加<font color=\"#5cb85c\">(50/70/90)</font>基础攻击力，并使用新式弹药，有38% 机率让敌人产生0.22秒的停顿，持续<font color=\"#5cb85c\">(28/32/36)</font>秒。
 
-		"npc_dota_hero_keeper_of_the_light" "毛利元就"
-		"npc_dota_hero_keeper_of_the_light_bio" "毛利元就被世人誉为“战国第一智将”，是他一手构建了毛利家统领关西十国的中国(霸主地位)，初期时毛利家正夹于控制中国东西的尼子家与大内家之间，月山富田的尼子家动员云、石、耆、幡、作、备中诸国共30000大军前来攻打毛利居城吉田郡山城，而毛利军仅以2400人击败30000尼子大军，元就不愧是“战国第一谋将”。"
-
 		"DOTA_Tooltip_Ability_B05W" "链锁闪电"
 		"DOTA_Tooltip_Ability_B05W_Description" "丢出一道闪电束在<font color=\"#5cb85c\">(5/7/9/11)</font>个敌人之间弹跳，造成<font color=\"#5cb85c\">(150/300/450/600)</font>伤害。"
 		"DOTA_Tooltip_Ability_B05E" "天雷击"
@@ -1596,9 +1573,6 @@
 		"DOTA_Tooltip_Ability_B05R_old_Description" "让全战场友军的装甲提升<font color=\"#5cb85c\">(5/10/15/20)</font>护甲，持续20秒。"
 		"DOTA_Tooltip_Ability_B05T_old" "圣光弹"
 		"DOTA_Tooltip_Ability_B05T_old_Description" "出现一道光，让范围<font color=\"#5cb85c\">(800/900/1000)</font>内的敌人造成<font color=\"#5cb85c\">(700/1100/1500)</font>伤害，并造成<font color=\"#5cb85c\">(1.5/2/2.5)</font>秒晕眩。"
-
-		"npc_dota_hero_axe"    "真田幸村"
-		"npc_dota_hero_axe_bio"    "昌幸的次男，被称为“日本第一武士”的幸村，在大阪冬之阵中大胜德川军，是日本最有名气的武将。当父亲昌幸与德川对立时，以寡敌众击退大军而一举成名。关原合战时，与兄长信之对垒，跟随了父亲和西军，成功的在上田城拌住德川秀忠的大军，后来西军战败，幸村虽然被流放到九度山，但志气未减，蛰伏14年后应丰臣秀赖之邀进入大阪城。在冬之阵中布“真田丸”，发挥智略和武勇大败来犯的大军，并且严拒家康企图用信浓一国来拉拢的诱惑，而在夏之阵，更于茶臼山之战时三度杀到家康眼前，吓得家康丢弃帅旗而逃。"
 
 		"DOTA_Tooltip_Ability_B06W" "真田勇士"
 		"DOTA_Tooltip_Ability_B06W_Description" "振奋周围的友军，使他们增加<font color=\"#5cb85c\">(20/30/40/50)</font>攻击伤害，并且每秒回复<font color=\"#5cb85c\">(10/15/20/25)</font>法力，可叠加并持续12秒。"
@@ -1627,9 +1601,6 @@
 		"DOTA_Tooltip_Ability_B07T" "君临天下"
 		"DOTA_Tooltip_Ability_B07T_Description" "以王者之姿君临天下，将会不断落下神光打击周围敌人。每束神光可以造成<font color=\"#5cb85c\">(200/350/500)</font>点伤害，对建筑物造成30% 伤害。 可持续9秒。 "
 
-
-		"npc_dota_hero_pugna" "本愿寺显如"
-		"npc_dota_hero_pugna_bio" "日本佛教一向宗第十一代法主。一向宗自1488年开始，便以发动暴动的手段争取领土与武士阶级抗衡，希望能将日本改造成以佛为主的佛教国家。自1500年代左右，甚至将加贺一国的武士势力完全逐出，成为“以佛治国”的政治实体。西元1571年，由于一向宗圣地比叡山因庇护朝仓浅井联军而遭信长烧杀殆尽，因此痛骂信长为“佛敌”，向信徒鼓吹“为佛而战可上天堂”的思想，发出“打倒信长”的一向宗徒暴动命令（一向一揆）。"
 		"DOTA_Tooltip_Ability_B25W" "退魔击"
 		"DOTA_Tooltip_Ability_B25W_Description" "打出一个负力场的能源弹，可以烧掉目标敌军<font color=\"#5cb85c\">(250/350/450/550)</font>的法力，并且造成等量的伤害。"
 		"DOTA_Tooltip_Ability_B25E" "除魔经"
@@ -1648,8 +1619,6 @@
 		"DOTA_Tooltip_Ability_B25T_old" "阿修罗地狱"
 		"DOTA_Tooltip_Ability_B25T_old_Description" "使指定<font color=\"#5cb85c\">(1000/1100/1200)</font>的范围化成阿修罗地狱，每秒造成<font color=\"#5cb85c\">(400/600/1000)</font>伤害，持续<font color=\"#5cb85c\">(7/8/9)</font>秒。"
 
-		"npc_dota_hero_dragon_knight" "上杉谦信"
-		"npc_dota_hero_dragon_knight_bio"  "越后战国大名人称\"越后之龙\"、\"北陆的守护神\"，由山内上杉家继承上杉姓氏与关东管领职，入道后改名谦信。虔诚信仰战神．毗沙门天，战场中常以白布染上“毗”字的军旗为号，和宿敌武田信玄及、关东的北条氏康、氏政父子，有过无以数计的合战。为人秉持正义，绝对不打没有大义的合战，是战国时代第一猛将，据说谦信自始至终每一场战役从来没有败过。信玄死后，谦信回应足利义昭的号召，转而向西，吞并越中，征服能登，突入越前，攻击织田氏，并在手取川大败织田名将柴田胜家。但随即因脑溢血死于军中。世人称他为\"军神\"。 "
 		"DOTA_Tooltip_Ability_B32D" "神烈" 
 		"DOTA_Tooltip_Ability_B32D_Description" "使指定敌人陷入神烈的包围，使他们无法施法，并降低20% 攻击伤害，100% 攻击速度，持续5.5秒。<font color=\"#cc0000\">此技能仅于施展“毗沙门天”期间才可施放。</font>"
 		"DOTA_Tooltip_Ability_B32W" "神斩"
@@ -1672,9 +1641,6 @@
 		"DOTA_Tooltip_Ability_B32T_old" "毗沙门天"
 		"DOTA_Tooltip_Ability_B32T_old_Description" "得到威力强大的毗沙门天之力量，增加<font color=\"#5cb85c\">(55/110/170)</font>攻击伤害、基础攻速从1.8变为1.4，20% 物理扩散攻击，<font color=\"#5cb85c\">(20/30/40)</font>点每秒生命再生，持续40秒。 "
 
-
-		"npc_dota_hero_jakiro" "佐佐木小次郎"
-		"npc_dota_hero_jakiro_bio"  "出身九州小仓市的小次郎是在拥护和赞扬的环境成长起来的。但跟那些平庸的子弟不同，小次郎绝对是个剑术奇才。小次郎所创的严流，用的是比小太刀长得多的太刀。小次郎爱刀\"长光\"便是长达三尺二寸的长刀。即使是这样，却连\"燕返\"都没有使出就败在宫本武藏剑下。跟武藏决斗时小次郎无法发挥刀长优势，武藏在决斗前，特制了一把木刀，长度四尺二寸，比小次郎的\"长光\"长了一尺。因小次郎在决斗前未将绝技\"燕返\"传给弟子，自己思想构成岩流剑术最著名的\"燕返\"技巧亦没有流传下来。 "
 		"DOTA_Tooltip_Ability_C22D" "严流"
 		"DOTA_Tooltip_Ability_C22D_Description" "让自身的攻击速度提升175% ，持续4秒。 "
 		"DOTA_Tooltip_Ability_C22W" "秘剑．燕巢"
@@ -1778,47 +1744,49 @@
 		"DOTA_Tooltip_Ability_B16MMT_old_Description" "两秒内不攻击或发动技能将进入隐形状态。当技能“忍法．召唤忍犬”等级4时自动领悟。"
 
 		// 立花宗茂
-		"npc_dota_hero_juggernaut" "立花宗茂"
-
 		"DOTA_Tooltip_Ability_C11W" "雷切"
-		"DOTA_Tooltip_Ability_C11W_Description" "指定目标敌人，使自身化作贯穿敌人的雷电，在敌人之间传导最多5次，每次造成<font color=\"#5cb85c\">(100/150/200/250)</font>伤害以及消去敌人<font color=\"#5cb85c\">(5/7/9/11)% </font>法力，在传导结束之后，立花宗茂将会重新出现。"
-
+		"DOTA_Tooltip_Ability_C11W_Description" "指定目标敌人，使自身化作贯穿敌人的雷电，在敌人之间传导最多5次，每次造成<font color=\"#5cb85c\">(100/150/200/250)</font>伤害以及消去敌人<font color=\"#5cb85c\">(5/7/9/11)% </font>现有法力，在传导结束之后，立花宗茂将会重新出现。"
 		"DOTA_Tooltip_Ability_C11E" "雷之疾"
 		"DOTA_Tooltip_Ability_C11E_Description" "使自身增加<font color=\"#5cb85c\">(20/40/60/80)% </font>攻击速度和<font color=\"#5cb85c\">(7/9/11/13)% </font>移动速度。持续20秒。"
-
 		"DOTA_Tooltip_Ability_C11R" "雷之眼"
 		"DOTA_Tooltip_Ability_C11R_Description" "在一个区域降下落雷，对身处其中的敌人造成<font color=\"#5cb85c\">(150/250/350/450)</font>伤害，并且使他们晕眩<font color=\"#5cb85c\">(0.5/0.8/1.1/1.4)</font>秒。"
-
 		"DOTA_Tooltip_Ability_C11T" "西国无双"
 		"DOTA_Tooltip_Ability_C11T_Description" "永久提升<font color=\"#5cb85c\">(6/9/12)</font>全属性。每次攻击击中敌军时，将会消去敌军10%的现有法力，并且额外造成<font color=\"#5cb85c\">(75/95/115)</font><br />真实伤害，这个额外伤害在敌人的法力越低时伤害越大。在敌人法力低于70% 时，将会加成1.2倍，在法力低于40% 时，加成1.5倍，低于15% 时，加成2倍。"
 
 		"DOTA_Tooltip_modifier_C11W" "雷切"
 		"DOTA_Tooltip_modifier_C11W_Description" "造成伤害的同时还能消去敌方法力，技能结束之前无法操作。"
-
 		"DOTA_Tooltip_modifier_C11E" "雷之疾"
 		"DOTA_Tooltip_modifier_C11E_Description" "提升攻击与移动速度。"
-
 		"DOTA_Tooltip_modifier_C11R_stun" "雷之眼"
 		"DOTA_Tooltip_modifier_C11R_stun_Description" "电晕。"
-
 		"DOTA_Tooltip_modifier_C11T_passive" "西国无双"
 		"DOTA_Tooltip_modifier_C11T_passive_Description" "提升全属性，普通攻击能消去敌方法力与造成额外伤害。"
 
 		// 立花宗茂 11.2B
 		"DOTA_Tooltip_Ability_C11W_old" "雷切"
-		"DOTA_Tooltip_Ability_C11W_old_Description" "攻击时有20% 机率打出<font color=\"#5cb85c\">(2/2.5/3/3.5)</font>倍伤害增加<font color=\"#5cb85c\">(30/40/50/60)</font>攻击力。"
-
+		"DOTA_Tooltip_Ability_C11W_old_Description" "攻击时有20% 机率打出<font color=\"#5cb85c\">(2/2.5/3/3.5)</font>倍伤害并增加<font color=\"#5cb85c\">(30/40/50/60)</font>攻击力。"
 		"DOTA_Tooltip_Ability_C11E_old" "雷之疾"
 		"DOTA_Tooltip_Ability_C11E_old_Description" "增加<font color=\"#5cb85c\">(20/40/60/80)% </font>攻击速度和<font color=\"#5cb85c\">(7/9/11/13)% </font>移动速度。持续20秒。"
-
 		"DOTA_Tooltip_Ability_C11R_old" "雷之眼"
 		"DOTA_Tooltip_Ability_C11R_old_Description" "在范围450内召唤出落雷攻击敌人造成<font color=\"#5cb85c\">(150/250/350/450)</font>点伤害并晕眩<font color=\"#5cb85c\">(0.4/0.8/1.1/1.6)</font>秒。"
-
 		"DOTA_Tooltip_Ability_C11T_old" "西国无双"
-		"DOTA_Tooltip_Ability_C11T_old_Description" "攻击能消去目标<font color=\"#5cb85c\">(80/100/120)</font>法力并造成消去的法力的伤害：英雄<font color=\"#5cb85c\">(135/145/155)% </font>、部队<font color=\"#5cb85c\">(180/200/220)% 。"
+		"DOTA_Tooltip_Ability_C11T_old_Description" "攻击能消去目标<font color=\"#5cb85c\">(80/100/120)</font>法力并造成消去的法力的真实伤害：英雄<font color=\"#5cb85c\">(135/145/155)% </font>、部队<font color=\"#5cb85c\">(180/200/220)% 。"
 
 		"DOTA_Tooltip_modifier_C11W_old" "雷切"
 		"DOTA_Tooltip_modifier_C11W_old_Description" "提升攻击力，普攻有机会造成额外伤害。"
+
+		// 明智秀满
+		"DOTA_Tooltip_Ability_C02W" "蜃气袭"
+		"DOTA_Tooltip_Ability_C02W_Description" "对指定的方向挥出一道蜃气，对扫过的敌军造成<font color=\"#5cb85c\">(200/300/400/500)</font>伤害，并且若伤害敌方英雄，则造出该英雄的幻影，幻影可以造成30% 伤害，受到300% 伤害。"
+
+		"DOTA_Tooltip_Ability_C02E" "幻移"
+		"DOTA_Tooltip_Ability_C02E_Description" "立即往面对的方向瞬移650距离并在原地留下一个自身的幻影，瞬移过后将会增加<font color=\"#5cb85c\">(50/75/100/125)% </font>攻速以及6% 移动速度，持续<font color=\"#5cb85c\">(5/8/11/14)</font>秒。"
+
+		"DOTA_Tooltip_Ability_C02R" "镜花水月"
+		"DOTA_Tooltip_Ability_C02R_Description" "在战斗中有<font color=\"#5cb85c\">(7/12/17/22)% </font>的机会闪避攻击，并且攻击可以造出攻击目标的幻影，幻影可以造成80% 伤害，受到300% 伤害，持续8秒，此效果每<font color=\"#5cb85c\">(20/16/12/8)</font>秒最多发动一次。"
+
+		"DOTA_Tooltip_Ability_C02T" "汰选斩击"
+		"DOTA_Tooltip_Ability_C02T_Description" "能够对弱者一击必杀的斩击。当汰选斩击对目标敌军斩下的时候，若该敌军的生命值低于<font color=\"#5cb85c\">(600/750/900)</font>，则会直接将之斩杀。若生命值未低于一定值，则对他造成<font color=\"#5cb85c\">(450/600/750)</font>的伤害并且晕眩2秒，并在接下来的30秒获得 浩瀚之力，每次伤害有50% 机率造成<font color=\"#5cb85c\">(180/230/280)</font>的范围伤害。"
 
 		// -------------------------------------------------------------------------------------
 		// 道具-修改器
