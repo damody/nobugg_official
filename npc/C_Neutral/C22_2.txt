@@ -7,7 +7,7 @@
 		// ----------------------------------------------------------------
 		"override_hero"	"npc_dota_hero_jakiro"
 		"Model"	"models/c20/c20_model.vmdl"
-		"ModelScale"	"1"
+		"ModelScale"	"1.1"
 		//"Level"	"5"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
 		"HealthBarOffset"	"140"
@@ -22,7 +22,7 @@
 		"Ability7"	"C22_precache"
 		// Armor
 		// ----------------------------------------------------------------
-		"ArmorPhysical"	"2.00"
+		"ArmorPhysical"	"2"
 		"MagicalResistance"	"30"
 		// Attack
 		// ----------------------------------------------------------------

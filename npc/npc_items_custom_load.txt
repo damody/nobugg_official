@@ -96,7 +96,7 @@
 			"06"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"700.00"
+				"damage"	"700"
 			}
 		}
 	}
@@ -193,7 +193,7 @@
 			"06"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"455.00"
+				"damage"	"455"
 			}
 		}
 	}
@@ -348,7 +348,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"600.00"
+				"damage"	"600"
 			}
 		}
 	}
@@ -440,7 +440,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"400.00"
+				"damage"	"400"
 			}
 		}
 	}
@@ -605,7 +605,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"560.00"
+				"damage"	"560"
 			}
 		}
 	}
@@ -709,7 +709,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"550.00"
+				"damage"	"550"
 			}
 		}
 	}
@@ -1584,7 +1584,7 @@
 			"06"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"350.00"
+				"damage"	"350"
 			}
 		}
 	}
@@ -3142,7 +3142,7 @@
 			"06"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"375.00"
+				"damage"	"375"
 			}
 		}
 	}
@@ -4149,6 +4149,7 @@
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE" "40"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS" "50"	//魔抗
 				}
 			}
 			"Passive_great_sword_of_disease"
@@ -4188,7 +4189,7 @@
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
 		
-		"AbilityCooldown"	"75"
+		"AbilityCooldown"	"40"
 		
 		"AbilityManaCost"	"225"
 		"AbilityCastPoint"	"0.1"
@@ -6357,7 +6358,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"300.00"
+				"damage"	"300"
 			}
 		}
 	}
@@ -7020,6 +7021,7 @@
 				"IsHidden"			"0"
 				"IsDebuff"			"1"
 				"Duration"			"1"
+				"Priority" "MODIFIER_PRIORITY_ULTRA"
 			
 				"Properties"
 				{
@@ -7050,7 +7052,7 @@
 				"Aura_Radius"	"500"
 				"Aura_Teams"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 				"Aura_Types"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-				"Aura_Flags"	"DOTA_UNIT_TARGET_FLAG_NONE"
+				"Aura_Flags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 			}
 		}
 	}
@@ -8980,7 +8982,7 @@
 			"06"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"400.00"
+				"damage"	"400"
 			}
 		}
 	}
@@ -9011,27 +9013,30 @@
 		"ItemDeclarations"	"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnEquip"
 		{
-			"RunScript"
-			{
-				"ScriptFile"	"items/Addon_Items/item_ninja_cloth.lua"
-				"Function"	"OnEquip"
-			}
+			"RemoveModifier"
+            {
+                "Target" "CASTER"
+                "ModifierName" "modifier_ninja_cloth"
+            }
+            "DelayedAction"
+            {
+            	"Delay"     "0.1"
+            	"Action"    
+            	{
+            		"ApplyModifier"
+		            {
+		                "Target" "CASTER"
+		                "ModifierName" "modifier_ninja_cloth"
+		            }
+            	}
+            }
 		}
-		"OnUnequip"
-		{
-			"RunScript"
-			{
-				"ScriptFile"	"items/Addon_Items/item_ninja_cloth.lua"
-				"Function"	"OnUnequip"
-			}
-		}
-		
 		"Modifiers"
 		{
 			"modifier_ninja_cloth"
 			{
 				"IsHidden"	"1"
-				"Passive"	"0"
+				"Passive"	"1"
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"25"	//閃避
@@ -9215,22 +9220,6 @@
 				}
 			}
 		}
-		"OnEquip"
-		{
-			"RunScript"
-			{
-				"ScriptFile"	"items/Addon_Items/item_ninja_cloth.lua"
-				"Function"	"OnEquip"
-			}
-		}
-		"OnUnequip"
-		{
-			"RunScript"
-			{
-				"ScriptFile"	"items/Addon_Items/item_ninja_cloth.lua"
-				"Function"	"OnUnequip"
-			}
-		}
 		// Special
 		
 		"AbilitySpecial"
@@ -9275,7 +9264,7 @@
 			"modifier_ninja_cloth"
 			{
 				"IsHidden"	"1"
-				"Passive"	"0"
+				"Passive"	"1"
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"20"	//閃避
@@ -10015,28 +10004,13 @@
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
-		"OnEquip"
-		{
-			"RunScript"
-			{
-				"ScriptFile"	"items/Addon_Items/item_ninja_cloth.lua"
-				"Function"	"OnEquip"
-			}
-		}
-		"OnUnequip"
-		{
-			"RunScript"
-			{
-				"ScriptFile"	"items/Addon_Items/item_ninja_cloth.lua"
-				"Function"	"OnUnequip"
-			}
-		}
+
 		"Modifiers"
 		{
 			"modifier_ninja_cloth"
 			{
 				"IsHidden"	"1"
-				"Passive"	"0"
+				"Passive"	"1"
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"20"	//閃避
@@ -13192,7 +13166,7 @@
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
 		
-		"AbilityCooldown"	"55"
+		"AbilityCooldown"	"30"
 		
 		"AbilityManaCost"	"150"
 		"AbilityCastPoint"	"0.1"
@@ -13825,7 +13799,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"560.00"
+				"damage"	"560"
 			}
 		}
 	}
@@ -13908,7 +13882,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"560.00"
+				"damage"	"560"
 			}
 		}
 	}
@@ -13977,7 +13951,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"560.00"
+				"damage"	"560"
 			}
 		}
 	}
@@ -14064,7 +14038,7 @@
 				{
 					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "10"	//防禦
 					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "90" //攻速
-					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"   "90" //跑速
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_UNIQUE"   "150" //跑速
 				}
 			}
 			"modifier_ninja_cloth"
@@ -14176,6 +14150,168 @@
 		"ItemRequirements"
 		{
 			"01" "item_insight_gem_s"  //合成所需物品
+		}
+	}
+	// 犒賞
+	"item_reward6300"
+	{
+		// General
+		
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_custom/reward6300"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
+		"FightRecapLevel"	"1"
+		
+		"AbilityCooldown"	"60"
+		
+		"ID"	"3831"
+		"ItemQuality"	"component"
+		"Model"	"models/props_gameplay/tpscroll01.vmdl"
+		"Effect"	"particles/q09_2/q09_2.vpcf"
+		"ItemCost"	"6300"
+		"ItemDeclarations"	"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"SideShop"						"1"
+
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemInitialCharges"			"1"
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/tofar_goback.lua"
+				"Function"		"reward6300"
+			}
+			"SpendCharge"
+			{}
+		}
+	}
+
+	//禦神法輪‧二階製作單
+	"item_recipe_mana_thief_2" 
+	{
+	    "ID" "3832"
+	    "BaseClass" "item_recipe_arcane_boots"
+		"ItemCost" "1250"
+		"ItemShopTags" ""
+		"ItemRecipe" "1"
+		"ItemResult" "item_mana_thief_2"  //合成後物品
+		"ItemRequirements"
+		{
+			"01" "item_mana_thief_1"  //合成前物品
+		}
+	}
+
+	// 禦神法輪_2  // 禦神法輪．三階
+	"item_mana_thief_2"
+	{
+		// General
+		
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_custom/mana_thief"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
+		"FightRecapLevel"	"1"
+		
+		"AbilityCooldown"	"25"
+		
+		"AbilityManaCost"	"200"
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastRange"	"800"
+		"ID"	"25782"
+		"ItemQuality"	"component"
+		"Model"	"models/props_gameplay/tpscroll01.vmdl"
+		"Effect"	"particles/q09_2/q09_2.vpcf"
+		"ItemCost"	"4500"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemDeclarations"	"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemRequirements"	{}
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_mana_thief.lua"
+				"Function"	"OnEquip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_mana_thief.lua"
+				"Function"	"OnUnequip"
+			}
+		}
+
+		"precache"
+		{
+			"particle"					"particles/units/heroes/hero_nyx_assassin/nyx_assassin_mana_burn_msg.vpcf"
+			"particle" 					"particles/units/heroes/hero_pugna/pugna_ward_attack.vpcf"
+		}
+		
+		"OnSpellStart"
+		{
+			"FireEffect"
+			{
+				"EffectName"	"particles/units/heroes/hero_pugna/pugna_ward_attack.vpcf"
+				"EffectAttachType"	"start_at_customorigin"
+				
+
+				"ControlPointEntities"
+				{
+					"CASTER"	"attach_attack1"
+					"TARGET"	"attach_hitloc"
+				}
+			}
+			"RunScript"
+			{
+				"ScriptFile"			"items/Addon_Items/item_mana_thief.lua"
+				"Function"				"mana_burn_function3"
+			}
+		}
+		
+		"Modifiers"
+		{
+			"Passive_lightning_katana"
+			{
+				"IsHidden"	"1"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS" "0"	//力
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "0"		//敏
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "40"	//智
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "0"	//攻
+					"MODIFIER_PROPERTY_HEALTH_BONUS" "0" 			//血
+					"MODIFIER_PROPERTY_MANA_BONUS" "0"				//魔
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT" "0"	//回血
+					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE" "0" //回血%
+					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT" "0" 	//回魔
+					"MODIFIER_PROPERTY_MANA_REGEN_PERCENTAGE" "0" 	//回魔%
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "50" //攻速
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "0"	//防禦
+				}
+				"OnAttackLanded"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"items/Addon_Items/item_mana_thief.lua"
+						"Function"	"Shock3"
+					}
+				}
+			}
 		}
 	}
 }

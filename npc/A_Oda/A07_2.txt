@@ -1,13 +1,13 @@
 "DOTAHeroes"
 {
 	// 本多忠勝
-	"本多忠勝"
+	"A07"
 	{
 		// General
 		// ----------------------------------------------------------------
 		// Add model
 		"Model"	"models/honda/honde.vmdl"
-		"ModelScale"	"1.3"
+		"ModelScale"	"1.5"
 		//"Level"	"5"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
 		"HealthBarOffset"	"140"
@@ -29,7 +29,7 @@
 		"Ability7"	"A07_precache"
 		// Armor
 		// ----------------------------------------------------------------
-		"ArmorPhysical"	"4.00"
+		"ArmorPhysical"	"4"
 		"MagicalResistance"	"30"
 		// Attack
 		// ----------------------------------------------------------------
@@ -48,7 +48,7 @@
 		"AttributeBaseStrength"	"41"
 		"AttributeStrengthGain"	"3.40"
 		"AttributeBaseIntelligence"	"25"
-		"AttributeIntelligenceGain"	"2.00"
+		"AttributeIntelligenceGain"	"2"
 		"AttributeBaseAgility"	"21"
 		"AttributeAgilityGain"	"2.10"
 		// Bounty

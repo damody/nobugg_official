@@ -494,7 +494,7 @@
 		"AbilityCooldown"			"15"
 		"AbilityManaCost"			"120 140 160 180"
 		"AbilityDamage"				"60 70 80 90"
-		"AbilityCastRange"			"1000"
+		"AbilityCastRange"			"1500"
 
 		"OnSpellStart"
 		{

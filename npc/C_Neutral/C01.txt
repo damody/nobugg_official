@@ -104,7 +104,7 @@
 				"Duration"	"12"
 				"Properties"
 				{
-					
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%C01W_ATTACK_SPEED"
 					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"%C01W_SPEED"
 				}
 				"IsHidden"	"1"
@@ -455,7 +455,7 @@
 			"01"
 			{
 				"var_type"		"FIELD_INTEGER"
-				"aoe_damage"	"240 280 320 360"
+				"aoe_damage"	"240"
 			}
 			"02"
 			{
@@ -612,10 +612,16 @@
 						"Damage"		"%attack_damage"
 					}
 				}
+			}
+			"modifier_ninja_cloth"
+			{
+				"IsBuff"	"0"
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"%evasion"
 				}
+				"Passive"	"1"
+				"IsHidden"	"1"
 			}
 		}
 
@@ -666,8 +672,8 @@
 			"Damage"
 			{
 				"Target"		"TARGET"
-				"Type"			"DAMAGE_TYPE_PURE"
-				"Damage"		"%AbilityDamage"
+				"Type"			"DAMAGE_TYPE_MAGICAL"
+				"Damage"		"1"
 			}
 			"Stun"
 			{

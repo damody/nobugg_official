@@ -7,7 +7,7 @@
 		// ----------------------------------------------------------------
 		// Add model
 		"Model"	"models/a31/a31_model.vmdl"
-		"ModelScale"	"1.1"
+		"ModelScale"	"1.2"
 		//"Level"	"1"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
 		"HealthBarOffset"	"140"
@@ -22,7 +22,7 @@
 		"Ability7"	""
 		// Armor
 		// ----------------------------------------------------------------
-		"ArmorPhysical"	"1.00"
+		"ArmorPhysical"	"1"
 		"MagicalResistance"	"30"
 		// Attack
 		// ----------------------------------------------------------------
@@ -32,7 +32,7 @@
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"	"1.80"
 		"AttackAnimationPoint"	"0.70"
-		"AttackAcquisitionRange"	"700.00"
+		"AttackAcquisitionRange"	"700"
 		"AttackRange"	"700"
 		"ProjectileSpeed"	"1800"
 		// Attributes

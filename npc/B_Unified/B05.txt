@@ -26,7 +26,7 @@
 		"AbilityCastPoint"	"0.1"
 		// Time
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"	"7 6 6 5"
+		"AbilityCooldown"	"7 6 5 4"
 		// Cost
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityManaCost"	"120 140 160 180"
@@ -171,7 +171,7 @@
 					"Types"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 					"Teams"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 					"Center"	"CASTER"
-					"Radius"	"1500.00"
+					"Radius"	"1500"
 				}
 				"Action"
 				{
@@ -560,7 +560,7 @@
 					"Types"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 					"Teams"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 					"Center"	"CASTER"
-					"Radius"	"1500.00"
+					"Radius"	"1500"
 				}
 				"Action"
 				{
