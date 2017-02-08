@@ -1,0 +1,844 @@
+// 明智秀滿
+"DOTAAbilities"
+{
+	"C02_precache"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"precache"
+		{
+			"soundfile"	"soundevents/c02.vsndevts"
+			"soundfile"	"soundevents/c01w.vsndevts"
+			"particle"  "particles/units/heroes/hero_siren/naga_siren_portrait.vpcf" // 複製用螢幕特效
+
+			// C02W_old
+			"particle"  "particles/c02/c02w.vpcf" // 水月斬
+			"particle"  "particles/c02/c02w_hit.vpcf" // hit effect
+
+			// C02E_old
+			"particle"  "particles/units/heroes/hero_pugna/pugna_life_drain.vpcf" // 吸收
+
+			// C02T_old
+			"particle"  "particles/units/heroes/hero_legion_commander/legion_commander_press_owner.vpcf" // buff
+			"particle"  "particles/c02/c02t_old_arena.vpcf" // 競技場
+			"particle"  "particles/econ/items/invoker/invoker_apex/invoker_sun_strike_immortal1.vpcf" // 爆破
+			"particle"  "particles/units/heroes/hero_phantom_assassin/phantom_assassin_crit_impact_dagger.vpcf" // 噴血
+			"particle"  "particles/econ/items/shadow_fiend/sf_fire_arcana/sf_fire_arcana_shadowraze.vpcf"	// aoe
+		}
+	}
+
+	// 明智秀滿 [蜃氣襲]
+	"C02W"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"custom/A12W"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+		"AbilityCooldown"				"10"
+		"AbilityManaCost"				"120 140 160 180"
+		"AbilityDamage"					"200 300 400 500"
+
+		"AbilityCastRange"				"1500"
+		"AbilityCastPoint"				"0.1"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST3_STATUE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"illusion_duration"	"8"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"illusion_incoming_damage"	"300"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"illusion_outgoing_damage"	"30"
+			}
+		}
+
+		"precache"
+		{
+			"particle"  "particles/c02/c02w.vpcf" // 水月斬
+			"particle"  "particles/c02/c02w_hit.vpcf" // hit effect
+		}
+
+		"OnAbilityPhaseStart"
+		{
+			"FireSound"
+			{
+				"Target"	"CASTER"
+				"EffectName"	"C02W.vo1"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C02.lua"
+				"Function"		"C02W_launch_projectile"
+				"Target"		"POINT"
+			}
+		}
+
+		"OnProjectileHitUnit"
+		{
+			"DeleteOnHit"	"0"
+			"Damage"
+			{
+				"Target"		"TARGET"
+				"Type"			"DAMAGE_TYPE_MAGICAL"
+				"Damage"		"%AbilityDamage"
+			}
+			"AttachEffect"
+			{
+				"EffectName"        "particles/c02/c02w_hit.vpcf"
+				"EffectAttachType"  "follow_origin"
+				"Target"	"TARGET"
+				"ControlPointEntities"
+	            {
+	                "TARGET" "follow_origin"
+	                "CASTER" "follow_origin"
+	            }
+			}
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C02.lua"
+				"Function"		"C02W_clone_hero"
+				"Target"		"TARGET"
+			}
+		}
+	}
+
+	// 明智秀滿 [幻移]
+	"C02E"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"custom/liubei_hujia"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+
+		"AbilityCooldown"				"25 22 19 16"
+		"AbilityManaCost"				"135 150 165 180"
+
+		"AbilityCastRange"				"650"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_2"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"illusion_duration"	"8"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"illusion_incoming_damage"	"300"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"illusion_outgoing_damage"	"30"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_attack_speed"	"50 75 100 125"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_move_speed"	"6"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"5 8 11 14"
+			}
+		}
+
+		"precache"
+		{
+			"particle"  "particles/c02/c02e_flashjewel.vpcf" // 閃現路徑特效
+			"particle"  "particles/units/heroes/hero_ancient_apparition/ancient_apparition_chilling_touch_buff.vpcf" // 雙手發亮
+		}
+
+		"OnAbilityPhaseStart"
+		{
+			"FireSound"
+			{
+				"Target"	"CASTER"
+				"EffectName"	"C02E.vo1"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C02.lua"
+				"Function"		"C02E_OnSpellStart"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_C02E_buff"
+			{
+				"IsBuff"		"1"
+				"Duration"		"%duration"
+
+				"EffectName"		"particles/units/heroes/hero_ancient_apparition/ancient_apparition_chilling_touch_buff.vpcf"
+				"EffectAttachType"	"follow_origin"
+
+				"AllowIllusionDuplicate"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "%bonus_attack_speed"
+				    "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE" "%bonus_move_speed" 
+				}
+			}
+		}
+	}
+
+	// 明智秀滿 [鏡花水月]
+	"C02R"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"custom/icon_128x128_7"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"illusion_duration"	"8"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"illusion_incoming_damage"	"300"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"illusion_outgoing_damage"	"80"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bouns_evasion"	"7 12 17 22"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"active_delay"	"20 16 12 8"
+			}
+		}
+
+		"precache"
+		{
+			"particle"  "particles/c02/c02r.vpcf" // 武器發亮特效
+		}
+
+		"OnAbilityPhaseStart"
+		{
+			"FireSound"
+			{
+				"Target"	"CASTER"
+				"EffectName"	"C02R.vo1"
+			}
+		}
+
+		"OnUpgrade"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C02.lua"
+				"Function"		"C02R_OnUpgrade"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_ninja_cloth"
+			{
+				"Passive"		"1"
+				"IsHidden"		"1"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_EVASION_CONSTANT" "%bouns_evasion"
+				}
+			}
+			"modifier_C02R"
+			{
+				"Passive"		"1"
+
+				"OnCreated"
+				{
+					"AttachEffect"
+					{
+						"EffectName" 	"particles/c02/c02r.vpcf"
+						"EffectAttachType" "attach_attack1"
+						"Target"	"TARGET"
+						"ControlPointEntities"
+			            {
+			                "TARGET" "attach_attack1"
+			            }
+					}
+				}
+
+				"OnAttackLanded"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C02.lua"
+						"Function"		"C02R_OnAttackLanded"
+						"Target"		"TARGET"
+					}
+				}
+				"OnDestroy"
+				{
+					"ApplyModifier"
+					{
+						"ModifierName"	"modifier_C02R_Timer"
+						"Target" 		"CASTER"
+					}
+				}
+			}
+			"modifier_C02R_Timer"
+			{
+				"Duration"		"%active_delay"
+				"OnDestroy"
+				{
+					"ApplyModifier"
+					{
+						"ModifierName"	"modifier_C02R"
+						"Target" 		"CASTER"
+					}
+				}
+			}
+		}
+	}
+
+	// 明智秀滿 [汰選斬擊]
+	"C02T"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"custom/icon_128x128_27"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+
+		"AbilityCooldown"				"95"
+		"AbilityManaCost"				"200 250 300"
+		"AbilityDamage"					"450 600 750"
+
+		"AbilityCastRange"				"200"
+		"AbilityCastPoint"				"0.4"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"force_kill_hp"		"600 750 900"
+			}
+			"02"
+			{
+				"var_type"		"FIELD_FLOAT"
+				"stun_time"		"2"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"aoe_duration"		"30"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"aoe_chance"		"50"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"aoe_damage"		"180 230 280"
+			}
+			"06"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"aoe_radius"		"400"
+			}
+		}
+
+		"precache"
+		{
+			"particle"  "particles/units/heroes/hero_siren/naga_siren_riptide.vpcf"	// aoe
+			"particle"  "particles/units/heroes/hero_siren/naga_siren_siren_song_cast.vpcf" // 處決失敗特效
+			"particle"  "particles/units/heroes/hero_axe/axe_culling_blade_kill.vpcf"  // 處決噴血
+			"particle"  "particles/econ/items/lich/frozen_chains_ti6/lich_frozenchains_frostnova.vpcf" // 處決特效
+			"particle"  "particles/units/heroes/hero_arc_warden/arc_warden_tempest_buff.vpcf" // buff
+		}
+
+		"OnAbilityPhaseStart"
+		{
+			"FireSound"
+			{
+				"Target"	"CASTER"
+				"EffectName"	"C02T.vo1"
+			}
+
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C02.lua"
+				"Function"		"C02T_OnAbilityPhaseStart"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C02.lua"
+				"Function"		"C02T_OnSpellStart"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_C02T_aoe"
+			{
+				"IsBuff"	"1"
+				"Duration"	"%aoe_duration"
+
+				"EffectName" "particles/units/heroes/hero_arc_warden/arc_warden_tempest_buff.vpcf"
+				"EffectAttachType" "follow_origin"
+
+				"OnAttack"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C02.lua"
+						"Function"		"C02T_OnAttack"
+					}
+				}
+			}
+		}
+	}
+
+	// 明智秀滿 11.2B [海波浩蕩]
+	"C02W_old"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"custom/A12W"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+		"AbilityCooldown"				"5"
+		"AbilityManaCost"				"110 130 150 170"
+		"AbilityDamage"					"250 350 450 550"
+
+		"AbilityCastRange"				"800"
+		"AbilityCastPoint"				"0.1"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST3_STATUE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"start_width"	"100"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"ended_width"	"300"
+			}
+		}
+
+		"precache"
+		{
+			"particle"  "particles/c02/c02w.vpcf" // 水月斬
+			"particle"  "particles/c02/c02w_hit.vpcf" // hit effect
+		}
+
+		"OnAbilityPhaseStart"
+		{
+			"FireSound"
+			{
+				"Target"	"CASTER"
+				"EffectName"	"C02W_old.vo1"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C02.lua"
+				"Function"		"C02W_old_launch_projectile"
+				"Target"		"POINT"
+			}
+		}
+
+		"OnProjectileHitUnit"
+		{
+			"DeleteOnHit"	"0"
+			"Damage"
+			{
+				"Target"		"TARGET"
+				"Type"			"DAMAGE_TYPE_MAGICAL"
+				"Damage"		"%AbilityDamage"
+			}
+			"AttachEffect"
+			{
+				"EffectName"        "particles/c02/c02w_hit.vpcf"
+				"EffectAttachType"  "follow_origin"
+				"Target"	"TARGET"
+				"ControlPointEntities"
+	            {
+	                "TARGET" "follow_origin"
+	                "CASTER" "follow_origin"
+	            }
+			}
+		}
+	}
+
+	// 明智秀滿 11.2B [吸魂]
+	"C02E_old"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"custom/icon_128x128_77"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+
+		"AbilityCooldown"				"15"
+		"AbilityManaCost"				"100 120 140 160"
+
+		"AbilityCastRange"				"600"
+		"AbilityCastPoint"				"0"
+
+		"AbilityChannelTime"	"10"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"		"FIELD_FLOAT"
+				"steal_delay"	"0.5"
+			}
+			"02"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"steal_hp"		"45 65 85 105"
+			}
+			"03"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"steal_mp"		"10 15 20 25"
+			}
+			"04"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"max_range"		"1000"
+			}
+		}
+
+		"precache"
+		{
+			"particle"  "particles/units/heroes/hero_pugna/pugna_life_drain.vpcf" // 吸收
+		}
+
+		"OnAbilityPhaseStart"
+		{
+			"FireSound"
+			{
+				"Target"	"CASTER"
+				"EffectName"	"C02E_old.vo1"
+			}
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C02.lua"
+				"Function"		"C02E_old_OnAbilityPhaseStart"
+				"Target"		"TARGET"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C02.lua"
+				"Function"		"C02E_old_OnSpellStart"
+				"Target" 		"TARGET"
+			}
+		}
+
+		"OnChannelFinish"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C02.lua"
+				"Function"		"C02E_old_OnChannelFinish"
+				"Target" 		"TARGET"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_C02E_old"
+			{
+				"IsDebuff"			"1"
+				"ThinkInterval"  "%steal_delay"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C02.lua"
+						"Function"		"C02E_old_steal"
+						"Target"		"TARGET"
+					}
+				}
+				"OnUnitMoved"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C02.lua"
+						"Function"		"C02E_old_OnUnitMoved"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C02.lua"
+						"Function"		"modifier_C02E_old_OnDestroy"
+						"Target"		"TARGET"
+					}
+				}
+			}
+		}
+	}
+
+	// 明智秀滿 11.2B [鬼武者劍術]
+	"C02R_old"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"custom/dianwei_zhongji"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01" // 閃避
+			{
+				"var_type"		"FIELD_INTEGER"
+				"evasion"		"4 8 12 16" // %
+			}
+			"02"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"crit_bonus"	"250 300 350 400" // %
+			}
+			"03"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"crit_chance"	"15"	// %
+			}
+		}
+
+		"precache"
+		{
+		}
+
+		"OnAbilityPhaseStart"
+		{
+			"FireSound"
+			{
+				"Target"	"CASTER"
+				"EffectName"	"C02R_old.vo1"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_C02R_old_passive"
+			{
+				"Passive"			"1"
+				"OnAttackStart"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C02.lua"
+						"Function"		"C02R_old_OnAttackStart"
+						"Target"		"TARGET"
+					}
+				}
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"%evasion"
+				}
+			}
+			"modifier_C02R_old_crit"
+			{
+				"IsHidden"			"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE" "%crit_bonus"
+				}
+			}
+		}
+	}
+
+	// 明智秀滿 11.2B [炎龍劍]
+	"C02T_old"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"custom/icon_128x128_50"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+
+		"AbilityCastRange"				"500"
+		"AbilityCastPoint"				"0.1"
+
+		"AbilityCooldown"				"130"
+		"AbilityManaCost"				"200 250 300"
+		"AbilityDamage"					"1250 1500 1750"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"play_time"		"5"
+			}
+			"02"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"duration"		"30"
+			}
+			"03"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"aoe_chance"	"50"
+			}
+			"04"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"aoe_damage"	"180 230 280"
+			}
+			"05"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"aoe_radius"	"250"
+			}
+		}
+
+		"precache"
+		{
+			"particle"  "particles/units/heroes/hero_legion_commander/legion_commander_press_owner.vpcf" // buff
+			"particle"  "particles/c02/c02t_old_arena.vpcf" // 競技場
+			"particle"  "particles/econ/items/invoker/invoker_apex/invoker_sun_strike_immortal1.vpcf" // 爆破
+			"particle"  "particles/units/heroes/hero_phantom_assassin/phantom_assassin_crit_impact_dagger.vpcf" // 噴血
+			"particle"  "particles/econ/items/shadow_fiend/sf_fire_arcana/sf_fire_arcana_shadowraze.vpcf"	// aoe
+		}
+
+		"OnAbilityPhaseStart"
+		{
+			"FireSound"
+			{
+				"Target"	"CASTER"
+				"EffectName"	"C02T_old.vo1"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C02.lua"
+				"Function"		"C02T_old_OnSpellStart"
+				"Target"		"TARGET"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_C02T_old_playing"
+			{
+				"Duration"	"%play_time"
+				"Priority" "MODIFIER_PRIORITY_ULTRA"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_DISABLE_HEALING"	"1"
+				}
+				"States"
+				{
+					"MODIFIER_STATE_STUNNED"		"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_INVULNERABLE"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
+			}
+			"modifier_C02T_old_aoe"
+			{
+				"IsBuff"	"1"
+				"Duration"	"%duration"
+				"OnCreated"
+				{
+					"AttachEffect"
+					{
+						"EffectName"        "particles/units/heroes/hero_legion_commander/legion_commander_press_owner.vpcf"
+						"EffectAttachType"  "follow_origin"
+						"Target"            "TARGET"
+						"ControlPointEntities"
+						{
+							"TARGET"	"follow_origin"
+							"TARGET"	"attach_attack1"
+							"TARGET"	"attach_attack1"
+							"TARGET"	"attach_attack1"
+						}
+					}
+				}
+				"OnAttackLanded"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C02.lua"
+						"Function"		"C02T_old_OnAttackLanded"
+						"Target"		"TARGET"
+					}
+				}
+			}
+		}
+	}
+} // end DOTAAbilities
