@@ -875,7 +875,7 @@
 		"DOTA_Tooltip_modifier_critical_strike"	"二天一流"
 		"DOTA_Tooltip_modifier_critical_strike_crit"	"二天一流"
 		"DOTA_Tooltip_Ability_C21T"	"秘奧義‧飛翔烈震斬"
-		"DOTA_Tooltip_Ability_C21T_Description"	"在戰場上迅速的來回斬擊，每次斬擊可以造成110的真實傷害與基礎攻擊力的物理傷害，並且每次的斬擊宮本武藏將更加的迅速，能夠同一時間揮出更多攻擊，總共可以進行<font color='#5cb85c'>(11/16/23)</font>次斬擊。"
+		"DOTA_Tooltip_Ability_C21T_Description"	"在戰場上迅速的來回斬擊，每次斬擊可以造成125的真實傷害與基礎攻擊力的物理傷害，並且每次的斬擊宮本武藏將更加的迅速，能夠同一時間揮出更多攻擊，總共可以進行<font color='#5cb85c'>(11/16/23)</font>次斬擊。"
 
 		// 宮本武藏 11.2B
 		"DOTA_Tooltip_Ability_C21W_old" "奧義．弧月斬"
@@ -1086,7 +1086,7 @@
 		"DOTA_Tooltip_Ability_C15W"	"亂射"
 		"DOTA_Tooltip_Ability_C15W_Description"	"對著範圍內的每個目標射箭，每隻箭矢可以造成<font color='#5cb85c'>(75/150/225/300)</font>傷害並擊暈<font color='#5cb85c'>(0.6/1.2/1.8/2.4)</font>秒。 "
 		"DOTA_Tooltip_Ability_C15E"	"爆裂箭"
-		"DOTA_Tooltip_Ability_C15E_Description"	"對指定的方向射出一支爆裂箭，爆裂箭將會在經過的路徑上留下一排的火焰，碰到火焰的敵人每秒受到<font color='#5cb85c'>(120/160/200/240)</font>的傷害，火焰存在12秒。 "
+		"DOTA_Tooltip_Ability_C15E_Description"	"對指定的方向射出一支爆裂箭，爆裂箭將會在經過的路徑上留下一排寬度170的火焰，碰到火焰的敵人每秒受到<font color='#5cb85c'>(120/160/200/240)</font>的傷害，火焰存在12秒。 "
 		"DOTA_Tooltip_Ability_C15R"	"精準之光"
 		"DOTA_Tooltip_Ability_C15R_Description"	"增加<font color='#5cb85c'>(10/18/26/34)% </font>攻擊傷害以及<font color='#5cb85c'>(5/10/15/20)</font>靈活。 "
 		"DOTA_Tooltip_Ability_C15T"	"百箭齊發"
@@ -1256,7 +1256,7 @@
 		"DOTA_Tooltip_Ability_A06R_old"	 "炎驅戰魂"
 		"DOTA_Tooltip_Ability_A06R_old_Description" "增加自身<font color='#5cb85c'>(4/8/12/16)% </font>移動速度 <font color='#5cb85c'>(15/30/45/60)% </font>攻擊速度 "
 	    "DOTA_Tooltip_Ability_A06T_old"  "赤炎之怒"
-        "DOTA_Tooltip_Ability_A06T_old_Description" "攻擊時有75% 的機會造成550範圍<font color='#5cb85c'>(170/250/340)</font>點傷害"
+        "DOTA_Tooltip_Ability_A06T_old_Description" "攻擊時有75% 的機會造成550範圍<font color='#5cb85c'>(160/230/320)</font>點真實傷害"
 		"DOTA_Tooltip_Ability_A07D"  "奮起"
 		"DOTA_Tooltip_Ability_A07D_Description" "使自身回復 4% 生命值並且提升攻速<font color='#5cb85c'>(60/70/80/90/100)% </font>，持續3秒。 "
 		"DOTA_Tooltip_Ability_A07W"  "毫髮無傷"
@@ -1321,7 +1321,7 @@
 		"DOTA_Tooltip_Ability_A12R"  "為智畏服"
 		"DOTA_Tooltip_Ability_A12R_Description" "對指定區域的敵人造成<font color='#5cb85c'>(150/250/350/450)</font>傷害並減緩<font color='#5cb85c'>(15/20/25/30)% </font>移動速度，持續3秒。若是產生「奇計」效果，則使受到傷害的敵人額外失去12% 生命。 "
 		"DOTA_Tooltip_Ability_A12T"  "玄滅箭"
-		"DOTA_Tooltip_Ability_A12T_Description" "在每次攻擊當中附加玄能之力並消耗<font color='#5cb85c'>(85/125/185)</font>法力，可以對擊中的敵人造成等同自身現有法力<font color='#5cb85c'>(19/23/27)% </font>的額外魔法傷害。 若是產生「奇計」效果，則在此發玄滅箭擊中敵人時造成3倍傷害。 "
+		"DOTA_Tooltip_Ability_A12T_Description" "大絕為法球效果，在每次攻擊當中附加玄能之力並消耗<font color='#5cb85c'>(85/125/185)</font>法力，可以對擊中的敵人造成等同自身現有法力<font color='#5cb85c'>(19/23/27)% </font>的額外魔法傷害。 若是產生「奇計」效果，則在此發玄滅箭擊中敵人時造成3倍傷害。 "
 		"DOTA_Tooltip_Ability_A13D"	 "忍法．迷蹤步"
 		"DOTA_Tooltip_Ability_A13D_Description"	"進入隱形狀態，提升<font color='#5cb85c'>(5/10/15/20)% </font>的移動速度或是使用技能即會現身，現身的第一擊可以額外造成<font color='#5cb85c'>(90/175/260/345)</font>傷害，隱形最多維持20秒。 "
 		"DOTA_Tooltip_Ability_A13W"	 "忍法．影惑之術"
@@ -1654,9 +1654,9 @@
 		"DOTA_Tooltip_Ability_B02W"	"忍法．朧"
 		"DOTA_Tooltip_Ability_B02W_Description"	"造出指定目標的幻影，幻影可以繼承本身傷害80% ，但是會受到400% 傷害，持續<font color='#5cb85c'>(5/6/7/8) </font>秒。<font color='#d9534f'>提升此技能等級可強化「忍法．迷蹤步」</font>"
 		"DOTA_Tooltip_Ability_B02E"	"忍法．熾烈之徑"
-		"DOTA_Tooltip_Ability_B02E_Description"	"施展之後，會在經過的地方產生火焰，碰到火焰的敵人每秒受到傷害<font color='#5cb85c'>(180/240/300/360)</font>。"
+		"DOTA_Tooltip_Ability_B02E_Description"	"施展之後，會在經過的地方產生火焰，碰到火焰的敵人每秒受到傷害<font color='#5cb85c'>(80/160/240/360)</font>。"
 		"DOTA_Tooltip_Ability_B02R"	"忍法．十八方手裏劍"
-		"DOTA_Tooltip_Ability_B02R_Description"	"使目標敵軍被陷阱糾纏，使其受困()而無法移動，並且在18方位創造出手裏劍進行攻擊，每發手裏劍造成傷害和短暫暈眩，總共造成<font color='#5cb85c'>(90/180/270/360)</font>真實傷害。<font color='#d9534f'>無視魔法免疫牽制，但魔法免疫單位不會暈眩。</font>"
+		"DOTA_Tooltip_Ability_B02R_Description"	"使目標敵軍被陷阱糾纏，使其受困(1/1.5/2/2.5)秒而無法移動，並且在18方位創造出手裏劍進行攻擊，每發手裏劍造成傷害和短暫暈眩，總共造成<font color='#5cb85c'>(90/180/270/360)</font>真實傷害。<font color='#d9534f'>無視魔法免疫牽制，但魔法免疫單位不會暈眩。</font>"
 		"DOTA_Tooltip_Ability_B02T"	"忍法密傳．四方導雷"
 		"DOTA_Tooltip_Ability_B02T_Description"	"使目標敵軍成為導雷的目標暈眩1秒，並且在接下來每隔1秒便會承受一次四方導雷的攻擊，造成175真實傷害並且暈眩0.35秒，持續<font color='#5cb85c'>(4/5/6)</font>次。"
 		"DOTA_Tooltip_modifier_B02T"	"忍法密傳．四方導雷"
@@ -1675,11 +1675,11 @@
 		"DOTA_Tooltip_Ability_B02W_old" "忍法．迷蹤步"
 		"DOTA_Tooltip_Ability_B02W_old_Description" "能夠隱形，並讓移動速度提昇<font color='#5cb85c'>(10/15/20/25)% </font>並持續<font color='#5cb85c'>(25/30/35/40)</font>秒。如果攻擊的話，隱形術即告失效，第一擊會造成<font color='#5cb85c'>(100/160/220/280)</font>的額外傷害。"
 		"DOTA_Tooltip_Ability_B02E_old" "忍法．熾烈之徑"
-		"DOTA_Tooltip_Ability_B02E_old_Description" "施展後在10秒內經過的地方都產生火焰，經過火焰的敵人每秒會受到<font color='#5cb85c'>(180/240/300/360)</font>點熾炎焚身式傷害。持續10秒。"
+		"DOTA_Tooltip_Ability_B02E_old_Description" "施展後在10秒內經過的地方都產生火焰，經過火焰的敵人每秒會受到<font color='#5cb85c'>(80/160/240/360)</font>點熾炎焚身式傷害。持續10秒。"
 		"DOTA_Tooltip_Ability_B02R_old" "忍法．十八方手裏劍"
 		"DOTA_Tooltip_Ability_B02R_old_Description" "囚禁目標，強制使其<font color='#5cb85c'>(2.4/2.7/3.0/3.3)</font>秒內無法移動，每0.25秒向目標發射一發手裏劍，造成<font color='#5cb85c'>(5/10/15/20)</font>點傷害並中斷動作。共18發。"
 		"DOTA_Tooltip_Ability_B02T_old" "忍法密傳．四方導雷"
-		"DOTA_Tooltip_Ability_B02T_old_Description" "放出多個雷球追蹤目標5秒，能看見目標直到雷球消失，雷球於2.5秒後暈眩0.6秒並同時對目標放出連鎖紅雷，每個球造成200點傷害，然後擴散至附近700範圍最多4名敵人造成200點傷害，每次彈跳傷害會提升5% ，最後會彈回一開始選擇的目標。"
+		"DOTA_Tooltip_Ability_B02T_old_Description" "放出(4/8/12)個雷球追蹤目標5秒，能看見目標直到雷球消失，雷球於2.5秒後暈眩0.6秒並同時對目標放出連鎖紅雷，每顆雷球造成200點傷害，然後擴散至附近1000範圍的敵人造成200點傷害，每次彈跳傷害會提升5% ，最後會彈回一開始選擇的目標。"
 		
 		"DOTA_Tooltip_Ability_B03W" "鍾馗一擊"
 		"DOTA_Tooltip_Ability_B03W_Description" "【W】對前方100的敵軍造成<font color='#5cb85c'>(150/250/350/450)</font>傷害以及暈眩1.1秒。【E】對前方400的敵軍造成<font color='#5cb85c'>(150/250/350/450)</font>傷害以及暈眩1.1秒。【R】對前方700的敵軍造成<font color='#5cb85c'>(150/250/350/450)</font>傷害以及暈眩1.1秒。<font color='#cc0000'>本技能學習後分為3個攻擊技能，耗魔與冷卻時間相同，但不互相影響</font>"
@@ -1737,7 +1737,7 @@
 		"DOTA_Tooltip_Ability_B06R_old" "心眼"
 		"DOTA_Tooltip_Ability_B06R_old_Description" "有<font color='#5cb85c'>(8/16/24/32)% </font>機會在戰鬥中閃避攻擊"
 		"DOTA_Tooltip_Ability_B06T_old" "日本第一兵"
-		"DOTA_Tooltip_Ability_B06T_old_Description" "轉化為速度過人的日本第一兵，提昇至2倍基礎攻速，增加<font color='#5cb85c'>(3/6/9)</font>護甲，獲得<font color='#5cb85c'>(500/750/1000)</font>額外生命值，使自身移動速度加快100% 。持續<font color='#5cb85c'>(30/40/50)</font>秒。"
+		"DOTA_Tooltip_Ability_B06T_old_Description" "轉化為速度過人的日本第一兵，提昇至2倍基礎攻速，增加<font color='#5cb85c'>(3/6/9)</font>護甲，獲得<font color='#5cb85c'>(500/750/1000)</font>額外生命值，使自身移動速度加快250點 。持續<font color='#5cb85c'>(30/40/50)</font>秒。"
 
 		"DOTA_Tooltip_Ability_B07W" "星瀑"
 		"DOTA_Tooltip_Ability_B07W_Description" "呼叫無數流星降落在指定區域，每波流星造成40傷害。總共可降下10波。<font color='#cc0000'>需維持施法</font>"
@@ -1911,7 +1911,7 @@
 
 		// 立花宗茂 11.2B
 		"DOTA_Tooltip_Ability_C11W_old" "雷切"
-		"DOTA_Tooltip_Ability_C11W_old_Description" "攻擊時有20% 機率打出<font color='#5cb85c'>(2/2.5/3/3.5)</font>倍傷害並增加<font color='#5cb85c'>(30/40/50/60)</font>攻擊力。"
+		"DOTA_Tooltip_Ability_C11W_old_Description" "攻擊時有20% 機率打出<font color='#5cb85c'>(2/2.5/3/3.5)</font>倍傷害並增加<font color='#5cb85c'>(30/40/50/60)</font>攻擊力，持續20秒。"
 		"DOTA_Tooltip_Ability_C11E_old" "雷之疾"
 		"DOTA_Tooltip_Ability_C11E_old_Description" "增加<font color='#5cb85c'>(20/40/60/80)% </font>攻擊速度和<font color='#5cb85c'>(7/9/11/13)% </font>移動速度。持續20秒。"
 		"DOTA_Tooltip_Ability_C11R_old" "雷之眼"
@@ -2435,5 +2435,31 @@
 
 		"DOTA_Tooltip_modifier_C02T_old_aoe" "炎龍劍"
 		"DOTA_Tooltip_modifier_C02T_old_aoe_Description" "攻擊有機會造成範圍傷害。"
+
+		// 馬場信房
+
+		"npc_dota_hero_chaos_knight" "馬場信房"
+		"npc_dota_hero_chaos_knight_hype" "信房的出身是正統甲斐武將，父親是甲斐武士遠江守信保，其後由於武田家譜代家臣馬場虎貞向信玄的父親信虎諫言，故入籍馬場家，因而改名為馬場信春。 1546年更以「旗本組侍大將持有騎馬五十騎」的獎勵受到拔擢，同時受信玄之命改名信房。第四次川中島之戰，信房擔任妻女山攻擊機動隊，率一百二十騎重創越後上杉軍，勇名大噪，另外在武田信玄重擊德川家康的三方原之戰中，信房與山縣昌景、內藤昌豊擔任頭陣，對家康軍瘋狂追擊，功績第一。1564年武田名將「鬼美濃」原虎胤死後，信玄命信房繼承鬼美濃的武名，並受封美濃守信房。"
+
+		"DOTA_Tooltip_Ability_B21W" "破空波"
+		"DOTA_Tooltip_Ability_B21W_Description" "對著指定方向發出一道破空波，可以造成<font color='#5cb85c'>(250/350/450/550)</font>的傷害。"
+
+		"DOTA_Tooltip_Ability_B21E" "殺意"
+		"DOTA_Tooltip_Ability_B21E_Description" "解放殺意來增加30% 的移動速度以及<font color='#5cb85c'>(35/60/85/110)% </font>攻擊速度，周圍生命值低於65% 的敵軍將會因懼怕而暈眩1.5秒。殺意持續<font color='#5cb85c'>(4/8/12/16)</font>秒。"
+
+		"DOTA_Tooltip_Ability_B21R" "反逆甲"
+		"DOTA_Tooltip_Ability_B21R_Description" "使自身護甲提昇<font color='#5cb85c'>(1/3/5/7)</font>，並且當被敵軍攻擊時，攻擊者將會受到<font color='#5cb85c'>(21/34/47/60)</font>的真實傷害。"
+
+		"DOTA_Tooltip_Ability_B21T" "不死鬼美濃"
+		"DOTA_Tooltip_Ability_B21T_Description" "永久的提升力量<font color='#5cb85c'>(15/20/25)</font>點，並且自身生命值每降低20% ，便可以提高<font color='#5cb85c'>(35/45/55)</font>的攻擊力以及<font color='#5cb85c'>(4/6/8)</font>裝甲。"
+
+		"DOTA_Tooltip_modifier_B21E_buff" "殺意"
+		"DOTA_Tooltip_modifier_B21E_buff_Description" "提升移動與攻擊速度。"
+
+		"DOTA_Tooltip_modifier_B21R" "反逆甲"
+		"DOTA_Tooltip_modifier_B21R_Description" "提升物理防禦，攻擊此單位會遭受真實傷害的反擊。"
+
+		"DOTA_Tooltip_modifier_B21T_stack" "不死鬼美濃"
+		"DOTA_Tooltip_modifier_B21T_stack_Description" "血量越低，攻擊與護甲越高"
 	}
 }
