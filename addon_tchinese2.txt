@@ -161,10 +161,10 @@
 		"DOTA_Chat_PlayerKilledBadNearby"	"%s1 被織田軍擊殺了！織田軍方的每位英雄將平分 %s2 金錢！"
 		"DOTA_Chat_PlayerKilledBadNearbySingle"	"%s1 被織田軍擊殺了！織田軍方的每位英雄將平分 %s2 金錢！"
 		"npc_dota_hero_jakiro" "佐佐木小次郎"
-		"npc_dota_hero_jakiro_hype"  "出身九州小倉市的小次郎是在擁護和讚揚的環境成長起來的。但跟那些平庸的子弟不同，小次郎絕對是個劍術奇才。小次郎所創的嚴流，用的是比小太刀長得多的太刀。小次郎愛刀\"長光\"便是長達三尺二寸的長刀。即使是這樣，卻連\"燕返\"都沒有使出就敗在宮本武藏劍下。跟武藏決鬥時小次郎無法發揮刀長優勢，武藏在決鬥前，特製了一把木刀，長度四尺二寸，比小次郎的\"長光\"長了一尺。因小次郎在決鬥前未將絕技\"燕返\"傳給弟子，自己思想構成巖流劍術最著名的\"燕返\"技巧亦沒有流傳下來。 "
+		"npc_dota_hero_jakiro_hype"  "出身九州小倉市的小次郎是在擁護和讚揚的環境成長起來的。但跟那些平庸的子弟不同，小次郎絕對是個劍術奇才。小次郎所創的嚴流，用的是比小太刀長得多的太刀。小次郎愛刀'長光'便是長達三尺二寸的長刀。即使是這樣，卻連'燕返'都沒有使出就敗在宮本武藏劍下。跟武藏決鬥時小次郎無法發揮刀長優勢，武藏在決鬥前，特製了一把木刀，長度四尺二寸，比小次郎的'長光'長了一尺。因小次郎在決鬥前未將絕技'燕返'傳給弟子，自己思想構成巖流劍術最著名的'燕返'技巧亦沒有流傳下來。 "
 
 		"npc_dota_hero_dragon_knight" "上杉謙信"
-		"npc_dota_hero_dragon_knight_hype"  "越後戰國大名人稱\"越後之龍\"、\"北陸的守護神\"，由山內上杉家繼承上杉姓氏與關東管領職，入道後改名謙信。虔誠信仰戰神•毘沙門天，戰場中常以白布染上「毘」字的軍旗為號，和宿敵武田信玄及、關東的北條氏康、氏政父子，有過無以數計的合戰。為人秉持正義，絕對不打沒有大義的合戰，是戰國時代第一猛將，據說謙信自始至終每一場戰役從來沒有敗過。信玄死後，謙信回應足利義昭的號召，轉而向西，吞併越中，征服能登，突入越前，攻擊織田氏，並在手取川大敗織田名將柴田勝家。但隨即因腦溢血死於軍中。世人稱他為\"軍神\"。 "
+		"npc_dota_hero_dragon_knight_hype"  "越後戰國大名人稱'越後之龍'、'北陸的守護神'，由山內上杉家繼承上杉姓氏與關東管領職，入道後改名謙信。虔誠信仰戰神•毘沙門天，戰場中常以白布染上「毘」字的軍旗為號，和宿敵武田信玄及、關東的北條氏康、氏政父子，有過無以數計的合戰。為人秉持正義，絕對不打沒有大義的合戰，是戰國時代第一猛將，據說謙信自始至終每一場戰役從來沒有敗過。信玄死後，謙信回應足利義昭的號召，轉而向西，吞併越中，征服能登，突入越前，攻擊織田氏，並在手取川大敗織田名將柴田勝家。但隨即因腦溢血死於軍中。世人稱他為'軍神'。 "
 
 		"npc_dota_hero_pugna" "本願寺顯如"
 		"npc_dota_hero_pugna_hype" "日本佛教一向宗第十一代法主。一向宗自1488年開始，便以發動暴動的手段爭取領土與武士階級抗衡，希望能將日本改造成以佛為主的佛教國家。自1500年代左右，甚至將加賀一國的武士勢力完全逐出，成為「以佛治國」的政治實體。西元1571年，由於一向宗聖地比叡山因庇護朝倉淺井聯軍而遭信長燒殺殆盡，因此痛罵信長為「佛敵」，向信徒鼓吹「為佛而戰可上天堂」的思想，發出「打倒信長」的一向宗徒暴動命令﹙一向一揆﹚。"
@@ -197,7 +197,7 @@
 		"npc_dota_hero_antimage_hype"	"出生於天文3年（1543年），卒於文祿2年（1593年）），是日本戰國時代的武將，四國戰國大名長宗我部元親的弟弟。其子為香宗我部親氏和貞親。他是長宗我部國親的三 子、1558年奉其父命成為香宗我部親秀的養子。1569年成為安藝城主。之後協助其兄轉戰各地，他在1582年的中富川之戰成功討伐了十河存保、 1583年奪下木津城，協助其兄長完成四國島的統一。"
 		
 		"npc_dota_hero_silencer"	"立花道雪"
-		"npc_dota_hero_silencer_hype"	"傳說中的\"雷神的化身\"立花道雪，當他的父親臥病在床時，立花道雪代父出征，這是他的初陣。據說立花道雪率領為數僅僅三千的軍隊連夜趕到敵人城下，翌晨發動猛攻，不出一天便把城池攻下。立花道雪的初陣，一場石破天驚的初陣，名震天下。"
+		"npc_dota_hero_silencer_hype"	"傳說中的'雷神的化身'立花道雪，當他的父親臥病在床時，立花道雪代父出征，這是他的初陣。據說立花道雪率領為數僅僅三千的軍隊連夜趕到敵人城下，翌晨發動猛攻，不出一天便把城池攻下。立花道雪的初陣，一場石破天驚的初陣，名震天下。"
 		
 		"npc_dota_hero_bristleback"	"今川義元"
 		"npc_dota_hero_brewmaster_hype"	"永正十四年（1517年）出生，為越後守護上杉氏的重臣、大熊政秀之子。 父親一代，已開始負責為上杉氏收納段錢，而朝秀亦擔當上杉家段錢方等要職。越後守護者上杉氏滅亡前後，開始出仕守護代長尾氏，其後在擁立長尾景虎一事上盡力，由是成為其重臣。朝秀有武勇，據說在奉信玄之命攻打上野國的長野業盛之際，單挑知名劍豪上泉信綱，未有受傷，不分勝負。"
@@ -701,7 +701,7 @@
 		"DOTA_Tooltip_Ability_item_the_shell_of_spirituality_kappa_Description" "護甲+5，法力+200。降低所受的法術傷害10% 。【使用】回復自身以及周圍友軍250法力。"
 
 		"DOTA_Tooltip_Ability_item_kotennmyohiragumo" "平蜘蛛釜"
-		"DOTA_Tooltip_Ability_item_kotennmyohiragumo_Description" "生命+300。每秒回復10生命值，法力回復+150% 。【使用】創造一個法術吸收盾，可以在7.5秒內吸收所有法術傷害。<font color='#cc0000'>指定單位施放。</font>"
+		"DOTA_Tooltip_Ability_item_kotennmyohiragumo_Description" "生命+300。每秒回復10生命值，法力回復+150% 。【使用】創造一個法術吸收盾，可以在10秒內吸收所有法術傷害。<font color='#cc0000'>指定單位施放。</font>"
 
 		"DOTA_Tooltip_Ability_item_magic_talisman" "御魔護符"
 		"DOTA_Tooltip_Ability_item_magic_talisman_Description" "自動抵擋一次魔法技能，並且在5秒內獲得可以吸收500法術傷害的魔盾。20秒內不得重複發動。"
@@ -883,7 +883,7 @@
 		"DOTA_Tooltip_Ability_C21E_old" "奧義．連環鋼破"
 		"DOTA_Tooltip_Ability_C21E_old_Description" "突擊目標，造成<font color='#5cb85c'>(100/200/300/400)</font>點傷害並暈眩2秒。然後每0.6秒追斬一次，共三次。"
 		"DOTA_Tooltip_Ability_C21R_old" "二天一流"
-		"DOTA_Tooltip_Ability_C21R_old_Description" "攻擊時有<font color='#5cb85c'>(40/45/50/55)% </font>的機會造成絕不失誤的<font color='#5cb85c'>(1.3/1.6/1.9/2.2)</font>倍傷害。"
+		"DOTA_Tooltip_Ability_C21R_old_Description" "攻擊時有<font color='#5cb85c'>(40/50/60/70)% </font>的機會造成絕不失誤的<font color='#5cb85c'>(1.3/1.6/1.9/2.2)</font>倍傷害。"
 		"DOTA_Tooltip_Ability_C21T_old" "秘奧義‧飛翔震烈斬"
 		"DOTA_Tooltip_Ability_C21T_old_Description" "自身飛翔至空中匯集全身的力量降落地面時，把全身的靈氣釋放造成週圍<font color='#5cb85c'>(1200/1600/2000)</font>傷害。"
 
@@ -1011,7 +1011,7 @@
 		"DOTA_Tooltip_Ability_C10E"	"能量奪取"
 		"DOTA_Tooltip_Ability_C10E_Description"	"指定一段距離外的目標敵軍，奪取<font color='#5cb85c'>(150/250/350/450)</font>生命值到自身並且使他暈眩0.8秒。"
 		"DOTA_Tooltip_Ability_C10R"	"迴響劍"
-		"DOTA_Tooltip_Ability_C10R_Description"	"增加<font color='#5cb85c'>(15/25/35/45)</font>攻擊傷害， 每當擊中敵人時，可以連帶的對範圍485的敵人造成等同攻擊傷害<font color='#5cb85c'>(15/25/35/45)% </font>的傷害。 "
+		"DOTA_Tooltip_Ability_C10R_Description"	"增加<font color='#5cb85c'>(25/35/45/55)</font>攻擊傷害， 每當擊中敵人時，可以連帶的對範圍485的敵人造成等同攻擊傷害<font color='#5cb85c'>(15/25/35/45)% </font>的傷害。 "
 		"DOTA_Tooltip_Ability_C10T"	"無相天圓"
 		"DOTA_Tooltip_Ability_C10T_Description"	"施展無相天圓，以自身為中心使大範圍的敵人減緩45% 移動速度，並在3秒後將所有緩速的敵人聚集到身旁，減緩移動速度的效果持續<font color='#5cb85c'>(6.0/7.5/9.0)</font>秒，並增加攻速100% 持續6秒，吸引的敵人距離不能超過5500。"
 			
@@ -1057,7 +1057,7 @@
 		"DOTA_Tooltip_Ability_C07E_old" "雷電桎梏"
 		"DOTA_Tooltip_Ability_C07E_old_Description" "綁住指定目標，讓它無法進行任何動作並每秒造成150點傷害。需持續施法，最多可持續<font color='#5cb85c'>(1/2/3/4)</font>秒。"
 		"DOTA_Tooltip_Ability_C07R_old" "雷霆閃電"
-		"DOTA_Tooltip_Ability_C07R_old_Description" "擊出扇狀的閃電，最多擊中8個敵人，每個敵人會受到<font color='#5cb85c'>(300/400/500/600)</font>傷害。"
+		"DOTA_Tooltip_Ability_C07R_old_Description" "擊出扇狀的閃電，每個敵人會受到<font color='#5cb85c'>(300/400/500/600)</font>傷害。"
 		"DOTA_Tooltip_Ability_C07T_old" "雷神之怒"
 		"DOTA_Tooltip_Ability_C07T_old_Description" "在原地上空召喚出雷雲，雷雲每秒對範圍1000內的敵人打出一道<font color='#5cb85c'>(225/295/365)</font>點渾沌擴散傷害的閃電，優先攻擊被雷電桎梏的敵人，並且在雷雲範圍內的所有敵人都會受到靜電影響而減少35% 的移動速度。持續<font color='#5cb85c'>(15/20/25)</font>秒。"
 		
@@ -1105,7 +1105,7 @@
 		"DOTA_Tooltip_Ability_C15W_old" "三連矢"
 		"DOTA_Tooltip_Ability_C15W_old_Description" "對著目標射出三支箭矢，每支箭矢可以造成<font color='#5cb85c'>(50/100/150/200)</font>傷害並且擊暈對手<font color='#5cb85c'>(0.5/1.0/1.5/2.0)</font>秒。"
 		"DOTA_Tooltip_Ability_C15E_old" "烈焰箭"
-		"DOTA_Tooltip_Ability_C15E_old_Description" "攻擊時增加<font color='#5cb85c'>(60/100/140/180)</font>點火焰傷害。"
+		"DOTA_Tooltip_Ability_C15E_old_Description" "攻擊時增加<font color='#5cb85c'>(60/100/140/180)</font>點火焰傷害，每次攻擊消耗<font color='#5cb85c'>(8/10/12/14)</font>點魔力。"
 		"DOTA_Tooltip_Ability_C15R_old" "精準之光"
 		"DOTA_Tooltip_Ability_C15R_old_Description" "增加<font color='#5cb85c'>(20/30/40/50)% </font>攻擊力。"
 		"DOTA_Tooltip_Ability_C15T_old" "百箭齊發"
@@ -1375,9 +1375,9 @@
 	    "DOTA_Tooltip_Ability_A17E_old" "連擊砲"
 	    "DOTA_Tooltip_Ability_A17E_old_Description" "增加<font color='#5cb85c'>(10/20/30/40)% </font>攻擊速度，攻擊時有50% 的機會造成<font color='#5cb85c'>(80/100/120/140)</font>點額外傷害，持續10秒。"
 	    "DOTA_Tooltip_Ability_A17R_old" "雨鐵砲"
-	    "DOTA_Tooltip_Ability_A17R_old_Description" "攻擊時對建築物/英雄/部隊額外造成<font color='#5cb85c'>(20/30/40/50)/(5/10/15/20)/(25/35/45/55)% </font>傷害。"
+	    "DOTA_Tooltip_Ability_A17R_old_Description" "攻擊時對建築物/英雄/部隊額外造成<font color='#5cb85c'>(20/25/30/35)/(5/10/15/20)/(25/35/45/55)% </font>傷害。"
 	    "DOTA_Tooltip_Ability_A17T_old" "大筒"
-	    "DOTA_Tooltip_Ability_A17T_old_Description" "將武器變更為大筒，並且<font color='#5cb85c'>(4/6/8)</font>秒內無法取消。增加500夜間視野，獲得<font color='#5cb85c'>(1000/1300/1400)</font>距離對範圍<font color='#5cb85c'>(350/375/400)</font>擴散60% 攻擊，增加基礎攻擊力<font color='#5cb85c'>(200/300/400)</font>，基礎攻擊間隔上升至2.5秒(原先1.8秒)，大幅度失去移動能力。"
+	    "DOTA_Tooltip_Ability_A17T_old_Description" "將武器變更為大筒，並且<font color='#5cb85c'>(4/6/8)</font>秒內無法取消。增加500夜間視野，獲得<font color='#5cb85c'>(1000/1300/1400)</font>距離對範圍<font color='#5cb85c'>(350/375/400)</font>擴散60% 攻擊，增加基礎攻擊力<font color='#5cb85c'>(200/300/400)</font>，基礎攻擊間隔上升至2.8秒(原先1.8秒)，大幅度失去移動能力。"
 		
 	    "DOTA_Tooltip_Ability_A18W"  "執念壓迫"
 		"DOTA_Tooltip_Ability_A18W_Description" "對指定範圍內的所有敵人造成<font color='#5cb85c'>(100/200/300/400)</font>的傷害，並且每傷害一個敵人，便可以幫稻葉一鐵回復<font color='#5cb85c'>(40/53/66/79)</font>生命。"
@@ -1614,11 +1614,11 @@
         "DOTA_Tooltip_Ability_A36T_Description" "每次攻擊將有15% 的機率進行奪命攻擊，在擊中敵人時造成<font color='#5cb85c'>(150/200/250)</font>額外傷害並使之暈眩<font color='#5cb85c'>(0.8/1.0/1.2)</font>秒。"
 
 		"DOTA_Tooltip_Ability_B01W"	"狙擊模式"
-		"DOTA_Tooltip_Ability_B01W_Description"	"轉換為狙擊狀態，增加攻擊傷害<font color='#5cb85c'>(20/30/40/50)</font>、攻擊距離提升至<font color='#5cb85c'>(900/1050/1200/1400)</font>和夜晚視野1000，持續8秒。"
+		"DOTA_Tooltip_Ability_B01W_Description"	"轉換為狙擊狀態，增加攻擊傷害<font color='#5cb85c'>(20/30/40/50)</font>、攻擊距離提升至<font color='#5cb85c'>(900/1050/1200/1400)</font>和夜晚視野1000，持續12秒。"
 		"DOTA_Tooltip_Ability_B01E"	"雜賀眾"
 		"DOTA_Tooltip_Ability_B01E_Description"	"召喚雜賀眾的同伴<font color='#5cb85c'>(2/4/6/8)</font>個來加入戰鬥。"
 		"DOTA_Tooltip_Ability_B01R"	"雨鐵炮"
-		"DOTA_Tooltip_Ability_B01R_Description"	"對建築物造成額外<font color='#5cb85c'>(10/15/20/25)% </font>真實傷害、英雄造成額外<font color='#5cb85c'>(20/25/30/35)% </font>真實傷害、部隊造成額外<font color='#5cb85c'>(50/70/90/110)% </font>真實傷害。<font color='#5cb85c'>法球效果</font>"
+		"DOTA_Tooltip_Ability_B01R_Description"	"對建築物造成額外<font color='#5cb85c'>(10/15/20/25)% </font>物理傷害、英雄造成額外<font color='#5cb85c'>(20/25/30/35)% </font>物理傷害、部隊造成額外<font color='#5cb85c'>(50/70/90/110)% </font>物理傷害。<font color='#5cb85c'>法球效果</font>"
 		"DOTA_Tooltip_Ability_B01T"	"三段"
 		"DOTA_Tooltip_Ability_B01T_Description"	"能讓攻擊力獲得傷害加成200% 的三段技法，持續<font color='#5cb85c'>(7/11/13)</font>秒。"
 		
