@@ -476,7 +476,7 @@
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_tiger_Description" "攻击伤害+50，力量+25。攻击时30% 机率击晕0.2秒并造成280额外伤害。<font color='#cc0000'>魔法免疫晕眩0.1秒</font>"
 
 		"DOTA_Tooltip_Ability_item_muramasa_katana" "妖刀．村正"
-		"DOTA_Tooltip_Ability_item_muramasa_katana_Description" "攻击伤害+150。每次攻击吸取造成伤害的45% 生命值。【使用】释放藏于妖刀当中的力量，攻速+150% ，持续10秒。<font color='#5cb85c'>法球效果</font>"
+		"DOTA_Tooltip_Ability_item_muramasa_katana_Description" "全能力+20，攻击伤害+150。每次攻击吸取造成伤害的45% 生命值。【使用】释放藏于妖刀当中的力量，攻速+150% ，持续10秒。<font color='#5cb85c'>法球效果</font>"
 
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_invincible" "葵纹越前康继．御神刀"
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_invincible_Description" "攻击伤害+40，全能力+30。【使用】释放御神术，使自身进入无敌状态，免疫所有伤害以及法术效果，持续2秒。"
@@ -662,7 +662,13 @@
 		"DOTA_Tooltip_Ability_item_prophet_armor_Description" "【被动】携带时可以侦测到范围600内的隐形单位。50% 机率减少受到的50攻击伤害，<font color='#5bc0de'>减少所受的法术伤害15% </font>。 【使用】侦测1200内隐形部队，并在使其现形10秒。"
 
 		"DOTA_Tooltip_Ability_item_devil_supressor_armor" "制魔腹卷"
-		"DOTA_Tooltip_Ability_item_devil_supressor_armor_Description" "护甲+5。每秒回复20生命值。降低所受的法术伤害20% 。【使用】使周围的友军获得制魔护盾，制魔护盾可以吸收900法术伤害，持续25秒。"
+		"DOTA_Tooltip_Ability_item_devil_supressor_armor_Description" "护甲+5。每秒回复20生命值。降低所受的法术伤害20% 。【使用】使周围的友军小兵获得1000制魔护盾，英雄获得500制魔护盾，持续25秒。"
+		
+		"DOTA_Tooltip_Ability_item_devil_supressor_armor_1" "制魔腹卷"
+		"DOTA_Tooltip_Ability_item_devil_supressor_armor_1_Description" "护甲+5。每秒回复25生命值。降低所受的法术伤害25% 。【使用】使周围的友军小兵获得2000制魔护盾，英雄获得900制魔护盾，持续25秒。"
+		
+		"DOTA_Tooltip_Ability_item_devil_supressor_armor_2" "制魔腹卷"
+		"DOTA_Tooltip_Ability_item_devil_supressor_armor_2_Description" "护甲+5。每秒回复30生命值。降低所受的法术伤害30% 。【使用】使周围的友军小兵获得3000制魔护盾，英雄获得1300制魔护盾，持续25秒。"
 
 		"DOTA_Tooltip_Ability_item_fubuki_shoulders" "吹雪护肩．一阶"
 		"DOTA_Tooltip_Ability_item_fubuki_shoulders_Description" "护甲+5，智慧+20。【使用】启动寒冰护盾，当受到伤害时将其中的45% 转为以法力抵销，每1法力抵销2.5伤害，寒冰护盾持续7秒。"
@@ -1377,7 +1383,7 @@
 	    "DOTA_Tooltip_Ability_A17R_old" "雨铁炮"
 	    "DOTA_Tooltip_Ability_A17R_old_Description" "攻击时对建筑物/英雄/部队额外造成<font color='#5cb85c'>(20/25/30/35)/(5/10/15/20)/(25/35/45/55)% </font>伤害。"
 	    "DOTA_Tooltip_Ability_A17T_old" "大筒"
-	    "DOTA_Tooltip_Ability_A17T_old_Description" "将武器变更为大筒，并且<font color='#5cb85c'>(4/6/8)</font>秒内无法取消。增加500夜间视野，获得<font color='#5cb85c'>(1000/1300/1400)</font>距离对范围<font color='#5cb85c'>(350/375/400)</font>扩散60% 攻击，增加基础攻击力<font color='#5cb85c'>(200/300/400)</font>，基础攻击间隔上升至2.8秒(原先1.8秒)，大幅度失去移动能力。"
+	    "DOTA_Tooltip_Ability_A17T_old_Description" "将武器变更为大筒，并且<font color='#5cb85c'>(4/6/8)</font>秒内无法取消。增加500夜间视野，获得<font color='#5cb85c'>(1000/1150/1300)</font>距离对范围<font color='#5cb85c'>(350/375/400)</font>扩散60% 攻击，增加基础攻击力<font color='#5cb85c'>(200/300/400)</font>，基础攻击间隔上升至2.8秒(原先1.8秒)，大幅度失去移动能力。"
 		
 	    "DOTA_Tooltip_Ability_A18W"  "执念压迫"
 		"DOTA_Tooltip_Ability_A18W_Description" "对指定范围内的所有敌人造成<font color='#5cb85c'>(100/200/300/400)</font>的伤害，并且每伤害一个敌人，便可以帮稻叶一铁回复<font color='#5cb85c'>(40/53/66/79)</font>生命。"
@@ -1520,7 +1526,7 @@
 	    "DOTA_Tooltip_Ability_A29E"  "深渊之握"
 		"DOTA_Tooltip_Ability_A29E_Description" "来自深渊的鬼手从地面窜出，使目标敌军在<font color='#5cb85c'>(1/1.4/1.8/2)</font>秒的时间内无法移动和攻击，而且每秒受到<font color='#5cb85c'>(75/150/225/300)</font>点伤害。"
 	    "DOTA_Tooltip_Ability_A29R"  "衰心灵光"
-	    "DOTA_Tooltip_Ability_A29R_Description" "让范围<font color='#5cb85c'>(1400)</font>的敌人每秒失去<font color='#5cb85c'>(8/11/14/17)</font>的法力，使用技能时减缓25%移动速度并损失<font color='#5cb85c'>(60/80/100/120)</font>点法力。"
+	    "DOTA_Tooltip_Ability_A29R_Description" "让范围<font color='#5cb85c'>(1400)</font>的敌人每秒失去<font color='#5cb85c'>(8/11/14/17)</font>的法力，每次使用技能时减缓25% 移动速度5秒，缓速会叠加，并损失<font color='#5cb85c'>(60/80/100/120)</font>点法力。"
 	    "DOTA_Tooltip_Ability_A29T"  "兀鹰群"
 	    "DOTA_Tooltip_Ability_A29T_Description" "回复<font color='#5cb85c'>(350/550/750)</font>生命，并且召唤20个攻击力为<font color='#5cb85c'>(60/90/150)</font>飞舞的兀鹰对着周围的敌人发动攻击，攻击伤害的<font color='#5cb85c'>(60/70/80)% </font>将会补充英雄的生命，持续<font color='#5cb85c'>(30/35/40)</font>秒。"
 	    // 石田三成 11.2B

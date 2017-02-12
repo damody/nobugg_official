@@ -476,7 +476,7 @@
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_tiger_Description" "攻擊傷害+50，力量+25。攻擊時30% 機率擊暈0.2秒並造成280額外傷害。<font color='#cc0000'>魔法免疫暈眩0.1秒</font>"
 
 		"DOTA_Tooltip_Ability_item_muramasa_katana" "妖刀．村正"
-		"DOTA_Tooltip_Ability_item_muramasa_katana_Description" "攻擊傷害+150。每次攻擊吸取造成傷害的45% 生命值。【使用】釋放藏於妖刀當中的力量，攻速+150% ，持續10秒。<font color='#5cb85c'>法球效果</font>"
+		"DOTA_Tooltip_Ability_item_muramasa_katana_Description" "全能力+20，攻擊傷害+150。每次攻擊吸取造成傷害的45% 生命值。【使用】釋放藏於妖刀當中的力量，攻速+150% ，持續10秒。<font color='#5cb85c'>法球效果</font>"
 
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_invincible" "葵紋越前康繼．禦神刀"
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_invincible_Description" "攻擊傷害+40，全能力+30。【使用】釋放禦神術，使自身進入無敵狀態，免疫所有傷害以及法術效果，持續2秒。"
@@ -662,7 +662,13 @@
 		"DOTA_Tooltip_Ability_item_prophet_armor_Description" "【被動】攜帶時可以偵測到範圍600內的隱形單位。50% 機率減少受到的50攻擊傷害，<font color='#5bc0de'>減少所受的法術傷害15% </font>。 【使用】偵測1200內隱形部隊，並在使其現形10秒。"
 
 		"DOTA_Tooltip_Ability_item_devil_supressor_armor" "制魔腹卷"
-		"DOTA_Tooltip_Ability_item_devil_supressor_armor_Description" "護甲+5。每秒回復20生命值。降低所受的法術傷害20% 。【使用】使周圍的友軍獲得制魔護盾，制魔護盾可以吸收900法術傷害，持續25秒。"
+		"DOTA_Tooltip_Ability_item_devil_supressor_armor_Description" "護甲+5。每秒回復20生命值。降低所受的法術傷害20% 。【使用】使周圍的友軍小兵獲得1000制魔護盾，英雄獲得500制魔護盾，持續25秒。"
+		
+		"DOTA_Tooltip_Ability_item_devil_supressor_armor_1" "制魔腹卷"
+		"DOTA_Tooltip_Ability_item_devil_supressor_armor_1_Description" "護甲+5。每秒回復25生命值。降低所受的法術傷害25% 。【使用】使周圍的友軍小兵獲得2000制魔護盾，英雄獲得900制魔護盾，持續25秒。"
+		
+		"DOTA_Tooltip_Ability_item_devil_supressor_armor_2" "制魔腹卷"
+		"DOTA_Tooltip_Ability_item_devil_supressor_armor_2_Description" "護甲+5。每秒回復30生命值。降低所受的法術傷害30% 。【使用】使周圍的友軍小兵獲得3000制魔護盾，英雄獲得1300制魔護盾，持續25秒。"
 
 		"DOTA_Tooltip_Ability_item_fubuki_shoulders" "吹雪護肩．一階"
 		"DOTA_Tooltip_Ability_item_fubuki_shoulders_Description" "護甲+5，智慧+20。【使用】啟動寒冰護盾，當受到傷害時將其中的45% 轉為以法力抵銷，每1法力抵銷2.5傷害，寒冰護盾持續7秒。"
@@ -1520,7 +1526,7 @@
 	    "DOTA_Tooltip_Ability_A29E"  "深淵之握"
 		"DOTA_Tooltip_Ability_A29E_Description" "來自深淵的鬼手從地面竄出，使目標敵軍在<font color='#5cb85c'>(1/1.4/1.8/2)</font>秒的時間內無法移動和攻擊，而且每秒受到<font color='#5cb85c'>(75/150/225/300)</font>點傷害。"
 	    "DOTA_Tooltip_Ability_A29R"  "衰心靈光"
-	    "DOTA_Tooltip_Ability_A29R_Description" "讓範圍<font color='#5cb85c'>(1400)</font>的敵人每秒失去<font color='#5cb85c'>(8/11/14/17)</font>的法力，使用技能時減緩25%移動速度並損失<font color='#5cb85c'>(60/80/100/120)</font>點法力。"
+	    "DOTA_Tooltip_Ability_A29R_Description" "讓範圍<font color='#5cb85c'>(1400)</font>的敵人每秒失去<font color='#5cb85c'>(8/11/14/17)</font>的法力，每次使用技能時減緩25% 移動速度5秒，緩速會疊加，並損失<font color='#5cb85c'>(60/80/100/120)</font>點法力。"
 	    "DOTA_Tooltip_Ability_A29T"  "兀鷹群"
 	    "DOTA_Tooltip_Ability_A29T_Description" "回復<font color='#5cb85c'>(350/550/750)</font>生命，並且召喚20個攻擊力為<font color='#5cb85c'>(60/90/150)</font>飛舞的兀鷹對著周圍的敵人發動攻擊，攻擊傷害的<font color='#5cb85c'>(60/70/80)% </font>將會補充英雄的生命，持續<font color='#5cb85c'>(30/35/40)</font>秒。"
 	    // 石田三成 11.2B
