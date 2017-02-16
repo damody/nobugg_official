@@ -2672,7 +2672,7 @@
 		"npc_dota_hero_windrunner_hype" "本多忠勝之女，後成為德川家康的養女而嫁給真田幸村之兄，真田信之。遵從家康之意，全心擔任德川，真田兩家的溝通橋樑。關原之戰的前夜，真田家分裂成東西兩軍。真田昌幸、幸村父子在支持德川方的信之不在城中時，來訪欲進入沼田城，但稻姬以不開城門為回應，並親自立於陣頭，射箭以表拒絕。戰後，雖然有昌幸、幸村的事件，但忠勝仍然敢於向家康的直言，也是受到女兒的影響。"
 
 		"DOTA_Tooltip_Ability_A02W"  "蠍毒箭"
-		"DOTA_Tooltip_Ability_A02W_Description"	"法球效果，在攻擊敵人時額外產生<font color='#5cb85c'>(60/120/180/240)</font>毒傷，並減緩<font color='#5cb85c'>(9/13/17/21)% </font>的移動速度與攻擊速度，持續4秒。每下普攻消耗<font color='#5cb85c'>(8/12/16/20)</font>點魔力 "
+		"DOTA_Tooltip_Ability_A02W_Description"	"法球效果，在攻擊敵人時額外產生<font color='#5cb85c'>(50/80/110/140)</font>毒傷，並減緩<font color='#5cb85c'>(9/13/17/21)% </font>的移動速度與攻擊速度，持續4秒。每下普攻消耗<font color='#5cb85c'>(8/12/16/20)</font>點魔力 "
 		"DOTA_Tooltip_Ability_A02E"	 "風之祈"
 		"DOTA_Tooltip_Ability_A02E_Description" "回復<font color='#5cb85c'>(100/200/300/400)</font>生命值，並增加<font color='#5cb85c'>(40/70/100/130)% </font>攻速速度，持續10秒。 "
         "DOTA_Tooltip_Ability_A02R"	 "遊風行身"
