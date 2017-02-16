@@ -181,8 +181,8 @@
 		"npc_dota_hero_nevermore"	"雜賀孫市"
 		"npc_dota_hero_nevermore_hype"	"雜賀党的首領歷代都稱孫市，戰國中後期名將，雜賀孫市是擅使鐵炮的高手。紀伊的雜賀眾出身。當信長攻打一揆眾的本據地‧伊勢長島時，雜賀眾力挺一揆眾，組織鐵砲隊痛擊織田軍促使敗退。歷史上孫市的真實身份不詳，一說為鈴木重秀，另一說為重朝。重秀曾在石山合戰，僅僅以100人規模的鐵砲隊重創織田軍，又介於本願寺之間，在山崎之戰大為活躍，後來也參加秀吉的紀州攻略戰；重朝在關原西軍中於成功攻下伏見城，曾投靠政宗，爾後則成為家康、賴房的臣下。"
 
-		"npc_dota_hero_windrunner"	"阿市"
-		"npc_dota_hero_windrunner_hype"	"織田信長的異母妹妹，是著名的悲劇女性，史書記載她是一位身高非常高的女性，也號稱是戰國第一美女。她先後被作為政治工具嫁給淺井長政和柴田勝家，但兩任丈夫都沒得好死，自己最終也和勝家一起在北之莊自焚而亡。"
+		"npc_dota_hero_puck"	"阿市"
+		"npc_dota_hero_puck_hype"	"織田信長的異母妹妹，是著名的悲劇女性，史書記載她是一位身高非常高的女性，也號稱是戰國第一美女。她先後被作為政治工具嫁給淺井長政和柴田勝家，但兩任丈夫都沒得好死，自己最終也和勝家一起在北之莊自焚而亡。"
 
 		"npc_dota_hero_earthshaker"	"秋山信友"
 		"npc_dota_hero_earthshaker_hype"	"與武田氏同族的甲婓源氏支流之一的秋山信任息子，是武田信義之弟加賀美遠滿的支流。1542年對已近習眾的身分諏訪賴重攻略成為他初次上陣的戰爭。1547年近攻伊奈福與城時，將敵將藤澤賴親捕獲後，取得重要的戰功，成為了50騎馬部隊的侍大將。之後的進攻木曾福島城後，被伊奈郡代提拔為率領250騎的大將。1572年信玄開始西上，信友以別動隊的大將率領3000兵向織田氏領地東美濃入侵，攻陷了岩村城。以後為岩村城城主，在東美濃方面作最前線防備。武田軍在1575年長篠之戰大敗，導致岩村城被孤立，11月織田信長親征包圍岩村城。信友確定沒有救援下向信長提議開城。但信友開城後，信長立即逮捕他，並在長良川與夫人以極刑處死，享年49歲。信友為智勇兼備的名將，其勇名稱為「武田的猛牛」。"
@@ -476,7 +476,7 @@
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_tiger_Description" "攻擊傷害+50，力量+25。攻擊時30% 機率擊暈0.2秒並造成280額外傷害。<font color='#cc0000'>魔法免疫暈眩0.1秒</font>"
 
 		"DOTA_Tooltip_Ability_item_muramasa_katana" "妖刀．村正"
-		"DOTA_Tooltip_Ability_item_muramasa_katana_Description" "全能力+20，攻擊傷害+150。每次攻擊吸取造成傷害的45% 生命值。【使用】釋放藏於妖刀當中的力量，攻速+150% ，持續10秒。<font color='#5cb85c'>法球效果</font>"
+		"DOTA_Tooltip_Ability_item_muramasa_katana_Description" "攻擊傷害+150。每次攻擊吸取造成傷害的45% 生命值。【使用】釋放藏於妖刀當中的力量，攻速+150% ，持續10秒。<font color='#5cb85c'>法球效果</font>"
 
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_invincible" "葵紋越前康繼．禦神刀"
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_invincible_Description" "攻擊傷害+40，全能力+30。【使用】釋放禦神術，使自身進入無敵狀態，免疫所有傷害以及法術效果，持續2秒。"
@@ -642,7 +642,7 @@
 		"DOTA_Tooltip_Ability_item_samurai_cloth_2_Description" "全能力+10，每秒回復30生命值。攻速+90% 。"
 
 		"DOTA_Tooltip_Ability_item_nannbann_armor" "南蠻胴具足"
-		"DOTA_Tooltip_Ability_item_nannbann_armor_Description" "護甲+6，生命+800，每秒回復20生命值。自動抵擋一次魔法技能，並且在10秒內獲得可以吸收1000法術傷害的魔盾。30秒內不得重複發動。"
+		"DOTA_Tooltip_Ability_item_nannbann_armor_Description" "護甲+6，生命+800，每秒回復20生命值。自動抵擋一次魔法技能，並且在10秒內獲得可以吸收1000法術傷害的魔盾。40秒內不得重複發動。"
 
 		"DOTA_Tooltip_Ability_item_foxfire_armor" "狐火大鎧"
 		"DOTA_Tooltip_Ability_item_foxfire_armor_Description" "護甲+5。每秒回復10生命值。每秒讓附近350內的敵人造成80傷害"
@@ -746,14 +746,26 @@
 		"DOTA_Tooltip_Ability_item_great_dragon" "巨龍"
 		"DOTA_Tooltip_Ability_item_great_dragon_Description" "攻擊傷害+40。法力回復+150% 。生命值+400。【使用】發出一道光波，對直線上的所有敵人造成480傷害。"
 
-		"DOTA_Tooltip_Ability_item_kokumo" "凍雲"
-		"DOTA_Tooltip_Ability_item_kokumo_Description" "攻擊傷害+42，靈活+20。攻擊時16% 機率打出冰爆造成目標480、周圍325內200傷害並緩慢速度<font color='#5bc0de'>30% </font>。持續4.5秒。<font color='#cc0000'>法球效果，不可與其他法球並存，對魔免沒有傷害有緩速。</font>"
+		"DOTA_Tooltip_Ability_item_kokumo" "凍雲．一階"
+		"DOTA_Tooltip_Ability_item_kokumo_Description" "攻擊傷害+32，靈活+10。攻擊時16% 機率打出冰爆造成目標300、周圍225內200傷害並緩慢速度<font color='#5bc0de'>30% </font>。持續2秒。<font color='#cc0000'>法球效果，不可與其他法球並存，對魔免沒有傷害有緩速。</font>"
+		
+		"DOTA_Tooltip_Ability_item_kokumo_1" "凍雲．二階"
+		"DOTA_Tooltip_Ability_item_kokumo_1_Description" "攻擊傷害+42，靈活+20。攻擊時18% 機率打出冰爆造成目標450、周圍325內250傷害並緩慢速度<font color='#5bc0de'>30% </font>。持續3秒。<font color='#cc0000'>法球效果，不可與其他法球並存，對魔免沒有傷害有緩速。</font>"
+		
+		"DOTA_Tooltip_Ability_item_kokumo_2" "凍雲．三階"
+		"DOTA_Tooltip_Ability_item_kokumo_2_Description" "攻擊傷害+55，靈活+30。攻擊時20% 機率打出冰爆造成目標600、周圍425內250傷害並緩慢速度<font color='#5bc0de'>30% </font>。持續4秒。<font color='#cc0000'>法球效果，不可與其他法球並存，對魔免沒有傷害有緩速。</font>"
 
 		"DOTA_Tooltip_Ability_item_the_sword_of_kaminaobi" "神直毘御劍"
 		"DOTA_Tooltip_Ability_item_the_sword_of_kaminaobi_Description" "攻擊傷害+50，力量+15，全能力+10。【使用】指定700距離內的目標，瞬間移動到目前身旁。"
 
-		"DOTA_Tooltip_Ability_item_raikiri" "雷切"
-		"DOTA_Tooltip_Ability_item_raikiri_Description" "攻擊傷害+80，攻速+30% 。<font color='#5bc0de'>攻擊時16% 機率打出分岔閃電</font>，對最多8個敵人造成400傷害。 <font color='#ff0000'>法球效果，不可與其他法球並存，對魔免無效。</font>"
+		"DOTA_Tooltip_Ability_item_raikiri" "雷切．一階"
+		"DOTA_Tooltip_Ability_item_raikiri_Description" "攻擊傷害+65，攻速+30% 。<font color='#5bc0de'>攻擊時16% 機率打出分岔閃電</font>，對最多5個敵人造成300傷害。 <font color='#ff0000'>法球效果，不可與其他法球並存，對魔免無效。</font>"
+		
+		"DOTA_Tooltip_Ability_item_raikiri_1" "雷切．二階"
+		"DOTA_Tooltip_Ability_item_raikiri_1_Description" "攻擊傷害+75，攻速+35% 。<font color='#5bc0de'>攻擊時18% 機率打出分岔閃電</font>，對最多8個敵人造成400傷害。 <font color='#ff0000'>法球效果，不可與其他法球並存，對魔免無效。</font>"
+		
+		"DOTA_Tooltip_Ability_item_raikiri_2" "雷切．三階"
+		"DOTA_Tooltip_Ability_item_raikiri_2_Description" "攻擊傷害+85，攻速+40% 。<font color='#5bc0de'>攻擊時20% 機率打出分岔閃電</font>，對最多11個敵人造成500傷害。 <font color='#ff0000'>法球效果，不可與其他法球並存，對魔免無效。</font>"
 
 		"DOTA_Tooltip_Ability_item_ninja_cloth" "忍者裝束"
 		"DOTA_Tooltip_Ability_item_ninja_cloth_Description" "護甲+6，全能力+10，攻速+25% ，<font color='#5bc0de'>25% 機率閃避攻擊。</font>"
@@ -1043,7 +1055,7 @@
 		"DOTA_Tooltip_Ability_C07R"	"雷霆閃電"
 		"DOTA_Tooltip_Ability_C07R_Description"	"召喚出扇形的閃電，擊中3個敵人，每個敵人會受到<font color='#5cb85c'>(180/320/460/600)</font>傷害，若沒有舉盾將對自己造成25% 最大生命傷害。"
 		"DOTA_Tooltip_Ability_C07T"	"雷神之怒"
-		"DOTA_Tooltip_Ability_C07T_Description"	"在原地上空召喚出雷雲，雷雲每秒會自動對範圍1400內的敵人打出<font color='#5cb85c'>(225/295/365)</font>真實傷害的擴散閃電，優先攻擊被雷電桎梏的敵人，並且在雷雲範圍內的所有敵人都會受到靜電影響，減少35% 的移動速度，無法回復生命。雷雲持續<font color='#5cb85c'>(15/17/19)</font>秒。 "
+		"DOTA_Tooltip_Ability_C07T_Description"	"在原地上空召喚出雷雲，雷雲每秒會自動對範圍1400內的敵人打出<font color='#5cb85c'>(225/295/365)</font>真實傷害的擴散閃電，優先攻擊被雷電桎梏的敵人，對建築物傷害減半，並且在雷雲範圍內的所有敵人都會受到靜電影響，減少35% 的移動速度，無法回復生命。雷雲持續<font color='#5cb85c'>(15/17/19)</font>秒。 "
 		
 		
 		"DOTA_Tooltip_modifier_C07E"	"雷電桎梏"
@@ -1065,7 +1077,7 @@
 		"DOTA_Tooltip_Ability_C07R_old" "雷霆閃電"
 		"DOTA_Tooltip_Ability_C07R_old_Description" "擊出扇狀的閃電，每個敵人會受到<font color='#5cb85c'>(300/400/500/600)</font>傷害。"
 		"DOTA_Tooltip_Ability_C07T_old" "雷神之怒"
-		"DOTA_Tooltip_Ability_C07T_old_Description" "在原地上空召喚出雷雲，雷雲每秒對範圍1000內的敵人打出一道<font color='#5cb85c'>(225/295/365)</font>點渾沌擴散傷害的閃電，優先攻擊被雷電桎梏的敵人，並且在雷雲範圍內的所有敵人都會受到靜電影響而減少35% 的移動速度。持續<font color='#5cb85c'>(15/20/25)</font>秒。"
+		"DOTA_Tooltip_Ability_C07T_old_Description" "在原地上空召喚出雷雲，雷雲每秒對範圍1000內的敵人打出一道<font color='#5cb85c'>(225/295/365)</font>點渾沌擴散傷害的閃電，優先攻擊被雷電桎梏的敵人，對建築物傷害減半，並且在雷雲範圍內的所有敵人都會受到靜電影響而減少35% 的移動速度。持續<font color='#5cb85c'>(15/20/25)</font>秒。"
 		
 		"DOTA_Tooltip_Ability_B26W"	"蓄力波"
 		"DOTA_Tooltip_Ability_B26W_Description"	"發動蓄力波，將在接下來12秒，每秒對周圍敵人造成<font color='#5cb85c'>(40/60/80/120)</font>的傷害， 在持續時間內，可以隨時選擇中止蓄力波，當蓄力波中止時，將以自身為中心產生震盪，使周圍的敵人減慢40% 的移動速度，持續<font color='#5cb85c'>(2/3/4/5)</font>秒。 "
@@ -1196,14 +1208,6 @@
 		"DOTA_Tooltip_Ability_A01R_Description"	"召喚雷霆的威力，對周圍的敵人造成<font color='#5cb85c'>(75/150/225/300)</font>傷害，並且在接下來5秒，攻擊時有50% 的機會，對擊中目標周圍310內的所有敵軍，額外造成<font color='#5cb85c'>(80/110/140/170)</font>點的閃電傷害。 "
 		"DOTA_Tooltip_Ability_A01T"  "三河魂"
 		"DOTA_Tooltip_Ability_A01T_Description" "施放自身的王者之氣，能增加周圍友軍<font color='#5cb85c'>(15/25/35)</font>的防禦與加快生命回復速率<font color='#5cb85c'>(4/5/6)% </font>。持續7秒。 "
-	    "DOTA_Tooltip_Ability_A02W"  "蠍毒箭"
-		"DOTA_Tooltip_Ability_A02W_Description"	"在攻擊敵人時額外產生<font color='#5cb85c'>(15/30/45/60)</font>毒傷，並減緩<font color='#5cb85c'>(9/13/17/21)% </font>的移動速度與攻擊速度，持續4秒 。 "
-		"DOTA_Tooltip_Ability_A02E"	 "風之祈"
-		"DOTA_Tooltip_Ability_A02E_Description" "回復<font color='#5cb85c'>(100/200/300/400)</font>生命值，並增加<font color='#5cb85c'>(40/70/100/130)% </font>攻速速度，持續15秒。 "
-        "DOTA_Tooltip_Ability_A02R"	 "遊風行身"
-		"DOTA_Tooltip_Ability_A02R_Description" "降低所受到的法術傷害<font color='#5cb85c'>(7/13/19/25)% </font>，並且增加自身<font color='#5cb85c'>(6/9/12/15)% </font>總攻擊傷害。 "
-		"DOTA_Tooltip_Ability_A02T"	 "融影術"
-		"DOTA_Tooltip_Ability_A02T_Description"	"暫時轉化為持續隱形狀態，攻擊的時候不會現形，基礎攻速由1.8變為1.2，移動速度增加60。可持續<font color='#5cb85c'>(20/22/24)</font>秒。 "
         "DOTA_Tooltip_Ability_A03W"	 "計步蠱"
 		"DOTA_Tooltip_Ability_A03W_Description"	"在目標敵軍身上種下計步蠱，每秒造成25傷害，並減緩<font color='#5cb85c'>(30/50/70/90)% </font>攻速，在計步蠱的持續時間內，該敵軍每移動<font color='#5cb85c'>(600/500/400/300)</font>距離，便會額外多受115傷害。 計步蠱持續10秒。 "
 		"DOTA_Tooltip_Ability_A03E"  "蜘蛛化型"
@@ -1884,13 +1888,13 @@
 		"DOTA_Tooltip_Ability_B16R_old"  "忍法．迅雷"
 		"DOTA_Tooltip_Ability_B16R_old_Description" "增加自身<font color='#5cb85c'>(10/20/30/40)% </font>移動速度與<font color='#5cb85c'>(10/15/20/25)% </font>攻擊速度。"
 		"DOTA_Tooltip_Ability_B16T_old"  "忍法．煙霧彈"
-		"DOTA_Tooltip_Ability_B16T_old_Description" "丟出一枚煙霧彈，瞬間回到本陣，增加跑速50% 持續10秒。"
+		"DOTA_Tooltip_Ability_B16T_old_Description" "丟出一枚煙霧彈，瞬間回到本陣暈眩5秒，增加跑速50% 持續10秒。"
 
 		"B16W_old_SUMMEND_UNIT"	"忍犬．月月"
 		"DOTA_Tooltip_Ability_B16MMW_old"  "一擊斬"
 		"DOTA_Tooltip_Ability_B16MMW_old_Description" "攻擊時有25% 機率造成兩倍傷害。"
 		"DOTA_Tooltip_Ability_B16MME_old"  "撕裂攻擊"
-		"DOTA_Tooltip_Ability_B16MME_old_Description" "攻擊時有15% 機率擊暈敵人0.65秒，並且造成額外60點傷害。"
+		"DOTA_Tooltip_Ability_B16MME_old_Description" "攻擊時有15% 機率擊暈敵人0.65秒，並且造成額外60點傷害，對魔免無效。"
 		"DOTA_Tooltip_Ability_B16MMR_old"  "忍法．迅雷"
 		"DOTA_Tooltip_Ability_B16MMR_old_Description"	"沒用到._."
 		"DOTA_Tooltip_Ability_B16MMT_old"  "永久隱形"
@@ -2590,7 +2594,7 @@
 		"DOTA_Tooltip_Ability_C02W_old_Description" "對指定的方向斬出一道水波，讓距離800內所有敵人受到<font color='#5cb85c'>(250/350/450/550)</font>點傷害。區域範圍起始100，擴散至300。浩浩蕩蕩，沛然無匹，刀光所到，當者披靡。"
 
 		"DOTA_Tooltip_Ability_C02E_old" "吸魂"
-		"DOTA_Tooltip_Ability_C02E_old_Description" "吸收指定目標的生命本質，每0.5秒奪取<font color='#5cb85c'>(80/100/120/140)</font>生命值及<font color='#5cb85c'>(10/15/20/25)</font>法力。"
+		"DOTA_Tooltip_Ability_C02E_old_Description" "吸收指定目標的生命本質，每0.5秒奪取<font color='#5cb85c'>(160/200/240/280)</font>生命值及<font color='#5cb85c'>(10/15/20/25)</font>法力，可以吸收至最遠2000，會被魔免與視野消失時中斷。"
 
 		"DOTA_Tooltip_Ability_C02R_old" "鬼武者劍術"
 		"DOTA_Tooltip_Ability_C02R_old_Description" "攻擊時15% 造成<font color='#5cb85c'>(2.5/3/3.5/4)</font>倍傷害，並有<font color='#5cb85c'>(4/8/12/16)% </font>機會閃避攻擊。"
@@ -2661,5 +2665,28 @@
 
 		"DOTA_Tooltip_modifier_B21T_old" "不死鬼美濃"
 		"DOTA_Tooltip_modifier_B21T_old_Description" "提升攻擊力與護甲。"
+
+		// 稻姬
+
+		"npc_dota_hero_windrunner" "稻姬"
+		"npc_dota_hero_windrunner_hype" "本多忠勝之女，後成為德川家康的養女而嫁給真田幸村之兄，真田信之。遵從家康之意，全心擔任德川，真田兩家的溝通橋樑。關原之戰的前夜，真田家分裂成東西兩軍。真田昌幸、幸村父子在支持德川方的信之不在城中時，來訪欲進入沼田城，但稻姬以不開城門為回應，並親自立於陣頭，射箭以表拒絕。戰後，雖然有昌幸、幸村的事件，但忠勝仍然敢於向家康的直言，也是受到女兒的影響。"
+
+		"DOTA_Tooltip_Ability_A02W"  "蠍毒箭"
+		"DOTA_Tooltip_Ability_A02W_Description"	"法球效果，在攻擊敵人時額外產生<font color='#5cb85c'>(60/120/180/240)</font>毒傷，並減緩<font color='#5cb85c'>(9/13/17/21)% </font>的移動速度與攻擊速度，持續4秒。每下普攻消耗<font color='#5cb85c'>(8/12/16/20)</font>點魔力 "
+		"DOTA_Tooltip_Ability_A02E"	 "風之祈"
+		"DOTA_Tooltip_Ability_A02E_Description" "回復<font color='#5cb85c'>(100/200/300/400)</font>生命值，並增加<font color='#5cb85c'>(40/70/100/130)% </font>攻速速度，持續10秒。 "
+        "DOTA_Tooltip_Ability_A02R"	 "遊風行身"
+		"DOTA_Tooltip_Ability_A02R_Description" "降低所受到的法術傷害<font color='#5cb85c'>(7/13/19/25)% </font>，並且增加自身<font color='#5cb85c'>(6/9/12/15)% </font>總攻擊傷害。 "
+		"DOTA_Tooltip_Ability_A02T"	 "融影術"
+		"DOTA_Tooltip_Ability_A02T_Description"	"暫時轉化為持續隱形狀態，攻擊的時候不會現形，提昇至2倍基礎攻速，移動速度增加60。可持續<font color='#5cb85c'>(20/22/24)</font>秒。 "
+
+		"DOTA_Tooltip_modifier_A02W_debuff" "蠍毒箭"
+		"DOTA_Tooltip_modifier_A02W_debuff_Description" "降低移動與攻擊速度。"
+
+		"DOTA_Tooltip_modifier_A02E_buff" "風之祈"
+		"DOTA_Tooltip_modifier_A02E_buff_Description" "提升攻擊速度。"
+
+		"DOTA_Tooltip_modifier_A02T" "融影術"
+		"DOTA_Tooltip_modifier_A02T_Description" "隱形，提升基礎攻速與基礎跑速。"
 	}
 }
