@@ -1148,13 +1148,13 @@
 		"DOTA_Tooltip_modifier_C17E_Description"	"祈胜光辉"
 		
 		"DOTA_Tooltip_Ability_C17W_old"	"光之精华"
-		"DOTA_Tooltip_Ability_C17W_old_Description" "回复范围内友方部队<font color='#f0ad4e'> (150/300/450/600) </font>生命点数。"
+		"DOTA_Tooltip_Ability_C17W_old_Description" "无视负面状态的回复范围内友方部队<font color='#f0ad4e'>(150/300/450/600)</font>生命点数。"
 		"DOTA_Tooltip_Ability_C17E_old"	"魂之精华"
 		"DOTA_Tooltip_Ability_C17E_old_Description" "回复范围内友方部队<font color='#f0ad4e'> (100/200/300/400) </font>法力点数。"
 		"DOTA_Tooltip_Ability_C17R_old"	"静滞陷阱"
 		"DOTA_Tooltip_Ability_C17R_old_Description" "放置一个将于2.5秒后隐形的静滞陷阱。隐形后，敌人靠近275范围时自动启动，造成425范围敌人<font color='#f0ad4e'> (3.5/4.5/5.5/6.5) </font>秒晕眩。"
 		"DOTA_Tooltip_Ability_C17T_old"	"极光守护"
-		"DOTA_Tooltip_Ability_C17T_old_Description" "延迟<font color='#f0ad4e'> (1.5/1/0.5) </font>秒后释放出极光守护，对敌人造成<font color='#f0ad4e'>(900/1300/1800)</font>伤害，恢复友方部队所有生命。"
+		"DOTA_Tooltip_Ability_C17T_old_Description" "延迟<font color='#f0ad4e'> (1.5/1/0.5) </font>秒后释放出极光守护，对敌人造成<font color='#f0ad4e'>(900/1300/1800)</font>伤害，无视负面状态的恢复友方部队所有生命。"
 		"C17R_old_SUMMEND_UNIT" "静滞陷阱"
 		
 		"com_ashigaru_spearmen_B"	"联合军-足轻"
@@ -1483,7 +1483,7 @@
 	    "DOTA_Tooltip_Ability_A27W"  "破竹之势"
 		"DOTA_Tooltip_Ability_A27W_Description" "造出一个自身的分身，分身可以造成本尊<font color='#5cb85c'>(25/35/45/55)% </font>伤害，受到250% 伤害，分身存在最多30秒。"
 	    "DOTA_Tooltip_Ability_A27E"  "柴田家战旗"
-	    "DOTA_Tooltip_Ability_A27E_Description" "在指定的地点插下一支战旗，战旗将可以鼓舞周围的友军，使他们每秒回复<font color='#5cb85c'>(1/2/3/4)% </font>生命，并且对周围友军展开嗜血，使他们增加50% 攻击速度，嗜血需要<font color='#5cb85c'>(10/7/4/1)</font>秒冷却时间。 战旗存在最多20秒。战旗增加友军50% 的攻击速度，持续20秒。"
+	    "DOTA_Tooltip_Ability_A27E_Description" "在指定的地点插下一支战旗，战旗将可以鼓舞周围的友军，使他们无视负面状态的每秒回复<font color='#5cb85c'>(1/2/3/4)% </font>生命，并且对周围友军展开嗜血，使他们增加50% 攻击速度，嗜血需要<font color='#5cb85c'>(10/7/4/1)</font>秒冷却时间。 战旗存在最多20秒。战旗增加友军50% 的攻击速度，持续20秒。"
 	    "DOTA_Tooltip_Ability_A27R"  "武者之道"
 	    "DOTA_Tooltip_Ability_A27R_Description" "在战斗中有<font color='#5cb85c'>(5/10/15/20)% </font>的机率造成2.5倍的伤害，并且使基础跑速永久提升<font color='#5cb85c'>(25/31/37/43)</font>。"
 	    "DOTA_Tooltip_Ability_A27T"  "鬼柴田"
@@ -2688,5 +2688,31 @@
 
 		"DOTA_Tooltip_modifier_A02T" "融影术"
 		"DOTA_Tooltip_modifier_A02T_Description" "隐形，提升基础攻速与基础跑速。"
+
+		// 稻姬 11.2B
+
+		"DOTA_Tooltip_Ability_A02W_old"  "蝎毒箭"
+		"DOTA_Tooltip_Ability_A02W_old_Description" "在攻击敌人时额外产生<font color='#5cb85c'>(6/12/18/24)</font>点的毒伤，且无法回复生命，并减缓<font color='#5cb85c'>(3/5/7/9)% </font>移动速度与攻击速度，每射一发需消耗<font color='#5cb85c'>(6/8/10/12)</font>点法力，持续10秒。"
+
+		"DOTA_Tooltip_Ability_A02E_old"  "风之力"
+		"DOTA_Tooltip_Ability_A02E_old_Description" "增加友方部队<font color='#5cb85c'>(30/50/70/90)% </font>的 攻击速度和移动速度。持续15秒。"
+
+		"DOTA_Tooltip_Ability_A02R_old"  "自我恢复"
+		"DOTA_Tooltip_Ability_A02R_old_Description" "医疗指定的部队<font color='#5cb85c'>(400/600/800/1000)</font>点的生命点数，医疗时间10秒。"
+
+		"DOTA_Tooltip_Ability_A02T_old"  "融影术"
+		"DOTA_Tooltip_Ability_A02T_old_Description" "暂时转化为持续隐形状态，攻击的时不会现形，与2倍的基础攻击速度。可持续<font color='#5cb85c'>(14/16/18)</font>秒。"
+
+		"DOTA_Tooltip_modifier_A02W_old_debuff" "蝎毒箭"
+		"DOTA_Tooltip_modifier_A02W_old_debuff_Description" "降低移动与攻击速度，持续造成伤害。"
+
+		"DOTA_Tooltip_modifier_A02E_old_buff" "风之力"
+		"DOTA_Tooltip_modifier_A02E_old_buff_Description" "提升攻击与移动速度。"
+
+		"DOTA_Tooltip_modifier_A02R_old" "自我恢复"
+		"DOTA_Tooltip_modifier_A02R_old_Description" "提升生命回复速度。"
+
+		"DOTA_Tooltip_modifier_A02T_old" "融影术"
+		"DOTA_Tooltip_modifier_A02T_old_Description" "隐形，提升基础攻速。"
 	}
 }
