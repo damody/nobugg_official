@@ -408,7 +408,7 @@
 			"01"
 			{
 				"var_type"		"FIELD_FLOAT"
-				"debuff_duration"	"10.0"
+				"debuff_duration"	"4 6 8 10"
 			}
 			"02"
 			{
@@ -551,12 +551,12 @@
 			"01"
 			{
 				"var_type"		"FIELD_INTEGER"
-				"buff_movement_speed"	"30 50 70 90" // %
+				"buff_movement_speed"	"20 30 40 50" // %
 			}
 			"02"
 			{
 				"var_type"		"FIELD_INTEGER"
-				"buff_attack_speed"		"30 50 70 90" // %
+				"buff_attack_speed"		"50 80 110 140" // %
 			}
 			"03"
 			{
@@ -701,7 +701,7 @@
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 
-		"AbilityCooldown"				"90 80 70"
+		"AbilityCooldown"				"110 100 90"
 		"AbilityManaCost"				"240 280 320"
 
 		"AbilitySpecial"
