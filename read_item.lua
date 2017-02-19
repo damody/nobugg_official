@@ -182,10 +182,12 @@ text = readAll("shops.txt")
 
 for name, content in rex.gmatch(text, [[\n"(.+)"\n{(.+)\n}]], "Usm", 0) do
   --print(name, content)
+  if name ~= "pregame" then
   local count = 1
   for item in rex.gmatch(content, [["item"[ \t]+"item_(.+)"]], "U", 0) do
     newequiment[name][count] = equiment[item]
     count = count + 1
+  end
   end
 end
 
