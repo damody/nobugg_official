@@ -585,7 +585,7 @@
 		"DOTA_Tooltip_Ability_item_ronin_jitte_2_Description" "攻击伤害+14，力量+20，法力+600。【使用】对目标造成500+自身法力上限17% 的伤害。"
 
 		"DOTA_Tooltip_Ability_item_sakabatou" "逆刃刀"
-		"DOTA_Tooltip_Ability_item_sakabatou_Description" "攻击伤害+35，攻速+30% 。攻击时11% 机率击晕0.8秒。<font color='#cc0000'>机率击晕不叠加，对魔免单位击晕0.2秒</font>"
+		"DOTA_Tooltip_Ability_item_sakabatou_Description" "攻击伤害+35，攻速+30% 。攻击时9% 机率击晕0.8秒。<font color='#cc0000'>机率击晕不叠加，对魔免单位击晕0.2秒</font>"
 
 		"DOTA_Tooltip_Ability_item_glass_mitsutomo" "琉璃光姬"
 		"DOTA_Tooltip_Ability_item_glass_mitsutomo_Description" "智慧+10， 法力+400。每秒回复1% 生命。增加7% 移动速度。<font color='#5bc0de'>【使用】创造一个疗愈结界，每秒回复结界当中友军2% 生命值，持续15秒。</font>"
@@ -789,10 +789,10 @@
 
 
 		"DOTA_Tooltip_Ability_item_the_overflame_art_of_war" "大炎上之书"
-		"DOTA_Tooltip_Ability_item_the_overflame_art_of_war_Description" "智慧+40。【使用】对指定区域内降下5波炎雨，每波造成400伤害并且使当中的敌人燃烧，每秒造成60伤害，持续5秒。<font color='#cc0000'>可对建筑物造成30% 伤害</font>"
+		"DOTA_Tooltip_Ability_item_the_overflame_art_of_war_Description" "智慧+40。【使用】对指定区域内降下5波炎雨，每波造成400伤害并且使当中的敌人燃烧，每秒造成60伤害，持续5秒。<font color='#cc0000'>可对建筑物造成10% 伤害</font>"
 
 		"DOTA_Tooltip_Ability_item_the_overflame_art_of_war_hyper" "真．大炎上之书"
-		"DOTA_Tooltip_Ability_item_the_overflame_art_of_war_hyper_Description" "智慧+70。【使用】在指定地点引起地震以及落石和大火，地震可缓慢区域中80% 移动，落石每波可造成600点伤害，大火可对目标造成120点伤害持续5秒。<font color='#cc0000'>可对建筑物造成30% 伤害</font>"
+		"DOTA_Tooltip_Ability_item_the_overflame_art_of_war_hyper_Description" "智慧+70。【使用】在指定地点引起地震以及落石和大火，地震可缓慢区域中80% 移动，落石每波可造成600点伤害，大火可对目标造成120点伤害持续5秒。<font color='#cc0000'>可对建筑物造成10% 伤害</font>"
 
 
 		"DOTA_Tooltip_Ability_item_the_art_of_war_tornado_chapter" "孙子兵法．风之章"
@@ -1050,7 +1050,7 @@
 		"DOTA_Tooltip_Ability_C10T_old_Description" "增加攻击<font color='#5cb85c'>(25/45/65)</font>点，攻击时有50% 机率打出升龙乱舞，对一直线上的敌人造成<font color='#5cb85c'>(160/235/310)</font>伤害。"
 		
 		"DOTA_Tooltip_Ability_C07D"	"御魔之盾"
-		"DOTA_Tooltip_Ability_C07D_Description"	"举起御魔之盾，将可以获得魔法免疫，但是会因为做出防御的姿势而无法移动，并得到35% 物理伤害减免。"
+		"DOTA_Tooltip_Ability_C07D_Description"	"举起御魔之盾，将可以获得魔法免疫，但是会因为做出防御的姿势而无法移动，并得到25% 物理伤害减免。"
 		"DOTA_Tooltip_Ability_C07W"	"天雷降"
 		"DOTA_Tooltip_Ability_C07W_Description"	"召唤天降闪电打击指定的区域，每秒造成<font color='#5cb85c'>(40/80/120/160)</font>伤害，持续10秒。 "
 		"DOTA_Tooltip_Ability_C07E"	"雷电桎梏"
@@ -1607,7 +1607,7 @@
 	    "DOTA_Tooltip_Ability_A34R_old"  "冰霜之息"
         "DOTA_Tooltip_Ability_A34R_old_Description" "对着前方洒出一阵的冰霜，可以造成<font color='#5cb85c'>(300/400/500/600)</font>伤害，以及每秒<font color='#5cb85c'>(30/40/50/60)</font>伤害，持续6秒。"
 	    "DOTA_Tooltip_Ability_A34T_old"  "雪女的祝福"
-        "DOTA_Tooltip_Ability_A34T_old_Description" "对着自身或者友军释放强大的冰之能量，能够增加<font color='#5cb85c'>(40/60/80)</font>点生命恢复以及<font color='#5cb85c'>(20/30/40)% </font>攻击力与<font color='#5cb85c'>(20/25/30)</font>点防御力，每秒回复<font color='#5cb85c'>(30/40/50) </font>魔力，减少<font color='#5cb85c'>(30/40/50)% </font>魔法伤害，持续50秒。"
+        "DOTA_Tooltip_Ability_A34T_old_Description" "对着自身或者友军释放强大的冰之能量，能够增加<font color='#5cb85c'>(40/60/80)</font>点生命恢复以及<font color='#5cb85c'>(20/30/40)% </font>攻击力与<font color='#5cb85c'>(10/15/20)</font>点防御力，每秒回复<font color='#5cb85c'>(30/40/50) </font>魔力，减少<font color='#5cb85c'>(10/20/30)% </font>魔法伤害，持续50秒。"
 		
 	    "DOTA_Tooltip_Ability_A35W"  "焰袭"
         "DOTA_Tooltip_Ability_A35W_Description" "化身为爆裂的怒焰朝着指定地点冲锋而去，可以对路径上的所有敌人造成<font color='#5cb85c'>(200/300/400/500)</font>伤害。"
@@ -1852,7 +1852,7 @@
 		"DOTA_Tooltip_Ability_C19R"  "瘫痪毒"
 		"DOTA_Tooltip_Ability_C19R_Description"	"攻击时会附带瘫痪毒，能降低敌人<font color='#5cb85c'>(10/13/16/19)% </font>的移动速度和攻击速度 以及每秒造成<font color='#5cb85c'>(25/40/55/70)</font>持续伤害，持续2秒。 "
 		"DOTA_Tooltip_Ability_C19T"  "不容侵犯"
-		"DOTA_Tooltip_Ability_C19T_Description" "有<font color='#5cb85c'>(25/30/35)% </font>机会闪避攻击 ，并且永久降低所受到的法术伤害<font color='#5cb85c'>(18/24/30)% </font>。"
+		"DOTA_Tooltip_Ability_C19T_Description" "有<font color='#5cb85c'>(30/35/40)% </font>机会闪避攻击 ，并且永久降低所受到的法术伤害<font color='#5cb85c'>(25/30/35)% </font>。"
 
 		"DOTA_Tooltip_Ability_C19W_old"  "瘫痪毒"
 		"DOTA_Tooltip_Ability_C19W_old_Description"	"攻击时会附带瘫痪毒，每下攻击消耗(15/20/25/30)点魔力，能提升<font color='#5cb85c'>(10/20/30/40)</font>攻击力，能降低敌人<font color='#5cb85c'>(10/20/30/40)% </font>的移动速度和攻击速度 以及每秒造成<font color='#5cb85c'>(20/40/60/80)</font>持续伤害，持续3秒。 "
@@ -2325,6 +2325,8 @@
 
 		// 羽柴秀吉
 
+		"a28_phoenix"	"凤凰"
+
 		"DOTA_Tooltip_modifier_A28W" "邪法"
 		"DOTA_Tooltip_modifier_A28W_Description" "变成小动物。"
 
@@ -2695,7 +2697,7 @@
 		// 稻姬 11.2B
 
 		"DOTA_Tooltip_Ability_A02W_old"  "蝎毒箭"
-		"DOTA_Tooltip_Ability_A02W_old_Description" "在攻击敌人时额外产生<font color='#5cb85c'>(6/12/18/24)</font>点的毒伤，且无法回复生命，并减缓<font color='#5cb85c'>(3/5/7/9)% </font>移动速度与攻击速度，每射一发需消耗<font color='#5cb85c'>(6/8/10/12)</font>点法力，持续<font color='#5cb85c'>(4/6/8/10)</font>秒。"
+		"DOTA_Tooltip_Ability_A02W_old_Description" "在攻击敌人时额外产生<font color='#5cb85c'>(3/6/9/12)</font>点的毒伤，且无法回复生命，并减缓<font color='#5cb85c'>(1/2/3/4)% </font>移动速度与攻击速度，每射一发需消耗<font color='#5cb85c'>(5)</font>点法力，持续<font color='#5cb85c'>(4/6/8/10)</font>秒。"
 
 		"DOTA_Tooltip_Ability_A02E_old"  "风之力"
 		"DOTA_Tooltip_Ability_A02E_old_Description" "增加友方部队<font color='#5cb85c'>(50/80/110/140)% </font>的攻击速度和<font color='#5cb85c'>(20/30/40/50)% </font>移动速度。持续15秒。"
@@ -2763,5 +2765,24 @@
 
 		"DOTA_Tooltip_modifier_C05T_old_debuff" "雷鸣豪枪"
 		"DOTA_Tooltip_modifier_C05T_old_debuff_Description" "降低攻击速度，持续造成伤害。"
+		
+		// 葵纹越前康继．御神刀 11.2B
+
+		"DOTA_Tooltip_Ability_item_the_great_sword_of_sunflower_pattern_echizen_kang_following" "真．葵纹越前康继．御神刀"
+		"DOTA_Tooltip_Ability_item_the_great_sword_of_sunflower_pattern_echizen_kang_following_Description" "攻击+50，所有能力+30 [使用]使用御神术，可让受到的50% 伤害让周围600内的友方一起分享。持续21秒。"
+
+		"DOTA_Tooltip_modifier_item_the_great_sword_of_sunflower_pattern_echizen_kang_following_aura" "好东西要与好朋友分享"
+		"DOTA_Tooltip_modifier_item_the_great_sword_of_sunflower_pattern_echizen_kang_following_aura_Description" "分享受到的伤害。"
+
+		"DOTA_Tooltip_modifier_item_the_great_sword_of_sunflower_pattern_echizen_kang_following_linker" "不要连我"
+		"DOTA_Tooltip_modifier_item_the_great_sword_of_sunflower_pattern_echizen_kang_following_linker_Description" "帮忙承受部分伤害。"
+
+		// 铁碎牙．妖刀 11.2B
+
+		"DOTA_Tooltip_Ability_item_the_great_sword_of_iron_fragmentor" "真．铁碎牙．妖刀"
+		"DOTA_Tooltip_Ability_item_the_great_sword_of_iron_fragmentor_Description" "攻击+60，装甲+10，生命+500【使用】施展风之伤，每秒对500范围内所有敌人造成800伤害，持续13秒。"
+		
+		"DOTA_Tooltip_Ability_item_the_great_spear_of_dragonfly_x" "真．蜻蛉切．铭枪"
+		"DOTA_Tooltip_Ability_item_the_great_spear_of_dragonfly_x_Description" "攻击伤害+44，力量+26。增加15% 移动速度70% 攻速。每秒回复2% 最大生命值。"
 	}
 }
