@@ -4211,9 +4211,9 @@
 		// Abilities
 		// ----------------------------------------------------------------
 		// Reference: A0GD
-		"Ability1"	""
+		"Ability1"	"attack_building"
 		// Reference: A0GW
-		"Ability2"	""
+		"Ability2"	"set_level_1"
 		// Armor
 		// ----------------------------------------------------------------
 		"ArmorPhysical"	"20"
@@ -4643,7 +4643,7 @@
 		// Reference: A0GD
 		"Ability1"	"archer_attack"
 		// Reference: A0GW
-		"Ability2"	""
+		"Ability2"	"attack_building"
 		// Armor
 		// ----------------------------------------------------------------
 		"ArmorPhysical"	"10"
@@ -4682,7 +4682,7 @@
 		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
 		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_HERO"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-		"Ability3"	""
+		"Ability3"	"set_level_1"
 		"Ability4"	""
 		"Ability5"	""
 		"Ability6"	""
@@ -4870,7 +4870,7 @@
 		// Reference: A0NH
 		"Ability1"	"gunner_attack"
 		// Reference: A0GD
-		"Ability2"	""
+		"Ability2"	"attack_building"
 		// Reference: A0GW
 		"Ability3"	""
 		// Armor
@@ -4919,7 +4919,7 @@
 		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_HERO"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-		"Ability4"	""
+		"Ability4"	"set_level_1"
 		"Ability5"	""
 		"Ability6"	""
 		"Ability7"	""
@@ -5115,7 +5115,7 @@
 		// Reference: A0GD
 		"Ability1"	"for_no_collision"
 		// Reference: A0GW
-		"Ability2"	""
+		"Ability2"	"attack_building"
 		// Armor
 		// ----------------------------------------------------------------
 		"ArmorPhysical"	"20"
@@ -5161,7 +5161,7 @@
 		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_HERO"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-		"Ability3"	""
+		"Ability3"	"set_level_1"
 		"Ability4"	""
 		"Ability5"	""
 		"Ability6"	""
@@ -6485,8 +6485,8 @@
  		// Bounty
  		//----------------------------------------------------------------
  		"BountyXP"					"20"		// Experience earn.
- 		"BountyGoldMin"				"85"		// Gold earned min.
- 		"BountyGoldMax"				"95"		// Gold earned max.
+ 		"BountyGoldMin"				"105"		// Gold earned min.
+ 		"BountyGoldMax"				"115"		// Gold earned max.
 
  		// Movement
  		//----------------------------------------------------------------
@@ -6668,7 +6668,7 @@
  		//----------------------------------------------------------------
  		"Ability1"					"for_cp_position"			// Ability 1
  		"Ability2"					"dead_give_item"			// Ability 2
- 		"Ability3"					""			// Ability 3
+ 		"Ability3"					"for_magic_immune"			// Ability 3
  		"Ability4"					""			// Ability 4
 
  		// Armor
@@ -6737,7 +6737,7 @@
  		// Abilities
  		//----------------------------------------------------------------
  		"Ability1"					"for_cp_position"			// Ability 1
- 		"Ability2"					""			// Ability 2
+ 		"Ability2"					"for_magic_immune"			// Ability 2
  		"Ability3"					""			// Ability 3
  		"Ability4"					""			// Ability 4
 

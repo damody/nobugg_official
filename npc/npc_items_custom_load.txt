@@ -3020,7 +3020,9 @@
 	{
 		// General
 		"BaseClass"	"item_datadriven"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityTextureName"	"item_custom/the_great_sword_of_invincible"
 		"FightRecapLevel"	"1"
 		"ID"	"4001"
@@ -3029,7 +3031,7 @@
 		"Effect"	"particles/generic_gameplay/dropped_item.vpcf"
 		// Item Info
 		
-		"ItemCost"	"8950"
+		"ItemCost"	"9550"
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SecretShop" "1"
@@ -3037,6 +3039,7 @@
 		"AbilityCooldown"	"55"
 		"AbilityManaCost"	"320"
 		"AbilityCastRange"				"600"
+		"AbilityCastPoint"	"0.1"
 
 		"AbilitySpecial"
 		{
@@ -3058,11 +3061,11 @@
 		}
 		"OnSpellStart"
 		{
-			"ApplyModifier"
+			"RunScript"
 			{
-				"Target"	"CASTER"
-				"ModifierName"	"modifier_item_the_great_sword_of_sunflower_pattern_echizen_kang_following_aura"
-				"Duration"	"%duration"
+				"ScriptFile"	"items/Addon_Items/item_the_great_sword_of_sunflower_pattern_echizen_kang_following.lua"
+				"Function"	"Spell"
+				"Target"	"TARGET"
 			}
 		}
 		"Modifiers"
@@ -3070,6 +3073,7 @@
 			"Passive_item_the_great_sword_of_sunflower_pattern_echizen_kang_following"
 			{
 				"IsHidden"	"1"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"Passive"	"1"
 				"Properties"
 				{
@@ -3081,6 +3085,7 @@
 			}
 			"modifier_item_the_great_sword_of_sunflower_pattern_echizen_kang_following_aura"
 			{
+				"Duration"	"%duration"
 				"Aura"	"modifier_item_the_great_sword_of_sunflower_pattern_echizen_kang_following_linker"
 				"Aura_Radius"	"%link_radius"
 				"Aura_Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
@@ -4673,17 +4678,28 @@
 					"MODIFIER_PROPERTY_HEALTH_BONUS" "0" 			//血
 					"MODIFIER_PROPERTY_MANA_BONUS" "0"				//魔
 					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT" "0"	//回血
-					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE" "1" //回血%
 					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT" "0" 	//回魔
 					"MODIFIER_PROPERTY_MANA_REGEN_PERCENTAGE" "0" 	//回魔%
-					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE" "15" //跑速%
 				}
 				
+			}
+			"Passive_great_spear_of_dragonfly_speed"
+			{
+				"IsHidden"	"1"
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE" "15" //跑速%
+				}
 			}
 			"Passive_great_spear_of_dragonfly2"
 			{
 				"IsHidden"	"1"
 				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE" "1" //回血%
+				}
 				"OnAttackLanded"
 				{
 					"RunScript"
@@ -9151,7 +9167,7 @@
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS" "0"	//力
-					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "30"		//敏
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "25"		//敏
 					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "0"	//智
 					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "42"	//攻
 					"MODIFIER_PROPERTY_HEALTH_BONUS" "0" 			//血
@@ -9248,7 +9264,7 @@
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS" "0"	//力
-					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "40"		//敏
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "30"		//敏
 					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "0"	//智
 					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "55"	//攻
 					"MODIFIER_PROPERTY_HEALTH_BONUS" "0" 			//血
@@ -12638,7 +12654,7 @@
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"		
 		"AbilityCooldown"	"60"		
-		"AbilityManaCost"	"500"		
+		"AbilityManaCost"	"1000"
 		"AbilitySharedCooldown" "the_art_of_war"
 		
 		"ID"	"2536"
@@ -13877,8 +13893,15 @@
 				"VisionRadius"	"225"
 				"SourceAttachment"	"DOTA_PROJECTILE_ATTACHMENT_ATTACK_1"
 			}
-			"SpendCharge"
-			{}
+			"DelayedAction"
+            {
+            	"Delay"     "1"
+            	"Action"    
+            	{
+            		"SpendCharge"
+					{}
+            	}
+            }
 		}
 
 		"OnProjectileHitUnit"
@@ -15289,7 +15312,7 @@
 		}
 	}
 
-	// 蜻蛉切．銘槍
+	// 真蜻蛉切．銘槍
 	"item_the_great_spear_of_dragonfly_x"
 	{
 		// General
@@ -15307,7 +15330,7 @@
 		"ItemQuality"	"component"
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
-		"ItemCost"	"9150"
+		"ItemCost"	"8450"
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SecretShop" "1"
@@ -15328,10 +15351,26 @@
 					"MODIFIER_PROPERTY_HEALTH_BONUS" "0" 			//血
 					"MODIFIER_PROPERTY_MANA_BONUS" "0"				//魔
 					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT" "0"	//回血
-					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE" "2" //回血%
 					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "70" //攻速
-					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE" "15" //跑速%
 				}	
+			}
+			"Passive_great_spear_of_dragonfly_speed"
+			{
+				"IsHidden"	"1"
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE" "15" //跑速%
+				}
+			}
+			"Passive_great_spear_of_dragonfly_x"
+			{
+				"IsHidden"	"1"
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE" "1" //回血%
+				}
 			}
 		}
 	}

@@ -434,6 +434,28 @@
 			}
 		}
 	}
+	//走遠了要回來
+	"attack_building"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Modifiers"
+		{
+			"modifier_attack_building"
+			{
+				"Passive"	"1"
+				"IsHidden"	"0"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"items/Addon_Items/tofar_goback.lua"
+						"Function"	"attack_building"
+					}
+				}
+			}
+		}
+	}
 
 	//鐵炮兵打英雄小兵兩倍痛
 	"gunner_attack"
@@ -2269,7 +2291,7 @@
 		"AbilityManaCost"	"100"
 		// Casting
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"	"500"
+		"AbilityCastRange"	"750"
 		"precache"
 		{
 			"particle"	"particles/units/heroes/hero_zuus/zuus_arc_lightning_.vpcf"
@@ -3803,21 +3825,34 @@
 	{
 		"BaseClass"	"ability_datadriven"
 		"AbilityTextureName"	"enchantress_natures_attendants"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AOE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCastRange"				"%radius"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"radius"			"475"
+			}
+		}
+
+		"precache"
+		{
+			"particle"  "particles/generic_gameplay/natures_attendants.vpcf"
+		}
 		"Modifiers"
 		{
 			"modifier_A0BM"
 			{
 				"Aura"	"modifier_A0BM_2"
-				"Aura_Radius"	"475"
+				"Aura_Radius"	"%radius"
 				"Aura_Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-				"Aura_Types"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_COURIER | DOTA_UNIT_TARGET_CUSTOM"
+				"Aura_Types"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 				"Aura_ApplyToCaster"	"0"
 				"Passive"	"1"
 				"IsHidden"	"1"
-				"TextureName"	"enigma_black_hole"
 			}
 			"modifier_A0BM_2"
 			{
@@ -3828,7 +3863,8 @@
 					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE"	"3"
 					"MODIFIER_PROPERTY_MANA_REGEN_TOTAL_PERCENTAGE"	"3"
 				}
-				"IsHidden"	"1"
+				"EffectName" "particles/generic_gameplay/natures_attendants.vpcf"
+				"EffectAttachType" "follow_overhead"
 			}
 		}
 	}

@@ -112,11 +112,6 @@
 								"Damage"	"%AbilityDamage"
 								"Type"	"DAMAGE_TYPE_MAGICAL"
 							}
-							"ApplyModifier"
-							{
-								"Target"	"TARGET"
-								"ModifierName"	"modifier_shrapnel_stun_datadriven"
-							}
 							"RunScript"
 							{
 								"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A17.lua"
@@ -145,11 +140,6 @@
 								"Target"	"TARGET"
 								"Damage"	"%AbilityDamage"
 								"Type"	"DAMAGE_TYPE_MAGICAL"
-							}
-							"ApplyModifier"
-							{
-								"Target"	"TARGET"
-								"ModifierName"	"modifier_shrapnel_stun_datadriven"
 							}
 							"RunScript"
 							{
@@ -717,7 +707,7 @@
 			"02"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"add_for_building"	"0.20 0.25 0.3 0.35"
+				"add_for_building"	"0.05 0.10 0.15 0.20"
 			}
 		}
 	}

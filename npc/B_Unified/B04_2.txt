@@ -1,21 +1,32 @@
 "DOTAHeroes"
 {
-	// 立花宗茂
-	"C11"
+	// 伊達政宗
+	"B04"
 	{
 		// General
 		// ----------------------------------------------------------------
-		"override_hero"	"npc_dota_hero_juggernaut"
-		"ModelScale"	"1.3"
-		"Model"         "models/c11/c11.vmdl"
+		"override_hero"	"npc_dota_hero_clinkz"
+		"Model"         "models/b04/b04.vmdl"
+		"DisableWearables"	"1"
+		"ModelScale"	"1.5"
+		// "MinimapIcon"		"minimap_candybucket"
+		// "MinimapIconSize"	"1000"
+		// "UnitLabel"          "hero" // -- :GetUnitLabel()
+
+		// Sounds
+		// ----------------------------------------------------------------
+		// "SoundSet"	"Hero_DragonKnight"
+		// "GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
+		// "IdleSoundLoop"	"Hero_DragonKnight.Tutorial_Intro"
+
 		// Abilities
 		// ----------------------------------------------------------------
-		"Ability1"	"C11W"
-		"Ability2"	"C11E"
-		"Ability3"	"C11R"
+		"Ability1"	"B04W"
+		"Ability2"	"B04E"
+		"Ability3"	"B04R"
 		"Ability4"	"attribute_bonusx"
-		"Ability5"	"C11T"
-		"Ability6"	"C11_precache"
+		"Ability5"	"B04T"
+		"Ability6"	"B04_precache"
 		"Ability7"	""
 		"Ability8"	""
 		"Ability9"	""
@@ -28,30 +39,45 @@
 		"Ability16"	""
 		"Ability17" ""
 
+		// Attributes
+		// ----------------------------------------------------------------
+		"AttributePrimary"	"DOTA_ATTRIBUTE_AGILITY"
+		"AttributeBaseStrength"	"38"
+		"AttributeStrengthGain"	"2.10"
+		"AttributeBaseAgility"	"30"
+		"AttributeAgilityGain"	"2.70"
+		"AttributeBaseIntelligence"	"26"
+		"AttributeIntelligenceGain"	"2.00"
+
 		// Armor
 		// ----------------------------------------------------------------
-		"ArmorPhysical"	"8"
+		"ArmorPhysical"	"6"
 		"MagicalResistance"	"30"
 
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"	"124"
-		"AttackDamageMax"	"140"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
-		"AttackRate"	"1.80"
-		"AttackAcquisitionRange"	"500"
+		"AttackDamageMin"	"109"
+		"AttackDamageMax"	"125"
+		"AttackRate"	"1.65"
+		// "AttackAnimationPoint"	"0.75"
+		"AttackAcquisitionRange"	"500"	// Range within a target can be acquired.
 		"AttackRange"	"128"
+		// "AttackRangeBuffer"	"250"	// Extra range the target can move without canceling the attack
 
-		// Attributes
+		// Ranged Attack Projectiles
 		// ----------------------------------------------------------------
-		"AttributePrimary"	"DOTA_ATTRIBUTE_AGILITY"
-		"AttributeBaseStrength"	"33"
-		"AttributeStrengthGain"	"2.70"
-		"AttributeBaseAgility"	"35"
-		"AttributeAgilityGain"	"2.70"
-		"AttributeBaseIntelligence"	"28"
-		"AttributeIntelligenceGain"	"2"
+		"ProjectileModel"	"particles/b04/b04_base_attack.vpcf"
+		"ProjectileSpeed"	"3500"
+
+		// Movement
+		// ----------------------------------------------------------------
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"	"310"
+		"MovementTurnRate"	"1.50"
+		// "FollowRange"	"100"
+		// "HasAggressiveStance"	"0"
 
 		// Bounty
 		// ----------------------------------------------------------------
@@ -61,27 +87,22 @@
 
 		// Bounds
 		// ----------------------------------------------------------------
-		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		// "HealthBarOffset"	"140"
-
-		// Movement
-		// ----------------------------------------------------------------
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"	"320"
-		"MovementTurnRate"	"1.50"
+		// "BoundsHullName"	"DOTA_HULL_SIZE_HERO"
+		"HealthBarOffset"	"140"
+		// "RingRadius" "100"
 
 		// Gold and Lumber
 		// ----------------------------------------------------------------
 		"GoldCost"	"0"
 		"LumberCost"	"0"
-
+		
 		// Status
 		// ----------------------------------------------------------------
 		"StatusHealth"	"400"
 		"StatusHealthRegen"	"0.25"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0.01"
-		"StatusStartingMana"	"-1" // -1 = full
+		// "StatusStartingMana"	"-1" // -1 = full
 
 		// Vision
 		// ----------------------------------------------------------------
@@ -95,8 +116,7 @@
 
 		// RelationShip
 		// ----------------------------------------------------------------
-		"TeamName"	"DOTA_TEAM_NEUTRALS"
+		"TeamName"	"DOTA_TEAM_BADGUYS"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
-		"DisableWearables"	"1"
 	}
-} // END DOTAHeroes
+}

@@ -1,0 +1,814 @@
+// 伊達政宗
+"DOTAAbilities"
+{
+	"B04_precache"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"precache"
+		{
+			"soundfile"	"soundevents/b04.vsndevts"
+			"soundfile" "soundevents/game_sounds_heroes/game_sounds_clinkz.vsndevts"
+		}
+
+		"Modifiers"
+		{
+			"modifier_aggressive_passive"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+
+				"OnAttack"
+				{
+					"ApplyModifier"
+					{
+						"ModifierName"	"modifier_aggressive"
+						"Target" 		"CASTER"
+						"Duration"		"2.5"
+					}
+				}
+			}
+
+			"modifier_aggressive"
+			{
+				"Passive"			"0"
+				"IsHidden"			"1"
+				"IsDebuff"			"0"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_TRANSLATE_ACTIVITY_MODIFIERS" "aggressive"
+				}
+			}
+		}
+	}
+
+	// 伊達政宗 [踏火無痕]
+	"B04W"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"custom/xunyu_yiliao"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"FightRecapLevel"	"1"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+		"AbilityCooldown"				"27 23 19 15"
+		"AbilityManaCost"				"80 100 120 140"
+		"AbilityDamage"					"100 200 300 400"
+
+		"AbilityCastRange"				"600 700 800 900"
+		"AbilityCastPoint"				"0"
+		"AbilityCastAnimation"			"ACT_DOTA_VERSUS"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"speed"			"3000"
+			}
+			"02"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"radius"		"300"
+			}
+		}
+
+		"precache"
+		{
+			"particle"	"particles/b04w/b04w.vpcf"
+			"particle"  "particles/b04/b04w.vpcf"
+			"particle"  "particles/b04/b04w_body.vpcf"
+			"particle"  "particles/b04/b04w_path.vpcf"
+			"particle"  "particles/units/heroes/hero_dragon_knight/dragon_knight_elder_dragon_fire.vpcf"
+		}
+
+		"OnAbilityPhaseStart"
+		{
+			"FireSound"
+			{
+				"Target"	"CASTER"
+				"EffectName"	"B04W.vo1"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/B_Unified/B04.lua"
+				"Function"		"B04W_Start"
+				"Target"		"POINT"
+			}
+		}
+
+		"OnProjectileHitUnit"
+		{
+			"DeleteOnHit"	"0"
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/B_Unified/B04.lua"
+				"Function"		"B04W_OnProjectileHitUnit"
+				"Target"		"TARGET"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_B04W_aura"
+			{
+				"IsHidden"		"1"
+				"Aura"	"modifier_B04W_trigger"
+				"Aura_Radius"	"%radius"
+				"Aura_Teams"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+				"Aura_Types"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+				"Aura_ApplyToCaster"	"0"
+
+				"EffectName" "particles/b04/b04w_body.vpcf"
+				"EffectAttachType" "follow_origin"
+				"OnDeath"
+				{
+					"RemoveModifier"
+					{
+						"ModifierName"	"modifier_B04W_aura"
+						"Target" 		"TARGET"
+					}
+				}
+			}
+			"modifier_B04W_trigger"
+			{
+				"IsHidden" "1"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/B_Unified/B04.lua"
+						"Function"		"B04W_OnTrigger"
+						"Target"		"TARGET"
+					}
+				}
+			}
+		}
+	}
+
+	// 伊達政宗 [火焰強襲]
+	"B04E"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"custom/sima_xingluo"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"FightRecapLevel"	"1"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+		"AbilityCooldown"				"15"
+		"AbilityManaCost"				"140 155 170 185"
+		"AbilityDamage"					"150 250 350 450"
+
+		"AbilityCastRange"				"700"
+		"AbilityCastPoint"				"0.1"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+		"AnimationPlaybackRate"			"2"
+
+		"AoERadius"						"%radius"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"radius"		"500"
+			}
+			"02"
+			{
+				"var_type"		"FIELD_FLOAT"
+				"stun_time"		"0.5 0.8 1.1 1.4"
+			}
+		}
+
+		"precache"
+		{
+			"particle"  "particles/units/heroes/hero_ember_spirit/emberspirit_flame_shield_aoe_impact.vpcf"
+			"particle"  "particles/econ/items/monkey_king/arcana/fire/monkey_king_spring_arcana_fire.vpcf"
+		}
+
+		"OnAbilityPhaseStart"
+		{
+			"FireSound"
+			{
+				"Target"	"CASTER"
+				"EffectName"	"B04E.vo1"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/B_Unified/B04.lua"
+				"Function"		"B04E_OnSpellStart"
+				"Target"		"POINT"
+			}
+		}
+	}
+
+	// 伊達政宗 [炎之迅捷]
+	"B04R"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"custom/icon_128x128_54"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"add_agi"			"8 16 24 32"
+			}
+		}
+		
+		"Modifiers"
+		{
+			"modifier_B04R_passive"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "%add_agi"
+				}
+			}
+		}
+	}
+
+	// 伊達政宗 [種子島]
+	"B04T"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"custom/cps_d06_2"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"FightRecapLevel"	"2"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"AbilityCooldown"				"150 140 130"
+		"AbilityManaCost"				"150"
+
+		"AbilityCastRange"				"800"
+		"AbilityCastPoint"				"0.1"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"add_attack_range"	"672" // 128(base attck range) + 672 = 800
+			}
+			"02"
+			{
+				"var_type"		"FIELD_FLOAT"
+				"duration"		"28 32 36"
+			}
+			"03"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"add_base_attack"	"50 70 90"
+			}
+			"04"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"stun_chance"	"38"
+			}
+			"05"
+			{
+				"var_type"		"FIELD_FLOAT"
+				"stun_time"		"0.22"
+			}
+		}
+
+		"precache"
+		{
+			"soundfile"	"soundevents/b01.vsndevts"
+			"particle"  "particles/units/heroes/hero_clinkz/clinkz_loadout.vpcf"
+			"particle"  "particles/units/heroes/hero_clinkz/clinkz_strafe.vpcf"
+		}
+
+		"OnAbilityPhaseStart"
+		{
+			"FireSound"
+			{
+				"Target"	"CASTER"
+				"EffectName"	"B04T.vo1"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"ModifierName"	"modifier_B04T"
+				"Target" 		"CASTER"
+				"Duration"		"%duration"
+			}
+			"FireSound"
+			{
+				"Target"	"CASTER"
+				"EffectName"	"berserkercaster"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_B04T"
+			{
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE" "%add_base_attack"
+				    "MODIFIER_PROPERTY_ATTACK_RANGE_BONUS" "%add_attack_range"
+				    "MODIFIER_PROPERTY_TRANSLATE_ACTIVITY_MODIFIERS" "alternate"
+				}
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/B_Unified/B04.lua"
+						"Function"		"B04T_OnCreated"
+						"Target"		"TARGET"
+					}
+					"AttachEffect"
+					{
+						"EffectName"        "particles/units/heroes/hero_clinkz/clinkz_loadout.vpcf"
+						"EffectAttachType"  "follow_origin"
+						"Target"            "TARGET"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/B_Unified/B04.lua"
+						"Function"		"B04T_OnDestroy"
+						"Target"		"TARGET"
+					}
+				}
+				"OnAttack"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/B_Unified/B04.lua"
+						"Function"		"B04T_OnAttack"
+						"Target"		"TARGET"
+					}
+				}
+				"EffectName" "particles/units/heroes/hero_clinkz/clinkz_strafe.vpcf"
+				"EffectAttachType"  "follow_origin"
+			}
+		}
+	}
+
+	// 伊達政宗 11.2B [火焰刀]
+	"B04W_old"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"custom/cps_d08_1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
+		"HotKeyOverride"	"W"
+		"MaxLevel"	"4"
+		"AbilityCastPoint"	"0.1"
+		"AnimationPlaybackRate"	"2"
+		"LevelsBetweenUpgrades"	"2"
+		"AbilityCooldown"	"10"
+		"AbilityManaCost"	"100 120 140 160"
+		"AbilityCastRange"	"1100"
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_magnataur.vsndevts"
+		}
+		"OnUpgrade"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/B_Unified/B04.lua"
+				"Function"		"B04W_old_OnUpgrade"
+			}
+		}
+		"OnAbilityPhaseStart"
+		{
+			"ApplyModifier"
+			{
+				"ModifierName"	"modifier_shockwave_hidden_cast"
+				"Target"	"CASTER"
+			}
+		}
+		"OnSpellStart"
+		{
+			"FireSound"
+			{
+				"Target"	"CASTER"
+				"EffectName"	"B08W.vo1"
+			}
+			"FireSound"
+			{
+				"EffectName"	"Hero_Magnataur.ShockWave.Cast"
+				"Target"	"CASTER"
+			}
+			"FireSound"
+			{
+				"EffectName"	"Hero_Magnataur.ShockWave.Particle"
+				"Target"	"CASTER"
+			}
+			"LinearProjectile"
+			{
+				"Target"	"POINT"
+				"EffectName"	"particles/b04w/b04w.vpcf"
+				"MoveSpeed"	"%shock_speed"
+				"StartRadius"	"%shock_width"
+				"StartPosition"	"attach_orgin"
+				"EndRadius"	"%shock_width"
+				"FixedDistance"	"%shock_distance"
+				"TargetTeams"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+				"TargetTypes"	"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+				"TargetFlags"	"DOTA_UNIT_TARGET_FLAG_NONE"
+				"HasFrontalCone"	"0"
+				"ProvidesVision"	"1"
+				"VisionRadius"	"%shock_vision"
+			}
+		}
+		"OnProjectileHitUnit"
+		{
+			"DeleteOnHit"	"0"
+			"Damage"
+			{
+				"Target"	"TARGET"
+				"Type"	"DAMAGE_TYPE_MAGICAL"
+				"Damage"	"%AbilityDamage"
+			}
+			"FireSound"
+			{
+				"EffectName"	"Hero_Magnataur.ShockWave.Target"
+				"Target"	"TARGET"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_shockwave_hidden_cast"
+			{
+				"IsHidden"	"1"
+				"Duration"	"0.5"
+				"OnCreated"
+				{
+					"AttachEffect"
+					{
+						"EffectName"	"particles/b08w2/b08w2.vpcf"
+						"EffectAttachType"	"attach_attack1"
+						"Target"	"CASTER"
+						"ControlPointEntities"
+						{
+							"CASTER"	"attach_attack1"
+							"CASTER"	"attach_attack1"
+						}
+					}
+				}
+				"IsBuff"	"0"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"shock_speed"	"2000"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"shock_width"	"205"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"shock_distance"	"1100"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"shock_vision"	"205"
+			}
+		}
+		"AbilityDamage"	"150 300 450 600"
+	}
+	// 伊達政宗 11.2B [踏火無痕]
+	"B04E_old"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"custom/xunyu_yiliao"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"FightRecapLevel"	"1"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+		"AbilityCooldown"				"30"
+		"AbilityManaCost"				"80 100 120 140"
+		"AbilityDamage"					"50 70 90 110"
+
+		"AbilityCastRange"				"900 1000 1100 1200"
+		"AbilityCastPoint"				"0"
+		"AbilityCastAnimation"			"ACT_DOTA_VERSUS"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"damage_delay"		"0.1"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"hit_radius"		"75"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"speed"				"1500"
+			}
+		}
+
+		"OnAbilityPhaseStart"
+		{
+			"FireSound"
+			{
+				"Target"	"CASTER"
+				"EffectName"	"B04W_old.vo1"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/B_Unified/B04.lua"
+				"Function"		"B04W_old_OnSpellStart"
+				"Target"		"POINT"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_B04W_old_aura"
+			{
+				"IsHidden"		"1"
+				"Aura"	"modifier_B04W_old_dot"
+				"Aura_Radius"	"%hit_radius"
+				"Aura_Teams"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+				"Aura_Types"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+				"Aura_ApplyToCaster"	"0"
+				"OnDeath"
+				{
+					"RemoveModifier"
+					{
+						"ModifierName"	"modifier_B04W_old_aura"
+						"Target" 		"TARGET"
+					}
+				}
+			}
+			"modifier_B04W_old_dot"
+			{
+				"IsHidden"			"1"
+				"IsDebuff"			"1"
+				"ThinkInterval"  	"%damage_delay"
+				"OnIntervalThink"
+				{
+					"Damage"
+					{
+						"Target"		"TARGET"
+						"Type"			"DAMAGE_TYPE_MAGICAL"
+						"Damage"		"%AbilityDamage"
+					}
+				}
+			}
+		}
+	}
+
+	// 伊達政宗 11.2B [火焰強襲]
+	"B04R_old"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"custom/sima_xingluo"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"FightRecapLevel"	"1"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+		"AbilityCooldown"				"14"
+		"AbilityManaCost"				"120 140 160 180"
+		"AbilityDamage"					"200 300 400 500"
+
+		"AbilityCastRange"				"700"
+		"AbilityCastPoint"				"0.1"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+		"AnimationPlaybackRate"			"2"
+
+		"AoERadius"						"%radius"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"radius"		"500"
+			}
+			"02"
+			{
+				"var_type"		"FIELD_FLOAT"
+				"stun_time"		"0.3 0.6 0.9 1.2"
+			}
+		}
+
+		"OnAbilityPhaseStart"
+		{
+			"FireSound"
+			{
+				"Target"	"CASTER"
+				"EffectName"	"B04E_old.vo1"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/B_Unified/B04.lua"
+				"Function"		"B04E_OnSpellStart"
+				"Target"		"POINT"
+			}
+		}
+	}
+
+	// 伊達政宗 11.2B [靈活加成]
+	"B04D_old"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"custom/icon_128x128_139"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"add_agi"			"8 16 24 32"
+			}
+		}
+		
+		"Modifiers"
+		{
+			"modifier_B04R_old_passive"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "%add_agi"
+				}
+			}
+		}
+	}
+
+	// 伊達政宗 11.2B [火繩銃]
+	"B04T_old"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"custom/cps_d06_2"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"FightRecapLevel"	"2"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"AbilityCooldown"				"140"
+		"AbilityManaCost"				"260 310 360"
+
+		"AbilityCastRange"				"800"
+		"AbilityCastPoint"				"0.1"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"add_attack_range"	"572 672 772" // 128(base attck range) + 672 = 800
+			}
+			"02"
+			{
+				"var_type"		"FIELD_FLOAT"
+				"duration"		"35"
+			}
+			"03"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"add_base_attack"	"30 70 110"
+			}
+			"04"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"stun_chance"	"87"
+			}
+			"05"
+			{
+				"var_type"		"FIELD_FLOAT"
+				"stun_time"		"0.1 0.2 0.3"
+			}
+		}
+
+		"OnAbilityPhaseStart"
+		{
+			"FireSound"
+			{
+				"Target"	"CASTER"
+				"EffectName"	"B04T_old.vo1"
+			}
+			"FireSound"
+			{
+				"Target"	"CASTER"
+				"EffectName"	"berserkercaster"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"ModifierName"	"modifier_B04T_old"
+				"Target" 		"CASTER"
+				"Duration"		"%duration"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_B04T_old"
+			{
+				"EffectName" "particles/units/heroes/hero_clinkz/clinkz_strafe.vpcf"
+				"EffectAttachType"  "follow_origin"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE" "%add_base_attack"
+				    "MODIFIER_PROPERTY_ATTACK_RANGE_BONUS" "%add_attack_range" 
+				    "MODIFIER_PROPERTY_TRANSLATE_ACTIVITY_MODIFIERS" "alternate"
+				}
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/B_Unified/B04.lua"
+						"Function"		"B04T_OnCreated"
+						"Target"		"TARGET"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/B_Unified/B04.lua"
+						"Function"		"B04T_OnDestroy"
+						"Target"		"TARGET"
+					}
+				}
+				"OnAttack"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/B_Unified/B04.lua"
+						"Function"		"B04T_old_OnAttackStart"
+						"Target"		"TARGET"
+					}
+				}
+			}
+		}
+	}
+} // end DOTAAbilities
