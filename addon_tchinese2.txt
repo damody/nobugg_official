@@ -489,7 +489,7 @@
 		"DOTA_Tooltip_Ability_item_the_great_spear_of_dragonfly_Description" "攻擊傷害+50，力量+25。攻擊時有20% 機率可以造成300的擴散傷害。唯一被動：增加15% 移動速度，每秒回復1% 最大生命值。"
 
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_hurricane" "鐵碎牙．妖刀"
-		"DOTA_Tooltip_Ability_item_the_great_sword_of_hurricane_Description" "攻擊傷害+60，護甲+10。每1.0秒隨機對周圍的一個敵人釋放風之傷，可以造成320傷害。【使用】召喚風陣，風陣內的所有敵人減慢190% 攻速，降低10護甲，持續20秒。<font color='#cc0000'>裝備鐵碎牙者，其分身同樣具有鐵碎牙被動傷害效果。</font>"
+		"DOTA_Tooltip_Ability_item_the_great_sword_of_hurricane_Description" "攻擊傷害+60，護甲+10。每1秒隨機對周圍的一個敵人釋放風之傷，可以造成320傷害。【使用】召喚風陣，風陣內的所有敵人減慢190% 攻速，降低10護甲，持續20秒。<font color='#cc0000'>裝備鐵碎牙者，其分身同樣具有鐵碎牙被動一半的傷害效果。</font>"
 
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_spike" "鬼丸國鋼．銘刀"
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_spike_Description" "攻擊傷害+40，智慧+20，全能力+10。【使用】使出地獄尖刺，將周圍的敵人刺到空中並重重摔下，造成250傷害並暈眩1.6秒。"
@@ -900,7 +900,7 @@
 		"DOTA_Tooltip_modifier_critical_strike"	"二天一流"
 		"DOTA_Tooltip_modifier_critical_strike_crit"	"二天一流"
 		"DOTA_Tooltip_Ability_C21T"	"秘奧義‧飛翔烈震斬"
-		"DOTA_Tooltip_Ability_C21T_Description"	"在戰場上迅速的來回斬擊，每次斬擊可以造成125的真實傷害與基礎攻擊力的物理傷害，並且每次的斬擊宮本武藏將更加的迅速，能夠同一時間揮出更多攻擊，總共可以進行<font color='#5cb85c'>(11/16/23)</font>次斬擊。"
+		"DOTA_Tooltip_Ability_C21T_Description"	"在戰場上迅速的來回斬擊，每次斬擊可以造成125的真實傷害與基礎攻擊力的物理傷害與200魔法傷害，並且每次的斬擊宮本武藏將更加的迅速，能夠同一時間揮出更多攻擊，總共可以進行<font color='#5cb85c'>(11/16/23)</font>次斬擊。"
 
 		// 宮本武藏 11.2B
 		"DOTA_Tooltip_Ability_C21W_old" "奧義．弧月斬"
@@ -925,8 +925,8 @@
 		"DOTA_Tooltip_Ability_B08D_old_Description"	"對指定的敵人連斬出十八刀牙，每刀造成100魔法傷害總共暈眩2.2秒。"
 		"DOTA_Tooltip_Ability_B08W_old"	"一刀．牙"
 		"DOTA_Tooltip_Ability_B08W_old_Description"	"對指定的方向斬出一刀．牙，使距離1100路徑上的敵人受到<font color='#5cb85c'>(200/300/400/500)</font>傷害。"
-		"DOTA_Tooltip_Ability_B08E_old"	"一刀．閃瞬"
-		"DOTA_Tooltip_Ability_B08E_old_Description"	"瞬移到指定目標身旁，進行快速的一次斬擊造成<font color='#5cb85c'>(300/400/500/600)</font>魔法傷害並且暈眩0.5秒。"
+		"DOTA_Tooltip_Ability_B08E_old"	"一刀．瞬"
+		"DOTA_Tooltip_Ability_B08E_old_Description"	"瞬移到指定目標身旁，進行快速的一次斬擊造成<font color='#5cb85c'>(300/400/500/600)</font>魔法傷害。"
 		"DOTA_Tooltip_Ability_B08R_old"	"活心．魂"
 		"DOTA_Tooltip_Ability_B08R_old_Description"	"增加自身<font color='#5cb85c'>(15/30/45/60)% </font>攻擊速度與<font color='#5cb85c'>(4/6/8/10)% </font>移動速度。當使用技能或是物品時，將可以在接下來8秒內增加25% 攻速和5% 基礎攻擊傷害，若是在持續時間內重複發動，則增加攻擊傷害的效果將可以疊加，最多疊加<font color='#5cb85c'>(4/5/6/7)</font>次。 "
 		"DOTA_Tooltip_Ability_B08T_old"	"一刀．空牙"
@@ -995,7 +995,7 @@
 		"DOTA_Tooltip_Ability_B34E_Description"	"向著指定方向造出一道平行的刺針之牆，所有踩過刺針之牆的敵人將會每秒受到<font color='#5cb85c'>(50/70/90/110)</font>的傷害並減慢<font color='#5cb85c'>(20/30/40/50)% </font>的移動速度，刺針之牆存在16秒，無視魔法免疫牽制。"
 		"DOTA_Tooltip_Ability_B34R"	"狂斬"
 		"DOTA_Tooltip_Ability_B34R_Description"	"施展之後將會增加<font color='#5cb85c'>(10/15/20/25)% </font>移動速度，並且攻擊時將有100% 的機率造成<font color='#5cb85c'>(1.6/2.0/2.4/2.8)</font>倍的傷害。持續15秒或是攻擊5次。 "
-		"DOTA_Tooltip_Ability_B34T_Description"	"每當使用技能或是物品時，將可以以自身為中心釋放一道震波，對周圍500的敵人造成<font color='#5cb85c'>(130/190/270)</font>傷害，並且減慢25% 的攻速與移動速度並可疊加，持續<font color='#5cb85c'>(4.0/4.5/5.0)</font>秒。"
+		"DOTA_Tooltip_Ability_B34T_Description"	"每當使用技能或是物品時，將可以以自身為中心釋放一道震波，對周圍500的敵人造成<font color='#5cb85c'>(130/190/270)</font>傷害，並且減慢20% 的攻速與移動速度並可疊加，持續<font color='#5cb85c'>(3/3.5/4)</font>秒。"
 		"DOTA_Tooltip_Ability_B34T"	"天目長嚎"		
 		
 		"DOTA_Tooltip_Ability_B34W_old"	"怒擊斧"
@@ -1394,7 +1394,7 @@
 	    "DOTA_Tooltip_Ability_A17R_old" "雨鐵砲"
 	    "DOTA_Tooltip_Ability_A17R_old_Description" "攻擊時對建築物/英雄/部隊額外造成<font color='#5cb85c'>(5/10/15/20)/(5/10/15/20)/(25/35/45/55)% </font>傷害。"
 	    "DOTA_Tooltip_Ability_A17T_old" "大筒"
-	    "DOTA_Tooltip_Ability_A17T_old_Description" "將武器變更為大筒，並且<font color='#5cb85c'>(4/6/8)</font>秒內無法取消。增加500夜間視野，獲得<font color='#5cb85c'>(1000/1150/1300)</font>距離對範圍<font color='#5cb85c'>(350/375/400)</font>擴散60% 攻擊，增加基礎攻擊力<font color='#5cb85c'>(200/300/400)</font>，基礎攻擊間隔上升至2.8秒(原先1.8秒)，大幅度失去移動能力。"
+	    "DOTA_Tooltip_Ability_A17T_old_Description" "將武器變更為大筒，並且<font color='#5cb85c'>(6/8/10)</font>秒內無法取消。增加500夜間視野，獲得<font color='#5cb85c'>(1000/1150/1300)</font>距離對範圍<font color='#5cb85c'>(350/375/400)</font>擴散60% 攻擊，增加基礎攻擊力<font color='#5cb85c'>(200/300/400)</font>，基礎攻擊間隔上升至2.8秒(原先1.8秒)，大幅度失去移動能力。"
 		
 	    "DOTA_Tooltip_Ability_A18W"  "執念壓迫"
 		"DOTA_Tooltip_Ability_A18W_Description" "對指定範圍內的所有敵人造成<font color='#5cb85c'>(100/200/300/400)</font>的傷害，並且每傷害一個敵人，便可以幫稻葉一鐵回復<font color='#5cb85c'>(40/53/66/79)</font>生命。"
@@ -1537,7 +1537,7 @@
 	    "DOTA_Tooltip_Ability_A29E"  "深淵之握"
 		"DOTA_Tooltip_Ability_A29E_Description" "來自深淵的鬼手從地面竄出，使目標敵軍在<font color='#5cb85c'>(1/1.4/1.8/2)</font>秒的時間內無法移動和攻擊，而且每秒受到<font color='#5cb85c'>(75/150/225/300)</font>點傷害。"
 	    "DOTA_Tooltip_Ability_A29R"  "衰心靈光"
-	    "DOTA_Tooltip_Ability_A29R_Description" "讓範圍<font color='#5cb85c'>(1400)</font>的敵人每秒失去<font color='#5cb85c'>(8/11/14/17)</font>的法力，每次使用技能時減緩25% 移動速度5秒，緩速會疊加，並損失<font color='#5cb85c'>(60/80/100/120)</font>點法力。"
+	    "DOTA_Tooltip_Ability_A29R_Description" "讓範圍<font color='#5cb85c'>(1400)</font>的敵人每秒失去<font color='#5cb85c'>(5/6/7/8)</font>的法力，每次使用技能時減緩25% 移動速度5秒，緩速會疊加，並損失<font color='#5cb85c'>(60/80/100/120)</font>點法力。"
 	    "DOTA_Tooltip_Ability_A29T"  "兀鷹群"
 	    "DOTA_Tooltip_Ability_A29T_Description" "回復<font color='#5cb85c'>(350/550/750)</font>生命，並且召喚20個攻擊力為<font color='#5cb85c'>(60/90/150)</font>飛舞的兀鷹對著周圍的敵人發動攻擊，攻擊傷害的<font color='#5cb85c'>(60/70/80)% </font>將會補充英雄的生命，持續<font color='#5cb85c'>(30/35/40)</font>秒。"
 	    // 石田三成 11.2B
@@ -1546,7 +1546,7 @@
 	    "DOTA_Tooltip_Ability_A29E_old" "老樹盤根"
 	    "DOTA_Tooltip_Ability_A29E_old_Description" "讓樹根從地面竄出抓住目標，每秒造成<font color='#5cb85c'>(50/55/60/65)</font>點傷害並無法攻擊及移動，持續<font color='#5cb85c'>(3/4/5/6)</font>秒。"
 	    "DOTA_Tooltip_Ability_A29R_old" "機智消磨"
-	    "DOTA_Tooltip_Ability_A29R_old_Description" "逐漸消減範圍<font color='#5cb85c'>(1200)</font>內敵方部隊的法力<font color='#5cb85c'>(16/32/48/64)</font>點。"
+	    "DOTA_Tooltip_Ability_A29R_old_Description" "逐漸消減範圍<font color='#5cb85c'>(1200)</font>內敵方部隊的法力<font color='#5cb85c'>(12/24/36/48)</font>點。"
 	    "DOTA_Tooltip_Ability_A29T_old" "兀鷹群"
 	    "DOTA_Tooltip_Ability_A29T_old_Description" "招喚來攻擊力為<font color='#5cb85c'>(100/150/200)</font>的<font color='#5cb85c'>(14/17/20)</font>隻兀鷹，攻擊傷害的<font color='#5cb85c'>(60/70/80)% </font>將會補充英雄的生命，兀鷹會跟著施法者移動並主動攻擊範圍1100內的敵人。持續<font color='#5cb85c'>(42/45/48)</font>秒。"
 		
@@ -1635,7 +1635,7 @@
 		"DOTA_Tooltip_Ability_B01E"	"雜賀眾"
 		"DOTA_Tooltip_Ability_B01E_Description"	"召喚雜賀眾的同伴<font color='#5cb85c'>(2/4/6/8)</font>個來加入戰鬥。"
 		"DOTA_Tooltip_Ability_B01R"	"雨鐵炮"
-		"DOTA_Tooltip_Ability_B01R_Description"	"對建築物造成額外<font color='#5cb85c'>(20/28/34/40)% </font>物理傷害、英雄造成額外<font color='#5cb85c'>(20/25/30/35)% </font>物理傷害、部隊造成額外<font color='#5cb85c'>(50/70/90/110)% </font>物理傷害。<font color='#5cb85c'>法球效果</font>"
+		"DOTA_Tooltip_Ability_B01R_Description"	"對建築物造成額外<font color='#5cb85c'>(10/15/20/25)% </font>物理傷害、英雄造成額外<font color='#5cb85c'>(20/28/34/40)% </font>物理傷害、部隊造成額外<font color='#5cb85c'>(50/70/90/110)% </font>物理傷害。<font color='#5cb85c'>法球效果</font>"
 		"DOTA_Tooltip_Ability_B01T"	"三段"
 		"DOTA_Tooltip_Ability_B01T_Description"	"能讓攻擊力獲得傷害加成200% 的三段技法，持續<font color='#5cb85c'>(7/11/13)</font>秒。"
 		
@@ -1804,7 +1804,7 @@
 		"DOTA_Tooltip_Ability_C22R" "祕劍．燕閃"
 		"DOTA_Tooltip_Ability_C22R_Description" "增加攻擊距離<font color='#5cb85c'>(100/150/200/250)</font>，並有18% 機率閃躲攻擊。使用嚴流時有25% 機率造成<font color='#5cb85c'>(150/200/250/300)% </font>傷害。  "
 		"DOTA_Tooltip_Ability_C22T" "奧義．滅剎夢霞"
-		"DOTA_Tooltip_Ability_C22T_Description" "使出傳說中的奧義劍術，令周圍的敵人震暈<font color='#5cb85c'>(1.0/1.5/2.0)</font>秒 並且造成500加上敵人現有生命值28% 的真實傷害。<font color='#cc0000'>無視魔法免疫造成傷害</font> "
+		"DOTA_Tooltip_Ability_C22T_Description" "使出傳說中的奧義劍術，令周圍的敵人震暈<font color='#5cb85c'>(1.0/1.5/2.0)</font>秒 並且造成500加上敵人現有生命值28% 的真實傷害，對魔免傷害減半。<font color='#cc0000'>無視魔法免疫造成傷害</font> "
 
 		// 佐佐木小次郎 11.2B
 		"DOTA_Tooltip_Ability_C22W_old" "秘劍．燕"
@@ -2694,7 +2694,7 @@
 		"DOTA_Tooltip_Ability_A02W_old_Description" "在攻擊敵人時額外產生<font color='#5cb85c'>(3/6/9/12)</font>點的毒傷，且無法回復生命，並減緩<font color='#5cb85c'>(1/2/3/4)% </font>移動速度與攻擊速度，每射一發需消耗<font color='#5cb85c'>(5)</font>點法力，持續<font color='#5cb85c'>(4/6/8/10)</font>秒。"
 
 		"DOTA_Tooltip_Ability_A02E_old"  "風之力"
-		"DOTA_Tooltip_Ability_A02E_old_Description" "增加友方部隊<font color='#5cb85c'>(50/80/110/140)% </font>的攻擊速度和<font color='#5cb85c'>(20/30/40/50)% </font>移動速度。持續15秒。"
+		"DOTA_Tooltip_Ability_A02E_old_Description" "增加友方部隊<font color='#5cb85c'>(50/80/110/140)% </font>的攻擊速度和<font color='#5cb85c'>(10/20/30/40)% </font>移動速度。持續15秒。"
 
 		"DOTA_Tooltip_Ability_A02R_old"  "自我恢復"
 		"DOTA_Tooltip_Ability_A02R_old_Description" "醫療指定的部隊<font color='#5cb85c'>(400/600/800/1000)</font>點的生命點數，醫療時間10秒。"
@@ -2749,7 +2749,7 @@
 		"DOTA_Tooltip_Ability_C05R_old_Description" "近距離用長槍電擊敵人，造成<font color='#5cb85c'>(150/250/350/450)</font>傷害並昏迷<font color='#5cb85c'>(0.5/1/1.5/2)</font>秒。"
 
 		"DOTA_Tooltip_Ability_C05T_old" "雷鳴豪槍"
-		"DOTA_Tooltip_Ability_C05T_old_Description" "攻擊造成每秒<font color='#5cb85c'>(60/100/150)</font>點的電傷，並減緩目標<font color='#5cb85c'>(40/60/80)% </font>攻擊速度，持續7秒。"
+		"DOTA_Tooltip_Ability_C05T_old_Description" "攻擊造成每秒<font color='#5cb85c'>(60/100/150)</font>點的真傷但對魔免傷害減半，並減緩目標<font color='#5cb85c'>(40/60/80)% </font>攻擊速度，持續7秒。"
 
 		"DOTA_Tooltip_modifier_C05W_old_buff" "騎術"
 		"DOTA_Tooltip_modifier_C05W_old_buff_Description" "提升攻擊與移動速度。"

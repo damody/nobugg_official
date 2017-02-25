@@ -4120,7 +4120,7 @@
 	{
 		// General
 		// ----------------------------------------------------------------
-		"BaseClass"	"npc_dota_creep_lane"
+		"BaseClass"	"npc_dota_creature"
 		// Add model
 		"Model"	"models/ashigaru/ashigaru.vmdl"
 		"ModelScale"	"1.2"
@@ -4130,7 +4130,7 @@
 		// Abilities
 		// ----------------------------------------------------------------
 		// Reference: A0GD
-		"Ability1"	""
+		"Ability1"	"tofar_goback"
 		// Reference: A0GW
 		"Ability2"	""
 		// Armor
@@ -4280,7 +4280,7 @@
 	{
 		// General
 		// ----------------------------------------------------------------
-		"BaseClass"	"npc_dota_creep_lane"
+		"BaseClass"	"npc_dota_creature"
 		// Add model
 		"Model"	"models/archer/archer.vmdl"
 		"ModelScale"	"1.2"
@@ -5022,7 +5022,7 @@
 	{
 		// General
 		// ----------------------------------------------------------------
-		"BaseClass"	"npc_dota_creep_lane"
+		"BaseClass"	"npc_dota_creature"
 		// Add model
 		"Model"	"models/cavalry/cavalry.vmdl"
 		"ModelScale"	"1.3"
