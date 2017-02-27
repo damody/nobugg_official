@@ -1475,6 +1475,14 @@
 	    "DOTA_Tooltip_Ability_A25R_old_Description" "讓手上的名刀‧壓切更具殺傷力。增加<font color='#5cb85c'>(12/24/36/48)% </font>攻擊速度以及在攻擊時有20% 的機會，造成<font color='#5cb85c'>(2/2.5/3/3.5)</font>倍的傷害。"
 	    "DOTA_Tooltip_Ability_A25T_old" "障壁深紅"
 	    "DOTA_Tooltip_Ability_A25T_old_Description" "讓身邊環繞著障壁深紅的毀滅力量。獲得魔法免疫，並每秒對範圍350內的敵人及建築物造成<font color='#5cb85c'>(290/365/440)</font>點傷害，對非魔免單位造成2倍傷害。持續8秒。"
+	    
+	    // 濃姬
+
+	    "npc_dota_hero_techies"	"濃姬"
+	    "npc_dota_hero_techies_hype" "齋藤道三的女兒是尾張自稱「第六天魔王」的織田信長之妻。一名不屈服於時代之下的女性。他是當代女性的驕傲，相夫教子無一不行。關於他的佚聞極多，但史實卻記載很少，一般相信山崗庄八的小說，認為她是戰死在本能寺的女中豪傑。有一小說以為，歸碟可能在信長攻下美濃後，便與信長離婚返回娘家，死於本能寺之變前，另一說則認為歸碟於本能寺之變後依附次子信雄，受封與尾張，稱安土夫人。"
+	    
+	    "A26_MINE"	"隱雷"
+
 	    "DOTA_Tooltip_Ability_A26D"  "隱雷"
 	    "DOTA_Tooltip_Ability_A26D_Description" "在指定地點放置一個主地雷以及兩個額外地雷，在敵人踩過時引爆，可以造成350範圍傷害。額外地雷存在最多90秒。"
 	    "DOTA_Tooltip_Ability_A26W"  "連銃"
@@ -1482,9 +1490,33 @@
 	    "DOTA_Tooltip_Ability_A26E"  "火藥踢擊"
 		"DOTA_Tooltip_Ability_A26E_Description" "迴旋踢擊周圍的敵人並引爆藏在鞋底的火藥，使周圍的敵人受到200傷害並且使敵方英雄擊退<font color='#5cb85c'>(0.8/1.1/1.4/1.7)</font>秒。"
 	    "DOTA_Tooltip_Ability_A26R"  "二丁銃"
-	    "DOTA_Tooltip_Ability_A26R_Description" "有<font color='#5cb85c'>(15/22/29/36)% </font>機率在攻擊時使用雙銃攻擊，造成雙倍的傷害。"
+	    "DOTA_Tooltip_Ability_A26R_Description" "有<font color='#5cb85c'>(20/30/40/50)% </font>機率在攻擊時使用雙銃攻擊而造成雙倍爆擊。"
 	    "DOTA_Tooltip_Ability_A26T"  "灼熱爆裂投擲"
-	    "DOTA_Tooltip_Ability_A26T_Description" "對目標地點投擲一枚威力強大的炸彈，可以造成範圍<font color='#5cb85c'>(160/220/280)</font>+10x濃姬等級的 絕對傷害，並且每投擲2枚，接下來的第三枚炸彈將會使敵人震暈1.5秒。"
+	    "DOTA_Tooltip_Ability_A26T_Description" "對目標地點投擲一枚威力強大的炸彈，可以造成範圍<font color='#5cb85c'>(160/220/280)</font> 加上 	10x濃姬等級的 絕對傷害，並且每投擲2枚，接下來的第三枚炸彈將會使敵人震暈1.5秒，對魔免傷害減半。"
+
+	    "DOTA_Tooltip_modifier_A26D_mine_aura" "隱雷"
+	    "DOTA_Tooltip_modifier_A26D_mine_aura_Description" "小心腳下。"
+
+	    "DOTA_Tooltip_modifier_A26T_big_bomb" "灼熱爆裂"
+	    "DOTA_Tooltip_modifier_A26T_big_bomb_Description" "下次'灼熱爆裂投擲'能造成暈眩。"
+
+	    // 濃姬 11.2B
+
+	    "DOTA_Tooltip_Ability_A26W_old"  "四連彈"
+		"DOTA_Tooltip_Ability_A26W_old_Description" "以迴旋跳躍之姿連開四槍，來攻擊射程700範圍內的四名敵人造成<font color='#5cb85c'>(250/350/450/550)</font>點傷害。"
+	    
+	    "DOTA_Tooltip_Ability_A26E_old"  "三味火"
+		"DOTA_Tooltip_Ability_A26E_old_Description" "以火炎迴旋踢攻擊周圍300的敵人並且擊退，造成<font color='#5cb85c'>(200/300/400/500)</font>傷害並降低<font color='#5cb85c'>(30/40/50/60)% </font>的攻擊及移動速度，持續4秒。"
+	    
+	    "DOTA_Tooltip_Ability_A26R_old"  "二丁統"
+	    "DOTA_Tooltip_Ability_A26R_old_Description" "在攻擊時有<font color='#5cb85c'>(20/30/40/50)% </font>機率使用雙銃攻擊。"
+	    
+	    "DOTA_Tooltip_Ability_A26T_old"  "一擊必殺"
+	    "DOTA_Tooltip_Ability_A26T_old_Description" "大笑一聲經過0.5秒後丟出一枚威力強大的炸彈至指定的點，可造成700範圍內的敵人<font color='#5cb85c'>(1500/2000/2500)</font>點的傷害。"
+
+	    "DOTA_Tooltip_modifier_A26E_old_debuff" "三味火"
+	    "DOTA_Tooltip_modifier_A26E_old_debuff_Description" "降低移動與攻擊速度。"
+
 	    "DOTA_Tooltip_Ability_A27D"  "暴虐之鎚"
 		"DOTA_Tooltip_Ability_A27D_Description" "對目標敵軍丟出暴虐之鎚，擊中暈眩3秒。"
 	    "DOTA_Tooltip_Ability_A27W"  "破竹之勢"
