@@ -513,10 +513,10 @@
 
 
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_banish" "大典太光世．铭刀"
-		"DOTA_Tooltip_Ability_item_the_great_sword_of_banish_Description" "护甲+10，智慧+40，攻速+70% 。【使用】对目标敌人造成等同自身智慧x3.5的伤害，并且放逐他3秒，被放逐的敌人无法被一般攻击所伤，但也无法进行攻击，并且减缓50% 移动速度，受到魔法伤害时为1.33倍。"
+		"DOTA_Tooltip_Ability_item_the_great_sword_of_banish_Description" "护甲+10，智慧+40，攻速+70% 。【使用】对目标敌人造成等同自身智慧x3.5的伤害，并且放逐他3秒，被放逐的敌人无法被一般攻击所伤，但也无法进行攻击，并且减缓50% 移动速度，减少魔法抗性90% 。"
 
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_berserker" "数珠丸恒次．铭刀"
-		"DOTA_Tooltip_Ability_item_the_great_sword_of_berserker_Description" "攻击伤害+80，生命+600。【使用】解放数珠丸恒次的力量，永久增加<font color='#5bc0de'>50%  总攻击伤害</font>以及<font color='#5bc0de'> 70% 攻速</font>，<font color='#f0ad4e'>但是增加所受的法术伤害25% 以及降低15护甲</font>，再次使用取消此效果。"
+		"DOTA_Tooltip_Ability_item_the_great_sword_of_berserker_Description" "攻击伤害+80，生命+600。【使用】解放数珠丸恒次的力量，永久增加<font color='#5bc0de'>50%  总攻击伤害</font>以及<font color='#5bc0de'> 70% 攻速</font>，<font color='#f0ad4e'>但是降低法术抗性70% 以及降低25护甲</font>，再次使用取消此效果。"
 
 
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_disarmament" "童子切安钢．铭刀"
@@ -826,7 +826,7 @@
 		"DOTA_Tooltip_Ability_item_the_over_lightning_art_of_war_Description" "智慧+60。【使用】以自身为中心范围500内召唤闪电雷暴，每秒对身处风暴中的敌人造成等同他们生命最大值11% 的伤害，持续11秒。<font color='#cc0000'>魔免伤害减半</font>"
 		
 		"DOTA_Tooltip_Ability_item_thunderstorms" "天变之书"
-		"DOTA_Tooltip_Ability_item_thunderstorms_Description" "智慧+20。【使用】再指定1200区域施展大雷雨，在区域中的每个敌人每1秒会受到1道落雷，每1道落雷可造成180点伤害，持续10秒需要持续施法。"
+		"DOTA_Tooltip_Ability_item_thunderstorms_Description" "智慧+20。【使用】再指定1200区域施展大雷雨，在区域中的每个敌人每1秒会受到1道落雷，每1道落雷可造成180点伤害，对非英雄单位有两倍伤害，持续10秒需要持续施法。"
 
 		// ======================================================
 		// 以下是NPC
@@ -1509,7 +1509,7 @@
 		"DOTA_Tooltip_Ability_A26E_old_Description" "以火炎回旋踢攻击周围300的敌人并且击退，造成<font color='#5cb85c'>(200/300/400/500)</font>伤害并降低<font color='#5cb85c'>(30/40/50/60)% </font>的攻击及移动速度，持续4秒。"
 	    
 	    "DOTA_Tooltip_Ability_A26R_old"  "二丁统"
-	    "DOTA_Tooltip_Ability_A26R_old_Description" "在攻击时有<font color='#5cb85c'>(20/30/40/50)% </font>机率使用双铳攻击。"
+	    "DOTA_Tooltip_Ability_A26R_old_Description" "在攻击时有<font color='#5cb85c'>(10/20/30/40)% </font>机率使用双铳攻击。"
 	    
 	    "DOTA_Tooltip_Ability_A26T_old"  "一击必杀"
 	    "DOTA_Tooltip_Ability_A26T_old_Description" "大笑一声经过0.5秒后丢出一枚威力强大的炸弹至指定的点，可造成700范围内的敌人<font color='#5cb85c'>(1500/2000/2500)</font>点的伤害。"
@@ -2817,7 +2817,7 @@
 		"npc_dota_hero_clinkz_hype" "伊达家17代当主，伊达辉宗之子。幼年时因病失去右眼，从此众人便以“独眼龙”称之。其父死后，他在郡山合战、摺上原合战都获得大胜，势力扩张到会津；又在最上义光的争执和家督争夺中，数度克服障碍，终于将奥州全土纳入版图。然而，正当政宗欲趁势南下，当时时势却事与愿违，天下大半已落入丰臣秀吉手里，丰臣秀吉死后又有德川家康建立幕府，乱世于是终焉。政宗虽然大叹时不我予，但雄心大志未灭，及至临终前仍然于奥州之地窥觊着天下。"
 
 		"DOTA_Tooltip_Ability_B04W" "踏火无痕"
-		"DOTA_Tooltip_Ability_B04W_Description" "冲刺到指定地点，随机对附近的敌人释放<font color='#5cb85c'>(100/200/300/400)</font>伤害的火焰，最远可以冲刺<font color='#5cb85c'>(600/700/800/900)</font>距离。"
+		"DOTA_Tooltip_Ability_B04W_Description" "冲刺到指定地点，随机对附近的敌人释放<font color='#5cb85c'>(100/200/300/400)</font>伤害的火焰，最远可以冲刺<font color='#5cb85c'>(900/1000/1100/1200)</font>距离。"
 		"DOTA_Tooltip_Ability_B04E" "火焰强袭"
 		"DOTA_Tooltip_Ability_B04E_Description" "施展一道巨型火焰，对范围内敌人造成<font color='#5cb85c'>(150/250/350/450)</font>伤害并晕眩<font color='#5cb85c'>(0.5/0.8/1.1/1.4)</font>秒。"
 		"DOTA_Tooltip_Ability_B04R" "炎之迅捷"
@@ -2831,7 +2831,7 @@
 		// 伊达政宗 11.2B
 
 		"DOTA_Tooltip_Ability_B04W_old" "火焰刀"
-		"DOTA_Tooltip_Ability_B04W_old_Description" "往前方挥出一刀，造成<font color='#5cb85c'>(150/300/450/600)</font>的伤害。"
+		"DOTA_Tooltip_Ability_B04W_old_Description" "往前方挥出一刀，造成<font color='#5cb85c'>(200/300/400/500)</font>的伤害。"
 		
 		"DOTA_Tooltip_Ability_B04E_old" "踏火无痕"
 		"DOTA_Tooltip_Ability_B04E_old_Description" "往前冲刺，只要冲刺时碰撞到敌方部队每0.1秒给予敌人<font color='#5cb85c'>(50/70/90/110)</font>的伤害。"

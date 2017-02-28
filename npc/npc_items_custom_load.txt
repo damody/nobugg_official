@@ -459,8 +459,8 @@
 		"AbilityDamage"		"1800" //打滿的傷害
 		"AbilityCooldown"	"40"
 		"AbilityManaCost"	"380"
-		"AoERadius"	"1200"
-		"AbilityCastRange"	"1400"
+		"AoERadius"			"1200"
+		"AbilityCastRange"	"1200"
 		"AbilityCastPoint"	"0.1"
 		"ID"	"2825"
 		"ItemQuality"	"component"
@@ -5677,8 +5677,8 @@
 				}
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS" "-50"	//魔法防禦
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "-15"	//防禦
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS" "-70"	//魔法防禦
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "-25"	//防禦
 					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "70" //攻速
 					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE" "50" //攻擊
 				} 
@@ -8844,11 +8844,11 @@
 				"Passive"	"1"
 				"OnAbilityExecuted"
 				{
-					"ApplyModifier"
+					"RunScript"
 					{
 						"Target"	"CASTER"
-						"ModifierName"	"modifier_bizennosafunekanemitsu"
-						"Duration"			"5"
+						"ScriptFile"	"items/Addon_Items/item_bizennosafunekanemitsu.lua"
+						"Function"	"Shock"
 					}
 				}
 				"Properties"
@@ -11790,7 +11790,7 @@
 		
 		"AbilityCooldown"	"48"
 		"AbilityCastPoint"	"0.1"
-		"AbilityManaCost"	"1200"
+		"AbilityManaCost"	"1600"
 		"AbilityCastRange"	"1000"
 		"ID"	"3842"
 		"ItemQuality"	"component"
