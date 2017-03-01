@@ -554,7 +554,7 @@
 			"01"
 			{
 				"var_type"		"FIELD_INTEGER"
-				"crit_chance"		"10 20 30 40"
+				"crit_chance"		"10 15 20 25"
 			}
 			"02"
 			{

@@ -229,7 +229,7 @@
 		"DOTA_Tooltip_Ability_war_magic_speedup" "神速战法"
 		"DOTA_Tooltip_Ability_war_magic_speedup_Description" "延迟3秒后全军加速15% 跑速"
 		"DOTA_Tooltip_Ability_war_magic_slowattack" "阻挠战法"
-		"DOTA_Tooltip_Ability_war_magic_slowattack_Description"	"延迟3秒后对范围800敌军缓速20% 、失误15% "
+		"DOTA_Tooltip_Ability_war_magic_slowattack_Description"	"对800范围的敌军每秒缓速10% 、失误5% ，最多50% 缓速25% 失误，无视魔免且会叠加"
 		"DOTA_Tooltip_Ability_war_magic_lessattack" "干扰战法"
 		"DOTA_Tooltip_Ability_war_magic_lessattack_Description" "延迟3秒后对敌军降低30% 攻击"
 		"DOTA_Tooltip_Ability_war_magic_moreattack" "强攻战法"
@@ -826,7 +826,7 @@
 		"DOTA_Tooltip_Ability_item_the_over_lightning_art_of_war_Description" "智慧+60。【使用】以自身为中心范围500内召唤闪电雷暴，每秒对身处风暴中的敌人造成等同他们生命最大值11% 的伤害，持续11秒。<font color='#cc0000'>魔免伤害减半</font>"
 		
 		"DOTA_Tooltip_Ability_item_thunderstorms" "天变之书"
-		"DOTA_Tooltip_Ability_item_thunderstorms_Description" "智慧+20。【使用】再指定1200区域施展大雷雨，在区域中的每个敌人每1秒会受到1道落雷，每1道落雷可造成180点伤害，对非英雄单位有两倍伤害，持续10秒需要持续施法。"
+		"DOTA_Tooltip_Ability_item_thunderstorms_Description" "智慧+20。【使用】再指定1200区域施展大雷雨，在区域中的每个敌人每1秒会受到1道落雷，每1道落雷可造成180点伤害，持续10秒需要持续施法。"
 
 		// ======================================================
 		// 以下是NPC
@@ -900,7 +900,7 @@
 		"DOTA_Tooltip_modifier_critical_strike"	"二天一流"
 		"DOTA_Tooltip_modifier_critical_strike_crit"	"二天一流"
 		"DOTA_Tooltip_Ability_C21T"	"秘奥义．飞翔烈震斩"
-		"DOTA_Tooltip_Ability_C21T_Description"	"在战场上迅速的来回斩击，每次斩击可以造成125的真实伤害与基础攻击力的物理伤害与200魔法伤害，并且每次的斩击宫本武藏将更加的迅速，能够同一时间挥出更多攻击，总共可以进行<font color='#5cb85c'>(11/16/23)</font>次斩击。"
+		"DOTA_Tooltip_Ability_C21T_Description"	"在战场上迅速的来回斩击，每次斩击可以造成125的真实伤害并附加一次普攻，并且每次的斩击宫本武藏将更加的迅速，能够同一时间挥出更多攻击，总共可以进行<font color='#5cb85c'>(11/16/23)</font>次斩击。"
 
 		// 宫本武藏 11.2B
 		"DOTA_Tooltip_Ability_C21W_old" "奥义．弧月斩"
@@ -1045,13 +1045,13 @@
 		
 		// 香宗我部亲泰 11.2B
 		"DOTA_Tooltip_Ability_C10W_old" "黑龙波"
-		"DOTA_Tooltip_Ability_C10W_old_Description" "向目标放出黑龙之炎，然后袭击目标800范围内每个敌人。对每个目标造成<font color='#5cb85c'>(150/250/350/450)</font>伤害。"
+		"DOTA_Tooltip_Ability_C10W_old_Description" "向目标放出黑龙之炎，然后袭击目标800范围内每个敌人。对每个目标造成<font color='#5cb85c'>(250/350/450/550)</font>伤害。"
 		"DOTA_Tooltip_Ability_C10E_old" "能量夺取"
-		"DOTA_Tooltip_Ability_C10E_old_Description" "瞬间夺取指定目标的生命点数<font color='#5cb85c'>(100/200/300/400)</font>点，并且造成目标1秒晕眩。"
+		"DOTA_Tooltip_Ability_C10E_old_Description" "瞬间夺取指定目标的生命点数<font color='#5cb85c'>(300/400/500/600)</font>点，并且造成目标1秒晕眩。"
 		"DOTA_Tooltip_Ability_C10R_old" "无想转生"
 		"DOTA_Tooltip_Ability_C10R_old_Description" "<font color='#5cb85c'>(8/16/24/32)% </font>的机会闪避攻击"
 		"DOTA_Tooltip_Ability_C10T_old" "升龙乱舞"
-		"DOTA_Tooltip_Ability_C10T_old_Description" "增加攻击<font color='#5cb85c'>(25/45/65)</font>点，攻击时有50% 机率打出升龙乱舞，对一直线上的敌人造成<font color='#5cb85c'>(160/235/310)</font>伤害。"
+		"DOTA_Tooltip_Ability_C10T_old_Description" "增加攻击<font color='#5cb85c'>(25/45/65)</font>点，攻击时有50% 机率打出升龙乱舞，对一直线上的敌人造成<font color='#5cb85c'>(160/235/310)</font>伤害，对魔免伤害减半。"
 		
 		"DOTA_Tooltip_Ability_C07D"	"御魔之盾"
 		"DOTA_Tooltip_Ability_C07D_Description"	"举起御魔之盾，将可以获得魔法免疫，但是会因为做出防御的姿势而无法移动，并得到25% 物理伤害减免。"
@@ -1509,7 +1509,7 @@
 		"DOTA_Tooltip_Ability_A26E_old_Description" "以火炎回旋踢攻击周围300的敌人并且击退，造成<font color='#5cb85c'>(200/300/400/500)</font>伤害并降低<font color='#5cb85c'>(30/40/50/60)% </font>的攻击及移动速度，持续4秒。"
 	    
 	    "DOTA_Tooltip_Ability_A26R_old"  "二丁统"
-	    "DOTA_Tooltip_Ability_A26R_old_Description" "在攻击时有<font color='#5cb85c'>(10/20/30/40)% </font>机率使用双铳攻击。"
+	    "DOTA_Tooltip_Ability_A26R_old_Description" "在攻击时有<font color='#5cb85c'>(10/15/20/25)% </font>机率使用双铳攻击。"
 	    
 	    "DOTA_Tooltip_Ability_A26T_old"  "一击必杀"
 	    "DOTA_Tooltip_Ability_A26T_old_Description" "大笑一声经过0.5秒后丢出一枚威力强大的炸弹至指定的点，可造成700范围内的敌人<font color='#5cb85c'>(1500/2000/2500)</font>点的伤害。"
@@ -1898,6 +1898,8 @@
 		"DOTA_Tooltip_Ability_B16R_Description"	"增加自身以及忍犬<font color='#5cb85c'>(9/17/25/33)% </font>移动速度与<font color='#5cb85c'>(10/15/20/25)% </font>攻击速度。"
 		"DOTA_Tooltip_Ability_B16D"  "召唤忍法．召唤忍犬"
 		"DOTA_Tooltip_Ability_B16D_Description"	"召唤一只忠心的忍犬，随着望月千代女的等级提升各项属性，忍犬具有相当快的攻击速度，最多召唤一只，并且随着“忍法．飞袭令”等级的提升，忍犬将逐渐领悟扫击、相移与隐形的能力。"
+		"DOTA_Tooltip_Ability_B16F"  "相移"
+		"DOTA_Tooltip_Ability_B16F_Description"	"望月千代女与忍犬互换位置，两者距离必须小于2000，当技能“忍法．飞袭令”等级3时自动领悟。"
 
 		"B16D_SUMMEND_UNIT"	"忍犬．月月"
 		"DOTA_Tooltip_Ability_B16MMT"  "扫击"
