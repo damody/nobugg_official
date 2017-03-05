@@ -1427,8 +1427,7 @@
 		"DOTA_Tooltip_Ability_A19W_old"  "鬼谋．火攻"
 	    "DOTA_Tooltip_Ability_A19W_old_Description" "火攻450范围的区域：每秒造成区域内敌人<font color='#5cb85c'>(100/200/300/400)</font>点伤害，持续 5秒。5秒后火势减弱，每秒造成区域内敌人<font color='#5cb85c'>(50/100/150/200)</font>点伤害，持续5秒。"
 	    "DOTA_Tooltip_Ability_A19E_old"  "连环火"
-		"DOTA_Tooltip_Ability_A19E_old_Description" "释放出一枚火焰种子到目标身上持续5秒。目标及附近250范围的敌人会降低<font color='#5cb85c'>(16/26/36/46)% </font>攻击及移动速度及<font color='#5cb85c'>(4/6/8/10)</font>点装甲。
-目标 每秒受到<font color='#5cb85c'>(50/60/70/80)</font>点伤害。"
+		"DOTA_Tooltip_Ability_A19E_old_Description" "释放出一枚火焰种子到目标身上持续5秒。目标及附近250范围的敌人会降低<font color='#5cb85c'>(16/26/36/46)% </font>攻击及移动速度及<font color='#5cb85c'>(4/6/8/10)</font>点装甲。目标 每秒受到<font color='#5cb85c'>(50/60/70/80)</font>点伤害。"
 	    "DOTA_Tooltip_Ability_A19R_old"  "焰之附着"
 	    "DOTA_Tooltip_Ability_A19R_old_Description" "每一次攻击的伤害力，都会因为黏附在目标身上的活耀火焰而加强，这些火焰会在第一次攻击时增加<font color='#5cb85c'>(10/15/20/25)</font>点的伤害，第二次攻击则提升为两倍，第三次攻击时则增加为三倍，以此类推。如果部队在效果还存在时死亡，自体会持续燃烧，对所有附近的敌方部队造成<font color='#5cb85c'>(100/200/300/400)</font>点伤害。"
 	    "DOTA_Tooltip_Ability_A19T_old"  "笼城之火"
