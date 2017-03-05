@@ -1854,7 +1854,7 @@
 		"RequiredLevel"	"6"
 		"LevelsBetweenUpgrades"	"6"
 		"AbilityManaCost"	"25"
-		"AOERadius"		"800"
+		"AOERadius"		"400"
 		"OnSpellStart"
 		{
 			"RunScript"
@@ -1878,7 +1878,6 @@
 					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"-10"
 					"MODIFIER_PROPERTY_MISS_PERCENTAGE"		"5"
 				}
-				"Duration"	"5"
 				"TextureName"	"icon_128x128_100"
 			}
 		}
@@ -3816,6 +3815,81 @@
 					{
 						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
 						"Function"	"CP_Posistion"
+					}
+				}
+			}
+		}
+	}
+
+	// 上路爆了
+	"for_top_broken"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"Modifiers"
+		{
+			"modifier_top_broken"
+			{
+				"Passive"			"1"
+				"IsHidden"			"0"
+				"IsDebuff"			"0"
+
+				"OnDeath"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"top_broken"
+					}
+				}
+			}
+		}
+	}
+
+	// 中路爆了
+	"for_mid_broken"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"Modifiers"
+		{
+			"modifier_mid_broken"
+			{
+				"Passive"			"1"
+				"IsHidden"			"0"
+				"IsDebuff"			"0"
+
+				"OnDeath"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"mid_broken"
+					}
+				}
+			}
+		}
+	}
+
+	// 下路爆了
+	"for_down_broken"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"Modifiers"
+		{
+			"modifier_down_broken"
+			{
+				"Passive"			"1"
+				"IsHidden"			"0"
+				"IsDebuff"			"0"
+
+				"OnDeath"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"down_broken"
 					}
 				}
 			}
