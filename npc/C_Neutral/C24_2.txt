@@ -19,13 +19,13 @@
 		"Ability6"	"C24_precache"
 		// Armor
 		// ----------------------------------------------------------------
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"4"
 		"MagicalResistance"	"30"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"	"72.0"
-		"AttackDamageMax"	"90.0"
+		"AttackDamageMin"	"128.0"
+		"AttackDamageMax"	"144.0"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"	"1.80"
 		"AttackAnimationPoint"	"0.33"

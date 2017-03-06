@@ -22,13 +22,13 @@
 		"Ability7"	"B15_precache"
 		//Armor
 		// --------------------------------------------------------------
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"3"
 		"MagicalResistance"	"30"
 		//Attack
 		// --------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"	"52.0"
-		"AttackDamageMax"	"68.0"
+		"AttackDamageMin"	"85.0"
+		"AttackDamageMax"	"99.0"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"	"1.80"
 		"AttackAnimationPoint"	"0.70"
