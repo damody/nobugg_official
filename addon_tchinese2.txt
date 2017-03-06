@@ -46,13 +46,13 @@
 		"DOTA_Tooltip_Ability_item_banana_Description" "【使用】在10秒內獲得魔法免疫。可使用2次。"
 		
 		// 英雄文
+		"npc_dota_hero_slardar"	"OB手"
 		"npc_dota_hero_crystal_maiden"	"阿松"
 		"npc_dota_hero_brewmaster"	"大熊朝秀"
 		"npc_dota_hero_viper"	"明智光秀"
 		"npc_dota_hero_venomancer"	"九鬼嘉隆"
 		"npc_dota_hero_treant"	"織田信長"
 		"npc_dota_hero_troll_warlord"	"井伊直政"
-		"npc_dota_hero_night_stalker"	"柳生宗嚴"
 		"npc_dota_hero_undying"	"服部半藏"
 		"npc_dota_hero_queenofpain"	"湖衣姬"
 		"npc_dota_hero_keeper_of_the_light"	"毛利元就"
@@ -77,6 +77,8 @@
 		"npc_dota_hero_legion_commander"	"明智秀滿"
 		"npc_dota_hero_juggernaut" "立花宗茂"
 		"npc_dota_hero_spectre" "黑田孝高"
+		"npc_dota_hero_night_stalker"	"柳生宗嚴"
+		"npc_dota_hero_ogre_magi" "島津義弘"
 		
 		"ADDON_GAME_NAME"	"信長之野望"
 		"game_mode_15"	"信長之野望"
@@ -1429,7 +1431,7 @@
 	    "DOTA_Tooltip_Ability_A19E_old"  "連環火"
 		"DOTA_Tooltip_Ability_A19E_old_Description" "釋放出一枚火焰種子到目標身上持續5秒。目標及附近250範圍的敵人會降低<font color='#5cb85c'>(16/26/36/46)% </font>攻擊及移動速度及<font color='#5cb85c'>(4/6/8/10)</font>點裝甲。目標 每秒受到<font color='#5cb85c'>(50/60/70/80)</font>點傷害。"
 	    "DOTA_Tooltip_Ability_A19R_old"  "焰之附著"
-	    "DOTA_Tooltip_Ability_A19R_old_Description" "每一次攻擊的傷害力，都會因為黏附在目標身上的活耀火焰而加強，這些火焰會在第一次攻擊時增加<font color='#5cb85c'>(10/15/20/25)</font>點的傷害，第二次攻擊則提升為兩倍，第三次攻擊時則增加為三倍，以此類推。如果部隊在效果還存在時死亡，自體會持續燃燒，對所有附近的敵方部隊造成<font color='#5cb85c'>(100/200/300/400)</font>點傷害。"
+	    "DOTA_Tooltip_Ability_A19R_old_Description" "每一次攻擊的傷害力，都會因為黏附在目標身上的活耀火焰而加強，這些火焰會在第一次攻擊時增加<font color='#5cb85c'>(10/20/30/40)</font>點的傷害，第二次攻擊則提升為兩倍，第三次攻擊時則增加為三倍，以此類推。如果部隊在效果還存在時死亡，自體會持續燃燒，對所有附近的敵方部隊造成<font color='#5cb85c'>(100/200/300/400)</font>點傷害。"
 	    "DOTA_Tooltip_Ability_A19T_old"  "籠城之火"
 	    "DOTA_Tooltip_Ability_A19T_old_Description" "對著指定方向造出1道往前延燒而去距離4000的火牆，敵方部隊靠近火牆距離250將每秒受到<font color='#5cb85c'>(320/480/640)</font>點傷害，對建築物每秒20點的傷害，火牆持續10秒。"
 		
@@ -1900,7 +1902,7 @@
 		"DOTA_Tooltip_Ability_C19R"  "癱瘓毒"
 		"DOTA_Tooltip_Ability_C19R_Description"	"攻擊時會附帶癱瘓毒，能降低敵人<font color='#5cb85c'>(10/13/16/19)% </font>的移動速度和攻擊速度 以及每秒造成<font color='#5cb85c'>(25/40/55/70)</font>持續傷害，持續2秒。 "
 		"DOTA_Tooltip_Ability_C19T"  "不容侵犯"
-		"DOTA_Tooltip_Ability_C19T_Description" "有<font color='#5cb85c'>(30/35/40)% </font>機會閃避攻擊 ，並且永久降低所受到的法術傷害<font color='#5cb85c'>(25/30/35)% </font>。"
+		"DOTA_Tooltip_Ability_C19T_Description" "有<font color='#5cb85c'>(30/40/50)% </font>機會閃避攻擊 ，並且永久降低所受到的法術傷害<font color='#5cb85c'>(25/30/35)% </font>。"
 
 		"DOTA_Tooltip_Ability_C19W_old"  "癱瘓毒"
 		"DOTA_Tooltip_Ability_C19W_old_Description"	"攻擊時會附帶癱瘓毒，每下攻擊消耗(15/20/25/30)點魔力，能提升<font color='#5cb85c'>(10/20/30/40)</font>攻擊力，能降低敵人<font color='#5cb85c'>(10/20/30/40)% </font>的移動速度和攻擊速度 以及每秒造成<font color='#5cb85c'>(20/40/60/80)</font>持續傷害，持續3秒。 "
@@ -1909,7 +1911,7 @@
 		"DOTA_Tooltip_Ability_C19R_old"  "奇襲"
 		"DOTA_Tooltip_Ability_C19R_old_Description"	"傳送地圖上任意位置，需要5秒的施展時間，若被中斷則失效。"
 		"DOTA_Tooltip_Ability_C19T_old"  "不容侵犯"
-		"DOTA_Tooltip_Ability_C19T_old_Description" "有<font color='#5cb85c'>(30/40/50)% </font>機會閃避攻擊"	
+		"DOTA_Tooltip_Ability_C19T_old_Description" "有<font color='#5cb85c'>(40/50/60)% </font>機會閃避攻擊"	
 		
 		// 望月千代女
 		"DOTA_Tooltip_Ability_B16W"  "忍法．飛襲令"
@@ -2882,11 +2884,32 @@
 		"DOTA_Tooltip_Ability_C24W_old" "柳生新陰流．無刀取"
 		"DOTA_Tooltip_Ability_C24W_old_Description" "柳生石舟齋日夜冥想所自創的劍術，對目標造成<font color='#5cb85c'>(150/250/350/450)</font>點傷害並暈眩<font color='#5cb85c'>(1.5/2/2.5/3)</font>秒"
 		"DOTA_Tooltip_Ability_C24E_old" "柳生新陰流．浮舟"
-		"DOTA_Tooltip_Ability_C24E_old_Description" "向指定的地點移動攻擊，造成距離850內所有敵人受到<font color='#5cb85c'>(250/350/450/550)</font>點傷害。區域範圍150。"
+		"DOTA_Tooltip_Ability_C24E_old_Description" "向指定的地點移動850距離，造成區域範圍150內所有敵人受到<font color='#5cb85c'>(250/350/450/550)</font>點傷害。"
 		"DOTA_Tooltip_Ability_C24R_old" "柳生新陰流"
 		"DOTA_Tooltip_Ability_C24R_old_Description" "有<font color='#5cb85c'>(6/12/18/24)% </font>的機會閃避攻擊，而且攻擊時有<font color='#5cb85c'>(6/7/8/9)% </font>機會造成<font color='#5cb85c'>(2/3/4/5)</font>倍傷害。且絕不失誤。 "
 		"DOTA_Tooltip_Ability_C24T_old" "柳生新陰流．激‧雙嵐陣"
 		"DOTA_Tooltip_Ability_C24T_old_Description" "起身之瞬間將對手追斬至空中，連續給予強烈的斬擊，並且將對手重重的從空中斬落地面給予<font color='#5cb85c'>(1300/1600/2000)</font>點的傷害。"
+		
+		"npc_dota_hero_ogre_magi" "島津義弘"
+		"npc_dota_hero_ogre_magi_hype" "島津家17代當主，貴久的次男。粉碎伊東、大友兩家，讓島津家邁向繁榮的家中猛將。於朝鮮派兵時大破明朝大軍，譽為「鬼石曼子」。 "
+		
+		"DOTA_Tooltip_Ability_C03W" "鐵布衫"
+		"DOTA_Tooltip_Ability_C03W_Description" "增加<font color='#5cb85c'>(15/30/45/60)</font>攻擊傷害、<font color='#5cb85c'>(2/3/4/5)</font>護甲以及<font color='#5cb85c'>(200/300/400/500)</font>額外生命值和魔法免疫能力，持續6秒。"
+		"DOTA_Tooltip_Ability_C03E" "震地斧"
+		"DOTA_Tooltip_Ability_C03E_Description" "敲擊地面，對附近的敵軍造成<font color='#5cb85c'>(200/300/400/500)</font>傷害並且減緩<font color='#5cb85c'>(9/18/27/36)% </font>移動速度和65% 攻擊速度，持續6秒。"
+		"DOTA_Tooltip_Ability_C03R" "暴雷怒擊"
+		"DOTA_Tooltip_Ability_C03R_Description" "在攻擊時有31% 機率對敵人額外造成<font color='#5cb85c'>(100/180/260/340)</font>傷害，並會將敵人擊昏0.4秒，不會失誤，對魔免單位傷害減半。"
+		"DOTA_Tooltip_Ability_C03T" "不動戰錘"
+		"DOTA_Tooltip_Ability_C03T_Description" "對指定的方向丟出不動戰錘，不動戰錘將會每0.67秒對周圍敵人丟出暈擊，造成<font color='#5cb85c'>(90/140/190)</font>傷害並且震昏<font color='#5cb85c'>(0.40/0.45/0.50)</font>秒。不動戰錘可以存在11秒。 "
+		
+		"DOTA_Tooltip_Ability_C03W_old" "鐵布衫"
+		"DOTA_Tooltip_Ability_C03W_old_Description" "增加<font color='#5cb85c'>(10/20/30/40)</font>攻擊傷害、<font color='#5cb85c'>(4/6/8/10)</font>護甲以及<font color='#5cb85c'>(200/300/400/500)</font>額外生命值 和魔法免疫能力，持續13秒。"
+		"DOTA_Tooltip_Ability_C03E_old" "震地斧"
+		"DOTA_Tooltip_Ability_C03E_old_Description" "敲擊地面，對附近的敵軍造成<font color='#5cb85c'>(100/180/240/360)</font>傷害並且減緩<font color='#5cb85c'>(20/30/40/50)% </font>移動速度和攻擊速度，持續4秒。"
+		"DOTA_Tooltip_Ability_C03R_old" "暴雷怒擊"
+		"DOTA_Tooltip_Ability_C03R_old_Description" "在攻擊時有31% 機率對敵人額外造成<font color='#5cb85c'>(100/180/260/340)</font>傷害，並會將敵人擊昏0.4秒，不會失誤，對魔免單位傷害減半。"
+		"DOTA_Tooltip_Ability_C03T_old" "不動戰錘"
+		"DOTA_Tooltip_Ability_C03T_old_Description" "對指定的方向丟出不動戰錘，不動戰錘將會每0.5秒對周圍敵人丟出暈擊，造成<font color='#5cb85c'>(70/110/150)</font>傷害並且震昏<font color='#5cb85c'>(0.4/0.5/0.6)</font>秒。不動戰錘可以存在7秒。 "
 	}
 }
 

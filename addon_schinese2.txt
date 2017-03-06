@@ -46,13 +46,13 @@
 		"DOTA_Tooltip_Ability_item_banana_Description" "【使用】在10秒内获得魔法免疫。可使用2次。"
 		
 		// 英雄文
+		"npc_dota_hero_slardar"	"OB手"
 		"npc_dota_hero_crystal_maiden"	"阿松"
 		"npc_dota_hero_brewmaster"	"大熊朝秀"
 		"npc_dota_hero_viper"	"明智光秀"
 		"npc_dota_hero_venomancer"	"九鬼嘉隆"
 		"npc_dota_hero_treant"	"织田信长"
 		"npc_dota_hero_troll_warlord"	"井伊直政"
-		"npc_dota_hero_night_stalker"	"柳生宗严"
 		"npc_dota_hero_undying"	"服部半藏"
 		"npc_dota_hero_queenofpain"	"湖衣姬"
 		"npc_dota_hero_keeper_of_the_light"	"毛利元就"
@@ -77,6 +77,8 @@
 		"npc_dota_hero_legion_commander"	"明智秀满"
 		"npc_dota_hero_juggernaut" "立花宗茂"
 		"npc_dota_hero_spectre" "黑田孝高"
+		"npc_dota_hero_night_stalker"	"柳生宗严"
+		"npc_dota_hero_ogre_magi" "岛津义弘"
 		
 		"ADDON_GAME_NAME"	"信长之野望"
 		"game_mode_15"	"信长之野望"
@@ -1429,7 +1431,7 @@
 	    "DOTA_Tooltip_Ability_A19E_old"  "连环火"
 		"DOTA_Tooltip_Ability_A19E_old_Description" "释放出一枚火焰种子到目标身上持续5秒。目标及附近250范围的敌人会降低<font color='#5cb85c'>(16/26/36/46)% </font>攻击及移动速度及<font color='#5cb85c'>(4/6/8/10)</font>点装甲。目标 每秒受到<font color='#5cb85c'>(50/60/70/80)</font>点伤害。"
 	    "DOTA_Tooltip_Ability_A19R_old"  "焰之附着"
-	    "DOTA_Tooltip_Ability_A19R_old_Description" "每一次攻击的伤害力，都会因为黏附在目标身上的活耀火焰而加强，这些火焰会在第一次攻击时增加<font color='#5cb85c'>(10/15/20/25)</font>点的伤害，第二次攻击则提升为两倍，第三次攻击时则增加为三倍，以此类推。如果部队在效果还存在时死亡，自体会持续燃烧，对所有附近的敌方部队造成<font color='#5cb85c'>(100/200/300/400)</font>点伤害。"
+	    "DOTA_Tooltip_Ability_A19R_old_Description" "每一次攻击的伤害力，都会因为黏附在目标身上的活耀火焰而加强，这些火焰会在第一次攻击时增加<font color='#5cb85c'>(10/20/30/40)</font>点的伤害，第二次攻击则提升为两倍，第三次攻击时则增加为三倍，以此类推。如果部队在效果还存在时死亡，自体会持续燃烧，对所有附近的敌方部队造成<font color='#5cb85c'>(100/200/300/400)</font>点伤害。"
 	    "DOTA_Tooltip_Ability_A19T_old"  "笼城之火"
 	    "DOTA_Tooltip_Ability_A19T_old_Description" "对着指定方向造出1道往前延烧而去距离4000的火墙，敌方部队靠近火墙距离250将每秒受到<font color='#5cb85c'>(320/480/640)</font>点伤害，对建筑物每秒20点的伤害，火墙持续10秒。"
 		
@@ -1900,7 +1902,7 @@
 		"DOTA_Tooltip_Ability_C19R"  "瘫痪毒"
 		"DOTA_Tooltip_Ability_C19R_Description"	"攻击时会附带瘫痪毒，能降低敌人<font color='#5cb85c'>(10/13/16/19)% </font>的移动速度和攻击速度 以及每秒造成<font color='#5cb85c'>(25/40/55/70)</font>持续伤害，持续2秒。 "
 		"DOTA_Tooltip_Ability_C19T"  "不容侵犯"
-		"DOTA_Tooltip_Ability_C19T_Description" "有<font color='#5cb85c'>(30/35/40)% </font>机会闪避攻击 ，并且永久降低所受到的法术伤害<font color='#5cb85c'>(25/30/35)% </font>。"
+		"DOTA_Tooltip_Ability_C19T_Description" "有<font color='#5cb85c'>(30/40/50)% </font>机会闪避攻击 ，并且永久降低所受到的法术伤害<font color='#5cb85c'>(25/30/35)% </font>。"
 
 		"DOTA_Tooltip_Ability_C19W_old"  "瘫痪毒"
 		"DOTA_Tooltip_Ability_C19W_old_Description"	"攻击时会附带瘫痪毒，每下攻击消耗(15/20/25/30)点魔力，能提升<font color='#5cb85c'>(10/20/30/40)</font>攻击力，能降低敌人<font color='#5cb85c'>(10/20/30/40)% </font>的移动速度和攻击速度 以及每秒造成<font color='#5cb85c'>(20/40/60/80)</font>持续伤害，持续3秒。 "
@@ -1909,7 +1911,7 @@
 		"DOTA_Tooltip_Ability_C19R_old"  "奇袭"
 		"DOTA_Tooltip_Ability_C19R_old_Description"	"传送地图上任意位置，需要5秒的施展时间，若被中断则失效。"
 		"DOTA_Tooltip_Ability_C19T_old"  "不容侵犯"
-		"DOTA_Tooltip_Ability_C19T_old_Description" "有<font color='#5cb85c'>(30/40/50)% </font>机会闪避攻击"	
+		"DOTA_Tooltip_Ability_C19T_old_Description" "有<font color='#5cb85c'>(40/50/60)% </font>机会闪避攻击"	
 		
 		// 望月千代女
 		"DOTA_Tooltip_Ability_B16W"  "忍法．飞袭令"
@@ -2882,11 +2884,32 @@
 		"DOTA_Tooltip_Ability_C24W_old" "柳生新阴流．无刀取"
 		"DOTA_Tooltip_Ability_C24W_old_Description" "柳生石舟斋日夜冥想所自创的剑术，对目标造成<font color='#5cb85c'>(150/250/350/450)</font>点伤害并晕眩<font color='#5cb85c'>(1.5/2/2.5/3)</font>秒"
 		"DOTA_Tooltip_Ability_C24E_old" "柳生新阴流．浮舟"
-		"DOTA_Tooltip_Ability_C24E_old_Description" "向指定的地点移动攻击，造成距离850内所有敌人受到<font color='#5cb85c'>(250/350/450/550)</font>点伤害。区域范围150。"
+		"DOTA_Tooltip_Ability_C24E_old_Description" "向指定的地点移动850距离，造成区域范围150内所有敌人受到<font color='#5cb85c'>(250/350/450/550)</font>点伤害。"
 		"DOTA_Tooltip_Ability_C24R_old" "柳生新阴流"
 		"DOTA_Tooltip_Ability_C24R_old_Description" "有<font color='#5cb85c'>(6/12/18/24)% </font>的机会闪避攻击，而且攻击时有<font color='#5cb85c'>(6/7/8/9)% </font>机会造成<font color='#5cb85c'>(2/3/4/5)</font>倍伤害。且绝不失误。 "
 		"DOTA_Tooltip_Ability_C24T_old" "柳生新阴流．激．双岚阵"
 		"DOTA_Tooltip_Ability_C24T_old_Description" "起身之瞬间将对手追斩至空中，连续给予强烈的斩击，并且将对手重重的从空中斩落地面给予<font color='#5cb85c'>(1300/1600/2000)</font>点的伤害。"
+		
+		"npc_dota_hero_ogre_magi" "岛津义弘"
+		"npc_dota_hero_ogre_magi_hype" "岛津家17代当主，贵久的次男。粉碎伊东、大友两家，让岛津家迈向繁荣的家中猛将。于朝鲜派兵时大破明朝大军，誉为“鬼石曼子”。 "
+		
+		"DOTA_Tooltip_Ability_C03W" "铁布衫"
+		"DOTA_Tooltip_Ability_C03W_Description" "增加<font color='#5cb85c'>(15/30/45/60)</font>攻击伤害、<font color='#5cb85c'>(2/3/4/5)</font>护甲以及<font color='#5cb85c'>(200/300/400/500)</font>额外生命值和魔法免疫能力，持续6秒。"
+		"DOTA_Tooltip_Ability_C03E" "震地斧"
+		"DOTA_Tooltip_Ability_C03E_Description" "敲击地面，对附近的敌军造成<font color='#5cb85c'>(200/300/400/500)</font>伤害并且减缓<font color='#5cb85c'>(9/18/27/36)% </font>移动速度和65% 攻击速度，持续6秒。"
+		"DOTA_Tooltip_Ability_C03R" "暴雷怒击"
+		"DOTA_Tooltip_Ability_C03R_Description" "在攻击时有31% 机率对敌人额外造成<font color='#5cb85c'>(100/180/260/340)</font>伤害，并会将敌人击昏0.4秒，不会失误，对魔免单位伤害减半。"
+		"DOTA_Tooltip_Ability_C03T" "不动战锤"
+		"DOTA_Tooltip_Ability_C03T_Description" "对指定的方向丢出不动战锤，不动战锤将会每0.67秒对周围敌人丢出晕击，造成<font color='#5cb85c'>(90/140/190)</font>伤害并且震昏<font color='#5cb85c'>(0.40/0.45/0.50)</font>秒。不动战锤可以存在11秒。 "
+		
+		"DOTA_Tooltip_Ability_C03W_old" "铁布衫"
+		"DOTA_Tooltip_Ability_C03W_old_Description" "增加<font color='#5cb85c'>(10/20/30/40)</font>攻击伤害、<font color='#5cb85c'>(4/6/8/10)</font>护甲以及<font color='#5cb85c'>(200/300/400/500)</font>额外生命值 和魔法免疫能力，持续13秒。"
+		"DOTA_Tooltip_Ability_C03E_old" "震地斧"
+		"DOTA_Tooltip_Ability_C03E_old_Description" "敲击地面，对附近的敌军造成<font color='#5cb85c'>(100/180/240/360)</font>伤害并且减缓<font color='#5cb85c'>(20/30/40/50)% </font>移动速度和攻击速度，持续4秒。"
+		"DOTA_Tooltip_Ability_C03R_old" "暴雷怒击"
+		"DOTA_Tooltip_Ability_C03R_old_Description" "在攻击时有31% 机率对敌人额外造成<font color='#5cb85c'>(100/180/260/340)</font>伤害，并会将敌人击昏0.4秒，不会失误，对魔免单位伤害减半。"
+		"DOTA_Tooltip_Ability_C03T_old" "不动战锤"
+		"DOTA_Tooltip_Ability_C03T_old_Description" "对指定的方向丢出不动战锤，不动战锤将会每0.5秒对周围敌人丢出晕击，造成<font color='#5cb85c'>(70/110/150)</font>伤害并且震昏<font color='#5cb85c'>(0.4/0.5/0.6)</font>秒。不动战锤可以存在7秒。 "
 	}
 }
 
