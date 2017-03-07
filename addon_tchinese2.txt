@@ -79,6 +79,7 @@
 		"npc_dota_hero_spectre" "黑田孝高"
 		"npc_dota_hero_night_stalker"	"柳生宗嚴"
 		"npc_dota_hero_ogre_magi" "島津義弘"
+		"npc_dota_hero_ember_spirit" "仙石秀久"
 		
 		"ADDON_GAME_NAME"	"信長之野望"
 		"game_mode_15"	"信長之野望"
@@ -1454,6 +1455,10 @@
 	    "DOTA_Tooltip_Ability_A21R_Description" "中斷區域內敵人的施法，並且召喚一個生命<font color='#5cb85c'>(450/600/750/900)</font>的珍珠圓盤來攻擊敵人。每0.13秒就會噴出一顆能造成<font color='#5cb85c'>(20/25/30/35)</font>點傷害的珍珠來攻擊周圍的隨機敵人，並且每秒可以回復周圍友軍2% 的生命值。可持續25秒。"
 	    "DOTA_Tooltip_Ability_A21T"  "偽情報"
 		"DOTA_Tooltip_Ability_A21T_Description" "對著目標放出偽情報，目標將會受騙以為本陣戰情告急，而返回本陣，偽情報將在6秒後識破。"
+		
+		// 仙石秀久
+		"npc_dota_hero_ember_spirit_hype"	"俗稱權兵衛。美濃出身，出為齋藤龍興的一名小卒，後因龍興居城被織田軍攻破，轉而投靠織田家，受信長之命仕於羽柴秀吉。在秀吉被任命為中國征伐軍之後隨軍作戰，獲得戰功而被任命為國主。信長死後，在秀吉掌握天下的過程中與四國的長宗我部對陣，根據此功績，在四國征伐後，給予了十萬石領地。但好景不常，就在秀吉命他擔任九州征伐軍渡海作戰時，秀久貪功，制定了無謀的戰術而被島津軍徹底擊敗，秀久因此遭到放逐。在那之後，小田原征伐時，以借將的形式回到秀吉的軍隊，他穿著掛著鈴鐺光亮燦爛的鎧甲，建立出眾的武功，在箱根有仙石原的地名，就是他當時奮勇作戰的地方。根據他當時的功績，秀久從信濃、小諸得到五萬石領地，重新擔任大名。 "
+		
 	    "DOTA_Tooltip_Ability_A22W"  "旋焰斬"
 		"DOTA_Tooltip_Ability_A22W_Description" "讓身邊圍繞著火焰的旋風，將可以進入魔法免疫狀態並且每秒對附近的敵軍造成210傷害，持續4秒。"
 	    "DOTA_Tooltip_Ability_A22E"  "焰心鼓動"
@@ -1462,7 +1467,9 @@
 	    "DOTA_Tooltip_Ability_A22R_Description" "沸騰周圍敵人體內的血液使他們痛苦不堪，受到沸血靈光影響的敵人將會降低<font color='#5cb85c'>(11/15/19/23)% </font>攻擊傷害，並且每秒失去<font color='#5cb85c'>(1.5/2.0/2.5/3.0)% </font>的生命值。"
 	    "DOTA_Tooltip_Ability_A22T"  "折磨"
 		"DOTA_Tooltip_Ability_A22T_Description" "使目標敵方英雄減緩移動速度25% ，持續<font color='#5cb85c'>(6/8/10)</font>秒，並且在折磨的持續時間內，目標敵軍所受到的傷害增加40% 。"
-	    "DOTA_Tooltip_Ability_A23W"  "鬼術．惡血咒"
+	    
+		
+		"DOTA_Tooltip_Ability_A23W"  "鬼術．惡血咒"
 		"DOTA_Tooltip_Ability_A23W_Description" "將惡血咒注入到目標的體內，在2秒後爆發，以該目標為中心造成範圍<font color='#5cb85c'>(200/300/400/500)</font>傷害以及震暈<font color='#5cb85c'>(1.0/1.5/2.0/2.5)</font>秒。 若注入的時間該敵人處於靈魂鎖縛狀態下，則爆發的震暈效果無視魔法免疫。"
 	    "DOTA_Tooltip_Ability_A23E"  "鬼術．靈魂鎖縛"
 		"DOTA_Tooltip_Ability_A23E_Description" "指定目標英雄，在自身位置插下結界並在雙方之間建立一道連鎖，每1秒對該敵方英雄造成50+自身智慧的傷害，而連鎖長度每延長<font color='#5cb85c'>(250/200/150/100)</font>便可以使傷害提升5% ，持續<font color='#5cb85c'>(3/4/5/6)</font>秒。"
@@ -2900,7 +2907,7 @@
 		"DOTA_Tooltip_Ability_C03R" "暴雷怒擊"
 		"DOTA_Tooltip_Ability_C03R_Description" "在攻擊時有31% 機率對敵人額外造成<font color='#5cb85c'>(100/180/260/340)</font>傷害，並會將敵人擊昏0.4秒，不會失誤，對魔免單位傷害減半。"
 		"DOTA_Tooltip_Ability_C03T" "不動戰錘"
-		"DOTA_Tooltip_Ability_C03T_Description" "對指定的方向丟出不動戰錘，不動戰錘將會每0.67秒對周圍敵人丟出暈擊，造成<font color='#5cb85c'>(90/140/190)</font>傷害並且震昏<font color='#5cb85c'>(0.40/0.45/0.50)</font>秒。不動戰錘可以存在11秒。 "
+		"DOTA_Tooltip_Ability_C03T_Description" "對指定的方向丟出不動戰錘，不動戰錘將會每0.6秒對周圍敵人丟出暈擊，造成<font color='#5cb85c'>(90/140/190)</font>物理傷害並且震昏<font color='#5cb85c'>(0.40/0.45/0.50)</font>秒，對魔免單位震昏0.1秒。不動戰錘可以存在11秒。 "
 		
 		"DOTA_Tooltip_Ability_C03W_old" "鐵布衫"
 		"DOTA_Tooltip_Ability_C03W_old_Description" "增加<font color='#5cb85c'>(10/20/30/40)</font>攻擊傷害、<font color='#5cb85c'>(4/6/8/10)</font>護甲以及<font color='#5cb85c'>(200/300/400/500)</font>額外生命值 和魔法免疫能力，持續13秒。"
@@ -2909,7 +2916,7 @@
 		"DOTA_Tooltip_Ability_C03R_old" "暴雷怒擊"
 		"DOTA_Tooltip_Ability_C03R_old_Description" "在攻擊時有31% 機率對敵人額外造成<font color='#5cb85c'>(100/180/260/340)</font>傷害，並會將敵人擊昏0.4秒，不會失誤，對魔免單位傷害減半。"
 		"DOTA_Tooltip_Ability_C03T_old" "不動戰錘"
-		"DOTA_Tooltip_Ability_C03T_old_Description" "對指定的方向丟出不動戰錘，不動戰錘將會每0.5秒對周圍敵人丟出暈擊，造成<font color='#5cb85c'>(70/110/150)</font>傷害並且震昏<font color='#5cb85c'>(0.4/0.5/0.6)</font>秒。不動戰錘可以存在7秒。 "
+		"DOTA_Tooltip_Ability_C03T_old_Description" "對指定的方向丟出不動戰錘，不動戰錘將會每0.5秒對周圍敵人丟出暈擊，造成<font color='#5cb85c'>(70/110/150)</font>傷害並且震昏<font color='#5cb85c'>(0.4/0.45/0.5)</font>秒。不動戰錘可以存在7秒。 "
 	}
 }
 

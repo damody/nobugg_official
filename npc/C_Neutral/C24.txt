@@ -105,7 +105,6 @@
 		"AbilityCooldown"	"9"
 		"AbilityManaCost"	"85 110 135 160"
 		"AbilityCastRange"	"500 600 700 800"
-		"AOERadius"			"300"
 
 		"OnSpellStart"
 		{
@@ -384,7 +383,6 @@
 		"AbilityCooldown"	"13 11 7 4"
 		"AbilityManaCost"	"100 120 140 160"
 		
-		"AOERadius"			"850"
 		"AbilityDamage"				"250 350 450 550"
 
 		"OnSpellStart"
