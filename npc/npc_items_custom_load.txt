@@ -6984,7 +6984,18 @@
 				"IsDebuff"		"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "-7"	//防禦
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "-8"	//防禦
+				}
+			}
+			"modifier_spear_of_saddle2"
+			{
+				"Passive"			"0"
+				"IsHidden"			"0"
+				"IsPurgable"	"1"
+				"IsDebuff"		"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "-4"	//防禦
 				}
 			}
 			"Passive_spear_of_saddle"
@@ -7070,7 +7081,18 @@
 				"IsDebuff"		"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "-13"	//防禦
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "-14"	//防禦
+				}
+			}
+			"modifier_spear_of_saddle2"
+			{
+				"Passive"			"0"
+				"IsHidden"			"0"
+				"IsPurgable"	"1"
+				"IsDebuff"		"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "-7"	//防禦
 				}
 			}
 			"Passive_spear_of_saddle_1"
@@ -7147,7 +7169,6 @@
 		}
 		"Modifiers"
 		{
-			
 			"modifier_spear_of_saddle"
 			{
 				"Passive"			"0"
@@ -7157,6 +7178,17 @@
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "-20"	//防禦
+				}
+			}
+			"modifier_spear_of_saddle2"
+			{
+				"Passive"			"0"
+				"IsHidden"			"0"
+				"IsPurgable"	"1"
+				"IsDebuff"		"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "-10"	//防禦
 				}
 			}
 			"Passive_spear_of_saddle_2"
@@ -8986,12 +9018,19 @@
 			"modifier_the_soul_of_power"
 			{
 				"Passive"	"1"
+				"IsHidden"	"0"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS" "20"	//力
 					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "20"		//敏
 					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "20"	//智
 				}
+			}
+			"modifier_the_soul_of_power2"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
 				"OnDeath"
 				{
 					"RunScript"
@@ -9903,6 +9942,26 @@
 		"ItemCost"	"4250"
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"OnEquip"
+		{
+			"RemoveModifier"
+            {
+                "Target" "CASTER"
+                "ModifierName" "modifier_ninja_cloth"
+            }
+            "DelayedAction"
+            {
+            	"Delay"     "0.1"
+            	"Action"    
+            	{
+            		"ApplyModifier"
+		            {
+		                "Target" "CASTER"
+		                "ModifierName" "modifier_ninja_cloth"
+		            }
+            	}
+            }
+		}
 		"OnSpellStart"
 		{
 			"ApplyModifier"
@@ -10717,7 +10776,26 @@
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
-
+		"OnEquip"
+		{
+			"RemoveModifier"
+            {
+                "Target" "CASTER"
+                "ModifierName" "modifier_ninja_cloth"
+            }
+            "DelayedAction"
+            {
+            	"Delay"     "0.1"
+            	"Action"    
+            	{
+            		"ApplyModifier"
+		            {
+		                "Target" "CASTER"
+		                "ModifierName" "modifier_ninja_cloth"
+		            }
+            	}
+            }
+		}
 		"Modifiers"
 		{
 			"modifier_ninja_cloth"
@@ -14884,7 +14962,26 @@
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
-		
+		"OnEquip"
+		{
+			"RemoveModifier"
+            {
+                "Target" "CASTER"
+                "ModifierName" "modifier_ninja_cloth"
+            }
+            "DelayedAction"
+            {
+            	"Delay"     "0.2"
+            	"Action"    
+            	{
+            		"ApplyModifier"
+		            {
+		                "Target" "CASTER"
+		                "ModifierName" "modifier_ninja_cloth"
+		            }
+            	}
+            }
+		}
 		"OnSpellStart"
 		{
 			"RunScript"

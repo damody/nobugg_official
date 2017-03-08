@@ -620,14 +620,14 @@
 		"DOTA_Tooltip_Ability_item_commander_of_fan" "统率者铁扇"
 		"DOTA_Tooltip_Ability_item_commander_of_fan_Description" "攻击伤害+28，全能力+20。【使用】使指定范围内的敌人无法施展法术以及攻击持续3秒，非英雄单位10秒。<font color='#cc0000'>对魔法免疫单位效果1秒</font>"
 
-		"DOTA_Tooltip_Ability_item_the_spear_of_saddle" "鞍切"
-		"DOTA_Tooltip_Ability_item_the_spear_of_saddle_Description" "攻击伤害+42，全能力+5。击中时使敌人护甲减少7<font color='#cc0000'>法球效果，不可与其他法球并存，对魔免无效。</font>。"
+		"DOTA_Tooltip_Ability_item_the_spear_of_saddle" "鞍切．一阶"
+		"DOTA_Tooltip_Ability_item_the_spear_of_saddle_Description" "攻击伤害+42，全能力+5。击中时使敌人护甲减少8<font color='#cc0000'>法球效果，不可与其他法球并存，对魔免只有一半效果。</font>。"
 
 		"DOTA_Tooltip_Ability_item_the_spear_of_saddle_1" "鞍切．二阶"
-		"DOTA_Tooltip_Ability_item_the_spear_of_saddle_1_Description" "攻击伤害+56，全能力+5。击中时使敌人护甲减少13<font color='#cc0000'>法球效果，不可与其他法球并存，对魔免无效。</font>。"
+		"DOTA_Tooltip_Ability_item_the_spear_of_saddle_1_Description" "攻击伤害+56，全能力+5。击中时使敌人护甲减少14<font color='#cc0000'>法球效果，不可与其他法球并存，对魔免只有一半效果。</font>。"
 
 		"DOTA_Tooltip_Ability_item_the_spear_of_saddle_2" "鞍切．三阶"
-		"DOTA_Tooltip_Ability_item_the_spear_of_saddle_2_Description" "攻击伤害+70，全能力+5。击中时使敌人护甲减少20<font color='#cc0000'>法球效果，不可与其他法球并存，对魔免无效。</font>。"
+		"DOTA_Tooltip_Ability_item_the_spear_of_saddle_2_Description" "攻击伤害+70，全能力+5。击中时使敌人护甲减少20<font color='#cc0000'>法球效果，不可与其他法球并存，对魔免只有一半效果。</font>。"
 
 		"DOTA_Tooltip_Ability_item_the_spear_of_ghost" "鬼切"
 		"DOTA_Tooltip_Ability_item_the_spear_of_ghost_Description" "攻击伤害+28，全能力+5，灵活+10。攻击敌人时有19% 机率切割对方的真灵，使该敌人失去他<font color='#f0ad4e'>14% </font>的现有生命值，最低可以使敌人失去115生命值。<font color='#cc0000'>法球效果，不可与其他法球并存，对魔免造成1.5倍物理伤害。</font>"
@@ -1142,7 +1142,7 @@
 		"DOTA_Tooltip_Ability_C15R_old" "精准之光"
 		"DOTA_Tooltip_Ability_C15R_old_Description" "增加<font color='#5cb85c'>(20/30/40/50)% </font>攻击力。"
 		"DOTA_Tooltip_Ability_C15T_old" "百箭齐发"
-		"DOTA_Tooltip_Ability_C15T_old_Description" "震晕对手2.5秒，同时射出10发致命的箭矢攻击目标，若是指定的目标死亡，所有箭矢将随机找寻附近敌人进行攻击，每只箭矢都拥有<font color='#5cb85c'>(60/90/120)</font>点攻击力伤害，持续10秒。"
+		"DOTA_Tooltip_Ability_C15T_old_Description" "震晕对手2.5秒，同时射出10发致命的箭矢攻击目标，若是指定的目标死亡，所有箭矢将随机找寻附近敌人进行攻击，每只箭矢都拥有<font color='#5cb85c'>(90/120/160)</font>点攻击力伤害，持续10秒。"
 
 		"DOTA_Tooltip_Ability_C17R"	"神助一击"
 		"DOTA_Tooltip_Ability_C17R_Description"	"以眩光打击小范围内的敌人，造成等同于基本伤害<font color='#5cb85c'>(100/160/220/280)</font>加上自身智慧×4的伤害。"
@@ -1468,6 +1468,16 @@
 	    "DOTA_Tooltip_Ability_A22T"  "折磨"
 		"DOTA_Tooltip_Ability_A22T_Description" "使目标敌方英雄减缓移动速度25% ，持续<font color='#5cb85c'>(6/8/10)</font>秒，并且在折磨的持续时间内，目标敌军所受到的伤害增加40% 。"
 	    
+		"DOTA_Tooltip_Ability_A22D_old"  "嘲弄"
+		"DOTA_Tooltip_Ability_A22D_old_Description" "使接近自身周围600范围的敌人将被迫攻击这个单位，并且自身每秒恢复24点生命，持续20秒。"
+		"DOTA_Tooltip_Ability_A22W_old"  "虎振"
+		"DOTA_Tooltip_Ability_A22W_old_Description" "往前方800距离发出3道扇形剑气，每道剑气都可造成<font color='#5cb85c'>(140/180/220/260)</font>点伤害。"
+	    "DOTA_Tooltip_Ability_A22E_old"  "反击"
+		"DOTA_Tooltip_Ability_A22E_old_Description" "增加<font color='#5cb85c'>(15/30/45/60)% </font>攻击速度。受到攻击时有50%的机会反击，造成250范围内的敌人[50/75/100/125)</font>点伤害。持续30秒。"
+	    "DOTA_Tooltip_Ability_A22R_old"  "刀术"
+	    "DOTA_Tooltip_Ability_A22R_old_Description" "在攻击时有20%的机会造成<font color='#5cb85c'>(2/2.5/3/3.5)</font>倍伤害。"
+	    "DOTA_Tooltip_Ability_A22T_old"  "气旋斩"
+		"DOTA_Tooltip_Ability_A22T_old_Description" "对指定方向发出三道并排且持续前进的刀风，只要是经过这个刀风的敌人都会被吸引且击退一小段距离，并且每0.5秒就会受到200伤害。"
 		
 		"DOTA_Tooltip_Ability_A23W"  "鬼术．恶血咒"
 		"DOTA_Tooltip_Ability_A23W_Description" "将恶血咒注入到目标的体内，在2秒后爆发，以该目标为中心造成范围<font color='#5cb85c'>(200/300/400/500)</font>伤害以及震晕<font color='#5cb85c'>(1.0/1.5/2.0/2.5)</font>秒。 若注入的时间该敌人处于灵魂锁缚状态下，则爆发的震晕效果无视魔法免疫。"
@@ -1681,7 +1691,7 @@
 	    "DOTA_Tooltip_Ability_A35E"  "炽焰封魔"
         "DOTA_Tooltip_Ability_A35E_Description" "以自身为中心爆出具有封魔之力的怒焰，可以对四周范围的敌军造成<font color='#5cb85c'>(75/145/215/285)</font>初始伤害，并且晕眩1秒，接着封魔焰将会在敌军身上燃烧，每秒造成55伤害并且无法施法以及使用物品，持续3秒。"
 	    "DOTA_Tooltip_Ability_A35R"  "炎之迅捷"
-        "DOTA_Tooltip_Ability_A35R_Description" "永久提升<font color='#5cb85c'>8/16/24/32)</font>点的灵活。"
+        "DOTA_Tooltip_Ability_A35R_Description" "永久提升<font color='#5cb85c'>(8/16/24/32)</font>点的灵活。"
 	    "DOTA_Tooltip_Ability_A35T"  "焦灼之火"
         "DOTA_Tooltip_Ability_A35T_Description" "启动之后，每1.2秒对附近的敌方英雄造成等同于他们生命最大值<font color='#5cb85c'>(5/6/7)% </font>的伤害，并且使他们失去等量的法力 以及中断动作 ，持续4.8秒。"
 	    "DOTA_Tooltip_Ability_A36W"  "潜影术"
@@ -1707,7 +1717,7 @@
 		"DOTA_Tooltip_Ability_B01E_old"	"杂贺众"
 		"DOTA_Tooltip_Ability_B01E_old_Description"	"召唤杂贺众的同伴<font color='#5cb85c'>(2/3/4/5)</font>个来加入战斗。"
 		"DOTA_Tooltip_Ability_B01R_old"	"雨铁炮"
-		"DOTA_Tooltip_Ability_B01R_old_Description"	"45% 机率对建筑物造成额外<font color='#5cb85c'>(40/50/60/70)% </font>物理伤害、英雄造成额外<font color='#5cb85c'>(30/40/50/60)% </font>物理伤害、部队造成额外<font color='#5cb85c'>(100/140/180/220)% </font>物理伤害。<font color='#5cb85c'>法球效果</font>"
+		"DOTA_Tooltip_Ability_B01R_old_Description"	"45% 机率对建筑物造成额外<font color='#5cb85c'>(20/30/40/55)% </font>物理伤害、英雄造成额外<font color='#5cb85c'>(40/50/60/70)% </font>物理伤害、部队造成额外<font color='#5cb85c'>(100/140/180/220)% </font>物理伤害。<font color='#5cb85c'>法球效果</font>"
 		"DOTA_Tooltip_Ability_B01T_old"	"三段"
 		"DOTA_Tooltip_Ability_B01T_old_Description"	"能让攻击力获得伤害加成200% 的三段技法，持续<font color='#5cb85c'>(7/11/13)</font>秒。"
 		
@@ -1850,7 +1860,7 @@
 		"DOTA_Tooltip_Ability_B32D_old" "军神" 
 		"DOTA_Tooltip_Ability_B32D_old_Description" "增加自身7点基础装甲，并增加900范围内所有友方部队2点装甲。"
 		"DOTA_Tooltip_Ability_B32W_old" "神斩"
-		"DOTA_Tooltip_Ability_B32W_old_Description" "瞬间冲到目标敌军身旁，造成<font color='#5cb85c'>(100/200/300/400)</font>的伤害，并且击晕<font color='#5cb85c'>(0.7/1/1.3/1.6)</font>秒，在接下来的3秒提升<font color='#5cb85c'>(350/400/450/500)% </font>攻速与100跑速。"
+		"DOTA_Tooltip_Ability_B32W_old_Description" "瞬间冲到目标敌军身旁，造成<font color='#5cb85c'>(100/200/300/400)</font>的伤害，并且击晕<font color='#5cb85c'>(0.7/1/1.3/1.6)</font>秒，在接下来的3秒提升<font color='#5cb85c'>(500)% </font>攻速与100跑速。"
 		"DOTA_Tooltip_Ability_B32E_old" "神闪"
 		"DOTA_Tooltip_Ability_B32E_old_Description" "化为一道冰径横贯到指定地点，可以对一路上的所有敌人造成<font color='#5cb85c'>(100/200/300/400)</font>的伤害并且使他们冰冻<font color='#5cb85c'>(1.4/1.6/1.8/2)</font>秒。"
 		"DOTA_Tooltip_Ability_B32R_old" "神烈"
@@ -1918,7 +1928,7 @@
 		"DOTA_Tooltip_Ability_C19R_old"  "奇袭"
 		"DOTA_Tooltip_Ability_C19R_old_Description"	"传送地图上任意位置，需要5秒的施展时间，若被中断则失效。"
 		"DOTA_Tooltip_Ability_C19T_old"  "不容侵犯"
-		"DOTA_Tooltip_Ability_C19T_old_Description" "有<font color='#5cb85c'>(40/50/60)% </font>机会闪避攻击"	
+		"DOTA_Tooltip_Ability_C19T_old_Description" "有<font color='#5cb85c'>(50/60/70)% </font>机会闪避攻击"	
 		
 		// 望月千代女
 		"DOTA_Tooltip_Ability_B16W"  "忍法．飞袭令"
@@ -2854,7 +2864,7 @@
 		"DOTA_Tooltip_Ability_B04E" "火焰强袭"
 		"DOTA_Tooltip_Ability_B04E_Description" "施展一道巨型火焰，对范围内敌人造成<font color='#5cb85c'>(150/250/350/450)</font>伤害并晕眩<font color='#5cb85c'>(0.5/0.8/1.1/1.4)</font>秒。"
 		"DOTA_Tooltip_Ability_B04R" "炎之迅捷"
-		"DOTA_Tooltip_Ability_B04R_Description" "永久提升<font color='#5cb85c'>(8/16/24/32)</font>点的灵活。"
+		"DOTA_Tooltip_Ability_B04R_Description" "永久提升<font color='#5cb85c'>(10/20/30/40)</font>点的灵活。"
 		"DOTA_Tooltip_Ability_B04T" "种子岛"
 		"DOTA_Tooltip_Ability_B04T_Description" "使用威力强大的种子岛铁炮，具有800远距离攻击，增加<font color='#5cb85c'>(50/70/90)</font>基础攻击力，并使用新式弹药，有38% 机率让敌人产生0.22秒的停顿，持续<font color='#5cb85c'>(28/32/36)</font>秒。"
 

@@ -473,23 +473,7 @@
 		"LevelsBetweenUpgrades"	"6"
 		"OnUpgrade"
 		{
-			"RemoveModifier"
-            {
-                "Target" "CASTER"
-                "ModifierName" "modifier_ninja_cloth"
-            }
-            "DelayedAction"
-            {
-            	"Delay"     "0.1"
-            	"Action"    
-            	{
-            		"ApplyModifier"
-		            {
-		                "Target" "CASTER"
-		                "ModifierName" "modifier_ninja_cloth"
-		            }
-            	}
-            }
+			
 		}
 		"Modifiers"
 		{
@@ -500,14 +484,32 @@
 				{
 					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"%bonus_magic_def"
 				}
+				"ThinkInterval"	"1"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+					  	"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C19.lua"
+						"Function"		"C19T_OnIntervalThink"
+					}
+				}
 			}
 			"modifier_ninja_cloth"
 			{
-				"IsHidden"	"1"
+				"IsHidden"	"0"
 				"Passive"	"1"
+				"Priority" "MODIFIER_PRIORITY_ULTRA"
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"%bonus_evasion"	//閃避
+				}
+				"OnCreated"
+				{
+					"RunScript"
+					{
+					  	"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C19.lua"
+						"Function"		"C19T_OnOnCreated"
+					}
 				}
 			}
 		}
@@ -538,34 +540,36 @@
 		"AbilityType"	"DOTA_ABILITY_TYPE_ULTIMATE"
 		"RequiredLevel"	"6"
 		"LevelsBetweenUpgrades"	"6"
-		"OnUpgrade"
-		{
-			"RemoveModifier"
-            {
-                "Target" "CASTER"
-                "ModifierName" "modifier_ninja_cloth"
-            }
-            "DelayedAction"
-            {
-            	"Delay"     "0.1"
-            	"Action"    
-            	{
-            		"ApplyModifier"
-		            {
-		                "Target" "CASTER"
-		                "ModifierName" "modifier_ninja_cloth"
-		            }
-            	}
-            }
-		}
+
 		"Modifiers"
 		{
+			"modifier_C19T"
+			{
+				"Passive"	"1"
+				"ThinkInterval"	"1"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+					  	"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C19.lua"
+						"Function"		"C19T_OnIntervalThink"
+					}
+				}
+			}
 			"modifier_ninja_cloth"
 			{
 				"Passive"	"1"
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"%bonus_evasion"	//閃避
+				}
+				"OnCreated"
+				{
+					"RunScript"
+					{
+					  	"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C19.lua"
+						"Function"		"C19T_OnOnCreated"
+					}
 				}
 			}
 		}
@@ -576,7 +580,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"bonus_evasion"	"40 50 60"
+				"bonus_evasion"	"50 60 70"
 			}
 		}
 	}
