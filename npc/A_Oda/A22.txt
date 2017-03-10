@@ -423,7 +423,7 @@
 		"AnimationPlaybackRate"	"1.5"
 		"MaxLevel"	"1"
 		"AbilityCooldown"	"30"
-		"AbilityManaCost"	"45"
+		"AbilityManaCost"	"145"
 		"AbilityCastRange"	"600"
 		"AOERadius"	"600"
 		"OnSpellStart"
@@ -492,7 +492,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"duration"	"1"
+				"duration"	"3"
 			}
 			"03"
 			{
@@ -575,9 +575,8 @@
 		{
 			"ApplyModifier"
 			{
-				"ModifierName"	"modifier_A22E_old"
+				"ModifierName"	"modifier_A22E_old2"
 				"Target" 		"CASTER"
-				"Duration"		"30"
 			}
 		}
 		"Modifiers"
@@ -615,6 +614,31 @@
 					}
 				}
 			}
+			"modifier_A22E_old2"
+			{
+				"Passive"	"0"
+				"IsHidden"	"0"
+				"Duration"		"30"
+				"OnAttacked"
+				{
+					"Random"
+					{
+						"OnSuccess"
+						{
+							"RunScript"
+							{
+								"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A22.lua"
+								"Function"	"A22E_old_OnAttacked2"
+							}
+							"FireSound"
+							{
+								"EffectName"	"Hero_Tiny.Pick"
+							}
+						}
+						"Chance"	"%chance"
+					}
+				}
+			}
 		}
 		"AbilitySpecial"
 		{
@@ -636,7 +660,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"radius"	"250"
+				"radius"	"350"
 			}
 		}
 	}
@@ -712,7 +736,7 @@
 		"LevelsBetweenUpgrades"	"6"
 		"AbilityCooldown"	"130 90 50"
 		"AbilityManaCost"	"250 300 350"
-		"AbilityCastRange"	"1200"
+		"AbilityCastRange"	"5000"
 		"AbilityCastPoint"	"0.1"
 		"AbilityDamage"		"200"
 
@@ -739,7 +763,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"duration"	"6 8 10"
+				"duration"	"10 15 20"
 			}
 		}
 	}	

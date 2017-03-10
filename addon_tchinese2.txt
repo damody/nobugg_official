@@ -494,7 +494,7 @@
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_invincible_Description" "攻擊傷害+40，全能力+30。【使用】釋放禦神術，使自身進入無敵狀態，免疫所有傷害以及法術效果，持續2秒。"
 
 		"DOTA_Tooltip_Ability_item_the_great_spear_of_dragonfly" "蜻蛉切．銘槍"
-		"DOTA_Tooltip_Ability_item_the_great_spear_of_dragonfly_Description" "攻擊傷害+50，力量+25。攻擊時有20% 機率可以造成300的擴散傷害。唯一被動：增加15% 移動速度，每秒回復1% 最大生命值。"
+		"DOTA_Tooltip_Ability_item_the_great_spear_of_dragonfly_Description" "攻擊傷害+50，力量+25。攻擊時有20% 機率可以造成300的擴散傷害，對魔免單位只造成100傷害。唯一被動：增加15% 移動速度，每秒回復1% 最大生命值。"
 
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_hurricane" "鐵碎牙．妖刀"
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_hurricane_Description" "攻擊傷害+60，護甲+10。每1秒隨機對周圍的一個敵人釋放風之傷，可以造成320傷害。【使用】召喚風陣，風陣內的所有敵人減慢190% 攻速，降低10護甲，持續20秒。<font color='#cc0000'>裝備鐵碎牙者，其分身同樣具有鐵碎牙被動一半的傷害效果。</font>"
@@ -980,7 +980,7 @@
 		"DOTA_Tooltip_Ability_A16E"	"血魄連結"
 		"DOTA_Tooltip_Ability_A16E_Description"	"使自身跟他建立一道連結，當敵軍受到傷害時，自身將回復等同該次傷害<font color='#5cb85c'>(20/35/50/65)% </font>的生命，並且在連結狀態下自身所受到的所有傷害減少<font color='#5cb85c'>(5/10/15/20)% </font>，持續8秒。"
 		"DOTA_Tooltip_Ability_A16R"	"血殤靈光"
-		"DOTA_Tooltip_Ability_A16R_Description"	"增加自身8% 移動速度以及<font color='#5cb85c'>(20/30/40/50)% </font>攻擊速度，並且當受到傷害時，可以使周圍500的敵人失去等同於當次傷害<font color='#5cb85c'>(35/45/55/65)% </font>的生命。 "
+		"DOTA_Tooltip_Ability_A16R_Description"	"增加自身8% 移動速度以及<font color='#5cb85c'>(20/30/40/50)% </font>攻擊速度，並且當受到傷害時，可以使周圍500的敵人失去等同於當次傷害<font color='#5cb85c'>(35/45/55/65)% </font>的生命，對魔免單位傷害減半。 "
 		"DOTA_Tooltip_Ability_A16T"	"闇血敕令"
 		"DOTA_Tooltip_Ability_A16T_Description"	"對指定方向施展，召喚不斷爆發的血魂力量往前而去，每次爆發都可以對範圍內的敵人造成<font color='#5cb85c'>(400/600/800)</font>傷害並暈眩<font color='#f0ad4e'>(1.5/2.1/2.7)</font>秒。"
 		
@@ -1473,7 +1473,7 @@
 		"DOTA_Tooltip_Ability_A22W_old"  "虎振"
 		"DOTA_Tooltip_Ability_A22W_old_Description" "往前方800距離發出3道扇形劍氣，每道劍氣都可造成<font color='#5cb85c'>(140/180/220/260)</font>點傷害。"
 	    "DOTA_Tooltip_Ability_A22E_old"  "反擊"
-		"DOTA_Tooltip_Ability_A22E_old_Description" "增加<font color='#5cb85c'>(15/30/45/60)% </font>攻擊速度。受到攻擊時有50%的機會反擊，造成250範圍內的敵人[50/75/100/125)</font>點傷害。持續30秒。"
+		"DOTA_Tooltip_Ability_A22E_old_Description" "(被動)增加<font color='#5cb85c'>(15/30/45/60)% </font>攻擊速度。受到攻擊時有50%的機會反擊，造成250範圍內的敵人<font color='#5cb85c'>(50/75/100/125)</font>點傷害。(啟動)反彈真傷對魔免傷害減半，持續30秒。"
 	    "DOTA_Tooltip_Ability_A22R_old"  "刀術"
 	    "DOTA_Tooltip_Ability_A22R_old_Description" "在攻擊時有20%的機會造成<font color='#5cb85c'>(2/2.5/3/3.5)</font>倍傷害。"
 	    "DOTA_Tooltip_Ability_A22T_old"  "氣旋斬"
@@ -1553,7 +1553,7 @@
 	    "DOTA_Tooltip_Ability_A26R_old_Description" "在攻擊時有<font color='#5cb85c'>(10/15/20/25)% </font>機率使用雙銃攻擊。"
 	    
 	    "DOTA_Tooltip_Ability_A26T_old"  "一擊必殺"
-	    "DOTA_Tooltip_Ability_A26T_old_Description" "大笑一聲經過0.5秒後丟出一枚威力強大的炸彈至指定的點，可造成700範圍內的敵人<font color='#5cb85c'>(1500/2000/2500)</font>點的傷害，並一擊必殺所有非英雄的單位。"
+	    "DOTA_Tooltip_Ability_A26T_old_Description" "大笑一聲經過1秒後丟出一枚威力強大的炸彈至指定的點，可造成700範圍內的敵人<font color='#5cb85c'>(1500/2000/2500)</font>點的傷害，並一擊必殺所有非英雄的單位。"
 
 	    "DOTA_Tooltip_modifier_A26E_old_debuff" "三味火"
 	    "DOTA_Tooltip_modifier_A26E_old_debuff_Description" "降低移動與攻擊速度。"
@@ -1911,24 +1911,24 @@
 		"DOTA_Tooltip_Ability_C01T_old_Description" "在範圍700內每0.2秒會降下一顆火球，每顆火球造成300範圍的敵人<font color='#5cb85c'>(85/95/105)</font>點傷害，並擊暈0.53秒。能傷害建築物。需持續施法，最多<font color='#5cb85c'>(45/55/65)</font>顆。"
 
 	    "DOTA_Tooltip_Ability_C19D"  "奇襲"
-		"DOTA_Tooltip_Ability_C19D_Description"	"指定任意一個友軍，傳送到該友軍的身旁，需要3秒的施展時間，若被中斷則失效。"
+		"DOTA_Tooltip_Ability_C19D_Description"	"指定任意一個友軍，傳送到該友軍的身旁，緩速週圍敵軍50% 5秒，需要3秒的施展時間，若被中斷則失效。"
 		"DOTA_Tooltip_Ability_C19W"  "媚誘目光"
 		"DOTA_Tooltip_Ability_C19W_Description"	"使目標敵人在接下來1.5秒內無法使用技能和物品，並且失去所有的法力，這些失去的法力將會在<font color='#5cb85c'>(3/4/5/6)</font>秒後歸還給敵人。 "
 		"DOTA_Tooltip_Ability_C19E"	 "婉約誓言"
         "DOTA_Tooltip_Ability_C19E_Description"	"指定自身或是目標友軍，治療<font color='#5cb85c'>(200/300/400/500)</font>生命值，若是指定友軍，則自身可以回復治療量一半的生命值。 "
 		"DOTA_Tooltip_Ability_C19R"  "癱瘓毒"
-		"DOTA_Tooltip_Ability_C19R_Description"	"攻擊時會附帶癱瘓毒，能降低敵人<font color='#5cb85c'>(10/13/16/19)% </font>的移動速度和攻擊速度 以及每秒造成<font color='#5cb85c'>(25/40/55/70)</font>持續傷害，持續2秒。 "
+		"DOTA_Tooltip_Ability_C19R_Description"	"攻擊時會附帶癱瘓毒，能降低敵人<font color='#5cb85c'>(15/20/25/30)% </font>的移動速度和攻擊速度 以及每秒造成<font color='#5cb85c'>(25/40/55/70)</font>持續傷害，持續2秒。 "
 		"DOTA_Tooltip_Ability_C19T"  "不容侵犯"
 		"DOTA_Tooltip_Ability_C19T_Description" "有<font color='#5cb85c'>(30/40/50)% </font>機會閃避攻擊 ，並且永久降低所受到的法術傷害<font color='#5cb85c'>(25/30/35)% </font>。"
 
 		"DOTA_Tooltip_Ability_C19W_old"  "癱瘓毒"
-		"DOTA_Tooltip_Ability_C19W_old_Description"	"攻擊時會附帶癱瘓毒，每下攻擊消耗(15/20/25/30)點魔力，能提升<font color='#5cb85c'>(10/20/30/40)</font>攻擊力，能降低敵人<font color='#5cb85c'>(10/20/30/40)% </font>的移動速度和攻擊速度 以及每秒造成<font color='#5cb85c'>(20/40/60/80)</font>持續傷害，持續3秒。 "
+		"DOTA_Tooltip_Ability_C19W_old_Description"	"攻擊時會附帶癱瘓毒，每下攻擊消耗(15/20/25/30)點魔力，能提升<font color='#5cb85c'>(90/100/110/120)</font>攻擊力，能降低敵人<font color='#5cb85c'>(10/20/30/40)% </font>的移動速度和攻擊速度 以及每秒造成<font color='#5cb85c'>(20/40/60/80)</font>持續傷害，持續3秒。 "
 		"DOTA_Tooltip_Ability_C19E_old"	 "治療噴霧"
         "DOTA_Tooltip_Ability_C19E_old_Description"	"對範圍500的友軍噴灑<font color='#5cb85c'>(4/5/6/7)</font>波醫療藥霧，每波治療<font color='#5cb85c'>(60/70/80/90)</font>。"
 		"DOTA_Tooltip_Ability_C19R_old"  "奇襲"
-		"DOTA_Tooltip_Ability_C19R_old_Description"	"傳送地圖上任意位置，需要5秒的施展時間，若被中斷則失效。"
+		"DOTA_Tooltip_Ability_C19R_old_Description"	"傳送地圖上任意位置，需要5秒的施展時間，緩速週圍敵軍50% 5秒，若被中斷則失效。"
 		"DOTA_Tooltip_Ability_C19T_old"  "不容侵犯"
-		"DOTA_Tooltip_Ability_C19T_old_Description" "有<font color='#5cb85c'>(50/60/70)% </font>機會閃避攻擊"	
+		"DOTA_Tooltip_Ability_C19T_old_Description" "有<font color='#5cb85c'>(30/40/50)% </font>機會閃避攻擊，主動使用閃避加倍持續10秒"	
 		
 		// 望月千代女
 		"DOTA_Tooltip_Ability_B16W"  "忍法．飛襲令"
@@ -2901,7 +2901,7 @@
 		"DOTA_Tooltip_Ability_C24W_old" "柳生新陰流．無刀取"
 		"DOTA_Tooltip_Ability_C24W_old_Description" "柳生石舟齋日夜冥想所自創的劍術，對目標造成<font color='#5cb85c'>(150/250/350/450)</font>點傷害並暈眩<font color='#5cb85c'>(1.5/2/2.5/3)</font>秒"
 		"DOTA_Tooltip_Ability_C24E_old" "柳生新陰流．浮舟"
-		"DOTA_Tooltip_Ability_C24E_old_Description" "向指定的地點移動850距離，造成區域範圍150內所有敵人受到<font color='#5cb85c'>(250/350/450/550)</font>點傷害。"
+		"DOTA_Tooltip_Ability_C24E_old_Description" "向指定的地點移動500距離，造成區域範圍150內所有敵人受到<font color='#5cb85c'>(250/350/450/550)</font>點傷害，每傷害一個敵人增加20% 攻速持續8秒。"
 		"DOTA_Tooltip_Ability_C24R_old" "柳生新陰流"
 		"DOTA_Tooltip_Ability_C24R_old_Description" "有<font color='#5cb85c'>(6/12/18/24)% </font>的機會閃避攻擊，而且攻擊時有<font color='#5cb85c'>(6/7/8/9)% </font>機會造成<font color='#5cb85c'>(2/3/4/5)</font>倍傷害。且絕不失誤。 "
 		"DOTA_Tooltip_Ability_C24T_old" "柳生新陰流．激‧雙嵐陣"

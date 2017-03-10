@@ -193,7 +193,7 @@
 		"npc_dota_hero_puck_hype"	"织田信长的异母妹妹，是著名的悲剧女性，史书记载她是一位身高非常高的女性，也号称是战国第一美女。她先后被作为政治工具嫁给浅井长政和柴田胜家，但两任丈夫都没得好死，自己最终也和胜家一起在北之庄自焚而亡。"
 
 		"npc_dota_hero_earthshaker"	"秋山信友"
-		"npc_dota_hero_earthshaker_hype"	"与武田氏同族的甲婓源氏支流之一的秋山信任息子，是武田信义之弟加贺美远满的支流。1542年对已近习众的身分诹访赖重攻略成为他初次上阵的战争。1547年近攻伊奈福与城时，将敌将藤泽赖亲捕获后，取得重要的战功，成为了50骑马部队的侍大将。之后的进攻木曾福岛城后，被伊奈郡代提拔为率领250骑的大将。1572年信玄开始西上，信友以别动队的大将率领3000兵向织田氏领地东美浓入侵，攻陷了岩村城。以后为岩村城城主，在东美浓方面作最前线防备。武田军在1575年长篠之战大败，导致岩村城被孤立，11月织田信长亲征包围岩村城。信友确定没有救援下向信长提议开城。但信友开城后，信长立即逮捕他，并在长良川与夫人以极刑处死，享年49岁。信友为智勇兼备的名将，其勇名称为“武田的猛牛”。"
+		"npc_dota_hero_earthshaker_hype"	"与武田氏同族的甲婓源氏支流之一的秋山信任息子，是武田信义之弟加贺美远满的支流。1542年对已近习众的身份诹访赖重攻略成为他初次上阵的战争。1547年近攻伊奈福与城时，将敌将藤泽赖亲捕获后，取得重要的战功，成为了50骑马部队的侍大将。之后的进攻木曾福岛城后，被伊奈郡代提拔为率领250骑的大将。1572年信玄开始西上，信友以别动队的大将率领3000兵向织田氏领地东美浓入侵，攻陷了岩村城。以后为岩村城城主，在东美浓方面作最前线防备。武田军在1575年长篠之战大败，导致岩村城被孤立，11月织田信长亲征包围岩村城。信友确定没有救援下向信长提议开城。但信友开城后，信长立即逮捕他，并在长良川与夫人以极刑处死，享年49岁。信友为智勇兼备的名将，其勇名称为“武田的猛牛”。"
 		
 		"npc_dota_hero_huskar"	"鸟居元忠"
 		"npc_dota_hero_huskar_hype"	"元忠出身于三河国渡村，他在家康成为今川义元人质的时代是家康其中一名侧近。1600年在当家康准备讨伐上杉景胜，元忠和他的部下把守以800兵山城国伏见城，关 原之战前一个月，即7月下旬，石田三成派遣大军包围伏见城，终守了十多天的时间，元忠与三百多名将士死守，最终切腹自尽。当时因为自尽人数很多，血水渗入地板，血渍无论如何都清洗不掉，当时的血渍地板在伏见城拆构后，作为京都洛东养源院的建材。今日养源院仍有当年的血渍地板改建的天井，人形血渍历历在目，人称血天井。"
@@ -494,7 +494,7 @@
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_invincible_Description" "攻击伤害+40，全能力+30。【使用】释放御神术，使自身进入无敌状态，免疫所有伤害以及法术效果，持续2秒。"
 
 		"DOTA_Tooltip_Ability_item_the_great_spear_of_dragonfly" "蜻蛉切．铭枪"
-		"DOTA_Tooltip_Ability_item_the_great_spear_of_dragonfly_Description" "攻击伤害+50，力量+25。攻击时有20% 机率可以造成300的扩散伤害。唯一被动：增加15% 移动速度，每秒回复1% 最大生命值。"
+		"DOTA_Tooltip_Ability_item_the_great_spear_of_dragonfly_Description" "攻击伤害+50，力量+25。攻击时有20% 机率可以造成300的扩散伤害，对魔免单位只造成100伤害。唯一被动：增加15% 移动速度，每秒回复1% 最大生命值。"
 
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_hurricane" "铁碎牙．妖刀"
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_hurricane_Description" "攻击伤害+60，护甲+10。每1秒随机对周围的一个敌人释放风之伤，可以造成320伤害。【使用】召唤风阵，风阵内的所有敌人减慢190% 攻速，降低10护甲，持续20秒。<font color='#cc0000'>装备铁碎牙者，其分身同样具有铁碎牙被动一半的伤害效果。</font>"
@@ -980,7 +980,7 @@
 		"DOTA_Tooltip_Ability_A16E"	"血魄连结"
 		"DOTA_Tooltip_Ability_A16E_Description"	"使自身跟他建立一道连结，当敌军受到伤害时，自身将回复等同该次伤害<font color='#5cb85c'>(20/35/50/65)% </font>的生命，并且在连结状态下自身所受到的所有伤害减少<font color='#5cb85c'>(5/10/15/20)% </font>，持续8秒。"
 		"DOTA_Tooltip_Ability_A16R"	"血殇灵光"
-		"DOTA_Tooltip_Ability_A16R_Description"	"增加自身8% 移动速度以及<font color='#5cb85c'>(20/30/40/50)% </font>攻击速度，并且当受到伤害时，可以使周围500的敌人失去等同于当次伤害<font color='#5cb85c'>(35/45/55/65)% </font>的生命。 "
+		"DOTA_Tooltip_Ability_A16R_Description"	"增加自身8% 移动速度以及<font color='#5cb85c'>(20/30/40/50)% </font>攻击速度，并且当受到伤害时，可以使周围500的敌人失去等同于当次伤害<font color='#5cb85c'>(35/45/55/65)% </font>的生命，对魔免单位伤害减半。 "
 		"DOTA_Tooltip_Ability_A16T"	"闇血敕令"
 		"DOTA_Tooltip_Ability_A16T_Description"	"对指定方向施展，召唤不断爆发的血魂力量往前而去，每次爆发都可以对范围内的敌人造成<font color='#5cb85c'>(400/600/800)</font>伤害并晕眩<font color='#f0ad4e'>(1.5/2.1/2.7)</font>秒。"
 		
@@ -1473,7 +1473,7 @@
 		"DOTA_Tooltip_Ability_A22W_old"  "虎振"
 		"DOTA_Tooltip_Ability_A22W_old_Description" "往前方800距离发出3道扇形剑气，每道剑气都可造成<font color='#5cb85c'>(140/180/220/260)</font>点伤害。"
 	    "DOTA_Tooltip_Ability_A22E_old"  "反击"
-		"DOTA_Tooltip_Ability_A22E_old_Description" "增加<font color='#5cb85c'>(15/30/45/60)% </font>攻击速度。受到攻击时有50%的机会反击，造成250范围内的敌人[50/75/100/125)</font>点伤害。持续30秒。"
+		"DOTA_Tooltip_Ability_A22E_old_Description" "(被动)增加<font color='#5cb85c'>(15/30/45/60)% </font>攻击速度。受到攻击时有50%的机会反击，造成250范围内的敌人<font color='#5cb85c'>(50/75/100/125)</font>点伤害。(启动)反弹真伤对魔免伤害减半，持续30秒。"
 	    "DOTA_Tooltip_Ability_A22R_old"  "刀术"
 	    "DOTA_Tooltip_Ability_A22R_old_Description" "在攻击时有20%的机会造成<font color='#5cb85c'>(2/2.5/3/3.5)</font>倍伤害。"
 	    "DOTA_Tooltip_Ability_A22T_old"  "气旋斩"
@@ -1553,7 +1553,7 @@
 	    "DOTA_Tooltip_Ability_A26R_old_Description" "在攻击时有<font color='#5cb85c'>(10/15/20/25)% </font>机率使用双铳攻击。"
 	    
 	    "DOTA_Tooltip_Ability_A26T_old"  "一击必杀"
-	    "DOTA_Tooltip_Ability_A26T_old_Description" "大笑一声经过0.5秒后丢出一枚威力强大的炸弹至指定的点，可造成700范围内的敌人<font color='#5cb85c'>(1500/2000/2500)</font>点的伤害，并一击必杀所有非英雄的单位。"
+	    "DOTA_Tooltip_Ability_A26T_old_Description" "大笑一声经过1秒后丢出一枚威力强大的炸弹至指定的点，可造成700范围内的敌人<font color='#5cb85c'>(1500/2000/2500)</font>点的伤害，并一击必杀所有非英雄的单位。"
 
 	    "DOTA_Tooltip_modifier_A26E_old_debuff" "三味火"
 	    "DOTA_Tooltip_modifier_A26E_old_debuff_Description" "降低移动与攻击速度。"
@@ -1911,24 +1911,24 @@
 		"DOTA_Tooltip_Ability_C01T_old_Description" "在范围700内每0.2秒会降下一颗火球，每颗火球造成300范围的敌人<font color='#5cb85c'>(85/95/105)</font>点伤害，并击晕0.53秒。能伤害建筑物。需持续施法，最多<font color='#5cb85c'>(45/55/65)</font>颗。"
 
 	    "DOTA_Tooltip_Ability_C19D"  "奇袭"
-		"DOTA_Tooltip_Ability_C19D_Description"	"指定任意一个友军，传送到该友军的身旁，需要3秒的施展时间，若被中断则失效。"
+		"DOTA_Tooltip_Ability_C19D_Description"	"指定任意一个友军，传送到该友军的身旁，缓速周围敌军50% 5秒，需要3秒的施展时间，若被中断则失效。"
 		"DOTA_Tooltip_Ability_C19W"  "媚诱目光"
 		"DOTA_Tooltip_Ability_C19W_Description"	"使目标敌人在接下来1.5秒内无法使用技能和物品，并且失去所有的法力，这些失去的法力将会在<font color='#5cb85c'>(3/4/5/6)</font>秒后归还给敌人。 "
 		"DOTA_Tooltip_Ability_C19E"	 "婉约誓言"
         "DOTA_Tooltip_Ability_C19E_Description"	"指定自身或是目标友军，治疗<font color='#5cb85c'>(200/300/400/500)</font>生命值，若是指定友军，则自身可以回复治疗量一半的生命值。 "
 		"DOTA_Tooltip_Ability_C19R"  "瘫痪毒"
-		"DOTA_Tooltip_Ability_C19R_Description"	"攻击时会附带瘫痪毒，能降低敌人<font color='#5cb85c'>(10/13/16/19)% </font>的移动速度和攻击速度 以及每秒造成<font color='#5cb85c'>(25/40/55/70)</font>持续伤害，持续2秒。 "
+		"DOTA_Tooltip_Ability_C19R_Description"	"攻击时会附带瘫痪毒，能降低敌人<font color='#5cb85c'>(15/20/25/30)% </font>的移动速度和攻击速度 以及每秒造成<font color='#5cb85c'>(25/40/55/70)</font>持续伤害，持续2秒。 "
 		"DOTA_Tooltip_Ability_C19T"  "不容侵犯"
 		"DOTA_Tooltip_Ability_C19T_Description" "有<font color='#5cb85c'>(30/40/50)% </font>机会闪避攻击 ，并且永久降低所受到的法术伤害<font color='#5cb85c'>(25/30/35)% </font>。"
 
 		"DOTA_Tooltip_Ability_C19W_old"  "瘫痪毒"
-		"DOTA_Tooltip_Ability_C19W_old_Description"	"攻击时会附带瘫痪毒，每下攻击消耗(15/20/25/30)点魔力，能提升<font color='#5cb85c'>(10/20/30/40)</font>攻击力，能降低敌人<font color='#5cb85c'>(10/20/30/40)% </font>的移动速度和攻击速度 以及每秒造成<font color='#5cb85c'>(20/40/60/80)</font>持续伤害，持续3秒。 "
+		"DOTA_Tooltip_Ability_C19W_old_Description"	"攻击时会附带瘫痪毒，每下攻击消耗(15/20/25/30)点魔力，能提升<font color='#5cb85c'>(90/100/110/120)</font>攻击力，能降低敌人<font color='#5cb85c'>(10/20/30/40)% </font>的移动速度和攻击速度 以及每秒造成<font color='#5cb85c'>(20/40/60/80)</font>持续伤害，持续3秒。 "
 		"DOTA_Tooltip_Ability_C19E_old"	 "治疗喷雾"
         "DOTA_Tooltip_Ability_C19E_old_Description"	"对范围500的友军喷洒<font color='#5cb85c'>(4/5/6/7)</font>波医疗药雾，每波治疗<font color='#5cb85c'>(60/70/80/90)</font>。"
 		"DOTA_Tooltip_Ability_C19R_old"  "奇袭"
-		"DOTA_Tooltip_Ability_C19R_old_Description"	"传送地图上任意位置，需要5秒的施展时间，若被中断则失效。"
+		"DOTA_Tooltip_Ability_C19R_old_Description"	"传送地图上任意位置，需要5秒的施展时间，缓速周围敌军50% 5秒，若被中断则失效。"
 		"DOTA_Tooltip_Ability_C19T_old"  "不容侵犯"
-		"DOTA_Tooltip_Ability_C19T_old_Description" "有<font color='#5cb85c'>(50/60/70)% </font>机会闪避攻击"	
+		"DOTA_Tooltip_Ability_C19T_old_Description" "有<font color='#5cb85c'>(30/40/50)% </font>机会闪避攻击，主动使用闪避加倍持续10秒"	
 		
 		// 望月千代女
 		"DOTA_Tooltip_Ability_B16W"  "忍法．飞袭令"
@@ -2636,7 +2636,7 @@
 		// 明智秀满
 
 		"npc_dota_hero_legion_commander"	"明智秀满"
-		"npc_dota_hero_legion_commander_hype"	"明智秀满（约1536年 - 1582年7月4日），日本战国时代至安土桃山时代的武将，是明智光秀重要的部将，担任左马助一职，故又有一称为明智左马介秀满。天正十年（1582年），于本能寺之变中担任先锋，负责攻击本能寺。战后负责担任安土城的守备。听到明智光秀于山崎之战遭到羽柴秀吉击败之后，他带兵救援，却在路上遭到崛秀政击败。他逃到坂本城，后来遭围城后与妻子一起自杀。"
+		"npc_dota_hero_legion_commander_hype"	"明智秀满（约1536年 - 1582年7月4日），日本战国时代至安土桃山时代的武将，是明智光秀重要的部将，担任左马助一职，故又有一称为明智左马介秀满。天正十年（1582年），于本能寺之变中担任先锋，负责攻击本能寺。战后负责担任安土城的守备。听到明智光秀于山崎之战遭到羽柴秀吉击败之后，他带兵救援，却在路上遭到崛秀政击败。他逃到阪本城，后来遭围城后与妻子一起自杀。"
 
 		"DOTA_Tooltip_Ability_C02W" "蜃气袭"
 		"DOTA_Tooltip_Ability_C02W_Description" "对指定的方向挥出一道蜃气，对扫过的敌军造成<font color='#5cb85c'>(200/300/400/500)</font>伤害，并且若伤害敌方英雄，则造出该英雄的幻影，幻影可以造成30% 伤害，受到300% 伤害。"
@@ -2901,7 +2901,7 @@
 		"DOTA_Tooltip_Ability_C24W_old" "柳生新阴流．无刀取"
 		"DOTA_Tooltip_Ability_C24W_old_Description" "柳生石舟斋日夜冥想所自创的剑术，对目标造成<font color='#5cb85c'>(150/250/350/450)</font>点伤害并晕眩<font color='#5cb85c'>(1.5/2/2.5/3)</font>秒"
 		"DOTA_Tooltip_Ability_C24E_old" "柳生新阴流．浮舟"
-		"DOTA_Tooltip_Ability_C24E_old_Description" "向指定的地点移动850距离，造成区域范围150内所有敌人受到<font color='#5cb85c'>(250/350/450/550)</font>点伤害。"
+		"DOTA_Tooltip_Ability_C24E_old_Description" "向指定的地点移动500距离，造成区域范围150内所有敌人受到<font color='#5cb85c'>(250/350/450/550)</font>点伤害，每伤害一个敌人增加20% 攻速持续8秒。"
 		"DOTA_Tooltip_Ability_C24R_old" "柳生新阴流"
 		"DOTA_Tooltip_Ability_C24R_old_Description" "有<font color='#5cb85c'>(6/12/18/24)% </font>的机会闪避攻击，而且攻击时有<font color='#5cb85c'>(6/7/8/9)% </font>机会造成<font color='#5cb85c'>(2/3/4/5)</font>倍伤害。且绝不失误。 "
 		"DOTA_Tooltip_Ability_C24T_old" "柳生新阴流．激．双岚阵"

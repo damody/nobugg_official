@@ -411,7 +411,7 @@
 				"StartRadius"	"150"
 				"StartPosition"	"attach_attack"
 				"EndRadius"	"150"
-				"FixedDistance"	"850"
+				"FixedDistance"	"500"
 				"TargetTeams"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 				"TargetTypes"	"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
 				"TargetFlags"	"DOTA_UNIT_TARGET_FLAG_NONE"
@@ -434,9 +434,28 @@
 				"Target"	"TARGET"
 				"EffectName"	"Hero_Sniper.AssassinateDamage"
 			}
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C24.lua"
+				"Function"	"C24E_old_OnProjectileHitUnit"
+			}
 		}
 		"Modifiers"
 		{
+			"modifier_C24E_old"
+			{
+				"Passive"			"0"
+				"IsHidden"			"0"
+				"IsBuff"			"1"
+				"Duration"			"8"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"20"
+				}
+				"EffectName"		"particles/units/heroes/hero_ancient_apparition/ancient_apparition_chilling_touch_buff.vpcf"
+				"EffectAttachType"	"follow_origin"
+			}
 		}
 		"AbilitySpecial"
 		{
@@ -541,7 +560,7 @@
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 
-		"AbilityCastRange"				"500"
+		"AbilityCastRange"				"250"
 		"AbilityCastPoint"				"0.1"
 
 		"AbilityCooldown"				"90"
