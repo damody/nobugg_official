@@ -235,7 +235,7 @@
 		"HotKeyOverride"	"W"
 		"MaxLevel"	"4"
 		"AbilityCastPoint"	"0.5"
-		"AbilityCooldown"	"5"
+		"AbilityCooldown"	"25 20 15 10"
 		"AbilityManaCost"	"100 120 140 160"
 		"precache"
 		{
@@ -279,13 +279,24 @@
 				"Duration"	"0.5"
 				"IsDebuff"	"0"
 			}
+			"modifier_perceive_wine"
+			{
+				"States"
+				{
+					"MODIFIER_STATE_MAGIC_IMMUNE"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
+				"Passive"	"0"
+				"EffectName"	"particles/item/item_perceive_wine.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"0"
+			}
 		}
 		"AbilitySpecial"
 		{
 			"01"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"A13W_Duration"	"3 4 5 6"
+				"A13W_Duration"	"3"
 			}
 			"02"
 			{

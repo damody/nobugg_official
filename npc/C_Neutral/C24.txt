@@ -178,7 +178,7 @@
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
 		"HotKeyOverride"	"R"
-		"AbilityCooldown"	"8"
+		"AbilityCooldown"	"16"
 		"AbilityManaCost"	"100 110 120 130"
 		"MaxLevel"	"4"
 		"AOERadius"						"300"
@@ -266,7 +266,7 @@
 
 		"AbilityCastPoint"				"0.1"
 
-		"AbilityCooldown"				"150 140 130"
+		"AbilityCooldown"				"130 120 110"
 		"AbilityManaCost"				"125"
 
 		"AbilitySpecial"
@@ -315,7 +315,7 @@
 		"BaseClass"	"ability_datadriven"
 		"AbilityTextureName"	"dota2/c24_w_old"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
-		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
@@ -382,6 +382,7 @@
 		"HotKeyOverride"	"E"
 		"AbilityCooldown"	"13 11 7 4"
 		"AbilityManaCost"	"100 120 140 160"
+		"AbilityCastRange"	"500"
 		
 		"AbilityDamage"				"250 350 450 550"
 
