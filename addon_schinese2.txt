@@ -83,6 +83,7 @@
 		"npc_dota_hero_ember_spirit" "仙石秀久"
 		"npc_dota_hero_earth_spirit" "龙造寺隆信"
 		
+		
 		"ADDON_GAME_NAME"	"信长之野望"
 		"game_mode_15"	"信长之野望"
 		"DOTA_GAME_MODE_15"	"信长之野望"
@@ -724,10 +725,10 @@
 		"DOTA_Tooltip_Ability_item_the_shell_of_spirituality_kappa_Description" "护甲+5，法力+200。降低所受的法术伤害10% 。【使用】回复自身以及周围友军250法力。"
 
 		"DOTA_Tooltip_Ability_item_kotennmyohiragumo" "平蜘蛛釜．一阶"
-		"DOTA_Tooltip_Ability_item_kotennmyohiragumo_Description" "生命+300。每秒回复20生命值，法力回复+150% 。【使用】创造一个法术吸收盾，可以在5秒内吸收所有法术伤害。<font color='#cc0000'>指定单位施放。</font>"
+		"DOTA_Tooltip_Ability_item_kotennmyohiragumo_Description" "生命+300。每秒回复20生命值，法力回复+150% 。【使用】创造一个法术吸收盾，可以在5秒内吸收所有法术伤害治疗生命。<font color='#cc0000'>指定单位施放。</font>"
 		
 		"DOTA_Tooltip_Ability_item_kotennmyohiragumo_1" "平蜘蛛釜．二阶"
-		"DOTA_Tooltip_Ability_item_kotennmyohiragumo_1_Description" "生命+600。每秒回复40生命值，法力回复+150% 。【使用】创造一个法术吸收盾，可以在10秒内吸收所有法术伤害。<font color='#cc0000'>指定单位施放。</font>"
+		"DOTA_Tooltip_Ability_item_kotennmyohiragumo_1_Description" "生命+600。每秒回复40生命值，法力回复+150% 。【使用】创造一个法术吸收盾，可以在10秒内吸收所有法术伤害治疗生命。<font color='#cc0000'>指定单位施放。</font>"
 
 		"DOTA_Tooltip_Ability_item_magic_talisman" "御魔护符"
 		"DOTA_Tooltip_Ability_item_magic_talisman_Description" "自动抵挡一次魔法技能，并且在5秒内获得可以吸收500法术伤害的魔盾。20秒内不得重复发动。"
@@ -1173,7 +1174,7 @@
 		"DOTA_Tooltip_Ability_C17E_old"	"魂之精华"
 		"DOTA_Tooltip_Ability_C17E_old_Description" "回复范围内友方部队<font color='#f0ad4e'> (100/200/300/400) </font>法力点数。"
 		"DOTA_Tooltip_Ability_C17R_old"	"静滞陷阱"
-		"DOTA_Tooltip_Ability_C17R_old_Description" "放置一个将于2.5秒后隐形的静滞陷阱。隐形后，敌人靠近275范围时自动启动，造成425范围敌人<font color='#f0ad4e'> (3.5/4.5/5.5/6.5) </font>秒晕眩。"
+		"DOTA_Tooltip_Ability_C17R_old_Description" "放置一个将于2.5秒后隐形的静滞陷阱存在200秒。隐形后，敌人靠近275范围时自动启动，造成425范围敌人<font color='#f0ad4e'> (3.5/4.5/5.5/6.5) </font>秒晕眩。"
 		"DOTA_Tooltip_Ability_C17T_old"	"极光守护"
 		"DOTA_Tooltip_Ability_C17T_old_Description" "延迟<font color='#f0ad4e'> (1.5/1/0.5) </font>秒后释放出极光守护，对敌人造成<font color='#f0ad4e'>(900/1300/1800)</font>伤害，无视负面状态的恢复友方部队所有生命。"
 		"C17R_old_SUMMEND_UNIT" "静滞陷阱"
@@ -1468,7 +1469,7 @@
 	    "DOTA_Tooltip_Ability_A22W"  "旋焰斩"
 		"DOTA_Tooltip_Ability_A22W_Description" "让身边围绕着火焰的旋风，将可以进入魔法免疫状态并且每秒对附近的敌军造成210伤害，持续4秒。"
 	    "DOTA_Tooltip_Ability_A22E"  "焰心鼓动"
-		"DOTA_Tooltip_Ability_A22E_Description" "(被动)永久增加<font color='#5cb85c'>(1.0/1.5/2.0/2.5)</font>法力回复。(启动)使目标敌军被火焰吞噬，对该目标以及其身旁敌军造成<font color='#5cb85c'>(150/250/350/450)</font>伤害并且减慢30% 移动速度以及攻击速度，持续2.5秒。"
+		"DOTA_Tooltip_Ability_A22E_Description" "(被动)永久增加<font color='#5cb85c'>(1/2/3/4)</font>法力回复。(启动)使目标敌军被火焰吞噬，对该目标以及其身旁敌军造成<font color='#5cb85c'>(150/250/350/450)</font>伤害并且减慢30% 移动速度以及攻击速度，持续2.5秒。"
 	    "DOTA_Tooltip_Ability_A22R"  "沸血灵光"
 	    "DOTA_Tooltip_Ability_A22R_Description" "沸腾周围敌人体内的血液使他们痛苦不堪，受到沸血灵光影响的敌人将会降低<font color='#5cb85c'>(11/15/19/23)% </font>攻击伤害，并且每秒失去<font color='#5cb85c'>(1.5/2.0/2.5/3.0)% </font>的生命值。"
 	    "DOTA_Tooltip_Ability_A22T"  "折磨"
@@ -1483,7 +1484,7 @@
 	    "DOTA_Tooltip_Ability_A22R_old"  "刀术"
 	    "DOTA_Tooltip_Ability_A22R_old_Description" "在攻击时有20%的机会造成<font color='#5cb85c'>(2/2.5/3/3.5)</font>倍伤害。"
 	    "DOTA_Tooltip_Ability_A22T_old"  "气旋斩"
-		"DOTA_Tooltip_Ability_A22T_old_Description" "对指定方向发出三道并排且持续前进的刀风，只要是经过这个刀风的敌人都会被吸引且击退一小段距离，并且每0.5秒就会受到200伤害。"
+		"DOTA_Tooltip_Ability_A22T_old_Description" "对指定方向发出五道并排且持续前进的刀风，只要是经过这个刀风的敌人都会被吸引且击退一小段距离，最多击退2000距离，并且每0.5秒就会受到200伤害。"
 		
 		"DOTA_Tooltip_Ability_A23W"  "鬼术．恶血咒"
 		"DOTA_Tooltip_Ability_A23W_Description" "将恶血咒注入到目标的体内，在2秒后爆发，以该目标为中心造成范围<font color='#5cb85c'>(200/300/400/500)</font>伤害以及震晕<font color='#5cb85c'>(1.0/1.5/2.0/2.5)</font>秒。 若注入的时间该敌人处于灵魂锁缚状态下，则爆发的震晕效果无视魔法免疫。"
@@ -1600,7 +1601,7 @@
 	    "DOTA_Tooltip_Ability_A28E_old" "治疗之风"
 	    "DOTA_Tooltip_Ability_A28E_old_Description" "回复范围内的一个目标<font color='#5cb85c'>(200/300/400/500)</font>点生命，而且能弹跳到附近500范围最多<font color='#5cb85c'>(3/4/5/6)</font>个友军上。"
 	    "DOTA_Tooltip_Ability_A28R_old" "火炎弹"
-	    "DOTA_Tooltip_Ability_A28R_old_Description" "打出800距离的火炎弹，可对敌人造成<font color='#5cb85c'>(150/250/350/450)</font>点伤害 并昏迷<font color='#5cb85c'>(0.5/1/1.5/2)</font>秒，区域范围200。"
+	    "DOTA_Tooltip_Ability_A28R_old_Description" "打出800距离的火炎弹，可对敌人造成<font color='#5cb85c'>(150/250/350/450)</font>点伤害并昏迷<font color='#5cb85c'>(0.5/1/1.5/2)</font>秒，区域范围200。"
 	    "DOTA_Tooltip_Ability_A28T_old" "火神．迦具土"
 	    "DOTA_Tooltip_Ability_A28T_old_Description" "召唤一位<font color='#5cb85c'>(3000/4000/5000)</font>生命值的火神减免75%魔法伤害，拥有扩散攻击、火焰焚身、灵魂燃烧能力。持续<font color='#5cb85c'>(50/60/70)</font>秒。"
 
@@ -2021,7 +2022,7 @@
 		"DOTA_Tooltip_Ability_C11R_old_Description" "在范围450内召唤出落雷攻击敌人造成<font color='#5cb85c'>(150/250/350/450)</font>点伤害并晕眩<font color='#5cb85c'>(0.4/0.8/1.1/1.6)</font>秒。"
 		"DOTA_Tooltip_Ability_C11T_old" "西国无双"
 		"DOTA_Tooltip_Ability_C11T_old_Description" "攻击能消去目标<font color='#5cb85c'>(80/100/120)</font>法力并造成消去的法力的真实伤害对魔免伤害减半：英雄<font color='#5cb85c'>(135/145/155)% </font>、部队<font color='#5cb85c'>(180/200/220)% 。"
-
+		
 		"DOTA_Tooltip_modifier_C11W_old" "雷切"
 		"DOTA_Tooltip_modifier_C11W_old_Description" "提升攻击力，普攻有机会造成额外伤害。"
 
@@ -2948,6 +2949,38 @@
 		"DOTA_Tooltip_Ability_C03R_old_Description" "在攻击时有31% 机率对敌人额外造成<font color='#5cb85c'>(100/180/260/340)</font>伤害，并会将敌人击昏0.4秒，不会失误，对魔免单位伤害减半。"
 		"DOTA_Tooltip_Ability_C03T_old" "不动战锤"
 		"DOTA_Tooltip_Ability_C03T_old_Description" "对指定的方向丢出不动战锤，不动战锤将会每0.5秒对周围敌人丢出晕击，造成<font color='#5cb85c'>(70/110/150)</font>伤害并且震昏<font color='#5cb85c'>(0.4/0.45/0.5)</font>秒。不动战锤可以存在7秒。 "
+
+		// 菊姬
+		"npc_dota_hero_phantom_assassin" "菊姬"
+		"npc_dota_hero_phantom_assassin_hype" "武田信玄的女儿，据说他以过人的聪明才智为他父亲武田信玄开疆辟土。 "
+
+		"DOTA_Tooltip_Ability_B11D" "忍法．继血"
+		"DOTA_Tooltip_Ability_B11D_Description" "每当菊姬杀死一名敌方英雄时，便可以永久增加2灵活。若菊姬处于无法施展技能以及使用物品的状态下，或是处于死亡状态，无法触发此技能效果。"
+		"DOTA_Tooltip_Ability_B11W" "忍法．樱雨"
+		"DOTA_Tooltip_Ability_B11W_Description" "洒出雨点般的暗器，对周围的敌人造成<font color='#5cb85c'>(200/250/300/350)</font>伤害 ，外加自身灵活×<font color='#5cb85c'>(1.0/1.2/1.4/1.6)</font>的绝对伤害。"
+		"DOTA_Tooltip_Ability_B11E" "忍法．调息"
+		"DOTA_Tooltip_Ability_B11E_Description" "施展忍法．调息，在接下来的10秒内增加<font color='#5cb85c'>(20/30/40/50)</font>的灵活，若维持忍法．调息则可以每秒回复<font color='#5cb85c'>(35/70/105/140)</font>生命，最多可以维持10秒。"
+		"DOTA_Tooltip_Ability_B11R" "忍法．截杀术"
+		"DOTA_Tooltip_Ability_B11R_Description" "增加自身<font color='#5cb85c'>(3/6/9/12)</font>%移动速度 。每当菊姬受到伤害时，便可以对造成伤害的敌人标记截杀之印，截杀之印持续<font color='#5cb85c'>(3/5/7/9)</font>秒，在持续时间内菊姬将可以观察到该敌人，当菊姬攻击带有截杀之印的敌人时，将会消耗截杀之印并且额外造成等同菊姬灵活x1.4的绝对伤害并回复2%生命值，每触发5次后，必须等待<font color='#5cb85c'>(18/14/10/6)</font>秒的时间，才能再度触发。"
+		"DOTA_Tooltip_Ability_B11T" "极限体术．鸦袭"
+		"DOTA_Tooltip_Ability_B11T_Description" "开启极限体术．鸦袭，将可以获得主动技“鸦袭”，此主动技可让菊姬瞬移到指定敌人身旁并使该敌人晕眩0.5秒，并且额外造成等同菊姬灵活x1.25的绝对伤害。鸦袭最多可使用<font color='#5cb85c'>(3/5/7)</font>次或者是持续22秒，在持续时间内，将获得在攻击时15%机率造成2.5倍伤害的能力。"
+		"DOTA_Tooltip_Ability_B11F" "极限体术．鸦袭"
+		"DOTA_Tooltip_Ability_B11F_Description" "让菊姬瞬移到指定敌人身旁并使该敌人晕眩0.5秒，并且额外造成等同菊姬灵活x1.25的绝对伤害。鸦袭最多可使用<font color='#5cb85c'>(3/5/7)</font>次或者是持续22秒，在持续时间内，将获得在攻击时15%机率造成2.5倍伤害的能力。"
+
+		// 菊姬 11.2B
+		"DOTA_Tooltip_Ability_B11D_old" "体术．真空斩"
+		"DOTA_Tooltip_Ability_B11D_old_Description" "对着单一目标横斩一次，并无强大伤害，但是却可使用剑气将人震晕，造成 150伤害且晕眩1.5秒。消耗法力80，等待时间30秒。"
+		"DOTA_Tooltip_Ability_B11W_old" "忍法．樱雨"
+		"DOTA_Tooltip_Ability_B11W_old_Description" "丢出一连串的匕首攻击700范围内存在于视野内的敌人而造成<font color='#5cb85c'>(200/300/400/500)</font>点伤害。  消耗法力<font color='#5cb85c'>(100/120/140/160)</font>。"
+		"DOTA_Tooltip_Ability_B11E_old" "忍法．土蜘蛛锁"
+		"DOTA_Tooltip_Ability_B11E_old_Description" "困住范围450内的所有敌人<font color='#5cb85c'>(2/3/4/5)</font>秒。消耗法力<font color='#5cb85c'>(100/120/140/160)</font>，会被魔法免疫能力解除效果。"
+		"DOTA_Tooltip_Ability_B11R_old" "忍法．调息"
+		"DOTA_Tooltip_Ability_B11R_old_Description" "每秒回复<font color='#5cb85c'>(0.5/1/1.5/2)% </font>的生命并增加<font color='#5cb85c'>(4/6/8/10)% </font>的跑速，此技能会强化分身术。"
+		"DOTA_Tooltip_Ability_B11F_old" "忍法．分身术"
+		"DOTA_Tooltip_Ability_B11F_old_Description" "创造出1个分身来攻击敌人，并除掉身上的所有法术效果，分身拥有<font color='#5cb85c'>(40/50/60/70/80)</font>%的攻击力，但会受到2.5倍的伤 害。可持续35秒。消耗法力<font color='#5cb85c'>(100/120/140/160)</font>，等待时间18秒。"
+		"DOTA_Tooltip_Ability_B11T_old" "极限体术．鸦袭"
+		"DOTA_Tooltip_Ability_B11T_old_Description" "攻击时<font color='#5cb85c'>(17/23/29)</font>%机会造成4倍伤害，并附加<font color='#5cb85c'>(110/160/210)</font>点额外伤害。且绝不失误。"
+
 	}
 }
 
