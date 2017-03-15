@@ -531,7 +531,6 @@
 		"AbilityManaCost"           				"120 140 160 180"
 		"AbilityCastRange"							"700"
 		"AbilityTextureName"                        "dota2/a32_eold"
-		
 
         "OnSpellStart" 
         {

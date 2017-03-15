@@ -316,7 +316,7 @@
 		"DOTA_Tooltip_Ability_item_flash_ring_Description"	"增加200魔力。【使用】闪现到850范围内的指定地点。"
 		
 		"DOTA_Tooltip_Ability_item_the_soul_of_power" "分灵之诺"
-		"DOTA_Tooltip_Ability_item_the_soul_of_power_Description" "全能力+20，死亡后可以原地复活一次但物品会消失，复活后无敌3秒。"
+		"DOTA_Tooltip_Ability_item_the_soul_of_power_Description" "全能力+20，死亡后可以原地复活一次但物品会消失，复活后无敌5秒。"
 		
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_soul_hyper" "真．菊一文字则宗．太刀"
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_soul_hyper_Description" "攻击+30， 敏捷+20， 所有能力+10 【使用】施展摄魂令目标无法行动2.5秒<font color='#cc0000'>会被魔法免疫解除效果</font>"
