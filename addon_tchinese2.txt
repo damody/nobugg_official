@@ -920,9 +920,9 @@
 		"DOTA_Tooltip_Ability_C21W_old" "奧義．弧月斬"
 		"DOTA_Tooltip_Ability_C21W_old_Description" "獲得魔法免疫，每0.2秒造成範圍250內所有敵人<font color='#5cb85c'>(100/150/200/250)</font>點傷害，持續0.5秒。"
 		"DOTA_Tooltip_Ability_C21E_old" "奧義．連環鋼破"
-		"DOTA_Tooltip_Ability_C21E_old_Description" "突擊目標，造成<font color='#5cb85c'>(100/200/300/400)</font>點傷害並暈眩2秒。然後每1秒追斬一次，共三次。"
+		"DOTA_Tooltip_Ability_C21E_old_Description" "突擊目標，造成<font color='#5cb85c'>(100/200/300/400)</font>點傷害並暈眩2秒。然後每1.2秒追斬一次，共三次。"
 		"DOTA_Tooltip_Ability_C21R_old" "二天一流"
-		"DOTA_Tooltip_Ability_C21R_old_Description" "攻擊時有<font color='#5cb85c'>(30/40/50/60)% </font>的機會造成絕不失誤的<font color='#5cb85c'>(1.3/1.6/1.9/2.2)</font>倍傷害。"
+		"DOTA_Tooltip_Ability_C21R_old_Description" "攻擊時有<font color='#5cb85c'>(20/30/40/50)% </font>的機會造成絕不失誤的<font color='#5cb85c'>(1.3/1.6/1.9/2.2)</font>倍傷害。"
 		"DOTA_Tooltip_Ability_C21T_old" "秘奧義‧飛翔震烈斬"
 		"DOTA_Tooltip_Ability_C21T_old_Description" "自身飛翔至空中匯集全身的力量降落地面時，把全身的靈氣釋放造成週圍<font color='#5cb85c'>(1200/1600/2000)</font>傷害。"
 
@@ -1354,12 +1354,13 @@
 		"DOTA_Tooltip_Ability_A12R_Description" "對指定區域的敵人造成<font color='#5cb85c'>(150/250/350/450)</font>傷害並減緩<font color='#5cb85c'>(15/20/25/30)% </font>移動速度，持續3秒。若是產生「奇計」效果，則使受到傷害的敵人額外失去12% 生命。 "
 		"DOTA_Tooltip_Ability_A12T"  "玄滅箭"
 		"DOTA_Tooltip_Ability_A12T_Description" "大絕為法球效果，在每次攻擊當中附加玄能之力並消耗<font color='#5cb85c'>(85/125/185)</font>法力，可以對擊中的敵人造成等同自身現有法力<font color='#5cb85c'>(19/23/27)% </font>的額外魔法傷害。 若是產生「奇計」效果，則在此發玄滅箭擊中敵人時造成3倍傷害。 "
+		// 服部半藏
 		"DOTA_Tooltip_Ability_A13D"	 "忍法．迷蹤步"
 		"DOTA_Tooltip_Ability_A13D_Description"	"進入隱形狀態，提升<font color='#5cb85c'>(5/10/15/20)% </font>的移動速度或是使用技能即會現身，現身的第一擊可以額外造成<font color='#5cb85c'>(90/175/260/345)</font>傷害，隱形最多維持20秒。 "
 		"DOTA_Tooltip_Ability_A13W"	 "忍法．影惑之術"
 		"DOTA_Tooltip_Ability_A13W_Description"	"創造出<font color='#5cb85c'>(1/2/3/4)</font>個短暫的分身來迷惑敵人，去除掉身上所有的法術效果。 "
 		"DOTA_Tooltip_Ability_A13E"	 "忍法．勾鎖鐮"
-		"DOTA_Tooltip_Ability_A13E_Description"	"對著前方丟出最長<font color='#5cb85c'>(400/600/800/1200)</font>距離的勾鎖鎌，勾鎖鎌碰到的第一個部隊將會被拉回身旁，若是敵人則多造成<font color='#5cb85c'>(100/200/300/400)</font>的傷害。 "
+		"DOTA_Tooltip_Ability_A13E_Description"	"對著前方丟出最長<font color='#5cb85c'>(400/600/800/1200)</font>距離的勾鎖鎌，勾鎖鎌碰到的第一個部隊將會被拉回身旁，若是敵人則多造成<font color='#5cb85c'>(200/300/400/500)</font>的傷害。 "
 		"DOTA_Tooltip_Ability_A13R"  "伊賀忍術流"
 		"DOTA_Tooltip_Ability_A13R_Description"	"有11% 的機會閃避攻擊與<font color='#5cb85c'>(10/14/18/22)% </font>機率造成三倍的傷害。 "
 		"DOTA_Tooltip_Ability_A13T"  "忍法密傳．隱斬"
@@ -1368,7 +1369,7 @@
 		"DOTA_Tooltip_Ability_A13W_old"	"忍法．迷蹤步"
 		"DOTA_Tooltip_Ability_A13W_old_Description"	"進入隱形狀態，提升<font color='#5cb85c'>(10/20/30/40)% </font>的移動速度或是使用技能即會現身，現身的第一擊可以額外造成<font color='#5cb85c'>(200/300/400/500)</font>傷害並減少50%傷害，隱形最多維持20秒。"
 		"DOTA_Tooltip_Ability_A13E_old"	"忍法．勾鎖鐮"
-		"DOTA_Tooltip_Ability_A13E_old_Description"	"對著前方丟出最長<font color='#5cb85c'>(400/600/800/1200)</font>距離的勾鎖鎌，勾鎖鎌碰到的第一個部隊將會被拉回身旁，若是敵人則多造成<font color='#5cb85c'>(100/200/300/400)</font>的傷害。 "
+		"DOTA_Tooltip_Ability_A13E_old_Description"	"對著前方丟出最長<font color='#5cb85c'>(400/600/800/1200)</font>距離的勾鎖鎌，勾鎖鎌碰到的第一個部隊將會被拉回身旁，若是敵人則多造成<font color='#5cb85c'>(300/400/500/600)</font>的真實傷害。 "
 		"DOTA_Tooltip_Ability_A13R_old"	"忍法．分身之術"
 		"DOTA_Tooltip_Ability_A13R_old_Description"	"去除掉身上所有的法術效果，創造出<font color='#5cb85c'>(1/2/3/4)</font>個20秒的分身來攻擊敵人，分身有10% 攻擊力。 "
 		"DOTA_Tooltip_Ability_A13T_old"	"忍法密傳．隱斬"
@@ -3008,9 +3009,9 @@
 		"npc_dota_hero_lycan" "加藤段藏"
 		"npc_dota_hero_lycan_hype" "加藤段藏，出生於文龜3年(1503年)，卒於本祿12年(1569年)，是日本戰國時代的忍者。本名為加當段藏，有出身自常陸的說法，詳細情形不可考。為忍術高超的忍者，最初侍奉上杉謙信。曾經有一次，受謙信的命令前往敵方大名家奪取寶劍，段藏不只奪取了寶劍，還將服侍此大名的童女也活捉後獻給了謙信，自從這事件後，謙信對他相當驚恐且警戒，開始疏離他，於是他離開了上杉家，轉而投效武田信玄。據傳說因為段藏私底下串通織田信長，信玄遂在1569年時，趁他如廁時命令馬場信房(和土屋昌次)將其暗殺。"
 		"DOTA_Tooltip_Ability_C08D" "忍法．迷蹤步"
-		"DOTA_Tooltip_Ability_C08_Description" "進入隱形狀態，提升<font color='#5cb85c'>(0/5/10/15/20)</font>% 的移動速度或是使用技能即會現身，現身的第一擊可以額外造成<font color='#5cb85c'>(0/90/175/260/345)</font>傷害，隱形最多維持20秒。"
+		"DOTA_Tooltip_Ability_C08D_Description" "進入隱形狀態，提升<font color='#5cb85c'>(0/5/10/15/20)</font>% 的移動速度或是使用技能即會現身，現身的第一擊可以額外造成<font color='#5cb85c'>(0/90/175/260/345)</font>傷害，隱形最多維持20秒。"
 		"DOTA_Tooltip_Ability_C08W" "忍法．血獵"
-		"DOTA_Tooltip_Ability_C08W_Description" "切割目標敵方英雄的動脈，使他在10.5秒內，每1.5秒失去<font color='#5cb85c'>(60/90/120/150)</font>生命值，並且讓加藤段藏可以藉由追蹤他的血跡而獲得該英雄的視野。 動脈切割的前<font color='#5cb85c'>(0.5/1.5/2.5/3.5)</font>秒可以使敵方英雄沉默。"
+		"DOTA_Tooltip_Ability_C08W_Description" "切割目標敵方英雄的動脈，使他在10.5秒內，每1.5秒失去<font color='#5cb85c'>(60/90/120/150)</font>生命值並暈眩<font color='#5cb85c'>(0.2/0.3/0.4/0.5)</font>秒與停止手邊動作，並且讓加藤段藏可以藉由追蹤他的血跡而獲得該英雄的視野。 動脈切割的前<font color='#5cb85c'>(0.5/1.5/2.5/3.5)</font>秒可以使敵方英雄沉默。"
 		"DOTA_Tooltip_Ability_C08E" "忍法．亂擊脫離"
 		"DOTA_Tooltip_Ability_C08E_Description" "使周圍的敵人受到<font color='#5cb85c'>(100/200/300/400)</font>的傷害並且自身向身後瞬移700距離。提升此技能等級可強化「忍法．迷蹤步」。"
 		"DOTA_Tooltip_Ability_C08R" "忍法．飛鳶鎖"
@@ -3030,6 +3031,25 @@
 		"DOTA_Tooltip_Ability_C08R_old_Description" "在前方創造一面火焰牆，火焰牆每0.5秒對經過的敵人造成90點熾炎焚身式傷害，持續<font color='#5cb85c'>(4/8/12/16)</font>秒。"
 		"DOTA_Tooltip_Ability_C08T_old" "飛鳶加藤"
 		"DOTA_Tooltip_Ability_C08T_old_Description" "成為的鳶之一族的上忍，能增加<font color='#5cb85c'>(30/45/60)</font>點敏捷。"
+		
+		
+		// 伊勢姬
+		"npc_dota_hero_vengefulspirit" "伊勢姬"
+		"npc_dota_hero_vengefulspirit_hype" "上州平井城主．千葉采女的女兒，與上衫謙信曾有過肉體關係。據說當上衫謙信在上野滯留時，伊勢姬作為人質與上衫謙信見面而墜入愛河，但具體的真相不明。有一種說法為當柿崎景家中斷了伊勢姬與上衫謙信的關係後，伊勢姬便在青竜寺出家直至逝世。事實上伊勢姬確實在柿崎景家暗殺事件中起到了一定的影響作用。"
+
+		"DOTA_Tooltip_Ability_B23D" "亡靈之契" 
+		"DOTA_Tooltip_Ability_B23D_Description" "跟死者訂下永久的契約，使他們從屍體中誕生為了伊勢姬而戰，最多將可以召喚<font color='#5cb85c'>(4/5/6/7)</font>個亡魂；每存在一個亡魂伊勢姬所受到的傷害減少14%。當亡魂死亡時，伊勢姬將會失去總法力的15%。天生主動技，提升「英靈庇佑」技能等級可強化此技能。"
+		"DOTA_Tooltip_Ability_B23W" "聚靈咒"
+		"DOTA_Tooltip_Ability_B23W_Description" "將所有亡魂聚集到目標地點，瞬間所產生的靈壓將可以對該地點周圍的敵人造成每個亡靈<font color='#5cb85c'>(55/80/105/130)</font>傷害，並且留下一個靈火，靈火每秒使周圍敵人受到<font color='#5cb85c'>(80/110/140/170)</font>傷害，可以存在30秒。"
+		"DOTA_Tooltip_Ability_B23E" "生靈衝擊"
+		"DOTA_Tooltip_Ability_B23E_Description" "抽取附近所有亡魂的生命轉為純粹的靈能，衝擊指定目標，每個衝擊可以造成<font color='#5cb85c'>(35/50/65/80)</font>的傷害並且減緩移動速度35%，持續<font color='#5cb85c'>(3/5/7/9)</font>秒。"
+		"DOTA_Tooltip_Ability_B23R" "魂饗"
+		"DOTA_Tooltip_Ability_B23R_Description" "創造一場靈魂饗宴，每0.2秒回復<font color='#5cb85c'>(15/21/27/33)</font>生命值，持續4秒，在魂饗持續的時間內，伊勢姬以及她的亡魂獲得魔法免疫。"
+		"DOTA_Tooltip_Ability_B23T" "英靈庇佑"
+		"DOTA_Tooltip_Ability_B23T_Description" "庇祐範圍<font color='#5cb85c'>(550/700/850)</font>的友軍，使他們進入無敵狀態，並使所有亡魂增加150%攻速，持續16秒。"
+
+		"B23D_ghost"		"亡魂"
+		"B23D_ghost_bio"	"亡魂"
 
 	}
 }
