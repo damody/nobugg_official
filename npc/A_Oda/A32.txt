@@ -69,7 +69,7 @@
 	{
 		"AbilityBehavior"                           "DOTA_ABILITY_BEHAVIOR_POINT|DOTA_ABILITY_BEHAVIOR_AOE"
 		"BaseClass"                                 "ability_datadriven"
-		"AbilityTextureName"                        "dota2/invoker_tornado"
+		"AbilityTextureName"                        "dota2/a32_w_old"
 
 		"AbilityType"  								"DOTA_ABILITY_TYPE_BASIC"
 		//-------------------------------------------------------------------------------------------------------------
@@ -141,7 +141,7 @@
 	{
 		"AbilityBehavior"                   		"DOTA_ABILITY_BEHAVIOR_POINT|DOTA_ABILITY_BEHAVIOR_AOE|DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"BaseClass"                                 "ability_datadriven"
-		"AbilityTextureName"                        "dota2/invoker_tornado"
+		"AbilityTextureName"                        "dota2/a32_w_old"
 		"AbilityCastAnimation"                      "ACT_DOTA_ATTACK_EVENT"
 		"AnimationPlaybackRate" 					"0.3"
 		"AOERadius"                                 "%A32W2_Radius"
@@ -453,7 +453,7 @@
 	{
 		"AbilityBehavior"                           "DOTA_ABILITY_BEHAVIOR_POINT|DOTA_ABILITY_BEHAVIOR_AOE"
 		"BaseClass"                                 "ability_datadriven"
-		"AbilityTextureName"                        "dota2/invoker_tornado"
+		"AbilityTextureName"                        "dota2/a32_w_old"
 
 		"AbilityType"  								"DOTA_ABILITY_TYPE_BASIC"
 		//-------------------------------------------------------------------------------------------------------------
@@ -688,15 +688,15 @@
 		"AbilityUnitTargetTeam"     				"DOTA_UNIT_TARGET_TEAM_BOTH"
 		"AbilityUnitTargetFlags"    				"DOTA_UNIT_TARGET_FLAG_NONE"
 		"AbilityType"  								"DOTA_ABILITY_TYPE_ULTIMATE"
-		"AbilityTextureName"                        "dota2/a32_w"
+		"AbilityTextureName"                        "custom/icon_128x128_102"
 
 		"AbilityCastPoint"          	"0.1"
-		"AbilityCooldown"           	"25"
-		"AbilityManaCost"           	"25 35 45"
+		"AbilityCooldown"           	"2"
+		"AbilityManaCost"           	"300 400 500"
 		"MaxLevel"						"3"
 		"AbilityDamage"					"100 140 200"
-		"AbilityCastRange"				"500"
-		"AOERadius"						"500"
+		"AbilityCastRange"				"400"
+		"AOERadius"						"400"
 
         "OnToggleOn"
 		{
@@ -735,7 +735,7 @@
         	// 暫時鎖住此技能
 			"modifier_A32T_locker"
 			{
-				"Duration" "15"
+				"Duration" "1"
 				"OnCreated"
 				{
 					"RunScript"
@@ -769,7 +769,7 @@
 				{
 					"SpendMana"
 					{
-						"Mana"		"%AbilityManaCost"
+						"Mana"		"%mana"
 					}
 					"RunScript"
 					{
@@ -803,7 +803,11 @@
 				"var_type"		"FIELD_INTEGER"
 				"move_speed_bonus"	"35 55 75"
 			}
-
+			"04"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"mana"	"25 35 45"
+			}
 		}
     }
 
