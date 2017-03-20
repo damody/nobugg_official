@@ -41,7 +41,7 @@
             </div>
             <div class="menu-list menu-dark flyingv">
                 <div class="menu-line"></div>
-                <a href="https://p.allpay.com.tw/Qjg3Q"><img src="/static/allpay.jpeg"><span class="donate">| <%-langtext["donate"][lang]%> |</span></a>
+                <a href="https://p.allpay.com.tw/UwyZB"><img src="/static/allpay.jpeg"><span class="donate">| <%-langtext["donate"][lang]%> |</span></a>
             </div>
         </nav>
 
