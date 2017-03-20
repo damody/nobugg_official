@@ -41,7 +41,7 @@
             </div>
             <div class="menu-list menu-dark flyingv">
                 <div class="menu-line"></div>
-                <a href="https://www.flyingv.cc/projects/14171?preview=5e8ac337-6f15-4920-a906-b813322696bc"><img src="/static/image/logo-flyingV.png"><span class="donate">| <%-langtext["donate"][lang]%> |</span></a>
+                <a href="https://p.allpay.com.tw/Qjg3Q"><img src="/static/allpay.jpeg"><span class="donate">| <%-langtext["donate"][lang]%> |</span></a>
             </div>
         </nav>
 
