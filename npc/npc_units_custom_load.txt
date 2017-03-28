@@ -5,6 +5,228 @@
 {
 	"Version"		"1"
 
+	//宇喜多秀家 E杖
+	"A32E_stick"
+	{
+		"BaseClass"			"npc_dota_creature"
+		"Model"				"models/props_structures/bad_standard001.vmdl"
+		"ModelScale"		"0.6"
+		"Level"				"1"
+		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
+		"HealthBarOffset"	"160"
+
+		"ArmorPhysical"	"5"
+		"MagicalResistance"	"0"
+
+		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageType"		"DAMAGE_TYPE_NONE"
+
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
+
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"			"0"
+		"MovementTurnRate"		"0"
+		"StatusHealth"			"5"
+		"StatusHealthRegen"		"5"
+		"StatusMana"			"0"
+		"StatusStartingMana"	"0"
+
+		"VisionDaytimeRange"	"0"
+		"VisionNighttimeRange"	"0"
+
+		"TeamName"	"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"Ability1"	""
+		"Ability2"	""
+		"Ability3"	""
+		"Ability4"	""
+		"Ability5"	""
+		"Ability6"	""
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	""
+	}
+
+	//果心居士 魑魅魍魎
+	"C16D_old_ghost"
+	{
+		"BaseClass"			"npc_dota_creature"
+		"Model"				"models/items/courier/mlg_courier_wraith/mlg_courier_wraith.vmdl"
+		"ModelScale"		"1.5"
+		"Level"				"1"
+		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
+		"HealthBarOffset"	"160"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"90"
+		"AttackDamageMax"			"100"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackRate"				"0.5"
+		"AttackAnimationPoint"		"0.1"
+		"AttackAcquisitionRange"	"500"
+		"AttackRange"				"128"
+
+		"ArmorPhysical"		"20"
+		"MagicalResistance"	"90"
+
+		"BountyGoldMin"		"0"
+		"BountyGoldMax"		"0"
+		"BountyXP"			"5"
+
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"			"300"
+		"MovementTurnRate"		"1.50"
+
+		"StatusHealth"			"1500"
+		"StatusHealthRegen"		"10"
+		"StatusMana"			"0"
+		"StatusStartingMana"	"0"
+
+		"HPGain"                "36"
+		"DamageGain"            "3"
+
+		"VisionDaytimeRange"	"1800"
+		"VisionNighttimeRange"	"800"
+
+		"CombatClassAttack"		"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"		"DOTA_COMBAT_CLASS_DEFEND_WEAK"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"Ability1"			""
+		"Ability2"			""
+		"Ability3"			""
+		"Ability4"			""
+		"Ability5"			""
+		"Ability6"			""
+		"Ability7"			""
+		"Ability8"			""
+		"Ability9"			""
+		"Ability10"			""
+		"Ability11"			""
+		"Ability12"			""
+		"Ability13"			""
+		"Ability14"			""
+		"Ability15"			""
+		"Ability16"			""
+	}
+
+	//果心居士 殺生石
+	"C16T_stone"
+	{
+		"BaseClass"			"npc_dota_creature"
+		"Model"				"models/particle/earth_spirit_rockspike05.vmdl"
+		"ModelScale"		"2.5"
+		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
+		"HealthBarOffset"	"160"
+		
+		"ArmorPhysical"	"3"
+		"MagicalResistance"	"0"
+
+		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"	"1"
+		"AttackDamageMax"	"1"
+		"AttackDamageType"	"DAMAGE_TYPE_PURE"
+		"AttackRate"		"1.8"
+		"AttackAnimationPoint"	"0.1"
+		"AttackAcquisitionRange"	"1100"
+		"AttackRange"	"600"
+		"ProjectileSpeed"	"2000"
+		"ProjectileModel"	"particles/econ/items/pugna/pugna_ward_ti5/pugna_ward_attack_heavy_ti_5.vpcf"
+
+		"BountyGoldMin"	"10"
+		"BountyGoldMax"	"10"
+		"BountyXP"	"10"
+
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"			"150"
+
+		"StatusHealth"	"900"
+		"StatusHealthRegen"	"10"
+
+		"VisionDaytimeRange"	"1800"
+		"VisionNighttimeRange"	"800"
+
+		"TeamName"	"DOTA_TEAM_NEUTRALS"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"Ability1"	""
+		"Ability2"	""
+		"Ability3"	""
+		"Ability4"	""
+		"Ability5"	""
+		"Ability6"	""
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	""
+		"Ability16"	""
+	}
+
+	//果心居士 鬼魂
+	"C16E_ghost"
+	{
+		"BaseClass"			"npc_dota_creature"
+		"Model"				"models/items/death_prophet/exorcism/outland_witchs_spirits/outland_witchs_spirits.vmdl"
+		"ModelScale"		"0.7"
+		"Level"				"1"
+		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
+		"HealthBarOffset"	"160"
+
+		"ArmorPhysical"	"5"
+		"MagicalResistance"	"0"
+
+		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageType"		"DAMAGE_TYPE_NONE"
+
+		"BountyGoldMin"	"10"
+		"BountyGoldMax"	"10"
+
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"			"200"
+		"MovementTurnRate"		"2"
+		"StatusHealth"			"5"
+		"StatusHealthRegen"		"5"
+		"StatusMana"			"0"
+		"StatusStartingMana"	"0"
+
+		"VisionDaytimeRange"	"1800"
+		"VisionNighttimeRange"	"800"
+
+		"TeamName"	"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"Ability1"	""
+		"Ability2"	""
+		"Ability3"	""
+		"Ability4"	""
+		"Ability5"	""
+		"Ability6"	""
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	""
+	}
+
 	// 伊勢姬 亡魂
 	"B23D_ghost"
 	{
@@ -13,7 +235,7 @@
 		"ModelScale"		"0.8"
 		"Level"				"1"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"			"55"
@@ -84,7 +306,7 @@
 		"ModelScale"	"1"
 		"Level"	"2"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 
 		// Armor
 		// ----------------------------------------------------------------
@@ -157,7 +379,7 @@
 		"ModelScale"	"0.85"
 		"Level"	"2"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 
 		// Armor
 		// ----------------------------------------------------------------
@@ -230,7 +452,7 @@
 		"ModelScale"	"0.7"
 		"Level"	"2"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 
 		// Armor
 		// ----------------------------------------------------------------
@@ -372,7 +594,7 @@
 		"ModelScale"	"0.7"
 		"Level"	"2"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 
 		// Armor
 		// ----------------------------------------------------------------
@@ -1416,7 +1638,7 @@
 		"ModelScale"	"1.2"
 		"Level"	"2"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Reference: Amnb
@@ -1491,7 +1713,7 @@
 		"Level"	"3"
 		"Model"	"models/creeps/neutral_creeps/n_creep_thunder_lizard/n_creep_thunder_lizard_small.vmdl"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Reference: A00F
@@ -1569,7 +1791,7 @@
 		"Level"	"3"
 		"Model"	"models/heroes/morphling/morphling.vmdl"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Reference: A00F
@@ -1647,7 +1869,7 @@
 		"ModelScale"	"1"
 		"Level"	"3"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Reference: A00F
@@ -1725,7 +1947,7 @@
 		"ModelScale"	"1.7"
 		"Level"	"2"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Reference: Amnb
@@ -1800,7 +2022,7 @@
 		"ModelScale"	"1.7"
 		"Level"	"2"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Reference: Amnb
@@ -1976,7 +2198,7 @@
 		"ModelScale"	"1"
 		"Level"	"2"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 
 		// Armor
 		// ----------------------------------------------------------------
@@ -2054,7 +2276,7 @@
 		"ModelScale"	"1"
 		"Level"	"2"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		
 		// Armor
 		// ----------------------------------------------------------------
@@ -2132,7 +2354,7 @@
 		"ModelScale"	"1.1"
 		"Level"	"2"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 
 		// Armor
 		// ----------------------------------------------------------------
@@ -2198,7 +2420,7 @@
 		"ModelScale"	"1.1"
 		"Level"	"2"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		
 		// Armor
 		// ----------------------------------------------------------------
@@ -2263,7 +2485,7 @@
 		"ModelScale"	"1.2"
 		"Level"	"5"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 
 		// Armor
 		// ----------------------------------------------------------------
@@ -2329,7 +2551,7 @@
 		"ModelScale"	"1.2"
 		"Level"	"5"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		
 		// Armor
 		// ----------------------------------------------------------------
@@ -2395,7 +2617,7 @@
 		"ModelScale"	"1.5"
 		"Level"	"12"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 
 		// Armor
 		// ----------------------------------------------------------------
@@ -2461,7 +2683,7 @@
 		"ModelScale"	"1.5"
 		"Level"	"12"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		
 		// Armor
 		// ----------------------------------------------------------------
@@ -2526,7 +2748,7 @@
 		"ModelScale"	"1.1"
 		"Level"	"1"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Reference:
@@ -2761,7 +2983,83 @@
 		"ModelScale"	"1.2"
 		"Level"	"1"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Reference: Amnb
+		"Ability1"	""
+		// Armor
+		// ----------------------------------------------------------------
+		"ArmorPhysical"	"0"
+		"MagicalResistance"	"0"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"	"0.0"
+		"AttackDamageMax"	"0.0"
+		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
+		"AttackRate"	"0.9"
+		"AttackAnimationPoint"	"0.5"
+		"AttackAcquisitionRange"	"0"
+		"AttackRange"	"275"
+		"StatusMana"	"0"
+		"StatusStartingMana"	"0"
+		// Bounty
+		// ----------------------------------------------------------------
+		"BountyGoldMin"	"25.0"
+		"BountyGoldMax"	"25.0"
+		// Gold and Lumber
+		// ----------------------------------------------------------------
+		"GoldCost"	"0"
+		"LumberCost"	"0"
+		// Movement
+		// ----------------------------------------------------------------
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"	"0"
+		"MovementTurnRate"	"0"
+		// Status
+		// ----------------------------------------------------------------
+		"StatusHealth"	"200"
+		"StatusHealthRegen"	"1"
+		// Vision
+		// ----------------------------------------------------------------
+		"VisionDaytimeRange"	"800"
+		"VisionNighttimeRange"	"800"
+		// Team
+		// ----------------------------------------------------------------
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_LIGHT"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"Ability2"	""
+		"Ability3"	""
+		"Ability4"	""
+		"Ability5"	""
+		"Ability6"	""
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	""
+		"Ability16"	""
+		"StatusManaRegen"	"0"
+	}
+
+	// 靜滯陷阱
+	"C17R_old_SUMMEND_UNIT_bag"
+	{
+		// General
+		// ----------------------------------------------------------------
+		"BaseClass"	"npc_dota_creature"
+		// Add model
+		"Model"	"models/c17/c17_school_bag.vmdl"
+		"ModelScale"	"1.2"
+		"Level"	"1"
+		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
+		"HealthBarOffset"	"160"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Reference: Amnb
@@ -2898,7 +3196,7 @@
 		"ModelScale"	"0.6"
 		"Level"	"1"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Reference: Aloc
@@ -2972,7 +3270,7 @@
 		"ModelScale"	"1.4"
 		"Level"	"3"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Reference: A0GD
@@ -3051,7 +3349,7 @@
 		"ModelScale"	"1.4"
 		"Level"	"3"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Reference: A0GD
@@ -3261,7 +3559,7 @@
 		"ModelScale"	"1.2"
 		"Level"	"3"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Reference: A0GD
@@ -3340,7 +3638,7 @@
 		"ModelScale"	"0.8"
 		"Level"	"3"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Reference: A0GD
@@ -3412,7 +3710,7 @@
 		"ModelScale"	"2.5"
 		"Level"	"2"
 		"BoundsHullName"	"DOTA_HULL_SIZE_FILLER"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Reference: ACmi
@@ -3487,7 +3785,7 @@
 		"ModelScale"	"0.1"
 		"Level"	"3"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HUGE"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Reference: ACmi
@@ -3847,7 +4145,7 @@
 		"ModelScale"	"1.46"
 		"Level"	"10"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Reference: Adt1
@@ -3928,7 +4226,7 @@
 		"ModelScale"	"1.46"
 		"Level"	"10"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		// Abilities
 		// ----------------------------------------------------------------
 		"Ability1"	"for_magic_immune"
@@ -4004,7 +4302,7 @@
 		"ModelScale"	"1.2"
 		"Level"	"3"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Reference: A0GD
@@ -4083,7 +4381,7 @@
 		"ModelScale"	"0.8"
 		"Level"	"3"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Reference: A0NH
@@ -5224,7 +5522,7 @@
 		"ModelScale"	"1.3"
 		"Level"	"3"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Reference: A0GD
@@ -5305,7 +5603,7 @@
 		"ModelScale"	"1.3"
 		"Level"	"3"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Reference: A0GD
@@ -5385,7 +5683,7 @@
 		"ModelScale"	"2"
 		"Level"	"0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_TOWER"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		"Ability1"	""
 		"ArmorPhysical"	"25"
 		"MagicalResistance"	"0"
@@ -5422,7 +5720,7 @@
 		"ModelScale"	"2"
 		"Level"	"0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_TOWER"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		"Ability1"	"for_top_broken"
 		"ArmorPhysical"	"25"
 		"MagicalResistance"	"0"
@@ -5459,7 +5757,7 @@
 		"ModelScale"	"2"
 		"Level"	"0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_TOWER"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		"Ability1"	"for_mid_broken"
 		"ArmorPhysical"	"25"
 		"MagicalResistance"	"0"
@@ -5496,7 +5794,7 @@
 		"ModelScale"	"2"
 		"Level"	"0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_TOWER"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		"Ability1"	"for_down_broken"
 		"ArmorPhysical"	"25"
 		"MagicalResistance"	"0"
@@ -5533,7 +5831,7 @@
 		"ModelScale"	"2"
 		"Level"	"0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_TOWER"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		"Ability1"	"for_top_broken"
 		"ArmorPhysical"	"25"
 		"MagicalResistance"	"0"
@@ -5570,7 +5868,7 @@
 		"ModelScale"	"2"
 		"Level"	"0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_TOWER"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		"Ability1"	"for_mid_broken"
 		"ArmorPhysical"	"25"
 		"MagicalResistance"	"0"
@@ -5607,7 +5905,7 @@
 		"ModelScale"	"2"
 		"Level"	"0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_TOWER"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		"Ability1"	"for_down_broken"
 		"ArmorPhysical"	"25"
 		"MagicalResistance"	"0"
@@ -5658,7 +5956,7 @@
 		"ModelScale"	"3"
 		"Level"	"0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_FILLER"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Reference: Adt1
@@ -5733,7 +6031,7 @@
 		"ModelScale"	"3"
 		"Level"	"0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_FILLER"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Reference: Adt1
@@ -5891,7 +6189,7 @@
 		"ModelScale"	"1.5"
 		"Level"	"0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_FILLER"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Reference: A0BN
@@ -5962,7 +6260,7 @@
 		"ModelScale"	"1.5"
 		"Level"	"0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_FILLER"
-		"HealthBarOffset"	"140"
+		"HealthBarOffset"	"160"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Reference: A0BN
