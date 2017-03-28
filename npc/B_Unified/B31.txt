@@ -91,7 +91,7 @@
 			}
 			"modifier_B31W_aura"
 			{
-				"IsHidden"	"0"
+				"IsHidden"	"1"
 				//"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"Passive"	"1"
 				"Aura"          	"modifier_B31W_passive"
@@ -107,12 +107,12 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"bonus_movespeed_passive"	"4 7 10 13"
+				"bonus_movespeed_passive"	"5 10 15 20"
 			}
 			"02"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"bonus_movespeed"	"10 15 20 25"
+				"bonus_movespeed"	"15 20 25 30"
 			}
 			"03"
 			{
@@ -210,7 +210,7 @@
 			}
 			"modifier_B31E_aura"
 			{
-				"IsHidden"	"0"
+				"IsHidden"	"1"
 				//"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"Passive"	"1"
 				"Aura"          	"modifier_B31E_passive"
@@ -258,7 +258,7 @@
 			"07"
 			{
 				"var_type" "FIELD_INTEGER"
-				"bonus_heal_passive" "10 15 20 25"
+				"bonus_heal_passive" "10 20 30 40"
 			}
 		}
 		// Damage.
@@ -337,7 +337,7 @@
 				"IsDebuff"			"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"EffectAttachType"	"follow_hitloc"
-				"ThinkInterval"	"2.0"
+				"ThinkInterval"	"1"
 				"OnCreated"
 				{
 					"RunScript"
@@ -500,6 +500,7 @@
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"%bonus_movespeed_passive"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%bonus_movespeed_passive"
 					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE"	"%bonus_healthspeed"
 				}
 			}
@@ -511,9 +512,34 @@
 				"Aura"          	"modifier_B31W_old_passive"
 				"Aura_Radius"   	"600"
 				"Aura_Teams"    	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-				"Aura_Types"    	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+				"Aura_Types"    	"DOTA_UNIT_TARGET_HERO"
 				"Aura_Flags"    	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 				"Aura_ApplyToCaster" "1"
+			}
+			"modifier_B31W_old_passive2"
+			{
+				"Passive"			"0"
+				"IsHidden"			"0"
+				"IsDebuff"			"0"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"%bonus_movespeed_passive2"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%bonus_movespeed_passive2"
+					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE"	"%bonus_healthspeed2"
+				}
+			}
+			"modifier_B31W_old_aura2"
+			{
+				"IsHidden"	"1"
+				//"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"Passive"	"1"
+				"Aura"          	"modifier_B31W_old_passive2"
+				"Aura_Radius"   	"600"
+				"Aura_Teams"    	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+				"Aura_Types"    	"DOTA_UNIT_TARGET_BASIC"
+				"Aura_Flags"    	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+				"Aura_ApplyToCaster" "0"
 			}
 		}
 		"AbilitySpecial"
@@ -526,7 +552,17 @@
 			"02"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"bonus_healthspeed"	"1 2 3 4"
+				"bonus_healthspeed"	"0.5 1 1.5 2"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_movespeed_passive2"	"10 20 30 40"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"bonus_healthspeed2"	"1 2 3 4"
 			}
 		}
 
@@ -697,17 +733,40 @@
 					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"%bonus_atk_percent"
 				}
 			}
+			"modifier_B31R_old_passive2"
+			{
+				"Passive"			"0"
+				"IsHidden"			"0"
+				"IsDebuff"			"0"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"%bonus_atk_percent2"
+				}
+			}
 			"modifier_B31R_old_aura"
 			{
-				"IsHidden"	"0"
+				"IsHidden"	"1"
 				//"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"Passive"	"1"
 				"Aura"          	"modifier_B31R_old_passive"
 				"Aura_Radius"   	"600"
 				"Aura_Teams"    	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-				"Aura_Types"    	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+				"Aura_Types"    	"DOTA_UNIT_TARGET_HERO"
 				"Aura_Flags"    	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 				"Aura_ApplyToCaster" "1"
+			}
+			"modifier_B31R_old_aura2"
+			{
+				"IsHidden"	"1"
+				//"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"Passive"	"1"
+				"Aura"          	"modifier_B31R_old_passive2"
+				"Aura_Radius"   	"600"
+				"Aura_Teams"    	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+				"Aura_Types"    	"DOTA_UNIT_TARGET_BASIC"
+				"Aura_Flags"    	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+				"Aura_ApplyToCaster" "0"
 			}
 		}
 		"AbilitySpecial"
@@ -716,6 +775,11 @@
 			{
 				"var_type"					"FIELD_INTEGER"
 				"bonus_atk_percent"			"5 10 15 20"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_atk_percent2"			"10 20 30 40"
 			}
 		}
 

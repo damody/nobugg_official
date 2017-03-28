@@ -3048,7 +3048,7 @@
 		"DOTA_Tooltip_Ability_A14T__Description" "狂怒的枪之又左可以在战场上尽情的追击敌人，获得300移动速度，并将不会被任何部队所阻挡，此外还有80% 机率闪躲来自敌人的攻击；若有学习叠击枪术，则开启时叠加的次数马上增加5次。持续<font color='#5cb85c'>(12/15/18)</font>秒。"
 		
 		"DOTA_Tooltip_Ability_A14W_old" "本能之打击"
-		"DOTA_Tooltip_Ability_A14W_old_Description" "对着目标使用手上的巨枪将对手击退，如果撞墙停下将会造成3倍伤害，给予<font color='#5cb85c'>(175/275/375/475)</font>点伤害并且击晕<font color='#5cb85c'>(0.5/1/1.5/2)</font>秒。"
+		"DOTA_Tooltip_Ability_A14W_old_Description" "对着目标使用手上的巨枪将对手击退，如果撞墙停下将会造成3倍伤害，给予<font color='#5cb85c'>(100/200/300/400)</font>点伤害并且击晕<font color='#5cb85c'>(0.5/1/1.5/2)</font>秒。"
 		"DOTA_Tooltip_Ability_A14E_old" "野生之斩击"
 		"DOTA_Tooltip_Ability_A14E_old_Description" "使用手上的巨枪将目标击到空中给予<font color='#5cb85c'>(250/350/450/550)</font>点伤害，目标落地时周围300区域的敌人将中断动作并受到<font color='#5cb85c'>(100/200/300/400)</font>点伤害。"
 		"DOTA_Tooltip_Ability_A14R_old" "战魂"
@@ -3071,7 +3071,7 @@
 		"DOTA_Tooltip_Ability_B13E" "忍法．催眠"
 		"DOTA_Tooltip_Ability_B13E_Description" "将指定的敌军催眠4.5秒。被催眠的敌军在受到伤害时会醒来。"
 		"DOTA_Tooltip_Ability_B13R" "忍法．血化装"
-		"DOTA_Tooltip_Ability_B13R_Description" "增加自身<font color='#5cb85c'>(20/30/40/50)% </font>的攻击速度，攻击时额外造成等同于自身现有血量<font color='#5cb85c'>(2/4/6/8)% </font>的真实伤害对魔免伤害减半。并且每杀死一个敌人 便可以回复等同于该敌人总血量<font color='#5cb85c'>(6/7/8/9)% </font>的生命值。"
+		"DOTA_Tooltip_Ability_B13R_Description" "增加自身<font color='#5cb85c'>(20/30/40/50)% </font>的攻击速度，攻击时额外造成等同于自身现有血量<font color='#5cb85c'>(1/3/5/7)% </font>的真实伤害对魔免伤害减半。并且每杀死一个敌人 便可以回复等同于该敌人总血量<font color='#5cb85c'>(6/7/8/9)% </font>的生命值。"
 		"DOTA_Tooltip_Ability_B13T" "忍法密传．暴风"
 		"DOTA_Tooltip_Ability_B13T_Description" "在指定地点召唤出狂风，对范围500内敌军每秒造成<font color='#5cb85c'>(200/300/400)</font>伤害，对建筑物造成30% 伤害，走近的敌军会减缓100% 移动速度和<font color='#5cb85c'>(150/300/450)% </font>攻击速度。 狂风持续5.5秒。"
 
@@ -3099,7 +3099,7 @@
 		"DOTA_Tooltip_Ability_C16R" "咒术．行空魂"
 		"DOTA_Tooltip_Ability_C16R_Description" "召唤出<font color='#5cb85c'>(9/10/11/12)</font>个具有84点攻击力四魂体跟随着果心居士，魂体将会攻击身旁的敌军 并且夺取他们的生命给予果心居士。持续20秒。"
 		"DOTA_Tooltip_Ability_C16T" "幻咒之术．奇门遁甲"
-		"DOTA_Tooltip_Ability_C16T_Description" "在指定的范围内召唤出<font color='#5cb85c'>(25/30/35)</font>个杀生石形成石阵，使范围内的敌人晕眩<font color='#5cb85c'>(1/1.5/2)</font>秒并且杀生石会开始攻击敌军，每次攻击可以造成最少<font color='#5cb85c'>(15/20/25)</font>真实伤害。杀生石存在15秒。"
+		"DOTA_Tooltip_Ability_C16T_Description" "在指定的范围内召唤出<font color='#5cb85c'>(20/25/30)</font>个杀生石形成石阵，使范围内的敌人晕眩<font color='#5cb85c'>(1/1.5/2)</font>秒并且杀生石会开始攻击敌军，每次攻击可以造成最少<font color='#5cb85c'>(15/20/25)</font>真实伤害。杀生石存在15秒。"
 
 		"DOTA_Tooltip_Ability_C16D_old" "魑魅魍魉" 
 		"DOTA_Tooltip_Ability_C16D_old_Description" "增加移动速度55点，以及智慧5点，并且若是当果心居士败下阵来之后，将会出现一个为果心居士复仇的魑魅魍魉。拥有95点攻击力、1500点生命值，只受到10%法术伤害。"
@@ -3110,7 +3110,7 @@
 		"DOTA_Tooltip_Ability_C16R_old" "召唤．行空魂"
 		"DOTA_Tooltip_Ability_C16R_old_Description" "制造出<font color='#5cb85c'>(3/4/5/6)</font>颗具有168点攻击力的魂体跟随果心，区域效果<font color='#5cb85c'>(500/550/600/650)</font>。可以持续25秒。"
 		"DOTA_Tooltip_Ability_C16T_old" "幻咒之术．奇门遁甲"
-		"DOTA_Tooltip_Ability_C16T_old_Description" "在指定800范围创造出<font color='#5cb85c'>(20/25/30)</font>颗杀生石阵，石头具有900生命，<font color='#5cb85c'>(15/20/25)</font>点真实伤害，石头出现时造成范围敌人晕眩<font color='#5cb85c'>(1.5/2/2.5)</font>秒。持续<font color='#5cb85c'>(15/16/17)</font>秒。"
+		"DOTA_Tooltip_Ability_C16T_old_Description" "在指定800范围创造出<font color='#5cb85c'>(15/20/25)</font>颗杀生石阵，石头具有900生命，<font color='#5cb85c'>(15/20/25)</font>点真实伤害，石头出现时造成范围敌人晕眩<font color='#5cb85c'>(1.5/2/2.5)</font>秒。持续<font color='#5cb85c'>(15/16/17)</font>秒。"
 
 		"C16E_ghost"			"鬼影"
 		"C16E_ghost_bio"		"鬼影"
@@ -3146,21 +3146,21 @@
 		"npc_dota_hero_shadow_demon" "武田信玄"
 		"npc_dota_hero_shadow_demon_hype" "人称甲斐之虎，被誉为战国时代的第一兵法家，应幕府将军足利义昭之请，整备数万大军东进，妄图降伏德川、击溃织田，进入京都以控制天下，但在三方 原大败德川、织田联军后，却突发重病，退兵时死于中途。他和上杉谦信的先后去世，为织田信长称霸日本扫清了道路。 总归武田信玄是打着风林火山的旗号，展开他开疆拓土的一生，而武田的骑兵队非常强悍，也是织田 德川 最怕的一支军队，世人称他为战神。"
 		"DOTA_Tooltip_Ability_B31W" "疾如风"
-		"DOTA_Tooltip_Ability_B31W_Description" "增加自身<font color='#5cb85c'>(10/15/20/25)</font>% 移动速度以及<font color='#5cb85c'>(30/60/90/120)</font>% 攻击速度，持续13秒。《灵气》增加自身和附近友方部队<font color='#5cb85c'>(4/7/10/13)</font>% 的移动速度。冷却中灵气效果不作用。"
+		"DOTA_Tooltip_Ability_B31W_Description" "增加自身<font color='#5cb85c'>(15/20/25/30)</font>% 移动速度以及<font color='#5cb85c'>(30/60/90/120)</font>% 攻击速度，持续13秒。《灵气》增加自身和附近友方部队<font color='#5cb85c'>(5/10/15/20)</font>% 的移动速度。冷却中灵气效果不作用。"
 		"DOTA_Tooltip_Ability_B31E" "徐如林"
-		"DOTA_Tooltip_Ability_B31E_Description" "每秒呼叫6名武田骑兵在目标英雄身旁突袭，每个骑兵可以对敌人造成<font color='#5cb85c'>(40/60/80/100)</font>真实伤害，对魔免单位减半，徐如林持续7秒。《灵气》增加自身和附近友方部队每秒回复<font color='#5cb85c'>(10/15/20/25)</font>的生命。冷却中灵气效果不作用。"
+		"DOTA_Tooltip_Ability_B31E_Description" "每秒呼叫6名武田骑兵在目标英雄身旁突袭，每个骑兵可以对敌人造成<font color='#5cb85c'>(40/60/80/100)</font>真实伤害，对魔免单位减半，徐如林持续7秒。《灵气》增加自身和附近友方部队每秒回复<font color='#5cb85c'>(10/20/30/40)</font>的生命。冷却中灵气效果不作用。"
 		"DOTA_Tooltip_Ability_B31R" "侵略如火"
-		"DOTA_Tooltip_Ability_B31R_Description" "对周围的敌人造成<font color='#5cb85c'>(100/200/300/400)</font>伤害，并且在接下来7秒增加<font color='#5cb85c'>(30/45/60/75)</font>攻击伤害。《灵气》灼烧附近的敌人，使他们每2秒失去<font color='#5cb85c'>(30/50/70/90)</font>的生命。冷却中灵气效果不作用。"
+		"DOTA_Tooltip_Ability_B31R_Description" "对周围的敌人造成<font color='#5cb85c'>(100/200/300/400)</font>伤害，并且在接下来7秒增加<font color='#5cb85c'>(30/45/60/75)</font>攻击伤害。《灵气》灼烧附近的敌人，使他们每1秒失去<font color='#5cb85c'>(30/50/70/90)</font>的生命。冷却中灵气效果不作用。"
 		"DOTA_Tooltip_Ability_B31T" "不动如山"
 		"DOTA_Tooltip_Ability_B31T_Description" "当不动如山启动时，会增加额外<font color='#5cb85c'>(550/850/1150)</font>生命值、<font color='#5cb85c'>(30/55/80)</font>攻击伤害，并且对法术免疫。 持续25秒。"
 
 		//武田信玄 11.2B
 		"DOTA_Tooltip_Ability_B31W_old" "疾如风"
-		"DOTA_Tooltip_Ability_B31W_old_Description" "增加附近600范围友方<font color='#5cb85c'>(5/10/15/20)</font>% 移动速度及<font color='#5cb85c'>(1/2/3/4)</font>% 的每秒回血。"
+		"DOTA_Tooltip_Ability_B31W_old_Description" "增加附近600范围友方<font color='#5cb85c'>(5/10/15/20)</font>% 移动速度及<font color='#5cb85c'>(0.5/1/1.5/2)</font>% 的每秒回血，对小兵两倍效果。"
 		"DOTA_Tooltip_Ability_B31E_old" "徐如林"
-		"DOTA_Tooltip_Ability_B31E_old_Description" "每秒呼叫<font color='#5cb85c'>(12/14/16/18)</font>匹武田骑兵队，每个骑兵可以对敌人造成<font color='#5cb85c'>(40/70/100/130)</font>点魔法伤害。需持续施法，最多可持续秒。"
+		"DOTA_Tooltip_Ability_B31E_old_Description" "每秒呼叫<font color='#5cb85c'>(12/14/16/18)</font>匹武田骑兵队，每个骑兵可以对敌人造成<font color='#5cb85c'>(40/70/100/130)</font>点魔法伤害。需持续施法，最多可持续3秒。"
 		"DOTA_Tooltip_Ability_B31R_old" "侵略如火"
-		"DOTA_Tooltip_Ability_B31R_old_Description" "增加附近600范围友方英雄<font color='#5cb85c'>(5/10/15/20)</font>% 攻击力。"
+		"DOTA_Tooltip_Ability_B31R_old_Description" "增加附近600范围友方英雄<font color='#5cb85c'>(5/10/15/20)</font>% 攻击力，对小兵两倍效果。"
 		"DOTA_Tooltip_Ability_B31T_old" "不动如山"
 		"DOTA_Tooltip_Ability_B31T_old_Description" "启动时，增加<font color='#5cb85c'>(10/20/30)</font>点基础防御、<font color='#5cb85c'>(30/55/70)</font>点基础攻击、<font color='#5cb85c'>(800/1300/1800)</font>点额外生命值及法术免疫。每0.9秒对附近650范围的一个敌人降下陨石而造成200点伤害，然后在5秒内每秒造成20点伤害。持续38秒。"
 
