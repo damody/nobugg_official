@@ -522,7 +522,7 @@
 
 
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_weakness" "天之丛云"
-		"DOTA_Tooltip_Ability_item_the_great_sword_of_weakness_Description" "攻击伤害+105，力量+20，智慧+30。【使用】使敌人卸甲归田，变为毫无战力的平民，持续0.6秒，持有者每40智慧可以使此效果增加0.6秒，最多4.8秒。<font color='#cc0000'>无视敌人魔法免疫施放，对魔法免疫单位的效果最多持续1.5秒</font>"
+		"DOTA_Tooltip_Ability_item_the_great_sword_of_weakness_Description" "攻击伤害+105，力量+20，智慧+30。【使用】使敌人卸甲归田，变为毫无战力的平民，持续0.6秒，持有者每40智慧可以使此效果增加0.6秒。<font color='#cc0000'>无视敌人魔法免疫施放，对魔法免疫单位的效果最多持续1.5秒</font>"
 
 
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_banish" "大典太光世．铭刀"
@@ -3063,7 +3063,7 @@
 		"DOTA_Tooltip_Ability_A14E_old" "野生之斩击"
 		"DOTA_Tooltip_Ability_A14E_old_Description" "使用手上的巨枪将目标击到空中给予<font color='#5cb85c'>(250/350/450/550)</font>点伤害，目标落地时周围300区域的敌人将中断动作并受到<font color='#5cb85c'>(100/200/300/400)</font>点伤害。"
 		"DOTA_Tooltip_Ability_A14R_old" "战魂"
-		"DOTA_Tooltip_Ability_A14R_old_Description" "增加<font color='#5cb85c'>(40/80/120/160)% </font>攻击速度及<font color='#5cb85c'>(4/8/12/16)% </font>移动速度。"
+		"DOTA_Tooltip_Ability_A14R_old_Description" "增加<font color='#5cb85c'>(40/70/100/130)% </font>攻击速度及<font color='#5cb85c'>(4/8/12/16)% </font>移动速度。"
 		"DOTA_Tooltip_Ability_A14D_old" "火凤凰"
 		"DOTA_Tooltip_Ability_A14D_old_Description" "召唤火凤凰冲击一直线上的敌人造成<font color='#5cb85c'>(350/450/550)</font>点伤害。区域范围200。"
 		"DOTA_Tooltip_Ability_A14T_old" "狂怒．枪之又左"
@@ -3140,7 +3140,7 @@
 		"DOTA_Tooltip_Ability_B12R" "讦谋攻势"
 		"DOTA_Tooltip_Ability_B12R_Description" "减缓周围敌人<font color='#5cb85c'>(11/14/17/20)</font>% 移动速度，每次攻击时将可以额外造成等同于智慧<font color='#5cb85c'>(35/60/85/110)</font>% 伤害，对魔免单位伤害减半。"
 		"DOTA_Tooltip_Ability_B12T" "狂心"
-		"DOTA_Tooltip_Ability_B12T_Description" "增加400% 攻击速度以及<font color='#5cb85c'>(40/60/80)</font>智慧，持续<font color='#5cb85c'>(10/16/22)</font>秒。"
+		"DOTA_Tooltip_Ability_B12T_Description" "增加400% 攻击速度以及<font color='#5cb85c'>(80/120/160)</font>智慧，持续<font color='#5cb85c'>(10/16/22)</font>秒。"
 
 		//宇喜多秀家
 		"npc_dota_hero_witch_doctor" "宇喜多秀家"
@@ -3169,7 +3169,7 @@
 		"DOTA_Tooltip_Ability_B31W_old" "疾如风"
 		"DOTA_Tooltip_Ability_B31W_old_Description" "增加附近600范围友方<font color='#5cb85c'>(5/10/15/20)</font>% 移动速度及<font color='#5cb85c'>(0.5/1/1.5/2)</font>% 的每秒回血，对小兵两倍效果。"
 		"DOTA_Tooltip_Ability_B31E_old" "徐如林"
-		"DOTA_Tooltip_Ability_B31E_old_Description" "每秒呼叫<font color='#5cb85c'>(12/14/16/18)</font>匹武田骑兵队，每个骑兵可以对敌人造成<font color='#5cb85c'>(40/70/100/130)</font>点魔法伤害。需持续施法，最多可持续3秒。"
+		"DOTA_Tooltip_Ability_B31E_old_Description" "每秒呼叫<font color='#5cb85c'>(11/12/13/14)</font>匹武田骑兵队，每个骑兵可以对敌人造成<font color='#5cb85c'>(40/70/100/130)</font>点魔法伤害。需持续施法，最多可持续3秒。"
 		"DOTA_Tooltip_Ability_B31R_old" "侵略如火"
 		"DOTA_Tooltip_Ability_B31R_old_Description" "增加附近600范围友方英雄<font color='#5cb85c'>(5/10/15/20)</font>% 攻击力，对小兵两倍效果。"
 		"DOTA_Tooltip_Ability_B31T_old" "不动如山"
@@ -3184,7 +3184,7 @@
 		"DOTA_Tooltip_Ability_A11R"	 "老奸巨猾"
 		"DOTA_Tooltip_Ability_A11R_Description"	"永久提升<font color='#5cb85c'>(10/16/22/28)</font>点的智慧。若敌人在斋藤道三身边<font color='#5cb85c'>(600/700/800/900)</font>范围内施展技能，则会受到等同于斋藤道三智慧1.5倍的真实伤害，对魔法免疫伤害减半，每0.2秒最多触发一次。"
 		"DOTA_Tooltip_Ability_A11T"  "禁术．邪妖万化"
-		"DOTA_Tooltip_Ability_A11T_Description"	"使用禁术让自身成为妖邪所汇聚的躯壳，额外增加<font color='#5cb85c'>(350/450/550)</font>生命，使周围的敌人降低15% 移动速度，并且每1.5秒随机对周围的三名敌人释放邪灵冲击，造成等同道三智慧的伤害并且道三可以回复以此法所造成的伤害50% 的生命，妖邪万化持续<font color='#5cb85c'>(12/15/18</font>)秒。"
+		"DOTA_Tooltip_Ability_A11T_Description"	"使用禁术让自身成为妖邪所汇聚的躯壳，额外增加<font color='#5cb85c'>(350/450/550)</font>生命，使周围的敌人降低30% 移动速度，并且每1.5秒随机对周围的(3/4/5)名敌人释放邪灵冲击，造成等同道三智慧的伤害并且道三可以回复以此法所造成的伤害50% 的生命，妖邪万化持续<font color='#5cb85c'>(12/15/18</font>)秒。"
 
 		"DOTA_Tooltip_Ability_A11W_old"	 "妖术．漩涡"
 		"DOTA_Tooltip_Ability_A11W_old_Description"	"召唤一个漩涡，每秒造成范围500内的敌人<font color='#5cb85c'>(80/120/160/200)</font>点伤害，可持续10秒，对建筑物只会造成20% 伤害。"
