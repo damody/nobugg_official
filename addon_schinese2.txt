@@ -3031,6 +3031,17 @@
 		"DOTA_Tooltip_Ability_B23R_Description" "创造一场灵魂飨宴，每0.2秒回复<font color='#5cb85c'>(15/21/27/33)</font>生命值，持续4秒，在魂飨持续的时间内，伊势姬以及她的亡魂获得魔法免疫。"
 		"DOTA_Tooltip_Ability_B23T" "英灵庇佑"
 		"DOTA_Tooltip_Ability_B23T_Description" "庇佑范围<font color='#5cb85c'>(550/700/850)</font>的友军，使他们进入无敌状态，并使所有亡魂增加150% 攻速，持续16秒。"
+		
+		"DOTA_Tooltip_Ability_B23D_old" "亡灵之契" 
+		"DOTA_Tooltip_Ability_B23D_old_Description" "跟死者订下永久的契约，使他们从尸体中诞生为了伊势姬而战，最多将可以召唤<font color='#5cb85c'>(4/5/6/7)</font>个亡魂；每存在一个亡魂伊势姬所受到的伤害减少14% 。当亡魂死亡时，伊势姬将会失去总法力的15% 。天生主动技，提升“英灵庇佑”技能等级可强化此技能。"
+		"DOTA_Tooltip_Ability_B23W_old" "聚灵咒"
+		"DOTA_Tooltip_Ability_B23W_old_Description" "将所有亡魂聚集到目标地点，瞬间所产生的灵压将可以对该地点周围的敌人造成每个亡灵<font color='#5cb85c'>(55/80/105/130)</font>伤害，并且留下一个灵火，灵火每秒使周围敌人受到<font color='#5cb85c'>(80/110/140/170)</font>伤害，可以存在30秒。"
+		"DOTA_Tooltip_Ability_B23E_old" "生灵冲击"
+		"DOTA_Tooltip_Ability_B23E_old_Description" "抽取附近所有亡魂的生命转为纯粹的灵能，冲击指定目标，每个冲击可以造成<font color='#5cb85c'>(35/50/65/80)</font>的伤害并且减缓移动速度35% ，持续<font color='#5cb85c'>(3/5/7/9)</font>秒。"
+		"DOTA_Tooltip_Ability_B23R_old" "魂飨"
+		"DOTA_Tooltip_Ability_B23R_old_Description" "创造一场灵魂飨宴，每0.2秒回复<font color='#5cb85c'>(15/21/27/33)</font>生命值，持续4秒，在魂飨持续的时间内，伊势姬以及她的亡魂获得魔法免疫。"
+		"DOTA_Tooltip_Ability_B23T_old" "心灵控制"
+		"DOTA_Tooltip_Ability_B23T_old_Description" "控制一个敌方单位，持续<font color='#5cb85c'>(7/10/13)</font>秒，对魔免单位时间减半，若控制时伊势姬死亡则控制效果消失，无法操作中立野怪。"
 
 		"B23D_ghost"		"亡魂"
 		"B23D_ghost_bio"	"亡魂"
@@ -3097,7 +3108,7 @@
 		"DOTA_Tooltip_Ability_C16E" "咒术．咒影"
 		"DOTA_Tooltip_Ability_C16E_Description" "诅咒指定敌军，使他每秒受到<font color='#5cb85c'>(35/70/105/140)</font>伤害，并且缓慢<font color='#5cb85c'>(15/21/27/33)%</font>移动速度，持续5秒。若是被诅咒的目标死亡，则会从尸体中诞生出一个鬼影，鬼影为永久隐形 。"
 		"DOTA_Tooltip_Ability_C16R" "咒术．行空魂"
-		"DOTA_Tooltip_Ability_C16R_Description" "召唤出<font color='#5cb85c'>(9/10/11/12)</font>个具有84点攻击力四魂体跟随着果心居士，魂体将会攻击身旁的敌军 并且夺取他们的生命给予果心居士。持续20秒。"
+		"DOTA_Tooltip_Ability_C16R_Description" "召唤出<font color='#5cb85c'>(6/8/10/12)</font>个具有84点攻击力四魂体跟随着果心居士，魂体将会攻击身旁的敌军 并且夺取他们的生命给予果心居士。持续20秒。"
 		"DOTA_Tooltip_Ability_C16T" "幻咒之术．奇门遁甲"
 		"DOTA_Tooltip_Ability_C16T_Description" "在指定的范围内召唤出<font color='#5cb85c'>(20/25/30)</font>个杀生石形成石阵，使范围内的敌人晕眩<font color='#5cb85c'>(1/1.5/2)</font>秒并且杀生石会开始攻击敌军，每次攻击可以造成最少<font color='#5cb85c'>(15/20/25)</font>真实伤害。杀生石存在15秒。"
 
@@ -3163,6 +3174,26 @@
 		"DOTA_Tooltip_Ability_B31R_old_Description" "增加附近600范围友方英雄<font color='#5cb85c'>(5/10/15/20)</font>% 攻击力，对小兵两倍效果。"
 		"DOTA_Tooltip_Ability_B31T_old" "不动如山"
 		"DOTA_Tooltip_Ability_B31T_old_Description" "启动时，增加<font color='#5cb85c'>(10/20/30)</font>点基础防御、<font color='#5cb85c'>(30/55/70)</font>点基础攻击、<font color='#5cb85c'>(800/1300/1800)</font>点额外生命值及法术免疫。每0.9秒对附近650范围的一个敌人降下陨石而造成200点伤害，然后在5秒内每秒造成20点伤害。持续38秒。"
+
+		"npc_dota_hero_necrolyte" "斋藤道三"
+		"npc_dota_hero_necrolyte_hype" "斋藤道三──织田信长的岳父──山城西冈武士松浪基宗的庶子，有义龙、孙四郎、喜平次三个儿子，他因为讨厌长子义龙，想把家业传给三子喜平次。斋藤道三为一代奸雄，外号腹蛇，残忍无情，未达目的不择手段。据说他曾把犯人放进大锅烧煮，并命犯人妻子在灶旁加火添柴。"
+		"DOTA_Tooltip_Ability_A11W"	 "妖术．漩涡"
+		"DOTA_Tooltip_Ability_A11W_Description"	"召唤一个漩涡，对范围内的敌人每秒造成<font color='#5cb85c'>(100/150/200/250)</font>伤害，持续5秒，对建筑物只会造成20% 伤害。"
+		"DOTA_Tooltip_Ability_A11E"  "妖术．冥锁"
+		"DOTA_Tooltip_Ability_A11E_Description"	"以冥锁绑住距离800内的指定目标，让他无法移动或攻击，每秒受到135伤害。持续<font color='#5cb85c'>(2.0/2.5/3.0/3.5)</font>秒。"
+		"DOTA_Tooltip_Ability_A11R"	 "老奸巨猾"
+		"DOTA_Tooltip_Ability_A11R_Description"	"永久提升<font color='#5cb85c'>(10/16/22/28)</font>点的智慧。若敌人在斋藤道三身边<font color='#5cb85c'>(600/700/800/900)</font>范围内施展技能，则会受到等同于斋藤道三智慧1.5倍的真实伤害，对魔法免疫伤害减半，每0.2秒最多触发一次。"
+		"DOTA_Tooltip_Ability_A11T"  "禁术．邪妖万化"
+		"DOTA_Tooltip_Ability_A11T_Description"	"使用禁术让自身成为妖邪所汇聚的躯壳，额外增加<font color='#5cb85c'>(350/450/550)</font>生命，使周围的敌人降低15% 移动速度，并且每1.5秒随机对周围的三名敌人释放邪灵冲击，造成等同道三智慧的伤害并且道三可以回复以此法所造成的伤害50% 的生命，妖邪万化持续<font color='#5cb85c'>(12/15/18</font>)秒。"
+
+		"DOTA_Tooltip_Ability_A11W_old"	 "妖术．漩涡"
+		"DOTA_Tooltip_Ability_A11W_old_Description"	"召唤一个漩涡，每秒造成范围500内的敌人<font color='#5cb85c'>(80/120/160/200)</font>点伤害，可持续10秒，对建筑物只会造成20% 伤害。"
+		"DOTA_Tooltip_Ability_A11E_old"  "妖术．腹蛇之锁"
+		"DOTA_Tooltip_Ability_A11E_old_Description"	"绑住距离800内的指定目标，让它无法作出 任何动作并每秒受到<font color='#5cb85c'>(20/25/30/35)</font>伤害。需持续施法，最多可持续<font color='#5cb85c'>(3/4/5/6)</font>秒。"
+		"DOTA_Tooltip_Ability_A11R_old"	 "老奸巨猾"
+		"DOTA_Tooltip_Ability_A11R_old_Description"	"额外增加智慧<font color='#5cb85c'>(10/20/30/40)</font>点。"
+		"DOTA_Tooltip_Ability_A11T_old"  "禁术．邪妖缠绕"
+		"DOTA_Tooltip_Ability_A11T_old_Description"	"召唤出妖风，导致全区域敌人降低<font color='#5cb85c'>(30/35/40)% </font>移动速度以及对小兵减缓<font color='#5cb85c'>(30/60/90)% </font>攻击速度。持续15秒，道三死亡妖风将会停止。"
 
 	}
 }
