@@ -120,6 +120,11 @@
 				"Target"	"TARGET"
 				"ModifierName"	"modifier_C07E"
 			}
+			"ApplyModifier"
+			{
+				"Target"	"CASTER"
+				"ModifierName"	"modifier_C07E2"
+			}
 			"FireSound"
 			{
 				"Target"	"CASTER"
@@ -155,6 +160,19 @@
 		}
 		"Modifiers"
 		{
+			"modifier_C07E2"
+			{
+				"IsHidden"	"1"
+				"Passive"	"0"
+				"OnAbilityExecuted"
+				{
+					"RemoveModifier"
+					{
+						"ModifierName"	"modifier_C07E2"
+						"Target" 		"CASTER"
+					}
+				}
+			}
 			"modifier_C07E"
 			{
 				"Passive"	"0"
@@ -437,7 +455,7 @@
 				}
 				"Properties"	
 				{
-					"MODIFIER_PROPERTY_INCOMING_PHYSICAL_DAMAGE_PERCENTAGE"	"-25"
+					//"MODIFIER_PROPERTY_INCOMING_PHYSICAL_DAMAGE_PERCENTAGE"	"-25"
 					//"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE" "-100"
 				}
 				"OnCreated"
@@ -511,7 +529,7 @@
 				}
 				"Properties"	
 				{
-					"MODIFIER_PROPERTY_INCOMING_PHYSICAL_DAMAGE_PERCENTAGE"	"%incoming_physical_damge_reduce"
+					"MODIFIER_PROPERTY_INCOMING_PHYSICAL_DAMAGE_PERCENTAGE"	"%reduce_incoming_physical_damge"
 					// "MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%reduce_atk_spd"
 				}
 				"OnCreated"
@@ -597,6 +615,11 @@
 				"Target"	"TARGET"
 				"ModifierName"	"modifier_C07E"
 			}
+			"ApplyModifier"
+			{
+				"Target"	"CASTER"
+				"ModifierName"	"modifier_C07E2"
+			}
 			"FireSound"
 			{
 				"Target"	"CASTER"
@@ -631,6 +654,19 @@
 		}
 		"Modifiers"
 		{
+			"modifier_C07E2"
+			{
+				"IsHidden"	"1"
+				"Passive"	"0"
+				"OnAbilityExecuted"
+				{
+					"RemoveModifier"
+					{
+						"ModifierName"	"modifier_C07E2"
+						"Target" 		"CASTER"
+					}
+				}
+			}
 			"modifier_C07E"
 			{
 				"Passive"	"0"
@@ -770,7 +806,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityType"	"DOTA_ABILITY_TYPE_ULTIMATE"
-		"AbilityCooldown"	"140"
+		"AbilityCooldown"	"130 120 110"
 		"AbilityManaCost"	"300 400 500"
 		"RequiredLevel"	"6"
 		"LevelsBetweenUpgrades"	"6"

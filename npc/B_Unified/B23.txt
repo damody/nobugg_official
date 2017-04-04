@@ -89,15 +89,6 @@
 		"AbilityManaCost"                           "110"
 		"MaxLevel"									"4"
 		
-		"OnCreated"
-		{
-			"RunScript"
-			{
-				"ScriptFile"						"scripts/vscripts/heroes/B_Unified/B23.lua"
-				"Function"							"B23D_onCreated"
-			}
-		}
-
 		"OnSpellStart"
 		{
 			"RunScript"
@@ -144,6 +135,14 @@
 				"IsHidden"						"1"
 				"Passive"						"1"
 				"Attributes"					"MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"        	"scripts/vscripts/heroes/B_Unified/B23.lua"
+						"Function"              "B23D_OnCreated"
+					}
+				}
 				"OnUnitMoved"
 				{
 					"RunScript"
@@ -545,15 +544,7 @@
 		"AbilityManaCost"                           "110"
 		"MaxLevel"									"4"
 		
-		"OnCreated"
-		{
-			"RunScript"
-			{
-				"ScriptFile"						"scripts/vscripts/heroes/B_Unified/B23.lua"
-				"Function"							"B23D_onCreated"
-			}
-		}
-
+		
 		"OnSpellStart"
 		{
 			"RunScript"
@@ -606,6 +597,14 @@
 					{
 						"ScriptFile"        	"scripts/vscripts/heroes/B_Unified/B23.lua"
 						"Function"              "B23D_distanceDetector_hero"
+					}
+				}
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"        	"scripts/vscripts/heroes/B_Unified/B23.lua"
+						"Function"              "B23D_OnCreated"
 					}
 				}
 			}
@@ -837,7 +836,7 @@
 		"AbilityTextureName"                        "vengefulspirit_command_aura"
 
 		"AbilityCastPoint"          				"0"
-		"AbilityCooldown"           				"150 130 110"
+		"AbilityCooldown"           				"130 120 110"
 		"AbilityManaCost"           				"300"
 		"AbilityCastRange"							"700"
 

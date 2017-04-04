@@ -91,7 +91,7 @@
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityCooldown"	"10"
-		"AbilityManaCost"	"220 260 300 340"
+		"AbilityManaCost"	"200 220 240 260"
 		"AOERadius"	"500"
 		"precache"
 		{
@@ -639,7 +639,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityType"	"DOTA_ABILITY_TYPE_ULTIMATE"
 		"HotKeyOverride"	"T"
-		"AbilityCooldown"	"135"
+		"AbilityCooldown"	"155 145 135"
 		"MaxLevel"	"3"
 		"RequiredLevel"	"6"
 		"LevelsBetweenUpgrades"	"6"
@@ -663,7 +663,11 @@
 			}
 			"ApplyModifier"
 			{
-				"Target"	"CASTER"
+				"Target"
+				{
+				    "Center" "CASTER"
+				    "Flags" "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+				}
 				"ModifierName"	"modifier_B06T"
 			}
 			"Heal"
@@ -781,7 +785,11 @@
 			}
 			"ApplyModifier"
 			{
-				"Target"	"CASTER"
+				"Target"
+				{
+				    "Center" "CASTER"
+				    "Flags" "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+				}
 				"ModifierName"	"modifier_B06T"
 			}
 			"Heal"
@@ -804,21 +812,7 @@
 				}
 				"Passive"	"0"
 				"Duration"	"%During"
-				"OnCreated"
-				{
-					"AttachEffect"
-					{
-						"Target"	"TARGET"
-						"ControlPointEntities"
-						{
-							"TARGET"	"attach_origin"
-							"TARGET"	"attach_attack1"
-							"TARGET"	"attach_overhead"
-						}
-						"EffectName"	"particles/b06t/b06t.vpcf"
-						"EffectAttachType"	"start_at_customorigin"
-					}
-				}
+				"EffectName"	"particles/b06t/b06t.vpcf"
 				"OnAttackLanded"
 				{
 					"FireSound"	{}
