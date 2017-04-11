@@ -943,7 +943,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"base_hp"	"3000 4000 5000"
+				"base_hp"	"5000 7000 9000"
 			}
 			"02"
 			{

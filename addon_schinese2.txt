@@ -320,7 +320,7 @@
 		"DOTA_Tooltip_Ability_item_waterfall_book_Description"	"施展500区域的水瀑布，然后每秒造成200点伤害，持续10秒 "
 		
 		"DOTA_Tooltip_Ability_item_volcano_wand" "伏魔轮杖"
-		"DOTA_Tooltip_Ability_item_volcano_wand_Description"	"智慧+40、攻击+40 唯一被动： 魔抗+50% "
+		"DOTA_Tooltip_Ability_item_volcano_wand_Description"	"智慧+10、攻击+10 唯一被动： 魔抗+50% "
 		
 		"DOTA_Tooltip_Ability_item_ninja_protection" "忍者护符"
 		"DOTA_Tooltip_Ability_item_ninja_protection_Description"	"全能力+5、魔法抗性10% 【使用】持续施法并隐形，解除施法后会现形。"
@@ -729,10 +729,10 @@
 		"DOTA_Tooltip_Ability_item_dark_boots_1_Description" "移动速度+90，攻击伤害+30，攻速+30% 。【使用】在10秒内获得魔法免疫。<font color='#cc0000'>移动速度不得累计。</font>"
 
 		"DOTA_Tooltip_Ability_item_mana_boots" "仕手能靴"
-		"DOTA_Tooltip_Ability_item_mana_boots_Description" "移动速度+60，全能力+5。每秒回复8.5法力，回魔速率+150% 。【使用】在5秒内获得魔法免疫。<font color='#cc0000'>移动速度不得累计。</font>"
+		"DOTA_Tooltip_Ability_item_mana_boots_Description" "移动速度+60，智力+5。每秒回复8.5法力，回魔速率+150% 。【使用】在5秒内获得魔法免疫。<font color='#cc0000'>移动速度不得累计。</font>"
 
 		"DOTA_Tooltip_Ability_item_mana_boots_1" "破魔．仕手能靴"
-		"DOTA_Tooltip_Ability_item_mana_boots_1_Description" "移动速度+60，全能力+5。每秒回复8.5法力，回魔速率+150% 。【使用】在10秒内获得魔法免疫。<font color='#cc0000'>移动速度不得累计。</font>"
+		"DOTA_Tooltip_Ability_item_mana_boots_1_Description" "移动速度+60，智力+5。每秒回复8.5法力，回魔速率+150% 。【使用】在10秒内获得魔法免疫。<font color='#cc0000'>移动速度不得累计。</font>"
 
 		"DOTA_Tooltip_Ability_item_ryukyu_ronin_clogs" "琉球浪人木屐"
 		"DOTA_Tooltip_Ability_item_ryukyu_ronin_clogs_Description" "移动速度+75，生命值+360，15% 机率格档攻击。【使用】在5秒内获得魔法免疫。<font color='#cc0000'>移动速度不得累计。</font>"
@@ -787,7 +787,7 @@
 		"DOTA_Tooltip_Ability_item_the_blade_of_blood_devourer_Description" "攻击伤害+50，全能力+5。降低所受的法术伤害20% 。【使用】攻击伤害+40，每次攻击吸取造成伤害的<font color='#f0ad4e'>30% </font>生命值，持续20秒。"
 
 		"DOTA_Tooltip_Ability_item_bizennosafunekanemitsu" "备前兼光"
-		"DOTA_Tooltip_Ability_item_bizennosafunekanemitsu_Description" "攻击伤害+50，攻速+30% ，全能力+10。每使用一个技能或是物品，可以使自身增加<font color='#5bc0de'>20% </font>攻击伤害以及每秒回复30生命，持续5秒。【使用】使目标友军回复650生命值。<font color='#f0ad4e'>可治疗魔法免疫单位</font>"
+		"DOTA_Tooltip_Ability_item_bizennosafunekanemitsu_Description" "攻击伤害+50，攻速+30% ，全能力+10。每使用一个技能或是物品，可以使自身增加<font color='#5bc0de'>10% </font>攻击伤害以及每秒回复20生命，持续5秒，叠满后30秒内最多只能叠1层。【使用】使目标友军回复650生命值。<font color='#f0ad4e'>可治疗魔法免疫单位</font>"
 
 		"DOTA_Tooltip_Ability_item_the_scream_of_spiders" "鬼蜘蛛．夜哭"
 		"DOTA_Tooltip_Ability_item_the_scream_of_spiders_Description" "攻击伤害+65，全能力+20。减缓周围500敌人15% 移动速度。攻击敌人时有23% 机率切割对方的真灵，造成该敌人<font color='#f0ad4e'>14% </font>现有生命的伤害，最低可以造成250伤害。<font color='#cc0000'>法球效果，不可与其他法球并存，对魔免造成1.5倍物理伤害。</font>"
@@ -820,7 +820,7 @@
 		"DOTA_Tooltip_Ability_item_ninja_cloth_Description" "护甲+6，全能力+10，攻速+25% ，<font color='#5bc0de'>25% 机率闪避攻击。</font>"
 
 		"DOTA_Tooltip_Ability_item_the_dark_armor" "黑漆涂五枚胴"
-		"DOTA_Tooltip_Ability_item_the_dark_armor_Description" "护甲+5，智慧+10，法力回复+150% 。【使用】使周围友军在5秒内回复420生命和255法力。"
+		"DOTA_Tooltip_Ability_item_the_dark_armor_Description" "护甲+5，智慧+10，法力回复+150% 。【使用】使周围友军在5秒内回复550生命和336法力。"
 
 
 		"DOTA_Tooltip_Ability_item_reito_lantern" "灵都宫灯"
@@ -835,10 +835,10 @@
 
 
 		"DOTA_Tooltip_Ability_item_the_overflame_art_of_war" "大炎上之书"
-		"DOTA_Tooltip_Ability_item_the_overflame_art_of_war_Description" "智慧+40。【使用】对指定区域内降下10波炎雨，每波造成400伤害并且使当中的敌人燃烧，每秒造成60伤害，持续5秒。<font color='#cc0000'>可对建筑物造成10% 伤害</font>"
+		"DOTA_Tooltip_Ability_item_the_overflame_art_of_war_Description" "智慧+40。【使用】对指定区域内降下10波炎雨，每波造成400伤害并且使当中的敌人燃烧，每秒造成60伤害，持续5秒。<font color='#cc0000'>可对建筑物造成20% 伤害</font>"
 
 		"DOTA_Tooltip_Ability_item_the_overflame_art_of_war_hyper" "真．大炎上之书"
-		"DOTA_Tooltip_Ability_item_the_overflame_art_of_war_hyper_Description" "智慧+70。【使用】在指定地点引起地震以及落石和大火持续10秒，地震可缓慢区域中80% 移动，落石每波可造成600点伤害，大火可对目标造成120点伤害持续5秒。<font color='#cc0000'>可对建筑物造成10% 伤害</font>"
+		"DOTA_Tooltip_Ability_item_the_overflame_art_of_war_hyper_Description" "智慧+70。【使用】在指定地点引起地震以及落石和大火持续10秒，地震可缓慢区域中80% 移动，落石每波可造成600点伤害，大火可对目标造成120点伤害持续5秒。<font color='#cc0000'>可对建筑物造成20% 伤害</font>"
 
 
 		"DOTA_Tooltip_Ability_item_the_art_of_war_tornado_chapter" "孙子兵法．风之章"
@@ -1098,7 +1098,7 @@
 		"DOTA_Tooltip_Ability_C10T_old_Description" "增加攻击<font color='#5cb85c'>(25/45/65)</font>点，攻击时有50% 机率打出升龙乱舞，对一直线上的敌人造成<font color='#5cb85c'>(160/235/310)</font>伤害，对魔免伤害减半。"
 		// 立花道雪
 		"DOTA_Tooltip_Ability_C07D"	"御魔之盾"
-		"DOTA_Tooltip_Ability_C07D_Description"	"举起御魔之盾，将可以获得魔法免疫，但是会因为做出防御的姿势而无法移动，并得到25% 物理伤害减免。"
+		"DOTA_Tooltip_Ability_C07D_Description"	"举起御魔之盾，将可以获得魔法免疫，但是会因为做出防御的姿势而无法移动。"
 		"DOTA_Tooltip_Ability_C07W"	"天雷降"
 		"DOTA_Tooltip_Ability_C07W_Description"	"召唤天降闪电打击指定的区域，每秒造成<font color='#5cb85c'>(40/80/120/160)</font>伤害，持续10秒。 "
 		"DOTA_Tooltip_Ability_C07E"	"雷电桎梏"
@@ -1199,11 +1199,11 @@
 		"DOTA_Tooltip_modifier_C17E_Description"	"祈胜光辉"
 		
 		"DOTA_Tooltip_Ability_C17W_old"	"光之精华"
-		"DOTA_Tooltip_Ability_C17W_old_Description" "无视负面状态的回复范围内友方部队<font color='#f0ad4e'>(150/300/450/600)</font>生命点数。"
+		"DOTA_Tooltip_Ability_C17W_old_Description" "无视负面状态的回复范围内友方部队<font color='#f0ad4e'>(75/150/225/300)</font>生命点数。"
 		"DOTA_Tooltip_Ability_C17E_old"	"魂之精华"
-		"DOTA_Tooltip_Ability_C17E_old_Description" "回复范围内友方部队<font color='#f0ad4e'> (100/200/300/400) </font>法力点数。"
+		"DOTA_Tooltip_Ability_C17E_old_Description" "回复范围内友方部队<font color='#f0ad4e'> (50/100/150/200) </font>法力点数。"
 		"DOTA_Tooltip_Ability_C17R_old"	"静滞陷阱"
-		"DOTA_Tooltip_Ability_C17R_old_Description" "放置一个将于2.5秒后隐形的静滞陷阱存在200秒。隐形后，敌人靠近275范围时自动启动，造成425范围敌人<font color='#f0ad4e'> (3.5/4.5/5.5/6.5) </font>秒晕眩。"
+		"DOTA_Tooltip_Ability_C17R_old_Description" "放置一个将于2.5秒后隐形的静滞陷阱存在200秒。隐形后，敌人靠近275范围时自动启动，造成425范围敌人<font color='#f0ad4e'>(3.5/4.5/5.5/6.5)</font>秒晕眩与陷阱当前魔量的伤害，陷阱的起始魔量为<font color='#f0ad4e'>(100/200/300/400)</font>。"
 		"DOTA_Tooltip_Ability_C17T_old"	"极光守护"
 		"DOTA_Tooltip_Ability_C17T_old_Description" "延迟<font color='#f0ad4e'> (1.5/1/0.5) </font>秒后释放出极光守护，对敌人造成<font color='#f0ad4e'>(900/1300/1800)</font>伤害，无视负面状态的恢复友方部队所有生命。"
 		"C17R_old_SUMMEND_UNIT" "静滞陷阱"
@@ -1232,7 +1232,7 @@
 		"DOTA_Tooltip_Ability_B15T_Description"	"狂喝一声使周围500的敌人震晕<font color='#5cb85c'>(0.1/1.0/1.5)</font>秒，并且每<font color='#5cb85c'>(0.7/0.5/0.3)</font>秒造出 一个自身的幻象，幻象能造成30% 伤害受到300% 伤害，持续10秒。 "
 
 		"DOTA_Tooltip_Ability_B15W_old"	"巨人之臂力"
-		"DOTA_Tooltip_Ability_B15W_old_Description"	"增加<font color='#5cb85c'>(10/20/30/40)</font>力量与<font color='#5cb85c'>(20/30/40/50)</font>点攻击力。"
+		"DOTA_Tooltip_Ability_B15W_old_Description"	"增加<font color='#5cb85c'>(10/20/30/40)</font>力量与<font color='#5cb85c'>(20/30/40/50)</font>点攻击力，持续40秒。"
 		"DOTA_Tooltip_Ability_B15E_old"	"烈焰箭"
 		"DOTA_Tooltip_Ability_B15E_old_Description"	"启动之后弓箭附加<font color='#5cb85c'>(40/80/120/160)</font>魔法伤害，对建筑物造成50% 伤害，可附加于多重箭，每次攻击消耗8点魔力。"
 		"DOTA_Tooltip_Ability_B15R_old"	"巨人之外皮"
@@ -1448,7 +1448,7 @@
 	    "DOTA_Tooltip_Ability_A25W"  "远雷遥"
 	    "DOTA_Tooltip_Ability_A25W_Description" "对指定的方向开出一枪，让路径上穿过的敌人受到<font color='#5cb85c'>(200/300/400/500)</font>的伤害。"
 	    "DOTA_Tooltip_Ability_A25E"  "厄灾之棘"
-		"DOTA_Tooltip_Ability_A25E_Description" "让指定范围的地面穿出无数的厄灾之棘；总共可以对范围内的敌人造成<font color='#5cb85c'>(200/300/400/500)</font>伤害并封锁行动(1.1/1.4/1.7/2.0)秒，并且自身可以增加<font color='#5cb85c'>(30/50/70/90)</font>攻击力，持续8秒。"
+		"DOTA_Tooltip_Ability_A25E_Description" "让指定范围的地面穿出无数的厄灾之棘；总共可以对范围内的敌人造成<font color='#5cb85c'>(200/300/400/500)</font>伤害并封锁行动<font color='#5cb85c'>(1.1/1.4/1.7/2.0)</font>秒，并且自身可以增加<font color='#5cb85c'>(30/50/70/90)</font>攻击力，持续8秒。"
 	    "DOTA_Tooltip_Ability_A25R"  "压切"
 	    "DOTA_Tooltip_Ability_A25R_Description" "让手上的名刀．压切更具杀伤力，增加<font color='#5cb85c'>(12/23/34/45)</font>攻击伤害，有20% 机会在攻击时造成<font color='#5cb85c'>(2.0/2.5/3.0/3.5)</font>倍的伤害。"
 	    "DOTA_Tooltip_Ability_A25T"  "障壁深红"
@@ -1479,9 +1479,9 @@
 	    "DOTA_Tooltip_Ability_A26E"  "火药踢击"
 		"DOTA_Tooltip_Ability_A26E_Description" "回旋踢击周围300的敌人并引爆藏在鞋底的火药，使周围的敌人受到200伤害并且使敌方英雄击退<font color='#5cb85c'>(0.8/1.1/1.4/1.7)</font>秒。"
 	    "DOTA_Tooltip_Ability_A26R"  "二丁铳"
-	    "DOTA_Tooltip_Ability_A26R_Description" "有<font color='#5cb85c'>(20/30/40/50)% </font>机率在攻击时使用双铳攻击而造成双倍爆击。"
+	    "DOTA_Tooltip_Ability_A26R_Description" "有<font color='#5cb85c'>(10/20/30/40)% </font>机率在攻击时使用双铳攻击而造成双倍爆击。"
 	    "DOTA_Tooltip_Ability_A26T"  "灼热爆裂投掷"
-	    "DOTA_Tooltip_Ability_A26T_Description" "对目标地点投掷一枚威力强大的炸弹，可以造成范围<font color='#5cb85c'>(160/220/280)</font> 加上 	10x浓姬等级的 绝对伤害，并且每投掷2枚，接下来的第三枚炸弹将会使敌人震晕1.5秒，对魔免伤害减半。"
+	    "DOTA_Tooltip_Ability_A26T_Description" "对目标地点投掷一枚威力强大的炸弹，可以造成范围<font color='#5cb85c'>(250/400/550)</font>真实伤害对魔免减半，并且每投掷2枚，接下来的第三枚炸弹将会使敌人震晕1.5秒，对魔免伤害减半。"
 
 	    "DOTA_Tooltip_modifier_A26D_mine_aura" "隐雷"
 	    "DOTA_Tooltip_modifier_A26D_mine_aura_Description" "小心脚下。"
@@ -1492,7 +1492,7 @@
 	    // 浓姬 11.2B
 
 	    "DOTA_Tooltip_Ability_A26W_old"  "四连弹"
-		"DOTA_Tooltip_Ability_A26W_old_Description" "以回旋跳跃之姿连开四枪，来攻击射程700范围内的四名敌人造成普攻与额外<font color='#5cb85c'>(250/350/450/550)</font>点魔法伤害。"
+		"DOTA_Tooltip_Ability_A26W_old_Description" "以回旋跳跃之姿连开四枪，来攻击射程700范围内的四名敌人造成普攻与额外<font color='#5cb85c'>(100/200/300/400)</font>点魔法伤害。"
 	    
 	    "DOTA_Tooltip_Ability_A26E_old"  "三味火"
 		"DOTA_Tooltip_Ability_A26E_old_Description" "以火炎回旋踢攻击周围300的敌人并且击退，造成<font color='#5cb85c'>(200/300/400/500)</font>伤害并降低<font color='#5cb85c'>(30/40/50/60)% </font>的攻击及移动速度，持续4秒。"
@@ -1568,7 +1568,7 @@
 	    "DOTA_Tooltip_Ability_A29E_old" "老树盘根"
 	    "DOTA_Tooltip_Ability_A29E_old_Description" "让树根从地面窜出抓住目标，每秒造成<font color='#5cb85c'>(50/55/60/65)</font>点伤害并无法攻击及移动，持续<font color='#5cb85c'>(3/4/5/6)</font>秒。"
 	    "DOTA_Tooltip_Ability_A29R_old" "机智消磨"
-	    "DOTA_Tooltip_Ability_A29R_old_Description" "逐渐消减范围<font color='#5cb85c'>(1200)</font>内敌方部队的法力<font color='#5cb85c'>(12/24/36/48)</font>点，魔量少于50% 的敌军，每少10% 魔力减缓10% 跑速，最多缓50% 。"
+	    "DOTA_Tooltip_Ability_A29R_old_Description" "逐渐消减范围<font color='#5cb85c'>(1200)</font>内敌方部队的法力<font color='#5cb85c'>(8/12/16/20)</font>与<font color='#5cb85c'>(1/2/3/4)% </font>总魔力，魔量少于50% 的敌军，每少10% 魔力减缓10% 攻速跑速，最多缓50% ，缓速对魔免无效。"
 	    "DOTA_Tooltip_Ability_A29T_old" "兀鹰群"
 	    "DOTA_Tooltip_Ability_A29T_old_Description" "招唤来攻击力为<font color='#5cb85c'>(100/150/200)</font>的<font color='#5cb85c'>(14/17/20)</font>只兀鹰，攻击伤害的<font color='#5cb85c'>(60/70/80)% </font>将会补充英雄的生命，兀鹰会跟着施法者移动并主动攻击范围1100内的敌人。持续<font color='#5cb85c'>(42/45/48)</font>秒。"
 		
@@ -1919,7 +1919,7 @@
 		"DOTA_Tooltip_Ability_C11R_old" "雷之眼"
 		"DOTA_Tooltip_Ability_C11R_old_Description" "在范围450内召唤出落雷攻击敌人造成<font color='#5cb85c'>(150/250/350/450)</font>点伤害并晕眩<font color='#5cb85c'>(0.4/0.8/1.1/1.6)</font>秒。"
 		"DOTA_Tooltip_Ability_C11T_old" "西国无双"
-		"DOTA_Tooltip_Ability_C11T_old_Description" "攻击能消去目标<font color='#5cb85c'>(80/100/120)</font>法力并造成消去的法力的真实伤害对魔免伤害减半：英雄<font color='#5cb85c'>(135/145/155)% </font>、部队<font color='#5cb85c'>(180/200/220)% 。"
+		"DOTA_Tooltip_Ability_C11T_old_Description" "攻击能消去目标<font color='#5cb85c'>(150/250/350)</font>法力并造成消去的法力的真实伤害对魔免伤害减半：英雄<font color='#5cb85c'>(135/145/155)% </font>、部队<font color='#5cb85c'>(180/200/220)% 。"
 		
 		"DOTA_Tooltip_modifier_C11W_old" "雷切"
 		"DOTA_Tooltip_modifier_C11W_old_Description" "提升攻击力，普攻有机会造成额外伤害。"
@@ -2631,7 +2631,7 @@
 		"DOTA_Tooltip_Ability_B21R_old_Description" "增加900范围友军装甲<font color='#5cb85c'>(4/10/16/22)</font>点。"
 
 		"DOTA_Tooltip_Ability_B21T_old" "不死鬼美浓"
-		"DOTA_Tooltip_Ability_B21T_old_Description" "增加<font color='#5cb85c'>(22/33/44)</font>点力量值。生命低于<font color='#5cb85c'>(1600)</font>点时增加<font color='#5cb85c'>(210/360/520)</font>点攻击力与<font color='#5cb85c'>(70/90/110)</font>点装甲与50% 物理减伤，每秒回复<font color='#5cb85c'>(22/33/44)</font>生命，大绝发动时会锁血1600持续<font color='#5cb85c'>(4/7/10)</font>秒，30秒内无法重复发动。"
+		"DOTA_Tooltip_Ability_B21T_old_Description" "增加<font color='#5cb85c'>(22/33/44)</font>点力量值。生命低于<font color='#5cb85c'>(1600)</font>点时增加<font color='#5cb85c'>(210/360/520)</font>点攻击力与<font color='#5cb85c'>(70/90/110)</font>点装甲与50% 物理减伤，每秒回复<font color='#5cb85c'>(22/33/44)</font>生命，大绝发动时会锁血1600持续<font color='#5cb85c'>(3/4/5)</font>秒，30秒内无法重复发动。"
 
 		"DOTA_Tooltip_modifier_B21E_old_buff" "杀意"
 		"DOTA_Tooltip_modifier_B21E_old_buff_Description" "提升攻击力、移动与攻击速度。"
@@ -3052,9 +3052,9 @@
 		"DOTA_Tooltip_Ability_A23W" "鬼术．恶血咒"
 		"DOTA_Tooltip_Ability_A23W_Description" "将恶血咒注入到目标的体内，在2秒后爆发，以该目标为中心造成范围<font color='#5cb85c'>(200/300/400/500)</font>伤害以及震晕<font color='#5cb85c'>(1.0/1.5/2.0/2.5)</font>秒。 若注入的时间该敌人处于灵魂锁缚状态下，则爆发的震晕效果无视魔法免疫。"
 		"DOTA_Tooltip_Ability_A23E" "鬼术．灵魂锁缚"
-		"DOTA_Tooltip_Ability_A23E_Description" "指定目标英雄，在自身位置插下结界并在双方之间建立一道连锁，每1秒对该敌方英雄造成50+自身智慧的伤害，对魔免单位伤害减半，而连锁长度每延长<font color='#5cb85c'>(250/200/150/100)</font>便可以使伤害提升5% ，持续<font color='#5cb85c'>(3/4/5/6)</font>秒。"
+		"DOTA_Tooltip_Ability_A23E_Description" "指定目标英雄，在自身位置插下结界并在双方之间建立一道连锁，每1秒对该敌方英雄造成100+自身智慧的伤害，对魔免单位伤害减半，而连锁长度每延长<font color='#5cb85c'>(250/200/150/100)</font>便可以使伤害提升5% ，持续<font color='#5cb85c'>(3/4/5/6)</font>秒。"
 		"DOTA_Tooltip_Ability_A23R" "鬼术．坠火"
-		"DOTA_Tooltip_Ability_A23R_Description" "使指定区域每0.3秒降下一波火雨，造成<font color='#5cb85c'>(40/80/120/160)</font>伤害，对建筑物只有20% 伤害，并且使集中的敌人燃烧，每秒受到<font color='#5cb85c'>(20/30/40/50)</font>伤害，持续4秒。总共可降下10波火雨。"
+		"DOTA_Tooltip_Ability_A23R_Description" "使指定区域每0.3秒降下一波火雨，造成<font color='#5cb85c'>(40/80/120/160)</font>伤害，对建筑物只有20% 伤害，并且使击中的敌人燃烧，每秒受到<font color='#5cb85c'>(20/25/30/35)</font>伤害可叠加，持续4秒。总共可降下10波火雨。"
 		"DOTA_Tooltip_Ability_A23T" "禁术．黄泉之焰"
 		"DOTA_Tooltip_Ability_A23T_Description" "使目标敌人陷入黄泉之火的燃烧中，每秒受到<font color='#5cb85c'>(115/180/280)</font>伤害，并且无法使用技能以及物品，持续6秒。"
 		//武田信玄
@@ -3071,7 +3071,7 @@
 
 		//武田信玄 11.2B
 		"DOTA_Tooltip_Ability_B31W_old" "疾如风"
-		"DOTA_Tooltip_Ability_B31W_old_Description" "增加附近600范围友方<font color='#5cb85c'>(5/10/15/20)</font>% 移动速度及<font color='#5cb85c'>(0.5/1/1.5/2)</font>% 的每秒回血，对小兵两倍效果。"
+		"DOTA_Tooltip_Ability_B31W_old_Description" "增加附近600范围友方<font color='#5cb85c'>(5/10/15/20)</font>% 移动速度及<font color='#5cb85c'>(0.4/0.8/1.2/1.6)</font>% 的每秒回血，对小兵两倍效果。"
 		"DOTA_Tooltip_Ability_B31E_old" "徐如林"
 		"DOTA_Tooltip_Ability_B31E_old_Description" "每秒呼叫<font color='#5cb85c'>(11/12/13/14)</font>匹武田骑兵队，每个骑兵可以对敌人造成<font color='#5cb85c'>(40/70/100/130)</font>点魔法伤害。需持续施法，最多可持续3秒。"
 		"DOTA_Tooltip_Ability_B31R_old" "侵略如火"
@@ -3122,14 +3122,87 @@
 		"npc_dota_hero_chen" "真田昌幸"
 		"npc_dota_hero_chen_hype" "幸隆的三男。丰臣秀吉称他是“里外都卑鄙”的稀世谋将。曾经用仅仅数千名士兵，就把行军关原途中的德川秀忠军３万８千人阻于信浓。"
 		"DOTA_Tooltip_Ability_B09W" "反噬裂隙"
-		"DOTA_Tooltip_Ability_B09W_Description" "在目标敌方英雄身上创造一个法术裂隙，使他每秒受到可累加的<font color='#5cb85c'>(10/15/20/25)</font>伤害，持续8秒。若是该敌人在持续时间施展法术，则每施展一个法术，持续时间便往上增加1秒。对魔免伤害减半，堆叠上限20次，效果最长20秒。"
+		"DOTA_Tooltip_Ability_B09W_Description" "在目标敌方英雄身上创造一个法术裂隙，使他每秒受到可累加的<font color='#5cb85c'>(7/9/11/13)</font>伤害，持续8秒。若是该敌人在持续时间施展法术，则每施展一个法术，持续时间便往上增加1秒。对魔免伤害减半，堆叠上限20次，效果最长20秒。"
 		"DOTA_Tooltip_Ability_B09E" "意念爆发"
 		"DOTA_Tooltip_Ability_B09E_Description" "指定目标敌军，引导自身的法力于该敌军身上爆发，每0.5秒产生一波等同于自身总法力<font color='#5cb85c'>(5/7/10/13)</font>% +55的范围伤害。需维持施法，最久可维持10秒。"
 		"DOTA_Tooltip_Ability_B09R" "实念之盾"
 		"DOTA_Tooltip_Ability_B09R_Description" "创造一个实念之盾，可以靠着自身法力来吸收每次受到的30% 伤害，每1法力可以吸收<font color='#5cb85c'>(2/3/4/5)</font>伤害。"
 		"DOTA_Tooltip_Ability_B09T" "心灵压制"
 		"DOTA_Tooltip_Ability_B09T_Description" "指定全战场的任一范围，使该范围700内的所有敌人受到<font color='#5cb85c'>(400/550/700)</font>真实伤害，沉默<font color='#5cb85c'>(5/6/7)</font>秒，并且流失现有法力的60% 。魔免单位沉默时间减半，不会受到伤害，但一样流失现有法力60% 。"
+		// 真田昌幸 11.2b
+		"DOTA_Tooltip_Ability_B09W_old" "落雷"
+		"DOTA_Tooltip_Ability_B09W_old_Description" "落下一道闪电造成350 范围内敌人<font color='#5cb85c'>(200/300/400/500)</font>点的伤害。施展距离750。"
+		"DOTA_Tooltip_Ability_B09E_old" "水爆"
+		"DOTA_Tooltip_Ability_B09E_old_Description" "在直线上打出水爆，造成 敌人<font color='#5cb85c'>(100/200/300/400)</font>点伤害并昏迷<font color='#5cb85c'>(0.5/1/1.5/2)</font>秒。"
+		"DOTA_Tooltip_Ability_B09R_old" "土缚"
+		"DOTA_Tooltip_Ability_B09R_old_Description" "降低指定敌方部队<font color='#5cb85c'>(40/50/60/70)</font>% 移动速度、<font color='#5cb85c'>(20/30/40/50)</font>% 攻击速度与攻击力。持续<font color='#5cb85c'>(5/6/7/8)</font>秒。"
+		"DOTA_Tooltip_Ability_B09T_old" "狂风"
+		"DOTA_Tooltip_Ability_B09T_old_Description" "召唤1个巨大的龙卷风，拥有125点移动速度，存在<font color='#5cb85c'>(23/33/43)</font>秒。狂风附近300范围的敌方部队将会减缓80% 移动速度和200% 攻击速度，并每0.1秒造成点15点伤害。对建筑物每秒造成100点伤害。"
+
+		"npc_dota_hero_slark" "雾隐才藏"
+		"npc_dota_hero_slark_hype" "伊贺流忍者，其原形是幸村的部下雾隐鹿右卫门。据说在漫游诸国时和猿飞佐助比武后，受佐助推荐因而加入真田家，其师为百地三太夫（百地丹波）。"
+		"DOTA_Tooltip_Ability_B17W" "忍法．死亡守卫"
+		"DOTA_Tooltip_Ability_B17W_Description" "在指定的地点放置一个死亡守卫，死亡守卫将会在有敌方靠近的时候启动并晕眩周围的敌人1秒，并且在持续时间内随机攻击周围的敌人， 攻击时可以造成等同雾隐才藏自身灵活*1.3的额外伤害，有20% 的机率对非魔免敌人晕眩0.5秒。死亡守卫未启动前可以存在最多<font color='#5cb85c'>(60/100/140/180)</font>秒，启动后可以存在5秒。"
+		"DOTA_Tooltip_Ability_B17E" "忍法．牙毒"
+		"DOTA_Tooltip_Ability_B17E_Description" "被动：在武器上涂抹剧毒，当击中敌人时将可以降低其<font color='#5cb85c'>(10/15/20/25)% </font>移动速度。<br />主动：对目标敌军丢出一枚满是剧毒的飞镖，击中造成<font color='#5cb85c'>(120/240/260/480)</font>伤害并减慢<font color='#5cb85c'>(20/27/34/41)%</font>移动速度，并且接下来每秒造成30点毒伤，持续7秒。"
+		"DOTA_Tooltip_modifier_B17E_passive" "粹毒武器"
+		"DOTA_Tooltip_modifier_B17E_passive_Description" "在武器上涂抹可以破坏敌人神经的毒素，当击中敌人时可以降低其移动速度。"
+		"DOTA_Tooltip_Ability_B17R" "忍法．影跃"
+		"DOTA_Tooltip_Ability_B17R_Description" "往指定方向瞬移最远500距离，并且在现身的时候对周围敌人造成<font color='#5cb85c'>(100/200/300/400)</font>伤害，对魔法免疫的敌人造成0.5倍真实伤害。"
+		"DOTA_Tooltip_Ability_B17T" "忍法密传．觅心斩"
+		"DOTA_Tooltip_Ability_B17T_Description" "进入隐形状态，提升50% 的移动速度，攻击或是使用技能即会现身，现身的第一击可以额外造成<font color='#5cb85c'>(1000/2000/3000)</font>物理伤害，隐形最多持续<font color='#5cb85c'>(30/45/60)</font>秒。"
+
+		"DOTA_Tooltip_Ability_B17W_old" "忍法．迷踪步"
+		"DOTA_Tooltip_Ability_B17W_old_Description" "能够隐形，并让移动速度提升<font color='#5cb85c'>(10/15/20/25)% </font>并持续<font color='#5cb85c'>(10/15/20/25)秒。如果攻击的话，隐形术即告失效，第一击会造成<font color='#5cb85c'>(100/160/220/280)</font>的额外伤害。"
+		"DOTA_Tooltip_Ability_B17E_old" "忍法．剧毒手里剑"
+		"DOTA_Tooltip_Ability_B17E_old_Description" "射出一枚可以造成<font color='#5cb85c'>(120/240/360/480)</font>伤害的剧毒手里剑，还会持续性的造成<font color='#5cb85c'>(20/25/30/35)</font>伤害，减缓20% 移动速度，持续12秒。"
+		"DOTA_Tooltip_Ability_B17R_old" "忍法．回旋手里剑"
+		"DOTA_Tooltip_Ability_B17R_old_Description" "丢掷一枚回旋手里剑，直线移动4秒后自动返回手上，回旋手里剑每0.5秒造成400点伤害。"
+		"DOTA_Tooltip_Ability_B17T_old" "忍法密传．变化"
+		"DOTA_Tooltip_Ability_B17T_old_Description" "相当迅速的创造出9个分身来攻击敌人，并除掉身上的所有法术效果，分身拥有自身的<font color='#5cb85c'>(25/35/45)%</font>攻击力，持续30秒。"
+
+		"B17W_deathGuard"			"死亡守卫"
+		"B17W_deathGuard_bio"		"死亡守卫"
+
+		"npc_dota_hero_terrorblade" "长宗我部元亲"
+		"npc_dota_hero_terrorblade_hype" "长宗我部元亲幼年的时候，柔弱寡言，被家臣称姬若子，意即像女人的孩子。因此他直到二十二岁才第一次上战场，甚至出征前才去向他人请教长枪的使用方法——然而，一登上战场，姬若子仿佛变了一个人似的，悍勇奋战，当者披靡，他的外号从此变成了鬼若子。继任家督后，元亲到处征伐，先后灭亡本山、安艺、一条、十河等势力，这个被织田信长嘲笑无鸟岛之蝙蝠的乡下大名，竟然完全统一了四国地区。然而此时丰臣秀吉已经统一了日本中部，浩浩荡荡的大兵团杀向四国，元亲战败，被迫降伏。"
+		"DOTA_Tooltip_Ability_C20W" "炎之加护"
+		"DOTA_Tooltip_Ability_C20W_Description" "使自身增加<font color='#5cb85c'>(25/35/45/55)% </font>攻击速度与<font color='#5cb85c'>(10/15/20/25)% </font>移动速度，并且 每当受到攻击，就会产生一团烈焰，对周围的敌人造成<font color='#5cb85c'>(50/70/90/110)</font>伤害 ，无法在0.3秒内重复发动。炎之加护持续20秒。"
+		"DOTA_Tooltip_Ability_C20E" "鬼血之流"
+		"DOTA_Tooltip_Ability_C20E_Description" "施展之后回复<font color='#5cb85c'>(150/285/420/555)</font>生命值，并在接下来每秒回复总血量1.5% 的生命值，持续7秒。"
+		"DOTA_Tooltip_Ability_C20R" "炎之舞"
+		"DOTA_Tooltip_Ability_C20R_Description" "造出一圈爆裂的火环，对身处其中的敌军造成<font color='#5cb85c'>(200/300/400/500)</font>伤害并晕眩<font color='#5cb85c'>(0.5/1/1.5/2)</font>秒。"
+		"DOTA_Tooltip_Ability_C20T" "鬼若子"
+		"DOTA_Tooltip_Ability_C20T_Description" "变身为人如其名的鬼若子，有700远距离60% 混沌扩散的能力，对建筑物造成额外20% 魔法伤害，基础攻速从1.8变成1.5，并且可增加<font color='#5cb85c'>(30/50/70)</font>攻击伤害与生命点数<font color='#5cb85c'>(600/900/1200)</font>点。可持续40秒。"
+		//11.2b 长宗我部元亲
+		"DOTA_Tooltip_Ability_C20W_old" "炎之加护"
+		"DOTA_Tooltip_Ability_C20W_old_Description" "增加<font color='#5cb85c'>(25/35/45/55)</font>% 的攻击速度与<font color='#5cb85c'>(5/10/15/20)</font>% 的移动速度，受到攻击时会释出一道300范围的火焰造成敌人<font color='#5cb85c'>(50/80/110/140)</font>点伤害，无法在0.1秒内重复发动。"
+		"DOTA_Tooltip_Ability_C20E_old" "鬼血之流"
+		"DOTA_Tooltip_Ability_C20E_old_Description" "让自身的血液流动，快速的循环。恢复<font color='#5cb85c'>(100/200/300/400)</font>点生命，然后每秒恢复<font color='#5cb85c'>(1/1/2/2)</font>% 生命值。持续16秒。"
+		"DOTA_Tooltip_Ability_C20R_old" "炎之舞"
+		"DOTA_Tooltip_Ability_C20R_old_Description" "释放出强烈 火焰攻击敌人，造成550范围敌人<font color='#5cb85c'>(150/250/350/450)</font>点伤害并晕眩<font color='#5cb85c'>(0.5/1/1.5/2)</font>秒。"
+		"DOTA_Tooltip_Ability_C20T_old" "鬼若子"
+		"DOTA_Tooltip_Ability_C20T_old_Description" "化身为人如其名的鬼若子，获得550距离60% 混沌扩散攻击，对建筑物造成额外20% 魔法伤害，增加基础攻击力<font color='#5cb85c'>(30/50/70)</font>点与<font color='#5cb85c'>(400/700/1000)</font>点额外生命值，持续70秒。"
+
+		"npc_dota_hero_winter_wyvern" "宁宁"
+		"npc_dota_hero_winter_wyvern_hype" "即北政所，战国三夫人之一，丰臣秀吉的正妻，擅长忍术。据说她发挥其独特才能，帮助秀吉取得了天下，加藤清正、福岛正则等丰臣系名将都是被她扶养长大的，视其为母。"
+		"DOTA_Tooltip_Ability_A15W" "忍法．竭印"
+		"DOTA_Tooltip_Ability_A15W_Description" "在指定目标敌人施展竭印，敌人将会无法施展技能并且降低<font color='#5cb85c'>(40/55/70/85)% </font>攻击伤害，每秒受到<font color='#5cb85c'>(85/120/155/190)</font>伤害，持续4秒。"
+		"DOTA_Tooltip_Ability_A15E" "忍法．月击"
+		"DOTA_Tooltip_Ability_A15E_Description" "在指定范围300内，每0.1秒随机召唤一道月束，每道月束造成145范围伤害并且使被击中的敌人晕眩1秒，最多可以召唤<font color='#5cb85c'>(4/6/8/10)</font>道月束。"
+		"DOTA_Tooltip_Ability_A15R" "忍法．影风车"
+		"DOTA_Tooltip_Ability_A15R_Description" "让攻击可以在敌人间弹跳，可弹跳<font color='#5cb85c'>(2/3/4/5)</font>次，每一次弹跳伤害降低15%。"
+		"DOTA_Tooltip_Ability_A15T" "忍法密传．影月攻势"
+		"DOTA_Tooltip_Ability_A15T_Description" "增加<font color='#5cb85c'>(85/115/145)</font>攻击伤害，并且在击中敌人时可以吸取<font color='#5cb85c'>(36/48/64% </font>生命值，持续<font color='#5cb85c'>(10/15/18)</font>秒。影风车伤害亦可吸取。"
+
+		"DOTA_Tooltip_Ability_A15W_old" "忍法．迷踪步"
+		"DOTA_Tooltip_Ability_A15W_old_Description" "能够隐形，并让移动速度提升<font color='#5cb85c'>(10/15/20/25)% </font>并持续<font color='#5cb85c'>(10/15/20/25)</font>秒。如果攻击的话，隐形术即告失效，第一击会造成<font color='#5cb85c'>(100/160/220/280)</font>的额外伤害。"
+		"DOTA_Tooltip_Ability_A15E_old" "忍法．观月"
+		"DOTA_Tooltip_Ability_A15E_old_Description" "显示出施法地点<font color='#5cb85c'>(1000/1300/1600/1900)</font>区域的地图状况，持续<font color='#5cb85c'>(15/20/25/30)</font>秒。也可以显示出隐形部队的位置。"
+		"DOTA_Tooltip_Ability_A15R_old" "忍法．影风车"
+		"DOTA_Tooltip_Ability_A15R_old_Description" "令攻击在敌人之间弹跳，可弹跳<font color='#5cb85c'>(2/4/6/8)</font>次。每次跳弹伤害下降25% 。"
+		"DOTA_Tooltip_Ability_A15T_old" "忍法密传．梦魇"
+		"DOTA_Tooltip_Ability_A15T_old_Description" "恢复<font color='#5cb85c'>(500/700/900)</font>点生命。在40秒内，每0.5秒从身上释放出一只邪恶的精灵，缠绕1000范围中随机的一个敌人造成<font color='#5cb85c'>(150/210/270)</font>点伤害。"
 
 	}
 }
-
