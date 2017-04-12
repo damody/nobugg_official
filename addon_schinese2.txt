@@ -221,6 +221,8 @@
 		"DOTA_Tooltip_Ability_choose_16" "选择16版技能组"
 		"DOTA_Tooltip_Ability_attribute_bonusx" "强化全能力"
 		"DOTA_Tooltip_Ability_attribute_bonusx_Description"	"每升一级全能力+3"
+		"DOTA_Tooltip_Ability_magical_800" "塔防灵气"
+		"DOTA_Tooltip_Ability_magical_800_Description"	"增加周围建筑的50% 魔抗与50% 攻速"
 		"DOTA_Tooltip_Ability_true_gem" "气息感测"
 		"DOTA_Tooltip_Ability_true_gem_Description"	"可以测知周围900隐形的敌人"
 		"DOTA_Tooltip_Ability_ninja_hole" "土遁．挖地洞之术"
@@ -534,7 +536,7 @@
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_spike_Description" "攻击伤害+40，智慧+20，全能力+10。【使用】使出地狱尖刺，将周围的敌人刺到空中并重重摔下，造成250伤害并晕眩1.6秒。"
 
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_new_moon" "三日月宗近．铭刀"
-		"DOTA_Tooltip_Ability_item_the_great_sword_of_new_moon_Description" "攻击伤害+50，智慧+40。【使用】燃烧目标敌人最多1000法力，并造成等量伤害。<font color='#cc0000'>伤害依施放目标当前法力为准。</font>"
+		"DOTA_Tooltip_Ability_item_the_great_sword_of_new_moon_Description" "攻击伤害+50，智慧+40。【使用】燃烧目标敌人最多1500法力，并造成等量伤害。<font color='#cc0000'>伤害依施放目标当前法力为准。</font>"
 
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_toxic" "梅莺毒．妖刀"
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_toxic_Description" "攻击伤害+40，灵活+20。每次攻击使敌人中毒，每秒造成55伤害并减缓移动速度25% ，持续2秒。【使用】对目标敌人射出一只剧毒之箭造成560的初始伤害，接下来每秒造成50伤害，持续5秒。"
@@ -1082,7 +1084,7 @@
 		"DOTA_Tooltip_Ability_C10R"	"回响剑"
 		"DOTA_Tooltip_Ability_C10R_Description"	"增加<font color='#5cb85c'>(25/35/45/55)</font>攻击伤害， 每当击中敌人时，可以连带的对范围485的敌人造成等同攻击伤害<font color='#5cb85c'>(15/25/35/45)% </font>的伤害。 "
 		"DOTA_Tooltip_Ability_C10T"	"无相天圆"
-		"DOTA_Tooltip_Ability_C10T_Description"	"施展无相天圆，以自身为中心使大范围的敌人减缓45% 移动速度，并在3秒后将所有缓速的敌人聚集到身旁，并增加攻速400% 效果持续<font color='#5cb85c'>(6.0/7.5/9.0)</font>秒 ，吸引的敌人距离不能超过5500。"
+		"DOTA_Tooltip_Ability_C10T_Description"	"施展无相天圆，以自身为中心使范围(900/1200/1500)的敌人减缓45% 移动速度，并在3秒后将所有缓速的敌人聚集到身旁，并增加攻速400% 效果持续<font color='#5cb85c'>(6.0/7.5/9.0)</font>秒 ，吸引的敌人距离不能超过5500。"
 			
 		"DOTA_Tooltip_modifier_C10W"	"青龙波冲击"
 		"DOTA_Tooltip_modifier_C10W_Description"	"移动速度降低"
@@ -2661,7 +2663,7 @@
 		"DOTA_Tooltip_Ability_A02E"	 "风之祈"
 		"DOTA_Tooltip_Ability_A02E_Description" "回复<font color='#5cb85c'>(100/200/300/400)</font>生命值，并增加<font color='#5cb85c'>(40/70/100/130)% </font>攻速速度，持续10秒。 "
         "DOTA_Tooltip_Ability_A02R"	 "游风行身"
-		"DOTA_Tooltip_Ability_A02R_Description" "降低所受到的法术伤害<font color='#5cb85c'>(7/13/19/25)% </font>，并且增加自身<font color='#5cb85c'>(6/9/12/15)% </font>总攻击伤害。 "
+		"DOTA_Tooltip_Ability_A02R_Description" "降低所受到的法术伤害<font color='#5cb85c'>(9/18/27/36)% </font>，并且增加自身<font color='#5cb85c'>(6/9/12/15)% </font>总攻击伤害。 "
 		"DOTA_Tooltip_Ability_A02T"	 "融影术"
 		"DOTA_Tooltip_Ability_A02T_Description"	"暂时转化为持续隐形状态，攻击的时候不会现形，提升至2倍基础攻速，移动速度增加60。可持续<font color='#5cb85c'>(20/22/24)</font>秒。 "
 
@@ -3191,9 +3193,9 @@
 		"DOTA_Tooltip_Ability_A15E" "忍法．月击"
 		"DOTA_Tooltip_Ability_A15E_Description" "在指定范围300内，每0.1秒随机召唤一道月束，每道月束造成145范围伤害并且使被击中的敌人晕眩1秒，最多可以召唤<font color='#5cb85c'>(4/6/8/10)</font>道月束。"
 		"DOTA_Tooltip_Ability_A15R" "忍法．影风车"
-		"DOTA_Tooltip_Ability_A15R_Description" "让攻击可以在敌人间弹跳，可弹跳<font color='#5cb85c'>(2/3/4/5)</font>次，每一次弹跳伤害降低15%。"
+		"DOTA_Tooltip_Ability_A15R_Description" "让攻击可以在敌人间弹跳，可弹跳<font color='#5cb85c'>(2/3/4/5)</font>次，每一次弹跳伤害降低25%。"
 		"DOTA_Tooltip_Ability_A15T" "忍法密传．影月攻势"
-		"DOTA_Tooltip_Ability_A15T_Description" "增加<font color='#5cb85c'>(85/115/145)</font>攻击伤害，并且在击中敌人时可以吸取<font color='#5cb85c'>(36/48/64% </font>生命值，持续<font color='#5cb85c'>(10/15/18)</font>秒。影风车伤害亦可吸取。"
+		"DOTA_Tooltip_Ability_A15T_Description" "增加<font color='#5cb85c'>(85/115/145)</font>攻击伤害，并且在击中敌人时可以吸取<font color='#5cb85c'>(12/24/36)% </font>生命值，持续<font color='#5cb85c'>(10/15/18)</font>秒。影风车伤害亦可吸取。"
 
 		"DOTA_Tooltip_Ability_A15W_old" "忍法．迷踪步"
 		"DOTA_Tooltip_Ability_A15W_old_Description" "能够隐形，并让移动速度提升<font color='#5cb85c'>(10/15/20/25)% </font>并持续<font color='#5cb85c'>(10/15/20/25)</font>秒。如果攻击的话，隐形术即告失效，第一击会造成<font color='#5cb85c'>(100/160/220/280)</font>的额外伤害。"
@@ -3202,7 +3204,8 @@
 		"DOTA_Tooltip_Ability_A15R_old" "忍法．影风车"
 		"DOTA_Tooltip_Ability_A15R_old_Description" "令攻击在敌人之间弹跳，可弹跳<font color='#5cb85c'>(2/4/6/8)</font>次。每次跳弹伤害下降25% 。"
 		"DOTA_Tooltip_Ability_A15T_old" "忍法密传．梦魇"
-		"DOTA_Tooltip_Ability_A15T_old_Description" "恢复<font color='#5cb85c'>(500/700/900)</font>点生命。在40秒内，每0.5秒从身上释放出一只邪恶的精灵，缠绕1000范围中随机的一个敌人造成<font color='#5cb85c'>(150/210/270)</font>点伤害。"
+		"DOTA_Tooltip_Ability_A15T_old_Description" "恢复<font color='#5cb85c'>(500/700/900)</font>点生命。在40秒内，每0.4秒从身上释放出一只邪恶的精灵，缠绕1000范围中随机的一个敌人造成<font color='#5cb85c'>(150/210/270)</font>点伤害。"
 
 	}
 }
+
