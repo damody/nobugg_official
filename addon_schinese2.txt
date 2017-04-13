@@ -302,7 +302,7 @@
 		"DOTA_Tooltip_Ability_cavalry_Unified_mid" "联合骑兵中"
 		"DOTA_Tooltip_Ability_cavalry_Unified_bottom" "联合骑兵下"
 		"DOTA_Tooltip_Ability_item_reward6300"  "犒赏"
-		"DOTA_Tooltip_Ability_item_reward6300_Description"  "提升全军士气，增加小兵20防御、每秒4% 回血、100% 攻速、100点跑速、100点攻击，增加英雄10点防御、每秒2% 回血，持续60秒"
+		"DOTA_Tooltip_Ability_item_reward6300_Description"  "提升全军士气，增加小兵20防御、每秒4% 回血、100% 攻速、100点跑速、100点攻击，增加英雄10点防御、每秒2% 回血，持续60秒，攻速与攻击要20分钟后才会增加。"
 		"DOTA_Tooltip_Ability_item_gold_to_prestige"  "买兵力"
 		"DOTA_Tooltip_Ability_item_gold_to_prestige_Description"  "使用提升100兵力"
 		"DOTA_Tooltip_Ability_A0BM" "再生光气"
@@ -950,7 +950,7 @@
 		"DOTA_Tooltip_Ability_C21W_old" "奥义．弧月斩"
 		"DOTA_Tooltip_Ability_C21W_old_Description" "获得魔法免疫，每0.2秒造成范围250内所有敌人<font color='#5cb85c'>(100/150/200/250)</font>点伤害，持续0.5秒。"
 		"DOTA_Tooltip_Ability_C21E_old" "奥义．连环钢破"
-		"DOTA_Tooltip_Ability_C21E_old_Description" "突击目标，造成<font color='#5cb85c'>(100/200/300/400)</font>点伤害并晕眩2秒。然后每1秒追斩1次，共3次。"
+		"DOTA_Tooltip_Ability_C21E_old_Description" "突击目标，造成<font color='#5cb85c'>(100/200/300/400)</font>点伤害并晕眩<font color='#5cb85c'>(0.5/1/1.5/2)</font>秒。然后每1秒追斩1次，共3次。"
 		"DOTA_Tooltip_Ability_C21R_old" "二天一流"
 		"DOTA_Tooltip_Ability_C21R_old_Description" "攻击时有<font color='#5cb85c'>(20/30/40/50)% </font>的机会造成绝不失误的<font color='#5cb85c'>(1.3/1.6/1.9/2.2)</font>倍伤害。"
 		"DOTA_Tooltip_Ability_C21T_old" "秘奥义．飞翔震烈斩"
@@ -1560,7 +1560,7 @@
 	    "DOTA_Tooltip_Ability_A29E"  "深渊之握"
 		"DOTA_Tooltip_Ability_A29E_Description" "来自深渊的鬼手从地面窜出，使目标敌军在<font color='#5cb85c'>(1/1.4/1.8/2)</font>秒的时间内无法移动和攻击，而且每秒受到<font color='#5cb85c'>(75/150/225/300)</font>点伤害。"
 	    "DOTA_Tooltip_Ability_A29R"  "衰心灵光"
-	    "DOTA_Tooltip_Ability_A29R_Description" "让范围<font color='#5cb85c'>(1400)</font>的敌人每秒失去<font color='#5cb85c'>(5/6/7/8)</font>的法力，每次使用技能时减缓18% 移动速度5秒，缓速会叠加，并损失<font color='#5cb85c'>(60/80/100/120)</font>点法力，魔免单位损失的法力减半。"
+	    "DOTA_Tooltip_Ability_A29R_Description" "让范围<font color='#5cb85c'>(1400)</font>的敌人每秒失去<font color='#5cb85c'>(5/6/7/8)</font>的法力，每次使用技能时减缓18% 移动速度5秒，缓速会叠加，缓速无视魔免，并损失<font color='#5cb85c'>(60/80/100/120)</font>点法力，魔免单位损失的法力减半。"
 	    "DOTA_Tooltip_Ability_A29T"  "兀鹰群"
 	    "DOTA_Tooltip_Ability_A29T_Description" "回复<font color='#5cb85c'>(350/550/750)</font>生命，并且召唤20个攻击力为<font color='#5cb85c'>(60/90/150)</font>飞舞的兀鹰对着周围的敌人发动攻击，攻击伤害的<font color='#5cb85c'>(60/70/80)% </font>将会补充英雄的生命，持续<font color='#5cb85c'>(30/35/40)</font>秒。"
 		
@@ -1570,7 +1570,7 @@
 	    "DOTA_Tooltip_Ability_A29E_old" "老树盘根"
 	    "DOTA_Tooltip_Ability_A29E_old_Description" "让树根从地面窜出抓住目标，每秒造成<font color='#5cb85c'>(50/55/60/65)</font>点伤害并无法攻击及移动，持续<font color='#5cb85c'>(3/4/5/6)</font>秒。"
 	    "DOTA_Tooltip_Ability_A29R_old" "机智消磨"
-	    "DOTA_Tooltip_Ability_A29R_old_Description" "逐渐消减范围<font color='#5cb85c'>(1200)</font>内敌方部队的法力<font color='#5cb85c'>(8/12/16/20)</font>与<font color='#5cb85c'>(1/2/3/4)% </font>总魔力，魔量少于50% 的敌军，每少10% 魔力减缓10% 攻速跑速，最多缓50% ，缓速对魔免无效。"
+	    "DOTA_Tooltip_Ability_A29R_old_Description" "逐渐消减范围<font color='#5cb85c'>(1200)</font>内敌方部队的法力<font color='#5cb85c'>(8/12/16/20)</font>与<font color='#5cb85c'>(0/1/2/3)% </font>总魔力，魔量少于50% 的敌军，每少10% 魔力减缓10% 攻速跑速，最多缓50% ，缓速对魔免无效。"
 	    "DOTA_Tooltip_Ability_A29T_old" "兀鹰群"
 	    "DOTA_Tooltip_Ability_A29T_old_Description" "招唤来攻击力为<font color='#5cb85c'>(100/150/200)</font>的<font color='#5cb85c'>(14/17/20)</font>只兀鹰，攻击伤害的<font color='#5cb85c'>(60/70/80)% </font>将会补充英雄的生命，兀鹰会跟着施法者移动并主动攻击范围1100内的敌人。持续<font color='#5cb85c'>(42/45/48)</font>秒。"
 		
@@ -1682,7 +1682,7 @@
 		"DOTA_Tooltip_Ability_B02R"	"忍法．十八方手里剑"
 		"DOTA_Tooltip_Ability_B02R_Description"	"使目标敌军被陷阱纠缠，使其受困(1/1.5/2/2.5)秒而无法移动，并且在18方位创造出手里剑进行攻击，每发手里剑造成伤害和短暂晕眩，总共造成<font color='#5cb85c'>(90/180/270/360)</font>真实伤害。<font color='#d9534f'>无视魔法免疫牵制，但魔法免疫单位不会晕眩。</font>"
 		"DOTA_Tooltip_Ability_B02T"	"忍法密传．四方导雷"
-		"DOTA_Tooltip_Ability_B02T_Description"	"使目标敌军成为导雷的目标晕眩1秒，并且在接下来每隔1秒便会承受一次四方导雷的攻击，造成175真实伤害并且晕眩0.35秒，持续<font color='#5cb85c'>(4/5/6)</font>次。"
+		"DOTA_Tooltip_Ability_B02T_Description"	"使目标敌军成为导雷的目标晕眩1秒，并且在接下来每隔1秒便会承受一次四方导雷的攻击，造成175真实伤害并且晕眩0.35秒，持续<font color='#5cb85c'>(4/6/8)</font>次。"
 		"DOTA_Tooltip_modifier_B02T"	"忍法密传．四方导雷"
 		"DOTA_Tooltip_modifier_B02T_Description"	"忍法密传．四方导雷"
 		"DOTA_Tooltip_modifier_B02T_2"	"忍法密传．四方导雷"
@@ -3079,7 +3079,7 @@
 		"DOTA_Tooltip_Ability_B31R_old" "侵略如火"
 		"DOTA_Tooltip_Ability_B31R_old_Description" "增加附近600范围友方英雄<font color='#5cb85c'>(5/10/15/20)</font>% 攻击力。"
 		"DOTA_Tooltip_Ability_B31T_old" "不动如山"
-		"DOTA_Tooltip_Ability_B31T_old_Description" "启动时，增加<font color='#5cb85c'>(10/15/20)</font>点基础防御、<font color='#5cb85c'>(30/55/70)</font>点基础攻击、<font color='#5cb85c'>(800/1300/1800)</font>点额外生命值及法术免疫。每0.9秒对附近650范围的一个敌人降下陨石而造成200点伤害，然后在5秒内每秒造成20点伤害。持续38秒。"
+		"DOTA_Tooltip_Ability_B31T_old_Description" "启动时，增加<font color='#5cb85c'>(10/15/20)</font>点基础防御、<font color='#5cb85c'>(800/1300/1800)</font>点额外生命值及法术免疫。每0.9秒对附近650范围的一个敌人降下陨石而造成200点伤害，然后在5秒内每秒造成20点伤害。持续38秒。"
 
 		"npc_dota_hero_necrolyte" "斋藤道三"
 		"npc_dota_hero_necrolyte_hype" "斋藤道三──织田信长的岳父──山城西冈武士松浪基宗的庶子，有义龙、孙四郎、喜平次三个儿子，他因为讨厌长子义龙，想把家业传给三子喜平次。斋藤道三为一代奸雄，外号腹蛇，残忍无情，未达目的不择手段。据说他曾把犯人放进大锅烧煮，并命犯人妻子在灶旁加火添柴。"
@@ -3191,16 +3191,16 @@
 		"DOTA_Tooltip_Ability_A15W" "忍法．竭印"
 		"DOTA_Tooltip_Ability_A15W_Description" "在指定目标敌人施展竭印，敌人将会无法施展技能并且降低<font color='#5cb85c'>(40/55/70/85)% </font>攻击伤害，每秒受到<font color='#5cb85c'>(85/120/155/190)</font>伤害，持续4秒。"
 		"DOTA_Tooltip_Ability_A15E" "忍法．月击"
-		"DOTA_Tooltip_Ability_A15E_Description" "在指定范围300内，每0.1秒随机召唤一道月束，每道月束造成145范围伤害并且使被击中的敌人晕眩1秒，最多可以召唤<font color='#5cb85c'>(4/6/8/10)</font>道月束。"
+		"DOTA_Tooltip_Ability_A15E_Description" "在指定范围400内，每0.1秒随机召唤一道月束，每道月束造成145范围伤害并且使被击中的敌人晕眩1秒，最多可以召唤<font color='#5cb85c'>(4/6/8/10)</font>道月束。"
 		"DOTA_Tooltip_Ability_A15R" "忍法．影风车"
 		"DOTA_Tooltip_Ability_A15R_Description" "让攻击可以在敌人间弹跳，可弹跳<font color='#5cb85c'>(2/3/4/5)</font>次，每一次弹跳伤害降低25%。"
 		"DOTA_Tooltip_Ability_A15T" "忍法密传．影月攻势"
 		"DOTA_Tooltip_Ability_A15T_Description" "增加<font color='#5cb85c'>(85/115/145)</font>攻击伤害，并且在击中敌人时可以吸取<font color='#5cb85c'>(12/24/36)% </font>生命值，持续<font color='#5cb85c'>(10/15/18)</font>秒。影风车伤害亦可吸取。"
 
 		"DOTA_Tooltip_Ability_A15W_old" "忍法．迷踪步"
-		"DOTA_Tooltip_Ability_A15W_old_Description" "能够隐形，并让移动速度提升<font color='#5cb85c'>(10/15/20/25)% </font>并持续<font color='#5cb85c'>(10/15/20/25)</font>秒。如果攻击的话，隐形术即告失效，第一击会造成<font color='#5cb85c'>(100/160/220/280)</font>的额外伤害。"
+		"DOTA_Tooltip_Ability_A15W_old_Description" "能够隐形，并让移动速度提升<font color='#5cb85c'>(10/15/20/25)% </font>并持续<font color='#5cb85c'>(3/5/7/9)</font>秒。如果攻击的话，隐形术即告失效，第一击会造成<font color='#5cb85c'>(100/160/220/280)</font>的额外伤害。"
 		"DOTA_Tooltip_Ability_A15E_old" "忍法．观月"
-		"DOTA_Tooltip_Ability_A15E_old_Description" "显示出施法地点<font color='#5cb85c'>(1000/1300/1600/1900)</font>区域的地图状况，持续<font color='#5cb85c'>(15/20/25/30)</font>秒。也可以显示出隐形部队的位置。"
+		"DOTA_Tooltip_Ability_A15E_old_Description" "显示出施法地点<font color='#5cb85c'>(1000/1300/1600/1900)</font>区域的地图状况，持续<font color='#5cb85c'>(3/5/7/9)</font>秒。也可以显示出隐形部队的位置。"
 		"DOTA_Tooltip_Ability_A15R_old" "忍法．影风车"
 		"DOTA_Tooltip_Ability_A15R_old_Description" "令攻击在敌人之间弹跳，可弹跳<font color='#5cb85c'>(2/4/6/8)</font>次。每次跳弹伤害下降25% 。"
 		"DOTA_Tooltip_Ability_A15T_old" "忍法密传．梦魇"
@@ -3208,4 +3208,3 @@
 
 	}
 }
-
