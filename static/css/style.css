@@ -304,6 +304,15 @@ h2.faction-title span:nth-child(3) {
 .champion-list.cl1 > .champion-box:nth-child(5) {
     margin-left: 8%;
 }
+.champion-list.cl1 > .champion-box:nth-child(6) {
+    margin-left: 5%;
+}
+.champion-list.cl1 > .champion-box:nth-child(7) {
+    margin-left: 3%;
+}
+.champion-list.cl1 > .champion-box:nth-child(8) {
+    margin-left: 0%;
+}
 .champion-list.cl2 > .champion-box:first-child {
     margin-left: 3%;
 }
@@ -318,6 +327,15 @@ h2.faction-title span:nth-child(3) {
 }
 .champion-list.cl2 > .champion-box:nth-child(5) {
     margin-left: 14%;
+}
+.champion-list.cl2 > .champion-box:nth-child(6) {
+    margin-left: 17%;
+}
+.champion-list.cl2 > .champion-box:nth-child(6) {
+    margin-left: 20%;
+}
+.champion-list.cl2 > .champion-box:nth-child(8) {
+    margin-left: 23%;
 }
 .champion-list > ul > li:nth-child(3n){
 	margin-right:0;
