@@ -178,7 +178,12 @@
 			"07"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"B17W_stunDuration"		"1"
+				"B17W_stunDuration"		"0.5 1 1.5 2"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"B17W_atk"	"100 150 200 250"
 			}
 		}
 	}
@@ -670,7 +675,7 @@
 		"AbilityCastPoint"                          "0.18" //多0.08讓英雄面向轉到位
 		"AbilityCastRange"							"0"
 
-		"AbilityCooldown"                           "40 30 20 11"
+		"AbilityCooldown"                           "11"
 		"AbilityManaCost"                           "100"
 
 		"OnSpellStart"
@@ -715,7 +720,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"B17R_old_damage"		"400"
+				"B17R_old_damage"		"100 200 300 400"
 			}
 			"02"
 			{
