@@ -258,34 +258,6 @@
 				"EffectName" 						"particles/econ/courier/courier_greevil_red/courier_greevil_red_ambient_3.vpcf"
 				"IsDebuff"							"1"
 				"IsPurgable"						"0"
-				"ThinkInterval"						"1"
-				"OnCreated"
-				{
-					"RunScript"
-					{
-						"ScriptFile"						"scripts/vscripts/heroes/C_Neutral/C14.lua"
-						"Function"							"modifier_C14T_effect_OnIntervalThink"
-					}
-				}
-				"OnIntervalThink"
-				{
-					"RunScript"
-					{
-						"ScriptFile"						"scripts/vscripts/heroes/C_Neutral/C14.lua"
-						"Function"							"modifier_C14T_effect_OnIntervalThink"
-					}
-				}
-			}
-			"modifier_C14T_Aura"
-			{
-				"IsHidden"				"1"
-				"Aura" 					"modifier_C14T_effect"
-		        "Aura_Radius" 			"450"
-		        "Aura_Teams" 			"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		        "Aura_Types" 			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		        "Aura_Flags" 			"DOTA_UNIT_TARGET_FLAG_NONE"
-		        "Aura_ApplyToCaster" 	"0"
-		        "Duration"				"3"
 			}
 			"modifier_C14T"
 			{
@@ -300,7 +272,7 @@
 				}
 				"States"
 				{
-					"MODIFIER_STATE_FLYING" "MODIFIER_STATE_VALUE_ENABLED"
+					//"MODIFIER_STATE_FLYING" "MODIFIER_STATE_VALUE_DISABLED"
 					"MODIFIER_STATE_MAGIC_IMMUNE" "MODIFIER_STATE_VALUE_ENABLED"
 				}
 				"Duration"	"%During"
@@ -330,10 +302,6 @@
 						"ModifierName"	"modifier_C14T"
 						"Target" 		"CASTER"
 					}
-				}
-				"OnCreated"
-				{
-
 				}
 			}
 
@@ -611,7 +579,7 @@
 				}
 				"States"
 				{
-					"MODIFIER_STATE_FLYING" "MODIFIER_STATE_VALUE_ENABLED"
+					//"MODIFIER_STATE_FLYING" "MODIFIER_STATE_VALUE_DISABLED"
 					"MODIFIER_STATE_MAGIC_IMMUNE" "MODIFIER_STATE_VALUE_ENABLED"
 				}
 				"Duration"	"%During"
@@ -636,23 +604,6 @@
 						"Target" 		"CASTER"
 					}
 				}
-				"ThinkInterval"     "0.25"
-	            "OnIntervalThink"
-	            {
-	                "ApplyModifier"
-	                {
-	                    "Target"
-	                    {
-	                        "Center"    "CASTER"
-	                        "Radius"    "900"
-	                        "Teams" "DOTA_UNIT_TARGET_TEAM_ENEMY"
-	                        "Types" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
-	                        "Flags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
-	                    }
-	                    "ModifierName"      "modifier_truesight"
-	                    "Duration"      "0.50"
-	                }
-	            }
 			}
 
 		}
