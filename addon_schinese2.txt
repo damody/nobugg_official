@@ -53,7 +53,7 @@
 		"npc_dota_hero_venomancer"	"九鬼嘉隆"
 		"npc_dota_hero_treant"	"织田信长"
 		"npc_dota_hero_troll_warlord"	"井伊直政"
-		"npc_dota_hero_undying"	"服部半藏"
+		"npc_dota_hero_zuus"	"服部半藏"
 		"npc_dota_hero_queenofpain"	"湖衣姬"
 		"npc_dota_hero_keeper_of_the_light"	"毛利元就"
 		"npc_dota_hero_invoker"	"羽柴秀吉"
@@ -541,7 +541,7 @@
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_toxic_Description" "攻击伤害+40，灵活+20。每次攻击使敌人中毒，每秒造成55伤害并减缓移动速度25% ，持续2秒。【使用】对目标敌人射出一只剧毒之箭造成560的初始伤害，接下来每秒造成50伤害，持续5秒。"
 
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_teleport" "陆奥守吉行．铭刀"
-		"DOTA_Tooltip_Ability_item_the_great_sword_of_teleport_Description" "攻击伤害+75，攻速+65% 。25% 机率格挡攻击。【使用】传送到战场上任一非英雄友军身旁，需要2秒的施法时间。"
+		"DOTA_Tooltip_Ability_item_the_great_sword_of_teleport_Description" "攻击伤害+75，攻速+65% 。25% 机率格挡攻击。【使用】传送到战场上任一非英雄友军身旁，需要6秒的施法时间。"
 
 
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_drain" "吉光骨食．铭刀"
@@ -3256,6 +3256,41 @@
 		"DOTA_Tooltip_Ability_B20R_old_Description" "在攻击时有36%的机会增加<font color='#5cb85c'>(1.2/1.4/1.6/1.8)</font>倍伤害，并增加额外伤害<font color='#5cb85c'>(5/10/15/20)</font>点。"
 		"DOTA_Tooltip_Ability_B20T_old" "赤备猛攻"
 		"DOTA_Tooltip_Ability_B20T_old_Description" "增加攻击速度<font color='#5cb85c'>(35/45/55)</font>% 与移动速度<font color='#5cb85c'>(20/30/40)</font>%，每0.5秒敲击一次地面，对周遭600区域的敌人<font color='#5cb85c'>(90/130/170)</font>点伤害并缓慢<font color='#5cb85c'>(30/40/50)</font>%攻击及移动速度1秒。赤备猛攻持续14秒。"
+		
+		"npc_dota_hero_undying" "加藤清正"
+		"npc_dota_hero_undying_hype" "安土桃山时代、江户时代武将和大名，异名鬼加藤。出生于尾张国中村。由于与羽柴秀吉（即后来丰臣秀吉）有血缘关系，故开始追随秀吉。织田信长死后，其部将羽柴秀吉与柴田胜家为争夺其势力之主导权，在贱岳这个地方开战，其中秀吉方有七人立下赫赫战功，以“贱岳七本枪”著称于世，加藤清正即为其中一人。"
+		"DOTA_Tooltip_Ability_C23W" "秽血狂暴"
+		"DOTA_Tooltip_Ability_C23W_Description" "在接下来5秒内提升20% 移动速度以及175% 攻速，并且每秒持续对周围的敌人造成伤害，造成的总伤害等同于<font color='#5cb85c'>(100/150/200/250)</font>。"
+		"DOTA_Tooltip_Ability_C23E" "恶念障壁"
+		"DOTA_Tooltip_Ability_C23E_Description" "向着指定方向造出一道垂直的恶念障壁来阻挡敌人的通行，并且使周围的友军增强<font color='#5cb85c'>(10/15/20/25)</font>% 攻击伤害，恶念障壁存在<font color='#5cb85c'>(6/8/10/12)</font>秒。加藤清正可以在恶念障壁间通行无阻。"
+		"DOTA_Tooltip_Ability_C23R" "以血偿血"
+		"DOTA_Tooltip_Ability_C23R_Description" "每当受到攻击时，有14% 的机率 吸收该次伤害，自身将不会受伤，并且将受伤害的<font color='#5cb85c'>(7/13/19/25)</font>% 转为回复自身的生命。若施展任何一个技能，则下一次受到伤害将必定吸收，此效果持续最多4秒。"
+		"DOTA_Tooltip_Ability_C23T" "死冥之赠"
+		"DOTA_Tooltip_Ability_C23T_Description" "指定一个目标敌人，将自己的现有血量与对方的现有血量等比率交换并且使对方晕眩<font color='#5cb85c'>(0.1/0.5/0.8)</font>秒。"
+
+		"npc_dota_hero_elder_titan" "斋藤朝信"
+		"npc_dota_hero_elder_titan_hype"	"上杉家侍大将，川中岛合战大活跃，有越后钟馗的异名，为上杉家主力军，他仕奉上杉谦信时多担任奉行等职务执行内政。并参与过越中攻略、1561年(永禄4年)的川中岛之战(第四次)等大小战役。1578年谦信过世后为了争夺继承权爆发的御馆之乱中他选择了支持上杉景胜。之后被委任守备海津城、对抗柴田胜家的进军。本能寺之变后因年岁已大而隐居退休。"
+		"DOTA_Tooltip_Ability_B03W" "钟馗一击"
+		"DOTA_Tooltip_Ability_B03W_Description" "对前方100的敌军造成<font color='#5cb85c'>(150/250/350/450)</font>伤害以及晕眩1.1秒。"
+		"DOTA_Tooltip_Ability_B03D" "钟馗一击"
+		"DOTA_Tooltip_Ability_B03D_Description" "对前方400的敌军造成<font color='#5cb85c'>(150/250/350/450)</font>伤害以及晕眩1.1秒。"
+		"DOTA_Tooltip_Ability_B03F" "钟馗一击"
+		"DOTA_Tooltip_Ability_B03F_Description" "对前方700的敌军造成<font color='#5cb85c'>(150/250/350/450)</font>伤害以及晕眩1.1秒。"
+		"DOTA_Tooltip_Ability_B03E" "越后金刚"
+		"DOTA_Tooltip_Ability_B03E_Description" "每次受到伤害时，将有<font color='#5cb85c'>(8/12/16/20)</font>%%的机率忽略该次伤害，但是会消耗总法力量2%%的法力，当法力低于15%%时不会触发忽略伤害的效果。每当杀死一名敌军，便可以恢复<font color='#5cb85c'>(5/8/11/14)</font>法力。"
+		"DOTA_Tooltip_Ability_B03R" "沉重打击"
+		"DOTA_Tooltip_Ability_B03R_Description" "每次攻击时将可以额外造成等同于力量<font color='#5cb85c'>(35/70/105/140)</font>%%的物理伤害。"
+		"DOTA_Tooltip_Ability_B03T" "钟馗之审判"
+		"DOTA_Tooltip_Ability_B03T_Description" "当启动钟馗之审判，将可以增加自身100%%攻速以及17%%移动速度，并在接下来每0.8秒随机对周围的敌军自动投掷审判之锤，审判之锤击中将可以造成<font color='#5cb85c'>(60/80/100)</font>伤害并晕眩0.38秒，总共可以投掷<font color='#5cb85c'>(30/35/40)</font>次。"
+
+		"DOTA_Tooltip_Ability_B03W_old" "钟馗之力"
+		"DOTA_Tooltip_Ability_B03W_old_Description" "增加友方部队<font color='#5cb85c'>(60/80/100/120)</font>%%的攻击速度以及<font color='#5cb85c'>(25/30/35/40)</font>%%的移动速度，持续20秒。"
+		"DOTA_Tooltip_Ability_B03E_old" "越后金钢"
+		"DOTA_Tooltip_Ability_B03E_old_Description" "装甲提升<font color='#5cb85c'>(6/10/14/18)</font>点。"
+		"DOTA_Tooltip_Ability_B03R_old" "怪力击"
+		"DOTA_Tooltip_Ability_B03R_old_Description" "攻击时有25%%机率给予<font color='#5cb85c'>(100/150/200/250)</font>点伤害并震昏0.4秒。"
+		"DOTA_Tooltip_Ability_B03T_old" "钟馗之审判"
+		"DOTA_Tooltip_Ability_B03T_old_Description" "使用手上的巨槌朝着目标使用全身的力量剧烈的打击对区域600范围内的敌人造成<font color='#5cb85c'>(1150/1500/1850)</font>点伤害。"
 		
 	}
 }
