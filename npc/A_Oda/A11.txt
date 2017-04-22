@@ -311,6 +311,11 @@
 				"Target" 		"CASTER"
 				"Duration"		"%A11T_duration"
 			}
+			"Heal"
+			{
+				"Target"        "CASTER"
+				"HealAmount"	"%A11T_hpBonus"
+			}
 		}
 
 		"Modifiers"
@@ -461,7 +466,7 @@
 		"AbilityCooldown"							"25"
 		"AbilityCastPoint"							"0.1"
 		"AbilityManaCost"                      		"100 120 140 160"
-		"AbilityCastRange"              			"800"
+		"AbilityCastRange"              			"600"
 		"AnimationPlaybackRate"						"0.5"
 		"AbilityChannelTime"						"%A11E_duration"
 		
