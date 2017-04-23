@@ -107,7 +107,7 @@
 		"AbilityCooldown"							"22"
 		"AbilityCastPoint"							"0.1"
 		"AbilityManaCost"                      		"135 150 165 180"
-		"AbilityCastRange"							"128"
+		"AbilityCastRange"							"250"
 		"AnimationPlaybackRate"	"2"
 
 		"OnSpellStart"
@@ -275,11 +275,11 @@
 				"Type"			"DAMAGE_TYPE_MAGICAL"
 				"Damage"		"%B30T_damage"
 			}
-			"ApplyModifier"
+			"RunScript"
 			{
-				"ModifierName"	"modifier_B30T_debuff"
-				"Target" 		"TARGET"
-				"Duration"		"%B30T_dotDuration"
+				"Target"		"TARGET"
+				"ScriptFile"						"scripts/vscripts/heroes/B_Unified/B30.lua"
+				"Function"							"B30T_OnProjectileHitUnit"
 			}
 		}
 
@@ -323,7 +323,7 @@
 			"04"
 			{
 				"var_type" 				"FIELD_FLOAT"
-				"B30T_dotDuration" 		"6.0 8.0 10.0"
+				"B30T_dotDuration" 		"6 8 10"
 			}
 		}
 	}
@@ -437,7 +437,7 @@
 		"AbilityCooldown"							"16"
 		"AbilityCastPoint"							"0.1"
 		"AbilityManaCost"                      		"110 130 150 170"
-		"AbilityCastRange"							"128"
+		"AbilityCastRange"							"250"
 		"AnimationPlaybackRate"	"2"
 
 		"OnSpellStart"
@@ -512,7 +512,7 @@
 		"AbilityUnitTargetFlags"					"DOTA_UNIT_TARGET_FLAG_NONE"
 		"AbilityUnitDamageType"               		"DAMAGE_TYPE_MAGICAL"
 		"AbilityTextureName"                        "custom/B30/B30R"
-		"AbilityManaCost"							"200 220 240 260"
+		"AbilityManaCost"							"400 440 480 520"
 		"AbilityCooldown"							"40"
 
 		"OnSpellStart"
@@ -590,8 +590,8 @@
 		"AbilityUnitDamageType"						"DAMAGE_TYPE_MAGICAL"
 		"AbilityTextureName"                        "custom/B30/B30T"
 
-		"AbilityCooldown"           				"50"
-		"AbilityManaCost"           				"100"
+		"AbilityCooldown"           				"30 40 50"
+		"AbilityManaCost"           				"150 250 350"
 		"AbilityCastRange"							"1500"
 		"AbilityCastPoint"							"0.1"
 		

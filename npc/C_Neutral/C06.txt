@@ -1,4 +1,4 @@
-//島津義弘
+//石川五右衛門
 "DOTAAbilities"
 {
 	"C06_precache"
@@ -218,7 +218,7 @@
 		"AbilityType"			"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_PURE"
 		"AbilityCastPoint"	"0"	
-		"AbilityCooldown"	"25"
+		"AbilityCooldown"	"60"
 		"AbilityCastRange"	"0"
 		"AbilityManaCost"	"0"
 		"OnSpellStart"
@@ -296,12 +296,17 @@
 			"01"
 			{
 				"var_type"							"FIELD_FLOAT"
-				"damage_absorb"						"200 300 400 500"
+				"damage_absorb"						"0"
 			}
 			"02"
 			{
 				"var_type"							"FIELD_FLOAT"
-				"maxdamage"						"1500"
+				"maxdamage"						"600 900 1200 1500"
+			}
+			"03"
+			{
+				"var_type"							"FIELD_FLOAT"
+				"shield"						"0.02 0.03 0.04 0.05"
 			}
 		}
 	}
@@ -323,7 +328,7 @@
 		"MaxLevel" 				"3"
 		// Time
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"	"150"
+		"AbilityCooldown"	"200 175 150"
 		// Cost
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityManaCost"	"185"
@@ -349,7 +354,11 @@
 			}
 			"ApplyModifier"
 			{
-				"Target"	"TARGET"
+				"Target"
+				{
+				    "Center" "TARGET"
+				    "Flags" "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+				}
 				"ModifierName"	"modifier_C06T_stun"
 			}
 			"ApplyModifier"

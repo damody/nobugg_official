@@ -3189,7 +3189,7 @@
 		"DOTA_Tooltip_Ability_A15W_old" "忍法．迷蹤步"
 		"DOTA_Tooltip_Ability_A15W_old_Description" "能夠隱形，並讓移動速度提昇<font color='#5cb85c'>(10/15/20/25)% </font>並持續<font color='#5cb85c'>(3/5/7/9)</font>秒。如果攻擊的話，隱形術即告失效，第一擊會造成<font color='#5cb85c'>(100/160/220/280)</font>的額外傷害。"
 		"DOTA_Tooltip_Ability_A15E_old" "忍法．觀月"
-		"DOTA_Tooltip_Ability_A15E_old_Description" "顯示出施法地點<font color='#5cb85c'>(1000/1300/1600/1900)</font>區域的地圖狀況，持續<font color='#5cb85c'>(3/5/7/9)</font>秒。也可以顯示出隱形部隊的位置。"
+		"DOTA_Tooltip_Ability_A15E_old_Description" "顯示出施法地點<font color='#5cb85c'>(1000/1300/1600/1900)</font>區域的地圖狀況，持續<font color='#5cb85c'>(15/17/19/21)</font>秒。也可以顯示出隱形部隊的位置。"
 		"DOTA_Tooltip_Ability_A15R_old" "忍法．影風車"
 		"DOTA_Tooltip_Ability_A15R_old_Description" "令攻擊在敵人之間彈跳，可彈跳<font color='#5cb85c'>(2/4/6/8)</font>次。每次跳彈傷害下降35% ，對建築物傷害減半。"
 		"DOTA_Tooltip_Ability_A15T_old" "忍法密傳．夢魘"
@@ -3302,7 +3302,7 @@
 		"DOTA_Tooltip_Ability_C06E" "偷天換日"
 		"DOTA_Tooltip_Ability_C06E_Description" "偷取目標英雄<font color='#5cb85c'>(23/32/41/50)</font>金錢，並且從該英雄身上隨機掉包一個物品，置換為大盜的贈禮，敵方可以藉由使用此物品來換回被調包的物品，但是會因為觸發贈禮陷阱對非魔免單位定身2.5秒，並且失去<font color='#5cb85c'>(100/200/300/400)</font>生命。每一個「大盜的贈體」會使持有人受到全能力-7的負面。"
 		"DOTA_Tooltip_Ability_C06R" "闊氣攻擊"
-		"DOTA_Tooltip_Ability_C06R_Description" "<font color='#5cb85c'>(被動)</font>攻擊的時候，可以額外造成等同擁有金錢5% 的絕對傷害。<font color='#5cb85c'>(啟動)</font>產生一個可以吸收傷害的護盾，吸收量為<font color='#5cb85c'>(200/300/400/500)</font>額外加上擁有金錢5% 對魔免傷害減半，傷害上限1500。"
+		"DOTA_Tooltip_Ability_C06R_Description" "<font color='#5cb85c'>(被動)</font>攻擊的時候，可以額外造成等同擁有金錢5% 的真實傷害對魔免傷害減半，分身使用闊氣攻擊因為沒錢所以會反彈傷害給大盜自身，傷害上限<font color='#5cb85c'>(600/900/1200/1500)</font>。<font color='#5cb85c'>(啟動)</font>產生一個可以吸收傷害的護盾，吸收量為擁有金錢<font color='#5cb85c'>(2/3/4/5)% </font>持續6秒。"
 		"DOTA_Tooltip_Ability_C06T" "豪奪"
 		"DOTA_Tooltip_Ability_C06T_Description" "對目標敵方英雄進行打劫，可以偷取300~800的金錢和暈眩2秒，並且使自身其它技能在接下來30秒內獲得強化。大盜快手：攻擊次數增加2次。偷天換日：同時對目標造成400絕對傷害。闊氣攻擊：額外絕對傷害+50，護盾吸收量+300。"
 
