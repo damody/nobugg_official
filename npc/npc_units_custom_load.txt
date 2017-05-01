@@ -1279,7 +1279,7 @@
  		//----------------------------------------------------------------
  		"TeamName"					"DOTA_TEAM_GOODGUYS"			// Team name.
  		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
- 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+ 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
  		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_COURIER"
 		
  		// Vision
@@ -1353,7 +1353,7 @@
  		//----------------------------------------------------------------
  		"TeamName"					"DOTA_TEAM_GOODGUYS"			// Team name.
  		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
- 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+ 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
  		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_COURIER"
 		
  		// Vision
@@ -1427,7 +1427,7 @@
  		//----------------------------------------------------------------
  		"TeamName"					"DOTA_TEAM_GOODGUYS"			// Team name.
  		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
- 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+ 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
  		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_COURIER"
 		
  		// Vision
@@ -1501,7 +1501,7 @@
  		//----------------------------------------------------------------
  		"TeamName"					"DOTA_TEAM_GOODGUYS"			// Team name.
  		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
- 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+ 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
  		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_COURIER"
 		
  		// Vision
@@ -3767,7 +3767,7 @@
 		// ----------------------------------------------------------------
 		"BaseClass"	"npc_dota_creature"
 		// Add model
-		"Model"	"models/cavalry/cavalry.vmdl"
+		"Model"	"models/cavalry/cavalry_01.vmdl"
 		"ModelScale"	"1.4"
 		"Level"	"3"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
@@ -3846,7 +3846,7 @@
 		// ----------------------------------------------------------------
 		"BaseClass"	"npc_dota_creature"
 		// Add model
-		"Model"	"models/cavalry/cavalry.vmdl"
+		"Model"	"models/cavalry/cavalry_01.vmdl"
 		"ModelScale"	"1.4"
 		"Level"	"3"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
@@ -4555,6 +4555,74 @@
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 	}
 
+	"A26_MINE_school"
+	{
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/a26/book_explosion.vmdl"	// Model.
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"0"			// Name of sound set.
+		"Level"						"1"
+		"ModelScale"				"3"
+		"SelectionGroup"			"A26_MINE"
+		"BoundsHullName"			"DOTA_HULL_SIZE_SMALL"			// Hull type used for navigation/locomotion.
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					""			// Ability 1
+		"Ability2"					""			// Ability 2
+		"Ability3"					""			// Ability 3
+		"Ability4"					""			// Ability 4
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"0"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"0"			// Damage range min.
+		"AttackDamageMax"			"0"			// Damage range max.	
+		"AttackRate"				"1.0"		// Speed of attack.
+		"AttackAnimationPoint"		"0.0"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"0"			// Range within a target can be acquired.
+		"AttackRange"				"0"			// Range within a target can be attacked.
+		"ProjectileModel"			""			// Particle system model for projectile.
+		"ProjectileSpeed"			"0"			// Speed of projectile.		   
+
+		// Bounds
+		//----------------------------------------------------------------
+		"HealthBarOffset"			"140"
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"0"	// Experience earn.
+		"BountyGoldMin"				"0"		// Gold earned min.
+		"BountyGoldMax"				"0"		// Gold earned max.
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"  // has to be move ground because something about neutral camps
+		"MovementSpeed"				"0"		// Speed.
+		"MovementTurnRate"			"0"		// Turning rate.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"1"		// Base health.
+		"StatusHealthRegen"			"0.0"		// Health regeneration rate.
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"64"		// Range of vision during day light.
+		"VisionNighttimeRange"		"64"		// Range of vision at night time.
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"							// Team name.
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	}
+
 	"npc_dummy"
 	{
 		"model"	"models/empty.vmdl"
@@ -4654,7 +4722,7 @@
 		// Reference: Amim
 		"Ability2"	"com_bigattack"
 		// Reference: Aoar
-		"Ability3"	""
+		"Ability3"	"magical_1300"
 		// Reference: A0BN
 		"Ability4"	""
 		// Armor
@@ -4667,8 +4735,8 @@
 		"AttackDamageMin"	"470.0"
 		"AttackDamageMax"	"475.0"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
-		"AttackRate"	"0.6"
-		"AttackAnimationPoint"	"0.30"
+		"AttackRate"	"0.5"
+		"AttackAnimationPoint"	"0.25"
 		"AttackAcquisitionRange"	"1100"
 		"AttackRange"	"1100"
 		"ProjectileSpeed"	"1800"
@@ -4951,7 +5019,7 @@
 		// ----------------------------------------------------------------
 		"BaseClass"	"npc_dota_creature"
 		// Add model
-		"Model"	"models/cavalry/cavalry.vmdl"
+		"Model"	"models/cavalry/cavalry_01.vmdl"
 		"ModelScale"	"1.2"
 		"Level"	"3"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
@@ -6090,7 +6158,7 @@
 		// ----------------------------------------------------------------
 		"BaseClass"	"npc_dota_creep_lane"
 		// Add model
-		"Model"	"models/cavalry/cavalry.vmdl"
+		"Model"	"models/cavalry/cavalry_01.vmdl"
 		"ModelScale"	"1"
 		"Level"	"3"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
@@ -6144,7 +6212,7 @@
 		// ----------------------------------------------------------------
 		"TeamName"	"DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_HERO"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 		"Ability3"	""
 		"Ability4"	""
@@ -6171,7 +6239,7 @@
 		// ----------------------------------------------------------------
 		"BaseClass"	"npc_dota_creature"
 		// Add model
-		"Model"	"models/cavalry/cavalry.vmdl"
+		"Model"	"models/cavalry/cavalry_01.vmdl"
 		"ModelScale"	"1.3"
 		"Level"	"3"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
@@ -6225,7 +6293,7 @@
 		// ----------------------------------------------------------------
 		"TeamName"	"DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_HERO"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 		"Ability3"	""
 		"Ability4"	""
@@ -6252,7 +6320,7 @@
 		// ----------------------------------------------------------------
 		"BaseClass"	"npc_dota_creep_lane"
 		// Add model
-		"Model"	"models/cavalry/cavalry.vmdl"
+		"Model"	"models/cavalry/cavalry_01.vmdl"
 		"ModelScale"	"1.3"
 		"Level"	"3"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
@@ -7050,9 +7118,9 @@
 
  		// Bounty
  		//----------------------------------------------------------------
- 		"BountyXP"					"10"		// Experience earn.
- 		"BountyGoldMin"				"56"		// Gold earned min.
- 		"BountyGoldMax"				"68"		// Gold earned max.
+ 		"BountyXP"					"20"		// Experience earn.
+ 		"BountyGoldMin"				"20"		// Gold earned min.
+ 		"BountyGoldMax"				"20"		// Gold earned max.
 
  		// Movement
  		//----------------------------------------------------------------
@@ -7120,9 +7188,9 @@
 
  		// Bounty
  		//----------------------------------------------------------------
- 		"BountyXP"					"10"		// Experience earn.
- 		"BountyGoldMin"				"31"		// Gold earned min.
- 		"BountyGoldMax"				"43"		// Gold earned max.
+ 		"BountyXP"					"20"		// Experience earn.
+ 		"BountyGoldMin"				"20"		// Gold earned min.
+ 		"BountyGoldMax"				"20"		// Gold earned max.
 
  		// Movement
  		//----------------------------------------------------------------
@@ -7190,9 +7258,9 @@
 
  		// Bounty
  		//----------------------------------------------------------------
- 		"BountyXP"					"10"		// Experience earn.
- 		"BountyGoldMin"				"37"		// Gold earned min.
- 		"BountyGoldMax"				"41"		// Gold earned max.
+ 		"BountyXP"					"20"		// Experience earn.
+ 		"BountyGoldMin"				"20"		// Gold earned min.
+ 		"BountyGoldMax"				"20"		// Gold earned max.
 
  		// Movement
  		//----------------------------------------------------------------
@@ -7260,9 +7328,9 @@
 
  		// Bounty
  		//----------------------------------------------------------------
- 		"BountyXP"					"20"		// Experience earn.
- 		"BountyGoldMin"				"75"		// Gold earned min.
- 		"BountyGoldMax"				"84"		// Gold earned max.
+ 		"BountyXP"					"40"		// Experience earn.
+ 		"BountyGoldMin"				"40"		// Gold earned min.
+ 		"BountyGoldMax"				"40"		// Gold earned max.
 
  		// Movement
  		//----------------------------------------------------------------
@@ -7330,9 +7398,9 @@
 
  		// Bounty
  		//----------------------------------------------------------------
- 		"BountyXP"					"20"		// Experience earn.
- 		"BountyGoldMin"				"98"		// Gold earned min.
- 		"BountyGoldMax"				"114"		// Gold earned max.
+ 		"BountyXP"					"50"		// Experience earn.
+ 		"BountyGoldMin"				"60"		// Gold earned min.
+ 		"BountyGoldMax"				"60"		// Gold earned max.
 
  		// Movement
  		//----------------------------------------------------------------
@@ -7400,9 +7468,9 @@
 
  		// Bounty
  		//----------------------------------------------------------------
- 		"BountyXP"					"20"		// Experience earn.
- 		"BountyGoldMin"				"84"		// Gold earned min.
- 		"BountyGoldMax"				"92"		// Gold earned max.
+ 		"BountyXP"					"40"		// Experience earn.
+ 		"BountyGoldMin"				"40"		// Gold earned min.
+ 		"BountyGoldMax"				"40"		// Gold earned max.
 
  		// Movement
  		//----------------------------------------------------------------
@@ -7470,9 +7538,9 @@
 
  		// Bounty
  		//----------------------------------------------------------------
- 		"BountyXP"					"20"		// Experience earn.
- 		"BountyGoldMin"				"84"		// Gold earned min.
- 		"BountyGoldMax"				"92"		// Gold earned max.
+ 		"BountyXP"					"40"		// Experience earn.
+ 		"BountyGoldMin"				"40"		// Gold earned min.
+ 		"BountyGoldMax"				"40"		// Gold earned max.
 
  		// Movement
  		//----------------------------------------------------------------
@@ -7540,9 +7608,9 @@
 
  		// Bounty
  		//----------------------------------------------------------------
- 		"BountyXP"					"20"		// Experience earn.
- 		"BountyGoldMin"				"117"		// Gold earned min.
- 		"BountyGoldMax"				"121"		// Gold earned max.
+ 		"BountyXP"					"50"		// Experience earn.
+ 		"BountyGoldMin"				"60"		// Gold earned min.
+ 		"BountyGoldMax"				"60"		// Gold earned max.
 
  		// Movement
  		//----------------------------------------------------------------
@@ -7610,9 +7678,9 @@
 
  		// Bounty
  		//----------------------------------------------------------------
- 		"BountyXP"					"20"		// Experience earn.
- 		"BountyGoldMin"				"65"		// Gold earned min.
- 		"BountyGoldMax"				"70"		// Gold earned max.
+ 		"BountyXP"					"30"		// Experience earn.
+ 		"BountyGoldMin"				"35"		// Gold earned min.
+ 		"BountyGoldMax"				"35"		// Gold earned max.
 
  		// Movement
  		//----------------------------------------------------------------
@@ -7680,9 +7748,9 @@
 
  		// Bounty
  		//----------------------------------------------------------------
- 		"BountyXP"					"10"		// Experience earn.
- 		"BountyGoldMin"				"59"		// Gold earned min.
- 		"BountyGoldMax"				"67"		// Gold earned max.
+ 		"BountyXP"					"20"		// Experience earn.
+ 		"BountyGoldMin"				"30"		// Gold earned min.
+ 		"BountyGoldMax"				"30"		// Gold earned max.
 
  		// Movement
  		//----------------------------------------------------------------
@@ -7750,9 +7818,9 @@
 
  		// Bounty
  		//----------------------------------------------------------------
- 		"BountyXP"					"20"		// Experience earn.
- 		"BountyGoldMin"				"115"		// Gold earned min.
- 		"BountyGoldMax"				"125"		// Gold earned max.
+ 		"BountyXP"					"50"		// Experience earn.
+ 		"BountyGoldMin"				"60"		// Gold earned min.
+ 		"BountyGoldMax"				"60"		// Gold earned max.
 
  		// Movement
  		//----------------------------------------------------------------
@@ -7820,9 +7888,9 @@
 
  		// Bounty
  		//----------------------------------------------------------------
- 		"BountyXP"					"20"		// Experience earn.
- 		"BountyGoldMin"				"105"		// Gold earned min.
- 		"BountyGoldMax"				"115"		// Gold earned max.
+ 		"BountyXP"					"40"		// Experience earn.
+ 		"BountyGoldMin"				"60"		// Gold earned min.
+ 		"BountyGoldMax"				"60"		// Gold earned max.
 
  		// Movement
  		//----------------------------------------------------------------
@@ -7890,9 +7958,9 @@
 
  		// Bounty
  		//----------------------------------------------------------------
- 		"BountyXP"					"30"		// Experience earn.
- 		"BountyGoldMin"				"235"		// Gold earned min.
- 		"BountyGoldMax"				"255"		// Gold earned max.
+ 		"BountyXP"					"50"		// Experience earn.
+ 		"BountyGoldMin"				"110"		// Gold earned min.
+ 		"BountyGoldMax"				"110"		// Gold earned max.
 
  		// Movement
  		//----------------------------------------------------------------
@@ -7960,9 +8028,9 @@
 
  		// Bounty
  		//----------------------------------------------------------------
- 		"BountyXP"					"20"		// Experience earn.
- 		"BountyGoldMin"				"258"		// Gold earned min.
- 		"BountyGoldMax"				"274"		// Gold earned max.
+ 		"BountyXP"					"50"		// Experience earn.
+ 		"BountyGoldMin"				"120"		// Gold earned min.
+ 		"BountyGoldMax"				"120"		// Gold earned max.
 
  		// Movement
  		//----------------------------------------------------------------
@@ -7990,7 +8058,7 @@
  	}
  	//受詛咒的武士亡靈
  	"npc_dota_cursed_warrior_souls"
- 	{										
+ 	{
  		// General
  		//----------------------------------------------------------------
  		"Model"						"models/items/terrorblade/marauders_demon/marauders_demon.vmdl"	// Model.
@@ -8005,7 +8073,7 @@
  		"Ability1"					"for_cp_position"			// Ability 1
  		"Ability2"					"dead_give_item"			// Ability 2
  		"Ability3"					"for_magic_immune"			// Ability 3
- 		"Ability4"					""			// Ability 4
+ 		"Ability4"					"warrior_souls_skill"			// Ability 4
 
  		// Armor
  		//----------------------------------------------------------------
@@ -8030,7 +8098,7 @@
 
  		// Bounty
  		//----------------------------------------------------------------
- 		"BountyXP"					"700"		// Experience earn.
+ 		"BountyXP"					"450"		// Experience earn.
  		"BountyGoldMin"				"450"		// Gold earned min.
  		"BountyGoldMax"				"450"		// Gold earned max.
 
@@ -8041,10 +8109,10 @@
 
  		// Status
  		//----------------------------------------------------------------
- 		"StatusHealth"				"18550"		// Base health.
+ 		"StatusHealth"				"20000"		// Base health.
  		"StatusHealthRegen"			"200"		// Health regeneration rate.
- 		"StatusMana"				"1500"			// Base mana.
- 		"StatusManaRegen"			"0"			// Mana regeneration rate.		 
+ 		"StatusMana"				"3000"			// Base mana.
+ 		"StatusManaRegen"			"1"			// Mana regeneration rate.		 
 	
  		// Vision
  		//----------------------------------------------------------------
@@ -8100,7 +8168,7 @@
 
  		// Bounty
  		//----------------------------------------------------------------
- 		"BountyXP"					"600"		// Experience earn.
+ 		"BountyXP"					"1200"		// Experience earn.
  		"BountyGoldMin"				"600"		// Gold earned min.
  		"BountyGoldMax"				"600"		// Gold earned max.
 
@@ -8380,9 +8448,9 @@
 
  		// Bounty
  		//----------------------------------------------------------------
- 		"BountyXP"					"20"		// Experience earn.
- 		"BountyGoldMin"				"105"		// Gold earned min.
- 		"BountyGoldMax"				"115"		// Gold earned max.
+ 		"BountyXP"					"50"		// Experience earn.
+ 		"BountyGoldMin"				"50"		// Gold earned min.
+ 		"BountyGoldMax"				"50"		// Gold earned max.
 
  		// Movement
  		//----------------------------------------------------------------
@@ -8450,9 +8518,9 @@
 
  		// Bounty
  		//----------------------------------------------------------------
- 		"BountyXP"					"20"		// Experience earn.
- 		"BountyGoldMin"				"155"		// Gold earned min.
- 		"BountyGoldMax"				"155"		// Gold earned max.
+ 		"BountyXP"					"40"		// Experience earn.
+ 		"BountyGoldMin"				"77"		// Gold earned min.
+ 		"BountyGoldMax"				"77"		// Gold earned max.
 
  		// Movement
  		//----------------------------------------------------------------

@@ -26,7 +26,7 @@
 		"AbilityType"  								"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityUnitTargetTeam"						"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"						"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitDamageType"               		"DAMAGE_TYPE_PURE"
+		"AbilityUnitDamageType"               		"DAMAGE_TYPE_PHYSICAL"
 		"AbilityUnitTargetFlags"					"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 
 		"AbilityCooldown"                           "23 19 15 11"
@@ -88,6 +88,11 @@
 			{
 				"var_type"					"FIELD_INTEGER"
 				"B30W_radius"				"600"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"B30W_a"				"1 1.3 1.6 2"
 			}
 		}
 	}
@@ -191,13 +196,23 @@
 		"AbilityManaCost"							"85 110 135 160"
 		"AbilityCooldown"							"15 12 9 6"
 		"AbilityCastRange"              			"900"
-
+		"AbilityCastPoint"			"0.1"
+		"OnAbilityPhaseStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"						"scripts/vscripts/heroes/B_Unified/B30.lua"
+				"Function"							"B30R_OnAbilityPhaseStart"
+				"Target"	"TARGET"
+			}
+		}
 		"OnSpellStart"
 		{
 			"RunScript"
 			{
 				"ScriptFile"						"scripts/vscripts/heroes/B_Unified/B30.lua"
 				"Function"							"B30R_OnSpellStart"
+				"Target"	"TARGET"
 			}
 		}
 
@@ -236,6 +251,7 @@
 		"AbilityCastRange"							"1500"
 		"AbilityCooldown"           				"115 105 95"
 		"AbilityManaCost"           				"250"
+		"AbilityCastPoint"							"0.1"
 		
 		"OnSpellStart"
 		{
@@ -250,7 +266,7 @@
 				"FixedDistance"  "1700"
 				"TargetTeams"	 "DOTA_UNIT_TARGET_TEAM_ENEMY"
 				"TargetTypes"	 "DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
-				"TargetFlags"	 "DOTA_UNIT_TARGET_FLAG_NONE"						
+				"TargetFlags"	 "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"						
 			    "ProvidesVision" "1"
 			    "VisionRadius" 	 "500"
 			}
@@ -308,7 +324,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"B30T_dotDamage"		"175 225 335"
+				"B30T_dotDamage"		"200 300 450"
 			}
 			"02"
 			{
