@@ -316,6 +316,12 @@
 		// 以下是道具
 		// ======================================================
 		
+		"DOTA_Tooltip_Ability_item_frozen_book" "冰爆之書"
+		"DOTA_Tooltip_Ability_item_frozen_book_Description"	"智力+50，施法時短暫冰凍週圍450敵人0.3秒，【使用】產生一輪冰爆對自身週圍450的敵人造成1000傷害並急凍1.5秒。"
+		
+		"DOTA_Tooltip_Ability_item_the_great_bow_of_scorpion" "蠍尾．妖弓"
+		"DOTA_Tooltip_Ability_item_the_great_bow_of_scorpion_Description"	"敏捷+30、法力+500、回魔速度+200% ，可以對範圍500的敵人射出毒箭造成560傷害並中毒7秒，每秒受到100點傷害，對遠距英雄增加150攻擊距離。"
+		
 		"DOTA_Tooltip_Ability_item_poisonous_ring" "毒之戒指"
 		"DOTA_Tooltip_Ability_item_poisonous_ring_Description"	"攻擊+10，攻擊時讓人中毒而10秒，每秒造成20點傷害"
 		
@@ -3311,7 +3317,7 @@
 		"DOTA_Tooltip_Ability_C06W_old" "狂氣"
 		"DOTA_Tooltip_Ability_C06W_old_Description" "犧牲<font color='#5cb85c'>(36/32/28/24)</font>% 移動速度，增加<font color='#5cb85c'>(120/240/360/480)</font>% 攻擊速度。持續8秒。"
 		"DOTA_Tooltip_Ability_C06E_old" "殺人越貨"
-		"DOTA_Tooltip_Ability_C06E_old_Description" "立刻殺死一個非英雄部隊，並額外獲得指定部隊原本死亡掉落的黃金一倍。"
+		"DOTA_Tooltip_Ability_C06E_old_Description" "立刻殺死一個非英雄部隊，並額外獲得指定部隊原本死亡掉落的黃金6倍。"
 		"DOTA_Tooltip_Ability_C06R_old" "野蠻之力"
 		"DOTA_Tooltip_Ability_C06R_old_Description" "增加<font color='#5cb85c'>(8/16/24/32)</font>% 攻擊力。"
 		"DOTA_Tooltip_Ability_C06T_old" "搶劫"
@@ -3347,16 +3353,16 @@
 		"npc_dota_hero_vengefulspirit" "立花誾千代"
 		"npc_dota_hero_vengefulspirit_hype" "被稱為「鬼道雪」的豐州猛將立花道雪之女。由於父親膝下沒有男子，他自小就繼承了家督地位，成為立花城城主。擁有很高的自尊心，以及不容妥協的性格。"
 		"DOTA_Tooltip_Ability_C09W" "霜刺"
-		"DOTA_Tooltip_Ability_C09W_Description" "在攻擊中附帶刺骨的霜刺，造成<font color='#5cb85c'>(40/60/80/100)</font>額外傷害，並且使被擊中的敵人減緩<font color='#5cb85c'>(25/45/65/85)</font>% 攻擊速度與無視魔免緩<font color='#5cb85c'>(20/30/40/50)</font>% 移動速度，持續2秒。每下攻擊消耗<font color='#5cb85c'>(6/9/12/15)</font>點魔力，無法與其他法球共存。"
+		"DOTA_Tooltip_Ability_C09W_Description" "在攻擊中附帶刺骨的霜刺，造成<font color='#5cb85c'>(40/60/80/100)</font>額外傷害，並且使被擊中的敵人減緩<font color='#5cb85c'>(25/45/65/85)</font>% 攻擊速度與無視魔免緩<font color='#5cb85c'>(20/30/40/50)</font>% 移動速度，持續2秒。每下攻擊消耗<font color='#5cb85c'>(6/8/10/12)</font>點魔力，無法與其他法球共存。"
 		"DOTA_Tooltip_Ability_C09E" "白熱"
 		"DOTA_Tooltip_Ability_C09E_Description" "增加自身110% 的攻擊速度並治療<font color='#5cb85c'>(100/175/250/325)</font>生命值，持續<font color='#5cb85c'>(3/4/5/6)</font>秒。"
 		"DOTA_Tooltip_Ability_C09R" "冰靈舞魂"
 		"DOTA_Tooltip_Ability_C09R_Description" "瞬間移動到距離<font color='#5cb85c'>(550/600/650/700)</font>的指定地點，然後會產生一陣冰爆對所在地點周圍300範圍的敵軍造成<font color='#5cb85c'>(100/200/300/400)</font>的傷害，並且緩慢50% 攻擊及移動速度3秒。無法牽制魔法免疫單位，但受牽制後才進入魔法免疫狀態無法解除。"
 		"DOTA_Tooltip_Ability_C09T" "破甲術"
-		"DOTA_Tooltip_Ability_C09T_Description" "能夠降低附近800範圍內所有敵軍<font color='#5cb85c'>(16/22/28)</font>護甲。持續<font color='#5cb85c'>(7/10/13)</font>秒。破甲無視魔法免疫，但受影響後才進入魔法免疫狀態可解除。"
+		"DOTA_Tooltip_Ability_C09T_Description" "能夠降低附近800範圍內所有敵軍<font color='#5cb85c'>(20/28/36)</font>護甲。持續<font color='#5cb85c'>(7/10/13)</font>秒。破甲無視魔法免疫，但受影響後才進入魔法免疫狀態可解除。"
 
 		"DOTA_Tooltip_Ability_C09W_old" "冰霜斬擊"
-		"DOTA_Tooltip_Ability_C09W_old_Description" "攻擊時附加<font color='#5cb85c'>(5/10/15/20)</font>點的額外傷害，目標會受到冰霜影響而減慢攻擊速度<font color='#5cb85c'>(10/15/20/25)</font>% 及無視魔免緩移動速度<font color='#5cb85c'>(15/25/35/45)</font>% ，持續1秒。每下攻擊消耗<font color='#5cb85c'>(8/10/12/14)</font>點魔力，無法與其他法球共存。"
+		"DOTA_Tooltip_Ability_C09W_old_Description" "攻擊時附加<font color='#5cb85c'>(5/10/15/20)</font>點的額外傷害，目標會受到冰霜影響而減慢攻擊速度<font color='#5cb85c'>(10/15/20/25)</font>% 及無視魔免緩移動速度<font color='#5cb85c'>(15/25/35/45)</font>% ，持續1秒。每下攻擊消耗<font color='#5cb85c'>(5/7/9/11)</font>點魔力，無法與其他法球共存。"
 		"DOTA_Tooltip_Ability_C09E_old" "白熱"
 		"DOTA_Tooltip_Ability_C09E_old_Description" "增加指定部隊攻擊速度<font color='#5cb85c'>(50/100/150/200)</font>% 。持續15秒。"
 		"DOTA_Tooltip_Ability_C09R_old" "冰靈舞魂"
@@ -3414,7 +3420,7 @@
 		"DOTA_Tooltip_Ability_B14T_Description" "被動：在夜晚時將會自動進入隱形狀態，攻擊或是施展技能將會現形0.5秒。\n啟動：使用影武者之術，使自身在接下來20秒內增加<font color='#5cb85c'>(80/100/120)</font>攻擊傷害並增加<font color='#5cb85c'>(15/25/35)</font>% 移動速度。"
 
 		"DOTA_Tooltip_Ability_B14D_old" "影之斬"
-		"DOTA_Tooltip_Ability_B14D_old_Description" "可以隱形，移動速度提昇40%，並持續30秒。如果攻擊的話，影之斬將即告失效，第一擊會造成<font color='#5cb85c'>(400/600/800)</font>點額外傷害。"
+		"DOTA_Tooltip_Ability_B14D_old_Description" "可以隱形，移動速度提昇40%，並持續30秒。如果攻擊的話，影之斬將即告失效，第一擊會造成<font color='#5cb85c'>(1000/1600/2400)</font>點額外傷害。"
 		"DOTA_Tooltip_Ability_B14W_old" "拔刀斬"
 		"DOTA_Tooltip_Ability_B14W_old_Description" "對著單一目標斬擊，造成<font color='#5cb85c'>(150/250/350/450)</font>點傷害並暈眩<font color='#5cb85c'>(1/1.5/2/2.5)</font>秒。"
 		"DOTA_Tooltip_Ability_B14E_old" "近侍心得"
