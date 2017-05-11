@@ -468,7 +468,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"B14D_old_damage"		"1000 1600 2400"
+				"B14D_old_damage"		"1000 1400 1800"
 			}
 			"02"
 			{

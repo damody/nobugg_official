@@ -214,6 +214,12 @@
 		
 		"npc_dota_hero_mirana"	"玉子"
 		"npc_dota_hero_mirana_hype"	"广受同情的悲剧女性，是明智光秀之女，细川忠兴之妻。光秀灭亡后，她背负着叛贼之女的名声悲惨地活了下来，皈依基督教，教名为格拉西亚，后来在石田三成囚禁诸将家眷为人质时，主动求死，让家臣取了自己性命。"
+		
+		"DOTA_Tooltip_modifier_debuff_1"	"负面效果1级"
+		"DOTA_Tooltip_modifier_debuff_1_Description"	"减少10%%总伤害，增加10%%受到伤害"
+		"DOTA_Tooltip_modifier_debuff_2"	"负面效果2级"
+		"DOTA_Tooltip_modifier_debuff_2_Description"	"减少20%%总伤害，增加20%%受到伤害"
+		
 		// 战法
 		
 		"DOTA_Tooltip_Ability_choose_11" "选择11版技能组"
@@ -239,7 +245,7 @@
 		"DOTA_Tooltip_Ability_dead_give_item" "死了掉落分灵之诺"
 		"DOTA_Tooltip_Ability_dead_give_item_Description"	"死了掉落分灵之诺"
 		"DOTA_Tooltip_Ability_war_magic_back_wall" "背水一战"
-		"DOTA_Tooltip_Ability_war_magic_back_wall_Description" "出现5位守卫大将支援本阵，持续100秒"
+		"DOTA_Tooltip_Ability_war_magic_back_wall_Description" "出现5位守卫大将支援本阵，持续100秒，本阵无敌5秒"
 		"DOTA_Tooltip_Ability_war_magic_light" "曳光战法"
 		"DOTA_Tooltip_Ability_war_magic_light_Description" "打亮该地区范围600视野5秒"
 		"DOTA_Tooltip_Ability_war_magic_speedup" "神速战法"
@@ -320,7 +326,7 @@
 		"DOTA_Tooltip_Ability_item_frozen_book_Description"	"智力+50，施法时短暂冰冻周围450敌人0.3秒，【使用】产生一轮冰爆对自身周围450的敌人造成1000伤害并急冻1.5秒。"
 		
 		"DOTA_Tooltip_Ability_item_the_great_bow_of_scorpion" "蝎尾．妖弓"
-		"DOTA_Tooltip_Ability_item_the_great_bow_of_scorpion_Description"	"敏捷+30、法力+500、回魔速度+200% ，可以对范围500的敌人射出毒箭造成560伤害并中毒7秒，每秒受到100点伤害，对远距英雄增加150攻击距离。"
+		"DOTA_Tooltip_Ability_item_the_great_bow_of_scorpion_Description"	"敏捷+30、法力+500、回魔速度+200% ，可以对范围500的敌人射出毒箭造成560伤害并中毒7秒，每秒受到100点伤害，对远距英雄增加100攻击距离。"
 		
 		"DOTA_Tooltip_Ability_item_poisonous_ring" "毒之戒指"
 		"DOTA_Tooltip_Ability_item_poisonous_ring_Description"	"攻击+10，攻击时让人中毒而10秒，每秒造成20点伤害"
@@ -370,6 +376,8 @@
 		"DOTA_Tooltip_Ability_item_perceive_wine_Description" "【使用】在3.5秒内获得魔法免疫。可使用3次。"
 		"DOTA_Tooltip_Ability_item_perceive_wine_hyper" "抗魔法药剂"
 		"DOTA_Tooltip_Ability_item_perceive_wine_hyper_Description" "【使用】在10秒内获得魔法免疫。可使用2次。"
+		"DOTA_Tooltip_Ability_item_perceive_wine_hyper_new" "(新人用)抗魔法药剂"
+		"DOTA_Tooltip_Ability_item_perceive_wine_hyper_new_Description" "【使用】在10秒内获得魔法免疫。可使用2次。"
 
 		"DOTA_Tooltip_Ability_item_S01" "烤乳猪"
 		"DOTA_Tooltip_Ability_item_S01_Description" "会无限再生的肉，吃了可以回复200生命100魔力。"
@@ -385,6 +393,9 @@
 
 		"DOTA_Tooltip_Ability_item_rations" "军粮丸"
 		"DOTA_Tooltip_Ability_item_rations_Description" "回复420生命值和210法力。可使用2次。"
+		
+		"DOTA_Tooltip_Ability_item_rations_new" "(新人用)军粮丸"
+		"DOTA_Tooltip_Ability_item_rations_new_Description" "回复420生命值和210法力。可使用2次。"
 
 		"DOTA_Tooltip_Ability_item_staff" "杵杖"
 		"DOTA_Tooltip_Ability_item_staff_Description" "智慧+10"
@@ -448,7 +459,7 @@
 		"DOTA_Tooltip_Ability_item_wind_scroll_Description" "召换风之阵，使范围内友军增加15% 移动速度， 持续22秒。"
 
 		"DOTA_Tooltip_Ability_item_mountain_scroll" "山之卷"
-		"DOTA_Tooltip_Ability_item_mountain_scroll_Description" "增加自身50护甲并减少20% 物理伤害，持续5秒。"
+		"DOTA_Tooltip_Ability_item_mountain_scroll_Description" "增加自身50护甲并减少10% 物理伤害，持续5秒。"
 
 		"DOTA_Tooltip_Ability_item_fire_scroll" "火之卷"
 		"DOTA_Tooltip_Ability_item_fire_scroll_Description" "周围友军增加40% 攻击伤害，持续8秒。"
@@ -507,6 +518,9 @@
 
 		"DOTA_Tooltip_Ability_item_protection_amulet" "御守"
 		"DOTA_Tooltip_Ability_item_protection_amulet_Description" "自动抵挡一次魔法技能。30秒内不得重复发动。"
+		
+		"DOTA_Tooltip_Ability_item_protection_amulet_new" "(新人用)御守"
+		"DOTA_Tooltip_Ability_item_protection_amulet_new_Description" "自动抵挡一次魔法技能。30秒内不得重复发动。"
 
 		"DOTA_Tooltip_Ability_item_brave_ring" "武尊环"
 		"DOTA_Tooltip_Ability_item_brave_ring_Description" "攻击时15% 机率造成2倍伤害。"
@@ -544,13 +558,13 @@
 		"DOTA_Tooltip_Ability_item_the_great_spear_of_dragonfly_Description" "攻击伤害+50，力量+25。攻击时有20% 机率可以造成300的扩散伤害，对魔免单位只造成100伤害。唯一被动：增加15% 移动速度，每秒回复1% 最大生命值。"
 
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_hurricane" "铁碎牙．妖刀"
-		"DOTA_Tooltip_Ability_item_the_great_sword_of_hurricane_Description" "攻击伤害+60，护甲+10。每1秒随机对周围的一个敌人释放风之伤，可以造成320伤害。【使用】召唤风阵，风阵内的所有敌人减慢190% 攻速，降低10护甲，持续20秒。<font color='#cc0000'>装备铁碎牙者，其分身同样具有铁碎牙被动一半的伤害效果。</font>"
+		"DOTA_Tooltip_Ability_item_the_great_sword_of_hurricane_Description" "攻击伤害+60，护甲+10。每1秒随机对周围的一个敌人释放风之伤，可以造成400伤害。【使用】召唤风阵，风阵内的所有敌人减慢190% 攻速，降低10护甲，持续20秒。<font color='#cc0000'>装备铁碎牙者，其分身同样具有铁碎牙被动一半的伤害效果。</font>"
 
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_spike" "鬼丸国钢．铭刀"
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_spike_Description" "攻击伤害+40，智慧+20，全能力+10。【使用】使出地狱尖刺，将周围的敌人刺到空中并重重摔下，造成250伤害并晕眩1.6秒。"
 
-		"DOTA_Tooltip_Ability_item_the_great_sword_of_new_moon" "三日月宗近．铭刀"
-		"DOTA_Tooltip_Ability_item_the_great_sword_of_new_moon_Description" "攻击伤害+50，智慧+40。【使用】燃烧目标敌人最多1500法力，并造成等量伤害。<font color='#cc0000'>伤害依施放目标当前法力为准。</font>"
+		"DOTA_Tooltip_Ability_item_the_great_sword_of_xnew_moon" "三日月宗近．铭刀"
+		"DOTA_Tooltip_Ability_item_the_great_sword_of_xnew_moon_Description" "攻击伤害+50，智慧+40。【使用】燃烧目标敌人最多1500法力，并造成等量伤害。<font color='#cc0000'>伤害依施放目标当前法力为准。</font>"
 
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_toxic" "梅莺毒．妖刀"
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_toxic_Description" "攻击伤害+40，灵活+20。每次攻击使敌人中毒，减缓移动速度25% 2秒，并中毒每秒85伤害持续5秒，。【使用】对目标敌人射出一只剧毒之箭造成560的初始伤害，接下来每秒造成50伤害，持续5秒。"
@@ -745,22 +759,22 @@
 		"DOTA_Tooltip_Ability_item_dark_boots_1_Description" "移动速度+90，攻击伤害+30，攻速+30% 。【使用】在10秒内获得魔法免疫。<font color='#cc0000'>移动速度不得累计。</font>"
 
 		"DOTA_Tooltip_Ability_item_mana_boots" "仕手能靴"
-		"DOTA_Tooltip_Ability_item_mana_boots_Description" "移动速度+60，智力+5。每秒回复8.5法力，回魔速率+150% 。【使用】在5秒内获得魔法免疫。<font color='#cc0000'>移动速度不得累计。</font>"
+		"DOTA_Tooltip_Ability_item_mana_boots_Description" "移动速度+80，智力+5。每秒回复8.5法力，回魔速率+150% 。【使用】在5秒内获得魔法免疫。<font color='#cc0000'>移动速度不得累计。</font>"
 
 		"DOTA_Tooltip_Ability_item_mana_boots_1" "破魔．仕手能靴"
-		"DOTA_Tooltip_Ability_item_mana_boots_1_Description" "移动速度+60，智力+5。每秒回复8.5法力，回魔速率+150% 。【使用】在10秒内获得魔法免疫。<font color='#cc0000'>移动速度不得累计。</font>"
+		"DOTA_Tooltip_Ability_item_mana_boots_1_Description" "移动速度+80，智力+5。每秒回复8.5法力，回魔速率+150% 。【使用】在10秒内获得魔法免疫。<font color='#cc0000'>移动速度不得累计。</font>"
 
 		"DOTA_Tooltip_Ability_item_ryukyu_ronin_clogs" "琉球浪人木屐"
-		"DOTA_Tooltip_Ability_item_ryukyu_ronin_clogs_Description" "移动速度+75，生命值+360，15% 机率格档攻击。【使用】在5秒内获得魔法免疫。<font color='#cc0000'>移动速度不得累计。</font>"
+		"DOTA_Tooltip_Ability_item_ryukyu_ronin_clogs_Description" "移动速度+80，生命值+360，15% 机率格档攻击。【使用】在5秒内获得魔法免疫。<font color='#cc0000'>移动速度不得累计。</font>"
 
 		"DOTA_Tooltip_Ability_item_ryukyu_ronin_clogs_1" "破魔．琉球浪人木屐"
-		"DOTA_Tooltip_Ability_item_ryukyu_ronin_clogs_1_Description" "移动速度+75，生命值+360，15% 机率格档攻击。【使用】在10秒内获得魔法免疫。<font color='#cc0000'>移动速度不得累计。</font>"
+		"DOTA_Tooltip_Ability_item_ryukyu_ronin_clogs_1_Description" "移动速度+80，生命值+360，15% 机率格档攻击。【使用】在10秒内获得魔法免疫。<font color='#cc0000'>移动速度不得累计。</font>"
 
 		"DOTA_Tooltip_Ability_item_magic_defence_boots" "御魔长踏"
-		"DOTA_Tooltip_Ability_item_magic_defence_boots_Description" "移动速度+60，每秒回复20生命值。降低所受的法术伤害20% 。【使用】在5秒内获得魔法免疫。<font color='#cc0000'>移动速度不得累计。</font>"
+		"DOTA_Tooltip_Ability_item_magic_defence_boots_Description" "移动速度+80，每秒回复20生命值。降低所受的法术伤害20% 。【使用】在5秒内获得魔法免疫。<font color='#cc0000'>移动速度不得累计。</font>"
 
 		"DOTA_Tooltip_Ability_item_magic_defence_boots_1" "破魔．御魔长踏"
-		"DOTA_Tooltip_Ability_item_magic_defence_boots_1_Description" "移动速度+60，每秒回复20生命值。降低所受的法术伤害20% 。【使用】在10秒内获得魔法免疫。<font color='#cc0000'>移动速度不得累计。</font>"
+		"DOTA_Tooltip_Ability_item_magic_defence_boots_1_Description" "移动速度+80，每秒回复20生命值。降低所受的法术伤害20% 。【使用】在10秒内获得魔法免疫。<font color='#cc0000'>移动速度不得累计。</font>"
 
 		"DOTA_Tooltip_Ability_item_death_of_scepter" "逝者之笏"
 		"DOTA_Tooltip_Ability_item_death_of_scepter_Description" "全能力+15，法力+300。【使用】使目标受到等同他现有生命35% 的魔法伤害。<font color='#cc0000'>对魔法免疫者施放造成现有生命15% 血量的真实伤害。</font>"
@@ -867,17 +881,17 @@
 
 
 		"DOTA_Tooltip_Ability_item_the_art_of_war_mountain_chapter" "孙子兵法．山之章"
-		"DOTA_Tooltip_Ability_item_the_art_of_war_mountain_chapter_Description" "力量+10。【被动】周围友军护甲+6。【使用】增加周围500友军50护甲并减少30% 物理伤害，持续5秒。"
+		"DOTA_Tooltip_Ability_item_the_art_of_war_mountain_chapter_Description" "力量+10。【被动】周围友军护甲+6。【使用】增加周围500友军50护甲并减少15% 物理伤害，持续5秒。"
 
 
 		"DOTA_Tooltip_Ability_item_the_lost_art_of_war_1" "孙子兵法残册"
 		"DOTA_Tooltip_Ability_item_the_lost_art_of_war_1_Description" "全能力+10。【被动】周围友军增加<font color='#5bc0de'>25% </font>攻速，周围友军增加<font color='#5bc0de'>25% </font>攻击伤害。【使用】召唤3名下级伏兵先锋以及1名下级伏兵军师加入战斗。伏兵存在30秒。<font color='#cc0000'>灵气效果无法与“林之章”、“火之章”叠加。</font>"
 
 		"DOTA_Tooltip_Ability_item_the_lost_art_of_war_2" "孙子兵法断简"
-		"DOTA_Tooltip_Ability_item_the_lost_art_of_war_2_Description" "全能力+10。【使用】召唤风护之阵，使范围内的友军增加15% 移动速度，且前5秒额外增加50护甲并减少40% 物理伤害，风护之阵持续20秒。<font color='#cc0000'>灵气效果无法与“风之章”、“山之章”叠加。</font>"
+		"DOTA_Tooltip_Ability_item_the_lost_art_of_war_2_Description" "全能力+10。【使用】召唤风护之阵，使范围内的友军增加15% 移动速度，且前5秒额外增加50护甲并减少30% 物理伤害，风护之阵持续20秒。<font color='#cc0000'>灵气效果无法与“风之章”、“山之章”叠加。</font>"
 
 		"DOTA_Tooltip_Ability_item_the_art_of_war" "孙子兵法全本"
-		"DOTA_Tooltip_Ability_item_the_art_of_war_Description" "全能力+20。【被动】周围友军护甲+7，周围友军增加<font color='#5bc0de'>25% </font>攻速，周围友军增加<font color='#5bc0de'>25% </font>攻击伤害。【使用】召唤4名上级伏兵、1名上级伏兵军师加入战斗，伏兵存在30秒，增加50护甲5秒与40% 并减少50% 物理伤害攻击力8秒，增加25% 跑速20秒。<font color='#cc0000'>任何相同灵气效果无法叠加。</font>"
+		"DOTA_Tooltip_Ability_item_the_art_of_war_Description" "全能力+20。【被动】周围友军护甲+7，周围友军增加<font color='#5bc0de'>25% </font>攻速，周围友军增加<font color='#5bc0de'>25% </font>攻击伤害。【使用】召唤4名上级伏兵、1名上级伏兵军师加入战斗，伏兵存在30秒，增加50护甲5秒与并减少40% 物理伤害、增加40% 攻击力8秒，增加25% 跑速20秒。<font color='#cc0000'>任何相同灵气效果无法叠加。</font>"
 
 		"DOTA_Tooltip_Ability_item_the_over_lightning_art_of_war" "无上雷暴之书"
 		"DOTA_Tooltip_Ability_item_the_over_lightning_art_of_war_Description" "智慧+60。【使用】以自身为中心范围500内召唤闪电雷暴，每秒对身处风暴中的敌人造成等同他们生命最大值11% 的伤害，持续11秒。每当英雄施展技能或是使用物品，将会额外多耗费75法力，并对周围1000的敌人造成190闪电伤害。<font color='#cc0000'>魔免伤害减半</font>"
@@ -913,6 +927,7 @@
 		
 		"com_general"	"侍大将"
 		"com_general2"	"守卫大将"
+		"com_general3"	"背水守卫大将"
 		
 		"ninja_unit3"	"上忍"
 		"ninja_unit2"	"中忍"
@@ -1004,7 +1019,7 @@
 		"DOTA_Tooltip_Ability_B33E_old" "蛛网缠身"
 		"DOTA_Tooltip_Ability_B33E_old_Description" "使目标敌军被充满剧毒的蛛网所缠绕，造成目标<font color='#5cb85c'>(1/2/3/4)</font>秒的时间无法移动和攻击与每秒<font color='#5cb85c'>(35/45/55/65)</font>点伤害"
 		"DOTA_Tooltip_Ability_B33R_old" "毒气之箭"
-		"DOTA_Tooltip_Ability_B33R_old_Description" "攻击时造成一种200范围而每秒造成<font color='#5cb85c'>(20/40/60/80)</font>伤害的毒雾，持续2秒。"
+		"DOTA_Tooltip_Ability_B33R_old_Description" "攻击时造成一种200范围而每秒造成<font color='#5cb85c'>(20/40/60/80)</font>伤害的毒雾最多叠3层对魔免伤害减半，持续3秒。"
 		"DOTA_Tooltip_Ability_B33T_old" "蜘蛛缠身"
 		"DOTA_Tooltip_Ability_B33T_old_Description" "放出剧毒蜘蛛缠绕着目标，降低目标50% 移动速度及<font color='#5cb85c'>(50/75/100)% </font>攻击速度，每0.5秒受到<font color='#5cb85c'>(66/105/135)</font>点伤害，持续10秒。"
 
@@ -1113,7 +1128,7 @@
 		"DOTA_Tooltip_Ability_C10T_old_Description" "增加攻击<font color='#5cb85c'>(25/45/65)</font>点，攻击时有50% 机率打出升龙乱舞，对一直线上的敌人造成<font color='#5cb85c'>(160/235/310)</font>伤害，对魔免伤害减半。"
 		// 立花道雪
 		"DOTA_Tooltip_Ability_C07D"	"御魔之盾"
-		"DOTA_Tooltip_Ability_C07D_Description"	"举起御魔之盾，将可以获得魔法免疫，但是会因为做出防御的姿势而无法移动。"
+		"DOTA_Tooltip_Ability_C07D_Description"	"举起御魔之盾，将可以获得魔法免疫并减少25% 物理伤害，但是会因为做出防御的姿势而无法移动。"
 		"DOTA_Tooltip_Ability_C07W"	"天雷降"
 		"DOTA_Tooltip_Ability_C07W_Description"	"召唤天降闪电打击指定的区域，每秒造成<font color='#5cb85c'>(40/80/120/160)</font>伤害，持续10秒。 "
 		"DOTA_Tooltip_Ability_C07E"	"雷电桎梏"
@@ -1137,7 +1152,7 @@
 	
 		// 立花道雪 11.2B
 		"DOTA_Tooltip_Ability_C07W_old" "御魔之盾"
-		"DOTA_Tooltip_Ability_C07W_old_Description" "将御魔之盾高举而获得魔法免疫，并减少<font color='#5cb85c'>(25/35/45/55)% </font>物理伤害且不能移动。"
+		"DOTA_Tooltip_Ability_C07W_old_Description" "将御魔之盾高举而获得魔法免疫，并减少<font color='#5cb85c'>(20/25/30/35)% </font>物理伤害且不能移动，并每秒回复魔力<font color='#5cb85c'>(5/10/15/20)</font>点。"
 		"DOTA_Tooltip_Ability_C07E_old" "雷电桎梏"
 		"DOTA_Tooltip_Ability_C07E_old_Description" "绑住指定目标，让它无法进行任何动作并每秒造成150点伤害。需持续施法，最多可持续<font color='#5cb85c'>(1/2/3/4)</font>秒。"
 		"DOTA_Tooltip_Ability_C07R_old" "雷霆闪电"
@@ -1344,7 +1359,7 @@
         "DOTA_Tooltip_Ability_A07R_old"  "碎击枪"
 		"DOTA_Tooltip_Ability_A07R_old_Description" "每当击中敌人时，有36% 造成等同攻击伤害<font color='#5cb85c'>(1.4/1.6/1.8/2)</font>倍伤害。 "
 		"DOTA_Tooltip_Ability_A07T_old"  "战国最强．启动"
-		"DOTA_Tooltip_Ability_A07T_old_Description" "拥有战国最强的力量，增加2.25倍基础攻速并魔法免疫增加60移动速度，普攻造成范围400的100% 混沌扩散，可持续<font color='#5cb85c'>(15/20/25)</font>秒。 "
+		"DOTA_Tooltip_Ability_A07T_old_Description" "拥有战国最强的力量，增加2.25倍基础攻速并魔法免疫增加60移动速度，普攻造成范围400的100% 混沌扩散，可持续<font color='#5cb85c'>(15/18/21)</font>秒。 "
 		
         "DOTA_Tooltip_Ability_A12D"  "奇计"
 		"DOTA_Tooltip_Ability_A12D_Description" "每当施放技能或是使用物品时，便可以累积1能量，当累积能量达4时，便可以施展“奇计”，使本身的技能产生额外效果。 "
@@ -1627,7 +1642,7 @@
 	    "DOTA_Tooltip_Ability_A34W"  "寒霜弹"
         "DOTA_Tooltip_Ability_A34W_Description" "对着敌人或建筑物投出寒霜弹，造成<font color='#5cb85c'>(100/200/300/400)</font>伤害并将对方结冻<font color='#5cb85c'>(1.0/1.5/2.0/2.5)</font>秒。"
 	    "DOTA_Tooltip_Ability_A34E"  "冰山之袭"
-        "DOTA_Tooltip_Ability_A34E_Description" "以冰山轰击敌方部队，造成指定敌军<font color='#5cb85c'>(300/400/500/600)</font>伤害，以及分散开<font color='#5cb85c'>(100/200/300/400)</font>冰爆伤害。冰冷伤害可以降低部队的移动与攻击速度。持续5秒。"
+        "DOTA_Tooltip_Ability_A34E_Description" "以冰山轰击敌方部队，造成指定敌军<font color='#5cb85c'>(150/300/450/600)</font>伤害，以及分散开<font color='#5cb85c'>(100/200/300/400)</font>冰爆伤害。冰冷伤害可以降低部队的移动与攻击速度。持续5秒。"
 	    "DOTA_Tooltip_Ability_A34R"  "冰霜之息"
         "DOTA_Tooltip_Ability_A34R_Description" "对着前方洒出一阵的冰霜，可以造成<font color='#5cb85c'>(150/300/450/600)</font>伤害，以及每秒<font color='#5cb85c'>(30/40/50/60)</font>伤害，持续6秒。"
 	    "DOTA_Tooltip_Ability_A34T"  "急速冷却"
@@ -1645,7 +1660,7 @@
 		"DOTA_Tooltip_Ability_B01W"	"狙击模式"
 		"DOTA_Tooltip_Ability_B01W_Description"	"转换为狙击状态，增加攻击伤害<font color='#5cb85c'>(20/30/40/50)</font>、攻击距离提升至<font color='#5cb85c'>(900/1050/1200/1400)</font>和夜晚视野1000，持续12秒。"
 		"DOTA_Tooltip_Ability_B01E"	"杂贺众"
-		"DOTA_Tooltip_Ability_B01E_Description"	"召唤杂贺众的同伴<font color='#5cb85c'>(2/4/6/8)</font>个来加入战斗。"
+		"DOTA_Tooltip_Ability_B01E_Description"	"召唤杂贺众的同伴<font color='#5cb85c'>(2/4/6/8)</font>个来加入战斗，会依杂贺的等级上升攻击10点。"
 		"DOTA_Tooltip_Ability_B01R"	"雨铁炮"
 		"DOTA_Tooltip_Ability_B01R_Description"	"对建筑物造成额外<font color='#5cb85c'>(10/15/20/25)% </font>物理伤害、英雄造成额外<font color='#5cb85c'>(20/28/34/40)% </font>物理伤害、部队造成额外<font color='#5cb85c'>(50/70/90/110)% </font>物理伤害。<font color='#5cb85c'>法球效果</font>"
 		"DOTA_Tooltip_Ability_B01T"	"三段"
@@ -1654,7 +1669,7 @@
 		"DOTA_Tooltip_Ability_B01W_old"	"狙击模式"
 		"DOTA_Tooltip_Ability_B01W_old_Description"	"转换为狙击状态，并且<font color='#5cb85c'>(2/3/4/5)</font>秒内无法取消。增加攻击距离至<font color='#5cb85c'>(950/1150/1350/1600)</font>但牺牲70% 跑速。"
 		"DOTA_Tooltip_Ability_B01E_old"	"杂贺众"
-		"DOTA_Tooltip_Ability_B01E_old_Description"	"召唤杂贺众的同伴<font color='#5cb85c'>(2/3/4/5)</font>个来加入战斗。"
+		"DOTA_Tooltip_Ability_B01E_old_Description"	"召唤杂贺众的同伴<font color='#5cb85c'>(2/3/4/5)</font>个来加入战斗，会依杂贺的等级上升攻击15点。"
 		"DOTA_Tooltip_Ability_B01R_old"	"雨铁炮"
 		"DOTA_Tooltip_Ability_B01R_old_Description"	"45% 机率对建筑物造成额外<font color='#5cb85c'>(20/30/40/55)% </font>物理伤害、英雄造成额外<font color='#5cb85c'>(40/50/60/70)% </font>物理伤害、部队造成额外<font color='#5cb85c'>(100/140/180/220)% </font>物理伤害。<font color='#5cb85c'>法球效果</font>"
 		"DOTA_Tooltip_Ability_B01T_old"	"三段"
@@ -1853,9 +1868,9 @@
 		"DOTA_Tooltip_Ability_C19E_old"	 "治疗喷雾"
         "DOTA_Tooltip_Ability_C19E_old_Description"	"对范围500的友军喷洒<font color='#5cb85c'>(4/5/6/7)</font>波医疗药雾，每波治疗<font color='#5cb85c'>(100/110/120/130)</font>。"
 		"DOTA_Tooltip_Ability_C19R_old"  "奇袭"
-		"DOTA_Tooltip_Ability_C19R_old_Description"	"传送地图上任意位置，需要5秒的施展时间，缓速周围敌军50% 5秒，若被中断则失效。"
+		"DOTA_Tooltip_Ability_C19R_old_Description"	"传送地图上任意位置，需要1秒的施展时间，缓速周围敌军50% 5秒，指定的区域周围1500不能有箭塔且自身附近1000范围内不能有敌军，若被中断则失效。"
 		"DOTA_Tooltip_Ability_C19T_old"  "不容侵犯"
-		"DOTA_Tooltip_Ability_C19T_old_Description" "有<font color='#5cb85c'>(30/40/50)% </font>机会闪避攻击，主动使用闪避加倍持续20秒"	
+		"DOTA_Tooltip_Ability_C19T_old_Description" "有<font color='#5cb85c'>(30/40/50)% </font>机会闪避攻击，主动使用闪避加倍持续10秒"	
 		
 		// 望月千代女
 		"DOTA_Tooltip_Ability_B16W"  "忍法．飞袭令"
@@ -2931,7 +2946,7 @@
 		"DOTA_Tooltip_Ability_B23R" "魂飨"
 		"DOTA_Tooltip_Ability_B23R_Description" "创造一场灵魂飨宴，每0.2秒回复<font color='#5cb85c'>(15/21/27/33)</font>生命值，持续4秒，在魂飨持续的时间内，伊势姬以及她的亡魂获得魔法免疫。"
 		"DOTA_Tooltip_Ability_B23T" "英灵庇佑"
-		"DOTA_Tooltip_Ability_B23T_Description" "庇佑范围<font color='#5cb85c'>(550/700/850)</font>的友军，使他们进入无敌状态，并使所有亡魂增加150% 攻速，持续16秒。"
+		"DOTA_Tooltip_Ability_B23T_Description" "庇佑范围<font color='#5cb85c'>(550/700/850)</font>的友军，使他们进入无敌状态，并使所有亡魂增加150% 攻速，持续(6/8/10)秒。"
 		
 		"DOTA_Tooltip_Ability_B23D_old" "亡灵之契" 
 		"DOTA_Tooltip_Ability_B23D_old_Description" "跟死者订下永久的契约，使他们从尸体中诞生为了伊势姬而战，最多将可以召唤<font color='#5cb85c'>(4/5/6/7)</font>个亡魂；每存在一个亡魂伊势姬所受到的伤害减少14% 。当亡魂死亡时，伊势姬将会失去总法力的15% 。天生主动技，提升“英灵庇佑”技能等级可强化此技能。"
@@ -3134,7 +3149,7 @@
 		"DOTA_Tooltip_Ability_B09R_old" "土缚"
 		"DOTA_Tooltip_Ability_B09R_old_Description" "降低指定敌方部队<font color='#5cb85c'>(40/50/60/70)</font>% 移动速度、<font color='#5cb85c'>(20/30/40/50)</font>% 攻击速度与攻击力。持续<font color='#5cb85c'>(5/6/7/8)</font>秒。"
 		"DOTA_Tooltip_Ability_B09T_old" "狂风"
-		"DOTA_Tooltip_Ability_B09T_old_Description" "召唤1个巨大的龙卷风，拥有100点移动速度，存在<font color='#5cb85c'>(23/33/43)</font>秒。狂风附近300范围的敌方部队将会减缓80% 移动速度和200% 攻击速度，并每0.1秒造成点15点伤害。对建筑物每秒造成100点伤害。"
+		"DOTA_Tooltip_Ability_B09T_old_Description" "召唤1个巨大的龙卷风，拥有100点移动速度，存在<font color='#5cb85c'>(13/23/33)</font>秒。狂风附近300范围的敌方部队将会减缓80% 移动速度和200% 攻击速度，并每0.1秒造成点15点伤害。对建筑物每秒造成100点伤害。"
 
 		"npc_dota_hero_slark" "雾隐才藏"
 		"npc_dota_hero_slark_hype" "伊贺流忍者，其原形是幸村的部下雾隐鹿右卫门。据说在漫游诸国时和猿飞佐助比武后，受佐助推荐因而加入真田家，其师为百地三太夫（百地丹波）。"
@@ -3378,9 +3393,9 @@
 		"DOTA_Tooltip_Ability_A20E" "水体爆破"
 		"DOTA_Tooltip_Ability_A20E_Description" "产生水体爆破，对周围700的敌人造成<font color='#5cb85c'>(150/250/350/450)</font>伤害并且在接下来6秒减缓移动速度<font color='#5cb85c'>(15/25/35/45)</font>% ，缓速过后将会被晕眩0.7秒。"
 		"DOTA_Tooltip_Ability_A20R" "海贼长靴"
-		"DOTA_Tooltip_Ability_A20R_Description" "增加<font color='#5cb85c'>(7/11/15/19)</font>% 移动速度，并且每当九鬼嘉隆攻击敌人、或是被敌人攻击时，有25% 机率可以召唤海啸打击敌人，每道水波可以造成<font color='#5cb85c'>(22/40/58/76)</font>真实伤害。无法在0.3秒内重复发动。对魔免造成一半伤害。"
+		"DOTA_Tooltip_Ability_A20R_Description" "增加<font color='#5cb85c'>(7/11/15/19)</font>% 移动速度，并且每当九鬼嘉隆攻击敌人、或是被敌人攻击时，有25% 机率可以召唤海啸打击敌人，每道水波可以造成<font color='#5cb85c'>(22/30/38/46)</font>真实伤害。无法在0.3秒内重复发动。对魔免造成一半伤害。"
 		"DOTA_Tooltip_Ability_A20T" "海贼大名．参上"
-		"DOTA_Tooltip_Ability_A20T_Description" "变身为强大的海贼大名，基础攻速由1.8变为1.2并且每秒回复<font color='#5cb85c'>(100/150/200)</font>点生命。可持续<font color='#5cb85c'>(20/25/30)</font>秒。"
+		"DOTA_Tooltip_Ability_A20T_Description" "变身为强大的海贼大名，基础攻速由1.8变为1.2并且每秒回复<font color='#5cb85c'>(80/120/170)</font>点生命。可持续<font color='#5cb85c'>(20/25/30)</font>秒。"
 
 		"DOTA_Tooltip_Ability_A20W_old" "海噬"
 		"DOTA_Tooltip_Ability_A20W_old_Description" "施放10波范围600的海噬；每0.5秒一波对敌人造成<font color='#5cb85c'>(80/90/100/110)</font>点伤害，并缓慢敌人10% 移动速度，持续5秒。  "
@@ -3389,7 +3404,7 @@
 		"DOTA_Tooltip_Ability_A20R_old" "海贼具足"
 		"DOTA_Tooltip_Ability_A20R_old_Description" "穿上海贼众特制的具足，50% 机率降低施加在自身身上的物理伤害<font color='#5cb85c'>(80/160/240/320)</font>点。"
 		"DOTA_Tooltip_Ability_A20T_old" "船醉不知"
-		"DOTA_Tooltip_Ability_A20T_old_Description" "增加攻击速度<font color='#5cb85c'>(110/165/220)</font>% 、移动速度<font color='#5cb85c'>(20/30/40)% </font> ，每<font color='#5cb85c'>(2/1/0.1) </font>秒解除身上所有负面状态。持续30秒。"
+		"DOTA_Tooltip_Ability_A20T_old_Description" "增加攻击速度<font color='#5cb85c'>(220/270/340)</font>% 、移动速度<font color='#5cb85c'>(30/35/40)% </font> ，每<font color='#5cb85c'>(2/1/0.1)</font>秒解除身上所有负面状态。持续30秒。"
 	
 		"npc_dota_hero_doom_bringer" "佐久间盛政"
 		"npc_dota_hero_doom_bringer_hype" "日本战国时代武将。佐久间盛次的儿子，曾仕奉织田信长以及柴田胜家。出生于织田家内的佐久间一族，根据《佐久间军记》记载，身高有六尺。1575年，当柴田胜家被分封于北陆时，在对抗北陆的一揆军及上衫军表现勇猛，1580年成为柴田胜家的部下，领有加贺尾山城。"
@@ -3420,7 +3435,7 @@
 		"DOTA_Tooltip_Ability_B14T_Description" "被动：在夜晚时将会自动进入隐形状态，攻击或是施展技能将会现形0.5秒。\n启动：使用影武者之术，使自身在接下来20秒内增加<font color='#5cb85c'>(80/100/120)</font>攻击伤害并增加<font color='#5cb85c'>(15/25/35)</font>% 移动速度。"
 
 		"DOTA_Tooltip_Ability_B14D_old" "影之斩"
-		"DOTA_Tooltip_Ability_B14D_old_Description" "可以隐形，移动速度提升40%，并持续30秒。如果攻击的话，影之斩将即告失效，第一击会造成<font color='#5cb85c'>(1000/1600/2400)</font>点额外伤害。"
+		"DOTA_Tooltip_Ability_B14D_old_Description" "可以隐形，移动速度提升40%，并持续30秒。如果攻击的话，影之斩将即告失效，第一击会造成<font color='#5cb85c'>(1000/1400/1800)</font>点额外伤害。"
 		"DOTA_Tooltip_Ability_B14W_old" "拔刀斩"
 		"DOTA_Tooltip_Ability_B14W_old_Description" "对着单一目标斩击，造成<font color='#5cb85c'>(150/250/350/450)</font>点伤害并晕眩<font color='#5cb85c'>(1/1.5/2/2.5)</font>秒。"
 		"DOTA_Tooltip_Ability_B14E_old" "近侍心得"
@@ -3429,5 +3444,54 @@
 		"DOTA_Tooltip_Ability_B14R_old_Description" "攻击时有20% 机会造成<font color='#5cb85c'>(2/2.5/3/3.5)</font>倍伤害。"
 		"DOTA_Tooltip_Ability_B14T_old" "影武者"
 		"DOTA_Tooltip_Ability_B14T_old_Description" "转换为威力强大的的影武者95秒：增加基础攻击力<font color='#5cb85c'>(80/120/160)</font>点，降低33%法术伤害，并且获得影之斩技能。"
+
+		"npc_dota_hero_monkey_king" "蜂须贺政胜"
+		"npc_dota_hero_monkey_king_hype" "织田家臣，蜂须贺小六是在美浓地区活跃的“夜盗”。也就是强盗，好听一点叫做野武士，没有找到雇用他们的主子的军队，难听一点就说是趁着夜色出没抢钱的山大王 。"
+
+		"DOTA_Tooltip_Ability_A09W" "树鬼召唤"
+		"DOTA_Tooltip_Ability_A09W_Description" "召唤一只0.8秒会生出一只树鬼的邪恶森灵，邪恶森灵最多可以存在7秒，树鬼可以存在<font color='#5cb85c'>(2/3/4/5)</font>秒。树鬼攻击时将可以使敌人中毒，每秒能造成10点可叠加的毒伤，毒伤可持续2秒。"
+		"DOTA_Tooltip_Ability_A09E" "木化术"
+		"DOTA_Tooltip_Ability_A09E_Description" "将敌人转化为无反击之力的树人，持续<font color='#5cb85c'>(1.2/1.8/2.4/3.0)</font>秒。"
+		"DOTA_Tooltip_Ability_A09R" "林脉冲击"
+		"DOTA_Tooltip_Ability_A09R_Description" "使用深森力量冲击范围内的敌人，造成<font color='#5cb85c'>(150/250/350/450)</font>伤害，每施放一次可以使自身获得1层能量，最多可以叠加5层，每层能量可使林脉冲击的伤害与耗魔提高15% 。能量可以维持8秒。"
+		"DOTA_Tooltip_Ability_A09T" "深邃节触"
+		"DOTA_Tooltip_Ability_A09T_Description" "<font color='#5cb85c'>(被动)</font>每使用一个自身技能，便会在周围随机一位敌人身旁召唤2个多节触手，触手可存在<font color='#5cb85c'>(8/11/14)</font>秒，每0.3秒最多触发一次。\n<font color='#5cb85c'>(启动)</font>主动使用则可以召唤<font color='#5cb85c'>(7/9/13)</font>个多节触手，触手存在最多20秒。\n每个多节触手拥有最少31攻击伤害，攻击时将可以使敌人中毒，造成<font color='#5cb85c'>(10/15/20)</font>点伤害并附加可叠加的缓速毒，缓速<font color='#5cb85c'>(1/2/3)% </font>持续4秒。"
+		"A09W_treant1"			"邪恶森灵"
+		"A09W_treant2"			"树鬼"
+		"A09T_tentacle"			"多节触手"
+
+		"DOTA_Tooltip_Ability_A09W_old" "食腐群"
+		"DOTA_Tooltip_Ability_A09W_old_Description" "派出一群扇状飞出的蝙蝠，可对直线1000距离上的敌人造成<font color='#5cb85c'>(200/300/400/500)</font>伤害。"
+		"DOTA_Tooltip_Ability_A09E_old" "木化术"
+		"DOTA_Tooltip_Ability_A09E_old_Description" "将敌人转化为无反击之力的树人，持续<font color='#5cb85c'>(1/2/3/4)</font>秒。"
+		"DOTA_Tooltip_Ability_A09R_old" "玄武之灵"
+		"DOTA_Tooltip_Ability_A09R_old_Description" "增加900范围友军护甲<font color='#5cb85c'>(4/7/10/13)</font>点。"
+		"DOTA_Tooltip_Ability_A09T_old" "生长藤蔓"
+		"DOTA_Tooltip_Ability_A09T_old_Description" "释放出<font color='#5cb85c'>(10/12/14)</font>条可以存在25秒的鬼之藤蔓。具有极快的攻击速度，以及剧毒攻击能力：攻击能造成每秒<font color='#5cb85c'>(15/25/35)</font>点可叠加的毒伤，持续5秒。"
+		"A09T_old_tentacle"		"鬼之藤蔓"
+
+		"npc_dota_hero_warlock" "平手政秀"
+		"npc_dota_hero_warlock_hype" "平手政秀是织田信长的老师，织田信长少时经常恶作剧，一手扶养信长长大的平手政秀，对于不良少年信长的所作所为，一直默默的为他承受各方的责难，容忍信长的狂恣，尽量让他自由发挥。但是在信长的父亲信秀骤逝，家中四面楚歌，政秀承受力似乎也到了限界，年老的政秀已经赶不上信长的脚步，再也无法理解他的作为。这位信长称之为“老头”的爷爷，终于决定要用自己的生命来唤醒狂野的信长，于是在信秀逝世两年后，信长二十岁时，政秀留下一封谏书而切腹自杀，这是另一件令信长痛彻心肺之事。在政秀亡故后，信长的才略终于爆发 。"
+
+		"DOTA_Tooltip_Ability_A10D" "瞬返之术"
+		"DOTA_Tooltip_Ability_A10D_Description" "立刻瞬移到指定地点，不可超过<font color='#5cb85c'>(550/650/750/850)</font>距离，并且在3秒之后，回到起始地点。提升“震荡”技能等级可强化此技能。"
+		"DOTA_Tooltip_Ability_A10W" "相移"
+		"DOTA_Tooltip_Ability_A10W_Description" "指定目标英雄，使该英雄进入另一个空间当中，被相移的英雄在接下来2.5秒内将不会受到任何攻击以及法术影响。若该英雄为敌方英雄，则相移结束后对他造成<font color='#5cb85c'>(200/300/400/500)</font>伤害；若为友方英雄，则相移结束后使他回复<font color='#5cb85c'>(200/300/400/500)</font>生命。"
+		"DOTA_Tooltip_Ability_A10E" "荒杀阵"
+		"DOTA_Tooltip_Ability_A10E_Description" "被动：可于施放自身其他技能时额外发动一波0.66倍威力的“荒杀阵”。\n主动：每秒召唤出<font color='#5cb85c'>(6/7/8/9)</font>个毁灭光球来攻击敌人，持续2秒。每个光球可以对敌人造成<font color='#5cb85c'>(40/70/100/130)</font>真实伤害，对魔免伤害减半。"
+		"DOTA_Tooltip_Ability_A10R" "移形换位"
+		"DOTA_Tooltip_Ability_A10R_Description" "与指定的部队交换位置，敌我皆可，如果交换的是敌人则可以造成<font color='#5cb85c'>(205/270/335/400)</font>伤害，施展距离<font color='#5cb85c'>(500/650/800/950)</font>。"
+		"DOTA_Tooltip_Ability_A10T" "震荡"
+		"DOTA_Tooltip_Ability_A10T_Description" "使指定的区域产生震荡而碎裂，可以对其中的建筑物每秒造成<font color='#5cb85c'>(90/125/160)</font>伤害，并且使敌军减缓<font color='#5cb85c'>(15/25/35)</font>% 移动速度；震荡可以维持最多3.5秒。"
+
+		"DOTA_Tooltip_Ability_A10W_old" "移型换位"
+		"DOTA_Tooltip_Ability_A10W_old_Description" "与指定部队交换位置并且造成<font color='#5cb85c'>(50/100/150/200)</font>点伤害，并且让敌人晕头转向晕眩<font color='#5cb85c'>(1/1.5/2/2.5)</font>秒，施展距离<font color='#5cb85c'>(600/700/800/900)</font>。"
+		"DOTA_Tooltip_Ability_A10E_old" "飞石击"
+		"DOTA_Tooltip_Ability_A10E_old_Description" "每秒召唤出<font color='#5cb85c'>(6/7/8/9)</font>个飞石，飞石对碰触到的敌人造成<font color='#5cb85c'>(90/160/230/300)</font>物理伤害。需持续施法，最多可持续2.5秒。"
+		"DOTA_Tooltip_Ability_A10R_old" "口臭"
+		"DOTA_Tooltip_Ability_A10R_old_Description" "平手政秀对信长日日夜夜不断的唠叨引起了口臭，令附近450周围的的敌方部队受到口臭感染，每秒受到<font color='#5cb85c'>(15/25/36/46)</font>伤害，且不能回血，造成的伤害不会致命。持续40秒。学习等级：1、4、7、10。"
+		"DOTA_Tooltip_Ability_A10T_old" "声东击西"
+		"DOTA_Tooltip_Ability_A10T_old_Description" "指定全地图的一位友军传送至身旁，需<font color='#5cb85c'>(1.5/1/0.5)</font>秒施法时间。"
+
 	}
 }

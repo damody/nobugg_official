@@ -40,7 +40,6 @@
 		"BaseClass"             		"ability_datadriven"
 		"AbilityTextureName"			"custom/icon_128x128_26"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
-		
 		"Modifiers"
 		{
 			"modifier_play_on_die"
@@ -99,7 +98,6 @@
 				"Function"		"gold_to_prestige"
 			}
 		}
-	
 	}
 	// 800魔抗靈氣
 	"magical_800"
@@ -258,7 +256,7 @@
 			"modifier_reward6300_hero"
 			{
 				"Passive"	"0"
-				"EffectName"		"particles/items_fx/aura_endurance.vpcf"
+				"EffectName"		"particles/item/reward6300.vpcf"
 				"EffectAttachType"	"follow_origin"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"Properties"
@@ -302,7 +300,7 @@
 			"modifier_reward6300"
 			{
 				"Passive"	"0"
-				"EffectName"		"particles/items_fx/aura_endurance.vpcf"
+				"EffectName"		"particles/item/reward6300.vpcf"
 				"EffectAttachType"	"follow_origin"
 				"Properties"
 				{
@@ -356,7 +354,7 @@
 			"modifier_reward63002"
 			{
 				"Passive"	"0"
-				"EffectName"		"particles/items_fx/aura_endurance.vpcf"
+				"EffectName"		"particles/item/reward6300.vpcf"
 				"EffectAttachType"	"follow_origin"
 				"Properties"
 				{
@@ -700,7 +698,7 @@
 	            "Aura"        "modifier_show_invi"
         		"Aura_Radius" "1200"
         		"Aura_Teams"  "DOTA_UNIT_TARGET_TEAM_ENEMY"
-        		"Aura_Types"  "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+        		"Aura_Types"  "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
         		"Aura_Flags"  "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
         		"Aura_ApplyToCaster" "0"   // Not Apply to Self, default is 1
 			}
@@ -858,7 +856,7 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_ATTACK"
 		"Modifiers"
 		{
-			"modifier_B01R"
+			"modifier_gunner_attack"
 			{
 				"Passive"	"1"
 				"OnAttackLanded"
@@ -933,6 +931,47 @@
 			}
 		}
 	}
+	//箭塔打英雄額外50% 物傷
+	"tower_attack"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"custom/icon_128x128_64"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_ATTACK"
+		"Modifiers"
+		{
+			"modifier_archer_attack"
+			{
+				"Passive"	"1"
+				"OnAttackLanded"
+				{
+					"RunScript"
+					{
+						"dmg"	"%attack_damage"
+						"ScriptFile"	"scripts/vscripts/heroes/B_Unified/B01.lua"
+						"Function"	"B01R2"
+					}
+				}
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"atk_hero"	"50"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"atk_building"	"0"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"atk_unit"	"0"
+			}
+		}
+	}
 
 	//弓手打建築物兩倍痛
 	"archer_attack"
@@ -942,7 +981,7 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_ATTACK"
 		"Modifiers"
 		{
-			"modifier_B01R"
+			"modifier_archer_attack"
 			{
 				"Passive"	"1"
 				"OnAttackLanded"
@@ -4338,6 +4377,142 @@
 			}
 		}
 	}
+
+	// 正面面狀態1等
+	"buff_1"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityTextureName"			"custom/icon_128x128_137"
+		"Modifiers"
+		{
+			"modifier_buff_1"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"	"-5"
+					//"MODIFIER_PROPERTY_TOTALDAMAGEOUTGOING_PERCENTAGE"	"-20"
+					//"MODIFIER_PROPERTY_MAGICDAMAGEOUTGOING_PERCENTAGE"	"-20"
+					//"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"-20"
+				}
+			}
+		}
+	}
+	// 正面面狀態2等
+	"buff_2"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityTextureName"			"custom/icon_128x128_138"
+		"Modifiers"
+		{
+			"modifier_buff_2"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"	"-10"
+					//"MODIFIER_PROPERTY_TOTALDAMAGEOUTGOING_PERCENTAGE"	"-20"
+					//"MODIFIER_PROPERTY_MAGICDAMAGEOUTGOING_PERCENTAGE"	"-20"
+					//"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"-20"
+				}
+			}
+		}
+	}
+	// 正面面狀態3等
+	"buff_3"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityTextureName"			"custom/icon_128x128_139"
+		"Modifiers"
+		{
+			"modifier_buff_3"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"	"-15"
+					//"MODIFIER_PROPERTY_TOTALDAMAGEOUTGOING_PERCENTAGE"	"-20"
+					//"MODIFIER_PROPERTY_MAGICDAMAGEOUTGOING_PERCENTAGE"	"-20"
+					//"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"-20"
+				}
+			}
+		}
+	}
+	// 正面面狀態4等
+	"buff_4"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityTextureName"			"custom/icon_128x128_140"
+		"Modifiers"
+		{
+			"modifier_buff_4"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"	"-20"
+					//"MODIFIER_PROPERTY_TOTALDAMAGEOUTGOING_PERCENTAGE"	"-20"
+					//"MODIFIER_PROPERTY_MAGICDAMAGEOUTGOING_PERCENTAGE"	"-20"
+					//"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"-20"
+				}
+			}
+		}
+	}
+
+	//  負面狀態1等
+	"debuff_1"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityTextureName"			"custom/icon_128x128_143"
+		"Modifiers"
+		{
+			"modifier_debuff_1"
+			{
+				"Passive"	"1"
+				"IsHidden"	"0"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"	"10"
+					//"MODIFIER_PROPERTY_TOTALDAMAGEOUTGOING_PERCENTAGE"	"-20"
+					//"MODIFIER_PROPERTY_MAGICDAMAGEOUTGOING_PERCENTAGE"	"-20"
+					//"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"-20"
+				}
+			}
+		}
+	}
+
+	//  負面狀態2等
+	"debuff_2"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityTextureName"			"custom/icon_128x128_145"
+		"Modifiers"
+		{
+			"modifier_debuff_2"
+			{
+				"Passive"	"1"
+				"IsHidden"	"0"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"	"20"
+					//"MODIFIER_PROPERTY_TOTALDAMAGEOUTGOING_PERCENTAGE"	"-40"
+					//"MODIFIER_PROPERTY_MAGICDAMAGEOUTGOING_PERCENTAGE"	"-40"
+					//"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"-40"
+				}
+			}
+		}
+	}
+
 
 	"human_gather"
 	{
