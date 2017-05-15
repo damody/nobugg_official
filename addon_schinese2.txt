@@ -265,7 +265,7 @@
 		"DOTA_Tooltip_Ability_war_magic_treecut" "砍树战法"
 		"DOTA_Tooltip_Ability_war_magic_treecut_Description"	"砍掉范围500的树"
 		"DOTA_Tooltip_Ability_forest_soldier_W" "绑人"
-		"DOTA_Tooltip_Ability_forest_soldier_W_Description" "绑人1秒，对魔免单位0.5秒"
+		"DOTA_Tooltip_Ability_forest_soldier_W_Description" "绑人(1/1.5/2/2.5)秒，对魔免单位减半"
 		"DOTA_Tooltip_Ability_forest_soldier_E" "隐形"
 		"DOTA_Tooltip_Ability_forest_soldier_R" "爆击"
 		"DOTA_Tooltip_Ability_forest_caster_W" "退魔击"
@@ -465,7 +465,7 @@
 		"DOTA_Tooltip_Ability_item_fire_scroll_Description" "周围友军增加40% 攻击伤害，持续8秒。"
 
 		"DOTA_Tooltip_Ability_item_forest_scroll" "林之卷"
-		"DOTA_Tooltip_Ability_item_forest_scroll_Description" "召换1名下级伏兵先锋以及1名下级伏兵军师加入战斗。伏兵存在30秒。"
+		"DOTA_Tooltip_Ability_item_forest_scroll_Description" "召换1名下级伏兵先锋以及1名下级伏兵军师加入战斗。伏兵存在15秒。"
 
 		"DOTA_Tooltip_Ability_item_thunderbolt_book" "怒雷之书"
 		"DOTA_Tooltip_Ability_item_thunderbolt_book_Description" "智慧+20【使用】产生强大的电能结附于自身，每当英雄施展技能或是使用物品，将会额外多耗费75法力，并对周围500的敌人造成190闪电伤害。再次使用可关闭此状态。<font color='#cc0000'>使用物品包含将怒雷之书切换至启动状态。</font>"
@@ -530,7 +530,7 @@
 
 
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_disease" "池田鬼神丸国重．铭刀"
-		"DOTA_Tooltip_Ability_item_the_great_sword_of_disease_Description" "智慧+25，灵活+20，生命+500，周围非英雄友军增加40% 攻击伤害并减少50% 魔法伤害。【使用】召唤一只强大的疫鬼神，将拥有吸收精气、反魔结界、疫病云、黏稠毒浆、坏灭箭能力，疫鬼神的能力随持有者等级而增加，最多能存在70秒。"
+		"DOTA_Tooltip_Ability_item_the_great_sword_of_disease_Description" "智慧+25，灵活+20，生命+500，周围非英雄友军增加40% 攻击伤害并减少50% 魔法伤害。【使用】召唤一只强大的疫鬼神，将拥有吸收精气、反魔结界、疫病云、黏稠毒浆、坏灭箭能力，疫鬼神的能力随持有者等级而增加，最多能存在60秒。"
 
 
 		"DOTA_Tooltip_Ability_item_the_great_sword_of_soul" "菊一文字则宗．太刀"
@@ -847,7 +847,7 @@
 		"DOTA_Tooltip_Ability_item_raikiri_2_Description" "攻击伤害+85，攻速+40% 。<font color='#5bc0de'>攻击时20% 机率打出分岔闪电</font>，对最多11个敌人造成600伤害。 <font color='#ff0000'>法球效果，不可与其他法球并存，对魔免无效。</font>"
 
 		"DOTA_Tooltip_Ability_item_ninja_cloth" "忍者装束"
-		"DOTA_Tooltip_Ability_item_ninja_cloth_Description" "护甲+6，全能力+10，攻速+25% ，<font color='#5bc0de'>25% 机率闪避攻击。</font>"
+		"DOTA_Tooltip_Ability_item_ninja_cloth_Description" "护甲+6，全能力+20，攻速+25% ，<font color='#5bc0de'>25% 机率闪避攻击。</font>"
 
 		"DOTA_Tooltip_Ability_item_the_dark_armor" "黑漆涂五枚胴"
 		"DOTA_Tooltip_Ability_item_the_dark_armor_Description" "护甲+5，智慧+10，法力回复+150% 。【使用】使周围友军在5秒内回复330生命和336法力。"
@@ -874,7 +874,7 @@
 		"DOTA_Tooltip_Ability_item_the_art_of_war_tornado_chapter_Description" "灵活+10。【使用】召唤风之阵，使范围内的友军增加15% 移动速度，持续22秒。"
 
 		"DOTA_Tooltip_Ability_item_the_art_of_war_forest_chapter" "孙子兵法．林之章"
-		"DOTA_Tooltip_Ability_item_the_art_of_war_forest_chapter_Description" "智慧+10。【被动】周围友军增快15% 攻速。【使用】召唤2名下级伏兵先锋以及1名下级伏兵军师加入战斗。伏兵存在30秒。"
+		"DOTA_Tooltip_Ability_item_the_art_of_war_forest_chapter_Description" "智慧+10。【被动】周围友军增快15% 攻速。【使用】召唤2名下级伏兵先锋以及1名下级伏兵军师加入战斗。伏兵存在15秒。"
 
 		"DOTA_Tooltip_Ability_item_the_art_of_war_flame_chapter" "孙子兵法．火之章"
 		"DOTA_Tooltip_Ability_item_the_art_of_war_flame_chapter_Description" "攻击伤害+14。【被动】周围友军增加<font color='#5bc0de'>15% </font>攻击伤害。【使用】周围友军增加40% 攻击伤害，持续8秒。"
@@ -885,13 +885,13 @@
 
 
 		"DOTA_Tooltip_Ability_item_the_lost_art_of_war_1" "孙子兵法残册"
-		"DOTA_Tooltip_Ability_item_the_lost_art_of_war_1_Description" "全能力+10。【被动】周围友军增加<font color='#5bc0de'>25% </font>攻速，周围友军增加<font color='#5bc0de'>25% </font>攻击伤害。【使用】召唤3名下级伏兵先锋以及1名下级伏兵军师加入战斗。伏兵存在30秒。<font color='#cc0000'>灵气效果无法与“林之章”、“火之章”叠加。</font>"
+		"DOTA_Tooltip_Ability_item_the_lost_art_of_war_1_Description" "全能力+10。【被动】周围友军增加<font color='#5bc0de'>25% </font>攻速，周围友军增加<font color='#5bc0de'>25% </font>攻击伤害。【使用】召唤3名下级伏兵先锋以及1名下级伏兵军师加入战斗。伏兵存在18秒。<font color='#cc0000'>灵气效果无法与“林之章”、“火之章”叠加。</font>"
 
 		"DOTA_Tooltip_Ability_item_the_lost_art_of_war_2" "孙子兵法断简"
 		"DOTA_Tooltip_Ability_item_the_lost_art_of_war_2_Description" "全能力+10。【使用】召唤风护之阵，使范围内的友军增加15% 移动速度，且前5秒额外增加50护甲并减少30% 物理伤害，风护之阵持续20秒。<font color='#cc0000'>灵气效果无法与“风之章”、“山之章”叠加。</font>"
 
 		"DOTA_Tooltip_Ability_item_the_art_of_war" "孙子兵法全本"
-		"DOTA_Tooltip_Ability_item_the_art_of_war_Description" "全能力+20。【被动】周围友军护甲+7，周围友军增加<font color='#5bc0de'>25% </font>攻速，周围友军增加<font color='#5bc0de'>25% </font>攻击伤害。【使用】召唤4名上级伏兵、1名上级伏兵军师加入战斗，伏兵存在30秒，增加50护甲5秒与并减少40% 物理伤害、增加40% 攻击力8秒，增加25% 跑速20秒。<font color='#cc0000'>任何相同灵气效果无法叠加。</font>"
+		"DOTA_Tooltip_Ability_item_the_art_of_war_Description" "全能力+20。【被动】周围友军护甲+7，周围友军增加<font color='#5bc0de'>25% </font>攻速，周围友军增加<font color='#5bc0de'>25% </font>攻击伤害。【使用】召唤4名上级伏兵、1名上级伏兵军师加入战斗，伏兵存在21秒，增加50护甲5秒与并减少40% 物理伤害、增加40% 攻击力8秒，增加25% 跑速20秒。<font color='#cc0000'>任何相同灵气效果无法叠加。</font>"
 
 		"DOTA_Tooltip_Ability_item_the_over_lightning_art_of_war" "无上雷暴之书"
 		"DOTA_Tooltip_Ability_item_the_over_lightning_art_of_war_Description" "智慧+60。【使用】以自身为中心范围500内召唤闪电雷暴，每秒对身处风暴中的敌人造成等同他们生命最大值11% 的伤害，持续11秒。每当英雄施展技能或是使用物品，将会额外多耗费75法力，并对周围1000的敌人造成190闪电伤害。<font color='#cc0000'>魔免伤害减半</font>"
@@ -1359,7 +1359,7 @@
         "DOTA_Tooltip_Ability_A07R_old"  "碎击枪"
 		"DOTA_Tooltip_Ability_A07R_old_Description" "每当击中敌人时，有36% 造成等同攻击伤害<font color='#5cb85c'>(1.4/1.6/1.8/2)</font>倍伤害。 "
 		"DOTA_Tooltip_Ability_A07T_old"  "战国最强．启动"
-		"DOTA_Tooltip_Ability_A07T_old_Description" "拥有战国最强的力量，增加2.25倍基础攻速并魔法免疫增加60移动速度，普攻造成范围400的100% 混沌扩散，可持续<font color='#5cb85c'>(15/18/21)</font>秒。 "
+		"DOTA_Tooltip_Ability_A07T_old_Description" "拥有战国最强的力量，增加2.25倍基础攻速并魔法免疫增加60移动速度，普攻造成范围400的<font color='#5cb85c'>(30/60/100)% </font>混沌扩散，可持续<font color='#5cb85c'>(15/18/21)</font>秒。 "
 		
         "DOTA_Tooltip_Ability_A12D"  "奇计"
 		"DOTA_Tooltip_Ability_A12D_Description" "每当施放技能或是使用物品时，便可以累积1能量，当累积能量达4时，便可以施展“奇计”，使本身的技能产生额外效果。 "
@@ -3370,7 +3370,7 @@
 		"DOTA_Tooltip_Ability_C09W" "霜刺"
 		"DOTA_Tooltip_Ability_C09W_Description" "在攻击中附带刺骨的霜刺，造成<font color='#5cb85c'>(40/60/80/100)</font>额外伤害，并且使被击中的敌人减缓<font color='#5cb85c'>(25/45/65/85)</font>% 攻击速度与无视魔免缓<font color='#5cb85c'>(20/30/40/50)</font>% 移动速度，持续2秒。每下攻击消耗<font color='#5cb85c'>(6/8/10/12)</font>点魔力，无法与其他法球共存。"
 		"DOTA_Tooltip_Ability_C09E" "白热"
-		"DOTA_Tooltip_Ability_C09E_Description" "增加自身110% 的攻击速度并治疗<font color='#5cb85c'>(100/175/250/325)</font>生命值，持续<font color='#5cb85c'>(3/4/5/6)</font>秒。"
+		"DOTA_Tooltip_Ability_C09E_Description" "增加自身<font color='#5cb85c'>(110/130/150/170)% </font>的攻击速度并治疗<font color='#5cb85c'>(100/175/250/325)</font>生命值，持续<font color='#5cb85c'>(3/4/5/6)</font>秒。"
 		"DOTA_Tooltip_Ability_C09R" "冰灵舞魂"
 		"DOTA_Tooltip_Ability_C09R_Description" "瞬间移动到距离<font color='#5cb85c'>(550/600/650/700)</font>的指定地点，然后会产生一阵冰爆对所在地点周围300范围的敌军造成<font color='#5cb85c'>(100/200/300/400)</font>的伤害，并且缓慢50% 攻击及移动速度3秒。无法牵制魔法免疫单位，但受牵制后才进入魔法免疫状态无法解除。"
 		"DOTA_Tooltip_Ability_C09T" "破甲术"
@@ -3465,7 +3465,7 @@
 		"DOTA_Tooltip_Ability_A09E_old" "木化术"
 		"DOTA_Tooltip_Ability_A09E_old_Description" "将敌人转化为无反击之力的树人，持续<font color='#5cb85c'>(1/2/3/4)</font>秒。"
 		"DOTA_Tooltip_Ability_A09R_old" "玄武之灵"
-		"DOTA_Tooltip_Ability_A09R_old_Description" "增加900范围友军护甲<font color='#5cb85c'>(4/7/10/13)</font>点。"
+		"DOTA_Tooltip_Ability_A09R_old_Description" "<font color='#5cb85c'>(被动)</font>增加2000范围友军护甲<font color='#5cb85c'>(4/7/10/13)</font>点。<font color='#5cb85c'>(启动)</font>减少范围友军受到的物理伤害<font color='#5cb85c'>(30/40/50/60)% </font>持续5秒。"
 		"DOTA_Tooltip_Ability_A09T_old" "生长藤蔓"
 		"DOTA_Tooltip_Ability_A09T_old_Description" "释放出<font color='#5cb85c'>(10/12/14)</font>条可以存在25秒的鬼之藤蔓。具有极快的攻击速度，以及剧毒攻击能力：攻击能造成每秒<font color='#5cb85c'>(15/25/35)</font>点可叠加的毒伤，持续5秒。"
 		"A09T_old_tentacle"		"鬼之藤蔓"
@@ -3488,8 +3488,8 @@
 		"DOTA_Tooltip_Ability_A10W_old_Description" "与指定部队交换位置并且造成<font color='#5cb85c'>(50/100/150/200)</font>点伤害，并且让敌人晕头转向晕眩<font color='#5cb85c'>(1/1.5/2/2.5)</font>秒，施展距离<font color='#5cb85c'>(600/700/800/900)</font>。"
 		"DOTA_Tooltip_Ability_A10E_old" "飞石击"
 		"DOTA_Tooltip_Ability_A10E_old_Description" "每秒召唤出<font color='#5cb85c'>(6/7/8/9)</font>个飞石，飞石对碰触到的敌人造成<font color='#5cb85c'>(90/160/230/300)</font>物理伤害。需持续施法，最多可持续2.5秒。"
-		"DOTA_Tooltip_Ability_A10R_old" "口臭"
-		"DOTA_Tooltip_Ability_A10R_old_Description" "平手政秀对信长日日夜夜不断的唠叨引起了口臭，令附近450周围的的敌方部队受到口臭感染，每秒受到<font color='#5cb85c'>(15/25/36/46)</font>伤害，且不能回血，造成的伤害不会致命。持续40秒。学习等级：1、4、7、10。"
+		"DOTA_Tooltip_Ability_A10R_old" "疫病"
+		"DOTA_Tooltip_Ability_A10R_old_Description" "令附近450的敌方部队受到感染，每秒受到<font color='#5cb85c'>(40/60/80/100)</font>伤害，造成的伤害不会致命，平手死亡时会对附近1000敌方部队受到感染。持续(35/40/45/50)秒。"
 		"DOTA_Tooltip_Ability_A10T_old" "声东击西"
 		"DOTA_Tooltip_Ability_A10T_old_Description" "指定全地图的一位友军传送至身旁，需<font color='#5cb85c'>(1.5/1/0.5)</font>秒施法时间。"
 
