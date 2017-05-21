@@ -226,10 +226,53 @@
 				"IsDebuff"			"0"
 			
 				"Duration"	"60"
-				"Aura"	"modifier_reward6300_hero"
-				"Aura_Radius"	"99999"
-				"Aura_Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-				"Aura_Types"	"DOTA_UNIT_TARGET_HERO"
+				"ThinkInterval"  "3"
+				"OnCreated"
+				{
+					"ActOnTargets"
+					{
+						"Target"
+						{
+							"Center"  	"CASTER"
+							"Radius" 	"100000"
+							"Teams" 	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+							"Types" 	"DOTA_UNIT_TARGET_HERO"
+						}
+					
+						"Action"    
+						{
+							"ApplyModifier"
+							{
+								"ModifierName"	"modifier_reward6300_hero"
+								"Target" 		"TARGET"
+								"Duration"		"4"
+							}
+						}
+					}
+				}
+				"OnIntervalThink"
+				{
+					"ActOnTargets"
+					{
+						"Target"
+						{
+							"Center"  	"CASTER"
+							"Radius" 	"100000"
+							"Teams" 	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+							"Types" 	"DOTA_UNIT_TARGET_HERO"
+						}
+					
+						"Action"    
+						{
+							"ApplyModifier"
+							{
+								"ModifierName"	"modifier_reward6300_hero"
+								"Target" 		"TARGET"
+								"Duration"		"4"
+							}
+						}
+					}
+				}
 			}
 			"modifier_reward6300_hero"
 			{
@@ -250,30 +293,54 @@
 				"IsDebuff"			"0"
 			
 				"Duration"	"60"
+				"EffectName"		"particles/item/reward6300.vpcf"
+				"ThinkInterval"  "3"
 				"OnCreated"
 				{
-					"AttachEffect"
+					"ActOnTargets"
 					{
-						"EffectName"	"particles/units/heroes/hero_bounty_hunter/bounty_hunter_track_trail.vpcf"
-						"EffectAttachType"	"follow_origin"
-						"Target"	"TARGET"
-						"ControlPointEntities"
+						"Target"
 						{
-							"TARGET"	"attach_origin"
-							"TARGET"	"attach_hitloc"
+							"Center"  	"CASTER"
+							"Radius" 	"100000"
+							"Teams" 	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+							"Types" 	"DOTA_UNIT_TARGET_BASIC"
+						}
+					
+						"Action"    
+						{
+							"ApplyModifier"
+							{
+								"ModifierName"	"modifier_reward6300"
+								"Target" 		"TARGET"
+								"Duration"		"4"
+							}
 						}
 					}
-					"AttachEffect"
+				}
+				"OnIntervalThink"
+				{
+					"ActOnTargets"
 					{
-						"EffectName"	"particles/units/heroes/hero_bounty_hunter/bounty_hunter_track_shield.vpcf"
-						"EffectAttachType"	"follow_overhead"
-						"Target"	"TARGET"
+						"Target"
+						{
+							"Center"  	"CASTER"
+							"Radius" 	"100000"
+							"Teams" 	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+							"Types" 	"DOTA_UNIT_TARGET_BASIC"
+						}
+					
+						"Action"    
+						{
+							"ApplyModifier"
+							{
+								"ModifierName"	"modifier_reward6300"
+								"Target" 		"TARGET"
+								"Duration"		"4"
+							}
+						}
 					}
 				}
-				"Aura"	"modifier_reward6300"
-				"Aura_Radius"	"99999"
-				"Aura_Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-				"Aura_Types"	"DOTA_UNIT_TARGET_BASIC"
 			}
 			"modifier_reward6300"
 			{
@@ -282,16 +349,8 @@
 				"EffectAttachType"	"follow_origin"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS" "0"	//力
-					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "0"		//敏
-					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "0"	//智
 					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "100"	//攻
-					"MODIFIER_PROPERTY_HEALTH_BONUS" "0" 			//血
-					"MODIFIER_PROPERTY_MANA_BONUS" "0"				//魔
-					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT" "0"	//回血
 					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE" "4" //回血%
-					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT" "0" 	//回魔
-					"MODIFIER_PROPERTY_MANA_REGEN_PERCENTAGE" "0" 	//回魔%
 					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "100" //攻速
 					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "20"	//防禦
 					"MODIFIER_PROPERTY_MOVESPEED_BONUS" "100"	//跑速
@@ -304,30 +363,54 @@
 				"IsDebuff"			"0"
 			
 				"Duration"	"60"
+				"EffectName"		"particles/item/reward6300.vpcf"
+				"ThinkInterval"  "3"
 				"OnCreated"
 				{
-					"AttachEffect"
+					"ActOnTargets"
 					{
-						"EffectName"	"particles/units/heroes/hero_bounty_hunter/bounty_hunter_track_trail.vpcf"
-						"EffectAttachType"	"follow_origin"
-						"Target"	"TARGET"
-						"ControlPointEntities"
+						"Target"
 						{
-							"TARGET"	"attach_origin"
-							"TARGET"	"attach_hitloc"
+							"Center"  	"CASTER"
+							"Radius" 	"100000"
+							"Teams" 	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+							"Types" 	"DOTA_UNIT_TARGET_BASIC"
+						}
+					
+						"Action"    
+						{
+							"ApplyModifier"
+							{
+								"ModifierName"	"modifier_reward63002"
+								"Target" 		"TARGET"
+								"Duration"		"4"
+							}
 						}
 					}
-					"AttachEffect"
+				}
+				"OnIntervalThink"
+				{
+					"ActOnTargets"
 					{
-						"EffectName"	"particles/units/heroes/hero_bounty_hunter/bounty_hunter_track_shield.vpcf"
-						"EffectAttachType"	"follow_overhead"
-						"Target"	"TARGET"
+						"Target"
+						{
+							"Center"  	"CASTER"
+							"Radius" 	"100000"
+							"Teams" 	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+							"Types" 	"DOTA_UNIT_TARGET_BASIC"
+						}
+					
+						"Action"    
+						{
+							"ApplyModifier"
+							{
+								"ModifierName"	"modifier_reward63002"
+								"Target" 		"TARGET"
+								"Duration"		"4"
+							}
+						}
 					}
 				}
-				"Aura"	"modifier_reward63002"
-				"Aura_Radius"	"99999"
-				"Aura_Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-				"Aura_Types"	"DOTA_UNIT_TARGET_BASIC"
 			}
 			"modifier_reward63002"
 			{
@@ -336,15 +419,7 @@
 				"EffectAttachType"	"follow_origin"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS" "0"	//力
-					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "0"		//敏
-					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "0"	//智
-					"MODIFIER_PROPERTY_HEALTH_BONUS" "0" 			//血
-					"MODIFIER_PROPERTY_MANA_BONUS" "0"				//魔
-					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT" "0"	//回血
 					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE" "4" //回血%
-					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT" "0" 	//回魔
-					"MODIFIER_PROPERTY_MANA_REGEN_PERCENTAGE" "0" 	//回魔%
 					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "20"	//防禦
 					"MODIFIER_PROPERTY_MOVESPEED_BONUS" "100"	//跑速
 				}
@@ -572,7 +647,40 @@
 	{
 		"BaseClass"	"ability_datadriven"
 		"AbilityTextureName"	"custom/liubei_hujia"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"AbilityCooldown"	"0.2"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
+		"AbilityCastRange"	"50000"
+		"AbilityManaCost"	"0"
+		"AbilityGoldCost"	"150"
+		"AbilityCastPoint"	"0.1"
+		"OnAbilityPhaseStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/tofar_goback.lua"
+				"Function"	"call_ninja1_OnAbilityPhaseStart"
+			}
+		}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/tofar_goback.lua"
+				"Function"	"call_ninja1"
+			}
+		}
+	}
+	// 叫下忍
+	"update_buy_ninja1"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"custom/liubei_hujia"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
@@ -582,13 +690,23 @@
 		"AbilityCastRange"	"50000"
 		"AbilityManaCost"	"0"
 		"AbilityGoldCost"	"150"
-
-		"OnSpellStart"
+		"AbilityCastPoint"	"0.1"
+		"Modifiers"
 		{
-			"RunScript"
+			"modifier_update_buy_ninja1"
 			{
-				"ScriptFile"	"items/Addon_Items/tofar_goback.lua"
-				"Function"	"call_ninja1"
+				"Passive"			"1"
+				"IsHidden"			"0"
+				"IsDebuff"			"0"
+		
+				"OnDeath"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"items/Addon_Items/tofar_goback.lua"
+						"Function"	"update_buy_ninja1"
+					}
+				}
 			}
 		}
 	}
@@ -3380,7 +3498,7 @@
 					"RunScript"
 					{
 						"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A17.lua"
-						"Function"	"A17T_Succes_Attack2"
+						"Function"	"A1300_Succes_Attack"
 						"dmg"	"%attack_damage"
 					}
 				}
