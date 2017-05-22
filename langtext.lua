@@ -302,6 +302,7 @@ langtext["lose_herodamage"]["en"] = "Take hero damage when lost"
 langtext["lose_herodamage"]["jp"] = "敗北対英雄ダメージ"
 
 en_heroname = {
+A01 = "德川家康",
 A02 = "Inahime",
 A04 = "Takenaka Shigeharu",
 A06 = "Ii Naomasa",
@@ -380,6 +381,7 @@ C24 = "Yagyu Munetoshi",
 }
 
 zhcn_heroname = {
+A01 = "德川家康",
 A02 = "稻姬",
 A04 = "竹中重治",
 A06 = "井伊直政",
@@ -458,6 +460,7 @@ C24 = "柳生宗严",
 }
 
 zhtw_heroname = {
+A01 = "德川家康",
 A02 = "稻姬",
 A04 = "竹中重治",
 A06 = "井伊直政",
@@ -536,6 +539,7 @@ C24 = "柳生宗嚴",
 }
 
 jp_heroname = {
+A01 = "德川家康",
 A02 = "稻姬",
 A04 = "竹中重治",
 A06 = "井伊直政",
