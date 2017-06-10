@@ -1,0 +1,87 @@
+"DOTAHeroes"
+{
+	// 上泉
+	"B35"
+	{
+		// General
+		// ----------------------------------------------------------------
+		"ModelScale"	"1.4"
+		"override_hero"	"npc_dota_hero_sven"	
+		//"Level"	"1"
+		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
+		"HealthBarOffset"	"180"
+		// Abilities
+		// ---------------
+		"Ability1"	"B35W"
+		"Ability2"	"B35E"
+		"Ability3"	"B35R"
+		"Ability4"	"attribute_bonusx"
+		"Ability5"	"B35T"
+		"Ability6"	"B35_precache"
+		// Armor
+		// ----------------------------------------------------------------
+		"ArmorPhysical"	"7"
+		"MagicalResistance"	"30"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"	"128.0"
+		"AttackDamageMax"	"144.0"
+		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
+		"AttackRate"	"1.80"
+		"AttackAnimationPoint"	"0.33"
+		"AttackAcquisitionRange"	"500"
+		"AttackRange"	"128"
+		"ProjectileSpeed"	"10000"
+		// Attributes
+		// ----------------------------------------------------------------
+		"AttributePrimary"	"DOTA_ATTRIBUTE_AGILITY"
+		"AttributeBaseStrength"	"29"
+		"AttributeStrengthGain"	"2.1"
+		"AttributeBaseAgility"	"33"
+		"AttributeAgilityGain"	"2.7"
+		"AttributeBaseIntelligence"	"23"
+		"AttributeIntelligenceGain"	"2"
+		// Bounty
+		// ----------------------------------------------------------------
+		"BountyGoldMin"	"300.0"
+		"BountyGoldMax"	"300.0"
+		// Gold and Lumber
+		// ----------------------------------------------------------------
+		"GoldCost"	"0"
+		"LumberCost"	"0"
+		// Movement
+		// ----------------------------------------------------------------
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"	"300"
+		"MovementTurnRate"	"1.50"
+		// Status
+		// ----------------------------------------------------------------
+		"StatusHealth"	"400"
+		"StatusHealthRegen"	"0.25"
+		"StatusMana"	"0"
+		"StatusManaRegen"	"0.01"
+		"StatusStartingMana"	"100"
+		// Vision
+		// ----------------------------------------------------------------
+		"VisionDaytimeRange"	"1800"
+		"VisionNighttimeRange"	"800"
+		// Team
+		// ----------------------------------------------------------------
+		"TeamName"	"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	""
+		"Ability16"	""	
+		//"DisableWearables"	"1"
+	}	
+}

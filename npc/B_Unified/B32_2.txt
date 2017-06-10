@@ -5,12 +5,15 @@
 	{
 		// General
 		// ----------------------------------------------------------------
-		"override_hero"	"npc_dota_hero_dragon_knight"
+		"override_hero"	"npc_dota_hero_bane"
 		"Model"	"models/b32/b32.vmdl"
 		"ModelScale"	"1.5"
 		//"Level"	"5"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
 		"HealthBarOffset"	"180"
+		"SoundSet"	"Hero_Axe"
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_axe.vsndevts"
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_axe.vsndevts"
 		// Abilities
 		// ----------------------------------------------------------------
 		"AbilityLayout"		"6"
@@ -24,7 +27,7 @@
 
 		// Armor
 		// ----------------------------------------------------------------
-		"ArmorPhysical"	"2"
+		"ArmorPhysical"	"5"
 		"MagicalResistance"	"30"
 		// Attack
 		// ----------------------------------------------------------------
@@ -42,10 +45,10 @@
 		"AttributePrimary"	"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"	"36"
 		"AttributeStrengthGain"	"3.20"
-		"AttributeBaseIntelligence"	"25"
-		"AttributeIntelligenceGain"	"2"
 		"AttributeBaseAgility"	"26"
 		"AttributeAgilityGain"	"2.45"
+		"AttributeBaseIntelligence"	"25"
+		"AttributeIntelligenceGain"	"2"		
 		// Bounty
 		// ----------------------------------------------------------------
 		"BountyGoldMin"	"300.0"

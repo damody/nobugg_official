@@ -105,7 +105,7 @@
 #base "C_Neutral\C22.txt"
 #base "C_Neutral\C23.txt"
 #base "C_Neutral\C24.txt"
-// #base "C_Neutral\C25.txt"
+#base "C_Neutral\C25.txt"
 // #base "C_Neutral\C26.txt"
 // #base "C_Neutral\C27.txt"
 // #base "C_Neutral\C28.txt"
@@ -117,7 +117,7 @@
 // #base "C_Neutral\C34.txt"
 // #base "C_Neutral\C35.txt"
 // #base "C_Neutral\C36.txt"
-#base "OB.txt"
+
 //===============System================
 //#base "System_Ability\System_Normal.txt"
 //=================KV==================

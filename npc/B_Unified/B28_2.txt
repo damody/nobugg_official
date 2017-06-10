@@ -6,7 +6,7 @@
 		// General
 		// ----------------------------------------------------------------
 		"override_hero"	"npc_dota_hero_disruptor"
-		"ModelScale"	"1.1"
+		"ModelScale"	"1.4"
 		// Abilities
 		// ----------------------------------------------------------------
 		"Ability1"	"B28W"
@@ -28,7 +28,7 @@
 
 		// Armor
 		// ----------------------------------------------------------------
-		"ArmorPhysical"		"1"
+		"ArmorPhysical"		"5"
 		"MagicalResistance"	"30"
 
 		// Attack
@@ -65,7 +65,7 @@
 		// Movement
 		// ----------------------------------------------------------------
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"			"310"
+		"MovementSpeed"			"300"
 		"MovementTurnRate"		"1.50"
 
 		// Gold and Lumber

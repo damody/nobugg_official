@@ -9,6 +9,9 @@
 		"Model"         "models/b04/b04.vmdl"
 		"DisableWearables"	"1"
 		"ModelScale"	"1.5"
+		"SoundSet"	"Hero_Axe"
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_axe.vsndevts"
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_axe.vsndevts"
 		// "MinimapIcon"		"minimap_candybucket"
 		// "MinimapIconSize"	"1000"
 		// "UnitLabel"          "hero" // -- :GetUnitLabel()
@@ -74,7 +77,7 @@
 		// Movement
 		// ----------------------------------------------------------------
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"	"310"
+		"MovementSpeed"	"300"
 		"MovementTurnRate"	"1.50"
 		// "FollowRange"	"100"
 		// "HasAggressiveStance"	"0"

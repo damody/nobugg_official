@@ -275,7 +275,6 @@
 	"item_the_overflame_art_of_war_hyper"
 	{
 		// General
-		
 		"BaseClass"	"item_datadriven"
 		"AbilityTextureName"	"item_custom/dayan"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT"
@@ -3345,7 +3344,6 @@
 	"item_cross_spear"
 	{
 		// General
-		
 		"BaseClass"	"item_datadriven"
 		"AbilityTextureName"	"item_custom/cross_spear"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -3509,30 +3507,27 @@
 		}
 		"Modifiers"
 		{
-			"Passive_true_gem"
+			"Passive_insight_gem600"
 			{
 				"Passive"          "1"  
 	            "IsHidden"      "1"
-
-	            "Aura"        "modifier_show_invi"
-        		"Aura_Radius" "600"
-        		"Aura_Teams"  "DOTA_UNIT_TARGET_TEAM_ENEMY"
-        		"Aura_Types"  "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
-        		"Aura_Flags"  "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
-        		"Aura_ApplyToCaster" "0"   // Not Apply to Self, default is 1
-			}
-			"modifier_show_invi"
-			{
-				"Passive"			"0"
-				"IsHidden"			"1"
-				"IsDebuff"			"1"
-
-				"Priority" "MODIFIER_PRIORITY_ULTRA"
-
-				"States"
-				{
-					"MODIFIER_STATE_INVISIBLE"		"MODIFIER_STATE_VALUE_DISABLED"
-				}
+	            "ThinkInterval"     "0.25"
+	            "OnIntervalThink"
+	            {
+	                "ApplyModifier"
+	                {
+	                    "Target"
+	                    {
+	                        "Center"    "CASTER"
+	                        "Radius"    "600"
+	                        "Teams" "DOTA_UNIT_TARGET_TEAM_ENEMY"
+	                        "Types" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
+	                        "Flags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+	                    }
+	                    "ModifierName"      "modifier_truesight"
+	                    "Duration"      "0.50"
+	                }
+	            }
 			}
 		}
 		
@@ -3867,8 +3862,8 @@
 			}
 			"RunScript"
 			{
-				"ScriptFile"	"items/Addon_Items/D03.lua"
-				"Function"	"item_D03"
+				"ScriptFile"	"items/Addon_Items/item_fire_scroll.lua"
+				"Function"	"Shock"
 			}
 		}
 		"Modifiers"
@@ -4201,7 +4196,7 @@
 		
 		"AbilityCooldown"	"110"
 		
-		"AbilityManaCost"	"300"
+		"AbilityManaCost"	"200"
 		"ID"	"2700"
 		"ItemQuality"	"component"
 		"Model"	"models/weapon/weapon.vmdl"
@@ -4358,6 +4353,7 @@
 					"MODIFIER_STATE_PASSIVES_DISABLED"	"MODIFIER_STATE_VALUE_ENABLED"
 					"MODIFIER_STATE_MUTED"	"MODIFIER_STATE_VALUE_ENABLED"
 					"MODIFIER_STATE_SILENCED"	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_EVADE_DISABLED"	"MODIFIER_STATE_VALUE_ENABLED"
 				}
 				"Duration"	"5"
 				"IsDebuff"	"1"
@@ -4704,7 +4700,7 @@
 		"AbilityCooldown"	"80"
 		// Cost
 		
-		"AbilityManaCost"	"250"
+		"AbilityManaCost"	"300"
 
 		"ID"	"2709"
 		"ItemQuality"	"component"
@@ -5027,7 +5023,7 @@
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS" "10"	//力
-					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "10"		//敏
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "10"	//敏
 					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "30"	//智
 					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "40"	//攻
 					"MODIFIER_PROPERTY_HEALTH_BONUS" "0" 			//血
@@ -5059,7 +5055,7 @@
 		
 		"AbilityCooldown"	"40"
 		
-		"AbilityManaCost"	"200"
+		"AbilityManaCost"	"260"
 		"AbilityCastPoint"	"0.1"
 		"AbilityCastRange"	"1000"
 		"ID"	"2711"
@@ -5391,7 +5387,7 @@
 		
 		"AbilityCooldown"	"45"
 		
-		"AbilityManaCost"	"285"
+		"AbilityManaCost"	"250"
 		"AbilityCastPoint"	"0.1"
 		"AbilityCastRange"	"700"
 		"ID"	"2714"
@@ -11053,30 +11049,27 @@
 					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS" "20"	//魔抗
 				}
 			}
-			"Passive_true_gem"
+			"Passive_insight_gem"
 			{
 				"Passive"          "1"  
 	            "IsHidden"      "1"
-
-	            "Aura"        "modifier_show_invi"
-        		"Aura_Radius" "900"
-        		"Aura_Teams"  "DOTA_UNIT_TARGET_TEAM_ENEMY"
-        		"Aura_Types"  "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-        		"Aura_Flags"  "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
-        		"Aura_ApplyToCaster" "0"   // Not Apply to Self, default is 1
-			}
-			"modifier_show_invi"
-			{
-				"Passive"			"0"
-				"IsHidden"			"1"
-				"IsDebuff"			"1"
-
-				"Priority" "MODIFIER_PRIORITY_ULTRA"
-
-				"States"
-				{
-					"MODIFIER_STATE_INVISIBLE"		"MODIFIER_STATE_VALUE_DISABLED"
-				}
+	            "ThinkInterval"     "0.25"
+	            "OnIntervalThink"
+	            {
+	                "ApplyModifier"
+	                {
+	                    "Target"
+	                    {
+	                        "Center"    "CASTER"
+	                        "Radius"    "600"
+	                        "Teams" "DOTA_UNIT_TARGET_TEAM_ENEMY"
+	                        "Types" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
+	                        "Flags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+	                    }
+	                    "ModifierName"      "modifier_truesight"
+	                    "Duration"      "0.50"
+	                }
+	            }
 			}
 			"shield_modifier"
 			{
@@ -13321,7 +13314,7 @@
 		
 		"AbilityCooldown"	"30"
 		"AbilityCastPoint"	"0.1"
-		"AbilityManaCost"	"600"
+		"AbilityManaCost"	"400"
 		"ID"	"4000"
 		"ItemQuality"	"component"
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
@@ -14305,7 +14298,7 @@
 		
 		"AbilityCooldown"	"30"
 		
-		"AbilityManaCost"	"150"
+		"AbilityManaCost"	"260"
 		"AbilityCastPoint"	"0.1"
 		"AbilityCastRange"	"700"
 		"ID"	"2719"
@@ -14363,7 +14356,6 @@
 				{
 					"MODIFIER_STATE_ROOTED"	"MODIFIER_STATE_VALUE_ENABLED"
 					"MODIFIER_STATE_EVADE_DISABLED"	"MODIFIER_STATE_VALUE_ENABLED"
-					"MODIFIER_STATE_CANNOT_MISS"	"MODIFIER_STATE_VALUE_ENABLED"
 					"MODIFIER_STATE_SILENCED"	"MODIFIER_STATE_VALUE_ENABLED"
 					"MODIFIER_STATE_BLIND"	"MODIFIER_STATE_VALUE_ENABLED"
 					"MODIFIER_STATE_DISARMED"	"MODIFIER_STATE_VALUE_ENABLED"
@@ -14873,7 +14865,7 @@
 		
 		"AbilityCooldown"	"25"
 		
-		"AbilityManaCost"	"250"
+		"AbilityManaCost"	"260"
 		"AbilityCastPoint"	"0.1"
 		"AbilityCastRange"	"800"
 		"AbilityDamage"		"700"
@@ -15240,38 +15232,35 @@
 		}
 		"Modifiers"
 		{
-			"Passive_true_gem"
+			"Passive_insight_gem"
 			{
 				"Passive"          "1"  
 	            "IsHidden"      "1"
-
-	            "Aura"        "modifier_show_invi"
-        		"Aura_Radius" "600"
-        		"Aura_Teams"  "DOTA_UNIT_TARGET_TEAM_ENEMY"
-        		"Aura_Types"  "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-        		"Aura_Flags"  "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
-        		"Aura_ApplyToCaster" "0"   // Not Apply to Self, default is 1
-        		"OnDeath"
-				{
-					"RunScript"
+	            "ThinkInterval"     "0.25"
+	            "OnIntervalThink"
+	            {
+	                "ApplyModifier"
+	                {
+	                    "Target"
+	                    {
+	                        "Center"    "CASTER"
+	                        "Radius"    "600"
+	                        "Teams" "DOTA_UNIT_TARGET_TEAM_ENEMY"
+	                        "Types" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
+	                        "Flags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+	                    }
+	                    "ModifierName"      "modifier_truesight"
+	                    "Duration"      "0.50"
+	                }
+	            }
+	            "OnDeath"
+	            {
+	            	"RunScript"
 					{
 						"ScriptFile"	"items/Addon_Items/item_insight_gem.lua"
-						"Function"	"Death"
+						"Function"		"Death"
 					}
-				}
-			}
-			"modifier_show_invi"
-			{
-				"Passive"			"0"
-				"IsHidden"			"1"
-				"IsDebuff"			"1"
-
-				"Priority" "MODIFIER_PRIORITY_ULTRA"
-
-				"States"
-				{
-					"MODIFIER_STATE_INVISIBLE"		"MODIFIER_STATE_VALUE_DISABLED"
-				}
+	            }
 			}
 		}
 		
@@ -16759,7 +16748,7 @@
 		
 		"AbilityCooldown"	"25"
 		
-		"AbilityManaCost"	"185"
+		"AbilityManaCost"	"260"
 		"AbilityCastPoint"	"0.1"
 		"AbilityCastRange"	"1000"
 		"AoERadius"	"500"
@@ -17289,7 +17278,7 @@
 	{
 	    "ID" "3876"
 	    "BaseClass" "item_recipe_arcane_boots"
-		"ItemCost" "1000"
+		"ItemCost" "7250"
 		"ItemShopTags" ""
 		"ItemRecipe" "1"
 		"SideShop"						"1"

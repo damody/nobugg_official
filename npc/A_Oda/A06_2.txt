@@ -7,6 +7,9 @@
 		//"Level"	"1"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
 		"HealthBarOffset"	"180"
+		"SoundSet"	"Hero_Axe"
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_axe.vsndevts"
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_axe.vsndevts"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Reference: AInv
@@ -25,13 +28,13 @@
 		"Ability7"	"A06_precache"
 		// Armor
 		// ----------------------------------------------------------------
-		"ArmorPhysical"	"3"
+		"ArmorPhysical"	"5"
 		"MagicalResistance"	"30"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"	"83.0"
-		"AttackDamageMax"	"103.0"
+		"AttackDamageMin"	"117.0"
+		"AttackDamageMax"	"135.0"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"	"1.80"
 		"AttackAnimationPoint"	"0.38"
@@ -43,10 +46,10 @@
 		"AttributePrimary"	"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"	"40"
 		"AttributeStrengthGain"	"3"
+		"AttributeBaseAgility"	"22"
+		"AttributeAgilityGain"	"2.2"
 		"AttributeBaseIntelligence"	"24"
 		"AttributeIntelligenceGain"	"2"
-		"AttributeBaseAgility"	"22"
-		"AttributeAgilityGain"	"2.10"
 		// Bounty
 		// ----------------------------------------------------------------
 		"BountyGoldMin"	"300.0"
@@ -82,7 +85,7 @@
 		"Ability14"	""
 		"Ability15"	""
 		"Ability16"	""
-		"override_hero"	"npc_dota_hero_troll_warlord"
+		"override_hero"	"npc_dota_hero_morphling"
 		"Model"	"models/naomasaii/naomasaii.vmdl"
 		"AbilityLayout"	"6"
 		"DisableWearables"	"1"
