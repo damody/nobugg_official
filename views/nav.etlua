@@ -43,6 +43,13 @@
                 <div class="menu-line"></div>
                 <a href="https://p.allpay.com.tw/UwyZB"><img src="/static/allpay.jpeg"><span class="donate">| <%-langtext["donate"][lang]%> |</span></a>
             </div>
+<div
+  class="menu-list fb-like"
+  data-share="false"
+  data-width="200"
+  data-show-faces="false">
+</div>
+
         </nav>
 
         <div id="mobile-navbar">

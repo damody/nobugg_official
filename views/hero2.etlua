@@ -204,6 +204,8 @@ end
                 	<h4 class="st-title"><%-langtext["all"][lang]%></h4>
                     <div class="st-number"><%-record16["all"]%></div>
                 </div>
+
+		<% if params.win ~= nil then %>
                 <div class="st-box">
                 	<h4 class="st-title"><%-langtext["wincount"][lang]%></h4>
                     <div class="st-number"><%-record16["win"]%></div>
@@ -212,6 +214,8 @@ end
                     <h4 class="st-title"><%-langtext["winning"][lang]%><div class="st-avg"><%-langtext["avg"][lang]%></div></h4>
                     <div class="st-number"><%-round(record16["winning"]*100, 2).."%"%></div>
                 </div>
+		<% end %>
+
                 <div class="st-box">
                     <h4 class="st-title"><%-langtext["damage"][lang]%><div class="st-avg"><%-langtext["avg"][lang]%></div></h4>
                     <div class="st-number"><%-record16["damage"]%></div>
@@ -302,6 +306,8 @@ end
                     <h4 class="st-title"><%-langtext["all"][lang]%></h4>
                     <div class="st-number"><%-record11["all"]%></div>
                 </div>
+
+		<% if params.win ~= nil then %>
                 <div class="st-box">
                     <h4 class="st-title"><%-langtext["wincount"][lang]%></h4>
                     <div class="st-number"><%-record11["win"]%></div>
@@ -310,6 +316,8 @@ end
                     <h4 class="st-title"><%-langtext["winning"][lang]%><div class="st-avg"><%-langtext["avg"][lang]%></div></h4>
                     <div class="st-number"><%-round(record11["winning"]*100, 2).."%"%></div>
                 </div>
+		<% end %>
+
                 <div class="st-box">
                     <h4 class="st-title"><%-langtext["damage"][lang]%><div class="st-avg"><%-langtext["avg"][lang]%></div></h4>
                     <div class="st-number"><%-record11["damage"]%></div>
@@ -351,5 +359,7 @@ end
             <!--統計資訊 11-->
         </div>
     </div>
-
+<div style="width: 50%;margin: 0 auto;">
+<div width="100%" class="fb-comments" data-href="http://www.dota2nobu.com/<%-lang%>/<%-params.webpath%>" data-numposts="5"></div>
+</div>
 <% render("views.footer", { lang = lang, langtext = langtext, heroname = heroname}) %>
