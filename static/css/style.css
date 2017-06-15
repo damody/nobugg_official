@@ -313,6 +313,30 @@ h2.faction-title span:nth-child(3) {
 .champion-list.cl1 > .champion-box:nth-child(8) {
     margin-left: 0%;
 }
+
+
+.champion-list.cl1 > .champion-box:nth-child(9) {
+    margin-left: 3%;
+}
+.champion-list.cl1 > .champion-box:nth-child(10) {
+    margin-left: 5%;
+}
+.champion-list.cl1 > .champion-box:nth-child(11) {
+    margin-left: 8%;
+}
+.champion-list.cl1 > .champion-box:nth-child(12) {
+    margin-left: 11%;
+}
+.champion-list.cl1 > .champion-box:nth-child(13) {
+    margin-left: 14%;
+}
+.champion-list.cl1 > .champion-box:nth-child(14) {
+    margin-left: 17%;
+}
+.champion-list.cl1 > .champion-box:nth-child(15) {
+    margin-left: 20%;
+}
+
 .champion-list.cl2 > .champion-box:first-child {
     margin-left: 3%;
 }
@@ -331,13 +355,35 @@ h2.faction-title span:nth-child(3) {
 .champion-list.cl2 > .champion-box:nth-child(6) {
     margin-left: 17%;
 }
-.champion-list.cl2 > .champion-box:nth-child(6) {
+.champion-list.cl2 > .champion-box:nth-child(7) {
     margin-left: 20%;
 }
 .champion-list.cl2 > .champion-box:nth-child(8) {
     margin-left: 23%;
 }
-.champion-list > ul > li:nth-child(3n){
+
+.champion-list.cl2 > .champion-box:nth-child(9) {
+    margin-left: 20%;
+}
+.champion-list.cl2 > .champion-box:nth-child(10) {
+    margin-left: 17%;
+}
+.champion-list.cl2 > .champion-box:nth-child(11) {
+    margin-left: 14%;
+}
+.champion-list.cl2 > .champion-box:nth-child(12) {
+    margin-left: 11%;
+}
+.champion-list.cl2 > .champion-box:nth-child(13) {
+    margin-left: 9%;
+}
+.champion-list.cl2 > .champion-box:nth-child(14) {
+    margin-left: 6%;
+}
+.champion-list.cl2 > .champion-box:nth-child(15) {
+    margin-left: 3%;
+}
+.champion-list > ul > li:nth-child(4n){
 	margin-right:0;
 	}
 .champion-list a{
@@ -349,12 +395,12 @@ h2.faction-title span:nth-child(3) {
 	border:1px solid #fff;
 	box-shadow:1px 1px 3px rgba(0,0,0,0.2);
 	display:block;
-	height:64px;
+	height:32px;
 	transition:0.5s;
 	position:relative;
 	}
 .champion-list a img{
-	width:64px;
+	width:32px;
 	height:inherit;
 	}
 .champion-name{
