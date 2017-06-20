@@ -169,6 +169,14 @@ do
         render = "index"
       }
     end,
+    ["/zhtw/banpick"] = function(self)
+      self.params.language = "zhtw"
+      self.params.webpath = "banpick"
+      return {
+        layout = false,
+        render = "banpick"
+      }
+    end,
     ["/*"] = function(self)
       return {
         layout = false,

@@ -85,5 +85,10 @@ class extends lapis.Application
     layout: false, render: "shop"
   "/": =>
     layout: false, render: "index"
+  "/zhtw/banpick": =>
+    @params.language = "zhtw"
+    @params.webpath = "banpick"
+    layout: false, render: "banpick"
   "/*": =>
     layout: false, render: "index"
+

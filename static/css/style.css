@@ -399,6 +399,20 @@ h2.faction-title span:nth-child(3) {
 	transition:0.5s;
 	position:relative;
 	}
+
+.champion-list2 a{
+	float:left;
+	width:20%;
+	margin-bottom:1px;
+	margin-right:1%;
+	background:rgba(255,255,255,0.3) url(/static/image/icon-seemore.png) no-repeat 90% 50% / 10px auto;
+	border:1px solid #fff;
+	box-shadow:1px 1px 3px rgba(0,0,0,0.2);
+	display:block;
+	height:32px;
+	transition:0.5s;
+	position:relative;
+	}
 .champion-list a img{
 	width:32px;
 	height:inherit;
