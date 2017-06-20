@@ -177,7 +177,7 @@ function contains(a, obj) {
   <div style="background-color:#AA8888"><font size="18">B組禁用</font><div id="bban"></div></div>
   <div style="background-color:#0055FF"><font size="18">B組選角</font><div id="bpick"></div></div>
 </div>
-        <div class="wrapper">
+        <div class="wrapper" style="background:rgba(249, 30, 14,0.3)">
             <div class="column-8 champion-list champion-list2 cl1"><% 
             i1 = -1
             for n=1,40 do 
@@ -210,10 +210,8 @@ function contains(a, obj) {
                     <span>Champion List</span>
                 </h2>
             </div>
-            
-
         </div>
-        <div class="wrapper">
+        <div class="wrapper" style="background:rgba(0,255,0,0.3)">
             <div class="column-8 champion-list champion-list2 cl1"><% 
             i1 = -1
             for n=1,40 do 
@@ -247,7 +245,7 @@ function contains(a, obj) {
                 </h2>
             </div>
         </div>
-        <div class="wrapper">
+        <div class="wrapper" style="background:rgba(0,0,255,0.3)">
             <div class="column-8 champion-list champion-list2 cl1 cl3"><% 
             i1 = -1
             for n=1,40 do 
