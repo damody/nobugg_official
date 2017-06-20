@@ -222,7 +222,6 @@
 			}
 			"modifier_B10W_slow"
 			{
-				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"EffectName"	"particles/generic_gameplay/move_slow.vpcf"
 				"EffectAttachType"	"follow_overhead"
 				"Duration"	"4"
@@ -406,7 +405,6 @@
 		}
 	}
     //深淵之力	------------------------------只有扣防靈氣效果 	 補血功能	
-   
 	"B10T"
 	{
 		// General
@@ -579,7 +577,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"armor_reduction"	"-7 -10 -13"
+				"armor_reduction"	"-9 -12 -15"
 			}
 			"02"
 			{
@@ -610,7 +608,7 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 
-		"AbilityCooldown"				"25"
+		"AbilityCooldown"				"20"
 		"AbilityManaCost"				"50 55 60 65"
 		
 		"AbilitySpecial"
@@ -882,7 +880,6 @@
 				"IsBuff"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"%movespeed"
 					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%atkspeed"
 					"MODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE"	"%atk"
 					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"%movespeed"
@@ -913,7 +910,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"ADD_AGI"	"80 100 130"
+				"ADD_AGI"	"110 150 200"
 			}
 			"05"
 			{

@@ -165,12 +165,12 @@
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"agi1"	"-15 -25 -35 -45"
+				"agi1"	"-30 -40 -50 -60"
 			}
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"agi2"	"15 25 35 45"
+				"agi2"	"30 40 50 60"
 			}
 		}
 	}
@@ -320,7 +320,7 @@
 		"AbilityTextureName"                        "custom/A09/A09R"
 
 		"AbilityCastPoint"							"0.1"
-		"AbilityCooldown"                           "30 28 26 24"
+		"AbilityCooldown"                           "24 22 20 18"
 		"AbilityManaCost"                           "100 120 140 160"
 
 		"OnSpellStart"
@@ -463,12 +463,12 @@
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"agi1"	"-10 -15 -20 -25"
+				"agi1"	"-20 -25 -30 -35"
 			}
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"agi2"	"10 15 20 25"
+				"agi2"	"20 25 30 35"
 			}
 			"04"
 			{
@@ -540,7 +540,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"crit_chance" "5 10 15 20" // %
+				"crit_chance" "10 15 20 25" // %
 			}
 		}
 	}
