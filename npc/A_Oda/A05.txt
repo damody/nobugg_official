@@ -102,7 +102,7 @@
 		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
 		"HotKeyOverride"	"W"
 		"MaxLevel"	"4"
-		"AbilityCooldown"	"15"
+		"AbilityCooldown"	"15 13 11 9"
 		"AbilityManaCost"	"90 105 120 135"
 		"AbilityCastRange"	"500"
 		"AbilityDamage"		"200 300 400 500"

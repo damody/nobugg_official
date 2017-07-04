@@ -246,6 +246,12 @@
 				"Function"	"A21R_Sound"
 				"Target"	"TARGET"
 			}
+			"Damage"
+			{
+				"Target"	"TARGET"
+				"Type"	"DAMAGE_TYPE_MAGICAL"
+				"Damage"	"%dmg"
+			}
 		}
 		"Modifiers"
 		{
@@ -301,7 +307,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"dmg"	"50 60 70 80"
+				"dmg"	"25 30 35 40"
 			}
 		}
     }
