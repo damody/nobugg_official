@@ -174,20 +174,19 @@ end
 for i, item in pairs(equiment) do
   if item["Description"] == nil then
     --equiment[i] = nil
-    print(inspect(item))
+    --print(inspect(item))
   end
 end
 text = readAll("shops.txt")
 --print(text)
 
 for name, content in rex.gmatch(text, [[\n"(.+)"\n{(.+)\n}]], "Usm", 0) do
-  --print(name, content)
   if name ~= "pregame" then
-  local count = 1
-  for item in rex.gmatch(content, [["item"[ \t]+"item_(.+)"]], "U", 0) do
-    newequiment[name][count] = equiment[item]
-    count = count + 1
-  end
+      local count = 1
+      for item in rex.gmatch(content, [["item"[ \t]+"item_(.+)"]], "U", 0) do
+        newequiment[name][count] = equiment[item]
+        count = count + 1
+      end
   end
 end
 

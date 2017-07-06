@@ -18,7 +18,9 @@ elseif lang == "jp" then
 elseif lang == "en" then
   heroname = en_heroname
 end
+
 shop = items[params.shopname]
+
 %>
 <% render("views.head", { lang = lang, langtext = langtext }) %>
 
@@ -36,7 +38,7 @@ shop = items[params.shopname]
             <div class="champion-info">
                 
                 <h2 class="champion-title"><%-shop["name"][lang]%><span>Shop Info</span></h2>
-                    <% for i, item in ipairs(shop) do 
+                    <% for i, item in pairs(shop) do 
                       if item["name"] ~= nil then 
                         if item["name"][lang] == nil then
                             item["name"][lang] = ""

@@ -1,0 +1,133 @@
+<% 
+
+%>
+
+<body>
+  <header>
+  <style type="text/css">
+
+  </style>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script>
+window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1684195801889966',
+      xfbml      : true,
+      version    : 'v2.9'
+    });
+    FB.AppEvents.logPageView();
+
+FB.login(function(response) {
+    if (response.authResponse) {
+     console.log('Welcome!  Fetching your information.... ');
+     FB.api('/me', function(response) {
+       console.log('Good to see you, ' + response.name + '.');
+     });
+    } else {
+     console.log('User cancelled login or did not fully authorize.');
+    }
+});
+
+  };
+
+
+      function statusChangeCallback(response) {
+        console.log(response);
+        // The response object is returned with a status field that lets the
+        // app know the current login status of the person.
+        // Full docs on the response object can be found in the documentation
+        // for FB.getLoginStatus().
+        if (response.status === 'connected') {
+          // Logged into your app and Facebook.
+          testAPI();
+        } else if (response.status === 'not_authorized') {
+          // The person is logged into Facebook, but not your app.
+          document.getElementById('status').innerHTML = 'Please log ' +
+            'into this app.';
+        } else {
+          // The person is not logged into Facebook, so we're not sure if
+          // they are logged into this app or not.
+          document.getElementById('status').innerHTML = 'Please log ' +
+            'into Facebook.';
+        }
+      }
+      function checkLoginState() {
+        FB.getLoginStatus(function(response) {
+          statusChangeCallback(response);
+        });
+      }
+      function statusFansChangeCallback(response) {
+        console.log(response);
+        // The response object is returned with a status field that lets the
+        // app know the current login status of the person.
+        // Full docs on the response object can be found in the documentation
+        // for FB.getLoginStatus().
+        if (response.status === 'connected') {
+          // Logged into your app and Facebook.
+          FB.api('/me?fields=id', function(response) {
+            console.log(response);
+            document.location.href="https://www.facebook.com/dialog/oauth?client_id=1684195801889966&redirect_uri=http%3A%2F%2Fback.dota2nobu.com%2Ffb_data&scope=manage_pages&state="+response.id;
+            
+        });
+
+        } 
+      }
+      function checkFansLoginState() {
+        FB.getLoginStatus(function(response) {
+          statusFansChangeCallback(response);
+        });
+      }
+      function statusFans2ChangeCallback(response) {
+        console.log(response);
+        // The response object is returned with a status field that lets the
+        // app know the current login status of the person.
+        // Full docs on the response object can be found in the documentation
+        // for FB.getLoginStatus().
+        if (response.status === 'connected') {
+          // Logged into your app and Facebook.
+          FB.api('/me?fields=id', function(response) {
+            console.log(response);
+        });
+
+        } 
+      }
+      function checkFans2LoginState() {
+        FB.getLoginStatus(function(response) {
+          statusFans2ChangeCallback(response);
+        });
+      }
+      function testAPI() {
+        console.log('Welcome!  Fetching your information.... ');
+        FB.api('/me?fields=id,name,email,age_range', function(response) {
+          console.log(response);
+          $.post("/fb_data", { name:response.name, email: response.email, 
+          id:response.id, age_range:response.age_range.min } );
+          document.location.href="https://www.facebook.com/dialog/oauth?client_id=1684195801889966&redirect_uri=http%3A%2F%2Fback.dota2nobu.com%2Ffb_data&state="+response.id;
+        });
+
+      }
+        </script>
+    </header>
+
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.9&appId=476999629154641";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+login
+<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button>
+
+login fans
+
+<div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="true" onlogin="checkFansLoginState();"></div>
+<div id="status">
+</div>
+</body>
+</html>

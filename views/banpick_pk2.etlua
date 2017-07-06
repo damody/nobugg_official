@@ -1,0 +1,352 @@
+<% 
+local inspect = require("inspect")
+require("read_hero")
+require("langtext")
+lang = params.language
+local redis = require 'redis'
+local client = redis.connect('127.0.0.1', 6379)
+local cjson = require("cjson")
+
+if lang == "zhtw" then
+  heroname = zhtw_heroname
+elseif  lang == "zhcn" then
+  heroname = zhcn_heroname
+elseif lang == "jp" then
+  heroname = jp_heroname
+elseif lang == "en" then
+  heroname = en_heroname
+end
+BeadSize = 50
+
+function round(num, idp)
+  local mult = 10^(idp or 0)
+  return math.floor(num * mult + 0.5) / mult
+end
+%>
+<% render("views.head", { lang = lang, langtext = langtext }) %>
+<body>
+  <header>
+  <style type="text/css">
+    <% if params.win then %>
+.champion-list2 a{
+  width:20%;
+}
+.wrapper{
+  width:100%;
+}
+.mobile-hide{
+  display: none;
+}
+    <% end %>
+
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <% render("views.nav", { lang = lang, langtext = langtext, webpath = params.webpath }) %>
+        <script>
+            jQuery("document").ready(function($){
+                $(window).keydown(function( event ) {
+                    if ( event.which == 34 || event.which == 32 ) {
+                        if ($(this).scrollTop() < $(this).height()*0.9) {
+                            $(this).scrollTop($(this).height()*0.12);
+                        } else if ($(this).scrollTop() < $(this).height()*1.8) {
+                            $(this).scrollTop($(this).height()*1.1);
+                        }
+                    }
+                    if ( event.which == 33 ) {
+                        if ($(this).scrollTop() > $(this).height()*2) {
+                            $(this).scrollTop($(this).height()*1.87);
+                        } else if ($(this).scrollTop() > $(this).height()*1.8) {
+                            $(this).scrollTop($(this).height()*1.87);
+                        } else if ($(this).scrollTop() > $(this).height()*0.9) {
+                            $(this).scrollTop($(this).height()*0);
+                        }
+                    }
+                });
+                var nav = $('header');
+                
+                nav.hide();
+             
+            });
+        </script>
+
+        <script type="text/javascript">
+        $(document).ready(function(){
+
+        function getmessage(id) {
+          if (statusx[id] != undefined) {
+            return statusx[id];
+          }
+          return ""
+        }
+        function getdest(id) {
+          if (status[id] != undefined) {
+            var str = status[id];
+              if (str.match(/A_PICK/g)){
+                return "apick";
+              }
+              else if (str.match(/A_BAN/g)){
+                return "aban";
+              }
+              else if (str.match(/B_PICK/g)){
+                return "bpick";
+              }
+              else if (str.match(/B_BAN/g)){
+                return "bban";
+              }
+            }
+          return ""
+        }
+
+        var mode_status = 0
+        var status = [];
+        var statusx = [];
+        status[0] = "TEAM_A_BAN1";
+        statusx[1] = "A組禁用第1隻";
+        status[1] = "TEAM_A_BAN1";
+
+        status[2] = "TEAM_B_BAN1";
+        statusx[2] = "B組禁用第1隻";
+        status[3] = "TEAM_B_BAN2";
+        statusx[3] = "B組禁用第2隻";
+    
+        
+        status[4] = "TEAM_A_BAN2";
+        statusx[4] = "A組禁用第2隻";
+        status[5] = "TEAM_A_BAN3";
+        statusx[5] = "A組禁用第3隻";
+    
+        status[6] = "TEAM_B_BAN2";
+        statusx[6] = "B組禁用第3隻";
+    
+        status[7] = "TEAM_B_PICK1";
+        statusx[7] = "B組選角第1隻";
+
+        status[8] = "TEAM_A_PICK1";
+        statusx[8] = "A組選角第1隻";
+        status[9] = "TEAM_A_PICK2";
+        statusx[9] = "A組選角第2隻";
+    
+        status[10] = "TEAM_B_PICK2";
+        statusx[10] = "B組選角第2隻";
+        status[11] = "TEAM_B_PICK3";
+        statusx[11] = "B組選角第3隻";
+    
+        status[12] = "TEAM_A_PICK2";
+        statusx[12] = "A組選角第3隻";
+        statusx[13] = "選角完成";
+
+function contains(a, obj) {
+    for (var i = 0; i < a.length; i++) {
+        if (a[i] === obj) {
+            return true;
+        }
+    }
+    return false;
+}
+$("#last").click(function(){
+    var test = document.getElementById(getdest(mode_status));
+    var revert = test.lastElementChild.getAttribute("alt");
+    console.log("revert"+revert);
+    test.removeChild(test.lastElementChild);
+    if (mode_status > 0) {
+      mode_status = mode_status - 1;
+      allhero.pop();
+    }
+    $("#"+revert).css("background-color", "");
+    $("#mode").html(getmessage(mode_status+1));
+    });
+        var allhero = [];
+        $( "#other" ).click(function() {
+          $( "#target" ).click();
+        });
+  var clickc = 0;
+      $("div").delegate("a", "click",function(e){
+        var img = e.currentTarget;
+        clickc = clickc + 1;
+          if (clickc % 4 == 0 && mode_status < 12) {
+            allhero.push(img.id);
+            mode_status = mode_status + 1;
+            $("#mode").html(getmessage(mode_status+1));
+
+            var DOM_img = document.createElement("img");
+            DOM_img.src = $("#"+img.id).children("img").attr("src");
+            if (getdest(mode_status) == "apick"){
+              $("#"+img.id).css("background-color", "#FF0000");
+            }
+            else if (getdest(mode_status) == "bpick"){
+              $("#"+img.id).css("background-color", "#00FF00");
+            }else {
+              $("#"+img.id).css("background-color", "black");
+            }
+            DOM_img.width = <%=BeadSize%>;
+            DOM_img.height = <%=BeadSize%>;
+            DOM_img.name = img.id+"_copy";
+            DOM_img.id = img.id+"_copy";
+            DOM_img.alt = img.id;
+            
+            document.getElementById(getdest(mode_status)).appendChild(DOM_img);
+          }
+          });
+     
+       
+        });
+        </script>
+    </header>
+
+</head>
+<body>
+
+
+<div class="container faction1">
+<% if params.win == nil then %>
+<div style="position: fixed;float:left;margin-left:20px;">
+  <button type="button" class="btn" id="last">上一步</button>
+  <font size="6"><div id="mode">A組禁用第1隻</div></font>
+  <div style="background-color:#8888AA"><font size="5">A組禁用</font><div id="aban"></div></div>
+  <div style="background-color:#FF4400"><font size="5">A組選角</font><div id="apick"></div></div>
+  <div style="background-color:#AA8888"><font size="5">B組禁用</font><div id="bban"></div></div>
+  <div style="background-color:#0055FF"><font size="5">B組選角</font><div id="bpick"></div></div>
+</div>
+<% end %>
+        <div class="wrapper" style="background:rgba(249, 30, 14,0.3)">
+            <div class="column-8 champion-list champion-list2 cl1"><% 
+            i1 = -1
+            for n=1,40 do 
+              key = tostring(n)
+              if n < 10 then
+                key = "0"..key
+              end
+              key = "A"..key
+              if heroname[key] ~= nil then
+                i1 = i1 + 1
+                i = key
+                it = heroname[key]
+                record16 = cjson.decode(client:get(string.lower(key).."_16"))
+                record11 = cjson.decode(client:get(string.lower(key).."_11"))
+                if record16["all"] ~= nil then
+                  record16 = round(record16["winning"]*100, 2).."%"
+                else
+                  record16 = ""
+                end
+                if record11["all"] ~= nil then
+                  record11 = round(record11["winning"]*100, 2).."%"
+                else
+                  record11 = ""
+                end
+                if i1 > 1 and math.fmod(i1,5) == 0 then %>
+                </div><% 
+                end 
+                if math.fmod(i1,5) == 0 then %>
+                <div ><% 
+                end  %>
+                <a id="<%-i%>">
+                    <img src="/static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name" style="white-space:nowrap;"><%-it%><% if params.win then %><%-record11.."/"..record16%><% end %></div>
+                </a><% 
+              end 
+            end%>
+                </div>
+            </div>
+            <div class="column-2 mobile-hide">
+              <h2 class="faction-title">
+                  <span style="color:black;">織</span>
+                    <span style="color:black;">田</span>
+                    <span>Champion List</span>
+                </h2>
+            </div>
+        </div>
+
+        <div class="wrapper" style="background:rgba(0,255,0,0.3)">
+            <div class="column-8 champion-list champion-list2 cl1"><% 
+            i1 = -1
+            for n=1,40 do 
+              key = tostring(n)
+              if n < 10 then
+                key = "0"..key
+              end
+              key = "B"..key
+              if heroname[key] ~= nil then
+                i1 = i1 + 1
+                i = key
+                it = heroname[key]
+                record16 = cjson.decode(client:get(string.lower(key).."_16"))
+                record11 = cjson.decode(client:get(string.lower(key).."_11"))
+                if record16["all"] ~= nil then
+                  record16 = round(record16["winning"]*100, 2).."%"
+                else
+                  record16 = ""
+                end
+                if record11["all"] ~= nil then
+                  record11 = round(record11["winning"]*100, 2).."%"
+                else
+                  record11 = ""
+                end
+                if i1 > 1 and math.fmod(i1,5) == 0 then %>
+                </div><% 
+                end 
+                if math.fmod(i1,5) == 0 then %>
+                <div ><% 
+                end  %>
+                <a id="<%-i%>">
+                    <img src="/static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name" style="white-space:nowrap;"><%-it%><% if params.win then %><%-record11.."/"..record16%><% end %></div>
+                </a><% 
+              end 
+            end%>
+                </div>
+            </div>
+            <div class="column-2 mobile-hide">
+              <h2 class="faction-title">
+                  <span style="color:black;">聯</span>
+                    <span style="color:black;">合</span>
+                    <span>Champion List</span>
+                </h2>
+            </div>
+        </div>
+        <div class="wrapper" style="background:rgba(0,0,255,0.3)">
+            <div class="column-8 champion-list champion-list2 cl1 cl3"><% 
+            i1 = -1
+            for n=1,40 do 
+              key = tostring(n)
+              if n < 10 then
+                key = "0"..key
+              end
+              key = "C"..key
+              if heroname[key] ~= nil then
+                i1 = i1 + 1
+                i = key
+                it = heroname[key]
+                record16 = cjson.decode(client:get(string.lower(key).."_16"))
+                record11 = cjson.decode(client:get(string.lower(key).."_11"))
+                if record16["all"] ~= nil then
+                  record16 = round(record16["winning"]*100, 2).."%"
+                else
+                  record16 = ""
+                end
+                if record11["all"] ~= nil then
+                  record11 = round(record11["winning"]*100, 2).."%"
+                else
+                  record11 = ""
+                end
+                if i1 > 1 and math.fmod(i1,5) == 0 then %>
+                </div><% 
+                end 
+                if math.fmod(i1,5) == 0 then %>
+                <div ><% 
+                end  %>
+                <a id="<%-i%>">
+                    <img src="/static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name" style="white-space:nowrap;"><%-it%><% if params.win then %><%-record11.."/"..record16%><% end %></div>
+                </a><% 
+              end 
+            end%>
+                </div>
+            </div>
+            <div class="column-2 mobile-hide">
+              <h2 class="faction-title">
+                  <span style="color:black;">中</span>
+                    <span style="color:black;">立</span>
+                    <span>Champion List</span>
+                </h2>
+            </div>
+        </div>
+        </div>
+</body>
+</html>
