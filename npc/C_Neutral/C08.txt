@@ -15,6 +15,7 @@
 			"particle"  "particles/item/item_thunderstorms_cloud_dust.vpcf"
 			"particle"  "particles/a07e/a07e.vpcf"
 			"particle"  "particles/a19/a19_t.vpcf"
+			"particle"	"particles/title/c08t.vpcf"
 		}
 	}
 
@@ -354,6 +355,12 @@
 				"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C08.lua"
 				"Function"		"C08T_OnSpellStart"
 			}
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+				"Function"	"showTitle"
+				"title"	"particles/title/c08t.vpcf"
+			}
 		}
 		"Modifiers"
 		{
@@ -404,7 +411,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"300 400 500"
+				"damage"	"250 360 480"
 			}
 		}
 		// Stats

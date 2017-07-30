@@ -34,6 +34,50 @@
 			}
 		}
 	}
+	
+	//  附近的敵人愈多 受到的傷害愈高
+	"debuff_tower"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityTextureName"			"custom/icon_128x128_145"
+		"Modifiers"
+		{
+			"modifier_debuff_x"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"ThinkInterval"  "1"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"debuff_tower"
+					}
+				}	
+				"OnTakeDamage"
+				// "%attack_damage" is set to the damage value after mitigation
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"debuff_tower2"
+					}
+				}
+			}
+			"debuff_tower"
+			{
+				"Passive"	"0"
+				"IsHidden"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"	"12"
+					"MODIFIER_PROPERTY_TOTALDAMAGEOUTGOING_PERCENTAGE"	"-10"
+				}
+			}
+		}
+	}
 	// mvp
 	"play_mvp"
 	{
@@ -132,6 +176,12 @@
 						"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A28_Hashiba_Hideyoshi.lua"
 						"Function"	"for_heal"
 					}
+					"RunScript"
+					{
+					  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+						"Function"	"sound"
+						"sound"	"HealingWave"
+					}
 				}
 			}
 			"modifier_arc_lightning_datadriven"
@@ -221,6 +271,32 @@
 					{
 						"ScriptFile"	"items/Addon_Items/tofar_goback.lua"
 						"Function"		"play_1v1"
+					}
+				}
+			}
+		}
+	}
+	// 中離右上角
+	"afk_gogo"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"custom/icon_128x128_26"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		
+		"Modifiers"
+		{
+			"modifier_afkgogo"
+			{
+				"Passive"			"1"
+				"IsHidden"			"0"
+				"IsDebuff"			"0"
+				"ThinkInterval"  "1"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"items/Addon_Items/tofar_goback.lua"
+						"Function"		"afk_gogo"
 					}
 				}
 			}
@@ -922,6 +998,40 @@
 						"ScriptFile"	"items/Addon_Items/tofar_goback.lua"
 						"Function"		"dead_give_item"
 						"item"	"item_reward6300"
+					}
+				}
+			}
+		}
+	}
+	// 死了消失
+	"dead_destroy"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"custom/icon_128x128_21"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"AbilityCastPoint"	"0.1"
+		"AbilityCooldown"	"60"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
+		"AbilityCastRange"	"50000"
+		"AbilityManaCost"	"20"
+		"AOERadius"		"900"
+
+		"Modifiers"
+		{
+			"dead_destroy"
+			{
+				"IsHidden"      "1"
+				"Passive"	"1"
+				"OnDeath"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"items/Addon_Items/tofar_goback.lua"
+						"Function"		"dead_destroy"
 					}
 				}
 			}
@@ -2438,7 +2548,7 @@
 	"war_magic_back_wall"
 	{
 		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"custom/icon_128x128_47"
+		"AbilityTextureName"	"custom/icon_128x128_48"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
@@ -2772,7 +2882,6 @@
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT" "40"	//回血
-					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT" "20" 	//回魔
 				}
 				"Passive"	"0"
 				"Duration"	"20"
@@ -2848,6 +2957,67 @@
 			{
 				"var_type"	"FIELD_FLOAT"
 				"time"	"1 1.5 2 2.5"
+			}
+		}
+	}
+	//林卷小兵 綁人
+	"forest_soldier_W2"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"meepo_earthbind"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"AbilityCastPoint"	"0.25"
+		"AbilityCooldown"	"6"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
+		"AbilityCastRange"	"800"
+		"AOERadius"	"500"
+		"AbilityManaCost"	"100"
+		"precache"
+		{
+			"particle"	"particles/b02r4/b02r4.vpcf"
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_bounty_hunter.vsndevts"
+		}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_forest_scroll.lua"
+				"Function"	"soldier1x"
+				"Target"	"POINT"
+			}
+		}
+		
+		"Modifiers"
+		{
+			"modifier_soldier_W"
+			{
+				"IsPurgable"	"1"
+				"IsDebuff"		"1"
+				"States"
+				{
+					"MODIFIER_STATE_ROOTED"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
+				"OnCreated"
+				{
+					"Damage"
+					{
+						"Target"	"TARGET"
+						"Type"	"DAMAGE_TYPE_MAGICAL"
+						"Damage"	"1"
+					}
+				}
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"time"	"3"
 			}
 		}
 	}
@@ -3189,7 +3359,242 @@
 		}
 		"AbilityDamage"	"200 350 500 700"
 	}
+	// 屬性附加 黃十字
+	"attribute_bonusx"
+	{
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"custom/icon_128x128_142"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_TOGGLE"
+		"MaxLevel"	"100"
+		"HotKeyOverride"	"F"
+		"LevelsBetweenUpgrades"	"0"
+		"AbilityCooldown"	"8"
+		"precache"
+		{
+			"particle" "particles/focus/lv1_1.vpcf"
+    		"particle" "particles/focus/lv1_2.vpcf"
+    		"particle" "particles/focus/lv1_3.vpcf"
+    		"particle" "particles/focus/lv2_1.vpcf"
+    		"particle" "particles/focus/lv2_2.vpcf"
+    		"particle" "particles/focus/lv2_3.vpcf"
+    		"particle" "particles/focus/lv2_4.vpcf"
+		}
+		"OnToggleOn"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/attribute_bonus.lua"
+				"Function"	"show_lv"
+			}
+			"ApplyModifier"
+			{
+				"Target"
+				{
+				    "Center" "CASTER"
+				    "Flags" "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+				}
+				"ModifierName"	"modifier_bonusx_locker"
+			}
+		}
+		"OnUpgrade"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/attribute_bonus.lua"
+				"Function"	"attribute_bonus"
+			}
+		}
+		"Modifiers"
+		{
+			// 暫時鎖住此技能
+			"modifier_bonusx_locker"
+			{
+				"Duration" "8"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/attribute_bonus.lua"
+						"Function"		"bonusx_lock"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/attribute_bonus.lua"
+						"Function"		"bonusx_unlock"
+					}
+				}
+			}
+			"modifier_lv1_1"
+			{
+				"Passive"			"0"
+				"IsHidden"			"1"
+				"Duration"			"1.67"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"showTitle"
+						"title"	"particles/focus/lv1_1.vpcf"
+					}
+				}	
+				"OnDestroy"
+				{
+					"ApplyModifier"
+					{
+						"ModifierName"	"modifier_lv1_2"
+						"Target" 		"CASTER"
+					}
+				}
+			}
+			"modifier_lv1_2"
+			{
+				"Passive"			"0"
+				"IsHidden"			"1"
+				"Duration"			"1.67"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"showTitle"
+						"title"	"particles/focus/lv1_2.vpcf"
+					}
+				}
+				"OnDestroy"
+				{
+					"ApplyModifier"
+					{
+						"ModifierName"	"modifier_lv1_3"
+						"Target" 		"CASTER"
+					}
+				}
+			}
+			"modifier_lv1_3"
+			{
+				"Passive"			"0"
+				"IsHidden"			"1"
+				"Duration"			"1.67"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"showTitle"
+						"title"	"particles/focus/lv1_3.vpcf"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"removeAbility"
+						"title"	"show_lv1"
+					}
+				}
+			}
 
+			"modifier_lv2_1"
+			{
+				"Passive"			"0"
+				"IsHidden"			"1"
+				"Duration"			"1.58"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"showTitle"
+						"title"	"particles/focus/lv2_1.vpcf"
+					}
+				}	
+				"OnDestroy"
+				{
+					"ApplyModifier"
+					{
+						"ModifierName"	"modifier_lv2_2"
+						"Target" 		"CASTER"
+					}
+				}
+			}
+			"modifier_lv2_2"
+			{
+				"Passive"			"0"
+				"IsHidden"			"1"
+				"Duration"			"1.06"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"showTitle"
+						"title"	"particles/focus/lv2_2.vpcf"
+					}
+				}
+				"OnDestroy"
+				{
+					"ApplyModifier"
+					{
+						"ModifierName"	"modifier_lv2_3"
+						"Target" 		"CASTER"
+					}
+				}
+			}
+			"modifier_lv2_3"
+			{
+				"Passive"			"0"
+				"IsHidden"			"1"
+				"Duration"			"0.99"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"showTitle"
+						"title"	"particles/focus/lv2_3.vpcf"
+					}
+				}
+				"OnDestroy"
+				{
+					"ApplyModifier"
+					{
+						"ModifierName"	"modifier_lv2_4"
+						"Target" 		"CASTER"
+					}
+				}
+			}
+			"modifier_lv2_4"
+			{
+				"Passive"			"0"
+				"IsHidden"			"1"
+				"Duration"			"1.32"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"showTitle"
+						"title"	"particles/focus/lv2_4.vpcf"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"removeAbility"
+						"title"	"show_lv1"
+					}
+				}
+			}
+		}
+	}
 	//林卷小兵 法術書
 	"forest_caster_R"
 	{
@@ -3270,7 +3675,53 @@
 			}
 		}
 	}
+	//捨身淨化
+	"forest_caster_T"
+	{
+		"BaseClass"                 				"ability_datadriven"
+		"AbilityBehavior"           				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetType"                		"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetTeam"                		"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetFlags"					"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityType"  								"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityTextureName"                        "custom/a12w"
+		"AbilityCastPoint"					 "0.5" //stun
+		"AbilityCooldown"                        	"100"
+		"AbilityManaCost"                           "200"
+		"AbilityDamage"				"0"
+		"AbilityCastRange"			"200"
+		"OnAbilityPhaseStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/B_Unified/B22.lua"
+				"Function"	"forest_caster_T_OnAbilityPhaseStart"
+				"Target"	"TARGET"
+			}
+		}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/B_Unified/B22.lua"
+				"Function"	"forest_caster_T"
+				"Target"	"TARGET"
+			}
+		}
+		"Modifiers"
+		{
+		}
 
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_movement_speed"			"-100 -200 -300 -400"
+			}
+		}
+		
+    }
 	//池田鬼神丸國重．銘刀 抗魔
 	"great_sword_of_disease_W"
 	{
@@ -3296,10 +3747,11 @@
 		}
 		"OnSpellStart"
 		{
-			"ApplyModifier"
+			"RunScript"
 			{
 				"Target"	"TARGET"
-				"ModifierName"	"modifier_perceive_wine_hyper"
+				"ScriptFile"	"items/Addon_Items/item_the_great_sword_of_disease.lua"
+				"Function"	"sword_of_disease_W"
 			}
 		}
 		"Modifiers"
@@ -3483,6 +3935,8 @@
 						"Damage"	"185"
 					}
 				}
+				"EffectName"		"particles/a11e/a11e2.vpcf"
+				"EffectAttachType"	"follow_origin"
 				"Duration"	"2.6"
 				"IsPurgable"	"1"
 				"IsDebuff"		"1"
@@ -3573,6 +4027,12 @@
 			{
 				"Passive"	"0"
 				"IsHidden"	"0"
+				"Orb"
+				{
+					"Priority"	"DOTA_ORB_PRIORITY_ABILITY"
+					"ProjectileName"    "particles/item/disease_unit.vpcf"
+				}
+				
 				"OnAttackLanded"
 				{
 					"RunScript"
@@ -3581,27 +4041,6 @@
 						"Function"	"attackgo"
 					}
 				}
-			}
-		}
-	}
-
-	// 屬性附加
-	"attribute_bonusx"
-	{
-		// General
-		// -------------------------------------------------------------------------------------------------------------
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"custom/icon_128x128_142"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"MaxLevel"	"100"
-		"HotKeyOverride"	"F"
-		"LevelsBetweenUpgrades"	"0"
-		"OnUpgrade"
-		{
-			"RunScript"
-			{
-				"ScriptFile"	"scripts/vscripts/heroes/attribute_bonus.lua"
-				"Function"	"attribute_bonus"
 			}
 		}
 	}
@@ -3708,7 +4147,16 @@
 		}
 		"Modifiers"
 		{
-			"modifier_A17T"
+			"modifier_1300Attack"
+			{
+				"Passive"	"0"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "-150"
+				    "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE" "-25" 
+				}
+			}
+			"modifier_1300"
 			{
 				"Passive"	"1"
 				"OnAttack"
@@ -4350,7 +4798,7 @@
 				"Passive"			"1"
 				"IsHidden"			"0"
 				"IsDebuff"			"0"
-			
+				"Duration"		"600"
 				"ThinkInterval"	"0.5"
 
 				"OnIntervalThink"

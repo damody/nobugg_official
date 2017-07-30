@@ -362,7 +362,7 @@
 		    }
 		}
 	}
-	// 石川 蟲蟲
+	// 石川 天牛
 	"A03W_old"
 	{
 		// General
@@ -567,7 +567,7 @@
 		// Abilities
 		// ----------------------------------------------------------------
 		// Reference: A0BN
-		"Ability1"	""
+		"Ability1"	"dead_destroy"
 		// Reference: A0BM
 		"Ability2"	""
 		// Armor
@@ -623,7 +623,7 @@
 		// Abilities
 		// ----------------------------------------------------------------
 		// Reference: A0GD
-		"Ability1"	""
+		"Ability1"	"dead_destroy"
 		// Reference: A0GW
 		"Ability2"	""
 		// Armor
@@ -754,7 +754,7 @@
 		// Reference: A0BN
 		"Ability1"	"B07W_old_soldiercamp"
 		// Reference: A0BM
-		"Ability2"	""
+		"Ability2"	"dead_destroy"
 		// Armor
 		// ----------------------------------------------------------------
 		"ArmorPhysical"	"0"
@@ -905,9 +905,9 @@
 		// ----------------------------------------------------------------
 		"StatusHealth"	"1000"
 		"StatusHealthRegen"	"10"
-		"StatusMana"	"250"
+		"StatusMana"	"450"
 		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"200"
+		"StatusStartingMana"	"0"
 		// Vision
 		// ----------------------------------------------------------------
 		"VisionDaytimeRange"	"1400"
@@ -945,10 +945,11 @@
 		//{
 		//    "AttachWearables"
 		//    {
-		//    	"1" { "ItemDef" "535" }
-		//    	"2" { "ItemDef" "592" }
-		//    	"3" { "ItemDef" "626" }
-		//        "4" { "ItemDef" "630" }
+		//    	"1" { "ItemDef" "487" }
+		//    	"2" { "ItemDef" "489" }
+		//    	"3" { "ItemDef" "490" }
+		//        "4" { "ItemDef" "491" }
+		//        "5" { "ItemDef" "492" }
 		//    }
 		//}
 	}
@@ -1264,8 +1265,8 @@
 		// ----------------------------------------------------------------
 		"BaseClass"		"npc_dota_creature"
 		// Add model
-		"Model"			"models/items/shadowshaman/serpent_ward/tangki_serpent_ward/tangki_serpent_ward.vmdl"
-		"ModelScale"	"2.5"
+		"Model"			"models/a09_r/a09r.vmdl"
+		"ModelScale"	"1"
 
 		"Level"			"1"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
@@ -1335,8 +1336,8 @@
 		// ----------------------------------------------------------------
 		"BaseClass"		"npc_dota_creature"
 		// Add model
-		"Model"			"models/items/shadowshaman/serpent_ward/eyedancer_wrath_ward/eyedancer_wrath_ward.vmdl"
-		"ModelScale"	"2.5"
+		"Model"			"models/a09_r/a09r.vmdl"
+		"ModelScale"	"1"
 
 		"Level"			"1"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
@@ -2419,8 +2420,8 @@
 		"AttackRange"	"128"
 		// Bounty
 		// ----------------------------------------------------------------
-		"BountyGoldMin"	"100.0"
-		"BountyGoldMax"	"100.0"
+		"BountyGoldMin"	"10.0"
+		"BountyGoldMax"	"10.0"
 		// Gold and Lumber
 		// ----------------------------------------------------------------
 		"GoldCost"	"55"
@@ -2489,8 +2490,8 @@
 		"AttackRange"	"128"
 		// Bounty
 		// ----------------------------------------------------------------
-		"BountyGoldMin"	"100.0"
-		"BountyGoldMax"	"100.0"
+		"BountyGoldMin"	"10.0"
+		"BountyGoldMax"	"10.0"
 		// Gold and Lumber
 		// ----------------------------------------------------------------
 		"GoldCost"	"55"
@@ -3731,19 +3732,16 @@
 		// General
 		// ----------------------------------------------------------------
 		"BaseClass"	"npc_dota_creature"
-		"ModelScale"	"1"
+		"ModelScale"	"1.5"
 		"Level"	"3"
-		"Model"	"models/creeps/neutral_creeps/n_creep_thunder_lizard/n_creep_thunder_lizard_small.vmdl"
+		"Model"	"models/heroes/venomancer/venomancer.vmdl"
+		//"Model"	"models/creeps/neutral_creeps/n_creep_thunder_lizard/n_creep_thunder_lizard_small.vmdl"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
 		"HealthBarOffset"	"180"
-		// Abilities
-		// ----------------------------------------------------------------
-		// Reference: A00F
-		"Ability1"	"great_sword_of_disease_W"
 		// Armor
 		// ----------------------------------------------------------------
 		"ArmorPhysical"	"20"
-		"MagicalResistance"	"50"
+		"MagicalResistance"	"-50"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -3767,14 +3765,14 @@
 		// Movement
 		// ----------------------------------------------------------------
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"400"
 		"MovementTurnRate"	"0.90"
 		// Status
 		// ----------------------------------------------------------------
 		"StatusHealth"	"3000"
 		"StatusHealthRegen"	"10"
 		"StatusMana"	"1000"
-		"StatusStartingMana"	"200"
+		"StatusStartingMana"	"0"
 		// Vision
 		// ----------------------------------------------------------------
 		"VisionDaytimeRange"	"1200"
@@ -3785,6 +3783,7 @@
 		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_HERO"
 		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_HERO"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"Ability1"	"great_sword_of_disease_W"
 		"Ability2"	"great_sword_of_disease_E"
 		"Ability3"	"great_sword_of_disease_R"
 		"Ability4"	"great_sword_of_disease_D"
@@ -3800,7 +3799,17 @@
 		"Ability14"	""
 		"Ability15"	""
 		"Ability16"	""
-		"ProjectileModel"	"particles/units/heroes/hero_undying/undying_decay_fakeprojectile_glow.vpcf"
+		"ProjectileModel"	"particles/units/heroes/hero_venomancer/venomancer_plague_ward_projectile.vpcf"
+		"Creature"
+		{
+		    "AttachWearables"
+		    {
+		    	"1" { "ItemDef" "6642" }
+		    	"2" { "ItemDef" "6643" }
+		    	"3" { "ItemDef" "6644" }
+		    	"4" { "ItemDef" "6645" }
+		    }
+		}
 	}
 
 	// Creature: 水式神 LV4
@@ -4052,7 +4061,7 @@
 		"Ability2"	"A28TW"
 		// Armor
 		// ----------------------------------------------------------------
-		"ArmorPhysical"	"10"
+		"ArmorPhysical"	"20"
 		"MagicalResistance"	"75"
 		// Attack
 		// ----------------------------------------------------------------
@@ -4079,7 +4088,7 @@
 		"LumberCost"	"0"
 		// Movement
 		// ----------------------------------------------------------------
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_FLY"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"	"415"
 		"MovementTurnRate"	"1.50"
 		// Status
@@ -4472,7 +4481,7 @@
 		// Movement
 		// ----------------------------------------------------------------
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"	"350"
+		"MovementSpeed"	"320"
 		"MovementTurnRate"	"1.50"
 		// Status
 		// ----------------------------------------------------------------
@@ -4603,7 +4612,7 @@
 		// Movement
 		// ----------------------------------------------------------------
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"	"415"
+		"MovementSpeed"	"320"
 		"MovementTurnRate"	"1.50"
 		// Status
 		// ----------------------------------------------------------------
@@ -4648,8 +4657,8 @@
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"	"50.0"
-		"AttackDamageMax"	"60.0"
+		"AttackDamageMin"	"150.0"
+		"AttackDamageMax"	"160.0"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"	"0.8"
 		"AttackAnimationPoint"	"0.30"
@@ -4670,10 +4679,10 @@
 		"MovementTurnRate"	"2"
 		// Status
 		// ----------------------------------------------------------------
-		"StatusHealth"	"2500"
+		"StatusHealth"	"3500"
 		"StatusHealthRegen"	"3"
-		"StatusMana"	"300"
-		"StatusStartingMana"	"300"
+		"StatusMana"	"200"
+		"StatusStartingMana"	"200"
 		// Vision
 		// ----------------------------------------------------------------
 		"VisionDaytimeRange"	"1400"
@@ -4684,7 +4693,7 @@
 		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-		"Ability1"	"forest_soldier_W"
+		"Ability1"	"forest_soldier_W2"
 		"Ability2"	"forest_soldier_E"
 		"Ability3"	"forest_soldier_R"
 		"Ability4"	""
@@ -4735,11 +4744,11 @@
 		// Movement
 		// ----------------------------------------------------------------
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"	"415"
+		"MovementSpeed"	"320"
 		"MovementTurnRate"	"1.50"
 		// Status
 		// ----------------------------------------------------------------
-		"StatusHealth"	"1500"
+		"StatusHealth"	"2500"
 		"StatusHealthRegen"	"1"
 		"StatusMana"	"2000"
 		"StatusStartingMana"	"2000"
@@ -4756,7 +4765,7 @@
 		"Ability1"	"forest_caster_W"
 		"Ability2"	"forest_caster_E"
 		"Ability3"	"forest_caster_R"
-		"Ability4"	""
+		"Ability4"	"forest_caster_T"
 	}
 
 	// 雜賀眾
@@ -4870,9 +4879,9 @@
  		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
  		"AttackDamageMin"			"55"		// Damage range min.
  		"AttackDamageMax"			"61"		// Damage range max.	
- 		"AttackRate"				"1.35"		// Speed of attack.
+ 		"AttackRate"				"1"		// Speed of attack.
  		"AttackAnimationPoint"		"0.3"		// Normalized time in animation cycle to attack.
- 		"AttackAcquisitionRange"	"300"		// Range within a target can be acquired.
+ 		"AttackAcquisitionRange"	"500"		// Range within a target can be acquired.
  		"AttackRange"				"128"		// Range within a target can be attacked.
  		"ProjectileModel"			""			// Particle system model for projectile.
  		"ProjectileSpeed"			"0"			// Speed of projectile.		   
@@ -4886,8 +4895,8 @@
  		// Bounty
  		//----------------------------------------------------------------
  		"BountyXP"					"40"		// Experience earn.
- 		"BountyGoldMin"				"200"		// Gold earned min.
- 		"BountyGoldMax"				"200"		// Gold earned max.
+ 		"BountyGoldMin"				"100"		// Gold earned min.
+ 		"BountyGoldMax"				"100"		// Gold earned max.
 
  		// Movement
  		//----------------------------------------------------------------
@@ -4897,7 +4906,7 @@
  		// Status
  		//----------------------------------------------------------------
  		"StatusHealth"				"1000"		// Base health.
- 		"StatusHealthRegen"			"0.5"		// Health regeneration rate.
+ 		"StatusHealthRegen"			"20"		// Health regeneration rate.
  		"StatusMana"				"400"		// Base mana.
  		"StatusManaRegen"			"0"			// Mana regeneration rate.		 
 	
@@ -4945,7 +4954,7 @@
  		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
  		"AttackDamageMin"			"55"		// Damage range min.
  		"AttackDamageMax"			"61"		// Damage range max.	
- 		"AttackRate"				"1.35"		// Speed of attack.
+ 		"AttackRate"				"1"		// Speed of attack.
  		"AttackAnimationPoint"		"0.3"		// Normalized time in animation cycle to attack.
  		"AttackAcquisitionRange"	"300"		// Range within a target can be acquired.
  		"AttackRange"				"128"		// Range within a target can be attacked.
@@ -4961,8 +4970,8 @@
  		// Bounty
  		//----------------------------------------------------------------
  		"BountyXP"					"40"		// Experience earn.
- 		"BountyGoldMin"				"200"		// Gold earned min.
- 		"BountyGoldMax"				"200"		// Gold earned max.
+ 		"BountyGoldMin"				"100"		// Gold earned min.
+ 		"BountyGoldMax"				"100"		// Gold earned max.
 
  		// Movement
  		//----------------------------------------------------------------
@@ -4972,7 +4981,7 @@
  		// Status
  		//----------------------------------------------------------------
  		"StatusHealth"				"1000"		// Base health.
- 		"StatusHealthRegen"			"0.5"		// Health regeneration rate.
+ 		"StatusHealthRegen"			"20"		// Health regeneration rate.
  		"StatusMana"				"400"		// Base mana.
  		"StatusManaRegen"			"0"			// Mana regeneration rate.		 
 	
@@ -5869,8 +5878,8 @@
 		// ----------------------------------------------------------------
 		"BaseClass"	"npc_dota_building"
 		// Add model
-		"Model"	"models/development/invisiblebox.vmdl"
-		"ModelScale"	"20"
+		"Model"	"models/props_rock/riveredge_rock001a.vmdl"
+		"ModelScale"	"1.3"
 		"Level"	"1"
 		"BoundsHullName"	"DOTA_HULL_SIZE_BARRACKS"
 		"HealthBarOffset"	"200"
@@ -5903,7 +5912,7 @@
 		"TeamName"	"DOTA_TEAM_NEUTRALS"
 		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-		"Ability1"	""
+		"Ability1"	"dead_destroy"
 		"Ability2"	""
 		"Ability3"	""
 		"Ability4"	""
@@ -5973,6 +5982,7 @@
 		"Ability15"	""
 		"Ability16"	""
 		"Model"	"models/items/disruptor/lightning_strike_weapon/lightning_strike_weapon.vmdl"
+		//"Model"	"models/c03r/c03r.vmdl"
 		"AttackDamageMin"	"0"
 		"AttackDamageMax"	"0"
 		"MovementSpeed"	"100"
@@ -6299,8 +6309,6 @@
 	// 侍大將
 	"com_general"
 	{
-		// General
-		// ----------------------------------------------------------------
 		"BaseClass"	"npc_dota_creature"
 		// Add model
 		"Model"	"models/samurai_harquebus/samurai_harquebus.vmdl"
@@ -6320,7 +6328,7 @@
 		"Ability4"	""
 		// Armor
 		// ----------------------------------------------------------------
-		"ArmorPhysical"	"55"
+		"ArmorPhysical"	"40"
 		"MagicalResistance"	"100"
 		// Attack
 		// ----------------------------------------------------------------
@@ -6360,7 +6368,7 @@
 		// ----------------------------------------------------------------
 		"TeamName"	"DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
-		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 		"Ability5"	""
 		"Ability6"	""
@@ -6380,11 +6388,9 @@
 // 侍大將
 	"com_general_oda"
 	{
-		// General
-		// ----------------------------------------------------------------
 		"BaseClass"	"npc_dota_creature"
 		// Add model
-		"Model"	"models/samurai_harquebus/samurai_harquebus_oda.vmdl"
+		"Model"	"models/samurai_harquebus/samurai_harquebus.vmdl"
 		"ModelScale"	"1.46"
 		"Level"	"10"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
@@ -6398,10 +6404,10 @@
 		// Reference: Aoar
 		"Ability3"	"magical_1300"
 		// Reference: A0BN
-		"Ability4"	""
+		"Ability4"	"debuff_tower"
 		// Armor
 		// ----------------------------------------------------------------
-		"ArmorPhysical"	"55"
+		"ArmorPhysical"	"40"
 		"MagicalResistance"	"100"
 		// Attack
 		// ----------------------------------------------------------------
@@ -6441,7 +6447,7 @@
 		// ----------------------------------------------------------------
 		"TeamName"	"DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
-		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 		"Ability5"	""
 		"Ability6"	""
@@ -6461,11 +6467,9 @@
 // 侍大將
 	"com_general_unified"
 	{
-		// General
-		// ----------------------------------------------------------------
 		"BaseClass"	"npc_dota_creature"
 		// Add model
-		"Model"	"models/samurai_harquebus/samurai_harquebus_unified.vmdl"
+		"Model"	"models/samurai_harquebus/samurai_harquebus.vmdl"
 		"ModelScale"	"1.46"
 		"Level"	"10"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
@@ -6479,10 +6483,10 @@
 		// Reference: Aoar
 		"Ability3"	"magical_1300"
 		// Reference: A0BN
-		"Ability4"	""
+		"Ability4"	"debuff_tower"
 		// Armor
 		// ----------------------------------------------------------------
-		"ArmorPhysical"	"55"
+		"ArmorPhysical"	"40"
 		"MagicalResistance"	"100"
 		// Attack
 		// ----------------------------------------------------------------
@@ -6522,7 +6526,7 @@
 		// ----------------------------------------------------------------
 		"TeamName"	"DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
-		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 		"Ability5"	""
 		"Ability6"	""
@@ -7365,141 +7369,6 @@
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	}
 
-	// 鐵砲兵
-	"Test_com_gunner_clone"
-	{
-		// General
-		// ----------------------------------------------------------------
-		"BaseClass"	"npc_dota_creature"
-		// Add model
-		"Model"	"models/arquebusier/arquebusier.vmdl"
-		"ModelScale"	"0.8"
-		"Level"	"3"
-		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"180"
-		// Abilities
-		// ----------------------------------------------------------------
-		// Reference: A0NH
-		"Ability1"	"gunner_attack"
-		// Reference: A0GD
-		"Ability2"	""
-		// Reference: A0GW
-		"Ability3"	""
-		// Armor
-		// ----------------------------------------------------------------
-		"ArmorPhysical"	"2"
-		"MagicalResistance"	"0"
-		// Attack
-		// ----------------------------------------------------------------
-		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"	"77.0"
-		"AttackDamageMax"	"85.0"
-		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
-		"AttackRate"	"2"
-		"AttackAnimationPoint"	"0.17"
-		"AttackAcquisitionRange"	"700"
-		"AttackRange"	"650"
-		"ProjectileSpeed"	"99999"
-		// Bounty
-		// ----------------------------------------------------------------
-		"BountyGoldMin"	"61.0"
-		"BountyGoldMax"	"63.0"
-		"BountyXP"	"30"
-		// Gold and Lumber
-		// ----------------------------------------------------------------
-		"GoldCost"	"60"
-		"LumberCost"	"60"
-		// Movement
-		// ----------------------------------------------------------------
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"	"290"
-		"MovementTurnRate"	"0.5"
-		// Status
-		// ----------------------------------------------------------------
-		"StatusHealth"	"780"
-		"StatusHealthRegen"	"0.25"
-		"StatusMana"	"200"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"200"
-		// Vision
-		// ----------------------------------------------------------------
-		"VisionDaytimeRange"	"1400"
-		"VisionNighttimeRange"	"800"
-		// Team
-		// ----------------------------------------------------------------
-		"TeamName"	"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	""
-		"AutoAttacksByDefault"	"1"
-		"ProjectileModel"	"particles/items2_fx/necronomicon_archer_projectile.vpcf"
-
-	}
-
-
-	// 足輕
-	"com_ashigaru_spearmen"
-	{
-		// General
-		// ----------------------------------------------------------------
-		"BaseClass"	"npc_dota_creep_lane"
-		// Add model
-		"Model"	"models/ashigaru/ashigaru_b.vmdl"
-		"ModelScale"	"0.9"
-		"Level"	"3"
-		"BoundsHullName"	"DOTA_HULL_SIZE_REGULAR"
-		"HealthBarOffset"	"130"
-		"Ability1"	""
-		"Ability2"	""
-		"ArmorPhysical"	"2"
-		"MagicalResistance"	"0"
-		// Attack
-		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"	"58.0"
-		"AttackDamageMax"	"59.0"
-		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
-		"AttackRate"	"1.58"
-		"AttackAnimationPoint"	"0.33"
-		"AttackAcquisitionRange"	"1200"
-		"AttackRange"	"138"
-		"ProjectileSpeed"	"10000"
-		// Bounty
-		"BountyGoldMin"	"23.0"
-		"BountyGoldMax"	"25.0"
-		"BountyXP"	"20"
-		// Movement
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"	"325"
-		"MovementTurnRate"	"0.50"
-		// Status
-		"StatusHealth"	"650"
-		"StatusHealthRegen"	"10"
-		"StatusMana"	"200"
-		"StatusStartingMana"	"200"
-		// Vision
-		"VisionDaytimeRange"	"1400"
-		"VisionNighttimeRange"	"800"
-		// Team
-		"TeamName"	"DOTA_TEAM_GOODGUYS"
-		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_HERO"
-		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-		"MinimapIcon"	"minimap_tower90"
-		"MinimapIconSize"	"1"
-		"RingRadius"	"45"
-	}
 	// 織田足輕
 	"com_infantry_oda_1"
 	{
@@ -16308,7 +16177,7 @@
 		// Abilities
 		// ----------------------------------------------------------------
 		// Reference: Adt1
-		"Ability1"	"A0BM"
+		"Ability1"	""
 		// Reference: A00W
 		"Ability2"	"check_Unified_is_dead"
 		// Armor
@@ -16348,7 +16217,7 @@
 		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"Ability3"	"play_mvp"
-		"Ability4"	""
+		"Ability4"	"afk_gogo"
 		"Ability5"	""
 		"Ability6"	""
 		"Ability7"	""
@@ -16383,7 +16252,7 @@
 		// Abilities
 		// ----------------------------------------------------------------
 		// Reference: Adt1
-		"Ability1"	"A0BM"
+		"Ability1"	""
 		// Reference: A00W
 		"Ability2"	"check_Oda_is_dead"
 		// Armor
@@ -17406,7 +17275,7 @@
 
 	"hide_unit"
 	{
-		"BaseClass"	"npc_dota_thinker"
+		"BaseClass"	"npc_dota_creature"
 		"Ability1"	"majia"
 		"Ability2"	""
 		"Ability3"	""
@@ -18445,10 +18314,10 @@
  		// Attack
  		//----------------------------------------------------------------
  		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
- 		"AttackDamageMin"			"1000"		// Damage range min.
- 		"AttackDamageMax"			"1200"		// Damage range max.	
- 		"AttackRate"				"1.2"		// Speed of attack.
- 		"AttackAnimationPoint"		"0.3"		// Normalized time in animation cycle to attack.
+ 		"AttackDamageMin"			"2000"		// Damage range min.
+ 		"AttackDamageMax"			"2200"		// Damage range max.	
+ 		"AttackRate"				"0.4"		// Speed of attack.
+ 		"AttackAnimationPoint"		"0.1"		// Normalized time in animation cycle to attack.
  		"AttackAcquisitionRange"	"300"		// Range within a target can be acquired.
  		"AttackRange"				"250"		// Range within a target can be attacked.
  		"ProjectileModel"			""			// Particle system model for projectile.
@@ -18472,8 +18341,8 @@
 
  		// Status
  		//----------------------------------------------------------------
- 		"StatusHealth"				"20000"		// Base health.
- 		"StatusHealthRegen"			"200"		// Health regeneration rate.
+ 		"StatusHealth"				"10000"		// Base health.
+ 		"StatusHealthRegen"			"100"		// Health regeneration rate.
  		"StatusMana"				"3000"			// Base mana.
  		"StatusManaRegen"			"1"			// Mana regeneration rate.		 
 	

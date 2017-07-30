@@ -30,7 +30,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/item/item_the_red_lightning_chapter.vpcf"
 		"ItemCost"	"3900"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
 		"precache"
@@ -127,7 +127,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/item/item_the_red_lightning_chapter.vpcf"
 		"ItemCost"	"2150"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
 		"precache"
@@ -296,7 +296,7 @@
 		"ItemQuality"	"component"
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"ItemCost"	"15500"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"precache"
 		{
@@ -380,7 +380,7 @@
 		"AbilityCooldown"	"60"
 		"AbilityCastPoint"	"0.1"
 		"AbilityDamage"		"800"
-		"AbilityManaCost"	"400"
+		"AbilityManaCost"	"500"
 		"AbilitySharedCooldown" "share_the_overflame_art_of_war"
 		
 		"AOERadius"	"650"
@@ -389,7 +389,7 @@
 		"ItemQuality"	"component"
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"ItemCost"	"8550"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"
 		{
@@ -478,7 +478,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"2425"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
 		"precache"
@@ -562,7 +562,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"3050"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
 		"precache"
@@ -648,7 +648,7 @@
 		"ItemQuality"	"component"
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"ItemCost"	"3750"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
 		"precache"
@@ -750,7 +750,7 @@
 		// Item Info
 		
 		"ItemCost"	"800"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 		"ItemShopTags"	"teleport"
@@ -772,6 +772,24 @@
 			"FireSound"
 			{
 				"EffectName"	"Hero_QueenOfPain.Pick"
+			}
+		}
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_mana_ingot.lua"
+				"Function"	"OnEquip"
+				"mana"	"200"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_mana_ingot.lua"
+				"Function"	"OnUnequip"
+				"mana"	"200"
 			}
 		}
 		"Modifiers"
@@ -822,7 +840,7 @@
 		// Item Info
 		
 		"ItemCost"	"1950"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 		"ItemShopTags"	"teleport"
@@ -1037,7 +1055,7 @@
 		// Item Info
 		
 		"ItemCost"	"785"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 
@@ -1107,7 +1125,7 @@
 		// Item Info
 		
 		"ItemCost"	"500"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 		"ItemRequirements"	{}
@@ -1194,7 +1212,7 @@
 		// Item Info
 		
 		"ItemCost"	"2000"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 		"ItemRequirements"	{}
@@ -1323,7 +1341,7 @@
 		// Item Info
 		
 		"ItemCost"	"600"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 		"precache"
@@ -1377,7 +1395,7 @@
 		// Item Info
 		
 		"ItemCost"	"2200"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 		
@@ -1452,7 +1470,7 @@
 		// Item Info
 		
 		"ItemCost"	"3050"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 		
@@ -1547,7 +1565,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"750"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"AbilityDamage"	"350"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
@@ -1626,7 +1644,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"750"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
 		"precache"
@@ -1702,7 +1720,7 @@
 		// Item Info
 		
 		"ItemCost"	"8"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 		"ItemRequirements"	{}
@@ -1741,7 +1759,7 @@
 		// Item Info
 		
 		"ItemCost"	"300"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 		"ItemRequirements"	{}
@@ -1788,7 +1806,7 @@
 		// Item Info
 		
 		"ItemCost"	"300"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 		"ItemRequirements"	{}
@@ -1835,7 +1853,7 @@
 		// Item Info
 		
 		"ItemCost"	"300"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 		"ItemRequirements"	{}
@@ -1882,7 +1900,7 @@
 		// Item Info
 		
 		"ItemCost"	"900"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 		"ItemRequirements"	{}
@@ -1929,9 +1947,27 @@
 		// Item Info
 		
 		"ItemCost"	"650"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_mana_ingot.lua"
+				"Function"	"OnEquip"
+				"mana"	"300"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_mana_ingot.lua"
+				"Function"	"OnUnequip"
+				"mana"	"300"
+			}
+		}
 		"ItemRequirements"	{}
 		"precache"
 		{
@@ -1976,7 +2012,7 @@
 		// Item Info
 		
 		"ItemCost"	"650"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 		"ItemRequirements"	{}
@@ -1999,7 +2035,6 @@
 					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "0"	//智
 					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "0"	//攻
 					"MODIFIER_PROPERTY_HEALTH_BONUS" "0" 			//血
-					"MODIFIER_PROPERTY_MANA_BONUS" "0"				//魔
 					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT" "10"	//回血
 					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT" "0" 	//回魔
 				}
@@ -2023,7 +2058,7 @@
 		// Item Info
 		
 		"ItemCost"	"650"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 		"ItemRequirements"	{}
@@ -2046,7 +2081,6 @@
 					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "0"	//智
 					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "0"	//攻
 					"MODIFIER_PROPERTY_HEALTH_BONUS" "0" 			//血
-					"MODIFIER_PROPERTY_MANA_BONUS" "0"				//魔
 					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT" "0"	//回血
 					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT" "3"
 					"MODIFIER_PROPERTY_MANA_REGEN_PERCENTAGE" "150" 	//回魔
@@ -2071,7 +2105,7 @@
 		// Item Info
 		
 		"ItemCost"	"300"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 		"ItemRequirements"	{}
@@ -2094,7 +2128,6 @@
 					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "0"	//智
 					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "5"	//攻
 					"MODIFIER_PROPERTY_HEALTH_BONUS" "0" 			//血
-					"MODIFIER_PROPERTY_MANA_BONUS" "0"				//魔
 					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT" "0"	//回血
 					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT" "0" 	//回魔
 				}
@@ -2118,7 +2151,7 @@
 		// Item Info
 		
 		"ItemCost"	"1900"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 		"ItemRequirements"	{}
@@ -2141,7 +2174,6 @@
 					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "10"	//智
 					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "0"	//攻
 					"MODIFIER_PROPERTY_HEALTH_BONUS" "0" 			//血
-					"MODIFIER_PROPERTY_MANA_BONUS" "0"				//魔
 					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT" "0"	//回血
 					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT" "0" 	//回魔
 				}
@@ -2166,7 +2198,7 @@
 		// Item Info
 		
 		"ItemCost"	"1120"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 		"ItemRequirements"	{}
@@ -2189,7 +2221,6 @@
 					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "0"	//智
 					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "14"	//攻
 					"MODIFIER_PROPERTY_HEALTH_BONUS" "0" 			//血
-					"MODIFIER_PROPERTY_MANA_BONUS" "0"				//魔
 					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT" "0"	//回血
 					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT" "0" 	//回魔
 					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "15" //攻速
@@ -2215,7 +2246,7 @@
 		// Item Info
 		
 		"ItemCost"	"1100"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 		"ItemRequirements"	{}
@@ -2238,7 +2269,6 @@
 					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "0"	//智
 					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "0"	//攻
 					"MODIFIER_PROPERTY_HEALTH_BONUS" "0" 			//血
-					"MODIFIER_PROPERTY_MANA_BONUS" "0"				//魔
 					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT" "0"	//回血
 					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT" "0" 	//回魔
 					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "0" //攻速
@@ -2264,7 +2294,7 @@
 		// Item Info
 		
 		"ItemCost"	"1200"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 		"ItemRequirements"	{}
@@ -2287,7 +2317,6 @@
 					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "0"	//智
 					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "0"	//攻
 					"MODIFIER_PROPERTY_HEALTH_BONUS" "0" 			//血
-					"MODIFIER_PROPERTY_MANA_BONUS" "0"				//魔
 					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT" "0"	//回血
 					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT" "0" 	//回魔
 					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "0" //攻速
@@ -2313,7 +2342,7 @@
 		// Item Info
 		
 		"ItemCost"	"1000"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 		"ItemRequirements"	{}
@@ -2336,7 +2365,6 @@
 					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "10"	//智
 					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "0"	//攻
 					"MODIFIER_PROPERTY_HEALTH_BONUS" "0" 			//血
-					"MODIFIER_PROPERTY_MANA_BONUS" "0"				//魔
 					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT" "0"	//回血
 					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT" "0" 	//回魔
 					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "0" //攻速
@@ -2361,7 +2389,7 @@
 		// Item Info
 		
 		"ItemCost"	"1850"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 		"ItemShopTags"		"damage"
@@ -2384,7 +2412,6 @@
 					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "0"	//智
 					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "42"	//攻
 					"MODIFIER_PROPERTY_HEALTH_BONUS" "0" 			//血
-					"MODIFIER_PROPERTY_MANA_BONUS" "0"				//魔
 					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT" "0"	//回血
 					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT" "0" 	//回魔
 					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "0" //攻速
@@ -2409,7 +2436,7 @@
 		// Item Info
 		
 		"ItemCost"	"700"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 		"ItemShopTags"		"damage"
@@ -2433,7 +2460,6 @@
 					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "0"	//智
 					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "14"	//攻
 					"MODIFIER_PROPERTY_HEALTH_BONUS" "0" 			//血
-					"MODIFIER_PROPERTY_MANA_BONUS" "0"				//魔
 					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT" "0"	//回血
 					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT" "0" 	//回魔
 					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "0" //攻速
@@ -2458,7 +2484,7 @@
 		// Item Info
 		
 		"ItemCost"	"500"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 		"ItemShopTags"		"damage"
@@ -2499,7 +2525,7 @@
 		// Item Info
 		
 		"ItemCost"	"700"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 		"ItemShopTags"		"damage"
@@ -2540,7 +2566,7 @@
 		// Item Info
 		
 		"ItemCost"	"1400"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 		"ItemShopTags"		"damage"
@@ -2581,7 +2607,7 @@
 		// Item Info
 		
 		"ItemCost"	"400"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 		"ItemShopTags"		"damage"
@@ -2657,7 +2683,7 @@
 		// Item Info
 		
 		"ItemCost"	"900"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 		"ItemShopTags"		"damage"
@@ -2773,7 +2799,7 @@
 		// Item Info
 		
 		"ItemCost"	"420"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 		"ItemShopTags"		"damage"
@@ -2814,7 +2840,7 @@
 		// Item Info
 		
 		"ItemCost"	"700"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 		"ItemShopTags"		"damage"
@@ -2860,7 +2886,7 @@
 		// Item Info
 		
 		"ItemCost"	"7700"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SecretShop" "1"
 		"ItemShopTags"		"damage"
@@ -2917,7 +2943,7 @@
 		// Item Info
 		
 		"ItemCost"	"8500"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SecretShop" "1"
 		"ItemShopTags"		"damage"
@@ -2966,7 +2992,7 @@
 		// Item Info
 		
 		"ItemCost"	"9150"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SecretShop" "1"
 		"ItemShopTags"		"damage"
@@ -3035,7 +3061,7 @@
 		// Item Info
 		
 		"ItemCost"	"9550"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SecretShop" "1"
 		"ItemShopTags"		"damage"
@@ -3153,7 +3179,6 @@
 	"item_protection_amulet"
 	{
 		// General
-		
 		"BaseClass"	"item_datadriven"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"	"item_custom/protection_amulet"
@@ -3165,12 +3190,12 @@
 		// Item Info
 		
 		"ItemCost"	"650"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 		"ItemShopTags"		"damage"
 		"ItemRequirements"	{}
-		"AbilityCooldown"	"30"
+		"AbilityCooldown"	"60"
 		"precache"
 		{
 			"particle"	"particles/a07w5/a07w5.vpcf"
@@ -3216,7 +3241,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"2220"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
 		"precache"
@@ -3308,7 +3333,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"3050"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -3317,6 +3342,11 @@
 			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
 				"Function"	"Shock"
 				"Target"	"TARGET"
+			}
+			"FireSound"
+			{
+				"Target"	"TARGET"
+				"EffectName"	"SleepBirth1"
 			}
 		}
 		
@@ -3346,6 +3376,53 @@
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS" "-30"	//魔抗
+				}
+			}
+			"modifier_soul_adderx"
+			{
+				"Duration"	"4"
+				"EffectName"	"particles/item/soul_adderrope.vpcf"
+				"OnCreated"
+				{
+					"FireSound"
+					{
+						"EffectName"	"Hero_Puck.Phase_Shift"
+						"Target"	"TARGET"
+					}
+				}
+				"OnAttackLanded"
+				{
+					"RunScript"
+					{
+					  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+						"Function"	"over"
+						"Target"	"TARGET"
+					}
+				}
+				"OnAbilityExecuted"
+				{
+					"RunScript"
+					{
+					  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+						"Function"	"over"
+						"Target"	"TARGET"
+					}
+				}
+				"OnUnitMoved"
+				{
+					"RunScript"
+					{
+					  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+						"Function"	"over"
+						"Target"	"TARGET"
+					}
+				}
+				"States"
+				{
+					"MODIFIER_STATE_INVULNERABLE"			"MODIFIER_STATE_VALUE_ENABLED"	// Don't use these state for a channeling ability.
+					// 	"MODIFIER_STATE_OUT_OF_GAME"			"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_UNSELECTABLE"	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_NO_HEALTH_BAR"	"MODIFIER_STATE_VALUE_ENABLED"
 				}
 			}
 			"Passive_soul_adder"
@@ -3391,7 +3468,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"3400"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
 		"OnUnequip"
@@ -3446,7 +3523,7 @@
 	                }
 	            }
 			}
-			"shield_modifier"
+			"shield_modifier4"
 			{
 			    "Passive" "1"
 			    "IsHidden" "1"
@@ -3511,13 +3588,18 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"1000"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"						"1"
 		"AOERadius"	"1200"
 
 		"OnSpellStart"
 		{
+			"FireSound"
+			{
+				"Target"	"TARGET"
+				"EffectName"	"RevealMap"
+			}
 			"RunScript"
 			{
 				"ScriptFile"	"items/Addon_Items/item_insight_gem.lua"
@@ -3536,6 +3618,7 @@
                 "ModifierName"      "modifier_truesight"
                 "Duration"      "10"
             }
+            
 		}
 		"Modifiers"
 		{
@@ -3583,7 +3666,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"2000"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
 		
@@ -3631,7 +3714,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"2450"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
 		
@@ -3690,7 +3773,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"2250"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -3769,7 +3852,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"2150"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
 		"OnSpellStart"
@@ -3864,7 +3947,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"2200"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
 		"precache"
@@ -3920,7 +4003,7 @@
 			{
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE"	"40"
+					"MODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE"	"20"
 				}
 				"Passive"	"0"
 				"Duration"	"8"
@@ -3968,7 +4051,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"2200"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
 		
@@ -4016,7 +4099,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"3290"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		
@@ -4091,7 +4174,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"2770"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -4099,6 +4182,11 @@
 			{
 				"Target"        "TARGET"
 				"HealAmount"	"400"
+			}
+			"FireSound"
+			{
+				"Target"	"TARGET"
+				"EffectName"	"HolyBolt"
 			}
 		}
 		
@@ -4147,7 +4235,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"300"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemShopTags"					"consumable"
 		"ItemQuality"					"consumable"
 		"ItemStackable"					"1"
@@ -4178,6 +4266,12 @@
 					{}
             	}
             }
+            "RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"RestorationPotion"
+			}
 		}
 	}
 
@@ -4199,7 +4293,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"900"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"						"1"
 		
@@ -4244,13 +4338,13 @@
 		
 		"AbilityCooldown"	"110"
 		
-		"AbilityManaCost"	"200"
+		"AbilityManaCost"	"300"
 		"ID"	"2700"
 		"ItemQuality"	"component"
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"7200"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SecretShop" "1"
 		"OnEquip"
@@ -4355,7 +4449,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"6325"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SecretShop" "1"
 		"OnSpellStart"
@@ -4437,7 +4531,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"7800"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SecretShop" "1"
 		"OnSpellStart"
@@ -4508,7 +4602,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"8600"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SecretShop" "1"
 		
@@ -4583,7 +4677,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"11850"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SecretShop" "1"
 		"OnEquip"
@@ -4676,7 +4770,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"8450"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SecretShop" "1"
 		
@@ -4755,7 +4849,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"11200"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SecretShop" "1"
 		"AbilitySpecial"
@@ -4831,7 +4925,7 @@
 				"Aura"        "modifier_great_sword_of_hurricane_debuff"
         		"Aura_Radius" "%aura_radius"
         		"Aura_Teams"  "DOTA_UNIT_TARGET_TEAM_ENEMY"
-        		"Aura_Types"  "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+        		"Aura_Types"  "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
         		"Aura_ApplyToCaster" "0"   // Not Apply to Self, default is 1
 			}
 			"modifier_great_sword_of_hurricane_debuff"
@@ -4914,7 +5008,7 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 
 		"AbilityCooldown"	"60"
 		"AbilityManaCost"	"280"
@@ -5038,7 +5132,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"6525"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SecretShop" "1"
 		"OnSpellStart"
@@ -5051,18 +5145,6 @@
 		}
 		"Modifiers"
 		{
-			"modifier_great_sword_of_spike"
-			{
-				"IsPurgable"	"1"
-				"IsDebuff" "1"
-
-				"States"
-				{
-					"MODIFIER_STATE_STUNNED"	"MODIFIER_STATE_VALUE_ENABLED"
-				}
-				"EffectName"	"particles/generic_gameplay/generic_stunned.vpcf"
-				"EffectAttachType"	"follow_overhead"
-			}
 			"Passive_lightning_katana"
 			{
 				"IsHidden"	"1"
@@ -5111,7 +5193,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"7750"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"						"1"
 		
@@ -5176,7 +5258,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"5800"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"						"1"
 		
@@ -5308,7 +5390,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"7300"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"						"1"
 		"OnAbilityPhaseStart"
@@ -5322,6 +5404,11 @@
 			{
 				"ModifierName"	"modifier_great_sword_of_teleport"
 				"Target" 		"CASTER"
+			}
+			"FireSound"
+			{
+				"Target"	"TARGET"
+				"EffectName"	"MassTeleportTarget"
 			}
 		}
 		"OnSpellStart"
@@ -5375,7 +5462,7 @@
 					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "0"	//防禦
 				}
 			}
-			"shield_modifier"
+			"shield_modifier1"
 			{
 			    "Passive" "1"
 			    "IsHidden" "1"
@@ -5443,7 +5530,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"7900"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"						"1"
 
@@ -5549,7 +5636,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"7900"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"						"1"
 		"OnSpellStart"
@@ -5611,7 +5698,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"8000"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"						"1"
 		"OnSpellStart"
@@ -5691,7 +5778,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"7900"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"						"1"
 		"OnToggleOn"
@@ -5787,7 +5874,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"6850"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"						"1"
 		"OnSpellStart"
@@ -5825,7 +5912,7 @@
 				"IsHidden"			"0"
 				"IsPurgable"	"1"
 				"IsDebuff"		"1"
-
+				"EffectName"	"particles/item/great_sword_of_disarmament_2.vpcf"
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "-10"
@@ -5838,7 +5925,7 @@
 				"IsHidden"			"0"
 				"IsPurgable"	"1"
 				"IsDebuff"		"1"
-
+				"EffectName"	"particles/item/great_sword_of_disarmament.vpcf"
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "-10"
@@ -5888,7 +5975,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"1000"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"						"1"
 		
@@ -6064,7 +6151,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"3250"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
 		
@@ -6169,7 +6256,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"4500"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
 		"OnEquip"
@@ -6274,7 +6361,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"2650"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -6286,7 +6373,24 @@
 				"dmg"		"300"
 			}
 		}
-		
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_mana_ingot.lua"
+				"Function"	"OnEquip"
+				"mana"	"300"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_mana_ingot.lua"
+				"Function"	"OnUnequip"
+				"mana"	"300"
+			}
+		}
 		"Modifiers"
 		{
 			"Passive_lightning_katana"
@@ -6337,7 +6441,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"1250"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -6349,7 +6453,24 @@
 				"dmg"		"400"
 			}
 		}
-		
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_mana_ingot.lua"
+				"Function"	"OnEquip"
+				"mana"	"450"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_mana_ingot.lua"
+				"Function"	"OnUnequip"
+				"mana"	"450"
+			}
+		}
 		"Modifiers"
 		{
 			"Passive_lightning_katana"
@@ -6400,7 +6521,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"4250"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -6463,7 +6584,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"3100"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"AbilityCastRange"	"700"
 
@@ -6474,6 +6595,12 @@
 				"ScriptFile"	"items/Addon_Items/item_healing_totem.lua"
 				"Function"	"Shock"
 				"Target"	"POINT"
+			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"AncestralSpirit"
 			}
 			"ActOnTargets"
 			{
@@ -6495,7 +6622,24 @@
 				}
 			}
 		}
-		
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_mana_ingot.lua"
+				"Function"	"OnEquip"
+				"mana"	"400"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_mana_ingot.lua"
+				"Function"	"OnUnequip"
+				"mana"	"400"
+			}
+		}
 		"Modifiers"
 		{
 			"Passive_item_glass_mitsutomo2"
@@ -6555,7 +6699,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"3650"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
 		"OnSpellStart"
@@ -6658,7 +6802,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"500"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		"Modifiers"
@@ -6762,7 +6906,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"3320"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -6770,6 +6914,12 @@
 			{
 				"ScriptFile"	"items/Addon_Items/item_ninja_sword.lua"
 				"Function"	"Shock"
+			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"WindWalk"
 			}
 		}
 		
@@ -6865,7 +7015,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"2550"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
 		
@@ -6939,7 +7089,7 @@
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
 		
-		"AbilityCooldown"	"60"
+		"AbilityCooldown"	"45"
 		
 		"AbilityManaCost"	"185"
 		"AbilityCastPoint"	"0"
@@ -6950,7 +7100,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"4400"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -6959,6 +7109,12 @@
 				"ScriptFile"	"items/Addon_Items/item_commander_of_fan.lua"
 				"Function"	"Shock"
 				"Target"	"POINT"
+			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"Silence1"
 			}
 		}
 		
@@ -6971,10 +7127,10 @@
 				"Passive"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS" "20"	//力
-					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "20"		//敏
-					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "20"	//智
-					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "28"	//攻
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS" "12"	//力
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "12"		//敏
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "12"	//智
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "20"	//攻
 					"MODIFIER_PROPERTY_HEALTH_BONUS" "0" 			//血
 					"MODIFIER_PROPERTY_MANA_BONUS" "0"				//魔
 					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT" "0"	//回血
@@ -6991,7 +7147,7 @@
 				"IsHidden"			"0"
 				"IsPurgable"	"1"
 				"IsDebuff"		"1"
-				"Duration"			"1"
+				"Duration"			"3"
 				"EffectName"	"particles/generic_gameplay/generic_silenced_old.vpcf"
 				"EffectAttachType"	"follow_hitloc"
 				"States"
@@ -7054,7 +7210,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"4050"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnEquip"
 		{
@@ -7150,7 +7306,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"5350"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnEquip"
 		{
@@ -7247,7 +7403,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"6650"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnEquip"
 		{
@@ -7340,7 +7496,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"3400"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		"OnEquip"
@@ -7421,7 +7577,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"3750"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
 		
@@ -8646,7 +8802,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"6150"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		"precache"
@@ -8749,7 +8905,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"4450"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"precache"
 		{
@@ -8864,7 +9020,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"4750"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		"OnSpellStart"
@@ -8941,7 +9097,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"6070"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
 		"OnSpellStart"
@@ -8950,6 +9106,11 @@
 			{
 				"Target"        "TARGET"
 				"HealAmount"	"650"
+			}
+			"FireSound"
+			{
+				"Target"	"TARGET"
+				"EffectName"	"HolyBolt"
 			}
 		}
 		"Modifiers"
@@ -9028,7 +9189,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"7650"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		"OnEquip"
@@ -9125,7 +9286,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"1000"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemSellable" "0"
 		"ItemDroppable" "0"
@@ -9190,7 +9351,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"4550"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
 
@@ -9287,7 +9448,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"5750"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
 
@@ -9384,7 +9545,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"6950"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
 
@@ -9484,7 +9645,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"5100"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -9540,7 +9701,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"5220"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
 		"OnEquip"
@@ -9654,7 +9815,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"6420"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
 		"OnEquip"
@@ -9768,7 +9929,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"7620"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
 		"OnEquip"
@@ -9883,7 +10044,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"5450"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnEquip"
 		{
@@ -9963,7 +10124,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"2670"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -10053,7 +10214,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"4250"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnEquip"
 		{
@@ -10074,6 +10235,12 @@
 		            }
             	}
             }
+            "RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"HealingWave"
+			}
 		}
 		"OnSpellStart"
 		{
@@ -10176,6 +10343,46 @@
 					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "0"	//防禦
 				}
 			}
+			"shield_modifier7"
+			{
+			    "Passive" "1"
+			    "IsHidden" "1"
+			    "Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+			    "OnAttacked"
+			    {
+			        "Random"
+			        {
+			            "Chance" "25"
+			            "OnSuccess"
+			            {
+			                "ApplyModifier"
+			                {
+			                    "Target" "CASTER"
+			                    "ModifierName" "block_modifier7"
+			                }
+			            }
+			            "OnFailure"
+			            {
+			                "RemoveModifier"
+			                {
+			                    "Target" "CASTER"
+			                    "ModifierName" "block_modifier7"
+			                }
+			            }
+			        }
+			    }
+			}
+			"block_modifier7"
+			{
+			    "IsBuff" "1"
+			    "IsHidden" "1"
+			    "Duration"	"1"
+			    "Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+			    "Properties"
+			    {
+			        "MODIFIER_PROPERTY_PHYSICAL_CONSTANT_BLOCK" "20000"
+			    }
+			}
 		}
 	}
 
@@ -10197,7 +10404,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"1250"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		"Modifiers"
@@ -10248,7 +10455,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"1620"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -10257,6 +10464,12 @@
 				"Target"	"CASTER"
 				"ModifierName"      "modifier_poketto_of_meiso"
 	            "Duration"      "6"
+			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"ManaPotion"
 			}
 		}
 		
@@ -10319,7 +10532,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"2950"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
 		
@@ -10367,7 +10580,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"5000"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
 		
@@ -10417,7 +10630,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"3650"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
 		
@@ -10465,7 +10678,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"5000"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
 		
@@ -10509,13 +10722,13 @@
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
 		
-		"AbilityCooldown"	"40"
+		"AbilityCooldown"	"30"
 		"ID"	"2596"
 		"ItemQuality"	"component"
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"5600"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnEquip"
 		{
@@ -10578,7 +10791,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"3150"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"AoERadius" "%aura_radius"
 		"OnEquip"
@@ -10713,7 +10926,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"4150"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -10728,8 +10941,31 @@
 				"Function"		"Shock"
 				"Mana"			"500"
 			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"RestorationPotion"
+			}
 		}
-		
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_mana_ingot.lua"
+				"Function"	"OnEquip"
+				"mana"	"400"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_mana_ingot.lua"
+				"Function"	"OnUnequip"
+				"mana"	"400"
+			}
+		}
 		"Modifiers"
 		{
 			"Passive_lightning_katana"
@@ -10778,7 +11014,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"7150"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -10793,8 +11029,31 @@
 				"Function"		"Shock"
 				"Mana"			"600"
 			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"RestorationPotion"
+			}
 		}
-		
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_mana_ingot.lua"
+				"Function"	"OnEquip"
+				"mana"	"800"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_mana_ingot.lua"
+				"Function"	"OnUnequip"
+				"mana"	"800"
+			}
+		}
 		"Modifiers"
 		{
 			"Passive_contemporary_armor2"
@@ -10856,7 +11115,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"2700"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
 		
@@ -10960,7 +11219,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"3150"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
 		"OnEquip"
@@ -11038,7 +11297,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"2400"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
 		"AOERadius"	"1200"
@@ -11063,6 +11322,11 @@
                 "ModifierName"      "modifier_truesight"
                 "Duration"      "10"
             }
+            "FireSound"
+			{
+				"Target"	"TARGET"
+				"EffectName"	"RevealMap"
+			}
 		}
 		"OnUnequip"
 		{
@@ -11182,7 +11446,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"3200"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -11244,7 +11508,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"3200"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -11306,7 +11570,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"3200"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -11369,7 +11633,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"3850"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -11428,7 +11692,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"6850"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -11487,7 +11751,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"2900"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -11570,7 +11834,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"2350"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -11653,7 +11917,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"2800"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -11737,7 +12001,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"2850"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -11802,7 +12066,7 @@
 					"MODIFIER_PROPERTY_MOVESPEED_BONUS_UNIQUE" "80"	//跑速
 				}
 			}
-			"shield_modifier"
+			"shield_modifier5"
 			{
 			    "Passive" "1"
 			    "IsHidden" "1"
@@ -11869,7 +12133,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"3550"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -11880,7 +12144,24 @@
 				"Target"	"TARGET"
 			}
 		}
-		
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_mana_ingot.lua"
+				"Function"	"OnEquip"
+				"mana"	"300"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_mana_ingot.lua"
+				"Function"	"OnUnequip"
+				"mana"	"300"
+			}
+		}
 		"Modifiers"
 		{
 			"Passive_lightning_katana"
@@ -11929,7 +12210,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"1620"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -11939,7 +12220,24 @@
 				"Function"	"Shock"
 			}
 		}
-		
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_mana_ingot.lua"
+				"Function"	"OnEquip"
+				"mana"	"200"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_mana_ingot.lua"
+				"Function"	"OnUnequip"
+				"mana"	"200"
+			}
+		}
 		"Modifiers"
 		{
 			"Passive_the_shell_of_spirituality_kappa"
@@ -11981,17 +12279,17 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		
+		"AbilitySharedCooldown" "share_perceive_wine_hyper"
 		"AbilityCooldown"	"48"
 		"AbilityCastPoint"	"0.1"
-		"AbilityManaCost"	"500"
+		"AbilityManaCost"	"200"
 		"AbilityCastRange"	"1000"
 		"ID"	"2814"
 		"ItemQuality"	"component"
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"3350"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -12044,17 +12342,17 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		
+		"AbilitySharedCooldown" "share_perceive_wine_hyper"
 		"AbilityCooldown"	"48"
 		"AbilityCastPoint"	"0.1"
-		"AbilityManaCost"	"1000"
+		"AbilityManaCost"	"200"
 		"AbilityCastRange"	"1000"
 		"ID"	"3842"
 		"ItemQuality"	"component"
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"6350"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -12107,14 +12405,14 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		"AbilityCooldown"	"20"
+		"AbilityCooldown"	"40"
 		
 		"ID"	"2815"
 		"ItemQuality"	"component"
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"1300"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnEquip"
 		{
@@ -12185,7 +12483,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"2100"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -12204,6 +12502,12 @@
 				"ScriptFile"	"items/Addon_Items/item_reito_lantern.lua"
 				"Function"	"reito_lantern"
 				"particle"	"particles/units/heroes/hero_dazzle/dazzle_shadow_wave.vpcf" 
+			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"HealingWave"
 			}
 			"AttachEffect"
 			{
@@ -12302,7 +12606,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"1750"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
 		
@@ -12357,7 +12661,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"1900"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -12442,7 +12746,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"3050"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -12536,7 +12840,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"2185"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		"precache"
@@ -12664,7 +12968,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"5950"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -12809,7 +13113,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"5285"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -12941,7 +13245,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"14035"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -13156,7 +13460,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"1600"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"						"1"
 		
@@ -13211,7 +13515,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"3350"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"AOERadius"	"500"
 
@@ -13315,7 +13619,7 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		
+		"AbilitySharedCooldown" "share_item_flood_book"
 		"AbilityCooldown"	"18"
 		"AbilityCastPoint"	"0.1"
 		"AbilityManaCost"	"280"
@@ -13325,8 +13629,8 @@
 		"ItemQuality"	"component"
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
-		"ItemCost"	"3000"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemCost"	"2500"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -13388,6 +13692,7 @@
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"FightRecapLevel"	"1"
 		
 		"AbilityCooldown"	"30"
@@ -13398,7 +13703,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"4250"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		"AbilitySpecial"
@@ -13460,10 +13765,29 @@
 				"Type"			"DAMAGE_TYPE_MAGICAL"
 				"Damage"		"%ice_damage"
 			}
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_ice_book.lua"
+				"Function"		"getIce"
+			}
 		}
 		
 		"Modifiers"
 		{
+			"modifier_slow_ice"
+			{
+				"Passive"			"0"
+				"IsHidden"			"0"
+				"IsDebuff"			"0"
+			
+				"EffectName"		"particles/generic_gameplay/generic_slowed_cold.vpcf"
+				"EffectAttachType"	"follow_origin"
+			
+				"Properties"
+				{
+				    "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE" "-30" 
+				}
+			}
 			"modifier_ice_creator"
 			{
 				"ThinkInterval"  "%aoe_delay"
@@ -13529,7 +13853,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"3750"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -13601,9 +13925,9 @@
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
 		
-		"AbilityCooldown"	"40"
+		"AbilityCooldown"	"30"
 		
-		"AbilityManaCost"	"400"
+		"AbilityManaCost"	"200"
 		"AbilityCastPoint"	"0.1"
 		"AbilityCastRange"	"500"
 
@@ -13612,7 +13936,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"3200"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -13730,7 +14054,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"750"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -13802,7 +14126,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"450"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"						"1"
 		
@@ -13841,7 +14165,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"750"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"						"1"
 
@@ -13921,7 +14245,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"600"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"						"1"
 		
@@ -13996,7 +14320,7 @@
 		}
 	}
 
-	// 忍法．土盾之書
+	// 忍法．土盾橫書
 	"item_earth_wall_book"
 	{
 		// General
@@ -14009,9 +14333,9 @@
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"FightRecapLevel"	"1"
-		
+		"AbilityCastPoint"	"0.1"
 		"AbilityDamage"		"150"
-		"AbilityCooldown"	"0.1"
+		"AbilityCooldown"	"0.2"
 		"AbilityCastRange"	"800"
 		"AoERadius"			"250"
 
@@ -14022,11 +14346,11 @@
 		"ItemQuality"	"component"
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
 		// 充能參數
-		"ItemInitialCharges"	"4"
+		"ItemInitialCharges"	"3"
 		"ItemRequiresCharges"	"1"
 		"ItemDisplayCharges" 	"1"
 		
@@ -14038,6 +14362,11 @@
 				"ScriptFile"	"items/Addon_Items/item_earth_wall_book.lua"
 				"Function"	"Shock"
 				"Target"	"POINT"
+			}
+			"FireSound"
+			{
+				"Target"	"CASTER"
+				"EffectName"	"Roshan.Slam"
 			}
 		}
 
@@ -14087,7 +14416,7 @@
 			"01"
 			{
 				"var_type"		"FIELD_INTEGER"
-				"max_charge"	"4"
+				"max_charge"	"3"
 			}
 			"02"
 			{
@@ -14102,7 +14431,123 @@
 			"04"
 			{
 				"var_type"		"FIELD_FLOAT"
-				"duration"		"6.0"
+				"duration"		"4"
+			}
+		}
+	}
+
+	// 忍法．土盾直書
+	"item_earth_wall_book2"
+	{
+		// General
+		
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_custom/rockfall_book"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"FightRecapLevel"	"1"
+		"AbilityCastPoint"	"0.1"
+		"AbilityDamage"		"150"
+		"AbilityCooldown"	"0.2"
+		"AbilityCastRange"	"800"
+		"AoERadius"			"250"
+
+		"ID"	"3877"
+		"ItemCost"	"3050"
+		"SideShop"	"1"
+
+		"ItemQuality"	"component"
+		"Model"	"models/props_gameplay/tpscroll01.vmdl"
+		"Effect"	"particles/q09_2/q09_2.vpcf"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+		// 充能參數
+		"ItemInitialCharges"	"3"
+		"ItemRequiresCharges"	"1"
+		"ItemDisplayCharges" 	"1"
+		
+		"OnSpellStart"
+		{
+			"SpendCharge" {} // 加了才會消耗次數
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_earth_wall_book.lua"
+				"Function"	"Shock2"
+				"Target"	"POINT"
+			}
+			"FireSound"
+			{
+				"Target"	"CASTER"
+				"EffectName"	"Roshan.Slam"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_earth_wall_book_auto_charge"
+			{
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"IsHidden"	"1"
+				"Passive"	"1"
+				"ThinkInterval"  "%charge_delay"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"items/Addon_Items/item_earth_wall_book.lua"
+						"Function"		"Charge"
+					}
+				}
+			}
+			"Passive_earth_wall_book"
+			{
+				"IsHidden"	"1"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS" 		"0"	//力
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" 		"0"	//敏
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"20"	//智
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"		"0"	//攻
+					"MODIFIER_PROPERTY_HEALTH_BONUS"				"0" //血
+					"MODIFIER_PROPERTY_MANA_BONUS"					"0"	//魔
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"		"0"	//回血
+					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE" 	"0" //回血%
+					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"			"0" //回魔
+					"MODIFIER_PROPERTY_MANA_REGEN_PERCENTAGE"		"0" //回魔%
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"0" //攻速
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"		"0"	//防禦
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"	"0"	//跑速
+				}
+			}
+		}
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"max_charge"	"3"
+			}
+			"02"
+			{
+				"var_type"		"FIELD_FLOAT"
+				"charge_delay"	"13.0"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"aoe_radius"	"250"
+			}
+			"04"
+			{
+				"var_type"		"FIELD_FLOAT"
+				"duration"		"4"
 			}
 		}
 	}
@@ -14129,14 +14574,14 @@
 		"ItemQuality"	"component"
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
-		"ItemCost"	"250"
+		"ItemCost"	"150"
 		"ItemShopTags"					"consumable"
 		"ItemQuality"					"consumable"
 		"ItemStackable"					"1"
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 		"ItemPermanent"					"0"
 		"ItemInitialCharges"			"1"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"SideShop" "1"
 
 		"OnSpellStart"
@@ -14181,14 +14626,14 @@
 		"ItemQuality"	"component"
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
-		"ItemCost"	"210"
+		"ItemCost"	"150"
 		"ItemShopTags"					"consumable"
 		"ItemQuality"					"consumable"
 		"ItemStackable"					"1"
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 		"ItemPermanent"					"0"
 		"ItemInitialCharges"			"6"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop" "1"
 		
@@ -14276,7 +14721,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"1850"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop" "1"
 		
@@ -14385,7 +14830,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"6325"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SecretShop" "1"
 		"OnSpellStart"
@@ -14465,7 +14910,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"1600"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 	}
 
@@ -14568,7 +15013,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"4500"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -14652,7 +15097,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"3950"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -14736,7 +15181,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"4400"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -14821,7 +15266,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"4450"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -14886,7 +15331,7 @@
 					"MODIFIER_PROPERTY_MOVESPEED_BONUS_UNIQUE" "80"	//跑速
 				}
 			}
-			"shield_modifier"
+			"shield_modifier3"
 			{
 			    "Passive" "1"
 			    "IsHidden" "1"
@@ -14952,7 +15397,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"6450"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
 		"precache"
@@ -15051,7 +15496,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"3050"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
 		"precache"
@@ -15116,7 +15561,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"3050"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
 		"precache"
@@ -15183,7 +15628,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"10000"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
 		"OnEquip"
@@ -15259,7 +15704,7 @@
 			    {
 			        "Random"
 			        {
-			            "Chance" "65"
+			            "Chance" "20"
 			            "OnSuccess"
 			            {
 			                "ApplyModifier"
@@ -15287,7 +15732,7 @@
 			    "Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 			    "Properties"
 			    {
-			        "MODIFIER_PROPERTY_PHYSICAL_CONSTANT_BLOCK" "100"
+			        "MODIFIER_PROPERTY_PHYSICAL_CONSTANT_BLOCK" "20000"
 			    }
 			}
 		}
@@ -15314,13 +15759,18 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"350"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"						"1"
 		"AOERadius"	"1200"
 
 		"OnSpellStart"
 		{
+			"FireSound"
+			{
+				"Target"	"TARGET"
+				"EffectName"	"RevealMap"
+			}
 			"RunScript"
 			{
 				"ScriptFile"	"items/Addon_Items/item_insight_gem.lua"
@@ -15471,7 +15921,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"4500"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
 		"OnEquip"
@@ -15675,7 +16125,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"8450"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SecretShop" "1"
 		
@@ -15798,7 +16248,7 @@
 		// Item Info
 		
 		"ItemCost"	"3100"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"	"1"
 		"ItemShopTags"	"teleport"
@@ -15820,6 +16270,24 @@
 			"FireSound"
 			{
 				"EffectName"	"Hero_QueenOfPain.Pick"
+			}
+		}
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_mana_ingot.lua"
+				"Function"	"OnEquip"
+				"mana"	"500"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_mana_ingot.lua"
+				"Function"	"OnUnequip"
+				"mana"	"500"
 			}
 		}
 		"Modifiers"
@@ -15886,7 +16354,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"8000"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"						"1"
 		"OnSpellStart"
@@ -16018,9 +16486,26 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"4150"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
-		
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_mana_ingot.lua"
+				"Function"	"OnEquip"
+				"mana"	"500"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_mana_ingot.lua"
+				"Function"	"OnUnequip"
+				"mana"	"500"
+			}
+		}
 		"Modifiers"
 		{
 			"Passive_lightning_katana"
@@ -16061,7 +16546,7 @@
 		"AbilityUnitTargetFlags"					"DOTA_UNIT_TARGET_FLAG_NONE"
 		"ItemCost"	"6400"
 		"ID" "3861"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"AbilityCastPoint"                          "0.1"
 		"AbilityCastRange"							"1000"
 		"AbilityCooldown"                           "25"
@@ -16216,7 +16701,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"2500"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -16273,7 +16758,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"5000"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"						"1"
 		"Modifiers"
@@ -16316,7 +16801,7 @@
 		"AbilityUnitTargetFlags"					"DOTA_UNIT_TARGET_FLAG_NONE"
 		"ItemCost"	"3100"
 		"ID" "3865"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"AbilityCastPoint"                          "0.1"
 		"AbilityCastRange"							"700"
 		"AbilityCooldown"                           "25"
@@ -16385,7 +16870,7 @@
 		"AbilityUnitTargetFlags"					"DOTA_UNIT_TARGET_FLAG_NONE"
 		"ItemCost"	"10000"
 		"ID" "3866"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"AbilityCastPoint"                          "0.1"
 		"AbilityCastRange"							"1000"
 		"AbilityCooldown"                           "80"
@@ -16571,7 +17056,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"0"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"OnSpellStart"
 		{
@@ -16684,7 +17169,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"1100"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"						"1"
 		
@@ -16762,7 +17247,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"3300"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"						"1"
 		"AbilitySpecial"
@@ -16865,18 +17350,10 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"5050"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"						"1"
-		
-		"OnUnequip"
-		{
-			"RunScript"
-			{
-				"ScriptFile"	"items/Addon_Items/item_the_great_sword_of_toxic.lua"
-				"Function"	"OnUnequip_scorpion"
-			}
-		}
+	
 		"OnSpellStart"
 		{
 			"RunScript"
@@ -16901,6 +17378,29 @@
 			{
 				"var_type"				"FIELD_INTEGER"
 				"debuff_damage"				"100"
+			}
+		}
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_mana_ingot.lua"
+				"Function"	"OnEquip"
+				"mana"	"500"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_mana_ingot.lua"
+				"Function"	"OnUnequip"
+				"mana"	"500"
+			}
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_the_great_sword_of_toxic.lua"
+				"Function"	"OnUnequip_scorpion"
 			}
 		}
 		"Modifiers"
@@ -16994,7 +17494,7 @@
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"8000"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"						"1"
 
@@ -17060,7 +17560,7 @@
 			}
 		}
 	}
-
+	
 	// 真．三日月宗近．銘刀
 	"item_the_great_sword_of_xnew_moon_x"
 	{
@@ -17074,9 +17574,9 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		"AbilityCooldown"	"160"
+		"AbilityCooldown"	"100"
 		
-		"AbilityManaCost"	"200"
+		"AbilityManaCost"	"500"
 		"AbilityCastRange"				"2500"
 		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastPoint"	"0.1"
@@ -17085,7 +17585,7 @@
 		"Model"	"models/weapon/weapon.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
 		"ItemCost"	"7750"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SideShop"						"1"
 		"OnEquip"
@@ -17108,14 +17608,13 @@
 		{
 			"ApplyModifier"
 			{
-				"ModifierName"	"modifier_moon_x"
+				"ModifierName"	"modifier_moon_x2"
 				"Target" 		"CASTER"
 			}
-			"ApplyModifier"
+			"RunScript"
 			{
-				"ModifierName"	"modifier_stunned"
-				"Target" 		"CASTER"
-				"Duration"		"0.5"
+				"ScriptFile"	"items/Addon_Items/item_the_great_sword_of_new_moon.lua"
+				"Function"	"Shock2"
 			}
 		}
 		
@@ -17142,79 +17641,23 @@
 					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "0"	//防禦
 				}
 			}
-			"modifier_moon_x"
-			{
-				"Passive"	"0"
-				"EffectName"	"particles/a19/a19_wfire/mk_arcana_spring_fire_ring_glow.vpcf"
-				"EffectAttachType"  "follow_origin"
-				"OnAbilityExecuted"
-				{
-					"RunScript"
-					{
-						"ScriptFile"			"items/Addon_Items/item_the_great_sword_of_new_moon.lua"
-						"Function"				"Shock2"
-					}
-					"RemoveModifier"
-					{
-						"ModifierName"	"modifier_moon_x"
-						"Target" 		"CASTER"
-					}
-					"ApplyModifier"
-					{
-						"ModifierName"	"modifier_moon_x2"
-						"Target" 		"CASTER"
-						"Duration"		"4"
-					}
-				}
-				"OnAttackLanded"
-				{
-					"RunScript"
-					{
-						"ScriptFile"			"items/Addon_Items/item_the_great_sword_of_new_moon.lua"
-						"Function"				"Shock2"
-					}
-					"RemoveModifier"
-					{
-						"ModifierName"	"modifier_moon_x"
-						"Target" 		"CASTER"
-					}
-					"ApplyModifier"
-					{
-						"ModifierName"	"modifier_moon_x2"
-						"Target" 		"CASTER"
-						"Duration"		"4"
-					}
-				}
-				"States"
-				{
-					"MODIFIER_STATE_PROVIDES_VISION"		"MODIFIER_STATE_VALUE_ENABLED"
-				}
-			}
 			"modifier_moon_x2"
 			{
 				"Passive"	"0"
+				"Duration"	"5"
 				"EffectName"	"particles/a19/a19_wfire/mk_arcana_spring_fire_ring_glow_2.vpcf"
 				"States"
 				{
 					"MODIFIER_STATE_PROVIDES_VISION"		"MODIFIER_STATE_VALUE_ENABLED"
 				}
-				"OnAbilityExecuted"
-				{
-					"RunScript"
-					{
-						"ScriptFile"			"items/Addon_Items/item_the_great_sword_of_new_moon.lua"
-						"Function"				"Shock3"
-					}
-				}
 			}
 		}
 	}
-	//真三日月 製作單
 	"item_recipe_the_great_sword_of_xnew_moon_x"
 	{
 	    "ID" "3876"
 	    "BaseClass" "item_recipe_arcane_boots"
-		"ItemCost" "7250"
+		"ItemCost" "50"
 		"ItemShopTags" ""
 		"ItemRecipe" "1"
 		"SideShop"						"1"
@@ -17224,5 +17667,394 @@
 			"01" "item_the_great_sword_of_xnew_moon"  //合成所需物品
 		}
 	}
-}
 
+	// 黑漆塗十字槍
+	"item_the_dark_cross_spear"
+	{
+		// General
+		
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_custom/dark_cross_spear"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetFlags" "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityCastRange"				"700"
+		"FightRecapLevel"	"1"
+		
+		"AbilityCooldown"	"30"
+		
+		"AbilityManaCost"	"0"
+
+		"ID"	"3878"
+		"ItemQuality"	"component"
+		"Model"	"models/props_gameplay/tpscroll01.vmdl"
+		"Effect"	"particles/q09_2/q09_2.vpcf"
+		"ItemCost"	"2670"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"Target"	"CASTER"
+				"ModifierName"      "modifier_dark_armor_aura"
+			}
+		}
+		
+		"Modifiers"
+		{
+			"modifier_dark_armor_aura"
+			{
+				"Passive"			"0"
+				"IsHidden"			"1"
+				"IsBuff"			"1"
+				"Duration"      "8"
+
+				"Aura"	"modifier_dark_armor"
+				"Aura_Radius"	"700"
+				"Aura_Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+				"Aura_Types"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+				"Aura_Flags"  	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+				"Aura_ApplyToCaster"	"1"
+			}
+			"modifier_dark_armor"
+			{
+				"Passive"			"0"
+				"IsHidden"			"0"
+				"IsBuff"			"1"		
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"		
+			
+				"EffectName"		"particles/econ/items/puck/puck_alliance_set/puck_dreamcoil_magic_aproset.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT" "70"	//回血
+					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT" "70"	//回魔
+				}
+			}
+			"Passive_lightning_katana"
+			{
+				"IsHidden"	"1"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS" "0"	//力
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "0"		//敏
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "10"	//智
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "40"	//攻
+					"MODIFIER_PROPERTY_HEALTH_BONUS" "0" 			//血
+					"MODIFIER_PROPERTY_MANA_BONUS" "0"				//魔
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT" "0"	//回血
+					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE" "0" //回血%
+					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT" "3" 	//回魔
+					"MODIFIER_PROPERTY_MANA_REGEN_PERCENTAGE" "150" 	//回魔%
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "0" //攻速
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "5"	//防禦
+				}
+			}
+
+			"Passive_insight_gem"
+			{
+				"Passive"          "1"  
+	            "IsHidden"      "1"
+	            "ThinkInterval"     "0.25"
+	            "OnIntervalThink"
+	            {
+	                "ApplyModifier"
+	                {
+	                    "Target"
+	                    {
+	                        "Center"    "CASTER"
+	                        "Radius"    "900"
+	                        "Teams" "DOTA_UNIT_TARGET_TEAM_ENEMY"
+	                        "Types" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
+	                        "Flags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+	                    }
+	                    "ModifierName"      "modifier_truesight"
+	                    "Duration"      "0.50"
+	                }
+	            }
+			}
+			"shield_modifier8"
+			{
+			    "Passive" "1"
+			    "IsHidden" "1"
+			    "Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+			    "OnAttacked"
+			    {
+			        "Random"
+			        {
+			            "Chance" "15"
+			            "OnSuccess"
+			            {
+			                "ApplyModifier"
+			                {
+			                    "Target" "CASTER"
+			                    "ModifierName" "block_modifier4"
+			                }
+			            }
+			            "OnFailure"
+			            {
+			                "RemoveModifier"
+			                {
+			                    "Target" "CASTER"
+			                    "ModifierName" "block_modifier4"
+			                }
+			            }
+			        }
+			    }
+			}
+			"block_modifier8"
+			{
+			    "IsBuff" "1"
+			    "IsHidden" "1"
+			    "Duration"	"1"
+			    "Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+			    "Properties"
+			    {
+			        "MODIFIER_PROPERTY_PHYSICAL_CONSTANT_BLOCK" "20000"
+			    }
+			}
+		}
+	}
+	"item_recipe_the_dark_cross_spear"
+	{
+	    "ID" "3879"
+	    "BaseClass" "item_recipe_arcane_boots"
+		"ItemCost" "500"
+		"ItemShopTags" ""
+		"ItemRecipe" "1"
+		"SideShop"						"1"
+		"ItemResult" "item_the_dark_cross_spear"  //合成後物品
+		"ItemRequirements"
+		{
+			"01" "item_cross_spear;item_the_dark_armor"  //合成所需物品
+		}
+	}
+
+	// 末代河童殼
+	"item_the_shell_of_last_kappa"
+	{
+		// General
+		
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_custom/the_shell_of_spirituality_kappa"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
+		"FightRecapLevel"	"1"
+		
+		"AbilityCooldown"	"20"
+		"AbilityCastRange"	"800"
+		"AbilityManaCost"	"90"
+		"ID"	"3880"
+		"ItemQuality"	"component"
+		"Model"	"models/props_gameplay/tpscroll01.vmdl"
+		"Effect"	"particles/q09_2/q09_2.vpcf"
+		"ItemCost"	"1620"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_the_shell_of_spirituality_kappa.lua"
+				"Function"	"Shock2"
+			}
+		}
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_mana_ingot.lua"
+				"Function"	"OnEquip"
+				"mana"	"300"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_mana_ingot.lua"
+				"Function"	"OnUnequip"
+				"mana"	"300"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"damage_absorb"	"350"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_shell_of_last_kappa"
+			{
+				"IsBuff"	"1"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"items/Addon_Items/item_the_shell_of_spirituality_kappa.lua"
+						"Function"	"last_kappa_spell_start"
+						"Target"	"TARGET"
+					}
+				}
+				
+				"OnTakeDamage"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"items/Addon_Items/item_the_shell_of_spirituality_kappa.lua"
+						"Function"	"last_kappa_damage_check"
+						"DamageTaken"	"%attack_damage"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"Target"	"TARGET"
+						"ScriptFile"	"items/Addon_Items/item_the_shell_of_spirituality_kappa.lua"
+						"Function"	"last_kappa_EndShieldParticle"
+					}
+				}
+				"Duration"	"10"
+			}
+			"Passive_the_shell_of_spirituality_kappa"
+			{
+				"IsHidden"	"1"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS" "0"	//力
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "20"		//敏
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "0"	//智
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "0"	//攻
+					"MODIFIER_PROPERTY_HEALTH_BONUS" "250" 			//血
+					"MODIFIER_PROPERTY_MANA_BONUS" "300"				//魔
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT" "0"	//回血
+					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE" "0" //回血%
+					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT" "3" 	//回魔
+					"MODIFIER_PROPERTY_MANA_REGEN_PERCENTAGE" "150" 	//回魔%
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "0" //攻速
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "8"	//防禦
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT" "0"	//跑速
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS" "25" //魔抗
+				}
+			}
+		}
+	}
+
+	"item_recipe_the_shell_of_last_kappa"
+	{
+	    "ID" "3881"
+	    "BaseClass" "item_recipe_arcane_boots"
+		"ItemCost" "1500"
+		"ItemShopTags" ""
+		"ItemRecipe" "1"
+		"SideShop"						"1"
+		"ItemResult" "item_the_shell_of_last_kappa"  //合成後物品
+		"ItemRequirements"
+		{
+			"01" "item_the_shell_of_spirituality_kappa;item_hachiman_bell"  //合成所需物品
+		}
+	}
+
+	// 水計之書．二階
+	"item_flood_book_1"
+	{
+		// General
+		
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_custom/flood_book"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
+		"FightRecapLevel"	"1"
+		"AbilitySharedCooldown" "share_item_flood_book"
+		"AbilityCooldown"	"30"
+		"AbilityCastPoint"	"0.1"
+		"AbilityManaCost"	"280"
+		"AbilityCastRange"	"800"
+		"AOERadius"		"400"
+		"ID"	"3882"
+		"ItemQuality"	"component"
+		"Model"	"models/props_gameplay/tpscroll01.vmdl"
+		"Effect"	"particles/q09_2/q09_2.vpcf"
+		"ItemCost"	"4000"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_flood_book.lua"
+				"Function"	"Shock2"
+				"Target"	"POINT"
+			}
+		}
+		
+		"Modifiers"
+		{
+			"modifier_flood_book"
+			{
+				"Passive"			"0"
+				"IsHidden"			"0"
+				"IsPurgable"	"1"
+				"IsDebuff"		"1"
+			
+				"States"
+				{
+					"MODIFIER_STATE_STUNNED"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
+			}
+			"Passive_flood_book"
+			{
+				"IsHidden"	"1"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS" "0"	//力
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "0"		//敏
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "30"	//智
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "0"	//攻
+					"MODIFIER_PROPERTY_HEALTH_BONUS" "0" 			//血
+					"MODIFIER_PROPERTY_MANA_BONUS" "0"				//魔
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT" "0"	//回血
+					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE" "0" //回血%
+					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT" "0" 	//回魔
+					"MODIFIER_PROPERTY_MANA_REGEN_PERCENTAGE" "0" 	//回魔%
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "0" //攻速
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "0"	//防禦
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT" "0"	//跑速
+				}
+			}
+		}
+	}
+
+	"item_recipe_flood_book_1"
+	{
+	    "ID" "3883"
+	    "BaseClass" "item_recipe_arcane_boots"
+		"ItemCost" "1500"
+		"ItemShopTags" ""
+		"ItemRecipe" "1"
+		"SideShop"		"0"
+		"ItemResult" "item_flood_book_1"  //合成後物品
+		"ItemRequirements"
+		{
+			"01" "item_flood_book"  //合成所需物品
+		}
+	}
+}

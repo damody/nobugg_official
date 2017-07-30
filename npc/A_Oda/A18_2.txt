@@ -7,6 +7,8 @@
 		// ----------------------------------------------------------------
 		// Add model
 		"ModelScale"	"1.4"
+		"Model"	"models/a18/a18.vmdl"
+		"DisableWearables"	"1"
 		//"Level"	"1"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
 		"HealthBarOffset"	"180"
