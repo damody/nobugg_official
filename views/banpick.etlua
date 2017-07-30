@@ -17,11 +17,30 @@ elseif lang == "en" then
   heroname = en_heroname
 end
 BeadSize = 50
+
+function round(num, idp)
+  local mult = 10^(idp or 0)
+  return math.floor(num * mult + 0.5) / mult
+end
 %>
 <% render("views.head", { lang = lang, langtext = langtext }) %>
 <body>
   <header>
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <style type="text/css">
+    <% if params.win then %>
+.champion-list2 a{
+  width:20%;
+}
+.wrapper{
+  width:100%;
+}
+.mobile-hide{
+  display: none;
+}
+    <% end %>
+
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <% render("views.nav", { lang = lang, langtext = langtext, webpath = params.webpath }) %>
         <script>
             jQuery("document").ready(function($){
@@ -117,20 +136,22 @@ BeadSize = 50
         status[14] = "TEAM_B_BAN5";
         statusx[14] = "B組禁用第5隻";
 
-        status[15] = "TEAM_A_PICK3";
-        statusx[15] = "A組選角第3隻";
-        status[16] = "TEAM_A_PICK4";
-        statusx[16] = "A組選角第4隻";
+        status[15] = "TEAM_B_PICK3";
+        statusx[15] = "B組選角第3隻";
+        status[16] = "TEAM_B_PICK4";
+        statusx[16] = "B組選角第4隻";
 
-        status[17] = "TEAM_B_PICK3";
-        statusx[17] = "B組選角第3隻";
-        status[18] = "TEAM_B_PICK4";
-        statusx[18] = "B組選角第4隻";
-        status[19] = "TEAM_B_PICK5";
-        statusx[19] = "B組選角第5隻";
+        status[17] = "TEAM_A_PICK3";
+        statusx[17] = "A組選角第3隻";
+        status[18] = "TEAM_A_PICK4";
+        statusx[18] = "A組選角第4隻";
+        status[19] = "TEAM_A_PICK5";
+        statusx[19] = "A組選角第5隻";
+        
+        status[20] = "TEAM_B_PICK5";
+        statusx[20] = "B組選角第5隻";
 
-        status[20] = "TEAM_A_PICK5";
-        statusx[20] = "A組選角第5隻";
+        
         statusx[21] = "選角完成";
 
 function contains(a, obj) {
@@ -141,26 +162,52 @@ function contains(a, obj) {
     }
     return false;
 }
+$("#last").click(function(){
+    var test = document.getElementById(getdest(mode_status));
+    var revert = test.lastElementChild.getAttribute("alt");
+    console.log("revert"+revert);
+    test.removeChild(test.lastElementChild);
+    if (mode_status > 0) {
+      mode_status = mode_status - 1;
+      allhero.pop();
+    }
+    $("#"+revert).css("background-color", "");
+    $("#mode").html(getmessage(mode_status+1));
+    });
         var allhero = [];
-        $("div").delegate("a", "click",function(e){
-          var img = e.currentTarget;
-            if (contains(allhero,img.id) == false) {
-              allhero.splice(0, 0, img.id);
-              mode_status = mode_status + 1;
-              $("#mode").html(getmessage(mode_status+1));
-              console.log(e.currentTarget);
-              console.log(mode_status);
-              
-              var DOM_img = document.createElement("img");
-              DOM_img.src = $("#"+img.id).children("img").attr("src");
-              DOM_img.width = <%=BeadSize%>;
-              DOM_img.height = <%=BeadSize%>;
-              DOM_img.name = img.id+"_copy";
-              DOM_img.id = img.id+"_copy";
-              DOM_img.alt = img.id+"_copy";
-              document.getElementById(getdest(mode_status)).appendChild(DOM_img);
+        $( "#other" ).click(function() {
+          $( "#target" ).click();
+        });
+  var clickc = 0;
+      $("div").delegate("a", "click",function(e){
+        var img = e.currentTarget;
+        clickc = clickc + 1;
+          if (clickc % 4 == 0 && mode_status < 20) {
+            allhero.push(img.id);
+            mode_status = mode_status + 1;
+            $("#mode").html(getmessage(mode_status+1));
+
+            var DOM_img = document.createElement("img");
+            DOM_img.src = $("#"+img.id).children("img").attr("src");
+            if (getdest(mode_status) == "apick"){
+              $("#"+img.id).css("background-color", "#FF0000");
             }
-            });
+            else if (getdest(mode_status) == "bpick"){
+              $("#"+img.id).css("background-color", "#00FF00");
+            }else {
+              $("#"+img.id).css("background-color", "black");
+            }
+            DOM_img.width = <%=BeadSize%>;
+            DOM_img.height = <%=BeadSize%>;
+            DOM_img.name = img.id+"_copy";
+            DOM_img.id = img.id+"_copy";
+            DOM_img.alt = img.id;
+            
+            document.getElementById(getdest(mode_status)).appendChild(DOM_img);
+          }
+          });
+     
+       
         });
         </script>
     </header>
@@ -170,13 +217,16 @@ function contains(a, obj) {
 
 
 <div class="container faction1">
+<% if params.win == nil then %>
 <div style="position: fixed;float:left;margin-left:20px;">
-  <font size="20"><div id="mode">A組禁用第1隻</div></font>
-  <div style="background-color:#8888AA"><font size="18">A組禁用</font><div id="aban"></div></div>
-  <div style="background-color:#FF4400"><font size="18">A組選角</font><div id="apick"></div></div>
-  <div style="background-color:#AA8888"><font size="18">B組禁用</font><div id="bban"></div></div>
-  <div style="background-color:#0055FF"><font size="18">B組選角</font><div id="bpick"></div></div>
+  <button type="button" class="btn" id="last">上一步</button>
+  <font size="6"><div id="mode">A組禁用第1隻</div></font>
+  <div style="background-color:#8888AA"><font size="5">A組禁用</font><div id="aban"></div></div>
+  <div style="background-color:#FF4400"><font size="5">A組選角</font><div id="apick"></div></div>
+  <div style="background-color:#AA8888"><font size="5">B組禁用</font><div id="bban"></div></div>
+  <div style="background-color:#0055FF"><font size="5">B組選角</font><div id="bpick"></div></div>
 </div>
+<% end %>
         <div class="wrapper" style="background:rgba(249, 30, 14,0.3)">
             <div class="column-8 champion-list champion-list2 cl1"><% 
             i1 = -1
@@ -190,15 +240,27 @@ function contains(a, obj) {
                 i1 = i1 + 1
                 i = key
                 it = heroname[key]
+                record16 = cjson.decode(client:get(string.lower(key).."_16"))
+                record11 = cjson.decode(client:get(string.lower(key).."_11"))
+                if record16["all"] ~= nil then
+                  record16 = round(record16["winning"]*100, 2).."%"
+                else
+                  record16 = ""
+                end
+                if record11["all"] ~= nil then
+                  record11 = round(record11["winning"]*100, 2).."%"
+                else
+                  record11 = ""
+                end
                 if i1 > 1 and math.fmod(i1,5) == 0 then %>
                 </div><% 
                 end 
                 if math.fmod(i1,5) == 0 then %>
                 <div ><% 
-                end %>
-                    <a id="<%-i%>">
-                        <img src="/static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name"><%-it%></div>
-                    </a><% 
+                end  %>
+                <a id="<%-i%>">
+                    <img src="/static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name" style="white-space:nowrap;"><%-it%><% if params.win then %><%-record11.."/"..record16%><% end %></div>
+                </a><% 
               end 
             end%>
                 </div>
@@ -211,6 +273,7 @@ function contains(a, obj) {
                 </h2>
             </div>
         </div>
+
         <div class="wrapper" style="background:rgba(0,255,0,0.3)">
             <div class="column-8 champion-list champion-list2 cl1"><% 
             i1 = -1
@@ -224,15 +287,27 @@ function contains(a, obj) {
                 i1 = i1 + 1
                 i = key
                 it = heroname[key]
+                record16 = cjson.decode(client:get(string.lower(key).."_16"))
+                record11 = cjson.decode(client:get(string.lower(key).."_11"))
+                if record16["all"] ~= nil then
+                  record16 = round(record16["winning"]*100, 2).."%"
+                else
+                  record16 = ""
+                end
+                if record11["all"] ~= nil then
+                  record11 = round(record11["winning"]*100, 2).."%"
+                else
+                  record11 = ""
+                end
                 if i1 > 1 and math.fmod(i1,5) == 0 then %>
                 </div><% 
                 end 
                 if math.fmod(i1,5) == 0 then %>
                 <div ><% 
                 end  %>
-                    <a id="<%-i%>">
-                        <img src="/static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name"><%-it%></div>
-                    </a><% 
+                <a id="<%-i%>">
+                    <img src="/static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name" style="white-space:nowrap;"><%-it%><% if params.win then %><%-record11.."/"..record16%><% end %></div>
+                </a><% 
               end 
             end%>
                 </div>
@@ -258,15 +333,27 @@ function contains(a, obj) {
                 i1 = i1 + 1
                 i = key
                 it = heroname[key]
+                record16 = cjson.decode(client:get(string.lower(key).."_16"))
+                record11 = cjson.decode(client:get(string.lower(key).."_11"))
+                if record16["all"] ~= nil then
+                  record16 = round(record16["winning"]*100, 2).."%"
+                else
+                  record16 = ""
+                end
+                if record11["all"] ~= nil then
+                  record11 = round(record11["winning"]*100, 2).."%"
+                else
+                  record11 = ""
+                end
                 if i1 > 1 and math.fmod(i1,5) == 0 then %>
                 </div><% 
                 end 
                 if math.fmod(i1,5) == 0 then %>
                 <div ><% 
-                end %>
-                    <a id="<%-i%>">
-                        <img src="/static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name"><%-it%></div>
-                    </a><% 
+                end  %>
+                <a id="<%-i%>">
+                    <img src="/static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name" style="white-space:nowrap;"><%-it%><% if params.win then %><%-record11.."/"..record16%><% end %></div>
+                </a><% 
               end 
             end%>
                 </div>
