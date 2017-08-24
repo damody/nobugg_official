@@ -433,6 +433,12 @@
 				"Function"	"showTitle"
 				"title"	"particles/title/a01t.vpcf"
 			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"quest_complete_01"
+			}
 		}
 		"Modifiers"
 		{
@@ -809,6 +815,12 @@
 				"Function"	"showTitle"
 				"title"	"particles/title/a01t.vpcf"
 			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"quest_complete_01"
+			}
 		}
 		"Modifiers"
 		{
@@ -894,6 +906,10 @@
 							}
 						}
 					}
+				}
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "10"
 				}
 			}
 			"modifier_A01T_old"

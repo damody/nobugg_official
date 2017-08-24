@@ -304,7 +304,7 @@
 			"04"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"stack_hp"			"20" // %
+				"stack_hp"			"16" // %
 			}
 		}
 		"OnUpgrade"
@@ -407,7 +407,7 @@
 
 		"AbilityCooldown"				"20"
 		"AbilityManaCost"				"140 180 220 260"
-		"AbilityDamage"					"100 200 300 400"
+		"AbilityDamage"					"150 200 250 300"
 
 		"AbilityCastRange"				"800"
 		"AbilityCastPoint"				"0"
@@ -586,7 +586,7 @@
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"add_armor"			"4 10 16 22"
+				"add_armor"			"4 9 12 15"
 			}
 		}
 
@@ -755,7 +755,7 @@
 				    "MODIFIER_PROPERTY_INCOMING_PHYSICAL_DAMAGE_PERCENTAGE" "-50"
 				    //"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT" "%regen"	//回血
 				}
-				"ThinkInterval"  "1.5"
+				"ThinkInterval"  "1"
 				"OnIntervalThink"
 				{
 					"RunScript"

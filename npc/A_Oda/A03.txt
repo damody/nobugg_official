@@ -107,6 +107,12 @@
 						"Type"			"DAMAGE_TYPE_MAGICAL"
 						"Damage"		"25"
 					}
+					"RunScript"
+					{
+					  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+						"Function"	"sound_unit"
+						"sound"	"capture_point_timer_hallow"
+					}
 				}
 			}
 		}
@@ -432,6 +438,12 @@
 				"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A03.lua"
 				"Function"				"A03W_OnSpellStart"
 			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"viper_strike"
+			}
 		}
 		"OnProjectileHitUnit"
 		{
@@ -471,6 +483,12 @@
 						"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A03.lua"
 						"Function"      "A03W_old_OnDeath"
 						"Target"			"TARGET" 
+					}
+					"RunScript"
+					{
+					  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+						"Function"	"sound"
+						"sound"	"crit_spatter02"
 					}
 				}
 				"ThinkInterval"  "1"
@@ -528,6 +546,12 @@
 				}
 				"ModifierName"	"modifier_A03E_old_passiveAura2"
 				"Duration"		"5"
+			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"stinger_short"
 			}
 		}
 
@@ -699,6 +723,12 @@
 				"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A03.lua"
 				"Function"	"A03T_old_OnSpellStart"
 			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"dota2_music_stinger_009"
+			}
 		}
 		"Modifiers"
 		{
@@ -709,6 +739,29 @@
 				{
 					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "30" //攻速
 					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "10"	//防禦
+				}
+				"ThinkInterval"  "1"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A03.lua"
+						"Function"	"A03T_old_OnIntervalThink"
+					}
+				}
+			}
+			"modifier_A03T_armor"
+			{
+				"Passive"			"0"
+				"IsHidden"			"0"
+				"IsDebuff"			"0"
+			
+				"EffectName"		"particles/a03/a03r_old.vpcf"
+				"EffectAttachType"	"follow_origin"
+			
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE" "%indmg"
 				}
 			}
 		}
@@ -725,6 +778,11 @@
 			{
 				"var_type" "FIELD_INTEGER"
 				"life_time" "50 60 70"
+			}
+			"03"
+			{
+				"var_type" "FIELD_INTEGER"
+				"indmg" "-30 -40 -50"
 			}
 		}
 	}
@@ -786,6 +844,12 @@
 			{
 				"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A03.lua"
 				"Function"		"A03TW_OnSpellStart"
+			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"dota2_music_stinger_009"
 			}
 		}
 

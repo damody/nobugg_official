@@ -65,6 +65,12 @@
 				"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A12.lua"
 				"Function"	"A12W"
 			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"hurricane_pike"
+			}
 		}
 		"Modifiers"
 		{
@@ -128,6 +134,12 @@
 				"Function"	"showTitle"
 				"title"	"particles/title/a12d.vpcf"
 			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"ball_lightning"
+			}
 		}
 		"Modifiers"
 		{
@@ -168,6 +180,12 @@
 			{
 				"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A12.lua"
 				"Function"	"A12E"
+			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"orgremagi_iceboost"
 			}
 		}
 		"Modifiers"
@@ -293,6 +311,12 @@
 					}
 				}
 			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"item_mael_lightning_chain"
+			}
 		}
 		"Modifiers"
 		{
@@ -410,19 +434,18 @@
 					}
 				}
 			}
-		
 		}
 		"AbilitySpecial"
 		{
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"Special_Damage"	"19 23 27"
+				"Special_Damage"	"15 17 19"
 			}
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"SpendMana"	"200 250 300"
+				"SpendMana"	"200 235 270"
 			}
 		}
 	}	

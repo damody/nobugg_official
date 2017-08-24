@@ -783,6 +783,12 @@
 				"ModifierName"	"modifier_A20T_old"
 				"Target" 		"CASTER"
 			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"jboberg_01.smoke_end_hero"
+			}
 		}
 
 		"Modifiers"

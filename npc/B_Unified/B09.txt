@@ -44,7 +44,7 @@
 		// Casting
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"	"800"
-		"AbilityDamage" "7 9 11 13"
+		"AbilityDamage" "7 10 13 16"
 		"OnSpellStart"
 		{
 			"ApplyModifier"

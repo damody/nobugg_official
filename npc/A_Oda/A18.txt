@@ -287,6 +287,12 @@
 				"Duration"   "1.75"
 				"Target" 	 "CASTER"
 			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"ability_ghost_ship"
+			}
 		}
 		"Modifiers"
 		{
@@ -576,6 +582,12 @@
 				"Target"	"TARGET"
 				"ScriptFile"		"scripts/vscripts/heroes/A_Oda/A18.lua"
 				"Function"	"A18T_old_OnSpellStart"
+			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"ability_ghost_ship"
 			}
 		}
 		"Modifiers"
