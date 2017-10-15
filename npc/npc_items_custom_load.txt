@@ -579,6 +579,12 @@
 				"Function"	"Shock"
 				"Target"	"POINT"
 			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"flare_explode"
+			}
 		}
 		"Modifiers"
 		{
@@ -1695,6 +1701,13 @@
 			{
 				"ScriptFile"	"items/Addon_Items/item_spell_book.lua"
 				"Function"	"Shock"
+			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"black_hole_loop"
+				"time"	"3"
 			}
 		}
 		
@@ -3329,7 +3342,7 @@
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
 		
-		"AbilityCooldown"	"40"
+		"AbilityCooldown"	"50"
 		
 		"AbilityManaCost"	"175"
 		"AbilityCastPoint"	"0.1"
@@ -3386,7 +3399,7 @@
 			}
 			"modifier_soul_adderx"
 			{
-				"Duration"	"4"
+				"Duration"	"5"
 				"EffectName"	"particles/item/soul_adderrope.vpcf"
 				"OnCreated"
 				{
@@ -3794,6 +3807,12 @@
                 "ModifierName"      "modifier_variety_tachi"
                 "Duration"      "15"
             }
+            "RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"thunderlizard_roar"
+			}
 		}
 		
 		"Modifiers"
@@ -3867,6 +3886,13 @@
 			{
 				"ScriptFile"	"items/Addon_Items/item_spell_book.lua"
 				"Function"	"Shock"
+			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"black_hole_loop"
+				"time"	"3"
 			}
 		}
 		"Modifiers"
@@ -4375,6 +4401,12 @@
 			{
 				"ScriptFile"	"items/Addon_Items/item_the_great_sword_of_disease.lua"
 				"Function"	"Shock"
+			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"stinger01"
 			}
 		}
 		"Modifiers"
@@ -5657,7 +5689,7 @@
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
 		
-		"AbilityCooldown"	"40"
+		"AbilityCooldown"	"60"
 		
 		"AbilityManaCost"	"285"
 		"AbilityCastPoint"	"0.1"
@@ -6090,6 +6122,12 @@
 					{}
             	}
             }
+            "RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"time_dilation_cast"
+			}
 		}
 		"Modifiers"
 		{
@@ -6136,10 +6174,6 @@
 		"ItemInitialCharges"			"3"
 		"SideShop"						"1"
 		
-
-		
-
-		
 		"ItemRequirements"	{}
 		"OnSpellStart"
 		{
@@ -6157,6 +6191,12 @@
 					{}
             	}
             }
+            "RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"tidebringer"
+			}
 		}
 		"Modifiers"
 		{
@@ -6210,6 +6250,12 @@
 			{
 				"ScriptFile"	"items/Addon_Items/item_mana_thief.lua"
 				"Function"	"OnEquip"
+			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"sprint_on"
 			}
 		}
 		"OnUnequip"
@@ -6316,6 +6362,12 @@
 				"Target"	"TARGET"
 				"dmg"		"300"
 			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"mana_void_cast"
+			}
 		}
 		"OnEquip"
 		{
@@ -6395,6 +6447,12 @@
 				"Function"	"Shock"
 				"Target"	"TARGET"
 				"dmg"		"400"
+			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"mana_void_cast"
 			}
 		}
 		"OnEquip"
@@ -6476,6 +6534,12 @@
 				"Target"	"TARGET"
 				"dmg"		"500"
 			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"mana_void_cast"
+			}
 		}
 		
 		"Modifiers"
@@ -6544,7 +6608,7 @@
 			{
 			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
 				"Function"	"sound"
-				"sound"	"AncestralSpirit"
+				"sound"	"relocate"
 			}
 			"ActOnTargets"
 			{
@@ -6734,10 +6798,8 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		
-		"AbilityCooldown"	"21"
-		
-		"AbilityManaCost"	"150"
+		"AbilityCooldown"	"15"
+		"AbilityManaCost"	"100"
 		"AbilityCastPoint"	"0.1"
 		"AbilityCastRange"	"700"
 		"AbilityDamage"		"350"
@@ -6841,7 +6903,7 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		"AbilityCooldown"	"25"
+		"AbilityCooldown"	"30"
 		
 		"AbilityManaCost"	"155"
 
@@ -6863,7 +6925,7 @@
 			{
 			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
 				"Function"	"sound"
-				"sound"	"WindWalk"
+				"sound"	"powershot_falcon_bow"
 			}
 		}
 		
@@ -7033,7 +7095,7 @@
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
 		
-		"AbilityCooldown"	"65"
+		"AbilityCooldown"	"60"
 		
 		"AbilityManaCost"	"185"
 		"AbilityCastPoint"	"0"
@@ -8367,7 +8429,7 @@
 	{
 	    "ID" "3053"
 	    "BaseClass" "item_recipe_arcane_boots"
-		"ItemCost" "1000"
+		"ItemCost" "600"
 		"ItemShopTags" ""
 		"ItemRecipe" "1"
 		"ItemResult" "item_magic_defence_boots"  //合成後物品
@@ -8532,7 +8594,7 @@
 	{
 	    "ID" "3064"
 	    "BaseClass" "item_recipe_arcane_boots"
-		"ItemCost" "1500"
+		"ItemCost" "1000"
 		"ItemShopTags" ""
 		"ItemRecipe" "1"
 		"ItemResult" "item_the_art_of_war_forest_chapter"  //合成後物品
@@ -8819,10 +8881,11 @@
 				"EffectName"	"particles/a34w/a34w.vpcf"
 				"MoveSpeed"	"3000"
 			}
-			"FireSound"
+			"RunScript"
 			{
-				"Target"	"TARGET"
-				"EffectName"	"hero_Crystal.frostbite"
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"cold_feet_tick"
 			}
 		}
 		"OnProjectileHitUnit"
@@ -8927,6 +8990,12 @@
 				"ModifierName"	"modifier_blade_of_blood_devourer"
 				"Target" 		"CASTER"
 				"Duration"		"20"
+			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"requiem_of_souls"
 			}
 		}
 		
@@ -9354,6 +9423,12 @@
 				"ScriptFile"	"items/Addon_Items/item_the_sword_of_kaminaobi.lua"
 				"Function"	"Shock"
 				"Target"	"TARGET"
+			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"glaives01"
 			}
 		}
 		
@@ -10697,7 +10772,7 @@
 	                    "Target"
 	                    {
 	                        "Center"    "CASTER"
-	                        "Radius"    "600"
+	                        "Radius"    "800"
 	                        "Teams" "DOTA_UNIT_TARGET_TEAM_ENEMY"
 	                        "Types" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
 	                        "Flags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
@@ -10842,6 +10917,12 @@
 			{
 				"ScriptFile"	"items/Addon_Items/item_fubuki_shoulders.lua"
 				"Function"	"Start"
+			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"duel_cast_arcana"
 			}
 		}
 		"Modifiers"
@@ -11264,7 +11345,7 @@
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		"AbilityCooldown"	"25"
+		"AbilityCooldown"	"40"
 		"AbilityCastPoint"	"0.1"
 		"AbilityManaCost"	"400"
 		
@@ -11283,6 +11364,12 @@
 				"ScriptFile"	"items/Addon_Items/item_death_of_scepter.lua"
 				"Function"	"Shock"
 				"Target"	"TARGET"
+			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"death_ghost"
 			}
 		}
 		"OnEquip"
@@ -11359,6 +11446,12 @@
 			{
 				"ScriptFile"	"items/Addon_Items/item_the_shell_of_spirituality_kappa.lua"
 				"Function"	"Shock"
+			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"dust_of_appearance"
 			}
 		}
 		"OnEquip"
@@ -11440,6 +11533,12 @@
 				"Function"	"Shock"
 				"Target"	"TARGET"
 				"Time"	"5"
+			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"queenofpain_sonicwave"
 			}
 		}
 		
@@ -11749,6 +11848,12 @@
 				"Target" 		"CASTER"
 				"Duration"		"20"
 			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"requiem_of_souls"
+			}
 		}
 		
 		"Modifiers"
@@ -11837,6 +11942,12 @@
 				"MoveSpeed"	"2500"
 				"VisionRadius"	"225"
 				"SourceAttachment"	"DOTA_PROJECTILE_ATTACHMENT_ATTACK_1"
+			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"shackleshot_stun"
 			}
 		}
 		"OnProjectileHitUnit"
@@ -13253,6 +13364,12 @@
 				"Function"	"Shock"
 				"Target"	"POINT"
 			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"relocate"
+			}
 		}
 	}
 
@@ -13760,7 +13877,6 @@
 		
 		"OnSpellStart"
 		{
-			
 			"TrackingProjectile"
 			{
 				"Target"	"TARGET"
@@ -13780,6 +13896,12 @@
 					{}
             	}
             }
+            "RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"snake_shoot"
+			}
 		}
 
 		"OnProjectileHitUnit"
@@ -13857,6 +13979,12 @@
 				"MoveSpeed"	"2500"
 				"VisionRadius"	"225"
 				"SourceAttachment"	"DOTA_PROJECTILE_ATTACHMENT_ATTACK_1"
+			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"shackleshot_stun"
 			}
 		}
 		"OnProjectileHitUnit"
@@ -15465,7 +15593,7 @@
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage"				"200"
+				"damage"				"300"
 			}
 			"03"
 			{
@@ -15503,7 +15631,7 @@
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE" "-30"
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS" "-100"	//魔抗
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS" "-25"	//魔抗
 				}
 			}
 			"modifier_great_sword_of_disease_aura2"
@@ -15528,7 +15656,7 @@
 			
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS" "-20"	//魔抗
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS" "-25"	//魔抗
 				}
 			}
 			"Passive_great_sword_of_disease"
@@ -15704,7 +15832,6 @@
 	"item_ksitigarbha"
 	{
 		// General
-		
 		"BaseClass"	"item_datadriven"
 		"AbilityTextureName"	"item_custom/ksitigarbha"
 		"AbilityBehavior"                           "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT"
@@ -15712,7 +15839,7 @@
 		"AbilityUnitTargetType"						"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
 		"AbilityUnitDamageType"               		"DAMAGE_TYPE_MAGICAL"
 		"AbilityUnitTargetFlags"					"DOTA_UNIT_TARGET_FLAG_NONE"
-		"ItemCost"	"10000"
+		"ItemCost"	"8000"
 		"ID" "3866"
 		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"AbilityCastPoint"                          "0.1"
@@ -15728,6 +15855,12 @@
 			{
 				"ScriptFile"	"items/Addon_Items/item_ksitigarbha.lua"
 				"Function"	"Shock"
+			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"gods_strength"
 			}
 		}
 
@@ -15773,7 +15906,7 @@
 				"Passive"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE" "4" //回血
+					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE" "1" //回血
 				}
 			}
 			"modifier_ksitigarbha_hero_aura"
@@ -15794,7 +15927,7 @@
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE" "2" //回血%
+					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE" "1" //回血%
 				}
 			}
 			"Passive_ksitigarbha2"
@@ -15804,7 +15937,7 @@
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE" "1" //回血%
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS" "30"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS" "20"
 				}
 			}
 			"Passive_ksitigarbha"
@@ -15824,7 +15957,7 @@
 				"IsHidden"	"0"
 				"IsDebuff"	"0"
 
-				"ThinkInterval"	"0.2"
+				"ThinkInterval"	"0.5"
 				"OnIntervalThink"
 				{
 					"RunScript"
@@ -16708,6 +16841,12 @@
 			{
 				"ScriptFile"	"items/Addon_Items/item_the_shell_of_spirituality_kappa.lua"
 				"Function"	"Shock2"
+			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"dust_of_appearance"
 			}
 		}
 		"OnEquip"

@@ -49,6 +49,12 @@
 				"Target"	"TARGET"
 				"ModifierName"	"modifier_C15W_2"
 			}
+			"RunScript"
+			{
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"mana_break"
+			}
 		}
 		"Modifiers"
 		{
@@ -458,6 +464,20 @@
 				"EffectAttachType"	"follow_overhead"
 				"IsDebuff"	"1"
 				"Duration"  "5"
+			}
+			"modifier_C15R_check"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"ThinkInterval"  "1"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C19.lua"
+						"Function"	"check_FOW"
+					}
+				}
 			}
 			"modifier_C15D"
 			{

@@ -10,6 +10,7 @@
 			"soundfile"	"soundevents/B07.vsndevts"
 			"particle"	"particles/b01w/b01w.vpcf"
 			"particle"	"particles/econ/items/luna/luna_lucent_ti5_gold/luna_eclipse_impact_moonfall_gold.vpcf"
+			"particle"	"particles/a17/a17tecon/items/sniper/sniper_charlie/sniper_assassinate_charlie.vpcf"
 		}
 	}
 	//足利義昭 星瀑
@@ -106,10 +107,11 @@
 		}
 		"OnSpellStart"
 		{
-			"FireSound"
+			"RunScript"
 			{
-				"Target"	"CASTER"
-				"EffectName"	"B07E.vo1"
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"MassTeleportTarget"
 			}
 			"RunScript"
 			{
@@ -246,10 +248,11 @@
 		
 		"OnSpellStart"
 		{
-			"FireSound"
+			"RunScript"
 			{
-				"Target"	"CASTER"
-				"EffectName"	"B07T.vo1"
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"jbrice_01.ganked_lg_01"
 			}
 			"RunScript"
 			{
@@ -305,10 +308,11 @@
 
 		"OnSpellStart"
 		{
-			"FireSound"
+			"RunScript"
 			{
-				"Target"	"CASTER"
-				"EffectName"	"A27E.vo1"
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"MassTeleportTarget"
 			}
 			"RunScript"
 			{
@@ -579,10 +583,11 @@
 		
 		"OnSpellStart"
 		{
-			"FireSound"
+			"RunScript"
 			{
-				"Target"	"CASTER"
-				"EffectName"	"B07T.vo1"
+			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
+				"Function"	"sound"
+				"sound"	"jbrice_01.ganked_lg_01"
 			}
 			"RunScript"
 			{

@@ -459,7 +459,7 @@
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackAnimationPoint"		"0.10"
-		"AttackAcquisitionRange"	"2000"
+		"AttackAcquisitionRange"	"1000"
 		"AttackRate"				"0.5"
 		"AttackDamageMin"			"0"
 		"AttackDamageMax"			"0"
@@ -517,7 +517,7 @@
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackAnimationPoint"		"0.10"
-		"AttackAcquisitionRange"	"2000"
+		"AttackAcquisitionRange"	"1000"
 		"AttackRate"				"0.5"
 		"AttackDamageMin"			"41.0"
 		"AttackDamageMax"			"51.0"
@@ -536,7 +536,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		"StatusHealth"			"1500"
-		"StatusHealthRegen"		"40"
+		"StatusHealthRegen"		"10"
 		"StatusMana"			"0"
 		"StatusStartingMana"	"0"
 		// Vision
@@ -559,8 +559,8 @@
 		// ----------------------------------------------------------------
 		"BaseClass"	"npc_dota_building"
 		// Add model
-		"Model"	"models/props_rock/riveredge_rock008a.vmdl"
-		"ModelScale"	"1"
+		"Model"	"models/stone.vmdl"
+		"ModelScale"	"2"
 		"Level"	"0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_FILLER"
 		"HealthBarOffset"	"180"
@@ -838,7 +838,7 @@
 		// Movement
 		// ----------------------------------------------------------------
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"	"550"
+		"MovementSpeed"	"470"
 		"MovementTurnRate"	"0.5"
 		// Status
 		// ----------------------------------------------------------------
@@ -875,7 +875,7 @@
 		"Ability1"	""
 		// Armor
 		// ----------------------------------------------------------------
-		"ArmorPhysical"	"16"
+		"ArmorPhysical"	"5"
 		"MagicalResistance"	"50"
 		// Attack
 		// ----------------------------------------------------------------
@@ -1281,7 +1281,7 @@
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackAnimationPoint"		"0.10"
-		"AttackAcquisitionRange"	"2000"
+		"AttackAcquisitionRange"	"1000"
 		"AttackRate"				"0.45"
 		"AttackDamageMin"			"16.0"
 		"AttackDamageMax"			"20.0"
@@ -1352,7 +1352,7 @@
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackAnimationPoint"		"0.10"
-		"AttackAcquisitionRange"	"2000"
+		"AttackAcquisitionRange"	"1000"
 		"AttackRate"				"0.9"
 		"AttackDamageMin"			"31.0"
 		"AttackDamageMax"			"36.0"
@@ -1423,7 +1423,7 @@
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackAnimationPoint"		"0.10"
-		"AttackAcquisitionRange"	"2000"
+		"AttackAcquisitionRange"	"1000"
 		"AttackRate"				"0.9"
 		"AttackDamageMin"			"31.0"
 		"AttackDamageMax"			"41.0"
@@ -3443,6 +3443,7 @@
  		"Ability7"					"courier_morph"
  		"Ability8"					"courier_take_stash_and_transfer_items"
  		"Ability9"					"for_magic_immune"
+ 		"Ability10"					"for_no_collision"
 
  		// Bounds
  		//----------------------------------------------------------------
@@ -3496,7 +3497,7 @@
  		// General
  		//----------------------------------------------------------------
  		"BaseClass"					"npc_dota_creature"	// Class of entity of link to.
- 		"Model"						"models/props_gameplay/donkey.vmdl"	// Model.
+ 		"Model"						"models/items/courier/mei_nei_rabbit/mei_nei_rabbit_flying.vmdl" //"models/props_gameplay/donkey.vmdl"	// Model.
  		"SoundSet"					""					// Name of sound set.
  		"Level"						"0"
  		"IsAncient"					"1"
@@ -3593,10 +3594,10 @@
  		// Attack
  		//----------------------------------------------------------------
  		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
- 		"AttackDamageMin"			"1900"		// Damage range min.
- 		"AttackDamageMax"			"1990"		// Damage range max.
+ 		"AttackDamageMin"			"8000"		// Damage range min.
+ 		"AttackDamageMax"			"8000"		// Damage range max.
  		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
- 		"AttackRate"				"0.05"		// Speed of attack.
+ 		"AttackRate"				"0.1"		// Speed of attack.
  		"AttackAnimationPoint"		"0.0"		// Normalized time in animation cycle to attack.
  		"AttackAcquisitionRange"	"1400"		// Range within a target can be acquired.
  		"AttackRange"				"1400"		// Range within a target can be attacked. (was 690)
@@ -3812,83 +3813,8 @@
 		}
 	}
 
-	// Creature: 水式神 LV4
-	"A04W_UNIT"
-	{
-		// General
-		// ----------------------------------------------------------------
-		"BaseClass"	"npc_dota_creature"
-		"ModelScale"	"1"
-		"Level"	"3"
-		"Model"	"models/heroes/morphling/morphling.vmdl"
-		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"	"180"
-		// Abilities
-		// ----------------------------------------------------------------
-		// Reference: A00F
-		"Ability1"	""
-		// Armor
-		// ----------------------------------------------------------------
-		"ArmorPhysical"	"0"
-		"MagicalResistance"	"0"
-		// Attack
-		// ----------------------------------------------------------------
-		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"	"52.0"
-		"AttackDamageMax"	"62.0"
-		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
-		"AttackRate"	"0.95"
-		"AttackAnimationPoint"	"0.4"
-		"AttackAcquisitionRange"	"1000"
-		"AttackRange"	"475"
-		"ProjectileSpeed"	"1300,1300"
-		// Bounty
-		// ----------------------------------------------------------------
-		"BountyGoldMin"	"35.0"
-		"BountyGoldMax"	"35.0"
-		// Gold and Lumber
-		// ----------------------------------------------------------------
-		"GoldCost"	"35"
-		"LumberCost"	"35"
-		// Movement
-		// ----------------------------------------------------------------
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"	"460"
-		"MovementTurnRate"	"0.90"
-		// Status
-		// ----------------------------------------------------------------
-		"StatusHealth"	"600"
-		"StatusHealthRegen"	"0.25"
-		"StatusMana"	"100"
-		"StatusStartingMana"	"100"
-		// Vision
-		// ----------------------------------------------------------------
-		"VisionDaytimeRange"	"1200"
-		"VisionNighttimeRange"	"800"
-		// Team
-		// ----------------------------------------------------------------
-		"TeamName"	"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_HERO"
-		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_HERO"
-		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	""
-	}
 	// =================================================================================
-	// Creature: 水式
+	// Creature: 水式神
 	// =================================================================================
 	"A04W_SUMMEND_UNIT"
 	{
@@ -3918,7 +3844,7 @@
 		"AttackRate"	"1.25"
 		"AttackAnimationPoint"	"0.4"
 		"AttackAcquisitionRange"	"1000"
-		"AttackRange"	"475"
+		"AttackRange"	"500"
 		"ProjectileSpeed"	"1300"
 		// Bounty
 		// ----------------------------------------------------------------
@@ -5878,7 +5804,7 @@
 		// ----------------------------------------------------------------
 		"BaseClass"	"npc_dota_building"
 		// Add model
-		"Model"	"models/props_rock/riveredge_rock001a.vmdl"
+		"Model"	"models/stone.vmdl"
 		"ModelScale"	"1.3"
 		"Level"	"1"
 		"BoundsHullName"	"DOTA_HULL_SIZE_BARRACKS"
@@ -16358,7 +16284,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
 		// Status
 		// ----------------------------------------------------------------
-		"StatusHealth"	"3250"
+		"StatusHealth"	"2400"
 		"StatusHealthRegen"	"1"
 		// Vision
 		// ----------------------------------------------------------------
@@ -16441,7 +16367,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
 		// Status
 		// ----------------------------------------------------------------
-		"StatusHealth"	"3250"
+		"StatusHealth"	"2400"
 		"StatusHealthRegen"	"1"
 		// Vision
 		// ----------------------------------------------------------------
@@ -16524,7 +16450,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
 		// Status
 		// ----------------------------------------------------------------
-		"StatusHealth"	"3250"
+		"StatusHealth"	"2400"
 		"StatusHealthRegen"	"1"
 		// Vision
 		// ----------------------------------------------------------------
@@ -16607,7 +16533,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
 		// Status
 		// ----------------------------------------------------------------
-		"StatusHealth"	"3250"
+		"StatusHealth"	"2400"
 		"StatusHealthRegen"	"1"
 		// Vision
 		// ----------------------------------------------------------------
@@ -16692,7 +16618,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
 		// Status
 		// ----------------------------------------------------------------
-		"StatusHealth"	"3250"
+		"StatusHealth"	"2400"
 		"StatusHealthRegen"	"1"
 		// Vision
 		// ----------------------------------------------------------------
@@ -16775,7 +16701,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
 		// Status
 		// ----------------------------------------------------------------
-		"StatusHealth"	"3250"
+		"StatusHealth"	"2400"
 		"StatusHealthRegen"	"1"
 		// Vision
 		// ----------------------------------------------------------------
@@ -16858,7 +16784,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
 		// Status
 		// ----------------------------------------------------------------
-		"StatusHealth"	"3250"
+		"StatusHealth"	"2400"
 		"StatusHealthRegen"	"1"
 		// Vision
 		// ----------------------------------------------------------------
@@ -16943,7 +16869,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
 		// Status
 		// ----------------------------------------------------------------
-		"StatusHealth"	"3250"
+		"StatusHealth"	"2400"
 		"StatusHealthRegen"	"1"
 		// Vision
 		// ----------------------------------------------------------------
@@ -17026,7 +16952,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
 		// Status
 		// ----------------------------------------------------------------
-		"StatusHealth"	"3250"
+		"StatusHealth"	"2400"
 		"StatusHealthRegen"	"1"
 		// Vision
 		// ----------------------------------------------------------------
@@ -17109,7 +17035,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
 		// Status
 		// ----------------------------------------------------------------
-		"StatusHealth"	"3250"
+		"StatusHealth"	"2400"
 		"StatusHealthRegen"	"1"
 		// Vision
 		// ----------------------------------------------------------------
@@ -18304,22 +18230,22 @@
  		//----------------------------------------------------------------
  		"Ability1"					"for_cp_position"			// Ability 1
  		"Ability2"					"dead_give_item"			// Ability 2
- 		"Ability3"					"for_magic_immune"			// Ability 3
+ 		"Ability3"					"soul_tower"			// Ability 3
  		"Ability4"					"warrior_souls_skill"			// Ability 4
 
  		// Armor
  		//----------------------------------------------------------------
- 		"ArmorPhysical"				"30"			// Physical protection.
- 		"MagicalResistance"			"75"
+ 		"ArmorPhysical"				"40"			// Physical protection.
+ 		"MagicalResistance"			"0"
  		// Attack
  		//----------------------------------------------------------------
  		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
- 		"AttackDamageMin"			"2000"		// Damage range min.
- 		"AttackDamageMax"			"2200"		// Damage range max.	
- 		"AttackRate"				"0.4"		// Speed of attack.
- 		"AttackAnimationPoint"		"0.1"		// Normalized time in animation cycle to attack.
+ 		"AttackDamageMin"			"500"		// Damage range min.
+ 		"AttackDamageMax"			"700"		// Damage range max.	
+ 		"AttackRate"				"0.1"		// Speed of attack.
+ 		"AttackAnimationPoint"		"0.02"		// Normalized time in animation cycle to attack.
  		"AttackAcquisitionRange"	"300"		// Range within a target can be acquired.
- 		"AttackRange"				"250"		// Range within a target can be attacked.
+ 		"AttackRange"				"1000"		// Range within a target can be attacked.
  		"ProjectileModel"			""			// Particle system model for projectile.
  		"ProjectileSpeed"			"0"			// Speed of projectile.		   
 
@@ -18341,8 +18267,8 @@
 
  		// Status
  		//----------------------------------------------------------------
- 		"StatusHealth"				"10000"		// Base health.
- 		"StatusHealthRegen"			"100"		// Health regeneration rate.
+ 		"StatusHealth"				"20000"		// Base health.
+ 		"StatusHealthRegen"			"400"		// Health regeneration rate.
  		"StatusMana"				"3000"			// Base mana.
  		"StatusManaRegen"			"1"			// Mana regeneration rate.		 
 	
