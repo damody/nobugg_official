@@ -18,6 +18,41 @@
 			}
 		}
 	}
+	"halloween_attack"
+	{
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"bristleback_viscous_nasal_goo"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_PURE"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
+		"Modifiers"
+		{
+			"modifier_halloween"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"Orb"
+				{
+					"Priority"			"DOTA_ORB_PRIORITY_ABILITY"
+					"ProjectileName"	"particles/halloween.vpcf"
+				}
+				
+				"OnAttackStart"
+				{
+				}
+				
+				"OnAttackLanded"
+				{
+				}
+				
+				"AllowIllusionDuplicate"	"1"
+			}
+		}
+	}
 	// 選16版
 	"choose_16"
 	{
@@ -1089,7 +1124,7 @@
 	{
 		"BaseClass"	"ability_datadriven"
 		"AbilityTextureName"	"custom/icon_128x128_21"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
@@ -1098,7 +1133,7 @@
 		"AbilityCooldown"	"60"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
-		"AbilityManaCost"	"20"
+		"AbilityManaCost"	"0"
 		"AOERadius"		"900"
 
 		"Modifiers"

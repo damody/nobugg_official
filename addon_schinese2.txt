@@ -3252,7 +3252,7 @@
 		"DOTA_Tooltip_Ability_B13R_old" "忍具．隐雷"
 		"DOTA_Tooltip_Ability_B13R_old_Description" "放下一枚地雷：拥有<font color='#5cb85c'>(300/400/500/600)</font>点生命值。地雷在敌方英雄靠近范围250内时会自动引爆：造成范围300内所有敌人<font color='#5cb85c'>(400/800/1200/1600)</font>点物理伤害，但对魔免单位没有伤害。"
 		"DOTA_Tooltip_Ability_B13T_old" "忍法密传．暴风"
-		"DOTA_Tooltip_Ability_B13T_old_Description" "能在指定的地点释放出巨大的龙卷风，龙卷风能持续伤害范围400内的敌人，对部队每0.1秒造成<font color='#5cb85c'>(40/60/80)</font>点伤害并减缓<font color='#5cb85c'>(60/70/80)% </font>移动速度和<font color='#5cb85c'>(120/240/360)% </font>攻击速度，对建筑物造成50% 点伤害。持续7秒。"
+		"DOTA_Tooltip_Ability_B13T_old_Description" "能在指定的地点释放出巨大的龙卷风，龙卷风能持续伤害范围400内的敌人，对部队每0.1秒造成<font color='#5cb85c'>(40/60/80)</font>点伤害并减缓<font color='#5cb85c'>(60/70/80)% </font>移动速度和<font color='#5cb85c'>(120/240/360)% </font>攻击速度，对建筑物造成30% 点伤害。持续7秒。"
 
 		// 果心居士
 		"npc_dota_hero_rubick" "果心居士"
