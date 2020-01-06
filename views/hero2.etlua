@@ -8,8 +8,8 @@ print(data)
 local redis = require 'redis'
 local client = redis.connect('127.0.0.1', 6379)
 local cjson = require("cjson")
-record16 = cjson.decode(client:get(string.lower(params.hero).."_16"))
-record11 = cjson.decode(client:get(string.lower(params.hero).."_11"))
+record16 = {}--cjson.decode(client:get(string.lower(params.hero).."_16"))
+record11 = {}--cjson.decode(client:get(string.lower(params.hero).."_11"))
 
 
 if lang == "zhtw" then
