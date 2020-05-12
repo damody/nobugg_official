@@ -16,22 +16,22 @@
 		"Ability1"	"B33W"
 		"Ability2"	"B33E"
 		"Ability3"	"B33R"
-		"Ability4"	"B33D"
-		"Ability5"	"attribute_bonusx"
+		"Ability4"	"magical_resistance"
+		"Ability5"	"B33_precache"
 		"Ability6"	"B33T"
-		"Ability7"	"B33_precache"
+		"Ability7"	""
 		// Armor
 		// ----------------------------------------------------------------
-		"ArmorPhysical"	"4"
-		"MagicalResistance"	"30"
+		"ArmorPhysical"	"3"
+		"MagicalResistance"	"0"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"	"100.0"
-		"AttackDamageMax"	"116.0"
+		"AttackDamageMin"	"94.0"
+		"AttackDamageMax"	"94.0"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"	"1.80"
-		"AttackAnimationPoint"	"0.30"
+		"AttackAnimationPoint"	"0.2"
 		"AttackAcquisitionRange"	"700"
 		"AttackRange"	"700"
 		"ProjectileModel"	"particles/units/heroes/hero_drow/drow_base_attack.vpcf"
@@ -47,8 +47,8 @@
 		"AttributeIntelligenceGain"	"2"		
 		// Bounty
 		// ----------------------------------------------------------------
-		"BountyGoldMin"	"300.0"
-		"BountyGoldMax"	"300.0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
 		// Gold and Lumber
 		// ----------------------------------------------------------------
 		"GoldCost"	"0"
@@ -56,19 +56,20 @@
 		// Movement
 		// ----------------------------------------------------------------
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"	"300"
-		"MovementTurnRate"	"2.35"
+		"MovementSpeed"	"350"
+
+		"MovementTurnRate"	"360"
 		// Status
 		// ----------------------------------------------------------------
-		"StatusHealth"	"400"
+		"StatusHealth"	"550"
 		"StatusHealthRegen"	"0.25"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0.01"
 		"StatusStartingMana"	"100"
 		// Vision
 		// ----------------------------------------------------------------
-		"VisionDaytimeRange"	"1800"
-		"VisionNighttimeRange"	"800"
+		"VisionDaytimeRange"	"1600"
+		"VisionNighttimeRange"	"1000"
 		// Team
 		// ----------------------------------------------------------------
 		"TeamName"	"DOTA_TEAM_NEUTRALS"

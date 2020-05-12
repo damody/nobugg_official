@@ -14,21 +14,21 @@
 		"Ability1"	"B25W"
 		"Ability2"	"B25E"
 		"Ability3"	"B25R"
-		"Ability4"	"attribute_bonusx"
-		"Ability5"	"B25T"
-		"Ability6"	"B25_precache"
+		"Ability4"	"magical_resistance"
+		"Ability5"	"B25_precache"
+		"Ability6"	"B25T"
 		// Armor
 		// ----------------------------------------------------------------
-		"ArmorPhysical"	"2"
-		"MagicalResistance"	"30"
+		"ArmorPhysical"	"3"
+		"MagicalResistance"	"0"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"	"30.0"
-		"AttackDamageMax"	"40.0"
+		"AttackDamageMin"	"78.0"
+		"AttackDamageMax"	"78.0"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"	"1.80"
-		"AttackAnimationPoint"	"0.5"
+		"AttackAnimationPoint"	"0.2"
 		"AttackAcquisitionRange"	"1200"
 		"AttackRange"	"600"
 		"ProjectileSpeed"	"1200"
@@ -43,8 +43,8 @@
 		"AttributeIntelligenceGain"	"3.40"		
 		// Bounty
 		// ----------------------------------------------------------------
-		"BountyGoldMin"	"300.0"
-		"BountyGoldMax"	"300.0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
 		// Gold and Lumber
 		// ----------------------------------------------------------------
 		"GoldCost"	"0"
@@ -52,19 +52,20 @@
 		// Movement
 		// ----------------------------------------------------------------
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"	"300"
-		"MovementTurnRate"	"1.50"
+		"MovementSpeed"	"350"
+
+		"MovementTurnRate"	"360"
 		// Status
 		// ----------------------------------------------------------------
-		"StatusHealth"	"400"
+		"StatusHealth"	"550"
 		"StatusHealthRegen"	"0.25"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0.01"
 		"StatusStartingMana"	"100"
 		// Vision
 		// ----------------------------------------------------------------
-		"VisionDaytimeRange"	"1800"
-		"VisionNighttimeRange"	"800"
+		"VisionDaytimeRange"	"1600"
+		"VisionNighttimeRange"	"1000"
 		// Team
 		// ----------------------------------------------------------------
 		"TeamName"	"DOTA_TEAM_NEUTRALS"

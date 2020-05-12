@@ -520,7 +520,7 @@
 		"HotKeyOverride"	"W"
 		"MaxLevel"	"4"
 		"LevelsBetweenUpgrades"	"2"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"10"
 		"AbilityManaCost"	"100 120 140 160"
 		"AbilityCastRange"	"700"
@@ -755,7 +755,7 @@
 		"AbilityCooldown"	"130 90 50"
 		"AbilityManaCost"	"250 300 350"
 		"AbilityCastRange"	"5000"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityDamage"		"200"
 
 		"OnSpellStart"

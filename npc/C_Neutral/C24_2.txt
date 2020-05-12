@@ -14,24 +14,22 @@
 		"Ability1"	"C24W"
 		"Ability2"	"C24E"
 		"Ability3"	"C24R"
-		"Ability4"	"attribute_bonusx"
-		"Ability5"	"C24T"
-		"Ability6"	"C24_precache"
+		"Ability4"	"magical_resistance"
+		"Ability5"	"C24_precache"
+		"Ability6"	"C24T"
 		// Armor
 		// ----------------------------------------------------------------
-		"ArmorPhysical"	"4"
-		"MagicalResistance"	"30"
+		"ArmorPhysical"	"0"
+		"MagicalResistance"	"0"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"	"128.0"
-		"AttackDamageMax"	"144.0"
+		"AttackDamageMin"	"109.0"
+		"AttackDamageMax"	"109.0"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"	"1.80"
-		"AttackAnimationPoint"	"0.33"
 		"AttackAcquisitionRange"	"500"
 		"AttackRange"	"128"
-		"ProjectileSpeed"	"10000"
 		// Attributes
 		// ----------------------------------------------------------------
 		"AttributePrimary"	"DOTA_ATTRIBUTE_STRENGTH"
@@ -43,8 +41,8 @@
 		"AttributeIntelligenceGain"	"1.9"
 		// Bounty
 		// ----------------------------------------------------------------
-		"BountyGoldMin"	"300.0"
-		"BountyGoldMax"	"300.0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
 		// Gold and Lumber
 		// ----------------------------------------------------------------
 		"GoldCost"	"0"
@@ -52,19 +50,19 @@
 		// Movement
 		// ----------------------------------------------------------------
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"	"300"
-		"MovementTurnRate"	"1.50"
+		"MovementSpeed"	"350"
+		"MovementTurnRate"	"360"
 		// Status
 		// ----------------------------------------------------------------
-		"StatusHealth"	"400"
+		"StatusHealth"	"550"
 		"StatusHealthRegen"	"0.25"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0.01"
 		"StatusStartingMana"	"100"
 		// Vision
 		// ----------------------------------------------------------------
-		"VisionDaytimeRange"	"1800"
-		"VisionNighttimeRange"	"800"
+		"VisionDaytimeRange"	"1600"
+		"VisionNighttimeRange"	"1000"
 		// Team
 		// ----------------------------------------------------------------
 		"TeamName"	"DOTA_TEAM_NEUTRALS"
@@ -81,7 +79,7 @@
 		"Ability14"	""
 		"Ability15"	""
 		"Ability16"	""
-		"override_hero"	"npc_dota_hero_batrider"
+		"override_hero"	"npc_dota_hero_weaver"
 		"Model"	"models/c24/c24.vmdl"
 		"DisableWearables"	"1"
 	}	

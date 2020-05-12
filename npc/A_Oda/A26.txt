@@ -26,12 +26,13 @@
 		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 
-		"AbilityCooldown"				"17 14 11 8"
+		"AbilityCooldown"				"13 12 11 8"
 		"AbilityManaCost"				"100 120 140 160"
-		"AbilityDamage"					"250 350 450 550"
+		"AbilityDamage"					"150 250 350 450"
 
-		"AbilityCastRange"				"1000"
+		"AbilityCastRange"				"800"
 		"AbilityCastPoint"				"0.1"
 		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
 
@@ -42,11 +43,11 @@
 
 		"OnAbilityPhaseStart"
 		{
-			"FireSound"
-			{
-				"Target"	"CASTER"
-				"EffectName"	"A26W.vo1"
-			}
+			//"FireSound"
+			//{
+			//	"Target"	"CASTER"
+			//	"EffectName"	"A26W.vo1"
+			//}
 			"RunScript"
 			{
 			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
@@ -76,7 +77,8 @@
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
-		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NONE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 
 		"AbilityCooldown"				"25 20 15 10"
 		"AbilityManaCost"				"80 105 130 155"
@@ -144,12 +146,17 @@
 			"01"
 			{
 				"var_type"		"FIELD_INTEGER"
-				"crit_chance"		"10 20 30 40"
+				"crit_chance"		"10 15 20 25"
 			}
 			"02"
 			{
 				"var_type"		"FIELD_INTEGER"
 				"crit_bonus"		"200"
+			}
+			"03"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"aspeed"		"30 45 60 75"
 			}
 		}
 
@@ -177,7 +184,10 @@
 			{
 				"Passive"			"1"
 				"IsHidden"			"1"
-
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "%aspeed"
+				}
 				"OnAttackStart"
 				{
 					"RunScript"
@@ -218,7 +228,7 @@
 		"AbilityDamage"					"350"
 
 		"AbilityCastRange"				"600"
-		"AbilityCastPoint"				"0"
+		"AbilityCastPoint"				"0.1"
 		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_3"
 
 		"AoERadius"		"250" // 顯示布置範圍
@@ -342,16 +352,16 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
-
-		"AbilityCooldown"				"3"
-		"AbilityManaCost"				"140"
-		"AbilityDamage"					"250 400 550"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityCooldown"				"90 80 70"
+		"AbilityManaCost"				"200 300 400"
+		"AbilityDamage"					"700 900 1300"
 
 		"AbilityCastRange"				"1200"
-		"AbilityCastPoint"				"0.3"
-		"AbilityCastAnimation"			"ACT_DOTA_ATTACK"
+		"AbilityCastPoint"				"0.5"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
 		"AnimationPlaybackRate"			"2"
 		"AoERadius"						"400"
 
@@ -365,12 +375,22 @@
 			"02"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"projectile_speed"	"2000"
+				"projectile_speed"	"750"
 			}
 			"03"
 			{
 				"var_type"			"FIELD_INTEGER"
 				"radius"			"400"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"small_bomb_damage"	"200 300 400"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"small_bomb_speed"	"2000"
 			}
 		}
 
@@ -385,6 +405,16 @@
 
 		"OnAbilityPhaseStart"
 		{
+			"FireSound"
+			{
+				"Target"	"CASTER"
+				"EffectName"	"A26T_old.vo1"
+			}
+			"ApplyModifier"
+			{
+				"ModifierName"	"modifier_A26T"
+				"Target" 		"CASTER"
+			}
 		}
 
 		"OnSpellStart"
@@ -410,10 +440,42 @@
 
 		"Modifiers"
 		{
+			"modifier_A26T"
+			{
+				"IsHidden"			"0"
+				"Duration"			"0.5"
+				"States"
+				{
+					"MODIFIER_STATE_COMMAND_RESTRICTED"		"MODIFIER_STATE_VALUE_ENABLED"
+				}
+			}
 			"modifier_A26T_big_bomb"
 			{
 				"EffectName"		"particles/a26/a26t_overhead.vpcf"
 				"EffectAttachType"	"follow_overhead"
+			}
+			"modifier_small_bomb"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"OnAttackLanded"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A26.lua"
+						"Function"		"A26T_OnAttackLanded"
+						"Target"		"TARGET"
+					}	
+				}
+				"OnProjectileHitUnit"
+				{
+					"RunScript"
+					{	
+						"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A26.lua"
+						"Function"		"A26T_small_bomb_OnHit"
+						"Target"		"TARGET"
+					}
+				}
 			}
 		}
 	}

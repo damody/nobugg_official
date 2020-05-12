@@ -24,7 +24,7 @@
 		"AbilityTextureName"                        "custom/B14/B14D"
 		"AbilityType"  								"DOTA_ABILITY_TYPE_BASIC"
 
-		"AbilityCastPoint"                          "0.1"
+		"AbilityCastPoint"          				"0.25"
 		"AbilityCastRange"							"0"
 		"AbilityCooldown"                           "120"
 		"AbilityManaCost"                           "50"
@@ -75,7 +75,7 @@
 		"AbilityUnitDamageType"               		"DAMAGE_TYPE_MAGICAL"
 		"AbilityUnitTargetFlags"					"DOTA_UNIT_TARGET_FLAG_NONE"
 
-		"AbilityCastPoint"                          "0.1"	//stun
+		"AbilityCastPoint"          				"0.25"	//stun
 		"AbilityCastRange"							"250"
 		"AbilityCooldown"                           "15"
 		"AbilityManaCost"                           "100 125 150 175"

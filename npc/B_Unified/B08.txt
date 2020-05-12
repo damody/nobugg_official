@@ -11,7 +11,7 @@
 		}
 	}
 	// 淺井長政 一刀．連牙斷空
-	"B08D_old"
+	"B08D"
 	{
 		"BaseClass"	"ability_datadriven"
 		"AbilityTextureName"	"custom/cps_d08_1"
@@ -19,14 +19,15 @@
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
 		"HotKeyOverride"	"W"
 		"MaxLevel"	"1"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.3"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AnimationPlaybackRate"	"2"
 		"AbilityCooldown"	"150"
-		"AbilityManaCost"	"500"
+		"AbilityManaCost"	"300"
 		"AbilityCastRange"	"1100"
 		"precache"
 		{
@@ -143,14 +144,15 @@
 	{
 		"BaseClass"	"ability_datadriven"
 		"AbilityTextureName"	"custom/cps_d08_1"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_POINT"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
 		"HotKeyOverride"	"W"
 		"MaxLevel"	"4"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"      "0.2"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AnimationPlaybackRate"	"2"
 		"LevelsBetweenUpgrades"	"2"
@@ -248,7 +250,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"shock_speed"	"2000"
+				"shock_speed"	"1500"
 			}
 			"02"
 			{
@@ -258,7 +260,7 @@
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"shock_distance"	"1400"
+				"shock_distance"	"1200"
 			}
 			"04"
 			{
@@ -281,7 +283,7 @@
 		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
 		"HotKeyOverride"	"W"
 		"MaxLevel"	"4"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"	"0.2"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AnimationPlaybackRate"	"2"
 		"AbilityCooldown"	"7 6 5 4"
@@ -408,17 +410,17 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"HotKeyOverride"	"E"
 		"MaxLevel"	"4"
 		"RequiredLevel"	"1"
-		"AbilityCastPoint" "0.25" //stun
+		"AbilityCastPoint" "0.3" //stun
 		"AbilityCastAnimation"	"ACT_DOTA_ECHO_SLAM"
 		"AbilityCooldown"	"13"
 		"AbilityManaCost"	"100 120 140 160"
-		"AbilityCastRange"	"1150"
+		"AbilityCastRange"	"1100"
 		"LevelsBetweenUpgrades"	"2"
 
 		"precache"
@@ -490,7 +492,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"B08E_Stun_Time"	"1.1"
+				"B08E_Stun_Time"	"0.3"
 			}
 			"03"
 			{
@@ -516,7 +518,7 @@
 		"MaxLevel"	"4"
 		"RequiredLevel"	"1"
 		"LevelsBetweenUpgrades"	"2"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCastAnimation"	"ACT_DOTA_ECHO_SLAM"
 		"AbilityCooldown"	"12 11 10 9"
 		"AbilityManaCost"	"120 130 140 150"
@@ -606,6 +608,7 @@
 		{
 			"modifier_B08R"
 			{
+				"IsHidden"	"1"
 				"OnAbilityExecuted"
 				{
 					"RunScript"
@@ -625,7 +628,7 @@
 			{
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE"	"15"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"15"
 					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"	"-4"
 				}
 				"Duration"	"8"
@@ -723,7 +726,7 @@
 		"BaseClass"	"ability_datadriven"
 		"AbilityTextureName"	"custom/cps_d08_4"
 		"AbilityCooldown"	"100 85 70"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_POINT"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
@@ -734,12 +737,13 @@
 		"MaxLevel"	"3"
 		"RequiredLevel"	"6"
 		"LevelsBetweenUpgrades"	"6"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.2"
 		"AnimationPlaybackRate"	"2"
+		"AbilityCastRange"	"3000"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		// Cost
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"	"200 300 400"
+		"AbilityManaCost"	"200"
 		// Precache
 		// -------------------------------------------------------------------------------------------------------------
 		"precache"
@@ -838,12 +842,12 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"dragon_slave_distance"	"30000"
+				"dragon_slave_distance"	"3000"
 			}
 		}
 		// Damage.
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"	"900 1300 1800"
+		"AbilityDamage"	"800 1200 1600"
 	}
 
 	// 淺井長政 一刀．空牙
@@ -864,7 +868,7 @@
 		"MaxLevel"	"3"
 		"RequiredLevel"	"6"
 		"LevelsBetweenUpgrades"	"6"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AnimationPlaybackRate"	"2"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		// Cost

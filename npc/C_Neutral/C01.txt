@@ -17,10 +17,14 @@
 		"BaseClass"	"ability_datadriven"
 		"AbilityTextureName"	"custom/btnability_gouge"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"HotKeyOverride"	"W"
 		"MaxLevel"	"4"
 		"RequiredLevel"	"1"
-		"AbilityCastPoint"	"0"
+		"AbilityCastPoint"	"0.1"
 		"AbilityCooldown"	"16 15 14 13"
 		"AbilityManaCost"	"120 160 200 240"
 		"precache"
@@ -130,7 +134,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"C01W_DMG"	"60 90 120 150"
+				"C01W_DMG"	"90 120 150 180"
 			}
 			"02"
 			{
@@ -151,12 +155,15 @@
 		"BaseClass"	"ability_datadriven"
 		"AbilityTextureName"	"custom/BTNFire"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
 		"HotKeyOverride"	"E"
 		"MaxLevel"	"4"
 		"RequiredLevel"	"1"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.3"
 		"AbilityCooldown"	"13"
 		"AbilityManaCost"	"120 150 180 210"
 		"AbilityCastRange"	"1500"
@@ -309,7 +316,7 @@
 		"MaxLevel"	"3"
 		"RequiredLevel"	"6"
 		"LevelsBetweenUpgrades"	"6"
-		"AbilityCastPoint"	"0"
+		"AbilityCastPoint"	"0.3"
 		"AbilityCooldown"	"145 135 113"
 		"AbilityManaCost"	"200"
 		"AbilityCastRange"	"1100"
@@ -319,6 +326,14 @@
 		{
 			"soundfile"	"soundevents/c01t.vsndevts"
 			"particle"	"particles/generic_gameplay/generic_stunned.vpcf"
+		}
+		"OnAbilityPhaseStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C01_Mitsuhide_Akechi.lua"
+				"Function"	"C01T_OnAbilityPhaseStart"
+			}
 		}
 		"OnSpellStart"
 		{

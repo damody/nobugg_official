@@ -27,13 +27,13 @@
 		"Ability2"	"B26E"
 		"Ability3"	"B26R"
 		"Ability4"	"B26D"
-		"Ability5"	"attribute_bonusx"
+		"Ability5"	"magical_resistance"
 		"Ability6"	"B26T"
 		"Ability7"	"B26_precache"
 		// Armor
 		// ----------------------------------------------------------------
-		"ArmorPhysical"	"7"
-		"MagicalResistance"	"30"
+		"ArmorPhysical"	"0"
+		"MagicalResistance"	"0"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -56,8 +56,8 @@
 		"AttributeIntelligenceGain"	"1.80"		
 		// Bounty
 		// ----------------------------------------------------------------
-		"BountyGoldMin"	"300.0"
-		"BountyGoldMax"	"300.0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
 		// Gold and Lumber
 		// ----------------------------------------------------------------
 		"GoldCost"	"0"
@@ -65,19 +65,20 @@
 		// Movement
 		// ----------------------------------------------------------------
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"	"300"
-		"MovementTurnRate"	"3"
+		"MovementSpeed"	"350"
+
+		"MovementTurnRate"	"360"
 		// Status
 		// ----------------------------------------------------------------
-		"StatusHealth"	"600"
+		"StatusHealth"	"550"
 		"StatusHealthRegen"	"0.25"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0.01"
 		"StatusStartingMana"	"100"
 		// Vision
 		// ----------------------------------------------------------------
-		"VisionDaytimeRange"	"1800"
-		"VisionNighttimeRange"	"800"
+		"VisionDaytimeRange"	"1600"
+		"VisionNighttimeRange"	"1000"
 		// Team
 		// ----------------------------------------------------------------
 		"TeamName"	"DOTA_TEAM_NEUTRALS"

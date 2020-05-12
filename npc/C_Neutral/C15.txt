@@ -24,6 +24,7 @@
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
 
 		"AbilityCastAnimation" "ACT_DOTA_ATTACK"
@@ -32,7 +33,7 @@
 		"AbilityDamage"	"75 150 225 300"
 		// Casting
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilityCastPoint" "0.25" //stun
+		"AbilityCastPoint" "0.3" //stun
 		// Time
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"	"18 15 12 9"
@@ -130,7 +131,7 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.2"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_2"
 		// Time
 		// -------------------------------------------------------------------------------------------------------------
@@ -321,7 +322,7 @@
 		"AbilityType"	"DOTA_ABILITY_TYPE_ULTIMATE"
 		"RequiredLevel"	"6"
 		"LevelsBetweenUpgrades"	"6"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.3"
 		// Time
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"	"140 115 90"
@@ -363,6 +364,19 @@
 		}
 		"Modifiers"
 		{
+			"modifier_C15T_trigger"
+			{
+				"Passive" 			"1"
+				"IsDebuff"			"0"
+				"OnAttackLanded"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C15.lua"
+						"Function"		"C15T_OnAttackLanded"
+					}
+				}
+			}
 			"modifier_C15T"
 			{
 				"EffectName"	"particles/c15t7/c15t7.vpcf"
@@ -436,7 +450,7 @@
 			"03"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"life_duration"	"15"
+				"life_duration"	"10"
 			}
 			"04"
 			{
@@ -661,7 +675,7 @@
 		"AbilityType"	"DOTA_ABILITY_TYPE_ULTIMATE"
 		"RequiredLevel"	"6"
 		"LevelsBetweenUpgrades"	"6"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		// Time
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"	"140 115 90"

@@ -676,7 +676,7 @@
 		"AbilityUnitTargetTeam"		"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitDamageType"		"DAMAGE_TYPE_MAGICAL"
 
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityDamage"		"1000 1300 1600"
 		"AbilityCooldown"	"150 130 110"
 		"AbilityManaCost"	"300 400 500"

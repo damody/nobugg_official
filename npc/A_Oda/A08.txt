@@ -21,12 +21,13 @@
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY" 
 		"AbilityUnitTargetFlags""DOTA_UNIT_TARGET_FLAG_NONE"
-		"AbilityUnitDamageType"	"DAMAGE_TYPE_PURE"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"HotKeyOverride"	"W"
 		// Casting
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"			"200"
-		"AbilityCastPoint"			"0"
+		"AbilityCastPoint"			"0.1"
 		"AbilityCastAnimation"		"ACT_DOTA_ECHO_SLAM"
 		"AnimationPlayBackRate"		"2"
 		// Time
@@ -47,7 +48,7 @@
 			"Damage"
 			{
 				"Target"		"TARGET"
-				"Type"			"DAMAGE_TYPE_PURE"
+				"Type"			"DAMAGE_TYPE_MAGICAL"
 				"Damage"		"%AbilityDamage"
 			}
 			"ApplyModifier"
@@ -95,8 +96,8 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint" "0.25" //stun
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityCastPoint" 				"0.25" //stun
 		"AbilityCooldown"				"20 18 16 14"
 		"AbilityManaCost"				"80 105 130 155"
 		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
@@ -130,8 +131,6 @@
 	}
 	//榊原康政	不屈武勇-------------------------------------------------------------------------------------
 	//增加力量就無法普攻真傷
-	//普攻真傷弄不出來
-	//血量越低 真傷打越痛 弄不出來
 	"A08R"
 	{
 		"BaseClass"	"ability_datadriven"
@@ -139,7 +138,8 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"Modifiers"
 		{
 			"modifier_A08R_passive"
@@ -189,7 +189,6 @@
 		"AbilityTextureName"	"custom/caoren_guishenjianglin"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityType"	"DOTA_ABILITY_TYPE_ULTIMATE"
 		"HotKeyOverride"	"T"
 		"AbilityCooldown"	"100 90 80"
@@ -199,9 +198,15 @@
 		"AbilityManaCost"	"150"
 		"precache"
 		{
-			"particle"	"particles/A08t/A08t.vpcf"
-			"particle"	"particles/A08w2/A08w3.vpcf"
-			"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "%add_defend"
+			"particle"	"particles/a08t/a08t.vpcf"
+		}
+		"OnUpgrade"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A08.lua"
+				"Function"		"A08T_OnUpgrade"
+			}
 		}
 		"OnSpellStart"
 		{
@@ -210,65 +215,40 @@
 				"Target"	"CASTER"
 				"EffectName"	"A08T_old.vo1"
 			}
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A08.lua"
+				"Function"		"A08T"
+			}
 			"ApplyModifier"
 			{
-				"Target"
+	            "Target"
 				{
 				    "Center" "CASTER"
 				    "Flags" "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
 				}
-				"ModifierName"	"modifier_A08T"
+	            "ModifierName"      "modifier_A08T_effect"
+	            "Duration"      "%duration"
 			}
-			"Heal"
+		}
+		"OnOwnerSpawned"
+		{
+			"RunScript"
 			{
-				"Target"        "CASTER"
-				"HealAmount"	"%Bonus_Health"
+				"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A08.lua"
+				"Function"		"A08T_OnOwnerSpawned"
 			}
 		}
 		"Modifiers"
 		{
-			"modifier_A08T"
+			"modifier_A08T_effect"
 			{
+				"IsHidden"	"1"
 				"EffectName" "particles/units/heroes/hero_clinkz/clinkz_strafe.vpcf"
 				"Properties"
-				{					
-					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%Bonus_Health"
+				{				
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%hp_bonus"
 					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"	"100"
-					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"	"0"
-				}
-				"Passive"	"0"
-				"Duration"	"%During"
-				"OnDeath"
-				{
-					"RemoveModifier"
-					{
-						"ModifierName"	"modifier_A08T"
-						"Target" 		"CASTER"
-					}
-				}
-				"OnAttackLanded"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"scripts/vscripts/AON_Cleave.lua"
-						"Function"	"AON_Cleave_A08"
-						"dmg"	"%attack_damage"
-						"Target"	"TARGET"
-					}
-					"CleaveAttack"
-					{
-						"CleavePercent"	"0"
-						"CleaveRadius"	"%radius"
-						"CleaveEffect"	"particles/a07r/a07r.vpcf"
-					}
-				}
-			}
-			"modifier_A08T2"
-			{
-				"Passive"	"1"
-				"Properties"
-				{					
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "%add_defend"
 				}
 			}
 		}
@@ -276,23 +256,18 @@
 		{
 			"01"
 			{
-				"var_type"	"FIELD_INTEGER"
-				"add_defend"	"4 6 8"
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"15 18 21"
 			}
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"Bonus_Health"	"1000 1500 2000"
+				"incoming_damage_percentage" "-15 -25 -35"
 			}
 			"03"
 			{
-				"var_type"	"FIELD_FLOAT"
-				"During"	"15 18 21"
-			}
-			"04"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"radius"	"400"
+				"var_type"	"FIELD_INTEGER"
+				"hp_bonus"	"300 500 700"
 			}
 		}
 	}
@@ -530,11 +505,6 @@
 				    "Flags" "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
 				}
 				"ModifierName"	"modifier_A08T"
-			}
-			"Heal"
-			{
-				"Target"        "CASTER"
-				"HealAmount"	"%Bonus_Health"
 			}
 		}
 		"Modifiers"

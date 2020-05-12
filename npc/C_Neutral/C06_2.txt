@@ -17,13 +17,13 @@
 		"Ability2"	"C06E"
 		"Ability3"	"C06R"
 		"Ability4"	"C06D"
-		"Ability5"	"attribute_bonusx"
+		"Ability5"	"magical_resistance"
 		"Ability6"	"C06T"
 		"Ability7"	"C06_precache"
 		//Armor
 		// --------------------------------------------------------------
-		"ArmorPhysical"	"4"
-		"MagicalResistance"	"30"
+		"ArmorPhysical"	"0"
+		"MagicalResistance"	"0"
 		//Attack
 		// --------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -54,19 +54,19 @@
 		// Movement
 		// --------------------------------------------------------------
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"	"300"
-		"MovementTurnRate"	"1.50"
+		"MovementSpeed"	"350"
+		"MovementTurnRate"	"360"
 		// Status
 		// --------------------------------------------------------------
-		"StatusHealth"	"400"
+		"StatusHealth"	"550"
 		"StatusHealthRegen"	"0.25"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0.01"
 		"StatusStartingMana"	"100"
 		// Vision
 		// --------------------------------------------------------------
-		"VisionDaytimeRange"	"1800"
-		"VisionNighttimeRange"	"800"
+		"VisionDaytimeRange"	"1600"
+		"VisionNighttimeRange"	"1000"
 		// Team
 		// --------------------------------------------------------------
 		"TeamName"	"DOTA_TEAM_NEUTRALS"

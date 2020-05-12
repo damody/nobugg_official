@@ -9,7 +9,7 @@
 	"B06"
 	{
 		"Model"	"models/b06/b06_model.vmdl"
-		"ModelScale"	"1.5"
+		"ModelScale"	"1.3"
 		
 		"SoundSet"	"Hero_Axe"
 		"VoiceFile" "soundevents/voscripts/game_sounds_vo_axe.vsndevts"
@@ -22,22 +22,22 @@
 		"Ability1"	"B06W"
 		"Ability2"	"B06E"
 		"Ability3"	"B06R"
-		"Ability4"	"attribute_bonusx"
-		"Ability5"	"B06T"
-		"Ability6"	"B06_precache"
+		"Ability4"	"magical_resistance"
+		"Ability5"	"B06_precache"
+		"Ability6"	"B06T"
 		"Ability7"	""
 		// Armor
 		// ----------------------------------------------------------------
-		"ArmorPhysical"	"6"
-		"MagicalResistance"	"30"
+		"ArmorPhysical"	"5"
+		"MagicalResistance"	"0"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"	"97.0"
-		"AttackDamageMax"	"115.0"
+		"AttackDamageMin"	"111.0"
+		"AttackDamageMax"	"111.0"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"	"1.80"
-		"AttackAnimationPoint"	"0.33"
+		"AttackAnimationPoint"	"0.25"
 		"AttackAcquisitionRange"	"500"
 		"AttackRange"	"150"
 		"ProjectileSpeed"	"10000"
@@ -52,8 +52,8 @@
 		"AttributeIntelligenceGain"	"2"		
 		// Bounty
 		// ----------------------------------------------------------------
-		"BountyGoldMin"	"300.0"
-		"BountyGoldMax"	"300.0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
 		// Gold and Lumber
 		// ----------------------------------------------------------------
 		"GoldCost"	"0"
@@ -61,19 +61,20 @@
 		// Movement
 		// ----------------------------------------------------------------
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"	"318"
-		"MovementTurnRate"	"1.50"
+		"MovementSpeed"	"350"
+
+		"MovementTurnRate"	"360"
 		// Status
 		// ----------------------------------------------------------------
-		"StatusHealth"	"400"
+		"StatusHealth"	"550"
 		"StatusHealthRegen"	"0.25"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0.01"
 		"StatusStartingMana"	"100"
 		// Vision
 		// ----------------------------------------------------------------
-		"VisionDaytimeRange"	"1800"
-		"VisionNighttimeRange"	"800"
+		"VisionDaytimeRange"	"1600"
+		"VisionNighttimeRange"	"1000"
 		// Team
 		// ----------------------------------------------------------------
 		"TeamName"	"DOTA_TEAM_NEUTRALS"

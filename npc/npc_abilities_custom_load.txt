@@ -18,41 +18,7 @@
 			}
 		}
 	}
-	"halloween_attack"
-	{
-		// General
-		// -------------------------------------------------------------------------------------------------------------
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"bristleback_viscous_nasal_goo"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
-		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitDamageType"	"DAMAGE_TYPE_PURE"
-		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
-		"Modifiers"
-		{
-			"modifier_halloween"
-			{
-				"Passive"	"1"
-				"IsHidden"	"1"
-				"Orb"
-				{
-					"Priority"			"DOTA_ORB_PRIORITY_ABILITY"
-					"ProjectileName"	"particles/halloween.vpcf"
-				}
-				
-				"OnAttackStart"
-				{
-				}
-				
-				"OnAttackLanded"
-				{
-				}
-				
-				"AllowIllusionDuplicate"	"1"
-			}
-		}
-	}
+	
 	// 選16版
 	"choose_16"
 	{
@@ -86,7 +52,7 @@
 		}
 	}
 	//  附近的敵人愈多 受到的傷害愈高
-	"debuff_tower"
+	"buff_tower"
 	{
 		"BaseClass"	"ability_datadriven"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
@@ -103,51 +69,54 @@
 					"RunScript"
 					{
 						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
-						"Function"	"debuff_tower1"
+						"Function"	"debuff_tower"
 					}
 				}
 			}
 			"debuff_tower"
 			{
 				"Passive"	"0"
-				"IsHidden"	"1"
+				"IsHidden"	"0"
+				"IsDebuff"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"	"12"
-					"MODIFIER_PROPERTY_TOTALDAMAGEOUTGOING_PERCENTAGE"	"-10"
+					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"	"70"
 				}
 			}
 		}
 	}
 	//  附近的敵人愈多 受到的傷害愈高
-	"buff_tower"
+	"debuff_tower"
 	{
 		"BaseClass"	"ability_datadriven"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 		"AbilityTextureName"			"custom/icon_128x128_145"
 		"Modifiers"
 		{
-			"modifier_buff_tower"
+
+			"modifier_debuff_tower"
 			{
 				"Passive"	"1"
 				"IsHidden"	"1"
+				//"ThinkInterval"  "1"
+				//"OnIntervalThink"
 				"OnTakeDamage"
 				{
 					"RunScript"
 					{
 						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
-						"Function"	"buff_tower"
+						"Function"	"debuff_tower"
 					}
 				}
 			}
-			"buff_tower"
+			"debuff_tower"
 			{
 				"Passive"	"0"
-				"IsHidden"	"1"
+				"IsHidden"	"0"
+				"IsDebuff"	"1"
 				"Properties"
 				{
-					//"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"20"
-					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"	"-50"
+					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"	"40"
 				}
 			}
 		}
@@ -164,13 +133,15 @@
 			{
 				"Passive"	"1"
 				"IsHidden"	"1"
+				"IsDebuff"	"1"
 				"ThinkInterval"  "2"
 				"OnIntervalThink"
 				{
 					"RunScript"
 					{
 						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
-						"Function"	"debuff_tower2"
+						"Function"		"debuff_tower"
+						//"Function"	"debuff_tower2"
 					}
 				}	
 			}
@@ -212,7 +183,7 @@
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		// Time
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"	"4"
@@ -742,7 +713,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"1"
 
 		"Modifiers"
@@ -776,31 +747,26 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"AbilityCooldown"	"1"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
-		
+		"precache"
+		{
+			"particle"	"particles/robbers_king/robbers_king_buff_attack.vpcf"
+			"particle"	"particles/robbers_king/robbers_king_buff_armor.vpcf"
+			"particle"	"particles/robbers_king/robbers_king_buff_regon.vpcf"
+		}
 		"Modifiers"
 		{
-			"modifier_fly"
-			{
-				"Passive"       "0"
-	            "IsHidden"      "0"
-	            "States"
-	            {
-	            	"MODIFIER_STATE_FLYING"		"MODIFIER_STATE_VALUE_ENABLED"
-	            }
-			}
 			"Passive_robbers_skill"
 			{
 				"Passive"          "1"  
 	            "IsHidden"      "1"
-	            "ThinkInterval"  "1"
-	            "OnIntervalThink"
-	            {
-	            	"RunScript"
+				"OnCreated"
+				{
+					"RunScript"
 					{
 						"ScriptFile"	"items/Addon_Items/tofar_goback.lua"
-						"Function"	"robbers_checkfly"
+						"Function"	"kill_robber"
 					}
-	            }
+				}
 	            "OnDeath"
 				{
 					"RunScript"
@@ -811,6 +777,12 @@
 				}
 				"OnAttackLanded"
 				{
+					"Damage"
+					{
+						"Target"	"TARGET"
+						"Type"	"DAMAGE_TYPE_MAGICAL"
+						"Damage"	"100"
+					}
 					"RunScript"
 					{
 						"ScriptFile"	"scripts/vscripts/AON_Cleave.lua"
@@ -824,6 +796,60 @@
 						"CleaveEffect"	"particles/a07r/a07r.vpcf"
 					}
 				}
+				"ThinkInterval"     "0.25"
+	            "OnIntervalThink"
+	            {
+	                "ApplyModifier"
+	                {
+	                    "Target"
+	                    {
+	                        "Center"    "CASTER"
+	                        "Radius"    "750"
+	                        "Teams" "DOTA_UNIT_TARGET_TEAM_ENEMY"
+	                        "Types" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
+	                        "Flags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+	                    }
+	                    "ModifierName"      "modifier_truesight"
+	                    "Duration"      "0.50"
+	                }
+	            }
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"250"
+				}
+			}
+			"modifier_robbers_king_attack_buff"
+			{
+				"IsBuff" "1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE" "20"
+					"MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE" "25"
+				}
+				"EffectName"	"particles/robbers_king/robbers_king_buff_attack.vpcf"
+				"EffectAttachType"	"follow_origin"
+			}
+			"modifier_robbers_king_armor_buff"
+			{
+				"IsBuff" "1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "10"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS" "25"
+				}
+				"EffectName"	"particles/robbers_king/robbers_king_buff_armor.vpcf"
+				"EffectAttachType"	"follow_origin"
+			}
+			"modifier_robbers_king_regen_buff"
+			{
+				"IsBuff" "1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE" "3"
+					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT" "10"
+				}
+				"EffectName"	"particles/robbers_king/robbers_king_buff_regen.vpcf"
+				"EffectAttachType"	"follow_origin"
 			}
 		}
 	}
@@ -840,40 +866,29 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"AbilityCooldown"	"1"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
-
-		
 		"Modifiers"
 		{
-			"modifier_invulnerable_souls"
-			{
-				"Passive"          "1"
-	            "IsHidden"      "0"
-	            "Duration"		"1"
-				"States"
-				{
-					"MODIFIER_STATE_INVULNERABLE"		"MODIFIER_STATE_VALUE_ENABLED"
-				}
-			}
-			"modifier_warrior_souls_debuff"
-			{
-				"Passive"          "0"
-	            "IsHidden"      "0"
-	            "Properties"
-				{
-					"MODIFIER_PROPERTY_MISS_PERCENTAGE" "50"
-				}
-			}
 			"Passive_warrior_souls_skill"
 			{
-				"Passive"          "1"  
+				"Passive"       "1" 
 	            "IsHidden"      "0"
-
-	            "Aura"          	"modifier_warrior_souls_debuff"
-	            "Aura_Radius"   	"600"
-	            "Aura_Teams"    	"DOTA_UNIT_TARGET_TEAM_ENEMY"
-	            "Aura_Types"    	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-	            "Aura_Flags"    	"DOTA_UNIT_TARGET_FLAG_NONE"
-	            
+				"ThinkInterval"  "1"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"items/Addon_Items/tofar_goback.lua"
+						"Function"	"kill_warrior_souls_when_start"
+					}
+				}
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"items/Addon_Items/tofar_goback.lua"
+						"Function"	"warrior_souls_debuff_OnIntervalThink"
+					}
+				}
 	            "OnDeath"
 				{
 					"RunScript"
@@ -884,26 +899,90 @@
 				}
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_INCOMING_PHYSICAL_DAMAGE_PERCENTAGE" "-50"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"300"
 				}
-				"OnAttackLanded"
+			}
+			"modifier_show_invisible"
+			{
+				"Passive"	"1"
+				"ThinkInterval"     "0.25"
+	            "OnIntervalThink"
+	            {
+	                "ApplyModifier"
+	                {
+	                    "Target"
+	                    {
+	                        "Center"    "CASTER"
+	                        "Radius"    "750"
+	                        "Teams" "DOTA_UNIT_TARGET_TEAM_ENEMY"
+	                        "Types" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
+	                        "Flags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+	                    }
+	                    "ModifierName"      "modifier_truesight"
+	                    "Duration"      "0.50"
+	                }
+	            }
+			}
+			"modifier_warrior_souls_debuff"
+			{
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "-1"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS" "-1"
+				}
+			}
+		}
+	}
+	"warrior_souls_buff_skill"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"custom/liubei_hujia"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"precache"
+		{
+			"particle" 	"particles/warrior_soul/warrior_soul.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_search_unit"
+			{
+				"Passive" "1"
+				"ThinkInterval"  "5"
+				"OnCreated"
 				{
 					"RunScript"
 					{
 						"ScriptFile"	"items/Addon_Items/tofar_goback.lua"
-						"Function"	"warrior_souls_OnAttackLanded"
-						"dmg"	"%attack_damage"
+						"Function"	"warrior_soul_buff_OnIntervalThink"
 					}
 				}
-				"ThinkInterval"  "1"
 				"OnIntervalThink"
 				{
 					"RunScript"
 					{
 						"ScriptFile"	"items/Addon_Items/tofar_goback.lua"
-						"Function"	"donkey_back"
+						"Function"	"warrior_soul_buff_OnIntervalThink"
 					}
 				}
+			}
+			"modifeir_warrior_souls_buff"
+			{
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE" "30" 	//攻擊百分比
+					"MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE" "30"  //技能傷害百分比
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "20" //攻速
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_UNIQUE" "10" //跑速
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS" "15" //抗魔
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "10" //防禦
+				}
+				"IsBuff"	"1"
+				"EffectName"		"particles/warrior_soul/warrior_soul.vpcf"
+				"EffectAttachType"	"follow_origin"
 			}
 		}
 	}
@@ -923,7 +1002,7 @@
 		"AbilityCastRange"	"50000"
 		"AbilityManaCost"	"0"
 		"AbilityGoldCost"	"150"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"OnAbilityPhaseStart"
 		{
 			"RunScript"
@@ -956,7 +1035,7 @@
 		"AbilityCastRange"	"50000"
 		"AbilityManaCost"	"0"
 		"AbilityGoldCost"	"150"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"Modifiers"
 		{
 			"modifier_update_buy_ninja1"
@@ -970,7 +1049,7 @@
 					"RunScript"
 					{
 						"ScriptFile"	"items/Addon_Items/tofar_goback.lua"
-						"Function"	"update_buy_ninja1"
+						"Function"	"update_ninja1"
 					}
 				}
 			}
@@ -991,7 +1070,7 @@
 		"AbilityCastRange"	"50000"
 		"AbilityManaCost"	"0"
 		"AbilityGoldCost"	"150"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"Modifiers"
 		{
 			"modifier_update_buy_ninja3"
@@ -1026,7 +1105,7 @@
 		"AbilityCastRange"	"50000"
 		"AbilityManaCost"	"0"
 		"AbilityGoldCost"	"300"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 
 		"OnSpellStart"
 		{
@@ -1050,7 +1129,7 @@
 		"AbilityCooldown"	"0.1"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityManaCost"	"0"
 		"AbilityGoldCost"	"900"
 		"OnAbilityPhaseStart"
@@ -1080,7 +1159,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"60"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
@@ -1129,7 +1208,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"60"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
@@ -1262,13 +1341,18 @@
 			{
 				"Passive"	"1"
 				"IsHidden"	"1"
-				"ThinkInterval"  "15"
+				"ThinkInterval"  "9"
 				"OnIntervalThink"
 				{
 					"RunScript"
 					{
 						"ScriptFile"	"items/Addon_Items/tofar_goback.lua"
 						"Function"	"patrol_Unified"
+					}
+					"RunScript"
+					{
+						"ScriptFile"	"items/Addon_Items/tofar_goback.lua"
+						"Function"	"reset_pos"
 					}
 				}
 			}
@@ -1285,13 +1369,18 @@
 			{
 				"Passive"	"1"
 				"IsHidden"	"1"
-				"ThinkInterval"  "15"
+				"ThinkInterval"  "9"
 				"OnIntervalThink"
 				{
 					"RunScript"
 					{
 						"ScriptFile"	"items/Addon_Items/tofar_goback.lua"
 						"Function"	"patrol_Nobu"
+					}
+					"RunScript"
+					{
+						"ScriptFile"	"items/Addon_Items/tofar_goback.lua"
+						"Function"	"reset_pos"
 					}
 				}
 			}
@@ -1319,7 +1408,16 @@
 			}
 		}
 	}
-
+	//小兵被箭塔打只有25%傷害
+	"unit_armor"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"Modifiers"
+		{
+			//modifier 在dummy.lua裡 由chubing.lua加上去
+		}
+	}
 	//鐵炮兵打英雄小兵兩倍痛
 	"gunner_attack"
 	{
@@ -1403,49 +1501,89 @@
 			}
 		}
 	}
+
+	//馬跑速
+	"courier_speed"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"custom/icon_128x128_64"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Modifiers"
+		{
+			"modifier_courier_speed"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"IsPurgable"	"0"
+				"AllowIllusionDuplicate"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MOVESPEED_ABSOLUTE"		"550"
+				}
+				"States"
+				{
+					"MODIFIER_STATE_MUTED"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
+			}
+		}
+	}
+
 	//箭塔打英雄額外50% 物傷
 	"tower_attack"
 	{
 		"BaseClass"	"ability_datadriven"
 		"AbilityTextureName"	"custom/icon_128x128_64"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_ATTACK"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_ATTACK | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 		"Modifiers"
 		{
 			"modifier_archer_attack"
 			{
 				"Passive"	"1"
+				"IsHidden"	"1"
+				"OnAttackStart"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"Tower_attack"
+					}
+				}
 				"OnAttackLanded"
 				{
 					"RunScript"
 					{
-						"dmg"	"%attack_damage"
-						"ScriptFile"	"scripts/vscripts/heroes/B_Unified/B01.lua"
-						"Function"	"B01R4"
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"Tower_attack_landed"
+					}
+				}
+				"OnAttackFail"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"Tower_attack_landed"
 					}
 				}
 			}
 		}
 		"AbilitySpecial"
 		{
-			"01"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"atk_hero"	"50"
-			}
-			"02"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"atk_building"	"0"
-			}
-			"03"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"atk_unit"	"0"
-			}
+
 		}
 	}
 
-	//弓手打建築物兩倍痛
+	//塔被小兵打75%減傷
+	"tower_armor"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"Modifiers"
+		{
+			//modifier 在dummy.lua裡 由chubing.lua加上去
+		}
+	}
+
+	//弓手打小兵增傷
 	"archer_attack"
 	{
 		"BaseClass"	"ability_datadriven"
@@ -1477,12 +1615,12 @@
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_building"	"100"
+				"atk_building"	"0"
 			}
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_unit"	"0"
+				"atk_unit"	"50"
 			}
 		}
 	}
@@ -1681,7 +1819,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"60"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
@@ -1707,7 +1845,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"30"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
@@ -1732,7 +1870,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"30"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
@@ -1757,7 +1895,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"30"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
@@ -1818,7 +1956,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"60"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
@@ -1843,7 +1981,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"30"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
@@ -1868,7 +2006,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"30"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
@@ -1893,7 +2031,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"30"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
@@ -1907,6 +2045,16 @@
 				"Function"	"soldier_Unified_bottom"
 			}
 		}
+	}
+	"to_archer_da"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"greevil_purification"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 	}
 	// 變身為織田叫弓箭手
 	"to_archer_Oda"
@@ -1954,7 +2102,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"30"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
@@ -1979,7 +2127,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"30"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
@@ -2004,7 +2152,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"30"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
@@ -2019,7 +2167,7 @@
 			}
 		}
 	}
-	// 變身為織田叫弓箭手
+	// 變身為聯合叫弓箭手
 	"to_archer_Unified"
 	{
 		"BaseClass"	"ability_datadriven"
@@ -2065,7 +2213,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"30"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
@@ -2090,7 +2238,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"30"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
@@ -2115,7 +2263,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"30"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
@@ -2177,7 +2325,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"30"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
@@ -2202,7 +2350,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"30"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
@@ -2227,7 +2375,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"30"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
@@ -2288,7 +2436,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"30"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
@@ -2313,7 +2461,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"30"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
@@ -2338,7 +2486,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"30"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
@@ -2400,7 +2548,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"30"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
@@ -2425,7 +2573,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"30"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
@@ -2450,7 +2598,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"30"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
@@ -2512,7 +2660,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"30"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
@@ -2537,7 +2685,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"30"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
@@ -2562,7 +2710,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"30"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
@@ -2574,6 +2722,41 @@
 			{
 				"ScriptFile"	"scripts/vscripts/computer_system/chubing.lua"
 				"Function"	"cavalry_Unified_bottom"
+			}
+		}
+	}
+	// 確認侍大將活著
+	"check_general_live"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"greevil_purification"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+
+		"Modifiers"
+		{
+			"check_Oda_general_live"
+			{
+				"Passive"	"1"
+				"ThinkInterval"	"0.5"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"items/Addon_Items/war_magic.lua"
+						"Function"	"check_general_live"
+					}
+				}
+			}
+			"modifier_invulnerable"
+			{
+				"States"
+				{
+					"MODIFIER_STATE_INVULNERABLE"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
 			}
 		}
 	}
@@ -2670,7 +2853,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"100"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityManaCost"	"100"
@@ -2692,21 +2875,84 @@
 			}
 		}
 	}
+	// 加速
+	"speed_up"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"custom/icon_128x128_47"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"Modifiers"
+		{
+			"modifier_speed_up_interval"
+			{
+				"Passive"			"1"
+				"IsHidden"			"0"
+				"IsDebuff"			"0"
+				"ThinkInterval"	"0.25"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"		"def_home"
+					}
+				}
+			}
+			"modifier_speed_up"
+			{
+				"IsBuff"	"1"
+				"Duration"	"8"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MOVESPEED_ABSOLUTE"		"600"
+				}
+				"OnAttackStart"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"		"remove_def_home"
+					}
+				}
+				"OnAbilityExecuted"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"		"remove_def_home"
+					}
+				}
+				"OnTakeDamage"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"		"remove_def_home"
+					}
+				}
+			}
+		}
+	}
+
 	// 召集戰法
 	"war_magic_gohome"
 	{
 		"BaseClass"	"ability_datadriven"
 		"AbilityTextureName"	"custom/icon_128x128_47"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
-		"AbilityCooldown"	"60"
+		"AbilityCastPoint"          				"0.35"
+		"AbilityCooldown"	"1"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
-		"AbilityManaCost"	"20"
+		"AbilityManaCost"	"0"
 
 		"OnSpellStart"
 		{
@@ -2750,11 +2996,11 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
-		"AbilityCooldown"	"60"
+		"AbilityCastPoint"          				"0.35"
+		"AbilityCooldown"	"300"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
-		"AbilityManaCost"	"20"
+		"AbilityManaCost"	"0"
 		"AOERadius"		"1200"
 
 		"OnSpellStart"
@@ -2784,12 +3030,12 @@
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
-		"AbilityCooldown"	"10"
+		"AbilityCastPoint"          				"0.35"
+		"AbilityCooldown"	"180"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"50000"
-		"AbilityManaCost"	"10"
-		"AOERadius"	"500"
+		"AbilityManaCost"	"0"
+		"AOERadius"	"1000"
 
 		"OnSpellStart"
 		{
@@ -2808,31 +3054,6 @@
 			}
 		}
 	}
-	// 砍樹戰法
-	"war_magic_treecut"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"custom/icon_128x128_113"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
-		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
-		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
-		"AbilityCooldown"	"10"
-		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
-		"AbilityManaCost"	"0"
-		"AOERadius"	"300"
-		"OnSpellStart"
-		{
-			"RunScript"
-			{
-				"ScriptFile"	"items/Addon_Items/war_magic.lua"
-				"Function"	"treecut"
-				"Target"	"POINT"
-			}
-		}
-	}
 	// 神速戰法
 	"war_magic_speedup"
 	{
@@ -2842,11 +3063,11 @@
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 
-		"AbilityCooldown"	"60"
+		"AbilityCooldown"	"180"
 		"MaxLevel"	"3"
 		"RequiredLevel"	"6"
 		"LevelsBetweenUpgrades"	"6"
-		"AbilityManaCost"	"20"
+		"AbilityManaCost"	"0"
 		"OnSpellStart"
 		{
 			"RunScript"
@@ -2870,9 +3091,9 @@
 				"EffectAttachType"	"follow_overhead"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"10"
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"20"
 				}
-				"Duration"	"10"
+				"Duration"	"5"
 				"TextureName"	"icon_128x128_54"
 			}
 		}
@@ -2886,12 +3107,12 @@
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 
-		"AbilityCooldown"	"60"
+		"AbilityCooldown"	"180"
 		"MaxLevel"	"3"
 		"RequiredLevel"	"6"
 		"LevelsBetweenUpgrades"	"6"
-		"AbilityManaCost"	"25"
-		"AOERadius"		"400"
+		"AbilityManaCost"	"0"
+		"AOERadius"		"500"
 		"OnSpellStart"
 		{
 			"RunScript"
@@ -2914,13 +3135,12 @@
 			{
 				"IsPurgable"	"1"
 				"IsDebuff"		"1"
-				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"EffectName"	"particles/generic_gameplay/move_slow_2.vpcf"
 				"EffectAttachType"	"follow_overhead"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"-10"
-					"MODIFIER_PROPERTY_MISS_PERCENTAGE"		"5"
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"-30"
+					"MODIFIER_PROPERTY_MISS_PERCENTAGE"		"15"
 				}
 				"TextureName"	"icon_128x128_100"
 			}
@@ -2935,11 +3155,11 @@
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 
-		"AbilityCooldown"	"60"
+		"AbilityCooldown"	"300"
 		"MaxLevel"	"3"
 		"RequiredLevel"	"6"
 		"LevelsBetweenUpgrades"	"6"
-		"AbilityManaCost"	"30"
+		"AbilityManaCost"	"0"
 		"OnSpellStart"
 		{
 			"RunScript"
@@ -2965,7 +3185,7 @@
 				"EffectAttachType"	"follow_overhead"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE"	"-30"
+					"MODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE"	"-50"
 				}
 				"Duration"	"10"
 				"TextureName"	"icon_128x128_130"
@@ -2981,11 +3201,11 @@
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 
-		"AbilityCooldown"	"60"
+		"AbilityCooldown"	"300"
 		"MaxLevel"	"3"
 		"RequiredLevel"	"6"
 		"LevelsBetweenUpgrades"	"6"
-		"AbilityManaCost"	"30"
+		"AbilityManaCost"	"0"
 		"OnSpellStart"
 		{
 			"RunScript"
@@ -3011,7 +3231,7 @@
 					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "30" //攻速
 				}
 				"Passive"	"0"
-				"Duration"	"10"
+				"Duration"	"5"
 				"EffectName"	"particles/item/d03/d03.vpcf"
 				"EffectAttachType"	"follow_overhead"
 			}
@@ -3026,11 +3246,11 @@
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 
-		"AbilityCooldown"	"60"
+		"AbilityCooldown"	"300"
 		"MaxLevel"	"3"
 		"RequiredLevel"	"6"
 		"LevelsBetweenUpgrades"	"6"
-		"AbilityManaCost"	"20"
+		"AbilityManaCost"	"0"
 		"OnSpellStart"
 		{
 			"RunScript"
@@ -3052,10 +3272,10 @@
 			{
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT" "40"	//回血
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT" "80"	//回血
 				}
 				"Passive"	"0"
-				"Duration"	"20"
+				"Duration"	"10"
 				"EffectName"	"particles/econ/courier/courier_onibi/courier_onibi_green_ambient_c.vpcf"
 				"EffectAttachType"	"follow_overhead"
 			}
@@ -3071,7 +3291,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"10 8 6 4"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"600"
@@ -3203,7 +3423,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"600"
 		"AbilityManaCost"	"100"
@@ -3324,7 +3544,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"600"
 		"AbilityManaCost"	"100"
@@ -3445,7 +3665,7 @@
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		// Time
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"	"10"
@@ -3530,431 +3750,57 @@
 		}
 		"AbilityDamage"	"200 350 500 700"
 	}
-	// 屬性附加 黃十字
+	"magical_resistance"
+	{
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	""
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"MaxLevel"	"1"
+		"LevelsBetweenUpgrades"	"0"
+		"AbilityCooldown"	"0"
+		"Modifiers"
+		{
+			"modifier_magical_resistance"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"ThinkInterval"	"0.2"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"		"magical_resistance"
+					}
+				}
+			}
+		}
+	}
+	// 屬性附加 黃十字 砍樹
 	"attribute_bonusx"
 	{
 		// General
 		// -------------------------------------------------------------------------------------------------------------
 		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"custom/icon_128x128_142"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_TOGGLE"
-		"MaxLevel"	"7"
-		"HotKeyOverride"	"F"
+		"AbilityTextureName"	""
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"MaxLevel"	"1"
 		"LevelsBetweenUpgrades"	"0"
-		"AbilityCooldown"	"6"
-		"precache"
-		{
-			"particle" "particles/focus/lv1_1.vpcf"
-    		"particle" "particles/focus/lv1_2.vpcf"
-    		"particle" "particles/focus/lv1_3.vpcf"
-    		"particle" "particles/focus/lv2_1.vpcf"
-    		"particle" "particles/focus/lv2_2.vpcf"
-    		"particle" "particles/focus/lv2_3.vpcf"
-    		"particle" "particles/focus/lv2_4.vpcf"
-    		"particle" "particles/focus/lv3_1.vpcf"
-    		"particle" "particles/focus/lv3_2.vpcf"
-    		"particle" "particles/focus/lv3_3.vpcf"
-    		"particle" "particles/focus/lv3_4.vpcf"
-    		"particle" "particles/focus/lv4_1.vpcf"
-    		"particle" "particles/focus/lv4_2.vpcf"
-    		"particle" "particles/focus/lv4_3.vpcf"
-    		"particle" "particles/focus/lv4_4.vpcf"
-		}
-		"OnToggleOn"
-		{
-			"RunScript"
-			{
-				"ScriptFile"	"scripts/vscripts/heroes/attribute_bonus.lua"
-				"Function"	"show_lv"
-			}
-			"ApplyModifier"
-			{
-				"Target"
-				{
-				    "Center" "CASTER"
-				    "Flags" "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
-				}
-				"ModifierName"	"modifier_bonusx_locker"
-			}
-		}
-		"OnUpgrade"
-		{
-			"RunScript"
-			{
-				"ScriptFile"	"scripts/vscripts/heroes/attribute_bonus.lua"
-				"Function"	"attribute_bonus"
-			}
-		}
+		"AbilityCooldown"	"0"
 		"Modifiers"
 		{
-			// 暫時鎖住此技能
-			"modifier_bonusx_locker"
+			"modifier_magical_resistance"
 			{
-				"Duration" "6"
-				"OnCreated"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"scripts/vscripts/heroes/attribute_bonus.lua"
-						"Function"		"bonusx_lock"
-					}
-				}
-				"OnDestroy"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"scripts/vscripts/heroes/attribute_bonus.lua"
-						"Function"		"bonusx_unlock"
-					}
-				}
-			}
-			"modifier_lv1_1"
-			{
-				"Passive"			"0"
-				"IsHidden"			"1"
-				"Duration"			"1.67"
-				"OnCreated"
+				"Passive"	"1"
+				"ThinkInterval"	"0.5"
+				"OnIntervalThink"
 				{
 					"RunScript"
 					{
 						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
-						"Function"	"showTitle"
-						"title"	"particles/focus/lv1_1.vpcf"
-					}
-				}	
-				"OnDestroy"
-				{
-					"ApplyModifier"
-					{
-						"ModifierName"	"modifier_lv1_2"
-						"Target" 		"CASTER"
-					}
-				}
-			}
-			"modifier_lv1_2"
-			{
-				"Passive"			"0"
-				"IsHidden"			"1"
-				"Duration"			"1.67"
-				"OnCreated"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
-						"Function"	"showTitle"
-						"title"	"particles/focus/lv1_2.vpcf"
-					}
-				}
-				"OnDestroy"
-				{
-					"ApplyModifier"
-					{
-						"ModifierName"	"modifier_lv1_3"
-						"Target" 		"CASTER"
-					}
-				}
-			}
-			"modifier_lv1_3"
-			{
-				"Passive"			"0"
-				"IsHidden"			"1"
-				"Duration"			"1.67"
-				"OnCreated"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
-						"Function"	"showTitle"
-						"title"	"particles/focus/lv1_3.vpcf"
-					}
-				}
-				"OnDestroy"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
-						"Function"	"removeAbility"
-						"title"	"show_lv1"
-					}
-				}
-			}
-
-			"modifier_lv2_1"
-			{
-				"Passive"			"0"
-				"IsHidden"			"1"
-				"Duration"			"1.58"
-				"OnCreated"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
-						"Function"	"showTitle"
-						"title"	"particles/focus/lv2_1.vpcf"
-					}
-				}	
-				"OnDestroy"
-				{
-					"ApplyModifier"
-					{
-						"ModifierName"	"modifier_lv2_2"
-						"Target" 		"CASTER"
-					}
-				}
-			}
-			"modifier_lv2_2"
-			{
-				"Passive"			"0"
-				"IsHidden"			"1"
-				"Duration"			"1.06"
-				"OnCreated"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
-						"Function"	"showTitle"
-						"title"	"particles/focus/lv2_2.vpcf"
-					}
-				}
-				"OnDestroy"
-				{
-					"ApplyModifier"
-					{
-						"ModifierName"	"modifier_lv2_3"
-						"Target" 		"CASTER"
-					}
-				}
-			}
-			"modifier_lv2_3"
-			{
-				"Passive"			"0"
-				"IsHidden"			"1"
-				"Duration"			"0.99"
-				"OnCreated"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
-						"Function"	"showTitle"
-						"title"	"particles/focus/lv2_3.vpcf"
-					}
-				}
-				"OnDestroy"
-				{
-					"ApplyModifier"
-					{
-						"ModifierName"	"modifier_lv2_4"
-						"Target" 		"CASTER"
-					}
-				}
-			}
-			"modifier_lv2_4"
-			{
-				"Passive"			"0"
-				"IsHidden"			"1"
-				"Duration"			"1.32"
-				"OnCreated"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
-						"Function"	"showTitle"
-						"title"	"particles/focus/lv2_4.vpcf"
-					}
-				}
-				"OnDestroy"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
-						"Function"	"removeAbility"
-						"title"	"show_lv1"
-					}
-				}
-			}
-			"modifier_lv3_1"
-			{
-				"Passive"			"0"
-				"IsHidden"			"1"
-				"Duration"			"1.58"
-				"OnCreated"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
-						"Function"	"showTitle"
-						"title"	"particles/focus/lv3_1.vpcf"
-					}
-				}	
-				"OnDestroy"
-				{
-					"ApplyModifier"
-					{
-						"ModifierName"	"modifier_lv3_2"
-						"Target" 		"CASTER"
-					}
-				}
-			}
-			"modifier_lv3_2"
-			{
-				"Passive"			"0"
-				"IsHidden"			"1"
-				"Duration"			"1.06"
-				"OnCreated"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
-						"Function"	"showTitle"
-						"title"	"particles/focus/lv3_2.vpcf"
-					}
-				}
-				"OnDestroy"
-				{
-					"ApplyModifier"
-					{
-						"ModifierName"	"modifier_lv3_3"
-						"Target" 		"CASTER"
-					}
-				}
-			}
-			"modifier_lv3_3"
-			{
-				"Passive"			"0"
-				"IsHidden"			"1"
-				"Duration"			"0.99"
-				"OnCreated"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
-						"Function"	"showTitle"
-						"title"	"particles/focus/lv3_3.vpcf"
-					}
-				}
-				"OnDestroy"
-				{
-					"ApplyModifier"
-					{
-						"ModifierName"	"modifier_lv3_4"
-						"Target" 		"CASTER"
-					}
-				}
-			}
-			"modifier_lv3_4"
-			{
-				"Passive"			"0"
-				"IsHidden"			"1"
-				"Duration"			"1.32"
-				"OnCreated"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
-						"Function"	"showTitle"
-						"title"	"particles/focus/lv3_4.vpcf"
-					}
-				}
-				"OnDestroy"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
-						"Function"	"removeAbility"
-						"title"	"show_lv1"
-					}
-				}
-			}
-			"modifier_lv4_1"
-			{
-				"Passive"			"0"
-				"IsHidden"			"1"
-				"Duration"			"1.58"
-				"OnCreated"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
-						"Function"	"showTitle"
-						"title"	"particles/focus/lv4_1.vpcf"
-					}
-				}	
-				"OnDestroy"
-				{
-					"ApplyModifier"
-					{
-						"ModifierName"	"modifier_lv4_2"
-						"Target" 		"CASTER"
-					}
-				}
-			}
-			"modifier_lv4_2"
-			{
-				"Passive"			"0"
-				"IsHidden"			"1"
-				"Duration"			"1.06"
-				"OnCreated"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
-						"Function"	"showTitle"
-						"title"	"particles/focus/lv4_2.vpcf"
-					}
-				}
-				"OnDestroy"
-				{
-					"ApplyModifier"
-					{
-						"ModifierName"	"modifier_lv4_3"
-						"Target" 		"CASTER"
-					}
-				}
-			}
-			"modifier_lv4_3"
-			{
-				"Passive"			"0"
-				"IsHidden"			"1"
-				"Duration"			"0.99"
-				"OnCreated"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
-						"Function"	"showTitle"
-						"title"	"particles/focus/lv4_3.vpcf"
-					}
-				}
-				"OnDestroy"
-				{
-					"ApplyModifier"
-					{
-						"ModifierName"	"modifier_lv4_4"
-						"Target" 		"CASTER"
-					}
-				}
-			}
-			"modifier_lv4_4"
-			{
-				"Passive"			"0"
-				"IsHidden"			"1"
-				"Duration"			"1.32"
-				"OnCreated"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
-						"Function"	"showTitle"
-						"title"	"particles/focus/lv4_4.vpcf"
-					}
-				}
-				"OnDestroy"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
-						"Function"	"removeAbility"
-						"title"	"show_lv1"
+						"Function"		"magical_resistance"
 					}
 				}
 			}
@@ -3969,7 +3815,7 @@
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_BOTH"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"8"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"600"
@@ -4031,7 +3877,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"regen"	"40 80 120"
+				"regen"	"40 50 60"
 			}
 			"02"
 			{
@@ -4430,6 +4276,27 @@
 		}
 	}
 
+	"B33T_movespeed"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"custom/icon_128x128_64"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Modifiers"
+		{
+			"modifier_courier_speed"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"IsPurgable"	"0"
+				"AllowIllusionDuplicate"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MOVESPEED_ABSOLUTE"		"2000"
+				}
+			}
+		}
+	}
+
 	"for_no_hp_bar"
 	{
 		"BaseClass"	"ability_datadriven"
@@ -4512,15 +4379,6 @@
 		}
 		"Modifiers"
 		{
-			"modifier_1300Attack"
-			{
-				"Passive"	"0"
-				"Properties"
-				{
-					//"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "-250"
-				    //"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE" "-25" 
-				}
-			}
 			"modifier_1300"
 			{
 				"Passive"	"1"
@@ -4533,26 +4391,9 @@
 						"Function"	"A17T"
 					}
 				}
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_BONUS_NIGHT_VISION"	"%night_sight"
-					"MODIFIER_PROPERTY_ATTACK_RANGE_BONUS"	"%attack_range_bonus"
-					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"%move_speed_bonus"
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%attack_speed_bonus"
-					"MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE"	"%attack_bonus"
-				}
 				"States"
 				{
 					"MODIFIER_STATE_CANNOT_MISS"		"MODIFIER_STATE_VALUE_ENABLED"
-				}
-				"OnAttackLanded"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A17.lua"
-						"Function"	"A1300_Succes_Attack"
-						"dmg"	"%attack_damage"
-					}
 				}
 				"ThinkInterval"     "0.25"
 	            "OnIntervalThink"
@@ -4645,7 +4486,7 @@
 		// 如果你想让某个技能玩家不能用技能点来学习，就给那个技能加上这个属性
 		// DOTA_ABILITY_BEHAVIOR_PASSIVE ， 被动技能
 		// DOTA_ABILITY_BEHAVIOR_POINT ，点目标技能
-		// DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES ，被定身（拥有modifier_rooted）后无法使用这个技能，例如女王敌法的Blink
+		// DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES ，被定身（拥有nobu_modifier_rooted）后无法使用这个技能，例如女王敌法的Blink
 		// DOTA_ABILITY_BEHAVIOR_RUNE_TARGET ，以神符为目标，小小的投掷
 		// DOTA_ABILITY_BEHAVIOR_TOGGLE ，使用一次后激活，再使用一次后取消的技能，例如巫医的恢复术，IO的过载
 		// DOTA_ABILITY_BEHAVIOR_UNIT_TARGET ，单位目标技能
@@ -5012,7 +4853,7 @@
 			
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE" "1"	//回血
+					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE" "2"	//回血
 				}
 			}
 		}
@@ -5087,7 +4928,7 @@
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"	"1500"
-					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE" "1500"	//跑速
+					"MODIFIER_PROPERTY_MOVESPEED_ABSOLUTE"		"1500"
 				}
 			}
 		}
@@ -5103,15 +4944,95 @@
 			"modifier_for_move500"
 			{
 				"Passive"	"1"
-				"IsHidden"	"1"
+				"IsHidden"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT" "500"	//跑速
+					"MODIFIER_PROPERTY_MOVESPEED_ABSOLUTE" "500"	//跑速
 				}
 			}
 		}
 	}
-
+	// 馬物理無效
+	"courier_physical_immune"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"Modifiers"
+		{
+			"modifier_courier_physical_immune_aura"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+				"IsDebuff"			"0"
+				"Aura"	"modifier_courier_physical_immune"
+				"Aura_Radius"	"1200"
+				"Aura_Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+				"Aura_Types"	"DOTA_UNIT_TARGET_ALL"
+				"Aura_ApplyToCaster"	"0"
+			}
+			"modifier_courier_physical_immune"
+			{
+				"IsHidden"	"1"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"courier_damage_immune_OnCreated"
+						"dmg"	"%attack_damage"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"courier_damage_immune_OnDestroy"
+						"dmg"	"%attack_damage"
+					}
+				}
+			}
+			"modifier_courier_physical_immune2"
+			{
+				"IsHidden"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"	"-100"
+				}
+			}
+		}
+	}
+	// 雜賀眾被動
+	"passive_b01w_unit"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"Modifiers"
+		{
+			"modifier_b01w_unit"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"ThinkInterval"	"0.1"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"passive_b01w_unit"
+					}
+				}
+			}
+			"modifier_b01w_unit_weak"
+			{
+				"IsHidden"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"-90"
+				}
+			}
+		}
+	}
 	// 無碰撞
 	"for_no_collision"
 	{
@@ -5122,7 +5043,7 @@
 			"modifier_for_no_collision"
 			{
 				"Passive"	"1"
-				"IsHidden"	"0"
+				"IsHidden"	"1"
 				"States"
 				{
 					"MODIFIER_STATE_NO_UNIT_COLLISION" "MODIFIER_STATE_VALUE_ENABLED"
@@ -5150,61 +5071,6 @@
 			}
 		}
 	}
-
-	// 守護家園
-	"for_move300"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
-		"Modifiers"
-		{
-			"modifier_for_move300x"
-			{
-				"Passive"			"1"
-				"IsHidden"			"0"
-				"IsDebuff"			"0"
-				"Duration"		"600"
-				"ThinkInterval"	"0.5"
-
-				"OnIntervalThink"
-				{
-					"RunScript"
-					{
-						"Target"	"CASTER"
-						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
-						"Function"	"for_move300"
-					}
-				}
-			}
-			"modifier_nodmg_courier"
-			{
-				"Passive"			"1"
-				"IsHidden"			"0"
-				"IsDebuff"			"0"
-				"ThinkInterval"	"0.5"
-
-				"OnIntervalThink"
-				{
-					"RunScript"
-					{
-						"Target"	"CASTER"
-						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
-						"Function"	"nodmg_courier"
-					}
-				}
-			}
-			"modifier_for_move300"
-			{
-				"Passive"	"0"
-				"IsHidden"	"0"
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT" "300"	//跑速
-				}
-			}
-		}
-	}
-
 	// 英雄記錄傷害用
 	"for_record"
 	{
@@ -5266,7 +5132,38 @@
 			}
 		}
 	}
-
+	// 打CP回血
+	"cp_recover"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"Modifiers"
+		{
+			"modifier_cp_recover"
+			{
+				"Passive"			"1"
+				"IsHidden"			"0"
+				"IsDebuff"			"0"
+				"ThinkInterval"	"1"
+				"OnDeath"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"CP_recover"
+					}
+				}
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"recover"			"35"
+			}
+		}
+	}
 	// 上路爆了
 	"for_top_broken"
 	{
@@ -5608,223 +5505,284 @@
 			}
 		}
 	}
-
-	// 正面面狀態1等
-	"buff_1"
+	"hoarding_gold"
 	{
 		"BaseClass"	"ability_datadriven"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
-		"AbilityTextureName"			"custom/icon_128x128_137"
 		"Modifiers"
 		{
-			"modifier_buff_1"
+			"modifier_hoarding_gold"
 			{
 				"Passive"	"1"
 				"IsHidden"	"1"
-				"Properties"
+				"ThinkInterval"	"3"
+				"OnIntervalThink"
 				{
-					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"	"-5"
-					//"MODIFIER_PROPERTY_TOTALDAMAGEOUTGOING_PERCENTAGE"	"-20"
-					//"MODIFIER_PROPERTY_MAGICDAMAGEOUTGOING_PERCENTAGE"	"-20"
-					//"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"-20"
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"hoarding_money"
+					}
+				}
+			}
+			"modifier_richman"
+			{
+				"IsPurgable"	"0"
+				"IsHidden"	"1"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"rich_man_OnCreated"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"rich_man_OnDestroy"
+					}
 				}
 			}
 		}
 	}
-	// 正面面狀態2等
-	"buff_2"
+	// 瞬步
+	"flash"
+	{
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"riki_blink_strike"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"CastFilterRejectCaster"	"1"
+		"FightRecapLevel"	"1"
+		"AbilityCastPoint"	"0.0"
+		// Time
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"30"
+		// Cost
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"	"100"
+		// Casting
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"	"300"
+		// Precache
+		// -------------------------------------------------------------------------------------------------------------
+		"precache"
+		{
+			"soundfile"	"sounds/weapons/hero/riki/riki_blinkstrike.vsnd"
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_riki.vsndevts"
+		}
+		"OnSpellStart"
+		{
+			"FireSound"
+			{
+				"Target"	"CASTER"
+				"EffectName"	"A31E.vo1"
+			}
+			"FireSound"
+			{
+				"EffectName"	"Hero_Riki.Blink_Strike"
+				"Target"	"CASTER"
+			}
+			"RunScript"
+			{
+				"Target"	"POINT"
+				"MaxBlinkRange"	"%max_blink_range"
+				"BlinkRangeClamp"	"%max_blink_range"
+				"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A31_Mori_Ranmaru.lua"
+				"Function"	"A31E"
+			}
+			"RunScript"
+			{
+				"ScriptFile"	"items/Addon_Items/item_forest_scroll.lua"
+				"Function"	"dispear2"
+			}
+		}
+		// Special
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"max_blink_range"	"300"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"blink_range_clamp"	"960"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"blink_damage_cooldown"	"3"
+			}
+		}
+	}
+	// 智英打塔
+	"hero_attack_tower"
 	{
 		"BaseClass"	"ability_datadriven"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
-		"AbilityTextureName"			"custom/icon_128x128_138"
 		"Modifiers"
 		{
-			"modifier_buff_2"
+			"modifier_hero_attack_tower"
 			{
 				"Passive"	"1"
 				"IsHidden"	"1"
-				"Properties"
+				"OnAttackLanded"
 				{
-					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"	"-10"
-					//"MODIFIER_PROPERTY_TOTALDAMAGEOUTGOING_PERCENTAGE"	"-20"
-					//"MODIFIER_PROPERTY_MAGICDAMAGEOUTGOING_PERCENTAGE"	"-20"
-					//"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"-20"
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"hero_attack_tower"
+					}
 				}
 			}
 		}
 	}
-	// 正面面狀態3等
-	"buff_3"
+	//CP怪剛出
+	"when_cp_first_spawn"
 	{
 		"BaseClass"	"ability_datadriven"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
-		"AbilityTextureName"			"custom/icon_128x128_139"
 		"Modifiers"
 		{
-			"modifier_buff_3"
+			"modifier_stuck"
 			{
 				"Passive"	"1"
 				"IsHidden"	"1"
-				"Properties"
+				"States"
 				{
-					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"	"-15"
-					//"MODIFIER_PROPERTY_TOTALDAMAGEOUTGOING_PERCENTAGE"	"-20"
-					//"MODIFIER_PROPERTY_MAGICDAMAGEOUTGOING_PERCENTAGE"	"-20"
-					//"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"-20"
+					// 隐藏血条
+					"MODIFIER_STATE_NO_HEALTH_BAR"	"MODIFIER_STATE_VALUE_ENABLED"
+					// 不可选择
+					"MODIFIER_STATE_UNSELECTABLE"	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_NOT_ON_MINIMAP"	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_NO_UNIT_COLLISION"	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_ATTACK_IMMUNE"	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_MAGIC_IMMUNE"	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_STUNNED"	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_INVULNERABLE"	"MODIFIER_STATE_VALUE_ENABLED"
 				}
 			}
 		}
 	}
-	// 正面面狀態4等
-	"buff_4"
+	//幫有御魂的人補血
+	"heal_soul_adder"
 	{
 		"BaseClass"	"ability_datadriven"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
-		"AbilityTextureName"			"custom/icon_128x128_140"
 		"Modifiers"
 		{
-			"modifier_buff_4"
-			{
-				"Passive"	"1"
-				"IsHidden"	"1"
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"	"-20"
-					//"MODIFIER_PROPERTY_TOTALDAMAGEOUTGOING_PERCENTAGE"	"-20"
-					//"MODIFIER_PROPERTY_MAGICDAMAGEOUTGOING_PERCENTAGE"	"-20"
-					//"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"-20"
-				}
-			}
-		}
-	}
-
-	//  負面狀態1等
-	"debuff_1"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
-		"AbilityTextureName"			"custom/icon_128x128_143"
-		"Modifiers"
-		{
-			"modifier_debuff_1"
+			"modifier_on_death"
 			{
 				"Passive"	"1"
 				"IsHidden"	"0"
-				"Properties"
+				"OnDeath"
 				{
-					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"	"10"
-					//"MODIFIER_PROPERTY_TOTALDAMAGEOUTGOING_PERCENTAGE"	"-20"
-					//"MODIFIER_PROPERTY_MAGICDAMAGEOUTGOING_PERCENTAGE"	"-20"
-					//"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"-20"
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"OnUnitDied"
+					}
 				}
 			}
 		}
 	}
-
-	//  負面狀態2等
-	"debuff_2"
+	"nannbann_armor_purge"
 	{
 		"BaseClass"	"ability_datadriven"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
-		"AbilityTextureName"			"custom/icon_128x128_145"
 		"Modifiers"
 		{
-			"modifier_debuff_2"
+			"modifier_purge_modifiers"
 			{
 				"Passive"	"1"
-				"IsHidden"	"0"
-				"Properties"
+				"IsHidden"	"1"
+				"RunScript"
 				{
-					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"	"20"
-					//"MODIFIER_PROPERTY_TOTALDAMAGEOUTGOING_PERCENTAGE"	"-40"
-					//"MODIFIER_PROPERTY_MAGICDAMAGEOUTGOING_PERCENTAGE"	"-40"
-					//"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"-40"
+					"ScriptFile"	"items/Addon_Items/tofar_goback.lua"
+					"Function"	"big_cp_purge"
 				}
 			}
 		}
 	}
-
-
-	"human_gather"
+	"hero_kill"
 	{
-	    "BaseClass"                     "ability_datadriven"
-	    "AbilityTextureName"            "human_gather"
-	    "MaxLevel"                      "3"
-
-	    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-	    "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_BOTH"
-	    "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_TREE | DOTA_UNIT_TARGET_BUILDING | DOTA_UNIT_TARGET_HERO"
-	    "AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_INVULNERABLE | DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
-	    "CastFilterRejectCaster"        "1"
-
-	    // Gatherer Key Values
-	    "LumberGainInterval"            "1"
-	    "LumberPerInterval"             "1"
-	    "DamageTree"                    "1"
-	    "GoldGainInterval"              "0.5"
-	    "GoldPerInterval"               "10"
-	    "GoldMineInside"                "1"
-	    "DamageMine"                    "10"
-
-	    // Repair Key Values
-	    "CanAssistConstruction"         "1"
-
-	    "AbilitySpecial"
-	    {
-	        "01"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "gold_capacity"         "10"
-	        }
-	        "02"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "lumber_capacity"       "10 20 30"
-	        }
-	    }
-
-	    "OnSpellStart"
-	    {
-	        "RunScript"
-	        {
-	            "ScriptFile"    "units/gather.lua"
-	            "Function"      "Gather"
-	        }
-
-	        "RunScript"
-	        {
-	            "ScriptFile"    "units/repair.lua"
-	            "Function"      "Repair"
-	        }
-	    }
-
-	    //"ScriptFile"  "units/human/peasant.lua"
-	    //"Function"        "HideBackpack"
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"Modifiers"
+		{
+			"modifier_hero_kill"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"IsBuff"	"1"
+				"OnHeroKilled"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/kill.lua"
+						"Function"	"OnHeroKilled"
+					}
+				}
+			}
+		}
 	}
-
-	"human_return_resources"
+	"hero_die"
 	{
-	    "BaseClass"                     "ability_datadriven"
-	    "AbilityTextureName"            "human_return_resources"
-	    "MaxLevel"                      "1"
-
-	    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_HIDDEN" //Fake Toggle
-
-	    // When the ability is active, it means there are resources left to return (else it will be hidden)
-	    "OnSpellStart"
-	    {
-	        "RunScript"
-	        {
-	            "ScriptFile"    "units/gather.lua"
-	            "Function"      "ReturnResources"
-	        }
-	    }
-
-	    //ScriptFile"   "units/human/peasant.lua"
-	    //"Function"        "ShowBackpack"
-	    
-	    //"ScriptFile"  "units/human/peasant.lua"
-	    //"Function"        "HideBackpack"
-	}	
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"OnOwnerDied"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/library/common/assist.lua"
+				"Function"	"OnOwnerDied"
+			}
+		}
+	}
+	"slow_self"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"Modifiers"
+		{
+			"modifier_slow_self_passive"
+			{
+				"Passive"	"1"
+				"ThinkInterval"	"0.1"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"slow_self_passive"
+					}
+				}	
+			}
+			"modifier_slow_down_movespeed"
+			{
+				"IsHidden"	"1"
+				"IsDebuff"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE" "-1"
+				}
+			}
+			"modifier_slow_down_attackspeed"
+			{
+				"IsHidden"	"1"
+				"IsDebuff"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "-1"
+				}
+			}
+		}
+	}
 }
-	

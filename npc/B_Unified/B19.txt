@@ -28,7 +28,7 @@
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		// Time
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"	"8 7 6 5"
@@ -211,7 +211,7 @@
 		"AbilityUnitDamageType"						"DAMAGE_TYPE_PHYSICAL"
 		"AbilityTextureName"                        "custom/icon_128x128_17"
 
-		"AbilityCastPoint"      "0.1"
+		"AbilityCastPoint"          				"0.25"
 		"AbilityCooldown"       "140 130 120"
 		"AbilityManaCost"       "300"
 		"AbilityCastRange"	"800"
@@ -330,7 +330,7 @@
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		// Time
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"	"10"
@@ -523,7 +523,7 @@
 		"AbilityUnitDamageType"						"DAMAGE_TYPE_PHYSICAL"
 		"AbilityTextureName"                        "custom/icon_128x128_17"
 
-		"AbilityCastPoint"      "0.1"
+		"AbilityCastPoint"          				"0.25"
 		"AbilityCooldown"       "140 130 120"
 		"AbilityManaCost"       "300"
 		"AbilityCastRange"	"800"

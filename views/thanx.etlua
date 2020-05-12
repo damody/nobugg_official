@@ -3,8 +3,6 @@ local inspect = require("inspect")
 require("read_hero")
 require("langtext")
 lang = params.language
-local redis = require 'redis'
-local client = redis.connect('127.0.0.1', 6379)
 local cjson = require("cjson")
 
 if lang == "zhtw" then

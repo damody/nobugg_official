@@ -19,12 +19,11 @@
 		"BaseClass"	"ability_datadriven"
 		"AbilityTextureName"	"custom/dianwei_yaohuo"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
-		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO"
 		"HotKeyOverride"	"D"
 		"MaxLevel"	"5"
-		"AbilityCooldown"	"4"
-		"AbilityManaCost"	"50"
+		"AbilityCooldown"	"5"
+		"AbilityManaCost"	"70"
 		"AbilityCastAnimation"	"ACT_DOTA_ATTACK"
 		"precache"
 		{
@@ -131,6 +130,12 @@
 			}
 			"RunScript"
 			{
+				"Target"	"CASTER"
+				"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A07_Honda_Tadakatsu.lua"
+				"Function"	"A07W_EndShieldParticle"
+			}
+			"RunScript"
+			{
 				"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A07_Honda_Tadakatsu.lua"
 				"Function"	"A07W_SE"
 				"Target"	"CASTER"
@@ -142,6 +147,7 @@
 			"modifier_a07w_borrowed_time"
 			{
 				"IsBuff"	"1"
+				"IsHidden"	"1"
 				"EffectName"	"particles/a07w3/a07w3.vpcf"
 				"EffectAttachType"	"follow_origin"
 				"Properties"
@@ -355,23 +361,32 @@
 				"Passive"	"1"
 				"IsHidden"	"1"
 				"IsPurgable"	"0"
-				"OnAttackLanded"
+				"OnAttackStart"
 				{
 					"RunScript"
 					{
-						"ScriptFile"	"scripts/vscripts/AON_Cleave.lua"
-						"Function"	"AON_Cleave_A07E"
-						"dmg"	"%attack_damage"
-						"Target"	"TARGET"
-					}
-					"CleaveAttack"
-					{
-						"CleavePercent"	"0"
-						"CleaveRadius"	"%radius"
-						"CleaveEffect"	"particles/a07r/a07r.vpcf"
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A07_Honda_Tadakatsu.lua"
+						"Function"	"A07R_old"
 					}
 				}
-				"Properties"	{}
+				// "OnAttackLanded"
+				// {
+				// 	"RunScript"
+				// 	{
+				// 		"ScriptFile"	"scripts/vscripts/AON_Cleave.lua"
+				// 		"Function"	"AON_Cleave_A07E"
+				// 		"dmg"	"%attack_damage"
+				// 		"Target"	"TARGET"
+				// 	}
+				// 	"CleaveAttack"
+				// 	{
+				// 		"CleavePercent"	"0"
+				// 		"CleaveRadius"	"%radius"
+				// 		"CleaveEffect"	"particles/a07r/a07r.vpcf"
+				// 	}
+				// }
+				// "Properties"	{}
 			}
 		}
 		// Special
@@ -388,10 +403,15 @@
 				"var_type"	"FIELD_INTEGER"
 				"CleavePercent"	"60"
 			}
-			"02"
+			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
 				"radius"	"245 285 325 365"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"crit_persent"	"120 140 160 180"
 			}
 		}
 	}
@@ -458,12 +478,12 @@
 		// -------------------------------------------------------------------------------------------------------------
 		"BaseClass"	"ability_datadriven"
 		"AbilityTextureName"	"custom/zhaoyun_tuci"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_ITEM | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
 		"HotKeyOverride"	"E"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.2"
 		"AbilityCastAnimation"	"ACT_DOTA_ATTACK"
 		"AnimationPlaybackRate"	"2"
 		// Time
@@ -541,9 +561,24 @@
 			{
 				"IsDebuff"	"1"
 				"Duration"	"%slow_duration"
-				"Properties"
+				"OnCreated"
 				{
-					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"-75"
+					"RunScript"
+					{
+					"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+					"Function"	"Slow"
+					"name"	"A07E"
+					"ms_slow"	"-75"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"ReturnSpeed"
+						"name"	"A07E"
+					}
 				}
 			}
 		}
@@ -595,7 +630,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"FightRecapLevel"	"1"
 		"HotKeyOverride"	"E"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCastAnimation"	"ACT_DOTA_ATTACK"
 		"AnimationPlaybackRate"	"1.0"
 		// Time
@@ -769,6 +804,19 @@
 				"AttackAnimationPoint"	"0.2"
 				"OnAttackLanded"
 				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/AON_Cleave.lua"
+						"Function"	"AON_Cleave_A07E"
+						"dmg"	"%attack_damage"
+						"Target"	"TARGET"
+					}
+					"CleaveAttack"
+					{
+						"CleavePercent"	"0"
+						"CleaveRadius"	"%radius"
+						"CleaveEffect"	"particles/a07r/a07r.vpcf"
+					}
 					"FireEffect"
 					{
 						"EffectName"	"particles/a07e/a07e_t.vpcf"
@@ -779,13 +827,6 @@
 					{
 						"Target"	"CASTER"
 						"EffectName"	"A07T.attack"
-					}
-					"RunScript"
-					{
-						"ScriptFile"	"scripts/vscripts/AON_Cleave.lua"
-						"Function"	"AON_Cleave_A07T"
-						"dmg"	"%attack_damage"
-						"Target"	"TARGET"
 					}
 				}
 				"IsHidden"	"0"
@@ -809,10 +850,14 @@
 				{
 					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"	"%bonus_movement_speed"
 					"MODIFIER_PROPERTY_OVERRIDE_ANIMATION_RATE"	"3"
-					"MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE"	"%damage"
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"90"
-					"MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT"	"1"
+					// "MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"90"
+					"MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT"	"0.8"
 					"MODIFIER_PROPERTY_TRANSLATE_ACTIVITY_MODIFIERS" "alternate"
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"	"%str"
+				}
+				"States"
+				{
+					"MODIFIER_STATE_MAGIC_IMMUNE"	"MODIFIER_STATE_VALUE_ENABLED"
 				}
 				"Duration"	"%duration"
 				"IsBuff"	"1"
@@ -846,17 +891,32 @@
 			"01"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"duration"	"20 25 30"
+				"duration"	"8 14 20"
 			}
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"bonus_movement_speed"	"115"
+				"bonus_movement_speed"	"0"
 			}
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"60 90 120"
+				"damage"	"20 30 40"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"str"	"15 25 35"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"365"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"CleavePercent"	"100"
 			}
 		}
 		// Stats
@@ -1200,7 +1260,7 @@
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
 		"HotKeyOverride"	"E"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCastAnimation"	"ACT_DOTA_ATTACK"
 		"AnimationPlaybackRate"	"2"
 		// Time
@@ -1345,7 +1405,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"FightRecapLevel"	"1"
 		"HotKeyOverride"	"E"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCastAnimation"	"ACT_DOTA_ATTACK"
 		"AnimationPlaybackRate"	"1.0"
 		// Time
@@ -1536,7 +1596,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"crit_persent"	"140 160 180 200"
+				"CleavePercent"	"140 160 180 200"
 			}
 		}
 	}

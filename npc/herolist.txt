@@ -10,103 +10,110 @@
 
 "CustomHeroList"
 {
-	"npc_dota_hero_bristleback" "1" //今川義元
-	"npc_dota_hero_earthshaker" "1" //秋山信友
-	"npc_dota_hero_brewmaster" "1" //大熊朝秀
-	"npc_dota_hero_silencer" "1" //立花道雪
-	"npc_dota_hero_sniper" "1" //佐佐成政
-	"npc_dota_hero_beastmaster" "1"//武田勝賴
-	"npc_dota_hero_huskar" "1" //鳥居元忠
-	"npc_dota_hero_mirana" "1" //玉子
-	"npc_dota_hero_antimage" "1" //香宗我部親泰
-	"npc_dota_hero_crystal_maiden" "1"//阿松
-	"npc_dota_hero_storm_spirit" "1" //大谷吉繼	
-	"npc_dota_hero_zuus" "1" //服部半藏
-	"npc_dota_hero_invoker" "1" //羽柴秀吉
-	"npc_dota_hero_omniknight" "1" //柴田勝家
-	"npc_dota_hero_oracle" "1" //石田三成
-	"npc_dota_hero_ancient_apparition" "1" //竹中重治
-	"npc_dota_hero_drow_ranger" "1" //最上義姬
-	"npc_dota_hero_nevermore" "1" //雜賀孫市
-	"npc_dota_hero_pugna" "1" //本願寺顯如
-	"npc_dota_hero_dark_seer" "1" //真田幸村
-	"npc_dota_hero_viper" "1" //明智光秀
-	"npc_dota_hero_puck" "1" //阿市
-	"npc_dota_hero_keeper_of_the_light" "1" //毛利元就
-	"npc_dota_hero_jakiro" "1" //佐佐木小次郎
-	"npc_dota_hero_alchemist" "1" //宮本武藏
-	"npc_dota_hero_treant" "1" //織田信長
-	"npc_dota_hero_medusa" "1" //森蘭丸
-	"npc_dota_hero_centaur" "1" //本多忠勝
-	"npc_dota_hero_naga_siren" "1" // 望月千代女
-	"npc_dota_hero_legion_commander" "1" // 明智秀滿
-	"npc_dota_hero_chaos_knight" "1" // 馬場信房
-	"npc_dota_hero_juggernaut" "1" // 瀧川一益
 	"npc_dota_hero_windrunner" "1" // 稻姬
-	"npc_dota_hero_obsidian_destroyer" "1" // 前田慶次
-	"npc_dota_hero_clinkz" "1" // 伊達政宗
-	"npc_dota_hero_techies"	"1" // 濃姬
-	"npc_dota_hero_spectre" "1" // 黑田孝高
-	"npc_dota_hero_ogre_magi" "1" // 島津義弘
-	"npc_dota_hero_ember_spirit" "1" // 仙石秀久
-	"npc_dota_hero_tiny" "1" // 立花宗茂
-	"npc_dota_hero_phantom_assassin" "1" //菊姬
-	"npc_dota_hero_visage" "1" //直江兼續
-	"npc_dota_hero_lycan" "1" //加藤段藏
-	"npc_dota_hero_enchantress" "1" // 伊勢姬
-	"npc_dota_hero_lion" "1" //前田利家
-	"npc_dota_hero_riki" "1" // 百地三太夫
-	"npc_dota_hero_rubick" "1" //果心居士	
-	"npc_dota_hero_razor" "1" //山本勘助
-	"npc_dota_hero_witch_doctor" "1" //宇喜多秀家
-	"npc_dota_hero_shadow_demon" "1" //武田信玄
-	"npc_dota_hero_necrolyte" "1" //齋藤道三
-	"npc_dota_hero_disruptor" "1" //松永久秀
-	"npc_dota_hero_chen" "1" //真田昌幸
-	"npc_dota_hero_earth_spirit" "1" //山縣昌景
-	"npc_dota_hero_slark" "1" //霧隱才藏
-	"npc_dota_hero_terrorblade" "1" //長宗我部元親
 	"npc_dota_hero_winter_wyvern" "1" //寧寧
-	"npc_dota_hero_spirit_breaker" "1" //齋藤義龍
-	"npc_dota_hero_shadow_shaman" "1" // 本多正信
-	"npc_dota_hero_undying" "1" //加藤清正
-	"npc_dota_hero_elder_titan" "1" //齋藤朝信
-	"npc_dota_hero_ursa" "1" // 石川五右衛門
-	"npc_dota_hero_abyssal_underlord" "1" //柿崎景家
-	"npc_dota_hero_vengefulspirit" "1" //立花誾千代
-	"npc_dota_hero_skeleton_king" "1" //九鬼嘉隆
-	"npc_dota_hero_doom_bringer" "1" //佐久間盛政
-	"npc_dota_hero_meepo" "1" //片倉景綱
-	"npc_dota_hero_monkey_king" "1" //蜂須賀政勝
-	"npc_dota_hero_warlock"	"1" //平手政秀
-	"npc_dota_hero_kunkka" "1"	//德川家康
-	"npc_dota_hero_luna" "1"	//瑞龍院日秀
-	"npc_dota_hero_sand_king"		"1"	//丹羽長秀
-	"npc_dota_hero_lina" "1" //阿國
-	"npc_dota_hero_axe" "1" //榊原康政
-	"npc_dota_hero_furion" "1"	//足利義昭
-	"npc_dota_hero_queenofpain" "1" //湖衣姬
-	"npc_dota_hero_lich" "1" //宇佐美定滿
-	"npc_dota_hero_leshrac" "1" //太原雪齋
-	"npc_dota_hero_lone_druid" "1" //石川樹正
-	"npc_dota_hero_pudge" "1" //小早川隆景
-	"npc_dota_hero_abaddon" "1" //小島貞興
-	"npc_dota_hero_troll_warlord" "1" //酒井忠次
-	"npc_dota_hero_morphling" "1"	//井伊直政
-	"npc_dota_hero_bane" "1" // 上杉謙信
-	"npc_dota_hero_dragon_knight" "1" //島左近
-	"npc_dota_hero_phantom_lancer" "1" //前野長康
-	"npc_dota_hero_dazzle" "1" //稻葉一鐵
-	"npc_dota_hero_magnataur" "1" //村上義清
-	"npc_dota_hero_phoenix" "1" //淺井長政
-	"npc_dota_hero_sven" "1" //上泉信綱
-	"npc_dota_hero_bloodseeker" "1" //風魔小太郎
-	"npc_dota_hero_rattletrap" "1" //大友宗麟 
-	"npc_dota_hero_night_stalker" "1" //龍造寺隆信
-	"npc_dota_hero_batrider"	"1" //柳生宗嚴
-	"npc_dota_hero_bounty_hunter" "1"	//三好長慶
-	"npc_dota_hero_templar_assassin" "1"	//茶茶
+	"npc_dota_hero_sniper" "1" //佐佐成政
+	"npc_dota_hero_techies"	"1" // 濃姬
+	"npc_dota_hero_medusa" "1" //森蘭丸
+	"npc_dota_hero_nevermore" "1" //雜賀孫市
+	"npc_dota_hero_bristleback" "1" //今川義元
+	"npc_dota_hero_drow_ranger" "1" //最上義姬
+	"npc_dota_hero_mirana" "1" //玉子
 	"npc_dota_hero_life_stealer" "1" //松姬
+	
+	"npc_dota_hero_kunkka" "1"	//德川家康
+	"npc_dota_hero_centaur" "1" //本多忠勝
+	"npc_dota_hero_axe" "1" //榊原康政
+	"npc_dota_hero_clinkz" "1" // 伊達政宗
+	"npc_dota_hero_dark_seer" "1" //真田幸村
+	"npc_dota_hero_bounty_hunter" "1"	//三好長慶
+	"npc_dota_hero_magnataur" "1" //村上義清
+	"npc_dota_hero_antimage" "1" //香宗我部親泰
+	"npc_dota_hero_spirit_breaker" "1" //齋藤義龍
+
+	"npc_dota_hero_zuus" "1" //服部半藏
+	"npc_dota_hero_lion" "1" //前田利家
+	"npc_dota_hero_treant" "1" //織田信長
+	"npc_dota_hero_phoenix" "1" //淺井長政
+	"npc_dota_hero_phantom_assassin" "1" //菊姬
+	"npc_dota_hero_bane" "1" // 上杉謙信
+	"npc_dota_hero_viper" "1" //明智光秀
+	"npc_dota_hero_lycan" "1" //加藤段藏
+	"npc_dota_hero_vengefulspirit" "1" //立花誾千代
+	"npc_dota_hero_tiny" "1" // 立花宗茂
+	"npc_dota_hero_naga_siren" "1" // 望月千代女
+
+	"npc_dota_hero_ancient_apparition" "1" //竹中重治
+	"npc_dota_hero_necrolyte" "1" //齋藤道三
+	"npc_dota_hero_storm_spirit" "1" //大谷吉繼	
+	"npc_dota_hero_crystal_maiden" "1"//阿松
+	"npc_dota_hero_keeper_of_the_light" "1" //毛利元就
+	"npc_dota_hero_chen" "1" //真田昌幸
+	"npc_dota_hero_pugna" "1" //本願寺顯如
+	"npc_dota_hero_disruptor" "1" //松永久秀
+	"npc_dota_hero_silencer" "1" //立花道雪
+	"npc_dota_hero_puck" "1" //阿市
+
+	//"npc_dota_hero_earthshaker" "1" //秋山信友
+	//"npc_dota_hero_brewmaster" "1" //大熊朝秀
+	//"npc_dota_hero_beastmaster" "1"//武田勝賴
+	//"npc_dota_hero_huskar" "1" //鳥居元忠
+	//"npc_dota_hero_invoker" "1" //羽柴秀吉
+	//"npc_dota_hero_omniknight" "1" //柴田勝家
+	//"npc_dota_hero_oracle" "1" //石田三成
+	//"npc_dota_hero_jakiro" "1" //佐佐木小次郎
+	//"npc_dota_hero_alchemist" "1" //宮本武藏
+	//"npc_dota_hero_legion_commander" "1" // 明智秀滿
+	"npc_dota_hero_chaos_knight" "1" // 馬場信房
+	//"npc_dota_hero_juggernaut" "1" // 瀧川一益
+	//"npc_dota_hero_obsidian_destroyer" "1" // 前田慶次
+	//"npc_dota_hero_spectre" "1" // 黑田孝高
+	//"npc_dota_hero_ogre_magi" "1" // 島津義弘
+	//"npc_dota_hero_ember_spirit" "1" // 仙石秀久
+	//"npc_dota_hero_visage" "1" //直江兼續
+	//"npc_dota_hero_enchantress" "1" // 伊勢姬
+	//"npc_dota_hero_riki" "1" // 百地三太夫
+	//"npc_dota_hero_rubick" "1" //果心居士	
+	//"npc_dota_hero_razor" "1" //山本勘助
+	//"npc_dota_hero_witch_doctor" "1" //宇喜多秀家
+	//"npc_dota_hero_shadow_demon" "1" //武田信玄
+	//"npc_dota_hero_earth_spirit" "1" //山縣昌景
+	//"npc_dota_hero_slark" "1" //霧隱才藏
+	//"npc_dota_hero_terrorblade" "1" //長宗我部元親
+	//"npc_dota_hero_shadow_shaman" "1" // 本多正信
+	//"npc_dota_hero_undying" "1" //加藤清正
+	//"npc_dota_hero_elder_titan" "1" //齋藤朝信
+	//"npc_dota_hero_ursa" "1" // 石川五右衛門
+	//"npc_dota_hero_abyssal_underlord" "1" //柿崎景家
+	"npc_dota_hero_skeleton_king" "1" //九鬼嘉隆
+	//"npc_dota_hero_doom_bringer" "1" //佐久間盛政
+	//"npc_dota_hero_meepo" "1" //片倉景綱
+	//"npc_dota_hero_monkey_king" "1" //蜂須賀政勝
+	//"npc_dota_hero_warlock"	"1" //平手政秀
+	//"npc_dota_hero_luna" "1"	//瑞龍院日秀
+	//"npc_dota_hero_sand_king"		"1"	//丹羽長秀
+	"npc_dota_hero_lina" "1" //阿國
+	//"npc_dota_hero_furion" "1"	//足利義昭
+	//"npc_dota_hero_queenofpain" "1" //湖衣姬
+	//"npc_dota_hero_lich" "1" //宇佐美定滿
+	//"npc_dota_hero_leshrac" "1" //太原雪齋
+	//"npc_dota_hero_lone_druid" "1" //石川樹正
+	//"npc_dota_hero_pudge" "1" //小早川隆景
+	//"npc_dota_hero_abaddon" "1" //小島貞興
+	//"npc_dota_hero_troll_warlord" "1" //酒井忠次
+	//"npc_dota_hero_morphling" "1"	//井伊直政
+	//"npc_dota_hero_dragon_knight" "1" //島左近
+	//"npc_dota_hero_phantom_lancer" "1" //前野長康
+	//"npc_dota_hero_dazzle" "1" //稻葉一鐵
+	//"npc_dota_hero_sven" "1" //上泉信綱
+	//"npc_dota_hero_bloodseeker" "1" //風魔小太郎
+	//"npc_dota_hero_rattletrap" "1" //大友宗麟 
+	//"npc_dota_hero_night_stalker" "1" //龍造寺隆信
+	//"npc_dota_hero_batrider"	"1" 
+	"npc_dota_hero_weaver"	"1"	//柳生宗嚴
+	//
+	//"npc_dota_hero_templar_assassin" "1"	//茶茶
+	
 }
 
 	

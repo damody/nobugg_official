@@ -29,6 +29,7 @@
 		"AbilityUnitTargetTeam"                		"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityType"  								"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityUnitDamageType"               		"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"                        "custom/C16/C16R"
 
 		"AbilityCooldown"							"22"
@@ -56,7 +57,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"max_distance"			"600"
+				"max_distance"			"1600"
 			}
 			"05"
 			{
@@ -226,9 +227,24 @@
 				"EffectAttachType"	"follow_overhead"
 				"Duration"	"4"
 				"IsDebuff"	"1"
-				"Properties"
+				"OnCreated"
 				{
-				    "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE" "-10" 
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"Slow"
+						"name"	"B10W_slow"
+						"ms_slow" "-10"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"ReturnSpeed"
+						"name"	"B10W_slow"
+					}
 				}
 			}
 		}
@@ -242,7 +258,8 @@
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityCastPoint"      "0.25"
 		"AbilityCastAnimation"	"ACT_DOTA_ATTACK"
 		"AbilityCooldown"	"7"
 		"AbilityManaCost"	"80"
@@ -319,9 +336,10 @@
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
-		"AbilityUnitDamageType"	"DAMAGE_TYPE_PURE"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"AoERadius"	"900"
-		"AbilityDamage"		"100 150 200 250"
+		"AbilityDamage"		"30 40 50 60"
 
 		"AbilitySpecial"
 		{
@@ -414,6 +432,7 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"AbilityType"	"DOTA_ABILITY_TYPE_ULTIMATE"
 		"FightRecapLevel"	"0"	
 		"HotKeyOverride"	"T"
@@ -424,11 +443,12 @@
 		"AbilityManaCost"	"185 205 225"
 		// Stats
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"	"800"
-		"AbilityCastRangeBuffer"	"800"
+		"AbilityCastRange"	"700"
+		"AbilityCastRangeBuffer"	"700"
 		"precache"
 		{
 			"particle"	"particles/dire_fx/dire_ancient_base001_destruction_l1.vpcf"
+			"particle" 	"particles/b10t.vpcf"
 		}
 		"OnSpellStart"
 		{
@@ -453,7 +473,7 @@
 				    "Center" "CASTER"
 				    "Flags" "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
 				}
-				"ModifierName"	"modifier_B10T_self"
+					"ModifierName"	"modifier_B10T_self"
 			}
 			"RunScript"
 			{
@@ -468,39 +488,33 @@
 				"sound"	"ability_ghost_ship"
 			}
 		}
-		
 		"Modifiers"
 		{
 			"modifier_B10T_self"
 			{
 				"Passive"			"0"
-				"IsHidden"			"1"
-				"ThinkInterval"  "%retime"
-				"Duration"	"42"
-				"OnIntervalThink"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"scripts/vscripts/heroes/B_Unified/B10.lua"
-						"Function"		"B10T_regen"
-						"Target"		"CASTER"
-					}
-				}
-				"Properties"
-				{
-				    "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE" "%movespeed_bonus" 
-				}
-			}
-			"modifier_B10T_aura" 																//零氣
-			{
-				"Passive"			"0"
 				"IsHidden"			"0"
-				"IsDebuff"			"0"
 				"EffectName"		"particles/b10t.vpcf"
 				"EffectAttachType"	"follow_origin"
-				"Duration"	"42"
-				"ThinkInterval"  "0.5"
-				"OnCreated"
+				"ThinkInterval"  	"0.5"
+				"Duration"		"22"
+				"Properties"
+				{
+				    "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"%movespeed_bonus"
+					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE" 	"%regen"
+				}
+				"States"
+				{
+					"MODIFIER_STATE_NO_UNIT_COLLISION" "MODIFIER_STATE_VALUE_ENABLED"
+				}
+			}
+			"modifier_B10T_aura" 																//靈氣
+			{
+				"Passive"			"1"
+				"IsHidden"			"0"
+				"IsDebuff"			"0"
+				"ThinkInterval"  "0.2"
+				"OnIntervalThink"
 				{
 					"ActOnTargets"
 					{
@@ -523,72 +537,31 @@
 						}
 					}
 				}
-				"OnIntervalThink"
-				{
-					"ActOnTargets"
-					{
-						"Target"
-						{
-							"Center"  	"CASTER"
-							"Radius" 	"%radius"
-							"Teams" 	"DOTA_UNIT_TARGET_TEAM_ENEMY"
-							"Types" 	"DOTA_UNIT_TARGET_HERO"
-						}
-					
-						"Action"    
-						{
-							"ApplyModifier"
-							{
-								"ModifierName"	"modifier_B10T"
-								"Target" 		"TARGET"
-								"Duration"		"1"
-							}
-						}
-					}
-					"ActOnTargets"
-					{
-						"Target"
-						{
-							"Center"  	"CASTER"
-							"Radius" 	"%radius"
-							"Teams" 	"DOTA_UNIT_TARGET_TEAM_ENEMY"
-							"Types" 	"DOTA_UNIT_TARGET_BASIC"
-						}
-					
-						"Action"    
-						{
-							"ApplyModifier"
-							{
-								"ModifierName"	"modifier_B10T"
-								"Target" 		"TARGET"
-								"Duration"		"1"
-							}
-						}
-					}																
-				}
 			}
 			"modifier_B10T"
 			{
 				"Passive"	"0"
+				"IsDebuff"	"1"
 				"EffectName"		"particles/b10t_ring.vpcf"
 				"EffectAttachType"	"follow_origin"
 				"Properties"
 				{					
 					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "%armor_reduction"
 				}
-			}	
+			}
 		}
 		"AbilitySpecial"
 		{
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"armor_reduction"	"-9 -12 -15"
+				"armor_reduction"	"-6 -10 -15"
+				//"armor_reduction"	"-9 -12 -15"
 			}
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"radius"	"800"
+				"radius"	"700"
 			}
 			"03"
 			{
@@ -597,8 +570,8 @@
 			}
 			"04"
 			{
-				"var_type"	"FIELD_INTEGER"
-				"retime"	"25 19 13"
+				"var_type"	"FIELD_FLOAT"
+				"regen"		"1 2 3"
 			}
 		}
 	}	
@@ -687,7 +660,7 @@
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCastAnimation"	"ACT_DOTA_ATTACK"
 		"AbilityCooldown"	"15"
 		"AbilityManaCost"	"100 120 140 160"

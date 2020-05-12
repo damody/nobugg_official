@@ -39,6 +39,7 @@
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 
 		"AbilityCooldown"				"9"
 		"AbilityManaCost"				"105 125 145 165"
@@ -104,8 +105,9 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 
 		"AbilityCooldown"				"25"
 		"AbilityManaCost"				"120 140 160 180"
@@ -211,6 +213,7 @@
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 
 		"AbilityDamage"	"20 40 60 80"
 
@@ -304,7 +307,7 @@
 			"04"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"stack_hp"			"16" // %
+				"stack_hp"			"12" // %
 			}
 		}
 		"OnUpgrade"
@@ -385,9 +388,8 @@
 			{
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE" 	"%add_attack"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" 	"%add_attack"
 				    "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" 	"%add_armor" 
-				    "MODIFIER_PROPERTY_INCOMING_PHYSICAL_DAMAGE_PERCENTAGE" "-10"
 				}
 			}
 		}

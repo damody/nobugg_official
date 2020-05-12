@@ -20,11 +20,12 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
 		"HotKeyOverride"	"W"
 		"MaxLevel"	"4"
 		"LevelsBetweenUpgrades"	"2"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.2"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_3"
 		"AbilityCooldown"	"9 7 5 3"
 		"AbilityManaCost"	"100 120 140 160"
@@ -93,7 +94,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"shock_speed"	"3750"
+				"shock_speed"	"3000"
 			}
 			"02"
 			{
@@ -111,7 +112,7 @@
 				"shock_vision"	"100"
 			}
 		}
-		"AbilityDamage"	"200 300 400 500"
+		"AbilityDamage"	"200 275 350 425"
 	}
 
 	// 織田信長 厄災之棘
@@ -121,11 +122,15 @@
 		"AbilityTextureName"	"custom/A25E"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
 		"HotKeyOverride"	"E"
 		"MaxLevel"	"4"
 		"LevelsBetweenUpgrades"	"2"
-		"AbilityCastPoint" "0.25" //stun
+		"AbilityCastPoint" "0.3" //stun
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_2"
 		"AbilityCooldown"	"13"
 		"AbilityManaCost"	"120 140 160 180"
@@ -170,7 +175,7 @@
 				"Duration"	"8"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE"	"%A25E_attack"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"%A25E_attack"
 				}
 				"IsBuff"	"1"
 			}
@@ -180,7 +185,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"A25E_Duration"	"1.1 1.4 1.7 2.0"
+				"A25E_Duration"	"0.9 1.1 1.3 1.5"
 			}
 			"02"
 			{
@@ -190,7 +195,7 @@
 			"03"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"A25E_attack"	"30 50 70 90"
+				"A25E_attack"	"15 25 35 45"
 			}
 			"04"
 			{
@@ -249,7 +254,8 @@
 				"States"	{}
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE"	"%A25R_attack"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"%A25R_attack"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%A25R_attack"
 				}
 				"IsBuff"	"0"
 			}
@@ -259,7 +265,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"crit_persent"	"250 300 350 400"
+				"crit_persent"	"150 200 250 300"
 			}
 			"02"
 			{
@@ -278,6 +284,7 @@
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityType"	"DOTA_ABILITY_TYPE_ULTIMATE"
 		"HotKeyOverride"	"T"
 		"MaxLevel"	"3"
@@ -376,13 +383,13 @@
 				"Damage"	"290 450 600"
 			}
 		}
-		"AbilityDamage"	"290 450 600"
+		"AbilityDamage"	"290 400 600"
 	}
 
 // 織田信長 11.2B
 // ----------------------------------------------------------------------------------------------------------------
 	// 織田信長 [天下布武]
-	"A25D_old"
+	"A25D"
 	{
 		"MaxLevel" 						"1"
 		"BaseClass"             		"ability_datadriven"
@@ -437,8 +444,8 @@
 				"Duration"	"%buff_duration"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 			
-				"EffectName" "particles/units/heroes/hero_ogre_magi/ogre_magi_bloodlust_buff.vpcf"
-				"EffectAttachType"	"follow_origin"
+				// "EffectName" "particles/units/heroes/hero_ogre_magi/ogre_magi_bloodlust_buff.vpcf"
+				// "EffectAttachType"	"follow_origin"
 			
 				"Properties"
 				{
@@ -452,17 +459,17 @@
 			"01"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"buff_duration"		"10.0"
+				"buff_duration"		"5.0"
 			}
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"buff_atk_spd"	"20"
+				"buff_atk_spd"	"50"
 			}
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"buff_mov_spd"	"15"
+				"buff_mov_spd"	"50"
 			}
 		}
 	}	
@@ -481,7 +488,7 @@
 		"HotKeyOverride"	"W"
 		"MaxLevel"	"4"
 		"LevelsBetweenUpgrades"	"2"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_3"
 		"AbilityCooldown"	"9"
 		"AbilityManaCost"	"100 110 120 130"

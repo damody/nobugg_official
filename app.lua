@@ -11,7 +11,7 @@ do
         render = "list_hero2"
       }
     end,
-    ["/zhtw/list_hero"] = function(self)
+    ["/nobu/zhtw/list_hero"] = function(self)
       self.params.language = "zhtw"
       self.params.webpath = "list_hero"
       return {
@@ -43,7 +43,7 @@ do
         render = "hero2"
       }
     end,
-    ["/zhtw/hero/:hero"] = function(self)
+    ["/nobu/zhtw/hero/:hero"] = function(self)
       self.params.language = "zhtw"
       self.params.webpath = "hero/" .. self.params.hero
       return {
@@ -75,7 +75,7 @@ do
         render = "thanx"
       }
     end,
-    ["/zhtw/thanx"] = function(self)
+    ["/nobu/zhtw/thanx"] = function(self)
       self.params.language = "zhtw"
       self.params.webpath = "thanx"
       return {
@@ -107,7 +107,7 @@ do
         render = "equipment"
       }
     end,
-    ["/zhtw/equipment"] = function(self)
+    ["/nobu/zhtw/equipment"] = function(self)
       self.params.language = "zhtw"
       self.params.webpath = "equipment"
       return {
@@ -139,7 +139,7 @@ do
         render = "shop"
       }
     end,
-    ["/zhtw/equipment/:shopname"] = function(self)
+    ["/nobu/zhtw/equipment/:shopname"] = function(self)
       self.params.language = "zhtw"
       self.params.webpath = "equipment/" .. self.params.shopname
       return {
@@ -169,7 +169,7 @@ do
         render = "index"
       }
     end,
-    ["/zhtw/banpick"] = function(self)
+    ["/nobu/zhtw/banpick"] = function(self)
       self.params.language = "zhtw"
       self.params.webpath = "banpick"
       return {

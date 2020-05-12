@@ -14,7 +14,7 @@
 		"HeroUnlockOrder"	"3"
 		"Role"	"Carry,Support,Disabler,Initiator,Nuker"
 		"Rolelevels"	"1,1,2,2,1"
-		"ModelScale"	"1"
+		"ModelScale"	"0.8"
 		"LoadoutScale"	"0.8"
 		"PickSound"	"silencer_silen_spawn_01"
 		"BanSound"	"silencer_silen_anger_07"
@@ -30,22 +30,22 @@
 		"Ability1"	"C07W"
 		"Ability2"	"C07E"
 		"Ability3"	"C07R"
-		"Ability4"	"C07D"
-		"Ability5"	"attribute_bonusx"
+		"Ability4"	"magical_resistance"
+		"Ability5"	"C07D"
 		"Ability6"	"C07T"
 		"Ability7"	"C07_precache"
 		// Armor
 		// ----------------------------------------------------------------
-		"ArmorPhysical"	"5"
-		"MagicalResistance"	"30"
+		"ArmorPhysical"	"3"
+		"MagicalResistance"	"0"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"	"68.0"
-		"AttackDamageMax"	"76.0"
+		"AttackDamageMin"	"74.0"
+		"AttackDamageMax"	"74.0"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"	"1.80"
-		"AttackAnimationPoint"	"0.50"
+		"AttackAnimationPoint"	"0.20"
 		"AttackAcquisitionRange"	"1200"
 		"AttackRange"	"600"
 		"ProjectileSpeed"	"1800"
@@ -60,8 +60,8 @@
 		"AttributeIntelligenceGain"	"3.60"	
 		// Bounty
 		// ----------------------------------------------------------------
-		"BountyGoldMin"	"300.0"
-		"BountyGoldMax"	"300.0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
 		// Gold and Lumber
 		// ----------------------------------------------------------------
 		"GoldCost"	"0"
@@ -69,19 +69,19 @@
 		// Movement
 		// ----------------------------------------------------------------
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"	"300"
-		"MovementTurnRate"	"1.50"
+		"MovementSpeed"	"350"
+		"MovementTurnRate"	"360"
 		// Status
 		// ----------------------------------------------------------------
-		"StatusHealth"	"400"
+		"StatusHealth"	"550"
 		"StatusHealthRegen"	"0.25"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0.01"
 		"StatusStartingMana"	"100"
 		// Vision
 		// ----------------------------------------------------------------
-		"VisionDaytimeRange"	"1800"
-		"VisionNighttimeRange"	"800"
+		"VisionDaytimeRange"	"1600"
+		"VisionNighttimeRange"	"1000"
 		// Team
 		// ----------------------------------------------------------------
 		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_HERO"

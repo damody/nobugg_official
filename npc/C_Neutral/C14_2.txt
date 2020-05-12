@@ -5,7 +5,7 @@
 	{
 	 //General
 	 //--------------------------------------------------------------
-		"ModelScale"	"1.2"
+		"ModelScale"	"1.0"
 		//"Level"	"1"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
 		"HealthBarOffset"	"180"
@@ -16,19 +16,19 @@
 		"Ability1"	"C14W"
 		"Ability2"	"C14E"
 		"Ability3"	"C14R"
-		"Ability4"	""
-		"Ability5"	"attribute_bonusx"
+		"Ability4"	"magical_resistance"
+		"Ability5"	"C14_precache"
 		"Ability6"	"C14T"
-		"Ability7"	"C14_precache"
+		"Ability7"	""
 		//Armor
 		// --------------------------------------------------------------
-		"ArmorPhysical"	"6"
-		"MagicalResistance"	"30"
+		"ArmorPhysical"	"5"
+		"MagicalResistance"	"0"
 		//Attack
 		// --------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"	"109"
-		"AttackDamageMax"	"127"
+		"AttackDamageMin"	"122"
+		"AttackDamageMax"	"122"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"	"1.80"
 		"AttackAcquisitionRange"	"500.00"
@@ -38,8 +38,8 @@
 		//Attributes
 		// --------------------------------------------------------------
 		"AttributePrimary"	"DOTA_ATTRIBUTE_STRENGTH"
-		"AttributeBaseStrength"	"32"
-		"AttributeStrengthGain"	"3.1"
+		"AttributeBaseStrength"	"40"
+		"AttributeStrengthGain"	"2.8"
 		"AttributeBaseAgility"	"27"
 		"AttributeAgilityGain"	"2.1"
 		"AttributeBaseIntelligence"	"23"
@@ -55,19 +55,19 @@
 		// Movement
 		// --------------------------------------------------------------
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"	"300"
-		"MovementTurnRate"	"3"
+		"MovementSpeed"	"350"
+		"MovementTurnRate"	"360"
 		// Status
 		// --------------------------------------------------------------
-		"StatusHealth"	"400"
+		"StatusHealth"	"550"
 		"StatusHealthRegen"	"0.25"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0.01"
 		"StatusStartingMana"	"100"
 		// Vision
 		// --------------------------------------------------------------
-		"VisionDaytimeRange"	"1800"
-		"VisionNighttimeRange"	"800"
+		"VisionDaytimeRange"	"1600"
+		"VisionNighttimeRange"	"1000"
 		// Team
 		// --------------------------------------------------------------
 		"TeamName"	"DOTA_TEAM_NEUTRALS"

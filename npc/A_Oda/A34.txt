@@ -24,16 +24,16 @@
 		"FightRecapLevel"	"1"
 		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
 		"HotKeyOverride"	"W"
-		"AbilityCastPoint"	"0.1"	
+		"AbilityCastPoint"          				"0.25"	
 		// Time
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"	"16"
+		"AbilityCooldown"	"14"
 		// Cost
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityManaCost"	"100 125 150 175"
 		// Casting
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"	"825"
+		"AbilityCastRange"	"600"
 		// Data driven
 		// -------------------------------------------------------------------------------------------------------------
 		"precache"
@@ -45,10 +45,16 @@
 		}
 		"OnSpellStart"
 		{
+			
 			"FireSound"
 			{
 				"Target"	"CASTER"
 				"EffectName"	"A34W.vo1"
+			}
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A34_Matsu.lua"
+				"Function"	"CD_reduce"
 			}
 			"TrackingProjectile"
 			{
@@ -128,16 +134,16 @@
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
 		"HotKeyOverride"	"E"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.25"
 		// Time
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"	"10 9 8 7"
+		"AbilityCooldown"	"7"
 		// Cost
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityManaCost"	"125 145 165 185"
 		// Casting
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"	"900"
+		"AbilityCastRange"	"700"
 		"AoERadius"	"%radius"
 		"precache"
 		{
@@ -148,6 +154,11 @@
 		}
 		"OnSpellStart"
 		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A34_Matsu.lua"
+				"Function"	"CD_reduce"
+			}
 			"FireSound"
 			{
 				"Target"	"CASTER"
@@ -204,10 +215,25 @@
 				"IsDebuff"	"1"
 				"StatusEffectName"	"particles/status_fx/status_effect_frost_lich.vpcf"
 				"StatusEffectPriority"	"10"
-				"Properties"
+				"OnCreated"
 				{
-					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"%slow_movement_speed"
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%slow_attack_speed"
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"Slow"
+						"name"	"A34E"
+						"ms_slow"	"%slow_movement_speed"
+						"as_slow"	"%slow_attack_speed"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"ReturnSpeed"
+						"name"	"A34E"
+					}
 				}
 				"EffectName"	"particles/econ/courier/courier_wyvern_hatchling/courier_wyvern_hatchling_ice.vpcf"
 				"EffectAttachType"	"follow_hitloc"
@@ -226,7 +252,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"duration"	"10"
+				"duration"	"5"
 			}
 			"03"
 			{
@@ -261,7 +287,7 @@
 		// -------------------------------------------------------------------------------------------------------------
 		"BaseClass"	"ability_datadriven"
 		"AbilityTextureName"	"ancient_apparition_chilling_touch"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_POINT"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
@@ -269,7 +295,7 @@
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
 		"HotKeyOverride"	"R"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.25"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AnimationPlaybackRate"	"1"
 		// Time
@@ -277,10 +303,10 @@
 		"AbilityCooldown"	"10 9 8 7"
 		// Cost
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"	"140 160 180 200"
+		"AbilityManaCost"	"100 120 140 160"
 		// Casting
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"	"900"
+		"AbilityCastRange"	"800"
 		// Precache
 		// -------------------------------------------------------------------------------------------------------------
 		"precache"
@@ -293,6 +319,11 @@
 		}
 		"OnSpellStart"
 		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A34_Matsu.lua"
+				"Function"	"CD_reduce"
+			}
 			"FireSound"
 			{
 				"Target"	"CASTER"
@@ -386,7 +417,7 @@
 			"05"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"damage_duration"	"6.0"
+				"damage_duration"	"5.0"
 			}
 			"06"
 			{
@@ -396,12 +427,12 @@
 			"07"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"debuff_damage"	"30 40 50 60"
+				"debuff_damage"	"50 60 70 80"
 			}
 		}
 		// Damage.
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"	"200 300 400 500"
+		"AbilityDamage"	"100 175 250 325"
 	}
 
 	// 阿松 急速冷卻
@@ -424,10 +455,10 @@
 		"LevelsBetweenUpgrades"	"6"
 		// Time
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"	"75 60 45"
+		"AbilityCooldown"	"100 90 80"
 		// Cost
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"	"300 400 500"
+		"AbilityManaCost"	"100 200 300"
 		// Data Driven
 		// -------------------------------------------------------------------------------------------------------------
 		"precache"
@@ -435,6 +466,7 @@
 			"soundfile"	"sounds/weapons/hero/crystal_maiden/preattack01.vsnd"
 			"particle"	"particles/a34t/a34t.vpcf"
 			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_crystalmaiden.vsndevts"
+			"particle"	"particles/units/heroes/hero_crystalmaiden/maiden_frostbite_buff.vpcf"
 		}
 		"OnSpellStart"
 		{
@@ -449,22 +481,11 @@
 				"Target"	"CASTER"
 				"EffectName"	"hero_Crystal.preAttack"
 			}
-			"RunScript"
-			{
-				"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A34_Matsu.lua"
-				"Function"	"rearm_refresh_cooldown"
-			}
 			"ApplyModifier"
 			{
-				"ModifierName"	"modifier_stunned"
-				"Target" 		"CASTER"
-				"Duration"		"0.5"
-			}
-			"ApplyModifier"
-			{
-				"ModifierName"	"modifier_invulnerable"
-				"Target" 		"CASTER"
-				"Duration"		"0.5"
+				"ModifierName"	"modifier_A34T"
+				"Target"		"CASTER"
+				"Duration"		"%duration"
 			}
 			
 		}
@@ -474,8 +495,64 @@
 		{
 			"01"
 			{
+				"var_type"	"FIELD_INTEGER"
+				"duration"	"22"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"cd_recover"	"40 50 60"
+			}
+			"03"
+			{
 				"var_type"	"FIELD_FLOAT"
-				"channel_tooltip"	"0.5 0.5 0.5"
+				"cd_reduce"	"2"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"mana_bonus"	"300 400 500"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_A34T"
+			{
+				"EffectName"	"particles/units/heroes/hero_crystalmaiden/maiden_frostbite_buff.vpcf"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A34_Matsu.lua"
+						"Function"	"A34T_OnCreated"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A34_Matsu.lua"
+						"Function"	"A34T_OnDestroy"
+					}
+				}
+				"ThinkInterval"  "0.1"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A34_Matsu.lua"
+						"Function"	"A34T_OnIntervalThink"
+					}
+				}
+			}
+			"modifier_A34T_Passive"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_BONUS"	"%mana_bonus"
+				}
 			}
 		}
 	}
@@ -497,7 +574,7 @@
 		"FightRecapLevel"	"1"
 		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
 		"HotKeyOverride"	"W"
-		"AbilityCastPoint"	"0.1"	
+		"AbilityCastPoint"          				"0.35"	
 		// Time
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"	"12 16 18 24"
@@ -601,7 +678,7 @@
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
 		"HotKeyOverride"	"E"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		// Time
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"	"10 9 8 7"
@@ -742,7 +819,7 @@
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
 		"HotKeyOverride"	"R"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AnimationPlaybackRate"	"1"
 		// Time
@@ -887,7 +964,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityType"			"DOTA_ABILITY_TYPE_ULTIMATE"
 
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"150 135 120"
 		"AbilityManaCost"	"200 250 300"
 		"AbilityDuration"	"30 40 50"
@@ -971,7 +1048,7 @@
 		"FightRecapLevel"	"1"
 		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
 		"HotKeyOverride"	"W"
-		"AbilityCastPoint"	"0.1"	
+		"AbilityCastPoint"          				"0.35"	
 		// Time
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"	"10"
@@ -1069,7 +1146,7 @@
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
 		"HotKeyOverride"	"E"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		// Time
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"	"14 12 10 8"
@@ -1210,7 +1287,7 @@
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
 		"HotKeyOverride"	"R"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AnimationPlaybackRate"	"1"
 		// Time
@@ -1355,7 +1432,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityType"			"DOTA_ABILITY_TYPE_ULTIMATE"
 
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"120"
 		"AbilityManaCost"	"150 200 250"
 		"AbilityDuration"	"30"
@@ -1433,7 +1510,7 @@
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
 		"HotKeyOverride"	"R"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AnimationPlaybackRate"	"1"
 		"Maxlevel"	"1"

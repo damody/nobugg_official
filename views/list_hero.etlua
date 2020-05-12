@@ -3,8 +3,6 @@ local inspect = require("inspect")
 require("read_hero")
 require("langtext")
 lang = params.language
-local redis = require 'redis'
-local client = redis.connect('127.0.0.1', 6379)
 local cjson = require("cjson")
 
 if lang == "zhtw" then
@@ -26,19 +24,19 @@ end
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  <script type="text/javascript" src="../../static/fancyBox/jquery.fancybox.js?v=2.1.5"></script>
-  <link rel="stylesheet" type="text/css" href="../../static/fancyBox/jquery.fancybox.css?v=2.1.5" media="screen" />
+  <script type="text/javascript" src="../../nobu/static/fancyBox/jquery.fancybox.js?v=2.1.5"></script>
+  <link rel="stylesheet" type="text/css" href="../../nobu/static/fancyBox/jquery.fancybox.css?v=2.1.5" media="screen" />
 
   <!-- Add Button helper (this is optional) -->
-  <link rel="stylesheet" type="text/css" href="../../static/fancyBox/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
-  <script type="text/javascript" src="../../static/fancyBox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+  <link rel="stylesheet" type="text/css" href="../../nobu/static/fancyBox/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+  <script type="text/javascript" src="../../nobu/static/fancyBox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
 
   <!-- Add Thumbnail helper (this is optional) -->
-  <link rel="stylesheet" type="text/css" href="../../static/fancyBox/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
-  <script type="text/javascript" src="../../static/fancyBox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+  <link rel="stylesheet" type="text/css" href="../../nobu/static/fancyBox/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+  <script type="text/javascript" src="../../nobu/static/fancyBox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 
   <!-- Add Media helper (this is optional) -->
-  <script type="text/javascript" src="../../static/fancyBox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+  <script type="text/javascript" src="../../nobu/static/fancyBox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
   <script type="text/javascript">
   function openbox(path) {
     $.fancybox.open({
@@ -69,7 +67,7 @@ end
       it = heroname[key]
     %>
       <div class="col-sm-3"><a href="javascript:openbox('hero/<%-i%>');"><h3><%-it%></h3></a>
-        <a href="javascript:openbox('hero/<%-i%>');"><img src="../../static/pic/hero/<%-string.lower(i)%>.png" class="img-rounded" alt="<%-i%>" width="80" height="80"></a>
+        <a href="javascript:openbox('hero/<%-i%>');"><img src="../../nobu/static/pic/hero/<%-string.lower(i)%>.png" class="img-rounded" alt="<%-i%>" width="80" height="80"></a>
       </div>
       <% end %>
     <% end %>
@@ -79,7 +77,7 @@ end
     <% for i, it in pairs(heroname) do %>
       <% if string.match(i, "B") then %>
       <div class="col-sm-3"><a href="javascript:openbox('hero/<%-i%>');"><h3><%-it%></h3></a>
-        <a href="javascript:openbox('hero/<%-i%>');"><img src="../../static/pic/hero/<%-string.lower(i)%>.png" class="img-rounded" alt="<%-i%>" width="80" height="80"></a>
+        <a href="javascript:openbox('hero/<%-i%>');"><img src="../../nobu/static/pic/hero/<%-string.lower(i)%>.png" class="img-rounded" alt="<%-i%>" width="80" height="80"></a>
       </div>
       <% end %>
     <% end %>
@@ -89,7 +87,7 @@ end
     <% for i, it in pairs(heroname) do %>
       <% if string.match(i, "C") then %>
       <div class="col-sm-3"><a href="javascript:openbox('hero/<%-i%>');"><h3><%-it%></h3></a>
-        <a href="javascript:openbox('hero/<%-i%>');"><img src="../../static/pic/hero/<%-string.lower(i)%>.png" class="img-rounded" alt="<%-i%>" width="80" height="80"></a>
+        <a href="javascript:openbox('hero/<%-i%>');"><img src="../../nobu/static/pic/hero/<%-string.lower(i)%>.png" class="img-rounded" alt="<%-i%>" width="80" height="80"></a>
       </div>
       <% end %>
     <% end %>

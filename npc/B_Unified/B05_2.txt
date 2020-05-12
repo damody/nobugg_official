@@ -3,7 +3,7 @@
 	// 毛利元就
 	"B05"
 	{
-		"ModelScale"	"1.3"
+		"ModelScale"	"1.0"
 		//"Model"	"models/maori/maori_model.vmdl"
 		//"DisableWearables"	"1"
 		//"Level"	"5"
@@ -14,21 +14,21 @@
 		"Ability1"	"B05W"
 		"Ability2"	"B05E"
 		"Ability3"	"B05R"
-		"Ability4"	"attribute_bonusx"
-		"Ability5"	"B05T"
-		"Ability6"	"B05_precache"
+		"Ability4"	"magical_resistance"
+		"Ability5"	"B05_precache"
+		"Ability6"	"B05T"
 		// Armor
 		// ----------------------------------------------------------------
-		"ArmorPhysical"	"4"
-		"MagicalResistance"	"30"
+		"ArmorPhysical"	"3"
+		"MagicalResistance"	"0"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"	"71.0"
-		"AttackDamageMax"	"79.0"
+		"AttackDamageMin"	"75.0"
+		"AttackDamageMax"	"75.0"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"	"1.80"
-		"AttackAnimationPoint"	"0.40"
+		"AttackAnimationPoint"	"0.30"
 		"AttackAcquisitionRange"	"1200"
 		"AttackRange"	"600"
 		"ProjectileSpeed"	"1350"
@@ -43,8 +43,8 @@
 		"AttributeIntelligenceGain"	"3.80"		
 		// Bounty
 		// ----------------------------------------------------------------
-		"BountyGoldMin"	"300.0"
-		"BountyGoldMax"	"300.0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
 		// Gold and Lumber
 		// ----------------------------------------------------------------
 		"GoldCost"	"0"
@@ -52,19 +52,20 @@
 		// Movement
 		// ----------------------------------------------------------------
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"	"300"
-		"MovementTurnRate"	"1.50"
+		
+		"MovementSpeed"	"350"
+		"MovementTurnRate"	"360"
 		// Status
 		// ----------------------------------------------------------------
-		"StatusHealth"	"400"
+		"StatusHealth"	"550"
 		"StatusHealthRegen"	"0.25"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0.01"
 		"StatusStartingMana"	"100"
 		// Vision
 		// ----------------------------------------------------------------
-		"VisionDaytimeRange"	"1800"
-		"VisionNighttimeRange"	"800"
+		"VisionDaytimeRange"	"1600"
+		"VisionNighttimeRange"	"1000"
 		// Team
 		// ----------------------------------------------------------------
 		"TeamName"	"DOTA_TEAM_NEUTRALS"

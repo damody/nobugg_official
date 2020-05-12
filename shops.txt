@@ -5,16 +5,12 @@
 "consumables"
 {
 	"item"      "item_perceive_wine"		//般若湯
-	"item"      "item_perceive_wine_hyper"	//抗魔
 	"item"      "item_rations"				//軍糧丸
 	"item"      "item_sake"					//清酒
 	"item"      "item_liquor"				//燒酒
 	"item"      "item_napalm_bomb"			//爆烈彈
 	"item"      "item_shuriken"				//手裏劍
 	"item"		"item_earth_wall_book"		//忍法．土遁之書
-	"item"		"item_earth_wall_book2"		//忍法．土遁之書
-	"item"      "item_insight_gem_s"		//寶石碎片
-	"item"      "item_gold_to_prestige"		//兵力
 }
 
 //偷買
@@ -23,22 +19,27 @@
 	"item"      "item_pleated_skirt"			//褶裙
 	"item"		"item_the_club_of_nebula"			//星杵
 	"item"      "item_lightning_scroll"			//雷之卷
+	"item"      "item_flame_armor"			//鱗片甲
 	"item"      "item_regeneration_ingot"			//再生鋼
 	"item"      "item_spirit_ingot"			//回魔鋼
 	"item"      "item_health_ingot"			//生命鋼
 	"item"      "item_mana_ingot"			//法力鋼
+	"item"      "item_strength_ingot"			//蠻力鋼
+	"item"      "item_agility_ingot"			//迅捷鋼
+	"item"      "item_intelligence_ingot"		//技巧鋼
 	"item"      "item_perceive_wine"		//般若湯
-	"item"      "item_perceive_wine_hyper"	//抗魔
 	"item"      "item_rations"				//軍糧丸
 	"item"      "item_sake"					//清酒
 	"item"      "item_liquor"				//燒酒
 	"item"      "item_napalm_bomb"			//爆烈彈
 	"item"      "item_shuriken"				//手裏劍
-	"item"      "item_insight_gem_s"			//寶石碎片
-	"item"      "item_magic_ring"	//法術戒指
 	"item"      "item_katana"			//打刀
 	"item"      "item_tachi"			//太刀
-	"item"      "item_speed_clothes"			//疾風衣
+	"item"      "item_staff"			//杵杖
+	"item"		"item_ninja1"		//忍者
+	"item"		"item_the_red_lightning_chapter"		//赤雷
+	"item"		"item_gorgeous_tachi"		//陣太刀
+	"item"      "item_spell_book"			//法術書
 }
 
 
@@ -64,10 +65,11 @@
 //基礎物品
 "weapons_armor"
 {
-	"item"      "item_magic_ring"	//法術戒指
 	"item"      "item_flash_ring"	//閃光輪
 	"item"      "item_strength_ingot"			//蠻力鋼
 	"item"      "item_agility_ingot"			//迅捷鋼
+	"item"		"item_toughness_ingot"		//韌性鋼
+	"item"		"item_magic_resistance_ingot"		//禦魔鋼
 	"item"      "item_intelligence_ingot"			//技巧鋼
 	"item"      "item_power_ingot"			//強化鋼
 	"item"      "item_regeneration_ingot"			//再生鋼
@@ -96,6 +98,8 @@
 	"item"      "item_storm_book"			//狂風之書
 	"item"      "item_spell_book"			//法術書
 	"item"      "item_thunderstorms"			//天變之書
+	"item"      "item_frozen_book"			//冰爆之書
+	"item"      "item_frozen_staff"			//冰風爆之杖
 
 }   
 
@@ -107,15 +111,15 @@
 	"item"      "item_cross_spear"			//十字槍
 	"item"      "item_gorgeous_tachi"			//陣太刀
 	"item"      "item_big_tachi"			//野太刀
-	"item"      "item_variety_tachi"			//長捲
 	"item"      "item_logs_big_tachi"			//戒杖刀
 	"item"      "item_red_spear"			//皆朱槍
-	"item"      "item_ninja_protection"			//禦神法輪
 	"item"      "item_moon_spear"			//斬月槍
 	"item"      "item_ronin_jitte"			//浪人十手
 	"item"      "item_sakabatou"			//逆刃刀
 	"item"      "item_glass_mitsutomo"			//琉璃光姬
 	"item"      "item_the_dark_yellow_teeth_and_zimbabwe"			//闇牙黃泉津
+	"item"      "item_mana_thief"			//禦神法輪
+	"item"      "item_nagamaki"			//長捲
 }
 
 //高階道具
@@ -124,17 +128,14 @@
 	"item"      "item_dark_boots"			//暗部長靴
 	"item"      "item_mana_boots"			//仕手能靴
 	"item"      "item_magic_defence_boots"			//禦魔長踏
+	"item"		"item_swiftness_boots"				//流風捷履
 	"item"      "item_ryukyu_ronin_clogs"			//琉球浪人木屐
-	"item"      "item_death_of_scepter"			//逝者之笏
-	"item"      "item_the_shell_of_spirituality_kappa"			//妖化河童殼
 	"item"      "item_kotennmyohiragumo"			//平蜘蛛釜
 	"item"      "item_magic_talisman"			//御魔護符
 	"item"      "item_moon_mirror"			//月輪鏡
-	"item"      "item_hachiman_bell"			//八幡鈴
 	"item"      "item_ghost_mask"			//鬼面
 	"item"      "item_satsuma_gun"			//薩摩銃
 	"item"      "item_hama_orb"			//破魔寶珠
-	"item"      "item_wakizashi"			//
 }
 
 //高階法書
@@ -166,7 +167,6 @@
 	"item"      "item_nannbann_armor"			//南蠻胴具足
 	"item"      "item_foxfire_armor"			//狐火大鎧
 	"item"      "item_contemporary_armor"			//當世具足
-	"item"      "item_ghost_gloves"			//鬼之籠手
 	"item"      "item_shun_armor"			//掛面具足
 	"item"      "item_prophet_armor"			//真知短甲
 	"item"      "item_devil_supressor_armor"			//制魔腹卷
@@ -192,62 +192,37 @@
 	"item"      "item_the_scream_of_spiders"			//鬼蜘蛛．夜哭
 	"item"      "item_raikiri"			//雷切
 	"item"      "item_the_sword_of_kaminaobi"			//神直毘御劍
-	"item"		"item_kat_steel" //吉鋼鐵
 }
 
 
 // 升級類裝備
 "artifacts"
 {
-	"item"      "item_samurai_cloth_x"			//武士服．改
-	"item"      "item_ronin_jitte_2"			//浪人十手+2
 	"item"      "item_dark_boots_1"			//暗部長靴
 	"item"      "item_mana_boots_1"			//仕手能靴
 	"item"      "item_magic_defence_boots_1"			//禦魔長踏
+	"item"      "item_swiftness_boots_1"			//流風捷履
 	"item"      "item_ryukyu_ronin_clogs_1"			//琉球浪人木屐
 }
 
 // 路邊商店
 "sideshop1"
 {
-	"item"      "item_insight_gem_s"		//寶石碎片
-	"item"      "item_healing_totem"		//療癒圖騰
 	"item"      "item_flash_ring"			//閃光輪
-	"item"      "item_ancient_doll"			//久棄邪物
 	"item"      "item_tea_bowl"				//茶碗
 	"item"      "item_protection_amulet"	//御守
 	"item"      "item_brave_ring"			//武尊環
 	"item"      "item_samurai's_badge"		//侍的徽章
 	"item"      "item_perceive_wine"		//般若湯
-	"item"      "item_perceive_wine_hyper"	//抗魔
 	"item"      "item_rations"				//軍糧丸
 	"item"      "item_sake"					//清酒
 	"item"      "item_liquor"				//燒酒
-	"item"      "item_poisonous_ring"				//毒之戒指
-}
-
-// 路邊名刀舖
-"sideshop2"
-{
-	"item"      "item_the_great_sword_of_xnew_moon"			//三日月宗近．銘刀
-	"item"      "item_the_great_sword_of_toxic"			//梅鶯毒．妖刀
-	"item"      "item_the_great_sword_of_teleport"			//陸奧守吉行．銘刀
-	"item"      "item_the_great_sword_of_drain"			//吉光骨食．銘刀
-	"item"      "item_the_great_sword_of_weakness"			//天之叢雲．銘刀
-	"item"      "item_the_great_sword_of_banish"			//大典太光世．銘刀
-	"item"      "item_the_great_sword_of_berserker"			//數珠丸恆次．銘刀
-	"item"      "item_the_great_sword_of_disarmament"			//童子切安鋼．銘刀
-	"item"		"item_the_great_spirited_away"			//神隱
-	"item"		"item_waterfall_book"				//水瀑之書
-	"item"		"item_ksitigarbha"				//地藏王菩薩木雕‧古物
-	"item"		"item_the_great_bow_of_scorpion"				//蠍尾妖弓
-	"item"		"item_frozen_book"				//冰爆之書
 }
 
 //名刀舖
 "secretshop"
 {
-	"item"      "item_the_great_sword_of_soul"			//菊一文字則．太刀
+	"item"      "item_the_great_sword_of_soul_hyper"			//菊一文字則．太刀
 	"item"      "item_the_great_sword_of_disease"		//池田鬼神丸國重．銘刀
 	"item"      "item_the_great_sword_of_precision"		//長船．太刀
 	"item"      "item_the_great_sword_of_anger"			//鬼撤．妖刀

@@ -6,15 +6,15 @@
 		// General
 		// ----------------------------------------------------------------
 		"override_hero"	"npc_dota_hero_vengefulspirit"
-		"ModelScale"	"1.4"
+		"ModelScale"	"1.0"
 		// Abilities
 		// ----------------------------------------------------------------
 		"Ability1"	"C09W"
 		"Ability2"	"C09E"
 		"Ability3"	"C09R"
-		"Ability4"	"C09T"
+		"Ability4"	"magical_resistance"
 		"Ability5"	"C09_precache"
-		"Ability6"	"attribute_bonusx"
+		"Ability6"	"C09T"
 		"Ability7"	""
 		"Ability8"	""
 		"Ability9"	""
@@ -28,14 +28,14 @@
 
 		// Armor
 		// ----------------------------------------------------------------
-		"ArmorPhysical"		"9"
-		"MagicalResistance"	"30"
+		"ArmorPhysical"		"5"
+		"MagicalResistance"	"0"
 
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"			"113"
-		"AttackDamageMax"			"129"
+		"AttackDamageMin"			"121"
+		"AttackDamageMax"			"121"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"				"1.7"
 		"AttackAnimationPoint"		"0.2"
@@ -54,8 +54,8 @@
 
 		// Bounty
 		// ----------------------------------------------------------------
-		"BountyGoldMin"	"300.0"
-		"BountyGoldMax"	"300.0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
 
 		// Bounds
 		// ----------------------------------------------------------------
@@ -65,8 +65,8 @@
 		// Movement
 		// ----------------------------------------------------------------
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"			"300"
-		"MovementTurnRate"		"1.50"
+		"MovementSpeed"	"350"
+		"MovementTurnRate"		"360"
 
 		// Gold and Lumber
 		// ----------------------------------------------------------------
@@ -75,7 +75,7 @@
 
 		// Status
 		// ----------------------------------------------------------------
-		"StatusHealth"			"400"
+		"StatusHealth"			"550"
 		"StatusHealthRegen"		"0.25"
 		"StatusMana"			"0"
 		"StatusManaRegen"		"0.01"
@@ -83,8 +83,8 @@
 
 		// Vision
 		// ----------------------------------------------------------------
-		"VisionDaytimeRange"	"1800"
-		"VisionNighttimeRange"	"800"
+		"VisionDaytimeRange"	"1600"
+		"VisionNighttimeRange"	"1000"
 
 		// Combat
 		// ----------------------------------------------------------------

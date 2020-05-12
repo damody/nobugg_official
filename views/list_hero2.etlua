@@ -3,8 +3,6 @@ local inspect = require("inspect")
 require("read_hero")
 require("langtext")
 lang = params.language
-local redis = require 'redis'
-local client = redis.connect('127.0.0.1', 6379)
 local cjson = require("cjson")
 
 if lang == "zhtw" then
@@ -85,7 +83,7 @@ end
                 <div class="champion-box"><% 
                 end %>
                     <a href="hero/<%-i%>">
-                        <img src="/static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name"><%-it%></div>
+                        <img src="/nobu/static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name"><%-it%></div>
                     </a><% 
               end 
             end%>
@@ -122,7 +120,7 @@ end
                 <div class="champion-box"><% 
                 end  %>
                     <a href="hero/<%-i%>">
-                        <img src="/static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name"><%-it%></div>
+                        <img src="/nobu/static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name"><%-it%></div>
                     </a><% 
               end 
             end%>
@@ -167,7 +165,7 @@ end
                 <div class="champion-box"><% 
                 end %>
                     <a href="hero/<%-i%>">
-                        <img src="/static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name"><%-it%></div>
+                        <img src="/nobu/static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name"><%-it%></div>
                     </a><% 
               end 
             end%>

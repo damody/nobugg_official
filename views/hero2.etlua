@@ -5,8 +5,6 @@ lang = params.language
 hero = read_hero()[params.hero]
 data = inspect(hero["C02"])
 print(data)
-local redis = require 'redis'
-local client = redis.connect('127.0.0.1', 6379)
 local cjson = require("cjson")
 record16 = {}--cjson.decode(client:get(string.lower(params.hero).."_16"))
 record11 = {}--cjson.decode(client:get(string.lower(params.hero).."_11"))
@@ -101,58 +99,7 @@ end
                 </div>
             </div>
             <% end %>
-            <!--英雄預覽 11-->
-            <!--技能資訊 11-->
-            <%
-            hasold = false
-            for i, it in ipairs(skill) do
-                item = hero[params.hero..it.."_old"]
-                if item ~=nil and item["name"] ~= nil then
-                  hasold = true
-                end
-            end
-            if hasold then %>
-            <div class="champion-info">
-                <h2 class="champion-title"><%-langtext["abilityinfo"][lang]%><span>Ability Info</span></h2>
-                <h3 class="ver"><%-langtext["version"][lang]%>：11</h3><% 
-                for i, it in ipairs(skill) do
-                  item = hero[params.hero..it.."_old"]
-                  if item ~=nil and item["name"] ~= nil then 
-                    if item["name"][lang] == nil then
-                        item["name"][lang] = ""
-                    end%>
-                <div class="ability-list">
-                    <h4 class="ability-name"><%=it.." "..item["name"][lang]%></h4>
-                    <div class="ability-box">
-                        <img src="../../static/pic/spellicons/<%-item["pic"]%>.png" alt="<%=item["name"][lang]%> icon" width="100" height="100">
-                        <div class="ability-info">
-                            <ul>
-                                <li class="ability-info-list item-info-list">
-                                <ul>
-                                <% if item["cooldown"] ~= nil then %>
-                                    <li><span class="item-info-list-title"><%-langtext["cd"][lang]%></span><span class="item-info-list-value"><%= item["cooldown"] %></span></li>
-                                <% end %>
-                                <% if item["mana"] ~= nil then %>
-                                    <li><span class="item-info-list-title"><%-langtext["mana"][lang]%></span><span class="item-info-list-value"><%= item["mana"] %></span></li>
-                                <% end %>
-                                <% if item["radius"] ~= nil then %>
-                                    <li><span class="item-info-list-title"><%-langtext["radius"][lang]%></span><span class="item-info-list-value"><%= item["radius"] %></span></li>
-                                <% end %>
-                                <% if item["range"] ~= nil then %>
-                                    <li><span class="item-info-list-title"><%-langtext["range"][lang]%></span><span class="item-info-list-value"><%= item["range"] %></span></li>
-                                <% end %>
-                                </ul>
-                                <li><%- item["Description"][lang] %></li>
-                                </ul>
-                            </ul>
-                        </div>
-                    </div>
-                </div><% 
-                    end 
-                end %>
-            </div>
-            <% end %>
-            <!--技能資訊 11-->
+            
             <!--統計資訊 16-->
             <% if record16["all"] ~= nil then %>
         	<div class="champion-info champion-st">
@@ -360,6 +307,6 @@ end
         </div>
     </div>
 <div style="width: 50%;margin: 0 auto;">
-<div width="100%" class="fb-comments" data-href="http://www.dota2nobu.com/<%-lang%>/<%-params.webpath%>" data-numposts="5"></div>
+<div width="100%" class="fb-comments" data-href="http://www.dota2nobu.com/nobu/<%-lang%>/<%-params.webpath%>" data-numposts="5"></div>
 </div>
 <% render("views.footer", { lang = lang, langtext = langtext, heroname = heroname}) %>

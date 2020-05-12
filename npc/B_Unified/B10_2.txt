@@ -3,7 +3,7 @@
  {
 	"B10"
 	{
-	    "ModelScale"	"1.5"
+	    "ModelScale"	"1.3"
 		"Model"	"models/b10/b10.vmdl"
 		"DisableWearables"	"1"
 		//"Level"	"1"
@@ -16,19 +16,19 @@
 		"Ability1"	"B10W"
 		"Ability2"	"B10E"
 		"Ability3"	"B10R"
-		"Ability4"	"B10T"
-		"Ability5"	"attribute_bonusx"
-		"Ability6"	"B10_precache"
+		"Ability4"	"magical_resistance"
+		"Ability5"	"B10_precache"
+		"Ability6"	"B10T"
 		"Ability7"	""
 		//Armor
 		// --------------------------------------------------------------
-		"ArmorPhysical"	"7"
-		"MagicalResistance"	"30"
+		"ArmorPhysical"	"5"
+		"MagicalResistance"	"0"
 		//Attack
 		// --------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"	"112.0"
-		"AttackDamageMax"	"128.0"
+		"AttackDamageMin"	"120.0"
+		"AttackDamageMax"	"120.0"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"	"1.8"
 		"AttackAnimationPoint"	"0.3"
@@ -54,19 +54,20 @@
 		// Movement
 		// --------------------------------------------------------------
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"	"300"
-		"MovementTurnRate"	"1.50"
+		"MovementSpeed"	"350"
+
+		"MovementTurnRate"	"360"
 		// Status
 		// --------------------------------------------------------------
-		"StatusHealth"	"400"
+		"StatusHealth"	"550"
 		"StatusHealthRegen"	"0.25"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0.01"
 		"StatusStartingMana"	"100"
 		// Vision
 		// --------------------------------------------------------------
-		"VisionDaytimeRange"	"1800"
-		"VisionNighttimeRange"	"800"
+		"VisionDaytimeRange"	"1600"
+		"VisionNighttimeRange"	"1000"
 		// Team
 		// --------------------------------------------------------------
 		"TeamName"	"DOTA_TEAM_NEUTRALS"

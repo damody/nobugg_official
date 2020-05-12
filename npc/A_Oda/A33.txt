@@ -422,7 +422,7 @@
 		"AbilityType"  								"DOTA_ABILITY_TYPE_BASIC"
 		//-------------------------------------------------------------------------------------------------------------
 		"AOERadius"                                 "%radius"
-		"AbilityCastPoint"                          "0.1"
+		"AbilityCastPoint"          				"0.25"
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"                           "22 20 18 16"
 		"AbilityUnitDamageType"                     "DAMAGE_TYPE_MAGICAL" 

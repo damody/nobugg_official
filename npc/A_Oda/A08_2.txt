@@ -7,38 +7,32 @@
 		"SoundSet"	"Hero_Axe"
 		"VoiceFile" "soundevents/voscripts/game_sounds_vo_axe.vsndevts"
 		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_axe.vsndevts"
-		"ModelScale"	"2"
+		"ModelScale"	"1.8"
 		"Model"	"models/a08/a08.vmdl"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
 		"HealthBarOffset"	"180"
 		// Abilities
 		// ----------------------------------------------------------------
-		// Reference: AInv
+		
 		"Ability1"	"A08W"
-		// Reference: A0DN
 		"Ability2"	"A08E"
-		// Reference: Aamk
 		"Ability3"	"A08R"
-		// Reference: A00O
-		"Ability4"	"A08T"
-		// Reference: A00P
-		"Ability5"	"attribute_bonusx"
-		// Reference: A00Q
+		"Ability4"	"magical_resistance"
+		"Ability5"	"A08_precache"
 		"Ability6"	"A08T"
-		// Reference: A0NZ
-		"Ability7"	"A08_precache"
+		"Ability7"	""
 		// Armor
 		// ----------------------------------------------------------------
-		"ArmorPhysical"	"7"
-		"MagicalResistance"	"30"
+		"ArmorPhysical"	"5"
+		"MagicalResistance"	"0"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"	"139.0"
-		"AttackDamageMax"	"167.0"
+		"AttackDamageMin"	"113.0"
+		"AttackDamageMax"	"113.0"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"	"1.80"
-		"AttackAnimationPoint"	"0.38"
+		"AttackAnimationPoint"	"0.30"
 		"AttackAcquisitionRange"	"500"
 		"AttackRange"	"128"
 		"ProjectileSpeed"	"10000"
@@ -53,24 +47,24 @@
 		"AttributeIntelligenceGain"	"2"
 		// Bounty
 		// ----------------------------------------------------------------
-		"BountyGoldMin"	"300.0"
-		"BountyGoldMax"	"300.0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
 		// Movement
 		// ----------------------------------------------------------------
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"	"300"
-		"MovementTurnRate"	"1.50"
+		"MovementSpeed"	"350"
+		"MovementTurnRate"	"360"
 		// Status
 		// ----------------------------------------------------------------
-		"StatusHealth"	"400"
+		"StatusHealth"	"550"
 		"StatusHealthRegen"	"0.25"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0.01"
 		"StatusStartingMana"	"100"
 		// Vision
 		// ----------------------------------------------------------------
-		"VisionDaytimeRange"	"1800"
-		"VisionNighttimeRange"	"800"
+		"VisionDaytimeRange"	"1600"
+		"VisionNighttimeRange"	"1000"
 		// Team
 		// ----------------------------------------------------------------
 		"TeamName"	"DOTA_TEAM_NEUTRALS"

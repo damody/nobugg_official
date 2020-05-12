@@ -19,7 +19,131 @@
 			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_luna.vsndevts" //e
 		}
 	}
-
+	// 忍法．迷蹤步
+	"A15D"
+	{
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"custom/A13D"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
+		"FightRecapLevel"	"6"
+		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
+		"HotKeyOverride"	"D"
+		"MaxLevel"	"5"
+		"AbilityCastPoint"	"0.0"
+		"AbilityCooldown"	"20"
+		"AbilityManaCost"	"100"
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_nyx_assassin.vsndevts"
+			"particle"	"particles/status_fx/status_effect_base.vpcf"
+			"particle"	"particles/units/heroes/hero_nyx_assassin/nyx_assassin_vendetta_start.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"FireSound"
+			{
+				"Target"	"CASTER"
+				"EffectName"	"A15D.vo1"
+			}
+			"ApplyModifier"
+			{
+				"Target"
+				{
+				    "Center" "CASTER"
+				    "Flags" "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+				}
+				"ModifierName"	"modifier_A15D"
+				"Duration"	"20.0"
+			}
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A15.lua"
+				"Function"		"A15D"
+			}
+			"ApplyModifier"
+			{
+				"Target"
+				{
+				    "Center" "CASTER"
+				    "Flags" "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+				}
+				"ModifierName"	"modifier_invisible"
+				"Duration"	"%duration"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_A15D"
+			{
+				"Duration"	"%duration"
+				"OnCreated"
+				{
+					"AttachEffect"
+					{
+						"Target"	"TARGET"
+						"EffectName"	"particles/units/heroes/hero_nyx_assassin/nyx_assassin_vendetta_start.vpcf"
+						"EffectAttachType"	"start_at_origin"
+					}
+				}
+				"OnAttack"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A15.lua"
+						"Function"	"A15D_End"
+					}
+				}
+				"OnAbilityExecuted"
+				{
+					"RemoveModifier"
+					{
+						"Target"	"CASTER"
+						"ModifierName"	"modifier_A15D"
+					}
+					"RemoveModifier"
+					{
+						"Target"	"CASTER"
+						"ModifierName"	"modifier_invisible"
+					}
+				}
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_INVISIBILITY_LEVEL"	"0"
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"%A15D_movement_speed"
+				}
+				"States"
+				{
+					"MODIFIER_STATE_NO_UNIT_COLLISION"	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_LOW_ATTACK_PRIORITY" "MODIFIER_STATE_VALUE_ENABLED"
+				}
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"A15D_Damage"	"100 160 220 280 340"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"A15D_movement_speed"	"5 10 15 20 25"
+			}
+			"03"
+			{
+				"var_type" "FIELD_INTEGER"
+				"duration"	"10 15 20 25"
+			}
+		}
+	}
 	//忍法．竭印
 	"A15W"
 	{
@@ -31,12 +155,19 @@
 		"AbilityUnitTargetFlags"					"DOTA_UNIT_TARGET_FLAG_NONE"
 		"AbilityType"  								"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityUnitDamageType"               		"DAMAGE_TYPE_MAGICAL"
-		
-		"AbilityCastPoint"                          "0.1"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityCastPoint"          				"0.15"
 		"AbilityCastRange"							"800"
-		"AbilityCooldown"                           "13"
+		"AbilityCooldown"                           "26"
 		"AbilityManaCost"                           "125 135 145 155"
-
+		"OnUpgrade"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A15.lua"
+				"Function"	"A15_Levelup"
+			}
+		}
 		"OnSpellStart"
 		{
 			"RunScript"
@@ -91,7 +222,7 @@
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"A15W_dotDamage"			"85 120 155 190"
+				"A15W_dotDamage"			"30 40 50 60"
 			}
 			"03"
 			{
@@ -110,16 +241,24 @@
 		"AbilityUnitTargetTeam"                		"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityType"  								"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityUnitDamageType"               		"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"AbilityTextureName"    					"custom/A15/A15E"
 
-		"AbilityCooldown"							"16 13 10 7"
-		"AbilityCastPoint" 							"0.25" //stun
+		"AbilityCooldown"							"16 14 12 10"
+		"AbilityCastPoint" 							"0.3" //stun
 		"AbilityManaCost"                      		"125 145 165 185"
 		"AbilityCastRange"              			"1000"
 		//"AnimationPlaybackRate"						"0.5"
 		"AbilityChannelTime"						"%A15E_duration"
 		"AOERadius"									"%A15E_radius"
-		
+		"OnUpgrade"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A15.lua"
+				"Function"	"A15_Levelup"
+			}
+		}
 		"OnSpellStart"
 		{
 			"RunScript"
@@ -128,7 +267,15 @@
 				"Function"							"A15E_OnSpellStart"
 			}
 		}
-
+		"Modifiers"
+		{
+			"modifier_A15E_hit"
+			{
+				"IsHidden"	"1"
+				"IsDebuff"	"1"
+				"IsPurgable" "0"
+			}
+		}
 		"AbilitySpecial"
 		{
 			"01"
@@ -149,7 +296,7 @@
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"A15E_moonRadius"				"250"
+				"A15E_moonRadius"				"180"
 			}
 			"05"
 			{
@@ -160,6 +307,11 @@
 			{
 				"var_type"						"FIELD_INTEGER"
 				"A15E_maxMoon"					"4 5 6 7"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"A15E_maxHit"					"4"
 			}
 		}
 	}
@@ -174,6 +326,7 @@
 		"AbilityUnitTargetFlags"					"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE"
 		"AbilityType"  								"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityUnitDamageType"               		"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"							"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"                        "custom/A15/A15R"
 
 		"OnProjectileHitUnit"
@@ -185,7 +338,14 @@
 				"Function"		"A15R_OnProjectileHitUnit"
 			}
 		}
-
+		"OnUpgrade"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A15.lua"
+				"Function"	"A15_Levelup"
+			}
+		}
 		"Modifiers"
 		{
 			"modifier_A15R_passive"
@@ -224,17 +384,17 @@
 			"01" // 每次彈跳增加的傷害比例
 			{
 				"var_type" 				"FIELD_FLOAT"
-				"bonus_damage" 			"-0.1"
+				"bonus_damage" 			"-0.2"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"jump_max"				"3 4 5 6"
+				"jump_max"				"2 3 4 5"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"jump_radius"			"700"
+				"jump_radius"			"450"
 			}
 		}
 
@@ -245,23 +405,18 @@
 	{
 		"BaseClass"                 				"ability_datadriven"
 		"AbilityBehavior"           				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		//"AbilityUnitTargetType"     				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		//"AbilityUnitTargetTeam"     				"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		//"AbilityUnitTargetFlags"    				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityType"  								"DOTA_ABILITY_TYPE_ULTIMATE"
-		//"AbilityUnitDamageType"						"DAMAGE_TYPE_PURE"
 		"AbilityTextureName"                        "custom/A15/A15T"
 		
-		"AbilityCastPoint"          				"0.1"
 		"AbilityCooldown"           				"60"
 		"AbilityManaCost"           				"155"
 		
 		"OnSpellStart"
 		{
-			"RunScript"
+			"ApplyModifier"
 			{
-				"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A15.lua"
-				"Function"		"A15T_OnSpellStart"
+				"ModifierName"		"modifier_A15T2"
+				"Target" 			"CASTER"
 			}
 			"RunScript"
 			{
@@ -275,14 +430,9 @@
 		{
 			"modifier_A15T"
 			{
+				"Passive"			"1"
 				"IsDebuff"			"0"
 				"IsPurgable"		"0"
-				"EffectName"		"particles/a15t/a15t.vpcf"
-				"EffectAttachType"	"follow_origin"
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "%A15T_attackBonus"
-				}
 				"OnAttackLanded"
 				{
 					"RunScript"
@@ -292,6 +442,14 @@
 						"Damage"		"%attack_damage"
 					}
 				}
+			}
+			"modifier_A15T2"
+			{
+				"Passive"			"0"
+				"IsDebuff"			"0"
+				"Duration"			"%A15T_duration"
+				"EffectName"		"particles/a15t/a15t.vpcf"
+				"EffectAttachType"	"follow_origin"
 			}
 		}
 
@@ -305,7 +463,7 @@
 			"02"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"A15T_lifeSteal"	"36"
+				"A15T_lifeSteal"	"10"
 			}
 			"03"
 			{
@@ -325,7 +483,7 @@
 		"AbilityUnitTargetFlags"    				"DOTA_UNIT_TARGET_FLAG_NONE"
 		"AbilityType"  								"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityUnitDamageType"						"DAMAGE_TYPE_PHYSICAL"
-		"AbilityTextureName"                        "custom/A13D"
+		"AbilityTextureName"                        "custom/A15D"
 
 		"AbilityCastPoint"          				"0.0"
 		"AbilityCooldown"           				"8"

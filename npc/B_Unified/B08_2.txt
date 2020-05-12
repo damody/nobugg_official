@@ -7,7 +7,7 @@
 		// ----------------------------------------------------------------
 		"override_hero"	"npc_dota_hero_phoenix"
 		"Model"	"models/b08/b08.vmdl"
-		"ModelScale"	"1.4"
+		"ModelScale"	"1.2"
 		//"Level"	"5"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
 		"HealthBarOffset"	"180"
@@ -16,22 +16,22 @@
 		"Ability1"	"B08W"
 		"Ability2"	"B08E"
 		"Ability3"	"B08R"
-		"Ability4"	"attribute_bonusx"
-		"Ability5"	"B08T"
-		"Ability6"	"B08_precache"
-		"Ability7"	""
+		"Ability4"	"magical_resistance"
+		"Ability5"	"B08D"
+		"Ability6"	"B08T"
+		"Ability7"	"B08_precache"
 		// Armor
 		// ----------------------------------------------------------------
-		"ArmorPhysical"	"6"
-		"MagicalResistance"	"30"
+		"ArmorPhysical"	"5"
+		"MagicalResistance"	"0"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"	"104.0"
-		"AttackDamageMax"	"120.0"
+		"AttackDamageMin"	"123.0"
+		"AttackDamageMax"	"123.0"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"	"1.80"
-		"AttackAnimationPoint"	"0.33"
+		"AttackAnimationPoint"	"0.25"
 		"AttackAcquisitionRange"	"900"
 		"AttackRange"	"128"
 		"ProjectileSpeed"	"10000"
@@ -46,8 +46,8 @@
 		"AttributeIntelligenceGain"	"2.0"		
 		// Bounty
 		// ----------------------------------------------------------------
-		"BountyGoldMin"	"300.0"
-		"BountyGoldMax"	"300.0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
 		// Gold and Lumber
 		// ----------------------------------------------------------------
 		"GoldCost"	"0"
@@ -55,19 +55,20 @@
 		// Movement
 		// ----------------------------------------------------------------
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"	"300"
-		"MovementTurnRate"	"1.50"
+		"MovementSpeed"	"350"
+
+		"MovementTurnRate"	"360"
 		// Status
 		// ----------------------------------------------------------------
-		"StatusHealth"	"400"
+		"StatusHealth"	"550"
 		"StatusHealthRegen"	"0.25"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0.01"
 		"StatusStartingMana"	"100"
 		// Vision
 		// ----------------------------------------------------------------
-		"VisionDaytimeRange"	"1800"
-		"VisionNighttimeRange"	"800"
+		"VisionDaytimeRange"	"1600"
+		"VisionNighttimeRange"	"1000"
 		// Team
 		// ----------------------------------------------------------------
 		"TeamName"	"DOTA_TEAM_NEUTRALS"

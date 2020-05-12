@@ -12,21 +12,21 @@
  		"Ability1"	"A34W"
  		"Ability2"	"A34E"
  		"Ability3"	"A34R"
- 		"Ability4"	"attribute_bonusx"
- 		"Ability5"	"A34T"
- 		"Ability6"	"A34_precache"
+ 		"Ability4"	"magical_resistance"
+ 		"Ability5"	"A34_precache"
+ 		"Ability6"	"A34T"
  		// Armor
  		// ----------------------------------------------------------------
- 		"ArmorPhysical"	"2"
- 		"MagicalResistance"	"30"
+ 		"ArmorPhysical"	"3"
+ 		"MagicalResistance"	"0"
  		// Attack
  		// ----------------------------------------------------------------
  		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
- 		"AttackDamageMin"	"101.0"
- 		"AttackDamageMax"	"109.0"
+ 		"AttackDamageMin"	"87.0"
+ 		"AttackDamageMax"	"87.0"
  		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
  		"AttackRate"	"1.80"
- 		"AttackAnimationPoint"	"0.55"
+ 		"AttackAnimationPoint"	"0.25"
  		"AttackAcquisitionRange"	"1200"
  		"AttackRange"	"600"
  		"ProjectileSpeed"	"1300"
@@ -50,11 +50,11 @@
  		// Movement
  		// ----------------------------------------------------------------
  		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
- 		"MovementSpeed"	"300"
- 		"MovementTurnRate"	"1.50"
+ 		"MovementSpeed"	"350"
+ 		"MovementTurnRate"	"360"
  		// Status
  		// ----------------------------------------------------------------
- 		"StatusHealth"	"400"
+ 		"StatusHealth"	"550"
  		"StatusHealthRegen"	"0.25"
  		"StatusMana"	"0"
  		"StatusManaRegen"	"0.01"
@@ -78,7 +78,7 @@
  		"Ability13"	""
  		"Ability14"	""
  		"Ability15"	""
- 		"Ability16"	""
+		 
  		"override_hero"	"npc_dota_hero_crystal_maiden"
  		"AbilityLayout"	"6"
  	}	

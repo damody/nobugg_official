@@ -482,7 +482,7 @@
 		"AbilityType"			"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE | DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
-		"AbilityCastPoint"	"0.1"	
+		"AbilityCastPoint"          				"0.35"	
 		"AbilityCooldown"	"32 30 28 26"
 		"AbilityCastRange"	"800"
 		"AbilityManaCost"	"120 140 160 180"

@@ -18,7 +18,11 @@
 			"particle"	"particles/title/c08t.vpcf"
 		}
 	}
-
+	"C08_Steal"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+	}
 	// 加藤段藏 忍法．迷蹤步
 	"C08D"
 	{
@@ -27,14 +31,18 @@
 		"BaseClass"	"ability_datadriven"
 		"AbilityTextureName"	"custom/A13D"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
-		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
 		"FightRecapLevel"	"6"
 		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
 		"HotKeyOverride"	"D"
 		"MaxLevel"	"5"
 		"AbilityCastPoint"	"0.0"
-		"AbilityCooldown"	"16"
-		"AbilityManaCost"	"100 115 130 145 160"
+		"AbilityCooldown"	"20"
+		"AbilityManaCost"	"100"
 		"OnSpellStart"
 		{
 			"FireSound"
@@ -136,8 +144,9 @@
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.15"
 		"AbilityCooldown"	"7"
 		"AbilityManaCost"	"120 135 150 165"
 		// Stats
@@ -228,6 +237,7 @@
 		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 
 		"AbilityCooldown"				"12 10 8 6"
 		"AbilityManaCost"				"85 115 145 175"
@@ -278,7 +288,9 @@
 		"AbilityTextureName"	"custom/A13E"
 		"ScriptFile"			"scripts/vscripts/heroes/C_Neutral/C08.lua"
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_POINT"
-		"AbilityUnitDamageType"	"DAMAGE_TYPE_PURE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_PHYSICAL"
 		"SpellImmunityType"		"SPELL_IMMUNITY_ENEMIES_YES"
 		"FightRecapLevel"		"1"
 		"AbilityCastPoint"		"0.1"
@@ -290,7 +302,7 @@
 		"AbilityManaCost"	"120 140 160 180"
 		// Casting
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"	"480 720 960 1200"
+		"AbilityCastRange"	"400 600 800 1000"
 		// -------------------------------------------------------------------------------------------------------------
 		"precache"
 		{
@@ -316,7 +328,7 @@
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"hook_distance"	"480 720 960 1200"
+				"hook_distance"	"400 600 800 1000"
 			}
 			"04"
 			{
@@ -345,14 +357,15 @@
 		"BaseClass"				"ability_datadriven"
 		"AbilityTextureName"	"custom/C08/c08t"
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
-		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO"
 		// Unit Targeting
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityType"			"DOTA_ABILITY_TYPE_ULTIMATE"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.3"
 		"AbilityCooldown"	"110 100 90"
 		"AbilityManaCost"	"165 195 225"
 		// Stats
@@ -374,11 +387,45 @@
 				"title"	"particles/title/c08t.vpcf"
 			}
 		}
+		"OnOwnerSpawned"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C08.lua"
+				"Function"		"C08T_OnRespawn"
+			}
+		}
 		"Modifiers"
 		{
+			"modifier_C08T_steal_stack"
+			{
+
+			}
+			"modifier_C08T_use_ability"
+			{
+				"IsHidden"	"1"
+				"Passive"	"1"
+				"OnAbilityExecuted"
+				{
+					"RunScript"	
+					{
+						"ScriptFile" "scripts/vscripts/heroes/C_Neutral/C08.lua"
+						"Function"	"C08T_OnAbilityExecuted"
+					}
+				}
+			}
 			"modifier_C08T_bleeding"
 			{
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C08.lua"
+						"Function"		"modifier_C08T_OnCreate"
+					}
+				}
 				"Duration"	"%duration"
+				"ThinkInterval"	"1"
 				"OnIntervalThink"
 				{
 					"RunScript"
@@ -392,7 +439,25 @@
 					"MODIFIER_PROPERTY_BONUS_DAY_VISION"	"-2800"
 					"MODIFIER_PROPERTY_BONUS_NIGHT_VISION"	"-2000"
 				}
-				"ThinkInterval"	"1"
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C08.lua"
+						"Function"		"modifier_C08T_OnDestroy"
+					}
+				}
+				"States"
+				{
+					"MODIFIER_STATE_BLIND" "MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_STUNNED" "MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_NO_UNIT_COLLISION" "MODIFIER_STATE_VALUE_ENABLED"
+				}
+	
+			}
+			"modifier_in_belly"
+			{
+				"IsHidden"	"1"
 				"States"
 				{
 					"MODIFIER_STATE_BLIND" "MODIFIER_STATE_VALUE_ENABLED"
@@ -401,13 +466,25 @@
 					"MODIFIER_STATE_ATTACK_IMMUNE" "MODIFIER_STATE_VALUE_ENABLED"
 					"MODIFIER_STATE_MAGIC_IMMUNE" "MODIFIER_STATE_VALUE_ENABLED"
 				}
-				"OnDestroy"
+			}
+			"modifier_atk_bouns"
+			{
+				"Passive"	"0"
+				"IsPurgable"	"0"
+				"Properties"
 				{
-					"RunScript"
-					{
-						"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C08.lua"
-						"Function"		"modifier_C08T_OnDestroy"
-					}
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "%atk_bonus"
+				}
+			}
+			"modifier_attribute_bouns"
+			{
+				"Passive"	"0"
+				"IsPurgable"	"0"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS" "%attributes_bonus"	//力
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "%attributes_bonus"		//敏
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "%attributes_bonus"  //智
 				}
 			}
 		}
@@ -423,7 +500,22 @@
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"250 360 480"
+				"damage"	"150 200 250"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"attributes_bonus"	"3"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"atk_bonus"	"5"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"atk_offset"	"-5"
 			}
 		}
 		// Stats
@@ -672,7 +764,7 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"22 20 18 16"
 		"AbilityManaCost"	"50 100 150 200"
 		"AbilityCastRange"	"800"

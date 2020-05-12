@@ -9,34 +9,34 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <!--favicon-->
-<link rel="apple-touch-icon" sizes="57x57" href="./static/image/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="./static/image/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="./static/image/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="./static/image/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="./static/image/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="./static/image/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="./static/image/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="./static/image/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="./static/image/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="./static/image/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./static/image/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="./static/image/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./static/image/favicon-16x16.png">
-<link rel="manifest" href="./static/js/manifest.json">
+<link rel="apple-touch-icon" sizes="57x57" href="./nobu/static/image/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./nobu/static/image/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./nobu/static/image/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./nobu/static/image/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./nobu/static/image/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./nobu/static/image/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./nobu/static/image/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./nobu/static/image/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./nobu/static/image/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="./nobu/static/image/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./nobu/static/image/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./nobu/static/image/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./nobu/static/image/favicon-16x16.png">
+<link rel="manifest" href="./nobu/static/js/manifest.json">
 <meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="./static/image/ms-icon-144x144.png">
+<meta name="msapplication-TileImage" content="./nobu/static/image/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="dota2信長之野望重製了！" />
-<meta name='image' content='http://www.dota2nobu.com/static/pic/nobu.png' />
-<link rel="image_src" href='http://www.dota2nobu.com/static/pic/nobu.png' />
-<meta property="og:image" content="http://www.dota2nobu.com/static/pic/nobu.png" />
+<meta name='image' content='http://www.dota2nobu.com/nobu/static/pic/nobu.png' />
+<link rel="image_src" href='http://www.dota2nobu.com/nobu/static/pic/nobu.png' />
+<meta property="og:image" content="http://www.dota2nobu.com/nobu/static/pic/nobu.png" />
 <meta property="og:title" content="dota2信長之野望" />
 <meta property="og:description" content="dota2信長之野望重製了！" />
 <meta property="og:url" content="http://www.dota2nobu.com" />
-<meta name="twitter:image:src" content="http://www.dota2nobu.com/static/pic/nobu.png">
+<meta name="twitter:image:src" content="http://www.dota2nobu.com/nobu/static/pic/nobu.png">
 <meta name="author" content="dota2nobu.com" />
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="dota2nobu.com">
@@ -45,7 +45,7 @@
 <meta name="twitter:domain" content="dota2nobu.com">
 
 <meta itemprop="name" content="dota2信長之野望">
-<meta itemprop="image" content="http://www.dota2nobu.com/static/pic/nobu.png">
+<meta itemprop="image" content="http://www.dota2nobu.com/nobu/static/pic/nobu.png">
 <meta itemprop="description" content="dota2信長之野望重製了！">
 
 <style>
@@ -71,7 +71,7 @@ a {
 <div id="box" style="color:#FFF;">
   <h1><a href="http://dota2nobu.com/">dota2信長英雄列表</a></h1>
   <p>
-      <img title="dota2信長之野望" src="http://www.dota2nobu.com/static/pic/nobu.png" alt="dota2信長英雄列表" border=0 >
+      <img title="dota2信長之野望" src="http://www.dota2nobu.com/nobu/static/pic/nobu.png" alt="dota2信長英雄列表" border=0 >
       dota2信長之野望重製了！
   </p>
 </div>
@@ -80,7 +80,7 @@ a {
 </script>
 
 <div class="container-fluid">
-  <table style="background-image:url(http://www.dota2nobu.com/static/pic/nobu.png);background-size: 100%;background-position: 50% 50%; width:100%;height:800px;">
+  <table style="background-image:url(http://www.dota2nobu.com/nobu/static/pic/nobu.png);background-size: 100%;background-position: 50% 50%; width:100%;height:800px;">
   <tr>
   <td>
       <h2 style="text-align: center;">語言選擇</h2>

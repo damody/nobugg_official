@@ -30,7 +30,7 @@
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"2"
 		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.25"
 		"AbilityCastAnimation"	"ACT_DOTA_ATTACK"
 		"AnimationPlaybackRate"	"2"
 		// Time
@@ -143,10 +143,25 @@
 				"IsPurgable"	"1"
 				"IsDebuff"		"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
-				"Properties"
+				"OnCreated"
 				{
-					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"%bonus_movement_speed_small"
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%bonus_attack_speed_small"
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"Slow"
+						"name"	"B33W"
+						"ms_slow" "%bonus_movement_speed_small"
+						"as_slow" "%bonus_attack_speed_small"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"ReturnSpeed"
+						"name"	"B33W"
+					}
 				}
 				"Duration"	"%duration"			}
 		}
@@ -222,7 +237,7 @@
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"2"
 		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.3"
 		"AbilityCastAnimation"	"ACT_DOTA_ATTACK"
 		"AnimationPlaybackRate"	"2"
 		// Time
@@ -373,8 +388,8 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitDamageType"	"DAMAGE_TYPE_PURE"
-		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"AbilityCooldown"	"10 9 8 7"
 		"AbilityManaCost"	"50"
 		"precache"
@@ -486,7 +501,7 @@
 		"BaseClass"	"ability_datadriven"
 		"AbilityTextureName"	"broodmother_insatiable_hunger"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
-		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO"
 		// Unit Targeting
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
@@ -495,7 +510,7 @@
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
 		"FightRecapLevel"	"1"
 		"AbilityType"	"DOTA_ABILITY_TYPE_ULTIMATE"
-		"AbilityCastPoint"	"0.2 0.2 0.2 0.2"
+		"AbilityCastPoint"	"0.3 0.3 0.3 0.3"
 		"AbilityCooldown"	"80 70 60"
 		"AbilityManaCost"	"200 250 300"
 		"RequiredLevel"	"6"
@@ -552,6 +567,7 @@
 				"States"
 				{
 					"MODIFIER_STATE_FLYING"	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_FLYING_FOR_PATHING_PURPOSES_ONLY"	"MODIFIER_STATE_VALUE_ENABLED"
 				}
 			}
 			"modifier_spawn_spiderlings_datadriven"
@@ -568,11 +584,31 @@
 						"Damage"	"%damage"
 					}
 				}
-				"ThinkInterval"	"0.5"
+				"ThinkInterval"	"1"
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%attack_speed"
-					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"%speed"
+					"MODIFIER_PROPERTY_DISABLE_HEALING"	"1"
+					"MODIFIER_PROPERTY_MOVESPEED_ABSOLUTE"	"%move_speed"
+				}
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"Slow"
+						"name"	"B33T"
+						"as_slow" "%attack_speed"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"ReturnSpeed"
+						"name"	"B33T"
+					}
 				}
 			}
 		}
@@ -588,7 +624,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"75 100 125"
+				"damage"	"66 88 110"
 			}
 			"03"
 			{
@@ -598,12 +634,12 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"speed"	"-50 -60 -70"
+				"move_speed"	"200 150 100"
 			}
 			"05"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"attack_speed"	"-100 -150 -200"
+				"attack_speed"	"-30 -75 -120"
 			}
 		}
 		// Stats
@@ -627,7 +663,7 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"FightRecapLevel"	"2"
 		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCastAnimation"	"ACT_DOTA_ATTACK"
 		"AnimationPlaybackRate"	"2"
 		// Time
@@ -793,7 +829,7 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"FightRecapLevel"	"2"
 		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCastAnimation"	"ACT_DOTA_ATTACK"
 		"AnimationPlaybackRate"	"2"
 		// Time

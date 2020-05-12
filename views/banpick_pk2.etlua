@@ -3,8 +3,6 @@ local inspect = require("inspect")
 require("read_hero")
 require("langtext")
 lang = params.language
-local redis = require 'redis'
-local client = redis.connect('127.0.0.1', 6379)
 local cjson = require("cjson")
 
 if lang == "zhtw" then
@@ -240,7 +238,7 @@ $("#last").click(function(){
                 <div ><% 
                 end  %>
                 <a id="<%-i%>">
-                    <img src="/static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name" style="white-space:nowrap;"><%-it%><% if params.win then %><%-record11.."/"..record16%><% end %></div>
+                    <img src="/nobu/static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name" style="white-space:nowrap;"><%-it%><% if params.win then %><%-record11.."/"..record16%><% end %></div>
                 </a><% 
               end 
             end%>
@@ -287,7 +285,7 @@ $("#last").click(function(){
                 <div ><% 
                 end  %>
                 <a id="<%-i%>">
-                    <img src="/static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name" style="white-space:nowrap;"><%-it%><% if params.win then %><%-record11.."/"..record16%><% end %></div>
+                    <img src="/nobu/static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name" style="white-space:nowrap;"><%-it%><% if params.win then %><%-record11.."/"..record16%><% end %></div>
                 </a><% 
               end 
             end%>
@@ -333,7 +331,7 @@ $("#last").click(function(){
                 <div ><% 
                 end  %>
                 <a id="<%-i%>">
-                    <img src="/static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name" style="white-space:nowrap;"><%-it%><% if params.win then %><%-record11.."/"..record16%><% end %></div>
+                    <img src="/nobu/static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name" style="white-space:nowrap;"><%-it%><% if params.win then %><%-record11.."/"..record16%><% end %></div>
                 </a><% 
               end 
             end%>

@@ -3,7 +3,7 @@
 	// 佐佐成政
 	"A17"
 	{
-		"ModelScale"	"1.5"
+		"ModelScale"	"1.2"
 		"Model"	"models/a17/a17.vmdl"
 		"DisableWearables"	"1"
 		"Portrait"	"vgui/hud/heroportraits/portrait_sniper"
@@ -24,18 +24,18 @@
 		"Ability1"	"A17W"
 		"Ability2"	"A17E"
 		"Ability3"	"A17R"
-		"Ability4"	"attribute_bonusx"
-		"Ability5"	"A17T"
-		"Ability6"	"A17_precache"
+		"Ability4"	"magical_resistance"
+		"Ability5"	"A17_precache"
+		"Ability6"	"A17T"
 		// Armor
 		// ----------------------------------------------------------------
 		"ArmorPhysical"	"3"
-		"MagicalResistance"	"30"
+		"MagicalResistance"	"0"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"	"91.0"
-		"AttackDamageMax"	"107.0"
+		"AttackDamageMin"	"99.0"
+		"AttackDamageMax"	"99.0"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"	"1.80"
 		"AttackAnimationPoint"	"0.17"
@@ -53,8 +53,8 @@
 		"AttributeIntelligenceGain"	"2"		
 		// Bounty
 		// ----------------------------------------------------------------
-		"BountyGoldMin"	"300.0"
-		"BountyGoldMax"	"300.0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
 		// Gold and Lumber
 		// ----------------------------------------------------------------
 		"GoldCost"	"0"
@@ -62,19 +62,19 @@
 		// Movement
 		// ----------------------------------------------------------------
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"	"300"
-		"MovementTurnRate"	"3"
+		"MovementSpeed"	"350"
+		"MovementTurnRate"	"360"
 		// Status
 		// ----------------------------------------------------------------
-		"StatusHealth"	"400"
+		"StatusHealth"	"550"
 		"StatusHealthRegen"	"0.25"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0.01"
 		"StatusStartingMana"	"100"
 		// Vision
 		// ----------------------------------------------------------------
-		"VisionDaytimeRange"	"1800"
-		"VisionNighttimeRange"	"800"
+		"VisionDaytimeRange"	"1600"
+		"VisionNighttimeRange"	"1000"
 		// Team
 		// ----------------------------------------------------------------
 		"TeamName"	"DOTA_TEAM_NEUTRALS"

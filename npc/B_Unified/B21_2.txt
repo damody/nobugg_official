@@ -13,9 +13,9 @@
 		"Ability1"	"B21W"
 		"Ability2"	"B21E"
 		"Ability3"	"B21R"
-		"Ability4"	"attribute_bonusx"
-		"Ability5"	"B21T"
-		"Ability6"	"B21_precache"
+		"Ability4"	"magical_resistance"
+		"Ability5"	"B21_precache"
+		"Ability6"	"B21T"
 		"Ability7"	""
 		"Ability8"	""
 		"Ability9"	""
@@ -30,14 +30,14 @@
 
 		// Armor
 		// ----------------------------------------------------------------
-		"ArmorPhysical"	"5"
-		"MagicalResistance"	"30"
+		"ArmorPhysical"	"0"
+		"MagicalResistance"	"0"
 
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"	"99"
-		"AttackDamageMax"	"117"
+		"AttackDamageMin"	"108"
+		"AttackDamageMax"	"108"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"	"1.80"
 		"AttackAcquisitionRange"	"500"
@@ -56,8 +56,8 @@
 		// Bounty
 		// ----------------------------------------------------------------
 		// "BountyXP"		"0"  
-		"BountyGoldMin"	"300.0"
-		"BountyGoldMax"	"300.0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
 
 		// Bounds
 		// ----------------------------------------------------------------
@@ -68,8 +68,9 @@
 		// Movement
 		// ----------------------------------------------------------------
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"	"300"
-		"MovementTurnRate"	"1.50"
+		"MovementSpeed"	"350"
+
+		"MovementTurnRate"	"360"
 
 		// Gold and Lumber
 		// ----------------------------------------------------------------
@@ -78,7 +79,7 @@
 		
 		// Status
 		// ----------------------------------------------------------------
-		"StatusHealth"	"400"
+		"StatusHealth"	"550"
 		"StatusHealthRegen"	"0.25"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0.01"
@@ -86,8 +87,8 @@
 
 		// Vision
 		// ----------------------------------------------------------------
-		"VisionDaytimeRange"	"1800"
-		"VisionNighttimeRange"	"800"
+		"VisionDaytimeRange"	"1600"
+		"VisionNighttimeRange"	"1000"
 
 		// Combat
 		// ----------------------------------------------------------------

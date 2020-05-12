@@ -104,7 +104,7 @@ html.scrnone, body.scrnone{
     background-color: #c44536;
 }
 #go-sub-menu1::after, #go-back-mb-menu::before {
-    background: rgba(0, 0, 0, 0) url("/static/image/right-arrow.svg") no-repeat scroll center center/ 20px auto;
+    background: rgba(0, 0, 0, 0) url("/nobu/static/image/right-arrow.svg") no-repeat scroll center center/ 20px auto;
     content: "";
     height: 20px;
     margin-left: 5px;
@@ -113,7 +113,7 @@ html.scrnone, body.scrnone{
     width: 20px;
 }
 #go-back-mb-menu::before{
-	background: rgba(0, 0, 0, 0) url("/static/image/left-arrow.svg") no-repeat scroll center center / 20px auto;
+	background: rgba(0, 0, 0, 0) url("/nobu/static/image/left-arrow.svg") no-repeat scroll center center / 20px auto;
 	margin-left:-30px;
 }
 

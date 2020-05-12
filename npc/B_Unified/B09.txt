@@ -34,7 +34,7 @@
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_NONE"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_PURE"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.25"
 		// Time
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"	"26 22 18 14"
@@ -43,7 +43,7 @@
 		"AbilityManaCost"	"120 145 170 195"
 		// Casting
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"	"800"
+		"AbilityCastRange"	"700"
 		"AbilityDamage" "7 10 13 16"
 		"OnSpellStart"
 		{
@@ -115,10 +115,11 @@
 		"AbilityUnitTargetTeam"						"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"						"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"               		"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"AbilityUnitTargetFlags"					"DOTA_UNIT_TARGET_FLAG_NONE"
 
-		"AbilityCastPoint"                          "0.1"
-		"AbilityCastRange"							"800"
+		"AbilityCastPoint"          				"0.25"
+		"AbilityCastRange"							"700"
 		"AbilityCooldown"                           "7"
 		"AbilityManaCost"                           "160"
 		"AbilityChannelTime"						"10"
@@ -202,7 +203,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage"					"5 7 10 13"
+				"damage"					"50 80 110 140"
 			}
 			"02"
 			{
@@ -216,10 +217,6 @@
 	{
 		"BaseClass"                 				"ability_datadriven"
 		"AbilityBehavior"           				"DOTA_ABILITY_BEHAVIOR_TOGGLE"
-		"AbilityUnitTargetType"     				"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
-		"AbilityUnitTargetTeam"     				"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitTargetFlags"    				"DOTA_UNIT_TARGET_FLAG_NONE"
-		"AbilityCastPoint"          				"0.1"
 		"AbilityCooldown"           				"0"
 		"AbilityManaCost"           				"0"
 		"AbilityTextureName"                         "custom/B09/B09R"
@@ -270,18 +267,15 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityTextureName"	 "custom/B09/B09T"
-		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_BOTH"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"AbilityType"  			"DOTA_ABILITY_TYPE_ULTIMATE"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
 		"FightRecapLevel"	"1"
-		
 		"AbilityCooldown"	"140 130 120"
-		
 		"AbilityManaCost"	"250 300 350"
 		"AbilityDamage" 	"400 550 700"
-		"AbilityCastPoint"	"0"
-		//"AbilityCastRange"	"700"
+		"AbilityCastPoint"	"0.1"
 		"AOERadius"		"700"
 		"OnSpellStart"
 		{
@@ -296,6 +290,19 @@
 			  	"ScriptFile"	"items/Addon_Items/item_soul_adder.lua"
 				"Function"	"sound"
 				"sound"	"magic_missile_impact"
+			}
+			"DelayedAction"
+			{
+				"Action"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/B_Unified/B09.lua"
+						"Function"	"B09T_END"
+						"Target" "POINT"
+					}
+				}
+				"Delay"	"%delay"
 			}
 		}
 		
@@ -322,6 +329,16 @@
 				"var_type"					"FIELD_FLOAT"
 				"duration"					"5 6 7"
 			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"heal"						"400 550 700"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"delay"						"1"
+			}
 		}
 	}
 
@@ -334,7 +351,7 @@
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_CREEP"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_NONE"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"10 9 8 7"
 		"AOERadius"	"%radius"
 		"AbilityManaCost"	"100 120 140 160"
@@ -457,7 +474,7 @@
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCooldown"	"16"
 		"AbilityManaCost"	"100 150 180 210"
@@ -525,7 +542,7 @@
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
 		"FightRecapLevel"	"2"
 		"AbilityType"	"DOTA_ABILITY_TYPE_ULTIMATE"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"MaxLevel"	"3"
 		"RequiredLevel"	"6"
 		"LevelsBetweenUpgrades"	"6"

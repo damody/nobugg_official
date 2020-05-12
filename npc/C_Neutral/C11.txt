@@ -36,8 +36,9 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE | DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 
 		"AbilityCastRange"				"800"
 		"AbilityCastPoint"				"0.1"
@@ -133,7 +134,7 @@
 			"modifier_C11W"
 			{
 				"Passive"			"0"
-				"IsHidden"			"0"
+				"IsHidden"			"1"
 				"IsDebuff"			"0"
 				"Duration"		"3"
 				"States"
@@ -151,8 +152,6 @@
 		"AbilityTextureName"			"custom/zhangbao_shandianqiu"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
 
 		"AbilityCooldown"				"20"
 		"AbilityManaCost"				"50 65 80 95"
@@ -242,13 +241,14 @@
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 
 		"AbilityCooldown"				"18"
 		"AbilityManaCost"				"120 140 160 180"
 		"AbilityDamage"					"150 250 350 450"
 
 		"AbilityCastRange"				"700"
-		"AbilityCastPoint" "0.25" //stun
+		"AbilityCastPoint" 				"0.3" //stun
 
 		"AoERadius"						"450"
 
@@ -317,15 +317,20 @@
 	{
 		"BaseClass"             		"ability_datadriven"
 		"AbilityTextureName"			"custom/icon_128x128_9"
-		"AbilityType"	"DOTA_ABILITY_TYPE_ULTIMATE"
-
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
-
-		"AbilityDamage"	"75 105 135"
-
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityType"	"DOTA_ABILITY_TYPE_ULTIMATE"
+		"HotKeyOverride"	"T"
+		"MaxLevel"	"3"
+		"RequiredLevel"	"6"
+		"LevelsBetweenUpgrades"	"6"
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"700"
+		"AbilityCooldown"	"120 100 80"
 		"AbilitySpecial"
 		{
 			"01"
@@ -336,7 +341,37 @@
 			"02" // 消去現有法力
 			{
 				"var_type"	"FIELD_INTEGER"
-				"remove_mana_percentage" "12"
+				"remove_mana_percentage" "9"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"damage"	"80 100 120"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"attack_speed_percentage"	"100 150 200"	
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"duration"	"5"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"max_jump"	"2 4 6 8"
+			}
+			"07"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"projectile_speed"	"4000"
+			}
+			"08"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"stun_duration"		"1"
 			}
 		}
 
@@ -344,8 +379,112 @@
 		{
 			"particle"  "particles/c11/c11t_ntimage_manavoid_ti_5.vpcf"
 			"particle"  "particles/units/heroes/hero_zeus/zues_screen_empty.vpcf"
+			"particle"  "particles/c11/c11w.vpcf"
+			"particle"  "particles/units/heroes/hero_zuus/zuus_arc_lightning_head.vpcf"
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_zuus.vsndevts"
+		}
+		"OnAbilityPhaseStart"
+		{
+			"FireSound"
+			{
+				"Target"	"CASTER"
+				"EffectName"	"C11W.vo1"
+			}
 		}
 
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C11.lua"
+				"Function"		"C11W_start"
+				"Target"		"TARGET"
+			}
+			"ApplyModifier"
+			{
+				"Target"
+				{
+				    "Center" "CASTER"
+				    "Flags" "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+				}
+				"ModifierName"	"modifier_C11W"
+			}
+		}
+
+		"OnProjectileHitUnit"
+		{
+			"DeleteOnHit"	"1"
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C11.lua"
+				"Function"		"C11W_hit_unit"
+				"Target"		"TARGET"
+			}
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C11.lua"
+				"Function"		"C11T_stun"
+				"Target"		"TARGET"
+			}
+			"ApplyModifier"
+			{
+				"Target"		"CASTER"
+				"ModifierName"	"modifier_C07T_attack_speed"
+				"EffectName"		"particles/c11/c11r.vpcf"
+				"EffectAttachType"	"follow_origin"
+			}
+		}
+		// 目標突然被移除時，也會呼叫這個函式
+		"OnProjectileFinish"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C11.lua"
+				"Function"		"C11W_miss_target"
+				"Target"		"PROJECTILE"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_C11T_stun"
+			{
+				"Passive"			"0"
+				"IsHidden"			"0"
+				"IsDebuff"			"1"
+				"Duration"	"%stun_duration"
+				"EffectName"		"particles/c11/c11r.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"States"
+				{
+					"MODIFIER_STATE_STUNNED"		"MODIFIER_STATE_VALUE_ENABLED"
+				}
+			}
+			"modifier_C07T_attack_speed"
+			{
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%attack_speed_percentage"
+				}
+				"IsBuff"	"1"
+				"AllowIllusionDuplicate"	"1"
+				"Duration"	"%duration"
+			}
+			
+			// 用來隱藏玩家
+			"modifier_C11W"
+			{
+				"Passive"			"0"
+				"IsHidden"			"1"
+				"IsDebuff"			"0"
+				"Duration"		"3"
+				"States"
+				{
+					"MODIFIER_STATE_INVULNERABLE"		"MODIFIER_STATE_VALUE_ENABLED"
+				}
+			}
+		}
 		"Modifiers"
 		{
 			"modifier_C11T_passive"

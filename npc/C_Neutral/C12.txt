@@ -31,7 +31,7 @@
 		"AbilityUnitTargetFlags"					"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"               		"DAMAGE_TYPE_PHYSICAL"
 		"HotKeyOverride"				"D"
-		"AbilityCastPoint"                          "0.1"
+		"AbilityCastPoint"          				"0.25"
 		"AbilityCastRange"							"700"
 		"MaxLevel"	"1"
 		"AbilityCooldown"                           "5"
@@ -245,7 +245,7 @@
 		"AbilityUnitTargetFlags"					"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"HotKeyOverride"			"R"
 		"MaxLevel"	"4"
-		"AbilityCastPoint"                          "0.1"
+		"AbilityCastPoint"          				"0.25"
 		"AbilityCooldown"                           "23 20 17 14"
 		"AbilityManaCost"                           "150"
 
@@ -300,7 +300,7 @@
 		"MaxLevel"	"3"
 		"RequiredLevel"	"6"
 		"LevelsBetweenUpgrades"	"6"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AnimationPlaybackRate"	"2"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		// Cost

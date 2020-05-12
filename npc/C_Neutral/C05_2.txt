@@ -24,7 +24,7 @@
 		"Ability1"	"C05W"
 		"Ability2"	"C05E"
 		"Ability3"	"C05R"
-		"Ability4"	"attribute_bonusx"
+		"Ability4"	"magical_resistance"
 		"Ability5"	"C05T"
 		"Ability6"	"C05_precache"
 		"Ability7"	""
@@ -51,8 +51,8 @@
 
 		// Armor
 		// ----------------------------------------------------------------
-		"ArmorPhysical"	"5"
-		"MagicalResistance"	"30"
+		"ArmorPhysical"	"0"
+		"MagicalResistance"	"0"
 
 		// Attack
 		// ----------------------------------------------------------------
@@ -62,7 +62,7 @@
 		"AttackDamageMax"	"142"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"	"1.80"
-		// "AttackAnimationPoint"	"0.75"
+		"AttackAnimationPoint"	"0.3"
 		"AttackAcquisitionRange"	"500"	// Range within a target can be acquired.
 		"AttackRange"	"128"
 		// "AttackRangeBuffer"	"250"	// Extra range the target can move without canceling the attack
@@ -75,16 +75,17 @@
 		// Movement
 		// ----------------------------------------------------------------
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"	"300"
-		"MovementTurnRate"	"1.50"
+		"MovementSpeed"	"350"
+
+		"MovementTurnRate"	"360"
 		// "FollowRange"	"100"
 		// "HasAggressiveStance"	"0"
 
 		// Bounty
 		// ----------------------------------------------------------------
 		// "BountyXP"		"0"  
-		"BountyGoldMin"	"300.0"
-		"BountyGoldMax"	"300.0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
 
 		// Bounds
 		// ----------------------------------------------------------------
@@ -99,7 +100,7 @@
 		
 		// Status
 		// ----------------------------------------------------------------
-		"StatusHealth"	"400"
+		"StatusHealth"	"550"
 		"StatusHealthRegen"	"0.25"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0.01"
@@ -107,8 +108,8 @@
 
 		// Vision
 		// ----------------------------------------------------------------
-		"VisionDaytimeRange"	"1800"
-		"VisionNighttimeRange"	"800"
+		"VisionDaytimeRange"	"1600"
+		"VisionNighttimeRange"	"1000"
 
 		// Combat
 		// ----------------------------------------------------------------

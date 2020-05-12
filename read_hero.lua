@@ -16,7 +16,10 @@ hero = {}
 function ProcessText(file, text)
   if not string.match(file, "_2.txt") and #file > 4 then
     local name = rex.match(file, "[ABC][0-9][0-9]")
-    --print(name)
+    if name == nil then
+      return 
+    end
+    print(name)
     hero[name] = {}
     hero[name]["name"] = {}
     hero[name]["name"]["zhtw"] = zhtw_heroname[name]

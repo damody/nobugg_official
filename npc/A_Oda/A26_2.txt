@@ -6,8 +6,8 @@
 		// General
 		// ----------------------------------------------------------------
 		"override_hero"	"npc_dota_hero_techies"
-		"Model"         "models/a26/a26_fix.vmdl"
-		"ModelScale"	"1.6"
+		"Model"         "models/a26/a26.vmdl"
+		"ModelScale"	"1.3"
 		// "MinimapIcon"		"minimap_candybucket"
 		// "MinimapIconSize"	"1000"
 		// "UnitLabel"          "hero" // -- :GetUnitLabel()
@@ -24,11 +24,11 @@
 		"Ability1"	"A26W"
 		"Ability2"	"A26E"
 		"Ability3"	"A26R"
-		"Ability4"	"A26D"
-		"Ability5"	"techies_minefield_sign"
+		"Ability4"	"magical_resistance"
+		"Ability5"	"A26_precache"
 		"Ability6"	"A26T"
-		"Ability7"	"attribute_bonusx"
-		"Ability8"	"A26_precache"
+		"Ability7"	""
+		"Ability8"	""
 		"Ability9"	""
 		"Ability10"	""
 		"Ability11"	""
@@ -51,18 +51,18 @@
 
 		// Armor
 		// ----------------------------------------------------------------
-		"ArmorPhysical"	"4"
-		"MagicalResistance"	"30"
+		"ArmorPhysical"	"3"
+		"MagicalResistance"	"0"
 
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"	"109"
-		"AttackDamageMax"	"123"
+		"AttackDamageMin"	"85"
+		"AttackDamageMax"	"85"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"	"1.80"
-		// "AttackAnimationPoint"	"0.75"
+		"AttackAnimationPoint"	"0.2"
 		"AttackAcquisitionRange"	"500"	// Range within a target can be acquired.
 		"AttackRange"	"780"
 		// "AttackRangeBuffer"	"250"	// Extra range the target can move without canceling the attack
@@ -75,16 +75,16 @@
 		// Movement
 		// ----------------------------------------------------------------
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"	"300"
-		"MovementTurnRate"	"1.50"
+		"MovementSpeed"	"350"
+		"MovementTurnRate"	"360"
 		// "FollowRange"	"100"
 		// "HasAggressiveStance"	"0"
 
 		// Bounty
 		// ----------------------------------------------------------------
 		// "BountyXP"		"0"  
-		"BountyGoldMin"	"300.0"
-		"BountyGoldMax"	"300.0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
 
 		// Bounds
 		// ----------------------------------------------------------------
@@ -99,7 +99,7 @@
 		
 		// Status
 		// ----------------------------------------------------------------
-		"StatusHealth"	"400"
+		"StatusHealth"	"550"
 		"StatusHealthRegen"	"0.25"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0.01"
@@ -107,8 +107,8 @@
 
 		// Vision
 		// ----------------------------------------------------------------
-		"VisionDaytimeRange"	"1800"
-		"VisionNighttimeRange"	"800"
+		"VisionDaytimeRange"	"1600"
+		"VisionNighttimeRange"	"1000"
 
 		// Combat
 		// ----------------------------------------------------------------

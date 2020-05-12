@@ -20,9 +20,11 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"AbilityCooldown"	"13"
 		"AbilityManaCost"	"80"
-		"AbilityCastRange"				"700"
+		"AbilityCastPoint"	"0.25"
+		"AbilityCastRange"				"600"
 		"precache"
 		{
 			"particle"	"particles/c15w/c15w.vpcf"
@@ -42,12 +44,12 @@
 			"ApplyModifier"
 			{
 				"Target"	"TARGET"
-				"ModifierName"	"modifier_C15W"
+				"ModifierName"	"modifier_C19W"
 			}
 			"ApplyModifier"
 			{
 				"Target"	"TARGET"
-				"ModifierName"	"modifier_C15W_2"
+				"ModifierName"	"modifier_C19W_2"
 			}
 			"RunScript"
 			{
@@ -58,7 +60,7 @@
 		}
 		"Modifiers"
 		{
-			"modifier_C15W"
+			"modifier_C19W"
 			{
 				"Duration"	"1.5"
 				"IsDebuff"	"1"
@@ -79,7 +81,7 @@
 					}
 				}
 			}
-			"modifier_C15W_2"
+			"modifier_C19W_2"
 			{
 				"IsHidden"	"1"
 				"Duration"	"%KeepTime"
@@ -210,12 +212,13 @@
 	"C19E"
 	{
 		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"morphling_adaptive_strike_ethereal_blade"
+		"AbilityTextureName"	"custom/icon_128x128_38"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"AbilityCooldown"	"10"
-		"AbilityManaCost"	"80"
+		"AbilityCooldown"	"20"
+		"AbilityManaCost"	"120"
+		"AbilityCastPoint"	"0.1"
 		"AbilityCastRange"	"1000"
 		"OnSpellStart"
 		{
@@ -284,6 +287,10 @@
 		"BaseClass"	"ability_datadriven"
 		"AbilityTextureName"	"death_prophet_exorcism"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		// Precache
 		// -------------------------------------------------------------------------------------------------------------
 		"precache"
@@ -316,10 +323,25 @@
 				"Duration"	"%duration"
 				"EffectName"	"particles/c19r/c19r.vpcf"
 				"EffectAttachType"	"follow_origin"
-				"Properties"
+				"OnCreated"
 				{
-					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"%bonus_moveandattackspeed"
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%bonus_moveandattackspeed"
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"Slow"
+						"name"	"C19R"
+						"ms_slow" "%bonus_moveandattackspeed"
+						"as_slow" "%bonus_moveandattackspeed"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"ReturnSpeed"
+						"name"	"C19R"
+					}
 				}
 				"OnIntervalThink"
 				{
@@ -498,13 +520,24 @@
 		// -------------------------------------------------------------------------------------------------------------
 		"BaseClass"	"ability_datadriven"
 		"AbilityTextureName"	"enchantress_enchant"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetType"		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"     "DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"AbilityType"	"DOTA_ABILITY_TYPE_ULTIMATE"
 		"RequiredLevel"	"6"
 		"LevelsBetweenUpgrades"	"6"
-		"OnUpgrade"
+		"AbilityCastRange"	"300"
+		"AbilityCooldown"	"80 70 60"
+		"AbilityManaCost"	"175"
+		"OnSpellStart"
 		{
-			
+			"ApplyModifier"
+			{
+				"ModifierName"	"modifier_C19T_knockback"
+				"Target" 		"CASTER"
+				"Duration"		"%C19T_duration"
+			}
 		}
 		"Modifiers"
 		{
@@ -527,9 +560,9 @@
 			}
 			"modifier_ninja_cloth"
 			{
-				"IsHidden"	"0"
+				"IsHidden"	"1"
 				"Passive"	"1"
-				"Priority" "MODIFIER_PRIORITY_ULTRA"
+				//"Priority" "MODIFIER_PRIORITY_ULTRA"
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"%bonus_evasion"	//閃避
@@ -543,6 +576,23 @@
 					}
 				}
 			}
+			"modifier_C19T_knockback"
+			{
+				"Passive"			"0"
+				"IsHidden"			"0"
+				"IsDebuff"			"0"
+				"IsPurgable"		"0"
+				"EffectName"		"particles/a11t2/a11t3.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C19.lua"
+						"Function"		"C19T_knockback"
+					}
+				}
+			}
 		}
 		// Special
 		// -------------------------------------------------------------------------------------------------------------
@@ -551,12 +601,22 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"bonus_evasion"	"30 40 50"
+				"bonus_evasion"	"30 35 40"
 			}
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"bonus_magic_def"	"40 50 60"
+				"bonus_magic_def"	"30 35 40"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"		"300"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"C19T_duration"	"11"
 			}
 		}
 	}
@@ -633,7 +693,7 @@
 		// -------------------------------------------------------------------------------------------------------------
 		"BaseClass"	"ability_datadriven"
 		"AbilityTextureName"	"furion_teleportation"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_NORMAL_WHEN_STOLEN"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_NORMAL_WHEN_STOLEN"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"MaxLevel"	"1"
@@ -741,18 +801,6 @@
 					"MODIFIER_STATE_COMMAND_RESTRICTED"	"MODIFIER_STATE_VALUE_ENABLED"
 					"MODIFIER_STATE_FROZEN"	"MODIFIER_STATE_VALUE_ENABLED"
 				}
-			}
-			"modifier_C19D2"
-			{
-				"IsHidden"	"0"
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE" "-50"
-				}
-				"EffectName"	"particles/generic_gameplay/move_slow.vpcf"
-				"EffectAttachType"	"follow_overhead"
-				"IsDebuff"	"1"
-				"Duration"  "5"
 			}
 		}
 	}

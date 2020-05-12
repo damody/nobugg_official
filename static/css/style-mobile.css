@@ -10,7 +10,7 @@
 
 /*hero list*/
 .champion-list a {
-    background: rgba(255, 255, 255, 0.3) url("/static/image/icon-seemore.png") no-repeat scroll 95% 50% / 15px auto;
+    background: rgba(255, 255, 255, 0.3) url("/nobu/static/image/icon-seemore.png") no-repeat scroll 95% 50% / 15px auto;
 }
 .champion-name {
     left: 70px;
@@ -67,13 +67,13 @@
 		top: 250px;
 	}
 	.faction1 {
-    	background: url("/static/image/bg-oda-mb.jpg") no-repeat center center / cover ;
+    	background: url("/nobu/static/image/bg-oda-mb.jpg") no-repeat center center / cover ;
 	}
 	.faction2 {
-    	background: url("/static/image/bg-unite-mb.jpg") no-repeat center center / cover ;
+    	background: url("/nobu/static/image/bg-unite-mb.jpg") no-repeat center center / cover ;
 	}
 	.faction3 {
-    	background: url("/static/image/bg-neutral-mb.jpg") no-repeat center center / cover ;
+    	background: url("/nobu/static/image/bg-neutral-mb.jpg") no-repeat center center / cover ;
 	}	
 	.faction-title {
 		text-align: center;
@@ -89,7 +89,7 @@
 		margin: 0 auto !important;
 	}
 	.champion-list a {
-		background: rgba(255, 255, 255, 0.6) url("/static/image/icon-seemore.png") no-repeat scroll 95% 50% / 15px auto;
+		background: rgba(255, 255, 255, 0.6) url("/nobu/static/image/icon-seemore.png") no-repeat scroll 95% 50% / 15px auto;
 	}
 	.champion-box > a {
 		width: 32%;

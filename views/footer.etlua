@@ -15,7 +15,7 @@
                 i = key
                 it = heroname[key]
                  %>
-                <a href="/<%-lang%>/hero/<%-i%>"><%-it%></a><%
+                <a href="/nobu/<%-lang%>/hero/<%-i%>"><%-it%></a><%
               end 
             end%>
             </div>
@@ -33,7 +33,7 @@
                 i = key
                 it = heroname[key]
                  %>
-                <a href="/<%-lang%>/hero/<%-i%>"><%-it%></a><%
+                <a href="/nobu/<%-lang%>/hero/<%-i%>"><%-it%></a><%
               end 
             end%>
             </div>
@@ -51,7 +51,7 @@
                 i = key
                 it = heroname[key]
                  %>
-                <a href="/<%-lang%>/hero/<%-i%>"><%-it%></a><%
+                <a href="/nobu/<%-lang%>/hero/<%-i%>"><%-it%></a><%
               end 
             end%>
             </div>

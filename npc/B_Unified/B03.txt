@@ -412,7 +412,7 @@
 		//"AbilityUnitDamageType"               		"DAMAGE_TYPE_MAGICAL"
 		"AbilityUnitTargetFlags"					"DOTA_UNIT_TARGET_FLAG_NONE"
 
-		"AbilityCastPoint"                          "0.1"
+		"AbilityCastPoint"          				"0.25"
 		"AbilityCastRange"							"1200"
 		"AbilityCooldown"                           "8"
 		"AbilityManaCost"                           "200 220 240 260"
@@ -573,7 +573,7 @@
 		"AbilityUnitDamageType"						"DAMAGE_TYPE_MAGICAL"
 		"AbilityTextureName"                        "custom/B03/B03T_old"
 		"AbilityCastRange"							"200"
-		"AbilityCastPoint"          				"0.1"
+		"AbilityCastPoint"          				"0.25"
 		"AbilityCooldown"           				"115 105 95"
 		"AbilityManaCost"           				"195 245 295"
 		"AOERadius"                                 "600"

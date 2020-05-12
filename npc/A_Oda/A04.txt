@@ -42,10 +42,25 @@
 			{
 				"EffectName"	"particles/a04e/a04e2.vpcf"
 				"EffectAttachType"	"attach_origin"
-				"Properties"
+				"OnCreated"
 				{
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"-30"
-					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"-30"
+					"RunScript"
+					{
+					"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+					"Function"	"Slow"
+					"name"	"A04D"
+					"ms_slow"	"-30"
+					"as_slow"	"-30"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"ReturnSpeed"
+						"name"	"A04D"
+					}
 				}
 				"IsDebuff"	"1"
 				"Duration"	"1"
@@ -60,17 +75,22 @@
 		// -------------------------------------------------------------------------------------------------------------
 		"BaseClass"	"ability_datadriven"
 		"AbilityTextureName"	"custom/morphling_full"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetFlags" "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
 		// Casting
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.2"
 		// Time
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"	"18 16 14 12"
+		"AbilityCooldown"	"18 17 16 15"
 		// Cost
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityManaCost"	"140 160 180 200"
+		"AbilityCastRange"	"1500"
 		"precache"
 		{
 			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_beastmaster.vsndevts"
@@ -85,25 +105,31 @@
 				"Target"	"CASTER"
 				"EffectName"	"A04W.vo1"
 			}
+			"RunScript"
+			{
+				"Target"	"TARGET"
+				"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A04_Takenaka_Juji.lua"
+				"Function"	"A04W_OnSpawn"
+			}
 			"SpawnUnit"
 			{
-				"UnitName"	"A04W_SUMMEND_UNIT"
-				"UnitCount"	"%count"
-				"Duration"	"26"
-				"GrantsGold"	"35"
-				"OnSpawn"
-				{
-					"ApplyModifier"
-					{
-						"Target"	"TARGET"
-						"ModifierName"	"modifier_A04W_summend"
-					}
-					"ApplyModifier"
-					{
-						"Target"	"TARGET"
-						"ModifierName"	"modifier_A04W_Tech"
-					}
-				}
+				// "UnitName"	"A04W_SUMMEND_UNIT"
+				// "UnitCount"	"%count"
+				// "Duration"	"26"
+				// "GrantsGold"	"35"
+				// "OnSpawn"
+				// {
+				// 	"ApplyModifier"
+				// 	{
+				// 		"Target"	"TARGET"
+				// 		"ModifierName"	"modifier_A04W_summend"
+				// 	}
+				// 	"ApplyModifier"
+				// 	{
+				// 		"Target"	"TARGET"
+				// 		"ModifierName"	"modifier_A04W_Tech"
+				// 	}
+				// }
 			}
 			"RunScript"
 			{
@@ -125,15 +151,27 @@
 						"EffectName"	"particles/units/heroes/hero_beastmaster/beastmaster_call_bird.vpcf"
 						"EffectAttachType"	"follow_origin"
 					}
+					"RunScript"
+					{
+					"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+					"Function"	"Slow"
+					"name"	"A04W_summend"
+					"ms_slow"	"%basic_speed"
+					"as_slow"	"%basic_attack_speed"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"ReturnSpeed"
+						"name"	"A04W_summend"
+					}
 				}
 				"IsBuff"	"0"
 				"EffectName"	"particles/units/heroes/hero_ancient_apparition/ancient_apparition_ambient.vpcf"
 				"EffectAttachType"	"attach_origin"
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT"	"%basic_attack_speed"
-					"MODIFIER_PROPERTY_MOVESPEED_BASE_OVERRIDE"	"%basic_speed"
-				}
 				"OnAttackLanded"
 				{
 					"RunScript"
@@ -159,7 +197,7 @@
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE"	"10"
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"0.5"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"0"
 				}
 				"OnCreated"
 				{
@@ -207,6 +245,11 @@
 				"var_type"	"FIELD_INTEGER"
 				"bonus_def"	"1 2 3 4 5 6 7 8 9 10"
 			}
+			"07"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"hp"	"500 575 650 725"
+			}
 		}
 	}
 
@@ -223,7 +266,7 @@
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
 		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityCastPoint" "0.25" //stun
+		"AbilityCastPoint" "0.3" //stun
 		// Time
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"	"15"
@@ -241,6 +284,14 @@
 			"particle"	"particles/units/heroes/hero_jakiro/jakiro_ice_path_b.vpcf"
 			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_jakiro.vsndevts"
 			"particle"	"particles/a04e/a04e.vpcf"
+		}
+		"OnAbilityPhaseStart"
+		{
+			"RunScript" 
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A04_Takenaka_Juji.lua"
+				"Function"	"A04E_OnAbilityPhaseStart"
+			}
 		}
 		"OnSpellStart"
 		{
@@ -329,12 +380,13 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"2"
 		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
 		// "HotKeyOverride"	"W"
 		// Casting
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.1"
 		// Time
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"	"15"
@@ -525,15 +577,16 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityType"	"DOTA_ABILITY_TYPE_ULTIMATE"
 		"MaxLevel"	"3"
 		"RequiredLevel"	"6"
 		"LevelsBetweenUpgrades"	"6"
-		"AbilityCastPoint"	"0"
+		"AbilityCastPoint"	"0.3"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
-		"AbilityCooldown"	"120 110 100"
-		"AbilityManaCost"	"200 300 400"
-		"AbilityCastRange"	"1100"
+		"AbilityCooldown"	"120"
+		"AbilityManaCost"	"200"
+		"AbilityCastRange"	"800"
 		"AbilityChannelTime"	"8"
 		"AbilityChannelledManaCostPerSecond"	"0"
 		"AOERadius"	"800"
@@ -549,6 +602,14 @@
 			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_crystalmaiden.vsndevts"
 			"particle"	"particles/units/heroes/hero_crystalmaiden/maiden_freezing_field_snow.vpcf"
 			"particle"	"particles/generic_gameplay/generic_slowed_cold.vpcf"
+		}
+		"OnAbilityPhaseStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A04_Takenaka_Juji.lua"
+				"Function"	"A04T_OnAbilityPhaseStart"
+			}
 		}
 		"OnSpellStart"
 		{
@@ -693,10 +754,25 @@
 				"EffectName"	"particles/generic_gameplay/generic_slowed_cold.vpcf"
 				"StatusEffectName"	"particles/status_fx/status_effect_frost_lich.vpcf"
 				"StatusEffectPriority"	"10"
-				"Properties"
+				"OnCreated"
 				{
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%attack_slow"
-					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"%movespeed_slow"
+					"RunScript"
+					{
+					"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+					"Function"	"Slow"
+					"name"	"A04T"
+					"ms_slow"	"%movespeed_slow"
+					"as_slow"	"%attack_slow"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"ReturnSpeed"
+						"name"	"A04T"
+					}
 				}
 				"OnIntervalThink"
 				{
@@ -768,7 +844,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"movespeed_slow"	"-30"
+				"movespeed_slow"	"-40"
 			}
 			"05"
 			{
@@ -798,7 +874,7 @@
 			"10"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage_scepter"	"170 250 310"
+				"damage_scepter"	"180 240 300"
 			}
 			"11"
 			{
@@ -935,7 +1011,7 @@
 		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
 		// Casting
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		// Time
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"	"20"

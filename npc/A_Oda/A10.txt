@@ -41,7 +41,7 @@
 		"AbilityTextureName"                        "custom/A10/A10D"
 		"AbilityType"  								"DOTA_ABILITY_TYPE_BASIC"
 
-		"AbilityCastPoint"                          "0.1"
+		"AbilityCastPoint"          				"0.25"
 		"AbilityCastRange"							"0"
 		"AbilityCooldown"                           "16"
 		"AbilityManaCost"                           "150 170 190 210"
@@ -114,7 +114,7 @@
 		"AbilityUnitDamageType"               		"DAMAGE_TYPE_MAGICAL"
 		"AbilityUnitTargetFlags"					"DOTA_UNIT_TARGET_FLAG_NONE"
 
-		"AbilityCastPoint"                          "0.3"	//move
+		"AbilityCastPoint"                          "0.3"
 		"AbilityCastRange"							"800"
 		"AbilityCooldown"                           "25 21 17 13"
 		"AbilityManaCost"                           "110 135 160 185"

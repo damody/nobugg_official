@@ -4,8 +4,6 @@ require("read_hero")
 lang = params.language
 hero = read_hero()[params.hero]
 data = inspect(hero)
-local redis = require 'redis'
-local client = redis.connect('127.0.0.1', 6379)
 local cjson = require("cjson")
 record16 = cjson.decode(client:get(string.lower(params.hero).."_16"))
 record11 = cjson.decode(client:get(string.lower(params.hero).."_11"))
@@ -26,7 +24,7 @@ skill = {"D", "W", "E", "R", "T"}
 
 <div class="container">
   <div class="jumbotron">
-    <img src="/static/pic/hero/<%-string.lower(params.hero)%>.png" class="img-rounded" alt="<%-hero["name"][lang]%>" width="128" height="128">
+    <img src="/nobu/static/pic/hero/<%-string.lower(params.hero)%>.png" class="img-rounded" alt="<%-hero["name"][lang]%>" width="128" height="128">
     <h2><%-hero["name"][lang]%></h2>
   </div>
   <h4><%-langtext["version"][lang]%>: 16</h4>
@@ -35,7 +33,7 @@ skill = {"D", "W", "E", "R", "T"}
   %>
 		<ul class="list">
 		<% if item ~=nil and item["name"] ~= nil then %>
-      <img src="/static/pic/spellicons/<%-item["pic"]%>.png" class="img-rounded" alt="<%=item["name"][lang]%>" width="64" height="64">
+      <img src="/nobu/static/pic/spellicons/<%-item["pic"]%>.png" class="img-rounded" alt="<%=item["name"][lang]%>" width="64" height="64">
 			<li><%= item["name"][lang] %></li>
 			<% if item["cooldown"] ~= nil then %>
 				<li><%-langtext["cd"][lang]%>: <%= item["cooldown"] %></li>
@@ -69,7 +67,7 @@ skill = {"D", "W", "E", "R", "T"}
   %>
 		<ul class="list">
 		<% if item ~=nil and item["name"] ~= nil then %>
-      <img src="/static/pic/spellicons/<%-item["pic"]%>.png" class="img-rounded" alt="<%= item["name"][lang] %>" width="64" height="64"> 
+      <img src="/nobu/static/pic/spellicons/<%-item["pic"]%>.png" class="img-rounded" alt="<%= item["name"][lang] %>" width="64" height="64"> 
 			<li><%= item["name"][lang] %></li>
 			<% if item["cooldown"] ~= nil then %>
 				<li><%-langtext["cd"][lang]%>: <%= item["cooldown"] %></li>

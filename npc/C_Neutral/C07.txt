@@ -19,8 +19,9 @@
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_CREEP"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
-		"AbilityCooldown"	"6"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityCastPoint"          				"0.2"
+		"AbilityCooldown"	"7"
 		"AbilityManaCost"	"105 125 145 165"
 		"AbilityCastRange"	"700"
 		"precache"
@@ -88,7 +89,8 @@
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_CREEP"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint" "0.25" //stun
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityCastPoint" "0.3" //stun
 		"AbilityCastAnimation"	"ACT_DOTA_ATTACK1"
 		"AnimationPlaybackRate"	"1.5"
 		"AbilityCooldown"	"22"
@@ -151,6 +153,14 @@
 				"Function"	"C07E_END"
 			}
 		}
+		"OnChannelSucceeded"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C07.lua"
+				"Function"	"C07E_Succeeded"
+			}
+		}
 		"OnChannelInterrupted"
 		{
 			"RemoveModifier"
@@ -211,6 +221,13 @@
 					"MODIFIER_STATE_STUNNED"	"MODIFIER_STATE_VALUE_ENABLED"
 				}
 			}
+			"modifier_C07E3"
+			{
+				"Duration"			"1"
+				"IsPurgable"		"0"
+				"IsDebuff"			"1"
+				"IsHidden"			"1"
+			}
 		}
 		"AbilitySpecial"
 		{
@@ -231,10 +248,11 @@
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_CREEP"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
-		"AbilityCooldown"	"4 3.5 3 2"
-		"AbilityManaCost"	"40 60 80 100"
-		"AbilityCastRange"	"850"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityCastPoint"          				"0.2"
+		"AbilityCooldown"	"6"
+		"AbilityManaCost"	"100 120 140 180"
+		"AbilityCastRange"	"750"
 		"AOERadius"	"%radius"
 		"precache"
 		{
@@ -298,7 +316,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"target_count"	"3"
+				"target_count"	"6"
 			}
 		}
 		"AbilityDamage"	"150 250 350 450"
@@ -312,10 +330,12 @@
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING | DOTA_UNIT_TARGET_CREEP"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_PHYSICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityType"	"DOTA_ABILITY_TYPE_ULTIMATE"
-		"AbilityCooldown"	"140"
-		"AbilityManaCost"	"300 450 600"
+		"AbilityCooldown"	"120"
+		"AbilityManaCost"	"300"
+		"AbilityCastPoint"	"0.3"
 		"RequiredLevel"	"6"
 		"LevelsBetweenUpgrades"	"6"
 		"precache"
@@ -372,7 +392,7 @@
 					{
 						"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C07.lua"
 						"Function"	"C07_Effect"
-						"C07_dmg"	"%AbilityDamage"
+						"C07_dmg"	"%abilityDamage"
 					}
 				}
 				"ThinkInterval"	"%tick"
@@ -381,13 +401,45 @@
 			{
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"%slow"
 					"MODIFIER_PROPERTY_DISABLE_HEALING"	"1"
+				}
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"Slow"
+						"name"	"C07T_2"
+						"ms_slow" "%slow"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"ReturnSpeed"
+						"name"	"C07T_2"
+					}
 				}
 				"EffectName"	"particles/c07t2/c07t2.vpcf"
 				"EffectAttachType"	"follow_hitloc"
 				"Duration"	"3"
 				"IsDebuff"	"1"
+			}
+			"modifier_C07T_3"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"ThinkInterval"	"0.1"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C07.lua"
+						"Function"	"C07T_Effect"
+					}
+				}
 			}
 		}
 		"AbilitySpecial"
@@ -400,7 +452,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"radius"	"1400"
+				"radius"	"1000"
 			}
 			"03"
 			{
@@ -417,17 +469,20 @@
 				"var_type"	"FIELD_FLOAT"
 				"duration"	"15 17 19"
 			}
+			"06"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"abilityDamage"	"250 370 500"
+			}
+
 		}
-		"AbilityDamage"	"180 225 270"
 	}
 	// 立花道雪 禦魔之盾
 	"C07D"
 	{
 		"BaseClass"	"ability_datadriven"
 		"AbilityTextureName"	"silencer_global_silence"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_CHANNEL"
-		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
 		"MaxLevel"	"1"
 		"AbilityCooldown"	"0"
 		"OnToggleOn"
@@ -737,7 +792,7 @@
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"6"
 		"AbilityManaCost"	"140 160 180 200"
 		"AbilityCastRange"	"1100"

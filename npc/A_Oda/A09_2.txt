@@ -16,7 +16,7 @@
 		"Ability3"	"A09R"
 		"Ability4"	"A09T"
 		"Ability5"	"A09_precache"
-		"Ability6"	"attribute_bonusx"
+		"Ability6"	"magical_resistance"
 		"Ability7"	""
 		"Ability8"	""
 		"Ability9"	""
@@ -30,8 +30,8 @@
 
 		// Armor
 		// ----------------------------------------------------------------
-		"ArmorPhysical"		"9"
-		"MagicalResistance"	"30"
+		"ArmorPhysical"		"0"
+		"MagicalResistance"	"0"
 
 		// Attack
 		// ----------------------------------------------------------------
@@ -56,8 +56,8 @@
 
 		// Bounty
 		// ----------------------------------------------------------------
-		"BountyGoldMin"	"300.0"
-		"BountyGoldMax"	"300.0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
 
 		// Bounds
 		// ----------------------------------------------------------------
@@ -67,8 +67,8 @@
 		// Movement
 		// ----------------------------------------------------------------
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"			"300"
-		"MovementTurnRate"		"1.50"
+		"MovementSpeed"			"350"
+		"MovementTurnRate"		"360"
 
 		// Gold and Lumber
 		// ----------------------------------------------------------------
@@ -77,7 +77,7 @@
 
 		// Status
 		// ----------------------------------------------------------------
-		"StatusHealth"			"400"
+		"StatusHealth"			"550"
 		"StatusHealthRegen"		"0.25"
 		"StatusMana"			"0"
 		"StatusManaRegen"		"0.01"
@@ -85,8 +85,8 @@
 
 		// Vision
 		// ----------------------------------------------------------------
-		"VisionDaytimeRange"	"1800"
-		"VisionNighttimeRange"	"800"
+		"VisionDaytimeRange"	"1600"
+		"VisionNighttimeRange"	"1000"
 
 		// Combat
 		// ----------------------------------------------------------------

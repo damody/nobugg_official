@@ -30,7 +30,7 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.2"
 		// Time
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"	"9"
@@ -51,6 +51,14 @@
 			"particle"	"particles/c10w3/c10w3.vpcf"
 			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_magnataur.vsndevts"
 			"particle"	"particles/c10w3/c10w3.vpcf"
+		}
+		"OnAbilityPhaseStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C10.lua"
+				"Function"	"C10W_OnAbilityPhaseStart"
+			}
 		}
 		"OnSpellStart"
 		{
@@ -92,9 +100,24 @@
 				"EffectName"	"particles/c10w3/c10w3.vpcf"
 				"EffectAttachType"	"follow_hitloc"
 				"Duration"	"%reduction_duration"
-				"Properties"
+				"OnCreated"
 				{
-					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"%slow"
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"Slow"
+						"name"	"C10W"
+						"ms_slow" "%slow"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"ReturnSpeed"
+						"name"	"C10W"
+					}
 				}
 				"IsDebuff"	"1"
 				"IsPurgable"	"1"
@@ -152,8 +175,9 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitDamageType"	"DAMAGE_TYPE_PURE"
-		"AbilityCastPoint" "0.25" //stun
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityCastPoint" "0.35" //stun
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_4"
 		"AbilityCooldown"	"8 7 6 5"
 		"AbilityManaCost"	"80"
@@ -174,7 +198,7 @@
 			"Damage"
 			{
 				"Target"	"TARGET"
-				"Type"	"DAMAGE_TYPE_PURE"
+				"Type"	"DAMAGE_TYPE_MAGICAL"
 				"Damage"	"%Heal"
 			}
 			"Heal"
@@ -234,6 +258,8 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
 		"precache"
 		{
 			"particle"	"particles/c10r2/c10r2.vpcf"
@@ -289,11 +315,11 @@
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityType"	"DOTA_ABILITY_TYPE_ULTIMATE"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.3"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_2"
-		"AbilityCooldown"	"85"
+		"AbilityCooldown"	"100"
 		"AbilityManaCost"	"150 180 210"
-		"AbilityCastRange"	"900 1200 1500"
+		"AbilityCastRange"	"600"
 		"RequiredLevel"	"6"
 		"LevelsBetweenUpgrades"	"6"
 		"precache"
@@ -305,6 +331,22 @@
 			"particle"	"particles/c10t/c10t.vpcf"
 			"particle"	"particles/econ/items/antimage/antimage_weapon_basher_ti5/antimage_manavoid_ti_5.vpcf"
 			"particle"	"particles/units/heroes/hero_terrorblade/terrorblade_reflection_slow.vpcf"
+		}
+		"OnUpgrade"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C10.lua"
+				"Function"			"C10T_OnUpgrade"
+			}
+		}
+		"OnAbilityPhaseStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C10.lua"
+				"Function"	"C10T_OnAbilityPhaseStart"
+			}
 		}
 		"OnSpellStart"
 		{
@@ -374,16 +416,63 @@
 				"Duration"	"%slow_duration"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "400" //攻速
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "100" //攻速
+				}
+			}
+			"modifier_C10T_1"
+			{
+				"IsHidden"	"0"
+				"Passive"	"0"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "%armor"	//防禦
+				}
+			}
+			"modifier_C10T_2"
+			{
+				"IsHidden"	"0"
+				"Passive"	"0"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE" "%speed" //跑速
+				}
+			}
+			"modifier_C10T_x"
+			{
+				"IsHidden"	"1"
+				"Passive"	"1"
+				"ThinkInterval"  "1"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+					  	"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C10.lua"
+						"Function"	"CheckDay"
+					}
 				}
 			}
 			"modifier_C10T"
 			{
 				"Duration"	"%slow_duration"
 				"States"	{}
-				"Properties"
+				"OnCreated"
 				{
-					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"%slow_speed"
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"Slow"
+						"name"	"C10T"
+						"ms_slow" "%slow_speed"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"ReturnSpeed"
+						"name"	"C10T"
+					}
 				}
 				"EffectName"	"particles/units/heroes/hero_terrorblade/terrorblade_reflection_slow.vpcf"
 				"EffectAttachType"	"follow_hitloc"
@@ -394,7 +483,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"radius"	"900 1200 1500"
+				"radius"	"600"
 			}
 			"02"
 			{
@@ -410,6 +499,16 @@
 			{
 				"var_type"	"FIELD_INTEGER"
 				"slow_speed"	"-45"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"armor"	"10 20 30"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"speed"	"20 25 30"
 			}
 		}
 	}

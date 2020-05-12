@@ -33,7 +33,7 @@
 		"AbilityUnitTargetType"						"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 
 		"AOERadius"                                 "%B23W_radius"
-		"AbilityCastPoint"                          "0.1"
+		"AbilityCastPoint"          				"0.25"
 		"AbilityCastRange"							"1000"
 
 		"AbilityCooldown"                           "14"
@@ -511,7 +511,7 @@
 		"AbilityUnitTargetType"						"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 
 		"AOERadius"                                 "%B23W_radius"
-		"AbilityCastPoint"                          "0.1"
+		"AbilityCastPoint"          				"0.25"
 		"AbilityCastRange"							"1000"
 
 		"AbilityCooldown"                           "14"

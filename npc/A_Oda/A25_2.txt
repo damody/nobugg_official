@@ -3,7 +3,7 @@
 	// 織田信長
 	"A25"
 	{
-		"ModelScale"	"1.4"
+		"ModelScale"	"1.2"
 		//"Level"	"1"
 		"Model"	"models/heronobunagaoda/heronobunagaoda.vmdl"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
@@ -13,21 +13,23 @@
 		"Ability1"	"A25W"
 		"Ability2"	"A25E"
 		"Ability3"	"A25R"
-		"Ability4"	"attribute_bonusx"
-		"Ability5"	"A25T"
-		"Ability6"	"A25_precache"
+		"Ability4"	"magical_resistance"
+		
+		"Ability5"	"A25D"
+		"Ability6"	"A25T"
+		"Ability7"	"A25_precache"
 		// Armor
 		// ----------------------------------------------------------------
-		"ArmorPhysical"	"6"
-		"MagicalResistance"	"30"
+		"ArmorPhysical"	"5"
+		"MagicalResistance"	"0"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"	"123.0"
-		"AttackDamageMax"	"141.0"
+		"AttackDamageMin"	"105.0"
+		"AttackDamageMax"	"105.0"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"	"1.80"
-		"AttackAnimationPoint"	"0.33"
+		"AttackAnimationPoint"	"0.3"
 		"AttackAcquisitionRange"	"500"
 		"AttackRange"	"145"
 		"ProjectileSpeed"	"10000"
@@ -42,8 +44,8 @@
 		"AttributeIntelligenceGain"	"2"
 		// Bounty
 		// ----------------------------------------------------------------
-		"BountyGoldMin"	"300.0"
-		"BountyGoldMax"	"300.0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
 		// Gold and Lumber
 		// ----------------------------------------------------------------
 		"GoldCost"	"0"
@@ -51,19 +53,19 @@
 		// Movement
 		// ----------------------------------------------------------------
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"	"300"
-		"MovementTurnRate"	"3"
+		"MovementSpeed"	"350"
+		"MovementTurnRate"	"360"
 		// Status
 		// ----------------------------------------------------------------
-		"StatusHealth"	"400"
+		"StatusHealth"	"550"
 		"StatusHealthRegen"	"0.25"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0.01"
 		"StatusStartingMana"	"100"
 		// Vision
 		// ----------------------------------------------------------------
-		"VisionDaytimeRange"	"1800"
-		"VisionNighttimeRange"	"800"
+		"VisionDaytimeRange"	"1600"
+		"VisionNighttimeRange"	"1000"
 		// Team
 		// ----------------------------------------------------------------
 		"TeamName"	"DOTA_TEAM_NEUTRALS"

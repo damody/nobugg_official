@@ -17,21 +17,21 @@
 		"Ability2"	"B15E"
 		"Ability3"	"B15R"
 		"Ability4"	"B15D"
-		"Ability5"	"attribute_bonusx"
+		"Ability5"	"magical_resistance"
 		"Ability6"	"B15T"
 		"Ability7"	"B15_precache"
 		//Armor
 		// --------------------------------------------------------------
 		"ArmorPhysical"	"3"
-		"MagicalResistance"	"30"
+		"MagicalResistance"	"0"
 		//Attack
 		// --------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"	"85.0"
-		"AttackDamageMax"	"99.0"
+		"AttackDamageMin"	"88.0"
+		"AttackDamageMax"	"88.0"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"	"1.80"
-		"AttackAnimationPoint"	"0.70"
+		"AttackAnimationPoint"	"0.25"
 		"AttackAcquisitionRange"	"700"
 		"AttackRange"	"700"
 		"ProjectileSpeed"	"1800"
@@ -55,19 +55,20 @@
 		// Movement
 		// --------------------------------------------------------------
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"	"300"
-		"MovementTurnRate"	"1.50"
+		"MovementSpeed"	"350"
+
+		"MovementTurnRate"	"360"
 		// Status
 		// --------------------------------------------------------------
-		"StatusHealth"	"400"
+		"StatusHealth"	"550"
 		"StatusHealthRegen"	"0.25"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0.01"
 		"StatusStartingMana"	"100"
 		// Vision
 		// --------------------------------------------------------------
-		"VisionDaytimeRange"	"1800"
-		"VisionNighttimeRange"	"800"
+		"VisionDaytimeRange"	"1600"
+		"VisionNighttimeRange"	"1000"
 		// Team
 		// --------------------------------------------------------------
 		"TeamName"	"DOTA_TEAM_NEUTRALS"

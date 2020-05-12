@@ -40,9 +40,9 @@
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
-
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		
-		"AbilityDamage"					"50 80 110 140"
+		"AbilityDamage"					"30 50 70 90"
 
 		"AbilitySpecial"
 		{
@@ -54,17 +54,17 @@
 			"02"
 			{
 				"var_type"		"FIELD_INTEGER"
-				"debuff_attack_speed"			"-15 -20 -25 -30"
+				"debuff_attack_speed"			"-9 -13 -17 -21"
 			}
 			"03"
 			{
 				"var_type"		"FIELD_INTEGER"
-				"debuff_movement_speed"		"-15 -20 -25 -30"
+				"debuff_movement_speed"		"-9 -13 -17 -21"
 			}
 			"04"
 			{
 				"var_type"		"FIELD_INTEGER"
-				"mana_cost"		"8 12 16 20"
+				"mana_cost"		"10"
 			}
 		}
 
@@ -143,7 +143,6 @@
 					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"%debuff_movement_speed"
 					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%debuff_attack_speed"
 				}
-
 				"OnCreated"
 				{
 					"AttachEffect"
@@ -152,7 +151,23 @@
 						"EffectAttachType"	"attach_hitloc"	
 						"Target"			"TARGET"
 					}
-
+					"RunScript"
+					{
+					"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+					"Function"	"Slow"
+					"name"	"A02W_debuff"
+					"ms_slow"	"%debuff_movement_speed"
+					"as_slow"	"%debuff_attack_speed"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"ReturnSpeed"
+						"name"	"A02_debuff"
+					}
 				}
 			}
 		}
@@ -166,7 +181,7 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-
+		"AbilityCastPoint"	"0.1"
 		"AbilityCooldown"				"15 14 13 12"
 		"AbilityManaCost"				"130 150 170 190"
 		
@@ -321,7 +336,6 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-
 		"AbilityCooldown"				"140 130 120"
 		"AbilityManaCost"				"200 225 250"
 

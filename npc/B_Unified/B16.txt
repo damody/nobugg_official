@@ -21,8 +21,10 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"AbilityCooldown"	"13"
-		"AbilityManaCost"	"120 140 160 180"
+		"AbilityManaCost"	"100 120 140 160"
 		"AbilityCastRange"	"1000"
 
 		"OnSpellStart"
@@ -50,7 +52,7 @@
 			"RunScript"
 			{
 				"ScriptFile"	"scripts/vscripts/heroes/B_Unified/B16_Mochidsuki_Chiyome.lua"
-				"Function"		"B16_AbilityAdjust"
+				"Function"		"B16_OnUpgrade"
 			}
 		}
 		"Modifiers"
@@ -106,10 +108,14 @@
 	{
 		"BaseClass"					"ability_datadriven"
 		"AbilityTextureName"		"custom/guanyu_xzizhan"
-		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"AbilityCastPoint" "0.25" //stun
 		"AbilityCooldown"	"20 16 13 10"
-		"AbilityManaCost"	"120 140 160 180"
+		"AbilityManaCost"	"100 120 140 160"
 		"OnSpellStart"
 		{
 			"FireSound"
@@ -254,7 +260,7 @@
 	"B16D"
 	{
 		// Todo: 不知道能不能取消技能下方的等級提示
-		"MaxLevel"	"1"
+		"MaxLevel"	"5"
 		"HotKeyOverride"	"D"
 
 		// General
@@ -263,9 +269,9 @@
 		"AbilityTextureName"	"custom/icon_128x128_39"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityCastPoint" "0.1"
+		"AbilityCastPoint"          				"0.25"
 		"AbilityCooldown"	"30"
-		"AbilityManaCost"	"165"
+		"AbilityManaCost"	"0"
 
 		"precache"
 		{
@@ -292,6 +298,20 @@
 
 		"Modifiers"
 		{
+			"modifier_B16D_distanceDetector_hero"
+			{
+				"IsHidden"						"1"
+				"Passive"						"1"
+				"Attributes"					"MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"        	"scripts/vscripts/heroes/B_Unified/B16_Mochidsuki_Chiyome.lua"
+						"Function"              "B16D_OnCreated"
+					}
+				}
+			}
 			"modifier_B16D_MoonMoon"
 			{
 				"OnCreated"
@@ -325,12 +345,20 @@
 				"Properties"
 				{
 					// Todo: 調整月月能力(按照望月等級疊加)
-					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"		"2"
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"10" 
-				    "MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE"		"10"
-				    "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"		"2"
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"		"1"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"8" 
+				    "MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE"		"8"
+				    "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"		"1"
 				    "MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"2"
 				}
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"life"	"1000 1200 1400 1600 1800"
 			}
 		}
 	}
@@ -343,7 +371,7 @@
 		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		"AbilityType"				"DOTA_ABILITY_TYPE_ULTIMATE"
 		"AbilityCooldown"			"140"
-		"AbilityManaCost"			"200"
+		"AbilityManaCost"			"100"
 		"MaxLevel"					"3"
 		"RequiredLevel"				"6"
 		"LevelsBetweenUpgrades"		"6"
@@ -361,18 +389,12 @@
 				"Function"		"B16T"
 			}
 		}
-
+		
 		"Modifiers"
 		{
 			"modifier_B16T"
 			{
 				"Duration" "%duration"
-
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"50"
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS" 		"90"
-				}
 
 				"OnCreated"
 				{
@@ -383,7 +405,6 @@
 						"Target" 		"TARGET"
 					}
 				}
-
 				"OnDestroy"
 				{
 					"RunScript"
@@ -394,6 +415,42 @@
 					}
 				}
 			}
+			"modifier_B16T2"
+			{
+				"IsHidden" "1"
+				"Duration" "%duration"
+				"OnTakeDamage"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/B_Unified/B16_Mochidsuki_Chiyome.lua"
+						"Function"		"B16T_Share"
+						"dmg"	"%attack_damage"
+					}
+				}
+			}
+
+			"modifier_B16T_Passive"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"ThinkInterval"	"0.2"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/B_Unified/B16_Mochidsuki_Chiyome.lua"
+						"Function"		"B16T_Passive"
+					}
+				}
+			}
+			"modifier_B16T_Damage_Bouns"
+			{
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"%damage_bouns"
+				}
+			}
 		}
 
 		"AbilitySpecial"
@@ -402,6 +459,16 @@
 			{
 				"var_type"			"FIELD_INTEGER"
 				"duration"			"15 22 29"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"damage_bouns"		"20 25 30"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"hp_bouns"			"400 600 800"
 			}
 		}
 	}
@@ -543,6 +610,11 @@
 		"BaseClass"             		"ability_datadriven"
 		"AbilityTextureName"			"custom/icon_128x128_53"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
 
 		"Modifiers"
 		{
@@ -568,7 +640,7 @@
 				"Duration"		"0.65"
 				"States"
 				{
-					"MODIFIER_STATE_STUNNED"	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_ROOTED"	"MODIFIER_STATE_VALUE_ENABLED"
 				}
 				"EffectName"	"particles/generic_gameplay/generic_stunned.vpcf"
 				"EffectAttachType"	"follow_overhead"
@@ -593,7 +665,7 @@
 				"IsHidden"			"0"
 				"IsDebuff"			"1"
 
-				"Duration" "2"
+				"Duration" "5"
 
 				"OnAttack"
 				{
@@ -689,7 +761,7 @@
 		"AbilityTextureName"	"custom/icon_128x128_39"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"20"
 		"AbilityManaCost"	"200 240 260 280"
 

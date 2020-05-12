@@ -131,7 +131,7 @@
 		"AbilityUnitDamageType"               		"DAMAGE_TYPE_PHYSICAL"
 		"AbilityCastAnimation"                      "ACT_DOTA_CAST_ABILITY_1"
 
-		"AbilityCastPoint"                          "0.1"
+		"AbilityCastPoint"          				"0.25"
 		"AbilityCastRange"							"800"
 
 		"AbilityCooldown"                           "8"
@@ -330,7 +330,7 @@
 		"AbilityUnitDamageType"						"DAMAGE_TYPE_MAGICAL"
 		"AbilityTextureName"                        "brewmaster_storm_cyclone"
 
-		"AbilityCastPoint"          				"0.1"
+		"AbilityCastPoint"          				"0.25"
 		"AbilityCooldown"           				"135 125 115"
 		"AbilityManaCost"           				"185"
 		"AOERadius"                                 "500"
@@ -704,7 +704,7 @@
 		"AbilityUnitDamageType"						"DAMAGE_TYPE_MAGICAL"
 		"AbilityTextureName"                        "brewmaster_storm_cyclone"
 
-		"AbilityCastPoint"          				"0.1"
+		"AbilityCastPoint"          				"0.25"
 		"AbilityCooldown"           				"110"
 		"AbilityManaCost"           				"200 250 300"
 		"AOERadius"                                 "500"

@@ -28,7 +28,7 @@
 		"AbilityUnitDamageType"               		"DAMAGE_TYPE_MAGICAL"
 		"AbilityUnitTargetFlags"					"DOTA_UNIT_TARGET_FLAG_NONE"
 		"AbilityCastAnimation"						"ACT_DOTA_ATTACK"
-		"AbilityCastPoint"                          "0.1"
+		"AbilityCastPoint"          				"0.25"
 		"AbilityCastRange"							"800"
 		"AbilityCooldown"                           "20 18 16 14"
 		"AbilityManaCost"                           "100"
@@ -85,7 +85,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCastAnimation"	"ACT_DOTA_ATTACK"
 		"AbilityCooldown"	"8"
 		"AbilityManaCost"	"80 100 120 140"
@@ -192,7 +192,7 @@
 		}
 		"Modifiers"
 		{
-			"modifier_C14W"
+			"modifier_C14R"
 			{
 				"Passive" 			"1"
 				"IsPurgable"		"0"
@@ -200,6 +200,7 @@
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"%atk_bonus"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"%armor_bonus"
 				}
 			}
 		}
@@ -211,7 +212,11 @@
 				"var_type"					"FIELD_INTEGER"
 				"atk_bonus"					"7 14 21 28"
 			}
-
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"armor_bonus"				"3 5 7 9"
+			}
 		}
 	}
 
@@ -250,6 +255,7 @@
 				"EffectName" 						"particles/econ/courier/courier_greevil_red/courier_greevil_red_ambient_3.vpcf"
 				"IsDebuff"							"1"
 				"IsPurgable"						"0"
+				"IsHidden"	"1"
 			}
 			"modifier_C14T"
 			{
@@ -258,7 +264,6 @@
 				//"Target"            "CASTER"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"8"
 					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"	"%speed_bonus"
 					"MODIFIER_PROPERTY_ATTACK_RANGE_BONUS"	"472"
 				}
@@ -334,7 +339,7 @@
 		"AbilityUnitDamageType"               		"DAMAGE_TYPE_MAGICAL"
 		"AbilityUnitTargetFlags"					"DOTA_UNIT_TARGET_FLAG_NONE"
 		"AbilityCastAnimation"						"ACT_DOTA_ATTACK"
-		"AbilityCastPoint"                          "0.1"
+		"AbilityCastPoint"          				"0.25"
 		"AbilityCastRange"							"800"
 		"AbilityCooldown"                           "25"
 		"AbilityManaCost"                           "120 140 160 180"
@@ -391,7 +396,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCastAnimation"	"ACT_DOTA_ATTACK"
 		"AbilityCooldown"	"20"
 		"AbilityManaCost"	"100 120 140 160"

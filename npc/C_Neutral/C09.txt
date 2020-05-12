@@ -26,6 +26,7 @@
 		"AbilityUnitTargetTeam"						"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"						"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"               		"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 
 		"OnToggleOn"
 		{
@@ -82,10 +83,7 @@
 				"StatusEffectPriority"	"15"
 				"IsHidden"	"1"
 
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%debuff_attack_speed"
-				}
+				
 			}
 			"modifier_C09W_debuff"
 			{
@@ -95,11 +93,7 @@
 				"Duration"	"%debuff_duration"
 				"StatusEffectPriority"	"15"
 
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"%debuff_movement_speed"
-				}
-
+				
 				"OnCreated"
 				{
 					"AttachEffect"
@@ -108,11 +102,26 @@
 						"EffectAttachType"	"follow_hitloc"
 						"Target"			"TARGET"
 					}
-
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"Slow"
+						"name"	"C09W"
+						"ms_slow" "%debuff_movement_speed"
+						"as_slow" "%debuff_attack_speed"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"ReturnSpeed"
+						"name"	"C09W"
+					}
 				}
 			}
 		}
-
 		"AbilitySpecial"
 		{
 			"01"
@@ -133,7 +142,7 @@
 			"04"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"mana_cost"					"6 8 10 12"
+				"mana_cost"					"6 7 8 9"
 			}
 			"05"
 			{
@@ -196,7 +205,7 @@
 			"03"
 			{
 				"var_type"							"FIELD_FLOAT"
-				"C09E_duration"						"3.0 4.0 5.0 6.0"
+				"C09E_duration"						"4 5 6 7"
 			}
 		}
 	}
@@ -210,6 +219,7 @@
 		"AbilityUnitTargetTeam"                		"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityType"  								"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityUnitDamageType"               		"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"AbilityTextureName"                        "custom/C09/C09R"
 
 		"AbilityCooldown"							"16 13 10 7"
@@ -239,12 +249,29 @@
 					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "%C09R_debuffAsMs"
 				    "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE" "%C09R_debuffAsMs" 
 				}
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"Slow"
+						"name"	"C09R"
+						"ms_slow" "%C09R_debuffAsMs"
+						"as_slow" "%C09R_debuffAsMs"
+					}
+				}
 				"OnDestroy"
 				{
 					"RunScript"
 					{
 						"ScriptFile"						"scripts/vscripts/heroes/C_Neutral/C09.lua"
 						"Function"							"C09R_debuff_OnDestroy"
+					}
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"ReturnSpeed"
+						"name"	"C09R"
 					}
 				}
 			}
@@ -285,17 +312,33 @@
 	"C09T"
 	{
 		"BaseClass"                 				"ability_datadriven"
-		"AbilityBehavior"           				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityBehavior"           				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AOE"
 		"AbilityUnitTargetType"     				"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
 		"AbilityUnitTargetTeam"     				"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"    				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityType"  								"DOTA_ABILITY_TYPE_ULTIMATE"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"                        "custom/C09/C09T"
-
-		"AbilityCooldown"           				"70 55 40"
+		"AbilityCastPoint"							"0.25"
+		"AbilityCooldown"           				"100 90 80"
 		"AbilityManaCost"           				"150"
 		"AbilityCastRange"							"800"
-		
+		"OnUpgrade"
+		{
+			"RunScript"
+			{
+				"ScriptFile"		"scripts/vscripts/heroes/C_Neutral/C09.lua"
+				"Function"			"C09T_OnUpgrade"
+			}
+		}
+		"OnAbilityPhaseStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"		"scripts/vscripts/heroes/C_Neutral/C09.lua"
+				"Function"			"C09T_OnAbilityPhaseStart"
+			}
+		}
 		"OnSpellStart"
 		{
 			"RunScript"
@@ -305,14 +348,28 @@
 			}
 			"RunScript"
 			{
-				"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
-				"Function"	"showTitle"
-				"title"	"particles/title/c09t.vpcf"
+				// "ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+				// "Function"	"showTitle"
+				// "title"	"particles/title/c09t.vpcf"
 			}
 		}
 
 		"Modifiers"
 		{
+			"modifier_C09T_passive"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"ThinkInterval"	"0.1"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C09.lua"
+						"Function"	"C09T_Passive"
+					}
+				}
+			}
 			"modifier_C09T_debuff"
 			{
 				"IsDebuff"			"1"
@@ -323,6 +380,29 @@
 					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"%C09T_armor"
 				}
 			}
+			"modifier_C09T_debuff2"
+			{
+				"precache"
+				{
+					"soundfile"	"soundevents/game_sounds_heroes/game_sounds_crystalmaiden.vsndevts"
+					"particle"	"particles/units/heroes/hero_crystalmaiden/maiden_frostbite_buff.vpcf"
+				}
+				"IsDebuff"			"1"
+				"Duration"			"1"
+				"EffectName"	"particles/units/heroes/hero_crystalmaiden/maiden_frostbite_buff.vpcf"
+				"States"
+				{
+					"MODIFIER_STATE_STUNNED"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
+			}
+			"modifier_C09T_debuff3"
+			{
+				"IsDebuff"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"%C09T_passive"
+				}
+			}
 		}
 
 		"AbilitySpecial"
@@ -330,17 +410,27 @@
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"C09T_armor"		"-30 -48 -46"
+				"C09T_armor"		"-30 -38 -46"
 			}
 			"02"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"C09T_duration"		"7.0 10.0 13.0"
+				"C09T_duration"		"7"
 			}
 			"03"
 			{
 				"var_type"			"FIELD_INTEGER"
 				"C09T_radius"		"800"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"C09T_stun_duration"	"1"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"C09T_passive"			"-9 -12 -15"
 			}
 		}
 	}
@@ -542,7 +632,7 @@
 		"AbilityTextureName"                        "custom/C09/C09R"
 
 		"AbilityCooldown"							"16 14 12 10"
-		"AbilityCastPoint"							"0.1"
+		"AbilityCastPoint"							"0.3"
 		"AbilityManaCost"                      		"70 80 90 100"
 
 		"OnSpellStart"

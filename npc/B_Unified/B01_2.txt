@@ -7,7 +7,7 @@
 		// ----------------------------------------------------------------
 		"override_hero"	"npc_dota_hero_nevermore"
 		"Model"	"models/b01_01/b01_01.vmdl"
-		"ModelScale"	"1.4"
+		"ModelScale"	"1.2"
 		//"Level"	"5"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
 		"HealthBarOffset"	"180"
@@ -16,25 +16,25 @@
 		"Ability1"	"B01W"
 		"Ability2"	"B01E"
 		"Ability3"	"B01R"
-		"Ability4"	"attribute_bonusx"
-		"Ability5"	"B01T"
-		"Ability6"	"B01_precache"
+		"Ability4"	"magical_resistance"
+		"Ability5"	"B01_precache"
+		"Ability6"	"B01T"
 		// Armor
 		// ----------------------------------------------------------------
-		"ArmorPhysical"	"5"
-		"MagicalResistance"	"30"
+		"ArmorPhysical"	"3"
+		"MagicalResistance"	"0"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"	"90.0"
-		"AttackDamageMax"	"106.0"
+		"AttackDamageMin"	"98.0"
+		"AttackDamageMax"	"98.0"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"	"1.80"
 		"AttackAnimationPoint"	"0.17"
-		"AttackAcquisitionRange"	"700"
+		"AttackAcquisitionRange"	"1400"
 		"AttackRange"	"700"
 		// Add projectile
-		"ProjectileModel"	"particles/units/heroes/hero_gyrocopter/gyro_base_attack.vpcf"
+		"ProjectileModel"	"particles/b01_projectile/b01_projectile.vpcf"
 		"ProjectileSpeed"	"3000"
 		// Attributes
 		// ----------------------------------------------------------------
@@ -47,24 +47,25 @@
 		"AttributeIntelligenceGain"	"2"		
 		// Bounty
 		// ----------------------------------------------------------------
-		"BountyGoldMin"	"300.0"
-		"BountyGoldMax"	"300.0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
 		// Movement
 		// ----------------------------------------------------------------
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"	"300"
-		"MovementTurnRate"	"1.50"
+		"MovementSpeed"	"350"
+
+		"MovementTurnRate"	"360"
 		// Status
 		// ----------------------------------------------------------------
-		"StatusHealth"	"400"
+		"StatusHealth"	"550"
 		"StatusHealthRegen"	"0.25"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0.01"
 		"StatusStartingMana"	"100"
 		// Vision
 		// ----------------------------------------------------------------
-		"VisionDaytimeRange"	"1800"
-		"VisionNighttimeRange"	"800"
+		"VisionDaytimeRange"	"1600"
+		"VisionNighttimeRange"	"1000"
 		// Team
 		// ----------------------------------------------------------------
 		"TeamName"	"DOTA_TEAM_NEUTRALS"

@@ -122,4 +122,4 @@
 //#base "System_Ability\System_Normal.txt"
 //=================KV==================
 #base "npc_abilities_custom_load.txt"
-
+#base "npc_abilities_override.txt"

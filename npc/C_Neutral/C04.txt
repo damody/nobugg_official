@@ -21,9 +21,8 @@
 		"AbilityTextureName"	"custom/icon_128x128_38"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_CREEP"
-		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"20"
 		"AbilityManaCost"	"105 125 145 165"
 		"AbilityCastRange"	"700"
@@ -41,16 +40,10 @@
 				"Function"	"sound"
 				"sound"	"powershot_falcon_bow"
 			}
-			"ApplyModifier"
+			"RunScript"
 			{
-				"ModifierName"	"modifier_C04W"
-				"Target"
-				{
-					"Center"  	"CASTER"
-					"Radius" 	"10000"
-					"Teams" 	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-					"Types" 	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-				}
+			  	"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/C04.lua"
+				"Function"	"C04W_OnSpellStart"
 			}
 		}
 		"Modifiers"
@@ -88,12 +81,12 @@
 		"AbilityUnitTargetTeam"     				"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"    				"DOTA_UNIT_TARGET_FLAG_NONE"
 		"AbilityUnitDamageType"						"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"							"SPELL_IMMUNITY_ENEMIES_NO"
 		"AbilityTextureName"                        "custom/icon_128x128_35"
 
 		"AbilityCastPoint"          	"0.1"
 		"AbilityCooldown"           	"2"
 		"AbilityManaCost"           	"0"
-		"AbilityDamage"					"70"
 		"AbilityCastRange"				"500"
 		"AOERadius"						"500"
 
@@ -133,6 +126,7 @@
 			"modifier_C04E_locker"
 			{
 				"Duration" "1"
+				"IsHidden"	"1"
 				"OnCreated"
 				{
 					"RunScript"
@@ -188,9 +182,24 @@
 			{
 				"IsBuff"	"1"
 				"EffectName" "particles/c04/c04w_steam.vpcf"
-				"Properties"
+				"OnCreated"
 				{
-				    "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE" "-13" 
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"Slow"
+						"name"	"C04E_2"
+						"ms_slow" "-13"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"ReturnSpeed"
+						"name"	"C04E_2"
+					}
 				}
 			}
         }
@@ -201,12 +210,17 @@
 			"01"
 			{
 				"var_type"		"FIELD_FLOAT"
-				"dmghp"		"0.03 0.04 0.05 0.06"
+				"dmghp"		"0.01 0.02 0.03 0.04"
 			}
 			"02"
 			{
 				"var_type"		"FIELD_INTEGER"
 				"mana"	"12 16 20 25"
+			}
+			"03"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"damage"	"40 50 60 70"
 			}
 		}
 	}
@@ -219,6 +233,7 @@
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_CREEP"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityCastPoint" "0.25" //stun
 		"AbilityCooldown"	"21 19 17 15"
@@ -245,6 +260,13 @@
 		}
 		"Modifiers"
 		{
+			"modifier_flood_walk"
+			{
+				"States"
+				{
+					"MODIFIER_STATE_FLYING_FOR_PATHING_PURPOSES_ONLY"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
+			}
 		}
 		"AbilitySpecial"
 		{
@@ -266,6 +288,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityType"	"DOTA_ABILITY_TYPE_ULTIMATE"
 		"AbilityCastPoint"	"0"
 		"AbilityCooldown"	"105"
@@ -398,7 +421,7 @@
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_CREEP"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"35"
 		"AbilityManaCost"	"105 125 145 165"
 		"AbilityCastRange"	"700"
@@ -685,7 +708,7 @@
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_CREEP"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"20"
 		"AbilityManaCost"	"100 130 160 190"
 		"AbilityCastRange"	"700"

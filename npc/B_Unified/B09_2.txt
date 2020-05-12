@@ -3,7 +3,7 @@
 	// 真田昌幸
 	"B09"
 	{
-		"ModelScale"	"1.1"
+		"ModelScale"	"1.0"
 		//"Level"	"1"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
 		"HealthBarOffset"	"180"
@@ -12,21 +12,21 @@
 		"Ability1"	"B09W"
 		"Ability2"	"B09E"
 		"Ability3"	"B09R"
-		"Ability4"	"attribute_bonusx"
-		"Ability5"	"B09T"
-		"Ability6"	"B09_precache"
+		"Ability4"	"magical_resistance"
+		"Ability5"	"B09_precache"
+		"Ability6"	"B09T"
 		// Armor
 		// ----------------------------------------------------------------
-		"ArmorPhysical"	"1"
-		"MagicalResistance"	"30"
+		"ArmorPhysical"	"3"
+		"MagicalResistance"	"0"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"	"76.0"
-		"AttackDamageMax"	"84.0"
+		"AttackDamageMin"	"80.0"
+		"AttackDamageMax"	"80.0"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"	"1.80"
-		"AttackAnimationPoint"	"0.5"
+		"AttackAnimationPoint"	"0.2"
 		"AttackAcquisitionRange"	"1200"
 		"AttackRange"	"600"
 		"ProjectileSpeed"	"1200"
@@ -41,8 +41,8 @@
 		"AttributeIntelligenceGain"	"3.60"		
 		// Bounty
 		// ----------------------------------------------------------------
-		"BountyGoldMin"	"300.0"
-		"BountyGoldMax"	"300.0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
 		// Gold and Lumber
 		// ----------------------------------------------------------------
 		"GoldCost"	"0"
@@ -50,19 +50,20 @@
 		// Movement
 		// ----------------------------------------------------------------
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"	"300"
-		"MovementTurnRate"	"1.50"
+		"MovementSpeed"	"350"
+
+		"MovementTurnRate"	"360"
 		// Status
 		// ----------------------------------------------------------------
-		"StatusHealth"	"400"
+		"StatusHealth"	"550"
 		"StatusHealthRegen"	"0.25"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0.01"
 		"StatusStartingMana"	"100"
 		// Vision
 		// ----------------------------------------------------------------
-		"VisionDaytimeRange"	"1800"
-		"VisionNighttimeRange"	"800"
+		"VisionDaytimeRange"	"1600"
+		"VisionNighttimeRange"	"1000"
 		// Team
 		// ----------------------------------------------------------------
 		"TeamName"	"DOTA_TEAM_NEUTRALS"

@@ -27,7 +27,7 @@
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"	"1"
 		"HotKeyOverride"	"D"
-		"MaxLevel"	"4"
+		"MaxLevel"	"1"
 		"RequiredLevel"	"1"
 		"LevelsBetweenUpgrades"	"2"
 		// Time
@@ -106,10 +106,12 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"FightRecapLevel"	"0"
 		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
 		"HotKeyOverride"	"W"
 		"MaxLevel"	"4"
+		"AbilityCastPoint"	"0.1"
 		"AbilityCooldown"	"4"
 		"AbilityManaCost"	"40 55 70 85"
 		// Stats
@@ -189,16 +191,17 @@
 	{
 		"BaseClass"	"ability_datadriven"
 		"AbilityTextureName"	"meepo_earthbind"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
-		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityCastPoint"	"0.25"
 		"AbilityCooldown"	"12"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"700"
 		"AbilityManaCost"	"120 140 160 180"
+		"AOERadius"	"%radius"
 		"precache"
 		{
 			"particle"	"particles/A01E4/A01E4.vpcf"
@@ -217,15 +220,6 @@
 				"Function"	"A01E"
 			}
 		}
-		"OnProjectileHitUnit"
-		{
-			"RunScript"
-			{
-				"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A01.lua"
-				"Function"	"A01E_hit"
-				"Target"	"TARGET"
-			}
-		}
 		"Modifiers"
 		{
 			"modifier_A01E"
@@ -234,45 +228,8 @@
 				{
 					"MODIFIER_STATE_ROOTED"	"MODIFIER_STATE_VALUE_ENABLED"
 				}
-				"Duration"	"%time"
 				"IsPurgable"	"1"
 				"IsDebuff"		"1"
-			}
-			"modifier_A01E_2"
-			{
-				"IsDebuff"		"1"
-				"Duration"	"%time"
-				"OnIntervalThink"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A01.lua"
-						"Function"	"A01E_MOVE"
-					}
-				}
-				"ThinkInterval"	"0.1"
-				"IsHidden"	"1"
-				"OnCreated"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A01.lua"
-						"Function"	"A01E_MOVE"
-					}
-				}
-			}
-			"modifier_A01E_3"
-			{
-				"Duration"	"0.05"
-				"EffectName"	"particles/generic_gameplay/generic_stunned.vpcf"
-				"EffectAttachType"	"follow_overhead"
-				"OverrideAnimation"	"ACT_DOTA_DISABLED"
-				"States"
-				{
-					"MODIFIER_STATE_STUNNED"	"MODIFIER_STATE_VALUE_ENABLED"
-				}
-				"IsBuff"	"0"
-				"IsDebuff"	"1"
 			}
 		}
 		"AbilitySpecial"
@@ -280,22 +237,12 @@
 			"01"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"cast"	"0.25"
+				"duration"	"0.9 1.1 1.3 1.5"
 			}
 			"02"
 			{
-				"var_type"	"FIELD_FLOAT"
-				"cast_D"	"580"
-			}
-			"03"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"time"	"0.9 1.2 1.5 1.8"
-			}
-			"04"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"dmg"	"11 18 25 32"
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"300 350 400 450"
 			}
 		}
 	}
@@ -308,8 +255,9 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
-		"AbilityUnitDamageType"	"DAMAGE_TYPE_PURE"
+		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"HotKeyOverride"	"R"
 		"MaxLevel"	"4"
 		"RequiredLevel"	"1"
@@ -398,13 +346,14 @@
 		"BaseClass"	"ability_datadriven"
 		"AbilityTextureName"	"custom/icon_128x128_119"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityType"	"DOTA_ABILITY_TYPE_ULTIMATE"
 		"FightRecapLevel"	"0"
 		"RequiredLevel"		"6"
 		"LevelsBetweenUpgrades"	"6"
-		"AbilityCooldown"	"90 80 70"
+		"AbilityCooldown"	"100 90 80"
 		"AbilityManaCost"	"200 225 250"
-		"AbilityCastRange"	"1500"
+		"AbilityCastRange"	"800"
 		"AbilityCastRangeBuffer"	"250"
 
 		"precache"
@@ -418,6 +367,11 @@
 				"Target"	"CASTER"
 				"EffectName"	"A01T_old.vo1"
 			}
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A01.lua"
+				"Function"	"A01T"
+			}
 			"ApplyModifier"
 			{
 				"Target"
@@ -425,8 +379,9 @@
 				    "Center" "CASTER"
 				    "Flags" "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
 				}
-				"ModifierName"	"modifier_A01T_aura"
+				"ModifierName"	"modifier_A01T_aura2"
 			}
+
 			"RunScript"
 			{
 				"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
@@ -444,14 +399,13 @@
 		{
 			"modifier_A01T_aura"
 			{
-				"Passive"			"0"
+				"Passive"			"1"
 				"IsHidden"			"0"
 				"IsDebuff"			"0"
 				"EffectName"		"particles/a01/a01t.vpcf"
 				"EffectAttachType"	"follow_origin"
-				"Duration"	"7"
 				"ThinkInterval"  "0.5"
-				"OnCreated"
+				"OnIntervalThink"
 				{
 					"ActOnTargets"
 					{
@@ -474,6 +428,26 @@
 						}
 					}
 				}
+			}
+			"modifier_A01T"
+			{
+				"Passive"	"0"
+				"EffectName"		"particles/a01/a01t_ring.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "%armor"
+				}
+			}
+			"modifier_A01T_aura2"
+			{
+				"Passive"			"0"
+				"IsHidden"			"0"
+				"IsDebuff"			"0"
+				"EffectName"		"particles/a01/a01t.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"ThinkInterval"  "0.5"
+            	"Duration"	"%duration"
 				"OnIntervalThink"
 				{
 					"ActOnTargets"
@@ -483,51 +457,19 @@
 							"Center"  	"CASTER"
 							"Radius" 	"%radius"
 							"Teams" 	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-							"Types" 	"DOTA_UNIT_TARGET_HERO"
+							"Types" 	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 						}
 					
 						"Action"    
 						{
 							"ApplyModifier"
 							{
-								"ModifierName"	"modifier_A01T"
+								"ModifierName"	"modifier_A01T2"
 								"Target" 		"TARGET"
 								"Duration"		"1"
 							}
 						}
 					}
-					"ActOnTargets"
-					{
-						"Target"
-						{
-							"Center"  	"CASTER"
-							"Radius" 	"%radius"
-							"Teams" 	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-							"Types" 	"DOTA_UNIT_TARGET_BASIC"
-						}
-					
-						"Action"    
-						{
-							"ApplyModifier"
-							{
-								"ModifierName"	"modifier_A01T"
-								"Target" 		"TARGET"
-								"Duration"		"1"
-							}
-						}
-					}
-				}
-			}
-			"modifier_A01T"
-			{
-				"Passive"	"0"
-				"EffectName"		"particles/a01/a01t_ring.vpcf"
-				"EffectAttachType"	"follow_origin"
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE" "%regen" //回血%
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "%armor"	//防禦
-					"MODIFIER_PROPERTY_INCOMING_PHYSICAL_DAMAGE_PERCENTAGE" "%armor2"
 				}
 			}
 			"modifier_A01T2"
@@ -537,8 +479,10 @@
 				"EffectAttachType"	"follow_origin"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE" "%regen2" //回血%
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "%armor"	//防禦
+					// "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "%armor"
+					// "MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE" "%regen2" //回血%
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"%regen2"
+					"MODIFIER_PROPERTY_MOVESPEED_ABSOLUTE"		"550"
 				}
 			}
 		}
@@ -552,22 +496,22 @@
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"armor"	"15 25 35"
+				"armor"	"10 15 20"
 			}
 			"03"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"radius"	"1500"
+				"radius"	"800"
 			}
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"regen2"	"10 12 14"
+				"regen2"	"100 150 200"
 			}
 			"05"
 			{
-				"var_type"	"FIELD_FLOAT"
-				"armor2"	"-15 -20 -25"
+				"var_type"	"FIELD_INTEGER"
+				"duration"	"7"
 			}
 		}
 	}
@@ -641,7 +585,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"	"22"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
 		"AbilityCastRange"	"700"

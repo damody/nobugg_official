@@ -259,7 +259,7 @@ $("#last").click(function(){
                 <div ><% 
                 end  %>
                 <a id="<%-i%>">
-                    <img src="/static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name" style="white-space:nowrap;"><%-it%><% if params.win then %><%-record11.."/"..record16%><% end %></div>
+                    <img src="/nobu/static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name" style="white-space:nowrap;"><%-it%><% if params.win then %><%-record11.."/"..record16%><% end %></div>
                 </a><% 
               end 
             end%>
@@ -306,7 +306,7 @@ $("#last").click(function(){
                 <div ><% 
                 end  %>
                 <a id="<%-i%>">
-                    <img src="/static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name" style="white-space:nowrap;"><%-it%><% if params.win then %><%-record11.."/"..record16%><% end %></div>
+                    <img src="/nobu/static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name" style="white-space:nowrap;"><%-it%><% if params.win then %><%-record11.."/"..record16%><% end %></div>
                 </a><% 
               end 
             end%>
@@ -352,7 +352,7 @@ $("#last").click(function(){
                 <div ><% 
                 end  %>
                 <a id="<%-i%>">
-                    <img src="/static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name" style="white-space:nowrap;"><%-it%><% if params.win then %><%-record11.."/"..record16%><% end %></div>
+                    <img src="/nobu/static/pic/hero/<%-string.lower(i)%>.png"><div class="champion-name" style="white-space:nowrap;"><%-it%><% if params.win then %><%-record11.."/"..record16%><% end %></div>
                 </a><% 
               end 
             end%>
