@@ -38,10 +38,6 @@
                 <div class="menu-line"></div>
                 <a href="/nobu/<%-lang%>/thanx">感謝名單</a>
             </div>
-            <div class="menu-list menu-dark flyingv">
-                <div class="menu-line"></div>
-                <a href="https://p.allpay.com.tw/UwyZB"><img src="/nobu/static/allpay.jpeg"><span class="donate">| <%-langtext["donate"][lang]%> |</span></a>
-            </div>
 <div
   class="menu-list fb-like"
   data-share="false"
