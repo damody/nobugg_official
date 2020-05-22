@@ -10,7 +10,7 @@
 			"soundfile"	"soundevents/a02.vsndevts"
 
 			// A02W_old
-			"particle"  "particles/b33/b33r_old_orb.vpcf"
+			"particle"  "particles/a02/b33r_old_orb.vpcf"
 			"particle"  "particles/status_fx/status_effect_poison_viper.vpcf"
 			"particle"  "particles/units/heroes/hero_viper/viper_viper_strike_debuff.vpcf"
 
@@ -70,7 +70,7 @@
 
 		"precache"
 		{
-			"particle"  "particles/b33/b33r_old_orb.vpcf"
+			"particle"  "particles/a02/b33r_old_orb.vpcf"
 			"particle"  "particles/status_fx/status_effect_poison_viper.vpcf"
 			"particle"  "particles/units/heroes/hero_viper/viper_viper_strike_debuff.vpcf"
 		}
@@ -110,7 +110,7 @@
 				"Orb"
 				{
 					"Priority"	"DOTA_ORB_PRIORITY_ABILITY"
-					"ProjectileName"	"particles/b33/b33r_old_orb.vpcf"
+					"ProjectileName"	"particles/a02/b33r_old_orb.vpcf"
 				}
 				"OnAttackStart"
 				{
@@ -138,11 +138,7 @@
 				"StatusEffectName"		"particles/status_fx/status_effect_poison_viper.vpcf"
 				"StatusEffectPriority"	"15"
 
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"%debuff_movement_speed"
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%debuff_attack_speed"
-				}
+				
 				"OnCreated"
 				{
 					"AttachEffect"
@@ -166,7 +162,7 @@
 					{
 						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
 						"Function"	"ReturnSpeed"
-						"name"	"A02_debuff"
+						"name"	"A02W_debuff"
 					}
 				}
 			}
@@ -476,7 +472,7 @@
 
 		"precache"
 		{
-			"particle"  "particles/b33/b33r_old_orb.vpcf"
+			"particle"  "particles/a02/b33r_old_orb.vpcf"
 			"particle"  "particles/status_fx/status_effect_poison_viper.vpcf"
 			"particle"  "particles/units/heroes/hero_viper/viper_viper_strike_debuff.vpcf"
 		}
@@ -516,7 +512,7 @@
 				"Orb"
 				{
 					"Priority"	"DOTA_ORB_PRIORITY_ABILITY"
-					"ProjectileName"	"particles/b33/b33r_old_orb.vpcf"
+					"ProjectileName"	"particles/a02/b33r_old_orb.vpcf"
 				}
 				"OnAttackStart"
 				{

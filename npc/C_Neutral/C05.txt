@@ -260,10 +260,25 @@
 				"EffectName"		"particles/econ/items/razor/razor_apostle_tempest/razor_tempest_ambient_e.vpcf"
 				"EffectAttachType"	"follow_origin"
 		
-				"Properties"
+				"OnCreated"
 				{
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "%debuff_attack_speed"
-				    "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE" "%debuff_movement_speed" 
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"Slow"
+						"name"	"C05R"
+						"ms_slow" "%debuff_movement_speed"
+						"as_slow" "%debuff_attack_speed"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"ReturnSpeed"
+						"name"	"C05R"
+					}
 				}
 			}
 		}

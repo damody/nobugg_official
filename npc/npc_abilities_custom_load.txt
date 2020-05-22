@@ -764,7 +764,7 @@
 					"RunScript"
 					{
 						"ScriptFile"	"items/Addon_Items/tofar_goback.lua"
-						"Function"	"kill_robber"
+						"Function"	"robber_create"
 					}
 				}
 	            "OnDeath"
@@ -772,7 +772,7 @@
 					"RunScript"
 					{
 						"ScriptFile"	"items/Addon_Items/tofar_goback.lua"
-						"Function"	"robbers_skill"
+						"Function"	"robber_death"
 					}
 				}
 				"OnAttackLanded"

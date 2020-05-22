@@ -25,8 +25,8 @@
 		"Ability2"	"C05E"
 		"Ability3"	"C05R"
 		"Ability4"	"magical_resistance"
-		"Ability5"	"C05T"
-		"Ability6"	"C05_precache"
+		"Ability5"	"C05_precache"
+		"Ability6"	"C05T"
 		"Ability7"	""
 		"Ability8"	""
 		"Ability9"	""
@@ -51,15 +51,15 @@
 
 		// Armor
 		// ----------------------------------------------------------------
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"5"
 		"MagicalResistance"	"0"
 
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"	"124"
-		"AttackDamageMax"	"142"
+		"AttackDamageMin"	"110"
+		"AttackDamageMax"	"110"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"	"1.80"
 		"AttackAnimationPoint"	"0.3"

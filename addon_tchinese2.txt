@@ -437,7 +437,7 @@
 		"DOTA_Tooltip_Ability_item_S01_Description" "<br />吃了可以回復200生命100法力。"
 		
 		"DOTA_Tooltip_Ability_item_the_great_silver_armor" "銀伊予札白糸威胴丸具足"
-		"DOTA_Tooltip_Ability_item_the_great_silver_armor_Description" "<br />裝甲+15，降低所受的法術傷害20% ，移動速度+105不可疊加，有20% 機率格擋。 <br />【唯一被動】使範圍450內的敵人攻擊有20% 機率失誤。 <br />【使用】在10秒內獲得魔法免疫。"
+		"DOTA_Tooltip_Ability_item_the_great_silver_armor_Description" "<br />裝甲+15，降低所受的法術傷害20% ，移動速度+105不可疊加。 <br />【唯一被動】使範圍450內的敵人攻擊有20% 機率失誤。 <br />【使用】在10秒內獲得魔法免疫。"
 		
 		"DOTA_Tooltip_Ability_item_tea_bowl" "茶碗"
 		"DOTA_Tooltip_Ability_item_tea_bowl_Description" "<br />每秒回復10點生命5點法力"
@@ -498,7 +498,7 @@
 		"DOTA_Tooltip_Ability_item_healing_totem_Description" "<br />【使用】形成一個醫療區域治好附近的友方部隊，每秒恢復2% 最大生命值，持續15秒。<font color='#cc0000'>醫療效果不得疊加</font>"
 
 		"DOTA_Tooltip_Ability_item_frozen_ring" "凍牙輪"
-		"DOTA_Tooltip_Ability_item_frozen_ring_Description" "<br />【使用】施展霜之新星，對周圍敵人造成275傷害並緩慢跑速30%，對野怪只造成70%傷害，持續3.5秒。"
+		"DOTA_Tooltip_Ability_item_frozen_ring_Description" "<br />【使用】施展霜之新星，對周圍敵人造成275傷害並緩慢跑速30% ，對野怪只造成70% 傷害，持續3.5秒。"
 
 		"DOTA_Tooltip_Ability_item_ancient_doll" "久棄邪物"
 		"DOTA_Tooltip_Ability_item_ancient_doll_Description" "<br />攻擊傷害+7。每當英雄施展技能或是使用物品，便可以在久棄邪物上增加1充能次數，上限8次。<font color='#5bc0de'>【使用】消耗全部的充能次數，每消耗1次，便可以對目標敵人造成50傷害，並且自身回復造成傷害一半的生命值。</font></font>"
@@ -507,7 +507,7 @@
 		"DOTA_Tooltip_Ability_item_earth_wall_book_Description" "<br />智慧+10，每秒回復5點法力。 <br />【使用】在指定方向召喚一排巨大岩石，且阻礙通行5秒。"
 
 		"DOTA_Tooltip_Ability_item_lightning_scroll"	"雷之卷"
-		"DOTA_Tooltip_Ability_item_lightning_scroll_Description" "<br />【使用】施展分叉閃電，可對6個敵人造成350傷害，對野怪只造成70%傷害。"
+		"DOTA_Tooltip_Ability_item_lightning_scroll_Description" "<br />【使用】施展分叉閃電，可對6個敵人造成350傷害，對野怪只造成70% 傷害。"
 
 		"DOTA_Tooltip_Ability_item_wind_scroll" "風之卷"
 		"DOTA_Tooltip_Ability_item_wind_scroll_Description" "<br />【使用】召換風之陣，使範圍內友軍增加15% 移動速度， 持續8秒。"
@@ -670,7 +670,7 @@
 		"DOTA_Tooltip_Ability_item_lightning_katana_Description" "<br />攻擊傷害+19，攻速+18% 。<br />【使用】施展分岔閃電，對最多8個敵人造成375傷害。"
 
 		"DOTA_Tooltip_Ability_item_soul_adder" "御魂"
-		"DOTA_Tooltip_Ability_item_soul_adder_Description" "<br />攻擊傷害+14，智慧+20，攻速+20% 。<br />【唯一被動】普通攻擊減少目標魔法抗性20% ，周圍800範圍的敵方小兵死亡時回復20點生命。【使用】使目標睡眠並無敵3秒。"
+		"DOTA_Tooltip_Ability_item_soul_adder_Description" "<br />攻擊傷害+14，智慧+20，攻速+20% 。<br />【唯一被動】普通攻擊減少目標魔法抗性20%3秒，周圍800範圍的敵方小兵死亡時回復20點生命。【使用】使目標睡眠並無敵3秒。"
 
 		"DOTA_Tooltip_Ability_item_cross_spear" "十字槍"
 		"DOTA_Tooltip_Ability_item_cross_spear_Description" "<br />攻擊傷害+35，力量+15，15% 機率格擋攻擊，增加夜晚250視野。<br />【被動】攜帶時可偵測到範圍800內隱形單位。<br />【使用】偵測1200內隱形部隊，並在使其現形10秒。"
@@ -773,7 +773,7 @@
 		"DOTA_Tooltip_Ability_item_ghost_gloves_Description" "<br />生命+400。65% 機率減少受到的100傷害。【使用】犧牲目標非英雄之友軍，將他現有生命值轉為自身生命值。"
 
 		"DOTA_Tooltip_Ability_item_shun_armor" "掛面具足"
-		"DOTA_Tooltip_Ability_item_shun_armor_Description" "<br />全能力+10。15% 機率閃避攻擊。"
+		"DOTA_Tooltip_Ability_item_shun_armor_Description" "<br />全能力+10。10% 機率閃避攻擊。"
 
 		"DOTA_Tooltip_Ability_item_prophet_armor" "真知短甲"
 		"DOTA_Tooltip_Ability_item_prophet_armor_Description" "<br />【被動】攜帶時可以偵測到範圍800內的隱形單位，增加250生命，增加夜晚250視野。50% 機率減少受到的50攻擊傷害，<font color='#5bc0de'>減少所受的法術傷害10% </font>。<br />【使用】偵測1200內隱形部隊，並在使其現形10秒。"
@@ -869,7 +869,7 @@
 		"DOTA_Tooltip_Ability_item_raikiri_Description" "攻擊傷害+41，攻速+30% 。<br />【唯一被動】每3下普攻(遠程攻擊每4下普攻)對範圍內敵人造成200魔法傷害，對非英雄單位1.75倍傷害。"
 		
 		"DOTA_Tooltip_Ability_item_ninja_cloth" "忍者裝束"
-		"DOTA_Tooltip_Ability_item_ninja_cloth_Description" "<br />全能力+15，攻速+25% ，<font color='#5bc0de'>25% 機率閃避攻擊。</font>"
+		"DOTA_Tooltip_Ability_item_ninja_cloth_Description" "<br />全能力+15，攻速+25% ，<font color='#5bc0de'>20% 機率閃避攻擊。</font>"
 
 		"DOTA_Tooltip_Ability_item_the_dark_armor" "黑漆塗五枚胴"
 		"DOTA_Tooltip_Ability_item_the_dark_armor_Description" "<br />護甲+3，智慧+10，每秒回復10點法力。<br />【被動靈氣】附近友軍每秒回復2.5點法力。<br />【使用】使周圍友軍在5秒內回復330生命和336法力，並驅散周圍友軍的負面狀態。"
@@ -1171,7 +1171,7 @@
 		"DOTA_Tooltip_Ability_B33R"	"霧毒幻化"
 		"DOTA_Tooltip_Ability_B33R_Description"	"(被動)增加(5/10/15/20)靈活。(啟動)增加200攻擊距離與<font color='#5cb85c'>(40/50/60/70)</font>攻擊，額外獲得'霧毒矢'能力，每次攻擊可以造成<font color='#5cb85c'>(40/60/80/120)</font>範圍傷害，持續8秒。 "
 		"DOTA_Tooltip_Ability_B33T"	"蜘蛛纏身"
-		"DOTA_Tooltip_Ability_B33T_Description"	"釋放出劇毒蜘蛛纏繞敵人，只要蜘蛛還活著就算暫時解除狀態都會重新施加負面狀態，使目標降低移動速度至<font color='#5cb85c'>(200/150/100)</font>與<font color='#5cb85c'>(30/75/120)% </font>攻擊速度且無法回復生命，每秒受到<font color='#5cb85c'>(66/88/110)</font>傷害，持續10秒。 "
+		"DOTA_Tooltip_Ability_B33T_Description"	"釋放出劇毒蜘蛛纏繞敵人，只要蜘蛛還活著就算暫時解除狀態都會重新施加負面狀態，使目標降低移動速度<font color='#5cb85c'>(50/60/70)% </font>與<font color='#5cb85c'>(30/75/120)% </font>攻擊速度且降低生命回復<font color='#5cb85c'>(60/80/99)% </font>，每秒受到<font color='#5cb85c'>(66/88/110)</font>傷害，持續10秒。 "
 
 		// 最上義姬 11.2B
 		"DOTA_Tooltip_Ability_B33W_old" "腐蝕之箭"
@@ -1528,9 +1528,9 @@
 		"DOTA_Tooltip_Ability_A06E"	 "赤流星"
 		"DOTA_Tooltip_Ability_A06E_Description"	"對距離<font color='#5cb85c'>(500/650/800/950)</font>的目標敵人打出一道赤流星，可以將之暈擊1.85秒，並造成<font color='#5cb85c'>(100/190/280/370)</font>傷害。 "
 		"DOTA_Tooltip_Ability_A06R"	 "赤焰流"
-		"DOTA_Tooltip_Ability_A06R_Description" "增加自身及周圍友軍<font color='#5cb85c'>(5/9/13/17)% </font>移動速度 ，並且每攻擊5次便可以獲得1次「釋放怒焰」的能力，對指定方向噴出扇狀火焰，使敵人受到<font color='#5cb85c'>(235/315/395/475)</font>傷害。 "
+		"DOTA_Tooltip_Ability_A06R_Description" "增加自身及周圍友軍<font color='#5cb85c'>(4/6/8/10)% </font>移動速度 ，並且每次攻擊累積1層「釋放怒焰」的能力最多9層，使用能力消耗5層並對指定方向噴出扇狀火焰，使敵人受到<font color='#5cb85c'>(235/315/395/475)</font>傷害。 "
 		"DOTA_Tooltip_Ability_A06T"  "赤炎之怒"
-        "DOTA_Tooltip_Ability_A06T_Description" "獲得赤炎之怒的能力，在接下來20秒增加<font color='#5cb85c'>(100/150/180) </font>攻擊傷害 ，並且在持續時間內前7次攻擊可以獲得擴散效果，在擊中目標時連帶的對範圍550的其他敵人造成等同攻擊傷害60% 的真實傷害，對魔免傷害減半。 "
+        "DOTA_Tooltip_Ability_A06T_Description" "獲得赤炎之怒的能力，在接下來20秒增加<font color='#5cb85c'>(100/150/180) </font>攻擊傷害 ，並且在持續時間內前7次攻擊可以獲得擴散效果，攻擊時對範圍<font color='#5cb85c'> (550/750/1000)</font>的其他敵人分別造成 <font color='#5cb85c'> (100% /30% /10% )</font>的物理傷害 。 "
 		
 		"DOTA_Tooltip_Ability_A06W_old"  "赤鬼之力"
 		"DOTA_Tooltip_Ability_A06W_old_Description" "解放自我來暫時獲得強大的赤鬼之力，增加<font color='#5cb85c'>(1.5/1.8/2.1/2.4) </font>基礎攻速和<font color='#5cb85c'>(5/10/15/20)% </font>移動速度，但會受到70% 額外真實傷害，持續14秒。 "
@@ -2083,13 +2083,13 @@
 		"DOTA_Tooltip_Ability_C22D" "嚴流"
 		"DOTA_Tooltip_Ability_C22D_Description" "讓自身的攻擊速度提升175% ，持續4秒。 "
 		"DOTA_Tooltip_Ability_C22W" "祕劍．燕巢"
-		"DOTA_Tooltip_Ability_C22W_Description" "暫時消失形體<font color='#5cb85c'>(2/3/4/5)</font>秒並對周圍敵人造成<font color='#5cb85c'>(200/300/400/500)</font>傷害，形體消失期間將不會受到任何傷害影響。 若啟動時武將處於嚴流的狀態，則造成的傷害無視魔法免疫。  "
+		"DOTA_Tooltip_Ability_C22W_Description" "暫時消失形體<font color='#5cb85c'>(2/3/4/5)</font>秒並對周圍敵人造成<font color='#5cb85c'>(200/300/400/500)</font>傷害，形體消失期間將不會受到任何傷害影響。 "
 		"DOTA_Tooltip_Ability_C22E" "祕劍．飛燕"
-		"DOTA_Tooltip_Ability_C22E_Description" "對著<font color='#5cb85c'>(500/625/750/875)</font>距離的目標敵人斬出飛燕，造成<font color='#5cb85c'>(100/200/300/400)</font>傷害並使其暈眩1.5秒。若在單位暈眩時施展嚴流會將目標燕返回武將身邊，距離不能超過3000。 "
+		"DOTA_Tooltip_Ability_C22E_Description" "對著<font color='#5cb85c'>(500/625/750/875)</font>距離的目標敵人斬出飛燕，造成<font color='#5cb85c'>(100/200/300/400)</font>傷害並使其暈眩1.5秒。若在單位暈眩時施展嚴流會將目標燕返回武將身邊，距離不能超過2000。 "
 		"DOTA_Tooltip_Ability_C22R" "祕劍．燕閃"
 		"DOTA_Tooltip_Ability_C22R_Description" "增加攻擊距離<font color='#5cb85c'>(100/150/200/250)</font>，並有18% 機率閃躲攻擊。使用嚴流時有25% 機率造成<font color='#5cb85c'>(150/200/250/300)% </font>傷害。  "
 		"DOTA_Tooltip_Ability_C22T" "奧義．滅剎夢霞"
-		"DOTA_Tooltip_Ability_C22T_Description" "使出傳說中的奧義劍術，令周圍的敵人震暈<font color='#5cb85c'>(1.0/1.5/2.0)</font>秒 並且造成500加上敵人現有生命值28% 的真實傷害，對魔免傷害減半。<font color='#cc0000'>無視魔法免疫造成傷害</font> "
+		"DOTA_Tooltip_Ability_C22T_Description" "使出傳說中的奧義劍術，令周圍的敵人震暈<font color='#5cb85c'>(1.0/1.5/2.0)</font>秒 並且造成敵人最大生命值(28/32/36)% 的魔法傷害"
 
 		// 佐佐木小次郎 11.2B
 		"DOTA_Tooltip_Ability_C22W_old" "秘劍．燕"
@@ -3418,7 +3418,7 @@
 		"DOTA_Tooltip_Ability_C05R_Description"  "增加<font color='#5cb85c'>(15/25/35/45)</font>攻擊傷害，擊中敵人時能降低敵人<font color='#5cb85c'>(15/30/45/60)% </font>的攻速以及<font color='#5cb85c'>(10/13/16/20)% </font>移動速度，持續3秒。"
 
 		"DOTA_Tooltip_Ability_C05T"  "瞬雷閃"
-		"DOTA_Tooltip_Ability_C05T_Description"  "指定戰場上任一區域，1.5秒後將利用瞬雷之力突破空間限制馬上到達該區域並發動攻擊，會造成範圍1秒暈眩以及<font color='#5cb85c'>(400/700/1000)</font>傷害，如果取消則CD減半。"
+		"DOTA_Tooltip_Ability_C05T_Description"  "指定戰場上任一區域，1.5秒後將利用瞬雷之力突破空間限制馬上到達該區域並發動攻擊，會造成範圍1秒暈眩以及<font color='#5cb85c'>(400/700/1000)</font>傷害，如果取消則CD 20秒。"
 
 		"DOTA_Tooltip_modifier_C05W_buff" "松風"
 		"DOTA_Tooltip_modifier_C05W_buff_Description" "提升攻擊與移動速度。"
@@ -3490,7 +3490,7 @@
 		"DOTA_Tooltip_Ability_C24R" "柳生新陰流．全劍"
 		"DOTA_Tooltip_Ability_C24R_Description" "【被動】增加<font color='#5cb85c'>(200/300/400/500)</font>生命值。 【使用】增加<font color='#5cb85c'>(0/5/10/15)% </font>移動速度，並且每擊中三下將可以造成小範圍的暈眩並附加等同攻擊力的魔法傷害，使身旁的敵人暈眩<font color='#5cb85c'>(0.5/0.6/0.7/0.8)</font>秒並，對魔免單位只暈眩一半時間，全劍的啟動效果持續6秒。 "
 		"DOTA_Tooltip_Ability_C24T" "柳生新陰流．最期一生"
-		"DOTA_Tooltip_Ability_C24T_Description" "對戰場上任一受傷的友方英雄施展，使自身馬上傳送到該友方英雄身旁，且使自身以及該友方英雄皆回復<font color='#5cb85c'>(30/40/50)% </font>生命上限的生命值，此外在接下來15秒，自身以及該友方英雄皆增加80攻擊傷害。 "
+		"DOTA_Tooltip_Ability_C24T_Description" "對戰場上任一受傷的友方英雄施展，施法0.75秒後傳送到該友方英雄身旁，且使自身以及該友方英雄皆回復<font color='#5cb85c'>(30/40/50)% </font>生命上限的生命值，此外在接下來15秒，自身以及該友方英雄皆增加80攻擊傷害。 "
 		
 		// 柳生宗嚴 11.2B
 		"DOTA_Tooltip_Ability_C24W_old" "柳生新陰流．無刀取"
@@ -3793,7 +3793,7 @@
 		"DOTA_Tooltip_Ability_B28W"	 "飛凰焰"
 		"DOTA_Tooltip_Ability_B28W_Description"	"對著指定方向召喚鳳凰衝擊直線上的敵人，造成175傷害並且使他們燃燒，造成每秒<font color='#5cb85c'>(50/85/120/155)</font>的傷害，持續5秒。"
 		"DOTA_Tooltip_Ability_B28E"  "焰光桎梏"
-		"DOTA_Tooltip_Ability_B28E_Description"	"以火焰構成的繩索綁住目標敵軍，讓他無法動作，並且每秒受到100傷害，持續<font color='#5cb85c'>(2/3/4/5)</font>秒。"
+		"DOTA_Tooltip_Ability_B28E_Description"	"以火焰構成的繩索綁住目標敵軍，讓他無法動作，並且每秒受到100傷害，持續時間隨著距離縮短而延長最長<font color='#5cb85c'>(2/3/4/5)</font>秒，最短<font color='#5cb85c'>1</font>秒。"
 		"DOTA_Tooltip_Ability_B28R"	 "火流焰"
 		"DOTA_Tooltip_Ability_B28R_Description"	"增加自身<font color='#5cb85c'>(0/8/16/24)% </font>的移動速度持續10秒，並且每0.3秒可以隨機對周圍的敵軍釋放流焰，對建築物20% 傷害，被流焰擊中將會受到<font color='#5cb85c'>(25/30/35/40)</font>傷害，並且燃燒3秒，每秒受到80傷害。"
 		"DOTA_Tooltip_Ability_B28T"  "鬼謀．蛇火"
@@ -4306,7 +4306,7 @@
 		"DOTA_Tooltip_Ability_B19R" "越後流兵法"
 		"DOTA_Tooltip_Ability_B19R_Description" "恢復所有友軍的<font color='#5cb85c'>(25/50/75/100)</font>法力以及<font color='#5cb85c'>(50/100/150/200)</font>生命值。 "
 		"DOTA_Tooltip_Ability_B19T" "車懸"
-		"DOTA_Tooltip_Ability_B19T_Description" "在範圍內持續創造出<font color='#5cb85c'>(20/30/40)</font>位騎兵精英發動奇襲，導致敵人暈頭轉向0.8秒，並且攻擊敵人，奇襲部隊具有極快的移動能力。騎兵持續6秒。"
+		"DOTA_Tooltip_Ability_B19T_Description" "在範圍內持續創造出<font color='#5cb85c'>(20/30/40)</font>位騎兵精英發動奇襲，導致敵人暈頭轉向0.8秒，並且攻擊敵人，奇襲部隊具有極快的移動能力與<font color='#5cb85c'>(60/90/120)</font>的攻擊力。騎兵持續6秒。"
 
 		"DOTA_Tooltip_Ability_B19D_old" "駿河守"
 		"DOTA_Tooltip_Ability_B19D_old_Description" "可以醫療目標1000點生命值，並且造成目標周圍600區域的敵人500點損傷。"

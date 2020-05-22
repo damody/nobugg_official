@@ -536,7 +536,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"A06R_SPEED"	"5 9 13 17"
+				"A06R_SPEED"	"4 6 8 10"
 			}
 		}
 	}
@@ -593,7 +593,7 @@
 		"RequiredLevel"	"6"
 		"LevelsBetweenUpgrades"	"6"
 		"AbilityCooldown"	"90 80 70"
-		"AbilityManaCost"	"300 400 500"
+		"AbilityManaCost"	"200 250 300"
 		"AbilityCastRange"	"0"
 		"AbilityCastRangeBuffer"	"250"
 
@@ -662,7 +662,7 @@
 					{
 						"CleaveEffect"	"particles/dire_fx/dire_ancient_base001_destruction_l1.vpcf"
 						"CleaveRadius"	"525"
-						"CleavePercent"	"0"
+						"CleavePercent"	"100"
 					}
 					"FireSound"
 					{
@@ -683,17 +683,17 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"A06T_ADD_D"	"100 150 200"
+				"A06T_ADD_D"	"60 120 180"
 			}
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"CleavePercent"	"0.6"
+				"CleavePercent"	"1"
 			}
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"CleaveRadius"	"550"
+				"CleaveRadius"	"1000"
 			}
 		}
 		"OnCastbar"	"1"

@@ -3,7 +3,7 @@
 	// 井伊直政
 	"A06"
 	{
-		"ModelScale"	"1.0"
+		"ModelScale"	"1.2"
 		//"Level"	"1"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
 		"HealthBarOffset"	"180"
@@ -28,13 +28,13 @@
 		"Ability7"	"A06_precache"
 		// Armor
 		// ----------------------------------------------------------------
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"5"
 		"MagicalResistance"	"0"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"	"117.0"
-		"AttackDamageMax"	"135.0"
+		"AttackDamageMin"	"115.0"
+		"AttackDamageMax"	"115.0"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"	"1.80"
 		"AttackAnimationPoint"	"0.38"
@@ -44,7 +44,7 @@
 		// Attributes
 		// ----------------------------------------------------------------
 		"AttributePrimary"	"DOTA_ATTRIBUTE_STRENGTH"
-		"AttributeBaseStrength"	"45"
+		"AttributeBaseStrength"	"42"
 		"AttributeStrengthGain"	"3"
 		"AttributeBaseAgility"	"22"
 		"AttributeAgilityGain"	"2.2"

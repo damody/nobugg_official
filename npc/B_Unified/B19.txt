@@ -211,7 +211,7 @@
 		"AbilityUnitDamageType"						"DAMAGE_TYPE_PHYSICAL"
 		"AbilityTextureName"                        "custom/icon_128x128_17"
 
-		"AbilityCastPoint"          				"0.25"
+		"AbilityCastPoint"          				"0.35"
 		"AbilityCooldown"       "140 130 120"
 		"AbilityManaCost"       "300"
 		"AbilityCastRange"	"800"
@@ -236,6 +236,7 @@
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_ATTACK_RANGE_BONUS" "100"
+					"MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE" "%add_damage"
 				}
 				"OnAttackLanded"
 				{
@@ -271,6 +272,11 @@
 			{
 				"var_type"			"FIELD_FLOAT"
 				"stun"		"0.8"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"add_damage"		"0 30 60"
 			}
 		}
 	}

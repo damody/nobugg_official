@@ -278,7 +278,7 @@
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
 		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 
-		"AbilityCastPoint"				"0.1"
+		"AbilityCastPoint"				"0.75"
 
 		"AbilityCooldown"				"130 120 110"
 		"AbilityManaCost"				"125"
@@ -289,6 +289,16 @@
 			{
 				"var_type"	"FIELD_INTEGER"
 				"regen"	"30 40 50"
+			}
+		}
+		"OnAbilityPhaseStart"
+		{
+			"RunScript"
+			{
+				"Target"		"TARGET"
+				"ScriptFile"	"scripts/vscripts/heroes/C_Neutral/c24.lua"
+				"Function"	"C24T_prepare"
+				
 			}
 		}
 		"OnSpellStart"

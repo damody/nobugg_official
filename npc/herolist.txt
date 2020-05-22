@@ -61,12 +61,12 @@
 	//"npc_dota_hero_invoker" "1" //羽柴秀吉
 	//"npc_dota_hero_omniknight" "1" //柴田勝家
 	//"npc_dota_hero_oracle" "1" //石田三成
-	//"npc_dota_hero_jakiro" "1" //佐佐木小次郎
+	"npc_dota_hero_jakiro" "1" //佐佐木小次郎
 	//"npc_dota_hero_alchemist" "1" //宮本武藏
 	//"npc_dota_hero_legion_commander" "1" // 明智秀滿
 	"npc_dota_hero_chaos_knight" "1" // 馬場信房
 	//"npc_dota_hero_juggernaut" "1" // 瀧川一益
-	//"npc_dota_hero_obsidian_destroyer" "1" // 前田慶次
+	"npc_dota_hero_obsidian_destroyer" "1" // 前田慶次
 	//"npc_dota_hero_spectre" "1" // 黑田孝高
 	//"npc_dota_hero_ogre_magi" "1" // 島津義弘
 	//"npc_dota_hero_ember_spirit" "1" // 仙石秀久
@@ -95,13 +95,13 @@
 	"npc_dota_hero_lina" "1" //阿國
 	//"npc_dota_hero_furion" "1"	//足利義昭
 	//"npc_dota_hero_queenofpain" "1" //湖衣姬
-	//"npc_dota_hero_lich" "1" //宇佐美定滿
+	"npc_dota_hero_lich" "1" //宇佐美定滿
 	//"npc_dota_hero_leshrac" "1" //太原雪齋
 	//"npc_dota_hero_lone_druid" "1" //石川樹正
 	//"npc_dota_hero_pudge" "1" //小早川隆景
 	//"npc_dota_hero_abaddon" "1" //小島貞興
 	//"npc_dota_hero_troll_warlord" "1" //酒井忠次
-	//"npc_dota_hero_morphling" "1"	//井伊直政
+	"npc_dota_hero_morphling" "1"	//井伊直政
 	//"npc_dota_hero_dragon_knight" "1" //島左近
 	//"npc_dota_hero_phantom_lancer" "1" //前野長康
 	//"npc_dota_hero_dazzle" "1" //稻葉一鐵

@@ -544,6 +544,7 @@
 			{
 				"ScriptFile"	"scripts/vscripts/heroes/B_Unified/B33.lua"
 				"Function"	"B33T"
+				"Ult_Level"	"%Ult_Level"
 			}
 			"FireSound"
 			{
@@ -559,6 +560,9 @@
 		}
 		"Modifiers"
 		{
+			"modifier_decreased_health_regen"
+			{
+			}
 			"modifier_tofly"
 			{
 				"Passive"			"0"
@@ -587,9 +591,7 @@
 				"ThinkInterval"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%attack_speed"
-					"MODIFIER_PROPERTY_DISABLE_HEALING"	"1"
-					"MODIFIER_PROPERTY_MOVESPEED_ABSOLUTE"	"%move_speed"
+					"MODIFIER_PROPERTY_HP_REGEN_AMPLIFY_PERCENTAGE"	"%Decrease_Health"
 				}
 				"OnCreated"
 				{
@@ -599,6 +601,7 @@
 						"Function"	"Slow"
 						"name"	"B33T"
 						"as_slow" "%attack_speed"
+						"ms_slow" "%move_speed"
 					}
 				}
 				"OnDestroy"
@@ -634,12 +637,22 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"move_speed"	"200 150 100"
+				"move_speed"	"-60 -80 -100"
 			}
 			"05"
 			{
 				"var_type"	"FIELD_INTEGER"
 				"attack_speed"	"-30 -75 -120"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"Decrease_Health" "-60 -80 -100"
+			}
+			"07"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"Ult_Level"	"1 2 3"
 			}
 		}
 		// Stats

@@ -244,11 +244,6 @@
 				"IsPurgable"	"0"
 				"EffectName"		"particles/econ/courier/courier_wyvern_hatchling/courier_wyvern_hatchling_ice.vpcf"
 				"EffectAttachType"	"follow_hitloc"
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "%C09R_debuffAsMs"
-				    "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE" "%C09R_debuffAsMs" 
-				}
 				"OnCreated"
 				{
 					"RunScript"

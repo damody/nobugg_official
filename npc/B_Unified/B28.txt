@@ -172,6 +172,7 @@
 			{
 				"ScriptFile"						"scripts/vscripts/heroes/B_Unified/B28.lua"
 				"Function"							"B28E"
+				"duration"							"%B28E_duration"
 			}
 			"ApplyModifier"
 			{
@@ -231,7 +232,6 @@
 			}
 			"modifier_B28E"
 			{
-				"Duration"			"%B28E_duration"
 				"IsPurgable"		"1"
 				"IsDebuff"			"1"
 				"EffectName"		"particles/b28e.vpcf"
