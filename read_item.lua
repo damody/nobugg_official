@@ -181,7 +181,7 @@ end
 text = readAll("shops.txt")
 --print(text)
 
-for name, content in rex.gmatch(text, [[\r\n"(.+)"\r\n{(.+)\r\n}]], "Usm", 0) do
+for name, content in rex.gmatch(text, [[\n"(.+)"\n{(.+)\n}]], "Usm", 0) do
   if name ~= "pregame" then
       local count = 1
       for item in rex.gmatch(content, [["item"[ \t]+"item_(.+)"]], "U", 0) do
@@ -193,7 +193,7 @@ for name, content in rex.gmatch(text, [[\r\n"(.+)"\r\n{(.+)\r\n}]], "Usm", 0) do
       end
   end
 end
-print(inspect(newequiment, {depth = 2}))
+--print(inspect(newequiment, {depth = 2}))
 return newequiment
 end
 read_item()
