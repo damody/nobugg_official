@@ -162,7 +162,6 @@
 	"item"      "item_nannbann_armor"			//南蠻胴具足
 	"item"      "item_foxfire_armor"			//狐火大鎧
 	"item"      "item_contemporary_armor"			//當世具足
-	"item"      "item_ghost_gloves"			//鬼之籠手
 	"item"      "item_shun_armor"			//掛面具足
 	"item"      "item_prophet_armor"			//真知短甲
 	"item"      "item_devil_supressor_armor"			//制魔腹卷
