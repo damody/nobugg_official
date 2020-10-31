@@ -315,7 +315,7 @@
 			"particle"	"particles/units/heroes/hero_sven/sven_spell_storm_bolt.vpcf"
 			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_sven.vsndevts"
 			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_sven.vsndevts"
-			"particle"	"particles/units/heroes/hero_sven/sven_storm_bolt_projectile_explosion.vpcf"
+			"particle"	"particles/a06/a06e.vpcf"
 			"particle"	"particles/generic_gameplay/generic_stunned.vpcf"
 		}
 		"OnSpellStart"
@@ -328,7 +328,7 @@
 			"TrackingProjectile"
 			{
 				"Target"	"TARGET"
-				"EffectName"	"particles/units/heroes/hero_sven/sven_spell_storm_bolt.vpcf"
+				"EffectName"	"particles/a06/a06e.vpcf"
 				"Dodgeable"	"1"
 				"ProvidesVision"	"1"
 				"MoveSpeed"	"1100"
@@ -352,7 +352,7 @@
 			"FireEffect"
 			{
 				"Target"	"TARGET"
-				"EffectName"	"particles/units/heroes/hero_sven/sven_storm_bolt_projectile_explosion.vpcf"
+				"EffectName"	"particles/a06/a06e_explosion.vpcf"
 				"EffectAttachType"	"attach_origin"
 				"ControlPointEntities"
 				{

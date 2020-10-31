@@ -138,7 +138,6 @@
 		"BaseClass"             		"ability_datadriven"
 		"AbilityTextureName"			"custom/icon_128x128_58"
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
-
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
 		"AbilitySpecial"

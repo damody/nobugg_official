@@ -211,13 +211,15 @@
 		"AbilityUnitDamageType"						"DAMAGE_TYPE_PHYSICAL"
 		"AbilityTextureName"                        "custom/icon_128x128_17"
 
-		"AbilityCastPoint"          				"0.35"
+		"AbilityCastPoint"          				"0"
 		"AbilityCooldown"       "140 130 120"
 		"AbilityManaCost"       "300"
-		"AbilityCastRange"	"800"
+		"AbilityCastRange"	"1300"
 		"AOERadius"	"800"
-		
-		"OnSpellStart"
+		"AbilityChannelTime"	"0.7"
+
+
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
@@ -248,6 +250,25 @@
 						"dmg"	"%attack_damage"
 					}
 				}
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/B_Unified/B19.lua"
+				"Function"	"B19T_prepare"
+				"Target"	"Target"
+			}
+		}
+
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/B_Unified/B19.lua"
+				"Function"		"B19T_OnChannelInterrupted"
 			}
 		}
 

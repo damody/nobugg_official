@@ -4900,7 +4900,7 @@
 		"BaseClass"	"npc_dota_creature"
 		"Ability1"	"majia"
 		"Ability2"	"for_no_collision"
-		"Ability3"	""
+		"Ability3"	"phased_dummy"
 		"Ability4"	""
 		"Ability5"	""
 		"Ability6"	""
@@ -4936,7 +4936,7 @@
 		"BaseClass"	"npc_dota_creature"
 		"Ability1"	"majia"
 		"Ability2"	"for_no_collision"
-		"Ability3"	""
+		"Ability3"	"phased_dummy"
 		"Ability4"	""
 		"Ability5"	""
 		"Ability6"	""
@@ -5207,7 +5207,7 @@
 	{
 		"BaseClass"	"npc_dota_creature"
 		"Ability1"	"majia"
-		"Ability2"	""
+		"Ability2"	"phased_dummy"
 		"Ability3"	""
 		"Ability4"	""
 		"Ability5"	""
@@ -5594,7 +5594,7 @@
 		"BaseClass"	"npc_dota_creature"
 		"Ability1"	"ability_dummy_unit"
 		"Ability2"	"B33T_movespeed"
-		"Ability3"	""
+		"Ability3"	"phased_dummy"
 		"Ability4"	""
 		"Ability5"	""
 		"Ability6"	""
@@ -13123,7 +13123,7 @@
 		// Team
 		// ----------------------------------------------------------------
 		"TeamName"	"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_HERO"
 		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"Ability2"	"tower_armor"
@@ -13206,7 +13206,7 @@
 		// Team
 		// ----------------------------------------------------------------
 		"TeamName"	"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_HERO"
 		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"Ability2"	"tower_armor"
@@ -13289,7 +13289,7 @@
 		// Team
 		// ----------------------------------------------------------------
 		"TeamName"	"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_HERO"
 		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"Ability2"	"tower_armor"
@@ -13372,7 +13372,7 @@
 		// Team
 		// ----------------------------------------------------------------
 		"TeamName"	"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_HERO"
 		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"Ability2"	"tower_armor"
@@ -13457,7 +13457,7 @@
 		// Team
 		// ----------------------------------------------------------------
 		"TeamName"	"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_HERO"
 		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"Ability2"	"tower_armor"
@@ -13540,7 +13540,7 @@
 		// Team
 		// ----------------------------------------------------------------
 		"TeamName"	"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_HERO"
 		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"Ability2"	"tower_armor"
@@ -13623,7 +13623,7 @@
 		// Team
 		// ----------------------------------------------------------------
 		"TeamName"	"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_HERO"
 		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"Ability2"	"tower_armor"
@@ -13708,7 +13708,7 @@
 		// Team
 		// ----------------------------------------------------------------
 		"TeamName"	"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_HERO"
 		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"Ability2"	"tower_armor"
@@ -13791,7 +13791,7 @@
 		// Team
 		// ----------------------------------------------------------------
 		"TeamName"	"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_HERO"
 		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"Ability2"	"tower_armor"
@@ -13874,7 +13874,7 @@
 		// Team
 		// ----------------------------------------------------------------
 		"TeamName"	"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_HERO"
 		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"Ability2"	"tower_armor"
@@ -14034,7 +14034,7 @@
 		"BaseClass"	"npc_dota_creature"
 		"Ability1"	"majia"
 		"Ability2"	"for_no_collision"
-		"Ability3"	""
+		"Ability3"	"phased_dummy"
 		"Ability4"	""
 		"Ability5"	""
 		"Ability6"	""
@@ -15069,11 +15069,11 @@
  	{
  		// General
  		//----------------------------------------------------------------
- 		"Model"						"models/items/terrorblade/marauders_demon/marauders_demon.vmdl"	// Model.
+ 		"Model"						"models/cursed_warrior_souls/cursed_warrior_souls.vmdl"	// Model.
  		"BaseClass"					"npc_dota_creep_lane"
  		"SoundSet"					"n_creep_Melee"
  		"Level"						"25"
- 		"ModelScale" 					"2.2"
+ 		"ModelScale" 					"0.8"
  		"IsNeutralUnitType"			"1"
 
  		// Abilities

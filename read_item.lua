@@ -85,6 +85,7 @@ for name, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_item_(.+)_Descript
     equiment[name]["Description"]["zhtw"] = content
   end
 end
+
 --[==[
 text = readAll("addon_schinese2.txt")
 text = string.gsub(text, [[\"]], [["]])
@@ -193,7 +194,7 @@ for name, content in rex.gmatch(text, [[\n"(.+)"\n{(.+)\n}]], "Usm", 0) do
       end
   end
 end
---print(inspect(newequiment, {depth = 2}))
+print(inspect(newequiment, {depth = 2}))
 return newequiment
 end
 read_item()

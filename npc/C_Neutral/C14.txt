@@ -47,7 +47,7 @@
 		{
 			"modifier_C14W"
 			{
-				"Duration"			"6"
+				"Duration"			"7"
 				"IsPurgable"		"1"
 				"IsDebuff"			"1"
 				"EffectName"		"particles/c14w/c14w.vpcf"
@@ -56,9 +56,24 @@
 				{
 					"MODIFIER_STATE_SILENCED"	"MODIFIER_STATE_VALUE_ENABLED"
 				}
-				"Properties"
+				"OnCreated"
 				{
-					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"%speed_bonus"
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"Slow"
+						"name"	"C14W"
+						"ms_slow" "%speed_bonus"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"ReturnSpeed"
+						"name"	"C14W"
+					}
 				}
 			}
 

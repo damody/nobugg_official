@@ -899,8 +899,9 @@
 				}
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"300"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"100"
 				}
+
 			}
 			"modifier_show_invisible"
 			{
@@ -929,6 +930,35 @@
 				{
 					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "-1"
 					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS" "-1"
+				}
+			}
+			"modifier_warrior_souls_critical"
+			{
+				"Passive" "1"
+				"OnAttackStart"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"items/Addon_Items/tofar_goback.lua"
+						"Function"	"warrior_souls_critical"
+						"Target"		"TARGET"
+					}
+				}
+			}
+			"modifier_warrior_souls_criticalmultiplier"
+			{
+				"IsHidden"			"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE" "200"
+				}
+			}
+			"modifier_warrior_souls_cannot_miss"
+			{
+				"IsHidden"	"1"
+				"States"
+				{
+					"MODIFIER_STATE_CANNOT_MISS"	"MODIFIER_STATE_VALUE_ENABLED"
 				}
 			}
 		}
@@ -2776,7 +2806,7 @@
 			"modifier_check_is_dead"
 			{
 				"Passive"	"1"
-				"IsHidden"			"1"
+				"IsHidden"	"1"
 				"OnCreated"
 				{
 					"RunScript"
@@ -2870,7 +2900,7 @@
 		{
 			"modifier_wantgohome"
 			{
-				"EffectName"	"particles/events/ti6_teams/teleport_start_ti6_lvl3_ehome.vpcf"
+				"EffectName"	"particles/gohome/gohome.vpcf"
 				"EffectAttachType"	"follow_origin"
 			}
 		}
@@ -2980,7 +3010,7 @@
 		{
 			"modifier_wantgohome"
 			{
-				"EffectName"	"particles/events/ti6_teams/teleport_start_ti6_lvl3_ehome.vpcf"
+				"EffectName"	"particles/gohome/gohome.vpcf"
 				"EffectAttachType"	"follow_origin"
 			}
 		}
@@ -5681,7 +5711,7 @@
 			"modifier_on_death"
 			{
 				"Passive"	"1"
-				"IsHidden"	"0"
+				"IsHidden"	"1"
 				"OnDeath"
 				{
 					"RunScript"
@@ -5754,7 +5784,7 @@
 		{
 			"modifier_slow_self_passive"
 			{
-				"Passive"	"1"
+				"Passive"	"0"
 				"ThinkInterval"	"0.1"
 				"OnIntervalThink"
 				{
@@ -5781,6 +5811,163 @@
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "-1"
+				}
+			}
+		}
+	}
+	"HealthRegen_self"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"Modifiers"
+		{
+			"modifier_health_regen_passive"
+			{
+				"IsHidden"	"1"
+				"Passive"	"1"
+				"ThinkInterval"	"0.1"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"health_regen_passive"
+					}
+				}
+			}
+			"modifier_healthregen"
+			{
+				
+				"IsHidden"	"1"
+				"IsDebuff"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"0.1"
+				}
+			}
+		}
+	}
+	"ManaRegen_self"
+	{
+		
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"Modifiers"
+		{
+			"modifier_mana_regen_passive"
+			{
+				"IsHidden"	"1"
+				"Passive"	"1"
+				"ThinkInterval"	"0.1"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"mana_regen_passive"
+					}
+				}
+			}
+			"modifier_manaregen"
+			{
+				"IsHidden"	"1"
+				"IsDebuff"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"	"0.01"
+				}
+			}
+		}
+	}
+	"AtkSpeedBonus_self"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"Modifiers"
+		{
+			"modifier_aspd_passive"
+			{
+				"IsHidden"	"1"
+				"Passive"	"1"
+				"ThinkInterval"	"0.1"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"aspd_passive"
+					}
+				}
+			}
+			"modifier_aspd"
+			{
+				"IsHidden"	"1"
+				"IsDebuff"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"0.1"
+				}
+			}
+		}
+	}
+	"preRegist"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"precache" 
+		{
+			"particle" "particles/units/heroes/hero_nyx_assassin/nyx_assassin_vendetta_blood.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_blood_preRegist"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"OnAttackLanded"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
+						"Function"	"preRegist"
+					}
+				}
+			}
+		}
+	}
+	"phased_dummy"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"Modifiers"
+		{
+			"passive_phased_dummy"
+			{
+				"IsHidden"	"1"
+				"Passive"	"1"
+				"Aura"	"modifier_phased_dummy"
+				"Aura_Radius"	"50"
+				"Aura_Teams"	"DOTA_UNIT_TARGET_TEAM_BOTH"
+				"Aura_Types"	"DOTA_UNIT_TARGET_HERO"
+				"Aura_Flags"	"DOTA_UNIT_TARGET_FLAG_NONE"		
+			}
+			"modifier_phased_dummy"
+			{
+				"Passive"			"0"
+				"IsHidden"			"1"
+				"IsDebuff"			"1"
+				"Duration"			"1"
+				"States"
+					{
+						"MODIFIER_STATE_NO_UNIT_COLLISION" 	"MODIFIER_STATE_VALUE_ENABLED"
+					}
+				"OnDestroy"
+				{
+					"RemoveModifier"
+					{
+						"TARGET"	"TARGET"
+						"ModifierName"	"modifier_phased_dummy"
+					}
 				}
 			}
 		}

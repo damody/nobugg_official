@@ -75,7 +75,7 @@
 		// -------------------------------------------------------------------------------------------------------------
 		"BaseClass"	"ability_datadriven"
 		"AbilityTextureName"	"custom/morphling_full"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT"
 		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
@@ -208,8 +208,35 @@
 						"Function"	"A04W_Bonus"
 					}
 				}
+				"OnDeath"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A04_Takenaka_Juji.lua"
+						"Function"	"A04W_Death"
+					}
+				}
 				"IsHidden"	"0"
 			}
+			"modifier_A04W_move"
+			{
+				"IsHidden"	"0"
+				"ThinkInterval"	"0.01"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/heroes/A_Oda/A04_Takenaka_Juji.lua"
+						"Function"	"A04W_move"
+					}
+				}
+			}
+			"modifier_A04W_inmoveable"
+			{
+				"IsHidden"	"1"
+				"Passive"	"0"
+			}
+			
 		}
 		// Special
 		// -------------------------------------------------------------------------------------------------------------
