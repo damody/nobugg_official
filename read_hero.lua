@@ -12,6 +12,32 @@ end
 
 hero = {}
 
+-- 函數：為 _old 技能回填缺失的語言文本
+local function fill_old_skill_text(lang_code, version_suffix)
+  version_suffix = version_suffix or " (11版)"
+  
+  for heroname, herodata in pairs(hero) do
+    for skillname, skilldata in pairs(herodata) do
+      if string.match(skillname, "_old$") and skilldata then
+        local base_skill = string.gsub(skillname, "_old$", "")
+        if herodata[base_skill] then
+          -- 回填技能名稱
+          if (not skilldata["name"] or not skilldata["name"][lang_code]) and 
+             herodata[base_skill]["name"] and herodata[base_skill]["name"][lang_code] then
+            if not skilldata["name"] then skilldata["name"] = {} end
+            skilldata["name"][lang_code] = herodata[base_skill]["name"][lang_code] .. version_suffix
+          end
+          -- 回填技能描述
+          if (not skilldata["Description"] or not skilldata["Description"][lang_code]) and 
+             herodata[base_skill]["Description"] and herodata[base_skill]["Description"][lang_code] then
+            if not skilldata["Description"] then skilldata["Description"] = {} end
+            skilldata["Description"][lang_code] = herodata[base_skill]["Description"][lang_code] .. version_suffix
+          end
+        end
+      end
+    end
+  end
+end
 
 function ProcessText(file, text)
   if not string.match(file, "_2.txt") and #file > 4 then
@@ -70,22 +96,29 @@ end
 
 function read_hero()
 for file in lfs.dir("npc/A_Oda") do
-  text = readAll("npc/A_Oda/"..file)
-  ProcessText(file, text)
+  local success, text = pcall(readAll, "npc/A_Oda/"..file)
+  if success and text then
+    ProcessText(file, text)
+  end
 end
 
 for file in lfs.dir("npc/B_Unified") do
-	text = readAll("npc/B_Unified/"..file)
-  ProcessText(file, text)
+  local success, text = pcall(readAll, "npc/B_Unified/"..file)
+  if success and text then
+    ProcessText(file, text)
+  end
 end
 
 for file in lfs.dir("npc/C_Neutral") do
-	text = readAll("npc/C_Neutral/"..file)
-  ProcessText(file, text)
+  local success, text = pcall(readAll, "npc/C_Neutral/"..file)
+  if success and text then
+    ProcessText(file, text)
+  end
 end
 
-text = readAll("addon_tchinese2.txt")
-text = string.gsub(text, [[\"]], [["]])
+local success, text = pcall(readAll, "addon_tchinese2.txt")
+if success and text then
+  text = string.gsub(text, [[\"]], [["]])
 
 for ability, name, _, old, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(([ABC][0-9][0-9])(W|E|R|T|D|F)(_old|))".+"(.+)"]], "U", 0) do
   if (hero[name] ~= nil) then
@@ -100,6 +133,9 @@ for ability, name, _, old, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(
   end
 end
 
+-- 為繁體中文回填缺失的 _old 技能文本
+fill_old_skill_text("zhtw")
+
 for ability, name, _, _, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(([ABC][0-9][0-9])(W|E|R|T|D|F)(_old|))_Description"[ \t]+"(.+)"]], "", 0) do
   if (hero[name] ~= nil) then
     if (hero[name][ability]) == nil then
@@ -112,8 +148,11 @@ for ability, name, _, _, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(([
   end
 end
 
-text = readAll("addon_schinese2.txt")
-text = string.gsub(text, [[\"]], [["]])
+end
+
+local success, text = pcall(readAll, "addon_schinese2.txt")
+if success and text then
+  text = string.gsub(text, [[\"]], [["]])
 for ability, name, _, old, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(([ABC][0-9][0-9])(W|E|R|T|D|F)(_old|))".+"(.+)"]], "U", 0) do
   if (hero[name] ~= nil) then
     if (hero[name][ability]) == nil then
@@ -137,8 +176,13 @@ for ability, name, _, old, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(
   end
 end
 
-text = readAll("addon_japanese2.txt")
-text = string.gsub(text, [[\"]], [["]])
+-- 為簡體中文回填缺失的 _old 技能文本
+fill_old_skill_text("zhcn", " (11版)")
+end
+
+local success, text = pcall(readAll, "addon_japanese2.txt")
+if success and text then
+  text = string.gsub(text, [[\"]], [["]])
 for ability, name, _, old, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(([ABC][0-9][0-9])(W|E|R|T|D|F)(_old|))".+"(.+)"]], "U", 0) do
   if (hero[name] ~= nil) then
     if (hero[name][ability]) == nil then
@@ -162,8 +206,13 @@ for ability, name, _, old, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(
   end
 end
 
-text = readAll("addon_english2.txt")
-text = string.gsub(text, [[\"]], [["]])
+-- 為日語回填缺失的 _old 技能文本
+fill_old_skill_text("jp", " (11版)")
+end
+
+local success, text = pcall(readAll, "addon_english2.txt")
+if success and text then
+  text = string.gsub(text, [[\"]], [["]])
 for ability, name, _, old, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(([ABC][0-9][0-9])(W|E|R|T|D|F)(_old|))".+"(.+)"]], "U", 0) do
   if (hero[name] ~= nil) then
     if (hero[name][ability]) == nil then
@@ -185,6 +234,10 @@ for ability, name, _, old, content in rex.gmatch(text, [["DOTA_Tooltip_Ability_(
     end
     hero[name][ability]["Description"]["en"] = content
   end
+end
+
+-- 為英語回填缺失的 _old 技能文本
+fill_old_skill_text("en", " (Ver.11)")
 end
 --print(inspect(hero))
 return hero

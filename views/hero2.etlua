@@ -1,26 +1,58 @@
 <%
 local inspect = require("inspect")
 require("read_hero")
-lang = params.language
-hero = read_hero()[params.hero]
-data = inspect(hero["C02"])
-print(data)
-local cjson = require("cjson")
-record16 = {}--cjson.decode(client:get(string.lower(params.hero).."_16"))
-record11 = {}--cjson.decode(client:get(string.lower(params.hero).."_11"))
+local lang = params.language
 
-
-if lang == "zhtw" then
-  heroname = zhtw_heroname
-elseif  lang == "zhcn" then
-  heroname = zhcn_heroname
-elseif lang == "jp" then
-  heroname = jp_heroname
-elseif lang == "en" then
-  heroname = en_heroname
+-- 安全地載入英雄資料
+local heroes = {}
+local success, result = pcall(read_hero)
+if success and result then
+  heroes = result
 end
 
-skill = {"D", "F", "W", "E", "R", "T"}
+local hero = heroes[params.hero] or {}
+local data = inspect(hero["C02"] or {})
+print(data)
+local cjson = require("cjson")
+
+-- 載入 Redis 中的勝率資料
+local record16 = {}
+local record11 = {}
+
+-- 安全的 Redis 連接處理
+local function safe_redis_get(key)
+  local redis = require("redis")
+  local success, client = pcall(redis.connect, '127.0.0.1', 6379)
+  if success and client then
+    local data = client:get(key)
+    client:quit()
+    if data and data ~= ngx.null then
+      local ok, decoded = pcall(cjson.decode, data)
+      if ok then
+        return decoded
+      end
+    end
+  end
+  return {}
+end
+
+-- 載入英雄勝率資料
+record16 = safe_redis_get(string.lower(params.hero).."_16")
+record11 = safe_redis_get(string.lower(params.hero).."_11")
+
+
+local heroname = {}
+if lang == "zhtw" then
+  heroname = zhtw_heroname or {}
+elseif  lang == "zhcn" then
+  heroname = zhcn_heroname or {}
+elseif lang == "jp" then
+  heroname = jp_heroname or {}
+elseif lang == "en" then
+  heroname = en_heroname or {}
+end
+
+local skill = {"D", "F", "W", "E", "R", "T"}
 
 function round(num, idp)
   local mult = 10^(idp or 0)
@@ -35,11 +67,11 @@ end
     </header>
     <div class="container">
     	<div class="champion-banner first-layout">
-          	<h1 class="cp-fc1"><%-hero["name"][lang]%></h1>
+          	<h1 class="cp-fc1"><%-hero["name"] and hero["name"][lang] or "未知英雄"%></h1>
         </div>
         <div class="wrapper">
-            <!--英雄預覽 16-->
-            <% if video[params.hero]["16"][lang] ~= nil then %>   
+            <!--英雄預覽 16 版-->
+            <% if video and video[params.hero] and video[params.hero]["16"] and video[params.hero]["16"][lang] ~= nil then %>   
             <div class="champion-info">
                 <h2 class="champion-title"><%-langtext["heropreview"][lang]%><span>Champion Spotlight</span></h2>
                 <h3 class="ver"><%-langtext["version"][lang]%>：16</h3>
@@ -48,14 +80,25 @@ end
                 </div>
             </div>
             <% end %>
-            <!--英雄預覽 16-->
-            <!--技能資訊 16-->
+            
+            <!--英雄預覽 11 版-->
+            <% if video and video[params.hero] and video[params.hero]["11"] and video[params.hero]["11"][lang] ~= nil then %>   
+            <div class="champion-info">
+                <h2 class="champion-title"><%-langtext["heropreview"][lang]%><span>Champion Spotlight</span></h2>
+                <h3 class="ver"><%-langtext["version"][lang]%>：11</h3>
+                <div class="youtube-iframe">
+                    <iframe class="embed-responsive-item" src="<%-video[params.hero]["11"][lang]%>"></iframe>
+                </div>
+            </div>
+            <% end %>
+            
+            <!--技能資訊 16 版-->
         	<div class="champion-info">
             	<h2 class="champion-title"><%-langtext["abilityinfo"][lang]%><span>Ability Info</span></h2>
                 <h3 class="ver"><%-langtext["version"][lang]%>：16</h3><% 
                 for i, it in ipairs(skill) do
-                  item = hero[params.hero..it]
-                  if item ~=nil and item["name"] ~= nil then 
+                  local item = hero[params.hero..it]
+                  if item ~= nil and item["name"] ~= nil then 
                     if item["name"][lang] == nil then
                         item["name"][lang] = ""
                     end%>
@@ -88,7 +131,85 @@ end
                     end 
                 end %>
             </div>
-        	
+            
+            <!--技能資訊 11 版-->
+        	<div class="champion-info">
+            	<h2 class="champion-title"><%-langtext["abilityinfo"][lang]%><span>Ability Info</span></h2>
+                <h3 class="ver"><%-langtext["version"][lang]%>：11</h3><% 
+                for i, it in ipairs(skill) do
+                  local item = hero[params.hero..it.."_old"]
+                  if item ~= nil and item["name"] ~= nil then 
+                    if item["name"][lang] == nil then
+                        item["name"][lang] = ""
+                    end%>
+                <div class="ability-list">
+                    <h4 class="ability-name"><%=it.." "..item["name"][lang]%></h4>
+                    <div class="ability-box">
+                        <img src="../../static/pic/spellicons/<%-item["pic"]%>.png" alt="<%=item["name"][lang]%> icon" width="100" height="100">
+                        <div class="ability-info">
+                            <ul>
+                            <li class="ability-info-list item-info-list">
+                                <ul>
+                                <% if item["cooldown"] ~= nil then %>
+                                    <li><span class="item-info-list-title"><%-langtext["cd"][lang]%></span><span class="item-info-list-value"><%= item["cooldown"] %></span></li>
+                                <% end %>
+                                <% if item["mana"] ~= nil then %>
+                                    <li><span class="item-info-list-title"><%-langtext["mana"][lang]%></span><span class="item-info-list-value"><%= item["mana"] %></span></li>
+                                <% end %>
+                                <% if item["radius"] ~= nil then %>
+                                    <li><span class="item-info-list-title"><%-langtext["radius"][lang]%></span><span class="item-info-list-value"><%= item["radius"] %></span></li>
+                                <% end %>
+                                <% if item["range"] ~= nil then %>
+                                    <li><span class="item-info-list-title"><%-langtext["range"][lang]%></span><span class="item-info-list-value"><%= item["range"] %></span></li>
+                                <% end %>
+                                </ul>
+                                <li><%- item["Description"][lang] %></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><% 
+                    end 
+                end %>
+            </div>
+            
+            <!--勝率統計 16 版-->
+            <% if record16 and next(record16) ~= nil then %>
+            <div class="champion-info">
+                <h2 class="champion-title">勝率統計<span>Win Rate Statistics</span></h2>
+                <h3 class="ver"><%-langtext["version"][lang]%>：16</h3>
+                <div class="stats-info">
+                    <% if record16.winrate then %>
+                        <p>勝率: <%= string.format("%.1f", record16.winrate * 100) %>%</p>
+                    <% end %>
+                    <% if record16.pickrate then %>
+                        <p>選取率: <%= string.format("%.1f", record16.pickrate * 100) %>%</p>
+                    <% end %>
+                    <% if record16.banrate then %>
+                        <p>禁用率: <%= string.format("%.1f", record16.banrate * 100) %>%</p>
+                    <% end %>
+                </div>
+            </div>
+            <% end %>
+            
+            <!--勝率統計 11 版-->
+            <% if record11 and next(record11) ~= nil then %>
+            <div class="champion-info">
+                <h2 class="champion-title">勝率統計<span>Win Rate Statistics</span></h2>
+                <h3 class="ver"><%-langtext["version"][lang]%>：11</h3>
+                <div class="stats-info">
+                    <% if record11.winrate then %>
+                        <p>勝率: <%= string.format("%.1f", record11.winrate * 100) %>%</p>
+                    <% end %>
+                    <% if record11.pickrate then %>
+                        <p>選取率: <%= string.format("%.1f", record11.pickrate * 100) %>%</p>
+                    <% end %>
+                    <% if record11.banrate then %>
+                        <p>禁用率: <%= string.format("%.1f", record11.banrate * 100) %>%</p>
+                    <% end %>
+                </div>
+            </div>
+            <% end %>
+        </div>
     </div>
 <div style="width: 50%;margin: 0 auto;">
 <div width="100%" class="fb-comments" data-href="http://www.dota2nobu.com/nobu/<%-lang%>/<%-params.webpath%>" data-numposts="5"></div>

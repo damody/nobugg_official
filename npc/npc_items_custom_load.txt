@@ -10,7 +10,7 @@
 		// General
 		
 		"BaseClass"	"item_datadriven"
-		"AbilityTextureName"	"item_custom/the_red_lightning_chapter_hyper"
+		"AbilityTextureName"	"item_custom/the_red_lightning_chapter"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
@@ -1930,21 +1930,21 @@
 			"particle"	"particles/item/d02_4/d02_4_f.vpcf"
 		}
 		"OnEquip"
-		{
-			"RunScript"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"items/Addon_Items/item_magical_resistance.lua"
+						"Function"	"OnEquip"
+					}
+				}
+			"OnUnequip"
 			{
-				"ScriptFile"	"items/Addon_Items/item_magical_resistance.lua"
-				"Function"	"OnEquip"
+				"RunScript"
+				{
+					"ScriptFile"	"items/Addon_Items/item_magical_resistance.lua"
+					"Function"	"OnUnequip"
+				}
 			}
-		}
-		"OnUnequip"
-		{
-			"RunScript"
-			{
-				"ScriptFile"	"items/Addon_Items/item_magical_resistance.lua"
-				"Function"	"OnUnequip"
-			}
-		}
 		"Modifiers"
 		{
 			"Passive_magicresistance_ingot"
@@ -3053,7 +3053,7 @@
 				"IsHidden"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE"	"300"
+					"MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE"	"220"
 				}
 				"OnAttackLanded"
 				{							
@@ -7142,11 +7142,6 @@
 					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "0" //攻速
 					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "0"	//防禦
 				}
-				"Aura"	"modifier_decrease_HR"
-				"Aura_Radius"	"700"
-				"Aura_Teams"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
-				"Aura_Types"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-				"Aura_Flags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 			}
 			"modifier_commander_of_fan1"
 			{
@@ -7192,29 +7187,6 @@
 					"MODIFIER_STATE_SILENCED"	"MODIFIER_STATE_VALUE_ENABLED"
 					"MODIFIER_STATE_DISARMED"	"MODIFIER_STATE_VALUE_ENABLED"
 				}
-			}
-			"modifier_decrease_HR"
-			{
-				"Passive"			"0"
-				"IsHidden"			"0"
-				"IsDebuff"			"1"
-				"Duration"			"1"
-				// "OnCreated"
-				// {
-				// 	"RunScript"
-				// 	{
-				// 		"ScriptFile"	"items/Addon_Items/item_commander_of_fan.lua"
-				// 		"Function"	"AuraHR"
-				// 	}
-				// }
-				// "OnDestroy"
-				// {
-				// 	"RunScript"
-				// 	{
-				// 		"ScriptFile"	"items/Addon_Items/item_commander_of_fan.lua"
-				// 		"Function"	"AuraHR2"
-				// 	}
-				// }
 			}
 		}
 	}
@@ -8133,36 +8105,6 @@
 		}
 	}
 
-	//新藤五國光製作單
-	"item_recipe_Shintogo_Kunimitsu" 
-	{
-	    "ID" "2848"
-	    "BaseClass" "item_recipe_arcane_boots"
-		"ItemCost" "130"
-		"ItemShopTags" ""
-		"ItemRecipe" "1"
-		"ItemResult" "item_Shintogo_Kunimitsu"  //合成後物品
-		"ItemRequirements"
-		{
-			"01" "item_katana;item_tachi;item_health_ingot;item_magic_resistance_ingot"  //合成所需物品
-		}
-	}
-
-	//般若鬼丸製作單
-	"item_recipe_Hannya_Onimaru" 
-	{
-	    "ID" "2851"
-	    "BaseClass" "item_recipe_arcane_boots"
-		"ItemCost" "750"
-		"ItemShopTags" ""
-		"ItemRecipe" "1"
-		"ItemResult" "item_Hannya_Onimaru"  //合成後物品
-		"ItemRequirements"
-		{
-			"01" "item_moon_spear;item_magic_resistance_ingot"  //合成所需物品
-		}
-	}
-
 	//雪走製作單
 	"item_recipe_yubashiri" 
 	{
@@ -8378,13 +8320,13 @@
 	{
 	    "ID" "3039"
 	    "BaseClass" "item_recipe_arcane_boots"
-		"ItemCost" "250"
+		"ItemCost" "900"
 		"ItemShopTags" ""
 		"ItemRecipe" "1"
 		"ItemResult" "item_the_dark_armor"  //合成後物品
 		"ItemRequirements"
 		{
-			"01" "item_the_poketto_of_meiso;item_spirit_ingot;item_magic_resistance_ingot"  //合成所需物品
+			"01" "item_the_poketto_of_meiso;item_spirit_ingot"  //合成所需物品
 		}
 	}
 
@@ -8498,7 +8440,7 @@
 	{
 	    "ID" "3048"
 	    "BaseClass" "item_recipe_arcane_boots"
-		"ItemCost" "150"
+		"ItemCost" "1000"
 		"ItemShopTags" ""
 		"ItemRecipe" "1"
 		"ItemResult" "item_prophet_armor"  //合成後物品
@@ -8507,34 +8449,20 @@
 			"01" "item_lesser_armor;item_insight_gem"  //合成所需物品
 		}
 	}
-	//真視赤備挂甲製作單
-	"item_recipe_prophet_Akazonae_armor" 
-	{
-	    "ID" "2853"
-	    "BaseClass" "item_recipe_arcane_boots"
-		"ItemCost" "50"
-		"ItemShopTags" ""
-		"ItemRecipe" "1"
-		"ItemResult" "item_prophet_Akazonae_armor"  //合成後物品
-		"ItemRequirements"
-		{
-			"01" "item_prophet_armor;item_health_ingot;item_magic_resistance_ingot"  //合成所需物品
-		}
-	}
 
 	//制魔腹卷製作單
 	"item_recipe_devil_supressor_armor" 
 	{
 	    "ID" "3049"
 	    "BaseClass" "item_recipe_arcane_boots"
-		"ItemCost" "800"
+		"ItemCost" "1450"
 		"ItemShopTags" ""
 		"ItemRecipe" "1"
 		"ItemResult" "item_devil_supressor_armor"  //合成後物品
 		"ItemRequirements"
 		{
-			"01" "item_regeneration_ingot;item_regeneration_ingot;item_lesser_shield;item_magic_resistance_ingot"  //合成所需物品
-		}	
+			"01" "item_regeneration_ingot;item_regeneration_ingot;item_lesser_shield"  //合成所需物品
+		}
 	}
 
 	//吹雪護肩製作單
@@ -9539,7 +9467,7 @@
 						"ScriptFile"	"scripts/vscripts/library/common/dummy.lua"
 						"Function"	"Slow"
 						"name"	"kokumo"
-						"ms_slow" "-35"
+						"ms_slow" "-30"
 					}
 				}
 				"OnDestroy"
@@ -9878,7 +9806,6 @@
 			{
 				"ScriptFile"	"items/Addon_Items/item_the_dark_armor.lua"
 				"Function"	"Shock"
-				"Target"	"TARGET"
 			}
 			"ApplyModifier"
 			{
@@ -9886,30 +9813,7 @@
 				"ModifierName"      "modifier_dark_armor_aura"
 			}
 		}
-		"OnEquip"
-		{
-			"RunScript"
-			{
-				"ScriptFile"	"items/Addon_Items/item_magical_resistance.lua"
-				"Function"	"OnEquip"
-			}
-		}
-		"OnUnequip"
-		{
-			"RunScript"
-			{
-				"ScriptFile"	"items/Addon_Items/item_magical_resistance.lua"
-				"Function"	"OnUnequip"
-			}
-		}
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"magical_resistance"	"10"
-			}
-		}
+		
 		"Modifiers"
 		{
 			"modifier_dark_armor_aura"
@@ -9988,7 +9892,6 @@
 				}
 			}
 		}
-
 	}
 
 	// 靈都宮燈
@@ -10800,157 +10703,6 @@
 				"EffectName"	"RevealMap"
 			}
 		}
-		"OnUnequip"
-		{
-			"RemoveModifier"
-            {
-                "Target" "CASTER"
-                "ModifierName" "block_modifier"
-            }
-		}
-		"Modifiers"
-		{
-			"Passive_prophet_armor"
-			{
-				"IsHidden"	"1"
-				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
-				"Passive"	"1"
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS" "0"	//力
-					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "0"		//敏
-					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "0"	//智
-					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "0"	//攻
-					"MODIFIER_PROPERTY_HEALTH_BONUS" "0" 			//血
-					"MODIFIER_PROPERTY_MANA_BONUS" "0"				//魔
-					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT" "0"	//回血
-					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE" "0" //回血%
-					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT" "0" 	//回魔
-					"MODIFIER_PROPERTY_MANA_REGEN_PERCENTAGE" "0" 	//回魔%
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "0" //攻速
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "0"	//防禦
-					// "MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS" "20"	//魔抗
-				}
-			}
-			"Passive_insight_gem"
-			{
-				"Passive"          "1"  
-	            "IsHidden"      "1"
-	            "ThinkInterval"     "0.25"
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_BONUS_NIGHT_VISION"	"250"
-				}
-	            "OnIntervalThink"
-	            {
-	                "ApplyModifier"
-	                {
-	                    "Target"
-	                    {
-	                        "Center"    "CASTER"
-	                        "Radius"    "800"
-	                        "Teams" "DOTA_UNIT_TARGET_TEAM_ENEMY"
-	                        "Types" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
-	                        "Flags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
-	                    }
-	                    "ModifierName"      "modifier_truesight"
-	                    "Duration"      "0.50"
-	                }
-	            }
-			}
-			"shield_modifier"
-			{
-			    "Passive" "1"
-			    "IsHidden" "1"
-			    "Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
-			    "OnAttacked"
-			    {
-			        "Random"
-			        {
-			            "Chance" "50"
-			            "OnSuccess"
-			            {
-			                "ApplyModifier"
-			                {
-			                    "Target" "CASTER"
-			                    "ModifierName" "block_modifier"
-			                }
-			            }
-			            "OnFailure"
-			            {
-			                "RemoveModifier"
-			                {
-			                    "Target" "CASTER"
-			                    "ModifierName" "block_modifier"
-			                }
-			            }
-			        }
-			    }
-			}
-			"block_modifier"
-			{
-			    "IsBuff" "1"
-			    "IsHidden" "1"
-			    "Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
-			    "Properties"
-			    {
-			        "MODIFIER_PROPERTY_PHYSICAL_CONSTANT_BLOCK" "50"
-			    }
-			}
-		}
-	}
-
-	// 真視赤備挂甲
-	"item_prophet_Akazonae_armor"
-	{
-		// General
-		
-		"BaseClass"	"item_datadriven"
-		"AbilityTextureName"	"item_custom/prophet_Akazonae_armor"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
-		"FightRecapLevel"	"1"
-		
-		"AbilityCooldown"	"20"
-		"ID"	"2852"
-		"ItemQuality"	"component"
-		"Model"	"models/props_gameplay/tpscroll01.vmdl"
-		"Effect"	"particles/q09_2/q09_2.vpcf"
-		"ItemCost"	"4600"
-		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
-		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
-		"ItemRequirements"	{}
-		"AOERadius"	"1200"
-		
-		"OnSpellStart"
-		{
-			"RunScript"
-			{
-				"ScriptFile"	"items/Addon_Items/item_insight_gem.lua"
-				"Function"	"Shock"
-			}
-			"ApplyModifier"
-            {
-                "Target"
-                {
-                    "Center"    "CASTER"
-                    "Radius"    "1200"
-                    "Teams" "DOTA_UNIT_TARGET_TEAM_ENEMY"
-                    "Types" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
-                    "Flags" "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
-                }
-                "ModifierName"      "modifier_truesight"
-                "Duration"      "10"
-            }
-            "FireSound"
-			{
-				"Target"	"TARGET"
-				"EffectName"	"RevealMap"
-			}
-		}
 		"OnEquip"
 		{
 			"RunScript"
@@ -10985,7 +10737,7 @@
 					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "0"		//敏
 					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "0"	//智
 					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "0"	//攻
-					"MODIFIER_PROPERTY_HEALTH_BONUS" "300" 			//血
+					"MODIFIER_PROPERTY_HEALTH_BONUS" "250" 			//血
 					"MODIFIER_PROPERTY_MANA_BONUS" "0"				//魔
 					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT" "0"	//回血
 					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE" "0" //回血%
@@ -11919,7 +11671,7 @@
 	{
 		// General
 		"BaseClass"	"item_datadriven"
-		"AbilityTextureName"	"item_custom/swiftness_boots_1"
+		"AbilityTextureName"	"item_custom/swiftness_boots"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_TOGGLE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
@@ -12478,11 +12230,6 @@
 						"Function"	"OnAttackLanded"
 					}
 				}
-			}
-			"modifier_satsuma_gun_DH"
-			{
-				"Duration"	"3"
-				"IsDebuff"	"1"
 			}
 			"modifier_satsuma_gun_hint"
 			{
@@ -14106,7 +13853,7 @@
 		"AbilityCooldown"	"55"
 		
 		"AbilityManaCost"	"75"
-		"AbilityCastPoint"	"0.1"
+		"AbilityCastPoint"	"0.25"
 		"AbilityCastRange"	"700"
 		"ID"	"2567"
 		"ItemQuality"	"component"
@@ -14181,7 +13928,7 @@
 				{
 					"MODIFIER_STATE_STUNNED"	"MODIFIER_STATE_VALUE_ENABLED"
 				}
-				"Duration"	"1"
+				"Duration"	"1.5"
 				"IsDebuff"	"1"
 				"EffectName"	"particles/generic_gameplay/generic_stunned.vpcf"
 				"EffectAttachType"	"follow_overhead"
@@ -14391,7 +14138,7 @@
 		// General
 		
 		"BaseClass"	"item_datadriven"
-		"AbilityTextureName"	"item_custom/dark_boots_1"
+		"AbilityTextureName"	"item_custom/dark_boots"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_TOGGLE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
@@ -14475,7 +14222,7 @@
 		// General
 		
 		"BaseClass"	"item_datadriven"
-		"AbilityTextureName"	"item_custom/mana_boots_1"
+		"AbilityTextureName"	"item_custom/mana_boots"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_TOGGLE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
@@ -14568,7 +14315,7 @@
 		// General
 		
 		"BaseClass"	"item_datadriven"
-		"AbilityTextureName"	"item_custom/magic_defence_boots_1"
+		"AbilityTextureName"	"item_custom/magic_defence_boots"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_TOGGLE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
@@ -14669,7 +14416,7 @@
 		// General
 		
 		"BaseClass"	"item_datadriven"
-		"AbilityTextureName"	"item_custom/ryukyu_ronin_clogs_1"
+		"AbilityTextureName"	"item_custom/ryukyu_ronin_clogs"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_TOGGLE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
@@ -14812,7 +14559,7 @@
 		"ItemQuality"	"component"
 		"Model"	"models/props_gameplay/tpscroll01.vmdl"
 		"Effect"	"particles/q09_2/q09_2.vpcf"
-		"ItemCost"	"7500"
+		"ItemCost"	"9000"
 		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemRequirements"	{}
@@ -16150,213 +15897,6 @@
 			}
 		}
 	}
-	// 新藤五國光
-	"item_Shintogo_Kunimitsu"
-	{
-		// General
-		"BaseClass"	"item_datadriven"
-		"AbilityTextureName"	"item_custom/Shintogo_Kunimitsu"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
-		"FightRecapLevel"	"1"
-		
-		"AbilityCooldown"	"0"
-		
-		"AbilityManaCost"	"0"
-		"ID"	"2847"
-		"ItemQuality"	"component"
-		"Model"	"models/heroes/abaddon/weapon.vmdl"
-		"Effect"	"particles/q09_2/q09_2.vpcf"
-		"ItemCost"	"3500"
-		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
-		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
-		"ItemRequirements"	{}
-		"Modifiers"
-		{
-			
-			"Passive_item_Shintogo_Kunimitsu"
-			{
-				"IsHidden"	"1"
-				"Passive"	"1"
-				"OnTakeDamage"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"items\Addon_Items\item_Shintogo_Kunimitsu.lua"
-						"Function"	"TakenDamage"
-					}
-				}
-			}
-			"Passive_Shintogo_Kunimitsu"
-			{
-				"IsHidden"	"1"
-				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
-				"Passive"	"1"
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS" "0"	//力
-					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "10"	//敏
-					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "0"	//智
-					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "20"	//攻
-					"MODIFIER_PROPERTY_HEALTH_BONUS" "400" 			//血
-					"MODIFIER_PROPERTY_MANA_BONUS" "0"				//魔
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "15" //攻速
-				}
-			}
-			"modifier_Shintogo_Kunimitsu"
-			{
-				"IsHidden"	"0"
-				"Passive"	"0"
-				"Duration"	"2"
-				"OnDestroy"
-				{
-					"RunScript"
-					{
-						"Target"	"CASTER"
-						"ScriptFile"	"items\Addon_Items\item_Shintogo_Kunimitsu.lua"
-						"Function"	"OnDestroy"
-					}
-				}
-			}
-		}
-		"OnEquip"
-		{
-			"RunScript"
-			{
-				"ScriptFile"	"items/Addon_Items/item_magical_resistance.lua"
-				"Function"	"OnEquip"
-			}
-		}
-		"OnUnequip"
-		{
-			"RunScript"
-			{
-				"ScriptFile"	"items/Addon_Items/item_magical_resistance.lua"
-				"Function"	"OnUnequip"
-			}
-		}
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"magical_resistance"	"10"
-			}
-		}
-	}
-	// 般若鬼丸
-	"item_Hannya_Onimaru"
-	{
-		// General
-		"BaseClass"	"item_datadriven"
-		"AbilityTextureName"	"item_custom/Hannya_Onimaru"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
-		"FightRecapLevel"	"1"
-		
-		"AbilityCooldown"	"0"
-		
-		"AbilityManaCost"	"0"
-		"ID"	"2849"
-		"ItemQuality"	"component"
-		"Model"	"models/heroes/abaddon/weapon.vmdl"
-		"Effect"	"particles/q09_2/q09_2.vpcf"
-		"ItemCost"	"3500"
-		////"ItemShareability"				"ITEM_FULLY_SHAREABLE"
-		"ItemDeclarations"	"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
-		"ItemRequirements"	{}
-		"Modifiers"
-		{
-			
-			"Passive_item_Hannya_Onimaru"
-			{
-				"IsHidden"	"1"
-				"Passive"	"1"
-				// "ThinkInterval"	"1"
-				// "OnIntervalThink"
-				// {
-				// 	"RunScript"
-				// 	{
-				// 		"ScriptFile"	"items\Addon_Items\item_Hannya_Onimaru.lua"
-				// 		"Function"	"Moved"
-				// 	}
-				// }
-				// "OnUnitMoved"
-				// {
-				// 	"RunScript"
-				// 	{
-				// 		"ScriptFile"	"items\Addon_Items\item_Hannya_Onimaru.lua"
-				// 		"Function"	"Moved"
-				// 	}
-				// }
-			}
-			"Passive_Hannya_Onimaru"
-			{
-				"IsHidden"	"1"
-				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
-				"Passive"	"1"
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS" "15"	//力
-					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "0"	//敏
-					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "0"	//智
-					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "21"	//攻
-					"MODIFIER_PROPERTY_HEALTH_BONUS" "0" 			//血
-					"MODIFIER_PROPERTY_MANA_BONUS" "0"				//魔
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "0" //攻速
-				}
-			}
-			"modifier_Hannya_Onimaru"
-			{
-				"IsHidden"	"0"
-				"Passive"	"1"
-				"IsPurgable"	"0"
-				"ThinkInterval"	"1"
-				"OnIntervalThink"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"items\Addon_Items\item_Hannya_Onimaru.lua"
-						"Function"	"speedup"
-				 	}
-				}
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"7.5"
-				}
-			}
-		}
-		"OnEquip"
-		{
-			"RunScript"
-			{
-				"ScriptFile"	"items/Addon_Items/item_magical_resistance.lua"
-				"Function"	"OnEquip"
-			}
-		}
-		"OnUnequip"
-		{
-			"RunScript"
-			{
-				"ScriptFile"	"items/Addon_Items/item_magical_resistance.lua"
-				"Function"	"OnUnequip"
-			}
-		}
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"magical_resistance"	"10"
-			}
-		}
-	}
 	// 砍樹
 	"item_logging"
 	{
@@ -16495,7 +16035,7 @@
 		"ItemCost"	"50"
 		"precache"
 		{
-			"particle"	"particles/gohome/gohome.vpcf"
+			"particle"	"particles/events/ti6_teams/teleport_start_ti6_lvl3_ehome.vpcf"
 		}
 		"OnSpellStart"
 		{
